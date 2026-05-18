@@ -7,13 +7,13 @@ name = "apeirogon-logistics"
 version = "0.30.5"
 description = "Deterministic operational intelligence for Star Citizen hauling"
 requires-python = ">=3.10"
-license = {text = "MIT"}
+license = {text = "CC BY-NC 4.0"}
 dependencies = []
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
-pythonpath = ["tools"]
+testpaths = ["developer/tests"]
+pythonpath = ["developer/tools"]
 addopts = "-v --tb=short"
 
 [tool.setuptools.packages.find]
-where = ["tools"]
+where = ["developer/tools"]

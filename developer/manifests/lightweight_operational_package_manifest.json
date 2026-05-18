@@ -2,7 +2,6 @@
   "generated_at": "2026-05-17T00:26:14Z",
   "purpose": "Daily operational use for mission screenshot analysis and route recommendation.",
   "recommended_files": [
-    "README.md",
     "practical_route_analysis_prompt.md",
     "hull_b_covalex_route_playbook.md",
     "docs/GENERALIZED_HAULING_HANDBOOK.md",

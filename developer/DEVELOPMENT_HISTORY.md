@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.42.1: Scoring Completeness and Checksum Fix
+
+Added two scoring factors missing from all seven player-facing SETUP files: cargo panel clarity (+8, with Hull-B modifier x1.15) and complex unloading sequence (-7). Added the UNRESOLVED field cap ("maximum -12 total") to the per-field penalty line, matching the actual scorer behaviour. Updated the Hull-B SHIP ADJUSTMENTS line to include the cargo panel clarity bonus explicitly. Fixed generate_release_checksums.py and verify_release_integrity.py to exclude __pycache__ directories and .pyc/.pyo files, making manifests portable across environments. Regenerated developer/releases/checksum_manifest.json with 27 clean entries; round-trip verification now reports valid: true with zero mismatches, missing, or untracked files.
+
+---
+
 ## Version 0.41.8: Validation Workflow YAML Syntax Fix
 
 Fixed a pre-existing YAML syntax error in validation.yml that caused "No jobs were run." Two run blocks used an unquoted inline python -c "..." construct with the Python code at column 1, which breaks YAML parsing. Collapsed each block to a single-line python -c call inside a pipe block scalar.

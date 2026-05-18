@@ -15,6 +15,9 @@ import hmac
 from pathlib import Path
 from lib.common import dump_json, file_sha256, load_json
 
+_EXCLUDED_PARTS = {".git", "__pycache__"}
+_EXCLUDED_SUFFIXES = {".pyc", ".pyo"}
+
 
 def verify(manifest_data, root: Path):
     recorded = manifest_data.get("files")
@@ -48,10 +51,15 @@ def verify(manifest_data, root: Path):
     recorded_set = set(recorded.keys())
     untracked = []
     for p in sorted(root.rglob("*")):
-        if p.is_file() and ".git" not in p.parts:
-            rel = str(p.relative_to(root))
-            if rel not in recorded_set:
-                untracked.append(rel)
+        if not p.is_file():
+            continue
+        if any(part in _EXCLUDED_PARTS for part in p.parts):
+            continue
+        if p.suffix in _EXCLUDED_SUFFIXES:
+            continue
+        rel = str(p.relative_to(root))
+        if rel not in recorded_set:
+            untracked.append(rel)
 
     valid = not mismatches and not missing_from_disk
     return {

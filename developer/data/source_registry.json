@@ -358,6 +358,12 @@
       "notes": "Fixed pre-existing YAML syntax error in validation.yml. Two run blocks used unquoted inline python -c with Python code at column 1, breaking YAML parsing and causing No jobs were run. Collapsed to single-line python -c calls.",
       "source_id": "apeirogon_0_41_8_validation_workflow_yaml_syntax_fix",
       "trust_level": "internal_derived"
+    },
+    {
+      "name": "Apeirogon Logistics 0.42.1 scoring completeness and checksum fix",
+      "notes": "Added cargo_panel_clarity (+8, Hull-B x1.15) and unloading_cognitive_load (-7) to all seven SETUP scoring blocks. Added UNRESOLVED cap (max -12) to match scorer behaviour. Fixed generate_release_checksums.py and verify_release_integrity.py to exclude __pycache__ and .pyc files. Regenerated checksum_manifest.json with 27 clean entries.",
+      "source_id": "apeirogon_0_42_1_scoring_completeness_checksum_fix",
+      "trust_level": "internal_derived"
     }
   ]
 }

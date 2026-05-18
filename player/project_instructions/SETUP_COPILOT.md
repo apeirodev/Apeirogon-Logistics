@@ -53,6 +53,7 @@ GOOD FACTORS — add these points:
 - The whole route stays in orbital space, no atmosphere landings: +12 (×1.05 for Covalex)
 - The ship suits the cargo type well: +10
 - Pickup locations chain well from one to the next: +10
+- Cargo panels assign cleanly to each delivery destination: +8 (×1.15 for Hull-B)
 - Covalex issuer alignment: +9
 
 BAD FACTORS — subtract these points:
@@ -62,12 +63,13 @@ BAD FACTORS — subtract these points:
 - Each stop that requires an atmospheric landing: −12
 - Congested stations on the route: −8
 - Difficult freight handling: −8
+- Complex unloading sequence at destination: −7
 - Each stop beyond 2 total in the route: −6
 - Tiring multi-leg route: −7
-- Each field the player couldn't read (UNRESOLVED): −2
+- Each field the player couldn't read (UNRESOLVED): −2 each, maximum −12 total
 
 SHIP ADJUSTMENTS:
-- Hull-B: fragmentation penalty ×1.10, freight penalty ×1.05, ship suitability bonus ×1.05
+- Hull-B: fragmentation penalty ×1.10, freight penalty ×1.05, cargo panel clarity bonus ×1.15, ship suitability bonus ×1.05
 - Hull-C: stop density penalty ×1.20, freight penalty ×1.25, ship suitability bonus ×1.15
 - Taurus: fatigue penalty ×0.95 (slightly reduced)
 - Caterpillar: freight penalty ×1.10, ship suitability bonus ×1.10

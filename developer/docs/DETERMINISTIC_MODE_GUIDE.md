@@ -10,7 +10,7 @@ Deterministic mode means the tool scores your missions using only the weights an
 
 You type in your mission data (or paste it from a previous OCR run), the tool runs the scoring logic, and you get a score, a recommendation, and a breakdown of which factors contributed. Every run with the same input and the same config produces the same output. That is what deterministic means here.
 
-The accept/defer/reject thresholds are: accept >= 70, defer 45–69, reject < 45.
+The accept/defer/reject thresholds are: accept >= 70, defer 45 to 69, reject < 45.
 
 ---
 

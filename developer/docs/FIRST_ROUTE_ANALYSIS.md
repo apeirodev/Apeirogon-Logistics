@@ -1,4 +1,4 @@
-# First Route Analysis — Step by Step
+# First Route Analysis: Step by Step
 
 This is a complete walkthrough of a real Hull-B hauling session using Apeirogon
 Logistics. Follow along with the example, then substitute your own mission data.
@@ -20,7 +20,7 @@ Mission D has a different pickup (Microtech). Missions A, B, C all pick up from 
 
 ---
 
-## Option 1 — Type Missions Manually
+## Option 1: Type Missions Manually
 
 Create a file called `my_missions.json` with this content:
 
@@ -44,7 +44,7 @@ python tools/ingest_mission_batch.py -i my_missions.json
 
 ---
 
-## Option 2 — Use AI to Read a Screenshot
+## Option 2: Use AI to Read a Screenshot
 
 If you have a screenshot of the mission terminal:
 
@@ -141,8 +141,8 @@ justifies the empty flight to Microtech.
 
 Based on this output, the recommended play is:
 
-1. **Accept missions A, B, and C** — they stack at Port Olisar
-2. **Skip mission D** — dead leg to Microtech breaks the chain
+1. **Accept missions A, B, and C**: they stack at Port Olisar
+2. **Skip mission D**: dead leg to Microtech breaks the chain
 
 **Route sequence:**
 1. Port Olisar → load cargo for all three missions
@@ -182,7 +182,7 @@ The score tells you about structural route quality. You bring the live game know
 
 ## More Resources
 
-- `docs/ROUTE_ANALYSIS_HANDBOOK.md` — Full breakdown of every scoring factor
-- `hull_b_covalex_route_playbook.md` — Hull-B stacking strategies in depth
-- `ChatGPT_usage_guide.md` or `Claude_usage_guide.md` — Provider-specific AI workflow
-- `docs/HALLUCINATION_GUARDRAILS.md` — What to do when AI invents numbers
+- `docs/ROUTE_ANALYSIS_HANDBOOK.md`: Full breakdown of every scoring factor
+- `hull_b_covalex_route_playbook.md`: Hull-B stacking strategies in depth
+- `ChatGPT_usage_guide.md` or `Claude_usage_guide.md`: Provider-specific AI workflow
+- `docs/HALLUCINATION_GUARDRAILS.md`: What to do when AI invents numbers

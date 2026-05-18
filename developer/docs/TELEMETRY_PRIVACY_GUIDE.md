@@ -68,9 +68,9 @@ If you want to share a screenshot as supporting evidence for a telemetry submiss
 
 Before submitting a bundle, check each telemetry file for:
 
-1. **Location information** — delivery and pickup location names are not personal. Your home location field in the user profile is personal if it identifies something about you outside the game.
-2. **Notes fields** — you write these yourself. Check that nothing in the `notes` field contains information you did not intend to share.
-3. **Identifiers** — if you set a `session_id` or `user_profile_id` that includes your real name or RSI handle, consider using a generic identifier instead.
+1. **Location information**: delivery and pickup location names are not personal. Your home location field in the user profile is personal if it identifies something about you outside the game.
+2. **Notes fields**: you write these yourself. Check that nothing in the `notes` field contains information you did not intend to share.
+3. **Identifiers**: if you set a `session_id` or `user_profile_id` that includes your real name or RSI handle, consider using a generic identifier instead.
 
 The bundle tool applies automatic redaction for sensitive key names, but the sanitization step is your responsibility for content that is sensitive but has an innocuous key name.
 

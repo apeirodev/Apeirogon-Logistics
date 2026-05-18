@@ -34,9 +34,9 @@ On Windows, tick "Add Python to PATH" during installation.
 
 | Score | Recommendation | What it means |
 |-------|---------------|---------------|
-| 70–100 | **accept** | Good route — worth taking |
-| 45–69 | **defer** | Marginal — consider combining with other missions |
-| 0–44 | **reject** | Poor route — avoid unless no alternatives |
+| 70 to 100 | **accept** | Good route — worth taking |
+| 45 to 69 | **defer** | Marginal — consider combining with other missions |
+| 0 to 44 | **reject** | Poor route — avoid unless no alternatives |
 
 The score starts at 50 and goes up or down based on factors like same-pickup
 stacking (+16 per match), dead-leg risk (-15), cargo fragmentation (-12), and

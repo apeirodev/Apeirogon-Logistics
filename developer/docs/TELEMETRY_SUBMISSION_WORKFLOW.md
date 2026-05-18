@@ -26,14 +26,14 @@ python tools/telemetry_ingestion_pipeline.py -i telemetry/my_session.json
 ```
 
 Check the output for:
-- `"accepted": true` — the record passed validation
-- `errors: []` — no blocking errors
-- `warnings` — non-blocking issues; decide whether to fix them
+- `"accepted": true`: the record passed validation
+- `errors: []`: no blocking errors
+- `warnings`: non-blocking issues; decide whether to fix them
 
 Common validation issues and fixes:
-- `missing required field: ship` — add `"ship": "hull-b"` (or your actual ship) to the record
-- `patch_version unresolved` — add `"patch_version": "Alpha 4.8.0"` (or current patch)
-- `cargo_scu exceeds plausible threshold` — check that you did not accidentally enter a value in the wrong units
+- `missing required field: ship`: add `"ship": "hull-b"` (or your actual ship) to the record
+- `patch_version unresolved`: add `"patch_version": "Alpha 4.8.0"` (or current patch)
+- `cargo_scu exceeds plausible threshold`: check that you did not accidentally enter a value in the wrong units
 
 ---
 
@@ -63,7 +63,7 @@ python -c "import zipfile; z=zipfile.ZipFile('exports/telemetry_bundle.zip'); pr
 
 Open the zip and check:
 
-- `_BUNDLE_MANIFEST.json` — lists every file included and their key fields
+- `_BUNDLE_MANIFEST.json`: lists every file included and their key fields
 - Each telemetry file — confirm it contains only what you intended to share
 
 Check specifically:

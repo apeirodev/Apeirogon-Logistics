@@ -8,7 +8,7 @@ How to replay a past route scoring and verify that the output is unchanged.
 
 The deterministic scorer produces the same output from the same input, every time, as long as `runtime/scoring_config.json` has not changed. This is the auditability foundation: any route recommendation can be reproduced months later using only the saved input JSON.
 
-Every scorer output includes a `deterministic_hash` — a SHA-256 of the scored output. This hash is the fingerprint of the scoring decision.
+Every scorer output includes a `deterministic_hash`: a SHA-256 of the scored output. This hash is the fingerprint of the scoring decision.
 
 ---
 

@@ -16,11 +16,11 @@ Telemetry is voluntary. The tool works fully without it.
 
 Every telemetry submission must include:
 
-- **`patch_version`** — the Star Citizen patch you were playing on (e.g. `"Alpha 3.24"`). Without this, the submission cannot be placed in the calibration timeline.
-- **`ship`** — the ship you were flying (e.g. `"hull-b"`).
-- **`issuer`** — the primary mission issuer for the session (e.g. `"covalex"`).
-- **`session_id`** — a unique identifier for this session. Can be a date string or UUID.
-- **`export_timestamp`** — when the session state was exported.
+- **`patch_version`**: the Star Citizen patch you were playing on (e.g. `"Alpha 3.24"`). Without this, the submission cannot be placed in the calibration timeline.
+- **`ship`**: the ship you were flying (e.g. `"hull-b"`).
+- **`issuer`**: the primary mission issuer for the session (e.g. `"covalex"`).
+- **`session_id`**: a unique identifier for this session. Can be a date string or UUID.
+- **`export_timestamp`**: when the session state was exported.
 
 ---
 
@@ -28,7 +28,7 @@ Every telemetry submission must include:
 
 Only record values you actually read from the in-game terminal or HUD. For any field you cannot confirm:
 
-- Set it to `"UNRESOLVED"` — do not estimate or fill from memory.
+- Set it to `"UNRESOLVED"`: do not estimate or fill from memory.
 - Add the field name to `unresolved_fields` in the mission object.
 
 This is not a mark against your submission. UNRESOLVED values are expected and handled correctly by the calibration pipeline. Invented values corrupt the calibration baseline.
@@ -48,7 +48,7 @@ This is not a mark against your submission. UNRESOLVED values are expected and h
      --input-dir hauling-state/patches/Alpha\ 3.24/sessions/ \
      --output telemetry_bundle.zip
    ```
-4. Review the bundle manifest before submitting. The bundler strips any keys matching `api_key`, `token`, `secret`, or `password` — verify the manifest confirms this.
+4. Review the bundle manifest before submitting. The bundler strips any keys matching `api_key`, `token`, `secret`, or `password`: verify the manifest confirms this.
 
 ---
 

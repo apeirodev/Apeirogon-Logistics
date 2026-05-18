@@ -8,9 +8,9 @@ Your user profile and session state are local JSON files that you control. This 
 
 Two files carry your persistent data between sessions:
 
-**`portable_user_profile.json`** — your preferences and context: preferred ship, preferred issuer, home location, reputation levels. This changes infrequently.
+**`portable_user_profile.json`**: your preferences and context: preferred ship, preferred issuer, home location, reputation levels. This changes infrequently.
 
-**`hauling_session_state.json`** — the current session: active missions, completed missions, current position, notes. This changes every run.
+**`hauling_session_state.json`**: the current session: active missions, completed missions, current position, notes. This changes every run.
 
 Neither file is required. The scoring tools work without them. They become useful when you want session continuity — knowing where you ended last time, which missions you completed, and what reputation you have with which issuer.
 

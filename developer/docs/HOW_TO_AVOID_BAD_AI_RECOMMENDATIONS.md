@@ -8,7 +8,7 @@ This guide explains why AI providers produce wrong output for Star Citizen hauli
 
 AI language models are trained on data with a cutoff date. Star Citizen patches change commodity prices, landing fees, cargo capacities, and terminal availability constantly. No AI provider has current game state.
 
-When an AI is asked about a value it does not have, it does not say "I don't know." It generates a plausible-sounding number based on patterns in its training data. This is not a bug — it is how these models work. The output looks confident and formatted correctly. It is wrong.
+When an AI is asked about a value it does not have, it does not say "I don't know." It generates a plausible-sounding number based on patterns in its training data. This is not a bug; it is how these models work. The output looks confident and formatted correctly. It is wrong.
 
 Three specific conditions make this worse for Star Citizen:
 

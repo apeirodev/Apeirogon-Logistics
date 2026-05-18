@@ -6,7 +6,7 @@ Every output from the Apeirogon Logistics pipeline carries a `governance_metadat
 
 ## Why Governance Metadata Exists
 
-The pipeline mixes data from different sources: AI extractions, OCR normalisations, user-typed values, and deterministic scoring. Without provenance tracking, a number in a scored output could be AI-hallucinated, OCR-garbled, user-entered, or algorithmically derived — and there would be no way to tell. Governance metadata makes provenance explicit and machine-readable.
+The pipeline mixes data from different sources: AI extractions, OCR normalisations, user-typed values, and deterministic scoring. Without provenance tracking, a number in a scored output could be AI-hallucinated, OCR-garbled, user-entered, or algorithmically derived, and there would be no way to tell. Governance metadata makes provenance explicit and machine-readable.
 
 ---
 

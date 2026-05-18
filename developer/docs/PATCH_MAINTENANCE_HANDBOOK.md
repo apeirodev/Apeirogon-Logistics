@@ -20,7 +20,7 @@ The scoring tools do not hard-code any of these values. You supply actual values
 
 ---
 
-## After a Patch — Immediate Steps
+## After a Patch: Immediate Steps
 
 **1. Check your location aliases.**
 

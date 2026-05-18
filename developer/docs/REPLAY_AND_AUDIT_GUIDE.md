@@ -36,9 +36,9 @@ If the `deterministic_hash` in both outputs matches, the replay is verified. If 
 
 A replay hash mismatch means the scorer produced a different result. Causes:
 
-- **Scoring config changed** — weights in `runtime/scoring_config.json` were modified between the original run and the replay. Check `git log runtime/scoring_config.json`.
-- **Input changed** — the input file was edited between runs. The `input_hash` in the `replay_manifest` lets you confirm the input used at original scoring time.
-- **Tool version changed** — a bug fix or algorithm change altered scoring logic. Check the git log for `tools/deterministic_scorer.py`.
+- **Scoring config changed**: weights in `runtime/scoring_config.json` were modified between the original run and the replay. Check `git log runtime/scoring_config.json`.
+- **Input changed**: the input file was edited between runs. The `input_hash` in the `replay_manifest` lets you confirm the input used at original scoring time.
+- **Tool version changed**: a bug fix or algorithm change altered scoring logic. Check the git log for `tools/deterministic_scorer.py`.
 
 ---
 

@@ -22,7 +22,7 @@ This is a first-class workflow, not a fallback. The deterministic scorer produce
 
 ### 2. Create a missions JSON file
 
-Create a new file — for example, `my_missions.json` — using the template in the next section.
+Create a new file — for example, `my_missions.json`: using the template in the next section.
 
 ### 3. Fill in values from your screen
 
@@ -97,11 +97,11 @@ Do not guess. The -2 point penalty per UNRESOLVED field is bounded and predictab
 
 Key sections in the scored output:
 
-**`same_pickup_stacking`** — missions that share a pickup location. These are your stacking opportunities. Three Port Olisar pickups = +32 stacking bonus.
+**`same_pickup_stacking`**: missions that share a pickup location. These are your stacking opportunities. Three Port Olisar pickups = +32 stacking bonus.
 
-**`suggested_combined_route`** — the highest-value combination. Often scores higher than any individual mission because the same-pickup bonus only activates at the combined level.
+**`suggested_combined_route`**: the highest-value combination. Often scores higher than any individual mission because the same-pickup bonus only activates at the combined level.
 
-**`ranked_missions`** — individual scores. Accept >= 70, defer 45–69, reject < 45.
+**`ranked_missions`**: individual scores. Accept >= 70, defer 45 to 69, reject < 45.
 
 ---
 

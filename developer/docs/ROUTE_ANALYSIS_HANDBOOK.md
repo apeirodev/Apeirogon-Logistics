@@ -12,7 +12,7 @@ Every route starts at **50 points** (neutral).
 Points are added for positive factors (stacking opportunities, route efficiency)
 and subtracted for negative factors (dead legs, fragmentation, risk).
 
-The final score is clamped to 0–100.
+The final score is clamped to 0 to 100.
 
 ```
 Final score = 50 + (positive factors) - (negative factors) ± issuer/ship modifiers
@@ -24,9 +24,9 @@ Final score = 50 + (positive factors) - (negative factors) ± issuer/ship modifi
 
 | Score Range | Recommendation | Practical Meaning |
 |-------------|---------------|-------------------|
-| 70–100 | **accept** | Worth doing — good structure, low risk |
-| 45–69 | **defer** | Marginal — consider stacking with other missions |
-| 0–44 | **reject** | Poor structure — skip unless no alternatives |
+| 70 to 100 | **accept** | Worth doing — good structure, low risk |
+| 45 to 69 | **defer** | Marginal — consider stacking with other missions |
+| 0 to 44 | **reject** | Poor structure — skip unless no alternatives |
 
 These thresholds are configurable in `runtime/scoring_config.json` under
 `score_bands`. Adjust them if the defaults don't match your playstyle.
@@ -159,7 +159,7 @@ The output includes a `warnings` list. Common warnings and what to do:
 
 ## Unresolved Fields and Confidence
 
-Every output includes `unresolved_fields` — a list of data you didn't provide.
+Every output includes `unresolved_fields`: a list of data you didn't provide.
 For each unresolved field, the score is less precise.
 
 The system applies a penalty of up to -12 points for unresolved fields
@@ -167,8 +167,8 @@ The system applies a penalty of up to -12 points for unresolved fields
 the reward or cargo quantity, the system is appropriately less confident.
 
 `confidence_level` in `governance_metadata` will be:
-- `high` — all key fields supplied
-- `medium` — some fields unresolved
+- `high`: all key fields supplied
+- `medium`: some fields unresolved
 
 Supply more mission data (reward, SCU, exact locations) for more accurate scores.
 

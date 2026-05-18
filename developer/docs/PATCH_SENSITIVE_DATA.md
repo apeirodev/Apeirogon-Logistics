@@ -21,7 +21,7 @@ When told that a new patch is out, work through the sections below in order. Sta
 
 ---
 
-## Highest Risk — Verify First
+## Highest Risk: Verify First
 
 ### Ship SCU Capacities (`developer/data/ship_profiles.json`)
 
@@ -65,7 +65,7 @@ When a ship becomes flyable, change `"flyable": true`, update SCU if the pre-rel
 
 ---
 
-## Medium Risk — Verify After Ships
+## Medium Risk: Verify After Ships
 
 ### Covalex Reputation Ranks (`developer/analytics/mission_issuer_profiles.json`)
 
@@ -89,7 +89,7 @@ New locations may be added in patches. Check:
 
 ---
 
-## Lower Risk — Verify If Available
+## Lower Risk: Verify If Available
 
 ### Quantum Drive Profiles (`developer/data/quantum_drive_profiles.json`)
 

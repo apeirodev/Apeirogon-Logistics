@@ -8,14 +8,14 @@ How to contribute to Apeirogon Logistics and what contributions are accepted.
 
 Contributions that improve the tool's usefulness for Star Citizen haulers:
 
-- **Verified hauling telemetry** — session outcome data from real runs with confirmed values
-- **OCR correction examples** — known AI extraction errors with correct values, for improving alias coverage
-- **Patch validation notes** — observations about what changed in a patch and how it affected scoring accuracy
-- **Issuer behaviour observations** — patterns in mission availability, payout ranges, and route shapes for specific issuers
-- **Ship operational observations** — real-world performance data for ships in the supported list
-- **Location alias additions** — OCR variants and alternate spellings that need to be added to `OCR_normalization_rules.json`
-- **Documentation improvements** — corrections, clarifications, additional examples
-- **Bug reports** — specific tool failures with reproducible inputs
+- **Verified hauling telemetry**: session outcome data from real runs with confirmed values
+- **OCR correction examples**: known AI extraction errors with correct values, for improving alias coverage
+- **Patch validation notes**: observations about what changed in a patch and how it affected scoring accuracy
+- **Issuer behaviour observations**: patterns in mission availability, payout ranges, and route shapes for specific issuers
+- **Ship operational observations**: real-world performance data for ships in the supported list
+- **Location alias additions**: OCR variants and alternate spellings that need to be added to `OCR_normalization_rules.json`
+- **Documentation improvements**: corrections, clarifications, additional examples
+- **Bug reports**: specific tool failures with reproducible inputs
 
 ---
 

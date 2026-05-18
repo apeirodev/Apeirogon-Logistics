@@ -66,8 +66,8 @@ The strict prompt is what controls quality. Without it, all providers hallucinat
 
 The AI is only involved in the extraction step. The rest is fully deterministic:
 
-1. **OCR_result_normalizer.py** — normalizes AI extraction output to pipeline schema, applies UNRESOLVED sentinel, validates `advisory_only` and `source_class`.
-2. **ingest_mission_batch.py** — runs normalized mission data through the deterministic scorer, produces ranked output with route suggestions.
+1. **OCR_result_normalizer.py**: normalizes AI extraction output to pipeline schema, applies UNRESOLVED sentinel, validates `advisory_only` and `source_class`.
+2. **ingest_mission_batch.py**: runs normalized mission data through the deterministic scorer, produces ranked output with route suggestions.
 
 ---
 

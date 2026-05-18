@@ -1,13 +1,13 @@
 # Known Issues
 
 Operational limitations and known gaps in the current scoring system.
-These are not bugs — they are things the tool does not model yet, or game behaviours that change too frequently to hard-code.
+These are not bugs; they are things the tool does not model yet, or game behaviours that change too frequently to hard-code.
 
 ---
 
 ## Route Modeling Gaps
 
-**Freight elevator behaviour is not modeled.** Elevator availability, wait time, and reliability vary significantly across patches and servers. Routes with many elevator stops take longer than flight time suggests. Plan for this manually — the stop_density penalty is a rough proxy but not a precise model.
+**Freight elevator behaviour is not modeled.** Elevator availability, wait time, and reliability vary significantly across patches and servers. Routes with many elevator stops take longer than flight time suggests. Plan for this manually; the stop_density penalty is a rough proxy but not a precise model.
 
 **Quantum travel times are not modeled.** The tool counts stops and assesses route shape but does not calculate actual flight time between points. A five-stop route in a tight orbital cluster is faster than a three-stop route that crosses the system. Use your experience to estimate travel time.
 

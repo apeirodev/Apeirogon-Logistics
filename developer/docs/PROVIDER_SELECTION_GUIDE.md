@@ -16,7 +16,7 @@ Only reach for an AI provider if you want to speed up data entry by having the A
 
 ## If You Have Screenshots and Want Fast Extraction
 
-**ChatGPT (GPT-4o)** and **Claude (claude.ai)** both support image attachments in their web interface. No API key required — the free or paid web interface works.
+**ChatGPT (GPT-4o)** and **Claude (claude.ai)** both support image attachments in their web interface. No API key required; the free or paid web interface works.
 
 - Paste `prompts/STRICT_AI_SESSION_PROMPT.md`, get acknowledgement
 - Attach your mission terminal screenshot
@@ -24,7 +24,7 @@ Only reach for an AI provider if you want to speed up data entry by having the A
 
 See `ChatGPT_usage_guide.md` or `Claude_usage_guide.md` for the step-by-step for each provider.
 
-Both providers produce comparable extraction quality when the strict prompt is used. Without the strict prompt, both hallucinate at roughly the same rate. **The provider is not what controls quality — the strict prompt is.**
+Both providers produce comparable extraction quality when the strict prompt is used. Without the strict prompt, both hallucinate at roughly the same rate. **The provider is not what controls quality; the strict prompt is.**
 
 ---
 
@@ -34,9 +34,9 @@ Both providers produce comparable extraction quality when the strict prompt is u
 
 Trade-offs:
 - Requires a machine with adequate RAM and GPU memory to run the model
-- Vision support (reading screenshots) depends on which model you choose — not all local models support image input
+- Vision support (reading screenshots) depends on which model you choose; not all local models support image input
 - Performance varies by hardware and model size
-- Model availability and names change — check current documentation
+- Model availability and names change, so check current documentation
 
 If vision support is not available in your local model, use it with manually typed mission text rather than screenshots.
 
@@ -82,4 +82,4 @@ The hallucination rate without the strict prompt is above 50% regardless of whic
 | Hallucination risk without strict prompt | High (>50%) | High (>50%) | High (>50%) | None |
 | Hallucination risk with strict prompt | Reduced | Reduced | Reduced | None |
 
-Manual entry is the only path with zero hallucination risk. All AI providers reduce — but do not eliminate — that risk when the strict prompt is used.
+Manual entry is the only path with zero hallucination risk. All AI providers reduce, but do not eliminate, that risk when the strict prompt is used.

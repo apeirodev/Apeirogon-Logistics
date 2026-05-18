@@ -119,4 +119,4 @@ python tools/OCR_result_normalizer.py -i raw_extraction.json -o missions_norm.js
 python tools/ingest_mission_batch.py -i missions_norm.json
 ```
 
-If you entered mission data manually (no screenshot), skip steps 1–2 and run the batch scorer directly on your manually-written JSON.
+If you entered mission data manually (no screenshot), skip steps 1 to 2 and run the batch scorer directly on your manually-written JSON.

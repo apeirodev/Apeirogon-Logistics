@@ -77,9 +77,9 @@ to ARC-L1 to pick up costs more in time and positioning than the ARC-L1 mission 
 Once you've accepted missions, order deliveries like this:
 
 1. **Pick up all cargo** at the first pickup (all same-pickup missions)
-2. **Orbital deliveries** (L-point stations, asteroid belts) — no atmospheric entry
-3. **Moon deliveries** (if unavoidable) — low atmosphere, manageable
-4. **Return positioning** — end near your next pickup cluster
+2. **Orbital deliveries** (L-point stations, asteroid belts): no atmospheric entry
+3. **Moon deliveries** (if unavoidable): low atmosphere, manageable
+4. **Return positioning**: end near your next pickup cluster
 
 **Never end a run far from the next opportunity.** If your next run is likely
 from Port Olisar, end near Port Olisar. The "where does this route leave me?"
@@ -89,11 +89,11 @@ question matters as much as the route itself.
 
 ## Hull-B Cargo Panel Assignment
 
-The Hull-B has eight external cargo panels: top, bottom, port, starboard, front, and back — six named faces, but the spindle structure effectively gives you eight addressable panels when you count the forward and aft halves of the port and starboard sides.
+The Hull-B has eight external cargo panels: top, bottom, port, starboard, front, and back. That is six named faces, but the spindle structure effectively gives you eight addressable panels when you count the forward and aft halves of the port and starboard sides.
 
-**Operational practice**: assign each destination its own panel or set of panels. When you know Panel A is "Baijini Point" and Panel B is "Shopp-L4", unloading at each stop is fast and clean — you are not sorting through mixed cargo to find what belongs there.
+**Operational practice**: assign each destination its own panel or set of panels. When you know Panel A is "Baijini Point" and Panel B is "Shopp-L4", unloading at each stop is fast and clean; you are not sorting through mixed cargo to find what belongs there.
 
-This is why the `cargo_panel_clarity` modifier exists for Hull-B (×1.15). A mission set where each destination maps neatly to a panel section scores better because it executes better. Fragmented routes — where you'd be pulling cargo from multiple panels at each stop — lose this advantage.
+This is why the `cargo_panel_clarity` modifier exists for Hull-B (×1.15). A mission set where each destination maps neatly to a panel section scores better because it executes better. Fragmented routes, where you'd be pulling cargo from multiple panels at each stop, lose this advantage.
 
 **Practical rule**: before loading, assign deliveries to panels mentally or in your notes. Prefer route sets where the number of destinations is ≤ the number of usable panels. When stacking three same-pickup Covalex missions to three different orbital stations, you get clean panel separation with cargo to spare.
 
@@ -108,7 +108,7 @@ This matters for timing:
 - Partial loads are sometimes necessary (come back for second load)
 - Unloading order can affect how long you're docked
 
-Plan for freight elevator interaction time — actual elapsed time per stop
+Plan for freight elevator interaction time; actual elapsed time per stop
 is higher than quantum travel time alone. Routes with 4+ stops feel longer
 than they look on paper.
 
@@ -146,9 +146,9 @@ echo '{
 ```
 
 Look at:
-1. `same_pickup_stacking` — which missions can be stacked
-2. `suggested_combined_route.score` — what the stack scores together
-3. `ranked_missions` — which missions are worth it individually
+1. `same_pickup_stacking`: which missions can be stacked
+2. `suggested_combined_route.score`: what the stack scores together
+3. `ranked_missions`: which missions are worth it individually
 
 Missions that score "defer" individually often score "accept" when combined.
 This is the tool's primary use case for Hull-B.
@@ -160,7 +160,7 @@ This is the tool's primary use case for Hull-B.
 Covalex reputation progression matters for contract availability and quality.
 The scoring system doesn't directly model reputation, but the factors that
 produce high scores (same-pickup stacking, low dead legs, orbital chains) are
-also the patterns that build reputation efficiently — you're completing more
+also the patterns that build reputation efficiently; you're completing more
 Covalex missions per hour than scattered routes would allow.
 
 Prioritising reputation over one-off payout is usually correct in the medium term.
@@ -190,7 +190,7 @@ running. If anything is fabricated, the batch score will be wrong. See
 
 ---
 
-## Red Flags — Skip These Missions
+## Red Flags: Skip These Missions
 
 | Pattern | Why |
 |---------|-----|
@@ -202,12 +202,12 @@ running. If anything is fabricated, the batch score will be wrong. See
 
 ---
 
-## Green Flags — Look for These
+## Green Flags: Look for These
 
 | Pattern | Why |
 |---------|-----|
 | 3× Port Olisar pickup | +32 stacking bonus, ideal |
 | All deliveries at orbital stations | No atmosphere, fast runs |
 | Covalex + Ling mix at same pickup | Both issuers have orbital deliveries |
-| Deliveries cluster at 2–3 L-points | Clean route, low fragmentation |
+| Deliveries cluster at 2 to 3 L-points | Clean route, low fragmentation |
 | Route ends near next pickup | Good positioning for next run |

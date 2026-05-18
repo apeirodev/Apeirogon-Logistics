@@ -18,7 +18,7 @@ The modifiers stack on top of the base weights in `scoring_config.json`. They do
 
 ---
 
-## Quick Reference — All Supported Ships
+## Quick Reference: All Supported Ships
 
 Ships with 90+ SCU capacity. Values are community-sourced advisory — verify in-game.
 
@@ -272,25 +272,25 @@ Primary role is fuel collection. Cargo is secondary. The ship_suitability modifi
 
 ---
 
-### Galaxy (576 SCU, RSI) — NOT YET FLYABLE
+### Galaxy (576 SCU, RSI): NOT YET FLYABLE
 
 Modular: cargo (512 SCU), med-bay, or refinery module plus 64 SCU base hangar. Scoring modifiers are speculative placeholders. Update after live testing when it releases (expected IAE late 2026).
 
 ---
 
-### Banu Merchantman (2880 SCU, Banu) — NOT YET FLYABLE
+### Banu Merchantman (2880 SCU, Banu): NOT YET FLYABLE
 
 Most anticipated community hauling ship. Internal market bays allow player vendor stalls. The destination_overlap bonus (×1.10) reflects that it is optimised for multi-buyer trade routes. Scoring modifiers are speculative placeholders pending live release.
 
 ---
 
-### Hull-D (6912 SCU, MISC) — NOT YET FLYABLE
+### Hull-D (6912 SCU, MISC): NOT YET FLYABLE
 
 Capital bulk hauler. Scoring modifiers are speculative. The stop_density (×1.35) and fragmentation (×1.25) multipliers will make this even more single-destination-focused than the Hull-C. Designed for Covalex Master interstellar bulk contracts.
 
 ---
 
-### Hull-E (TBC SCU, MISC) — NOT YET FLYABLE
+### Hull-E (TBC SCU, MISC): NOT YET FLYABLE
 
 Largest ship in the Hull series. Scoring modifiers are speculative placeholders. Original CIG SCU figures described as unrealistic for physicalized cargo — post-rebalance figures not yet published. Extreme stop_density (×1.50) and fragmentation (×1.40) modifiers reflect that only point-to-point bulk delivery makes sense at this scale.
 

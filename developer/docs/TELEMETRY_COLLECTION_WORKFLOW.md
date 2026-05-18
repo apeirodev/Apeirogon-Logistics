@@ -75,8 +75,8 @@ All numeric fields should come from your actual in-game observations, not from e
 ## OCR Verification Field
 
 The `ocr_verified` flag on each mission indicates whether you visually confirmed the OCR/AI extraction values against your screen during the session. Set it to:
-- `true` — you checked the value against your screen
-- `false` — you did not verify (values came from OCR only)
+- `true`: you checked the value against your screen
+- `false`: you did not verify (values came from OCR only)
 - omit — same as false
 
 Records with `ocr_verified: true` are more useful for calibration because the input values are confirmed to be accurate.

@@ -51,9 +51,9 @@ python tools/ingest_mission_batch.py -i missions_norm.json
 
 | Score | Recommendation |
 |-------|---------------|
-| 70–100 | **accept** |
-| 45–69 | **defer** |
-| 0–44 | **reject** |
+| 70 to 100 | **accept** |
+| 45 to 69 | **defer** |
+| 0 to 44 | **reject** |
 
 ---
 

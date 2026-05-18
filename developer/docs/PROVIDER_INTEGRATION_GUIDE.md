@@ -22,7 +22,7 @@ The pipeline is designed to accept extraction output from any provider that can 
 
 **Users provide their own API keys.** This project does not provide, store, or manage API keys. Keys are supplied by users via environment variable at runtime. The project code never handles API keys directly.
 
-**Provider output is untrusted until validated.** The output of any AI provider — regardless of provider reputation — must pass through `provider_output_validator.py` before entering the scoring pipeline. This validation checks that `advisory_only: true` and `source_class: ai_output` are present, and flags unsourced numeric fields.
+**Provider output is untrusted until validated.** The output of any AI provider, regardless of provider reputation, must pass through `provider_output_validator.py` before entering the scoring pipeline. This validation checks that `advisory_only: true` and `source_class: ai_output` are present, and flags unsourced numeric fields.
 
 **Manual mode must remain supported.** No feature or workflow may become unavailable to users without an AI provider. The deterministic scoring pipeline must always be runnable with manually-entered JSON. Provider-specific enhancements are optional improvements, not requirements.
 
@@ -53,7 +53,7 @@ To add support for a new AI provider:
 3. Test the provider against `examples/ai_vision_extraction/sample_vision_input.json` to confirm schema compatibility.
 4. Add the provider to the comparison table in `docs/PROVIDER_SELECTION_GUIDE.md`.
 
-No code changes are required to the core pipeline for a new provider — the pipeline is provider-neutral. Only documentation is needed.
+No code changes are required to the core pipeline for a new provider; the pipeline is provider-neutral. Only documentation is needed.
 
 ---
 

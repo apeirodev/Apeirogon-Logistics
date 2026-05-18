@@ -38,10 +38,10 @@ The codebase enforces strict separation between data of different provenance. Th
 **AI output is never merged into sourced_facts.**
 
 Pipeline output structures keep these keys separate at the top level:
-- `sourced_facts` — values supplied directly by the operator from the game screen
-- `ai_recommendation` — advisory output from an AI provider
-- `ocr_extraction` — output from AI-assisted OCR extraction
-- `unresolved_fields` — fields that could not be read
+- `sourced_facts`: values supplied directly by the operator from the game screen
+- `ai_recommendation`: advisory output from an AI provider
+- `ocr_extraction`: output from AI-assisted OCR extraction
+- `unresolved_fields`: fields that could not be read
 
 The `governance_metadata` block in every output record includes a `source_class` field tracking data origin. Valid values include `deterministic_output`, `ai_output`, `ai_vision_extraction`, `ocr_extraction`, `user_correction`, and `telemetry`.
 
@@ -114,7 +114,7 @@ These are the fields where hallucination has the most direct operational impact.
 3. **Verify output against your screen.** Check every value. Check `hallucination_flags` from the validator.
 4. **Run OCR_result_normalizer.py.** Normalizes extraction output, applies UNRESOLVED sentinel.
 5. **Run ingest_mission_batch.py.** Scored by deterministic_scorer.py.
-6. **Read the scored output.** Accept >= 70, defer 45–69, reject < 45.
+6. **Read the scored output.** Accept >= 70, defer 45 to 69, reject < 45.
 
 ---
 

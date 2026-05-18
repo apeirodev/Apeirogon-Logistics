@@ -27,7 +27,7 @@ The config (`runtime/scoring_config.json`) is a local file. All outputs are writ
 
 Two things are optional and require network access if you choose to use them:
 
-**AI provider for screenshot OCR.** If you want to paste screenshots into ChatGPT, Claude, or another cloud provider to extract mission data, you need a connection. This is optional — you can enter mission data manually instead. See `docs/MANUAL_COPY_PASTE_WORKFLOW.md`.
+**AI provider for screenshot OCR.** If you want to paste screenshots into ChatGPT, Claude, or another cloud provider to extract mission data, you need a connection. This is optional; you can enter mission data manually instead. See `docs/MANUAL_COPY_PASTE_WORKFLOW.md`.
 
 **Telemetry submission.** `bundle_telemetry.py` packages your session outcome data into a zip file. Nothing is sent automatically. If you choose to submit the bundle, that step contacts a remote endpoint. If you do not run the submission step, no data leaves your machine.
 
@@ -54,7 +54,7 @@ No data leaves your machine unless you take a deliberate action to send it.
 
 The scoring tools write output to local JSON files you specify. Session state is stored locally. Your mission data, route history, and scoring results are files on your disk that you control.
 
-If you run `bundle_telemetry.py` and then choose to submit the bundle, that data is sent. The bundle contains session outcomes — not API keys, not personal identifiers beyond what you put in your mission data. You can inspect the bundle file before submitting.
+If you run `bundle_telemetry.py` and then choose to submit the bundle, that data is sent. The bundle contains session outcomes, not API keys, not personal identifiers beyond what you put in your mission data. You can inspect the bundle file before submitting.
 
 If you never run the submission step, nothing is transmitted.
 
@@ -76,7 +76,7 @@ Do not put API keys in JSON input files, config files, or command-line arguments
 
 ## Offline AI Option
 
-If you want screenshot OCR without sending data to a cloud provider, local AI models via Ollama or LM Studio can provide vision OCR without cloud access. Model availability and names change with software updates — check the current Ollama or LM Studio documentation for which models support image input.
+If you want screenshot OCR without sending data to a cloud provider, local AI models via Ollama or LM Studio can provide vision OCR without cloud access. Model availability and names change with software updates, so check the current Ollama or LM Studio documentation for which models support image input.
 
 The rest of the pipeline (normaliser → batch scorer) is unaffected by which OCR source you use. The only difference is whether the AI call goes to a cloud endpoint or a local one.
 

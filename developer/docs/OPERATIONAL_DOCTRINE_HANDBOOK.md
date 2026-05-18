@@ -33,7 +33,7 @@ If you have a single atmosphere delivery mixed into an otherwise orbital run, ev
 
 ## What UNRESOLVED Means in Practice
 
-UNRESOLVED appears in tool output when a field — most often `reward_usc` — could not be read from OCR or was not supplied in your input.
+UNRESOLVED appears in tool output when a field — most often `reward_usc`: could not be read from OCR or was not supplied in your input.
 
 An UNRESOLVED reward means the tool does not know whether this mission is profitable. It applies a 2-point penalty per unresolved field, capped at -12 across all fields, and drops the confidence rating to medium.
 

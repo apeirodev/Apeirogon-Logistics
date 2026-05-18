@@ -6,7 +6,7 @@ How to save your session state at the end of a run and resume from it next time.
 
 ## Why Export/Import Matters
 
-The scoring tools do not maintain any persistent state themselves. They process inputs and produce outputs each time you run them. If you want continuity across sessions — knowing where you ended, which missions you completed, what reputation level you have — you manage that state yourself using portable JSON files.
+The scoring tools do not maintain any persistent state themselves. They process inputs and produce outputs each time you run them. If you want continuity across sessions, knowing where you ended, which missions you completed, and what reputation level you have, you manage that state yourself using portable JSON files.
 
 This is intentional. Your data is a file you control, not a database you depend on.
 
@@ -16,7 +16,7 @@ This is intentional. Your data is a file you control, not a database you depend 
 
 **User profile** (`user_profile.json`): your ship, preferred issuer, home location, reputation levels. Changes infrequently. One per player.
 
-**Session state** (`session_state.json`): active session — current position, completed missions, pending missions, notes. Changes every run.
+**Session state** (`session_state.json`): active session; current position, completed missions, pending missions, notes. Changes every run.
 
 See `docs/PORTABLE_USER_STATE_GUIDE.md` for the full field reference for each file.
 
@@ -71,7 +71,7 @@ python tools/session_state_manager.py -i hauling-state/patches/Alpha\ 3.23/sessi
 The state files are plain JSON. To continue a session on a different machine:
 
 1. Copy `user_profile.json` and your latest session state file to the new machine.
-2. The scoring tools will work identically — there is no account sync, no cloud state, and no machine-specific data.
+2. The scoring tools will work identically; there is no account sync, no cloud state, and no machine-specific data.
 
 ---
 

@@ -10,7 +10,7 @@ When the scorer sees an issuer field in your mission data, it loads that issuer'
 
 Issuer modifiers reflect the practical reality that different mission companies tend to produce different route shapes. Covalex missions cluster around orbital stations and reward chain efficiency. Ling missions often share pickups and destinations. Red Wind missions tend to appear in isolated or congested locations where dead legs are more likely.
 
-The modifiers scale the base factor weights at calculation time. They do not change the accept/defer/reject thresholds (accept >= 70, defer 45–69, reject < 45).
+The modifiers scale the base factor weights at calculation time. They do not change the accept/defer/reject thresholds (accept >= 70, defer 45 to 69, reject < 45).
 
 If a mission has no issuer field or the issuer is not in the config, the scorer runs with unmodified base weights.
 
@@ -90,7 +90,7 @@ To add a new issuer to the config:
 
 Any factor name that appears in the base weights block can be used as a modifier key. Changes take effect immediately.
 
-If you are unsure what modifiers to assign to a new issuer, start with an empty block `{}` — the issuer will then score on base weights with no modification until you tune it.
+If you are unsure what modifiers to assign to a new issuer, start with an empty block `{}`: the issuer will then score on base weights with no modification until you tune it.
 
 ---
 

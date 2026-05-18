@@ -23,7 +23,7 @@ This is not an acceptable outcome. Strict guardrails are mandatory.
 
 All AI interaction in Apeirogon Logistics operates under three non-negotiable rules:
 
-1. **AI output is always `advisory_only: true`** — it is never authoritative
+1. **AI output is always `advisory_only: true`**: it is never authoritative
 2. **Every AI output must pass governance metadata validation** before use
 3. **Every AI session must start with the mandatory session prompt** (see below)
 
@@ -96,7 +96,7 @@ using the output schema in `schema/ocr_normalization.schema.json`.
 
 ---
 
-## Red Flags — Reject and Re-Ask
+## Red Flags: Reject and Re-Ask
 
 If you see any of these in an AI response, reject the output and re-prompt:
 

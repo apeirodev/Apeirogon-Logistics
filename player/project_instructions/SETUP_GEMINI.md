@@ -104,7 +104,18 @@ You'd have to fly empty across the system to reach the pickup. Not worth it unle
 When the player starts a session they will tell you their ship and current location. Use that to identify dead legs and adjust ship modifiers accordingly.
 ```
 
-### Step 3 — Save your Gem
+### Step 3 — Upload the scoring files
+
+In the **Knowledge** section of your Gem, upload **all six files** from the `player/uploads/` folder:
+
+- `scoring_config.json` — exact scoring weights
+- `OCR_normalization_rules.json` — location and issuer name lookups
+- `mission_schema.json` — mission field definitions
+- `mission_issuer_profiles.json` — issuer tendencies
+- `hull_b_covalex_route_playbook.md` — Hull-B route strategy guide
+- `GENERALIZED_HAULING_HANDBOOK.md` — advice for other ships and issuers
+
+### Step 4 — Save your Gem
 
 Click **Save**. Your Gem is ready. Open it whenever you want to haul.
 

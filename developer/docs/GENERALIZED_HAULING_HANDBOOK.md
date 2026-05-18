@@ -1,5 +1,9 @@
 # Generalized Hauling Handbook
 
+> **CANONICAL FILE** — a player-adapted copy (with developer tuning sections removed) is at
+> `player/uploads/GENERALIZED_HAULING_HANDBOOK.md`. If you update strategic content here,
+> apply the same changes to the player copy.
+
 How to use Apeirogon Logistics for hauling scenarios beyond the Hull-B Covalex primary workflow.
 
 ---

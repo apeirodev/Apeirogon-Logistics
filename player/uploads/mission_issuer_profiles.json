@@ -1,5 +1,5 @@
 {
-  "_copy_note": "CANONICAL FILE — player copy is at player/uploads/mission_issuer_profiles.json. If you update issuer profiles here, update the player copy too.",
+  "_copy_note": "PLAYER COPY — exact copy of developer/analytics/mission_issuer_profiles.json. The canonical file for developers is developer/analytics/mission_issuer_profiles.json.",
   "dataset_name": "phase24b_mission_issuer_profiles",
   "generated_at": "2026-05-17T00:23:38Z",
   "issuers": {

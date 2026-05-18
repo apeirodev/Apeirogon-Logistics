@@ -282,7 +282,7 @@
       "trust_level": "internal_derived"
     },
     {
-      "name": "Apeirogon Logistics 0.36.2 player accessibility release",
+      "name": "Apeirogon Logistics 0.37.1 player accessibility release",
       "notes": "Introduces player/ directory with AI-native workflow. Reorganizes repository for non-technical users.",
       "source_id": "apeirogon_0_36_1_player_release",
       "trust_level": "internal_derived"

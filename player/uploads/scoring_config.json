@@ -1,5 +1,5 @@
 {
-  "_copy_note": "CANONICAL FILE — player copy is at player/uploads/scoring_config.json. If you edit scoring weights here, update the player copy too.",
+  "_copy_note": "PLAYER COPY — exact copy of developer/runtime/scoring_config.json. If you edit scoring weights, update both files. The canonical file for developers is developer/runtime/scoring_config.json.",
   "description": "Deterministic scorer configuration — weights, modifiers, and thresholds. Edit this file to tune scoring without changing code.",
   "base_score": 50,
   "score_bands": {

@@ -283,3 +283,9 @@ Introduced the `player/` directory with AI-native workflow: per-platform setup g
 ## Version 0.36.2 — Star Citizen Patch Update
 
 Set Star Citizen patch version to Alpha 4.8.0 across all canonical files: VERSION.json, patch_lineage_registry.json, example sessions and outputs, test fixtures, and documentation examples. Previous placeholder values (UNRESOLVED_REQUIRES_VALIDATION, UNRESOLVED, 4.x, 4.1, Alpha 3.23) replaced with the confirmed current patch.
+
+---
+
+## Version 0.37.1 — Player Uploads Folder
+
+Added `player/uploads/` containing six files players upload to their AI project: scoring_config.json, OCR_normalization_rules.json, mission_schema.json, mission_issuer_profiles.json, hull_b_covalex_route_playbook.md (player-adapted), and GENERALIZED_HAULING_HANDBOOK.md (player-adapted). Four JSON files are exact copies; two markdown files have developer-specific sections replaced with the screenshot workflow. Cross-reference notes added to all canonical developer files. All four SETUP_*.md guides updated to reference player/uploads/.

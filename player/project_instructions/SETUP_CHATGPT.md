@@ -17,10 +17,14 @@ There are two ways to do this on ChatGPT. Use **Option A** if you have ChatGPT P
 
 ### Step 2 — Upload the scoring files
 
-Inside your project, look for an option to add files. Upload these two files from the `developer/runtime/` folder:
+Inside your project, look for an option to add files. Upload **all six files** from the `player/uploads/` folder:
 
-- `scoring_config.json`
-- `OCR_normalization_rules.json`
+- `scoring_config.json` — exact scoring weights
+- `OCR_normalization_rules.json` — location and issuer name lookups
+- `mission_schema.json` — mission field definitions
+- `mission_issuer_profiles.json` — issuer tendencies
+- `hull_b_covalex_route_playbook.md` — Hull-B route strategy guide
+- `GENERALIZED_HAULING_HANDBOOK.md` — advice for other ships and issuers
 
 ### Step 3 — Set the project instructions
 

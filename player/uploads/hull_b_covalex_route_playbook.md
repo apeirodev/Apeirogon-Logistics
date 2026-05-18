@@ -1,8 +1,8 @@
 # Hull-B Covalex Route Playbook
 
-> **CANONICAL FILE** — a player-adapted copy (with Python CLI sections replaced by the
-> screenshot workflow) is at `player/uploads/hull_b_covalex_route_playbook.md`.
-> If you update strategy or scoring content here, apply the same changes to the player copy.
+> **PLAYER COPY** — adapted from `developer/hull_b_covalex_route_playbook.md` for the
+> screenshot-paste workflow. The developer version includes additional sections covering
+> the Python CLI tools, which are not needed here.
 
 Practical guide for Hull-B Covalex hauling. Not theory — operational patterns
 that score well and execute cleanly in practice.
@@ -102,14 +102,13 @@ than they look on paper.
 
 ---
 
-## What the Tool Tells You About Hull-B Routes
+## How the Scoring System Treats Hull-B
 
-When you pass `"ship": "hull-b"` to the scorer, these modifiers apply:
+When you tell your AI you are flying a Hull-B, these modifiers apply:
 
-- `fragmentation` penalty is ×1.10 (10% worse than default)
-- `cargo_panel_clarity` is ×1.15 (panel clarity is more valuable)
+- `fragmentation` penalty is ×1.10 (fragmented routes hurt more)
 - `freight` modifier is ×1.05 (freight complexity slightly more costly)
-- `ship_suitability` is ×1.05 (Hull-B is rewarded for well-suited routes)
+- `ship_suitability` is ×1.05 (Hull-B rewarded for well-suited routes)
 
 In practice: **fragmented routes with many different delivery locations are
 especially bad for Hull-B**. A single same-pickup run to two clean orbital
@@ -117,64 +116,19 @@ destinations scores much better than four runs to scattered locations.
 
 ---
 
-## Using the Batch Tool for Mission Selection
-
-At the mission terminal, use `ingest_mission_batch.py` to rank your options:
-
-```bash
-echo '{
-  "issuer": "covalex",
-  "ship": "hull-b",
-  "missions": [
-    {"pickup": "Port Olisar", "delivery": ["Covalex Hub Shopp-L4"], "cargo_scu": 24, "reward_usc": 12500},
-    {"pickup": "Port Olisar", "delivery": ["Baijini Point"], "cargo_scu": 16, "reward_usc": 9000},
-    {"pickup": "Microtech", "delivery": ["ARC-L1"], "cargo_scu": 32, "reward_usc": 8000}
-  ]
-}' | python tools/ingest_mission_batch.py
-```
-
-Look at:
-1. `same_pickup_stacking` — which missions can be stacked
-2. `suggested_combined_route.score` — what the stack scores together
-3. `ranked_missions` — which missions are worth it individually
-
-Missions that score "defer" individually often score "accept" when combined.
-This is the tool's primary use case for Hull-B.
-
----
-
-## Reputation vs Efficiency
-
-Covalex reputation progression matters for contract availability and quality.
-The scoring system doesn't directly model reputation, but the factors that
-produce high scores (same-pickup stacking, low dead legs, orbital chains) are
-also the patterns that build reputation efficiently — you're completing more
-Covalex missions per hour than scattered routes would allow.
-
-Prioritising reputation over one-off payout is usually correct in the medium term.
-A route that pays slightly less but completes faster and positions you for the next
-run is better than a high-payout isolated mission that leaves you out of position.
-
----
-
-## AI Vision Workflow for Hull-B
+## Screenshot Workflow
 
 Fastest workflow for live play:
 
-1. At mission terminal: take a screenshot
-2. Paste `STRICT_AI_SESSION_PROMPT.md` into ChatGPT/Claude → "STRICT MODE ACTIVE"
-3. Tell the AI: *"I am flying a Hull-B."*
-4. Paste `AI_VISION_EXTRACTION_PROMPT.md` + attach screenshot
-5. Save the AI's JSON
-6. Run: `python tools/OCR_result_normalizer.py -i raw.json | python tools/ingest_mission_batch.py`
-7. Check `suggested_combined_route` and `same_pickup_stacking`
-8. Accept missions accordingly
+1. At the mission terminal, take a screenshot of your available contracts
+2. Open your AI project (Claude, ChatGPT, Gemini, or whichever you set up)
+3. Paste `player/session_start_prompt.md` — fill in ship: Hull-B and your location
+4. Paste the screenshot
+5. Your AI scores each contract and tells you what to accept and in what order
 
-Takes about 90 seconds once you have the workflow memorised.
-
-**Critical**: verify the AI's SCU and reward numbers against your screen before
-running. If anything is fabricated, the batch score will be wrong. See
-`docs/HALLUCINATION_GUARDRAILS.md`.
+If the AI cannot read a value from your screenshot, it will ask you to type
+that one value. This is correct — do not skip it. An unresolved fee or reward
+can change the recommendation.
 
 ---
 
@@ -199,3 +153,17 @@ running. If anything is fabricated, the batch score will be wrong. See
 | Covalex + Ling mix at same pickup | Both issuers have orbital deliveries |
 | Deliveries cluster at 2–3 L-points | Clean route, low fragmentation |
 | Route ends near next pickup | Good positioning for next run |
+
+---
+
+## Reputation vs Efficiency
+
+Covalex reputation progression matters for contract availability and quality.
+The scoring system doesn't directly model reputation, but the factors that
+produce high scores (same-pickup stacking, low dead legs, orbital chains) are
+also the patterns that build reputation efficiently — you're completing more
+Covalex missions per hour than scattered routes would allow.
+
+Prioritising reputation over one-off payout is usually correct in the medium term.
+A route that pays slightly less but completes faster and positions you for the next
+run is better than a high-payout isolated mission that leaves you out of position.

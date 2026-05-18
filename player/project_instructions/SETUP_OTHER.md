@@ -9,7 +9,8 @@ This works with any AI that supports image uploads and lets you set a custom ins
 1. Find the system prompt or custom instructions field for your AI
 2. Copy everything between the lines below and paste it there
 3. Save it — you only need to do this once
-4. From then on, use `session_start_prompt.md` at the start of each session
+4. If your AI supports file uploads or a knowledge base, upload all six files from `player/uploads/`
+5. From then on, use `session_start_prompt.md` at the start of each session
 
 ---
 
@@ -18,8 +19,9 @@ This works with any AI that supports image uploads and lets you set a custom ins
 1. Start a new conversation
 2. Paste the full instructions block below as your first message
 3. Wait for the AI to confirm it understood
-4. Then paste `session_start_prompt.md` with your ship and location
-5. Start pasting screenshots
+4. Paste the contents of any files from `player/uploads/` that your AI will accept (even pasting `scoring_config.json` helps)
+5. Then paste `session_start_prompt.md` with your ship and location
+6. Start pasting screenshots
 
 ---
 

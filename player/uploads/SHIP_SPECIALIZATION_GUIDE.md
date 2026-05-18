@@ -88,37 +88,37 @@ Multipliers from `scoring_config.json`. > 1.0 amplifies, < 1.0 dampens.
 | c2 hercules | atmosphere | ×0.88 | Atmosphere stops hurt least of any ship |
 | c2 hercules | freight | ×1.10 | Good freight bonus |
 | c2 hercules | fragmentation | ×1.08 | Fragmented routes hurt somewhat more |
-| starfarer | ship_suitability | ×0.88 | Poor fit — primary role is fueling |
+| starfarer | ship_suitability | ×0.88 | Poor fit: primary role is fueling |
 | starfarer | freight | ×1.05 | Small freight bonus |
 | starfarer | stop_density | ×1.10 | Multiple delivery stops penalised more |
-| starfarer gemini | ship_suitability | ×0.85 | Poor fit — military fueling ship |
+| starfarer gemini | ship_suitability | ×0.85 | Poor fit: military fueling ship |
 | starfarer gemini | freight | ×1.05 | Small freight bonus |
 | starfarer gemini | stop_density | ×1.10 | Multiple delivery stops penalised more |
 | ironclad | ship_suitability | ×1.10 | Excellent fit for armored deep-space cargo |
 | ironclad | freight | ×1.15 | Strong freight bonus |
-| ironclad | stop_density | ×1.25 | Multiple stops hurt severely — only take single-destination runs |
+| ironclad | stop_density | ×1.25 | Multiple stops hurt severely: only take single-destination runs |
 | ironclad | fragmentation | ×1.15 | Fragmented routes hurt badly |
-| ironclad assault | ship_suitability | ×0.90 | Sub-optimal — vehicle carrier, not hauler |
+| ironclad assault | ship_suitability | ×0.90 | Sub-optimal: vehicle carrier, not hauler |
 | ironclad assault | freight | ×1.10 | Moderate freight bonus |
 | ironclad assault | stop_density | ×1.20 | Multiple stops penalised hard |
 | hermes | ship_suitability | ×1.05 | Good fit for fast medium routes |
 | hermes | dead_leg | ×0.90 | Flying empty to pickup hurts least of any ship |
-| hermes | fatigue | ×0.92 | Fatigue dampened — suited to long sessions |
-| galaxy | ship_suitability | ×1.05 | Good fit (speculative — not flyable yet) |
+| hermes | fatigue | ×0.92 | Fatigue dampened: suited to long sessions |
+| galaxy | ship_suitability | ×1.05 | Good fit (speculative, not flyable yet) |
 | galaxy | stop_density | ×1.05 | Small stop density amplification |
 | galaxy | freight | ×1.05 | Small freight bonus |
 | railen | ship_suitability | ×1.05 | Good fit for medium-heavy routes |
 | railen | freight | ×1.08 | Moderate freight bonus |
 | railen | atmosphere | ×0.90 | Atmosphere penalty slightly reduced |
-| hull-d | ship_suitability | ×1.15 | Excellent fit (speculative — not flyable yet) |
+| hull-d | ship_suitability | ×1.15 | Excellent fit (speculative, not flyable yet) |
 | hull-d | freight | ×1.40 | Very strong freight bonus |
 | hull-d | stop_density | ×1.35 | Multiple stops hurt severely |
 | hull-d | fragmentation | ×1.25 | Fragmented routes very costly |
-| hull-e | ship_suitability | ×1.20 | Best fit score (speculative — not flyable yet) |
+| hull-e | ship_suitability | ×1.20 | Best fit score (speculative, not flyable yet) |
 | hull-e | freight | ×1.60 | Strongest freight bonus in the fleet |
 | hull-e | stop_density | ×1.50 | Multiple stops extremely costly |
 | hull-e | fragmentation | ×1.40 | Fragmented routes catastrophically costly |
-| merchantman | ship_suitability | ×1.20 | Excellent fit (speculative — not flyable yet) |
+| merchantman | ship_suitability | ×1.20 | Excellent fit (speculative, not flyable yet) |
 | merchantman | freight | ×1.20 | Strong freight bonus |
 | merchantman | destination_overlap | ×1.10 | Overlapping destinations score better |
 
@@ -128,13 +128,13 @@ Multipliers from `scoring_config.json`. > 1.0 amplifies, < 1.0 dampens.
 
 ### Hull-B (512 SCU)
 
-The Covalex orbital chain specialist. External spindle cargo rewards clean route stacking — each extra contract from the same pickup scores higher here than on any other ship. The `cargo_panel_clarity` bonus (×1.15) rewards having a readable, consistent mission set.
+The Covalex orbital chain specialist. External spindle cargo rewards clean route stacking: each extra contract from the same pickup scores higher here than on any other ship. The `cargo_panel_clarity` bonus (×1.15) rewards having a readable, consistent mission set.
 
-**Cargo panel assignment**: The Hull-B has eight external cargo panels (top, bottom, port, starboard, front, back — plus the forward/aft halves of the port and starboard sides). Assign each delivery destination its own panel or panel section before loading. When Panel A is "Baijini Point" and Panel B is "Shopp-L4", unloading is fast and clean. Fragmented routes that mix cargo from multiple destinations per panel lose this advantage entirely — this is why fragmentation hits harder on the Hull-B than any other ship.
+**Cargo panel assignment**: The Hull-B has eight external cargo panels (top, bottom, port, starboard, front, back, plus the forward/aft halves of the port and starboard sides). Assign each delivery destination its own panel or panel section before loading. When Panel A is "Baijini Point" and Panel B is "Shopp-L4", unloading is fast and clean. Fragmented routes that mix cargo from multiple destinations per panel lose this advantage entirely. This is why fragmentation hits harder on the Hull-B than any other ship.
 
 **Best for**: Covalex Member rank through Experienced. Same-pickup stacking at Everus Harbor. All-orbital routes.
 
-**Avoid**: Atmosphere deliveries when loaded. Fragmented multi-stop sets — the fragmentation multiplier makes them score worse than they would on any other ship.
+**Avoid**: Atmosphere deliveries when loaded. Fragmented multi-stop sets: the fragmentation multiplier makes them score worse than they would on any other ship.
 
 **Covalex rank tip**: Hull-B is the sweet spot ship for Member rank (rank 4). Use it from Member through Experienced (rank 5).
 
@@ -142,7 +142,7 @@ The Covalex orbital chain specialist. External spindle cargo rewards clean route
 
 ### Hull-C (4608 SCU)
 
-Required for Covalex Senior bulk rate contracts. Cannot land while loaded — station docking only. The stop density multiplier (×1.20) means every extra delivery destination costs more than on any other ship.
+Required for Covalex Senior bulk rate contracts. Cannot land while loaded: station docking only. The stop density multiplier (×1.20) means every extra delivery destination costs more than on any other ship.
 
 **Best for**: Covalex Senior and Master. Lagrange bulk rate hauls. Large volume to one or two destinations.
 
@@ -154,7 +154,7 @@ Required for Covalex Senior bulk rate contracts. Cannot land while loaded — st
 
 Fast medium freighter. The dead-leg modifier (×0.90) makes it the best ship in the fleet for routes where you might fly empty to the pickup. Long-session capable.
 
-**Cargo layout — quadrant assignment**: The Hermes has two long internal side grids. Place one or two 2-SCU personal storage boxes as a physical divider midway along each side to create four quadrants — forward port, aft port, forward starboard, aft starboard. Assign one destination per quadrant before loading. This gives you clean, fast unloading at each stop without sorting through mixed cargo.
+**Cargo layout: quadrant assignment**: The Hermes has two long internal side grids. Place one or two 2-SCU personal storage boxes as a physical divider midway along each side to create four quadrants: forward port, aft port, forward starboard, aft starboard. Assign one destination per quadrant before loading. This gives you clean, fast unloading at each stop without sorting through mixed cargo.
 
 **Best for**: Routes with some contested space. Covalex Junior through Member. Sessions with likely dead-legs. Up to four well-separated destinations.
 
@@ -174,7 +174,7 @@ Station-to-station freight specialist with external pods. Good fit for orbital r
 
 **Best for**: Covalex Junior through Member. Orbital station runs. Missions that stay in space.
 
-**Avoid**: Atmosphere deliveries — limited atmospheric capability.
+**Avoid**: Atmosphere deliveries. Limited atmospheric capability.
 
 ---
 
@@ -224,7 +224,7 @@ Xi'an-designed freighter. Good all-rounder with moderate atmosphere benefit and 
 
 **Best for**: Covalex Member through Experienced. Routes with some atmosphere stops.
 
-**Note**: Xi'an grav-lev cargo handling may interact differently with human freight elevators — verify behavior in Alpha 4.8.0.
+**Note**: Xi'an grav-lev cargo handling may interact differently with human freight elevators. Verify behavior in Alpha 4.8.0.
 
 ---
 
@@ -234,7 +234,7 @@ Armored cargo juggernaut (flyable since Alpha 4.8.0). Excellent for single-desti
 
 **Best for**: Single-destination bulk cargo in dangerous space.
 
-**Avoid**: Any route with more than one delivery destination — the stop density penalty is severe.
+**Avoid**: Any route with more than one delivery destination. The stop density penalty is severe.
 
 ---
 
@@ -262,25 +262,25 @@ Primary role is fuel collection. Use for cargo only when the primary role is fue
 
 ---
 
-### Galaxy (576 SCU) — NOT YET FLYABLE
+### Galaxy (576 SCU): NOT YET FLYABLE
 
-Modular: cargo (512 SCU), med-bay, or refinery. Scoring modifiers are speculative — update after live release.
-
----
-
-### Banu Merchantman (2880 SCU) — NOT YET FLYABLE
-
-Most anticipated community hauling ship. Internal market bays. Scoring modifiers are speculative — update after live release.
+Modular: cargo (512 SCU), med-bay, or refinery. Scoring modifiers are speculative. Update after live release.
 
 ---
 
-### Hull-D (6912 SCU) — NOT YET FLYABLE
+### Banu Merchantman (2880 SCU): NOT YET FLYABLE
+
+Most anticipated community hauling ship. Internal market bays. Scoring modifiers are speculative. Update after live release.
+
+---
+
+### Hull-D (6912 SCU): NOT YET FLYABLE
 
 Capital bulk hauler. Designed for Covalex Master interstellar bulk contracts. Scoring modifiers are speculative.
 
 ---
 
-### Hull-E (TBC SCU) — NOT YET FLYABLE
+### Hull-E (TBC SCU): NOT YET FLYABLE
 
 Largest Hull series ship. SCU post-rebalance not yet published. Scoring modifiers are speculative.
 

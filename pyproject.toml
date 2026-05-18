@@ -4,7 +4,7 @@ build-backend = "setuptools.backends.legacy:build"
 
 [project]
 name = "apeirogon-logistics"
-version = "0.41.6"
+version = "0.41.7"
 description = "Deterministic operational intelligence for Star Citizen hauling"
 requires-python = ">=3.10"
 license = {text = "CC BY-NC 4.0"}

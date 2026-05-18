@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.41.7: CI Workflow Working Directory Fix
+
+Both GitHub Actions workflows (regression.yml and validation.yml) were failing because they ran python tools/ and pytest tests/ from the repo root, but all tooling lives under developer/. Added defaults: run: working-directory: developer to both jobs. Also updated the pip install step in validation.yml to reference ../requirements-dev.txt since that file sits at the repo root.
+
+---
+
 ## Version 0.41.6: Scoring Instruction Accuracy Fixes
 
 Fixed two misleading entries in the scoring instruction blocks across all seven SETUP files (Claude, ChatGPT, Gemini, Copilot, Perplexity, LM Studio, Other). Changed "Covalex issuer: +9 extra for alignment" to "Covalex issuer alignment: +9", removing "extra" which falsely implied a second additive bonus. Removed the "(x1.05 for Hull-B)" notation from the freight handling line since the effective value rounds to the same integer as the base, and the multiplier is already covered in the SHIP ADJUSTMENTS section. Findings from full project accuracy audit.

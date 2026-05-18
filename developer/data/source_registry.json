@@ -346,6 +346,12 @@
       "notes": "Reframed Option B in SETUP_CHATGPT.md to cover no-project and mobile app users, not just free accounts. Added scoring_config.json paste step for sessions without persistent file uploads.",
       "source_id": "apeirogon_0_41_2_chatgpt_option_b_fix",
       "trust_level": "internal_derived"
+    },
+    {
+      "name": "Apeirogon Logistics 0.41.7 CI workflow working directory fix",
+      "notes": "Both GitHub Actions workflows (regression.yml and validation.yml) were failing because they ran tools and tests from the repo root. Added defaults: run: working-directory: developer to both jobs. Updated pip install in validation.yml to use ../requirements-dev.txt.",
+      "source_id": "apeirogon_0_41_7_ci_workflow_working_directory_fix",
+      "trust_level": "internal_derived"
     }
   ]
 }

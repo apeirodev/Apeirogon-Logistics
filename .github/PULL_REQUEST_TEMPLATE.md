@@ -38,7 +38,7 @@ Patch:
 
 <!-- What did you do to verify this change? -->
 
-- [ ] Ran `python -m pytest tests/` — all tests pass
+- [ ] Ran `python -m pytest tests/` and all tests pass
 - [ ] Ran the affected tool manually with a known input and verified output shape
 - [ ] Checked `deterministic_hash` reproduces on replay (for scoring changes)
 

@@ -1,0 +1,18 @@
+{
+  "dataset_name": "phase23a_telemetry_variance_models",
+  "generated_at": "2026-05-17T00:19:13Z",
+  "variance_dimensions": {
+    "variance_by_patch_version": {},
+    "variance_by_server_quality": {},
+    "variance_by_hauling_session_duration": {},
+    "variance_by_stop_density": {},
+    "variance_by_atmosphere_burden": {},
+    "variance_by_freight_elevator_responsiveness": {}
+  },
+  "runtime_dependencies": [
+    "patch_cadence",
+    "server_performance_variability",
+    "freight_elevator_instability",
+    "mission_pool_churn"
+  ]
+}

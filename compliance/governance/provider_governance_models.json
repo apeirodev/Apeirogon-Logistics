@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "controls": [
+    "provider_profile",
+    "risk_classification",
+    "capability_detection",
+    "fallback_model",
+    "privacy_notes",
+    "cost_notes"
+  ]
+}

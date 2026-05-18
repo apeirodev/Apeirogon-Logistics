@@ -1,0 +1,38 @@
+{
+  "dataset_name": "star_citizen_hauling_phase8_historical_patterns",
+  "generated_at": "2026-05-16T23:56:18Z",
+  "tracking_dimensions": {
+    "pickup_frequency_tracking": {
+      "description": "Track recurring pickup hubs over time.",
+      "measurement": "relative_frequency"
+    },
+    "destination_frequency_tracking": {
+      "description": "Track recurring delivery destinations.",
+      "measurement": "relative_frequency"
+    },
+    "mission_chain_recurrence": {
+      "description": "Track recurring mission-chain structures.",
+      "measurement": "chain_recurrence_score"
+    },
+    "orbital_loop_recurrence": {
+      "description": "Track recurring orbital-loop chains.",
+      "measurement": "loop_recurrence_score"
+    },
+    "atmosphere_heavy_route_recurrence": {
+      "description": "Track repeated atmosphere-heavy mission pools.",
+      "measurement": "atmosphere_burden_frequency"
+    },
+    "dead_leg_recurrence": {
+      "description": "Track repeated dead-leg route generation.",
+      "measurement": "dead_leg_probability"
+    },
+    "freight_elevator_heavy_recurrence": {
+      "description": "Track repeated freight-intensive mission structures.",
+      "measurement": "freight_complexity_frequency"
+    },
+    "mission_density_over_time": {
+      "description": "Track route density changes over time.",
+      "measurement": "density_delta"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "dataset_name": "star_citizen_hauling_phase7_chain_models",
+  "generated_at": "2026-05-16T23:55:39Z",
+  "chain_logic": {
+    "multi_mission_stacking": {
+      "priority": "maximum",
+      "description": "Prefer missions sharing identical pickup origins."
+    },
+    "route_continuation_probability": {
+      "priority": "high",
+      "description": "Prefer routes likely to generate follow-on missions."
+    },
+    "loop_preservation": {
+      "priority": "high",
+      "description": "Avoid breaking efficient orbital loops."
+    },
+    "regional_chaining": {
+      "priority": "high",
+      "description": "Cluster missions within shared planetary regions."
+    },
+    "return_path_optimization": {
+      "priority": "medium",
+      "description": "Preserve efficient return paths to mission hubs."
+    },
+    "route_density_maximization": {
+      "priority": "high",
+      "description": "Increase delivery density per traversal segment."
+    },
+    "rep_hour_optimization": {
+      "priority": "maximum",
+      "description": "Prioritize reputation throughput over raw payout."
+    }
+  }
+}

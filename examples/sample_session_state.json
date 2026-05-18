@@ -1,0 +1,11 @@
+{
+  "session_id": "example_session",
+  "ship_used": "Hull-B",
+  "issuer": "Covalex",
+  "accepted_missions": [
+    "mission_001"
+  ],
+  "unresolved_fields": [
+    "distance"
+  ]
+}

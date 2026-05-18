@@ -1,0 +1,30 @@
+{
+  "dataset_name": "star_citizen_hauling_phase13_autonomous_agents",
+  "generated_at": "2026-05-16T23:59:49Z",
+  "agent_models": {
+    "autonomous_mission_prioritization": {
+      "classification": "adaptive_probabilistic_agent"
+    },
+    "autonomous_route_selection": {
+      "classification": "adaptive_probabilistic_agent"
+    },
+    "autonomous_dead_leg_avoidance": {
+      "classification": "adaptive_probabilistic_agent"
+    },
+    "autonomous_congestion_adaptation": {
+      "classification": "adaptive_probabilistic_agent"
+    },
+    "autonomous_orbital_loop_maintenance": {
+      "classification": "adaptive_probabilistic_agent"
+    },
+    "autonomous_convoy_participation": {
+      "classification": "adaptive_probabilistic_agent"
+    },
+    "autonomous_risk_withdrawal": {
+      "classification": "adaptive_probabilistic_agent"
+    },
+    "autonomous_recovery_behavior": {
+      "classification": "adaptive_probabilistic_agent"
+    }
+  }
+}

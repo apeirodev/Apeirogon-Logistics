@@ -1,0 +1,183 @@
+{
+  "dataset_name": "star_citizen_hauling_phase5_quantum_drives",
+  "phase": "Phase 5 - Quantum Drive Modeling",
+  "generated_at": "2026-05-16T23:54:20Z",
+  "record_count": 5,
+  "records": [
+    {
+      "drive_id": "PONTES",
+      "canonical_name": "Pontes",
+      "manufacturer": "Wakame",
+      "sourced_facts": {
+        "drive_class": "civilian",
+        "size": 2,
+        "compatible_ships": [
+          "MISC_HULL_B",
+          "MISC_FREELANCER_MAX"
+        ]
+      },
+      "derived_runtime_characteristics": {
+        "speed_class": "fast",
+        "acceleration_characteristics": "high",
+        "spool_characteristics": "moderate",
+        "calibration_characteristics": "fast",
+        "fuel_efficiency": "moderate",
+        "operational_range_implications": "balanced_multi_stop",
+        "rep_grind_profile": "rapid_multi_stop"
+      },
+      "runtime_constraints": [
+        "QT time depends on ship mass and cargo state",
+        "Traversal varies by server conditions",
+        "Patch balance changes can materially alter performance"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase5_quantum_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced and derived traversal characteristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "drive_id": "TS2",
+      "canonical_name": "TS-2",
+      "manufacturer": "Wei-Tek",
+      "sourced_facts": {
+        "drive_class": "industrial",
+        "size": 2,
+        "compatible_ships": [
+          "MISC_HULL_B",
+          "RSI_CONSTELLATION_TAURUS"
+        ]
+      },
+      "derived_runtime_characteristics": {
+        "speed_class": "moderate",
+        "acceleration_characteristics": "moderate",
+        "spool_characteristics": "slow",
+        "calibration_characteristics": "moderate",
+        "fuel_efficiency": "high",
+        "operational_range_implications": "long_range_bulk",
+        "rep_grind_profile": "fuel_efficiency"
+      },
+      "runtime_constraints": [
+        "QT time depends on ship mass and cargo state",
+        "Traversal varies by server conditions",
+        "Patch balance changes can materially alter performance"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase5_quantum_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced and derived traversal characteristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "drive_id": "XL1",
+      "canonical_name": "XL-1",
+      "manufacturer": "Wei-Tek",
+      "sourced_facts": {
+        "drive_class": "military",
+        "size": 2,
+        "compatible_ships": [
+          "CRUSADER_C2_HERCULES",
+          "RSI_CONSTELLATION_TAURUS"
+        ]
+      },
+      "derived_runtime_characteristics": {
+        "speed_class": "very_fast",
+        "acceleration_characteristics": "high",
+        "spool_characteristics": "fast",
+        "calibration_characteristics": "fast",
+        "fuel_efficiency": "low",
+        "operational_range_implications": "speed_priority",
+        "rep_grind_profile": "maximum_route_density"
+      },
+      "runtime_constraints": [
+        "QT time depends on ship mass and cargo state",
+        "Traversal varies by server conditions",
+        "Patch balance changes can materially alter performance"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase5_quantum_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced and derived traversal characteristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "drive_id": "VOYAGE",
+      "canonical_name": "Voyage",
+      "manufacturer": "ArcCorp",
+      "sourced_facts": {
+        "drive_class": "civilian",
+        "size": 2,
+        "compatible_ships": [
+          "MISC_FREELANCER_MAX",
+          "MISC_HULL_B"
+        ]
+      },
+      "derived_runtime_characteristics": {
+        "speed_class": "moderate_fast",
+        "acceleration_characteristics": "moderate",
+        "spool_characteristics": "fast",
+        "calibration_characteristics": "fast",
+        "fuel_efficiency": "moderate_high",
+        "operational_range_implications": "generalist",
+        "rep_grind_profile": "orbital_loops"
+      },
+      "runtime_constraints": [
+        "QT time depends on ship mass and cargo state",
+        "Traversal varies by server conditions",
+        "Patch balance changes can materially alter performance"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase5_quantum_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced and derived traversal characteristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "drive_id": "EREBUS",
+      "canonical_name": "Erebus",
+      "manufacturer": "Juno Starwerk",
+      "sourced_facts": {
+        "drive_class": "industrial",
+        "size": 3,
+        "compatible_ships": [
+          "DRAKE_CATERPILLAR",
+          "CRUSADER_C2_HERCULES"
+        ]
+      },
+      "derived_runtime_characteristics": {
+        "speed_class": "slow",
+        "acceleration_characteristics": "slow",
+        "spool_characteristics": "slow",
+        "calibration_characteristics": "slow",
+        "fuel_efficiency": "very_high",
+        "operational_range_implications": "heavy_bulk_logistics",
+        "rep_grind_profile": "bulk_station_chain"
+      },
+      "runtime_constraints": [
+        "QT time depends on ship mass and cargo state",
+        "Traversal varies by server conditions",
+        "Patch balance changes can materially alter performance"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase5_quantum_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced and derived traversal characteristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    }
+  ]
+}

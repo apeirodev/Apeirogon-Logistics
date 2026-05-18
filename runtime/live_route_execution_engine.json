@@ -1,0 +1,27 @@
+{
+  "dataset_name": "star_citizen_hauling_phase10_execution_engine",
+  "generated_at": "2026-05-16T23:57:32Z",
+  "execution_pipeline": [
+    "mission_acquisition",
+    "cargo_acquisition",
+    "loading_state",
+    "departure_state",
+    "transit_state",
+    "arrival_state",
+    "unloading_state",
+    "mission_completion",
+    "mission_abandonment",
+    "mission_failure",
+    "reroute_conditions"
+  ],
+  "runtime_execution_dependencies": [
+    "current_mission_state",
+    "cargo_state",
+    "server_state",
+    "patch_behavior",
+    "freight_elevator_behavior",
+    "player_interruption_events",
+    "ship_damage_state",
+    "route_interruption_events"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "dataset_name": "star_citizen_hauling_phase15_geopolitical_analysis",
+  "generated_at": "2026-05-17T00:01:14Z",
+  "analysis_models": {
+    "economic_warfare_corridor_analysis": {
+      "classification": "geopolitical_analysis_model"
+    },
+    "strategic_embargo_simulation": {
+      "classification": "geopolitical_analysis_model"
+    },
+    "convoy_interdiction_campaigns": {
+      "classification": "geopolitical_analysis_model"
+    },
+    "logistics_attrition_modeling": {
+      "classification": "geopolitical_analysis_model"
+    },
+    "alliance_fragmentation_pressure": {
+      "classification": "geopolitical_analysis_model"
+    },
+    "strategic_scarcity_propagation": {
+      "classification": "geopolitical_analysis_model"
+    },
+    "regional_destabilization_forecasting": {
+      "classification": "geopolitical_analysis_model"
+    }
+  }
+}

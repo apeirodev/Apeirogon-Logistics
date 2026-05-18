@@ -1,0 +1,8 @@
+{
+  "workflow": "sample_deterministic_only_workflow",
+  "confidence": "medium",
+  "unresolved_fields": [
+    "ocr_partial_text"
+  ],
+  "patch_version": "UNRESOLVED"
+}

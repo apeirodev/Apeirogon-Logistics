@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Operational Intelligence Log",
+  "type": "object",
+  "required": [
+    "intelligence_event_id",
+    "timestamp",
+    "event_type"
+  ],
+  "properties": {
+    "intelligence_event_id": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "patch_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ship": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "route_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observed_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "predicted_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "variance": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "confidence_score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "sample_size": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "verified_by_user": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

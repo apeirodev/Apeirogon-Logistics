@@ -1,0 +1,20 @@
+{
+  "dataset_name": "phase22_observed_route_quality",
+  "generated_at": "2026-05-17T00:15:44Z",
+  "systems": {
+    "observed_high_value_route_chains": {},
+    "observed_unstable_mission_chains": {},
+    "observed_congestion_heavy_hubs": {},
+    "observed_efficient_orbital_loops": {},
+    "observed_atmosphere_heavy_burden_routes": {},
+    "observed_freight_friction_hotspots": {}
+  },
+  "derived_metrics": {
+    "prediction_accuracy_score": "observational_runtime_metric",
+    "operational_heuristic_drift": "observational_runtime_metric",
+    "route_score_stability": "observational_runtime_metric",
+    "observed_route_efficiency_variance": "observational_runtime_metric",
+    "observed_unloading_variance": "observational_runtime_metric",
+    "telemetry_confidence_score": "observational_runtime_metric"
+  }
+}

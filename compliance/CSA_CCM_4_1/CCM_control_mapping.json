@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "framework": "CSA CCM v4.1.0",
+  "mapping_basis": "Architecture and operational alignment to CCM domains, using uploaded CCM/CAIQ bundle as reference.",
+  "mappings": {
+    "telemetry_ingestion": [
+      "DSP",
+      "LOG",
+      "GRC",
+      "STA"
+    ],
+    "OCR_workflows": [
+      "AIS",
+      "DSP",
+      "TVM",
+      "LOG"
+    ],
+    "provider_abstraction": [
+      "IPY",
+      "STA",
+      "GRC",
+      "DSP"
+    ],
+    "local_runtimes": [
+      "AIS",
+      "CCC",
+      "TVM",
+      "IPY"
+    ],
+    "GitHub_governance": [
+      "STA",
+      "CCC",
+      "GRC",
+      "TVM"
+    ],
+    "contributor_workflows": [
+      "STA",
+      "GRC",
+      "LOG"
+    ],
+    "future_addon_contracts": [
+      "AIS",
+      "UEM",
+      "TVM",
+      "CCC"
+    ],
+    "schema_validation": [
+      "AIS",
+      "CCC",
+      "GRC"
+    ],
+    "release_workflows": [
+      "CCC",
+      "STA",
+      "GRC",
+      "LOG"
+    ]
+  },
+  "certification_claim": false
+}

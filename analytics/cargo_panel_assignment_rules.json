@@ -1,0 +1,34 @@
+{
+  "dataset_name": "publicA_cargo_panel_assignment_rules",
+  "generated_at": "2026-05-17T00:41:37Z",
+  "rules": {
+    "panel_occupancy_constraints": {
+      "status": "model_placeholder",
+      "note": "Physical panel limits must be validated per ship and patch."
+    },
+    "destination_grouping_rules": {
+      "constraint_level": "hard",
+      "logic": "Group cargo by delivery destination before optimizing by commodity."
+    },
+    "container_size_awareness": {
+      "constraint_level": "hard",
+      "logic": "Container size and mission packaging should be tracked separately from nominal ship SCU."
+    },
+    "unloading_sequence_optimization": {
+      "constraint_level": "hard",
+      "logic": "Sequence cargo so the next stop is easiest to unload."
+    },
+    "mixed_destination_penalties": {
+      "constraint_level": "hard_penalty",
+      "penalty": "severe"
+    },
+    "cargo_fragmentation_penalties": {
+      "constraint_level": "heuristic_penalty",
+      "penalty": "scales_with_stop_count_and_destination_count"
+    },
+    "practical_human_operator_handling_limits": {
+      "constraint_level": "heuristic",
+      "note": "Operational complexity should be minimized even when theoretical cargo capacity permits more stacking."
+    }
+  }
+}

@@ -1,0 +1,4359 @@
+{
+  "dataset_name": "star_citizen_hauling_phase3_penalties",
+  "phase": "Phase 3 - Operational Penalty Modeling",
+  "generated_at": "2026-05-16T23:51:14Z",
+  "record_count": 75,
+  "scope": "Derived hauling penalties and operational classifications for Stanton hauling.",
+  "records": [
+    {
+      "location_id": "STANTON",
+      "canonical_name": "Stanton",
+      "entity_type": "system",
+      "operational_classification": {
+        "category": "system",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": null,
+        "orbital": null,
+        "requires_spline": null
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 1,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 5
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 5,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_STAR",
+      "canonical_name": "Stanton",
+      "entity_type": "star",
+      "operational_classification": {
+        "category": "star",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": null,
+        "orbital": null,
+        "requires_spline": null
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 1,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 5
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 5,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON",
+      "canonical_name": "Hurston",
+      "entity_type": "planet",
+      "operational_classification": {
+        "category": "planet",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 5
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 3,
+        "dead_leg_risk": 5,
+        "stop_complexity": 7,
+        "cargo_turnaround_complexity": 7,
+        "atmospheric_burden": 9,
+        "expected_rep_efficiency": 3
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRUSADER",
+      "canonical_name": "Crusader",
+      "entity_type": "planet",
+      "operational_classification": {
+        "category": "planet",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 5
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 3,
+        "dead_leg_risk": 5,
+        "stop_complexity": 7,
+        "cargo_turnaround_complexity": 7,
+        "atmospheric_burden": 9,
+        "expected_rep_efficiency": 3
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARCCORP",
+      "canonical_name": "ArcCorp",
+      "entity_type": "planet",
+      "operational_classification": {
+        "category": "planet",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 5
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 3,
+        "dead_leg_risk": 5,
+        "stop_complexity": 7,
+        "cargo_turnaround_complexity": 7,
+        "atmospheric_burden": 9,
+        "expected_rep_efficiency": 3
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MICROTECH",
+      "canonical_name": "microTech",
+      "entity_type": "planet",
+      "operational_classification": {
+        "category": "planet",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 5
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 3,
+        "dead_leg_risk": 5,
+        "stop_complexity": 7,
+        "cargo_turnaround_complexity": 7,
+        "atmospheric_burden": 9,
+        "expected_rep_efficiency": 3
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_LYRIA",
+      "canonical_name": "Lyria",
+      "entity_type": "moon",
+      "operational_classification": {
+        "category": "moon",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 4
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 4,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_WALA",
+      "canonical_name": "Wala",
+      "entity_type": "moon",
+      "operational_classification": {
+        "category": "moon",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 4
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 4,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_CELLIN",
+      "canonical_name": "Cellin",
+      "entity_type": "moon",
+      "operational_classification": {
+        "category": "moon",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 4
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 4,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_DAYMAR",
+      "canonical_name": "Daymar",
+      "entity_type": "moon",
+      "operational_classification": {
+        "category": "moon",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 4
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 4,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_YELA",
+      "canonical_name": "Yela",
+      "entity_type": "moon",
+      "operational_classification": {
+        "category": "moon",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 4
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 4,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ARIAL",
+      "canonical_name": "Arial",
+      "entity_type": "moon",
+      "operational_classification": {
+        "category": "moon",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 4
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 4,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ABERDEEN",
+      "canonical_name": "Aberdeen",
+      "entity_type": "moon",
+      "operational_classification": {
+        "category": "moon",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 4
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 4,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ITA",
+      "canonical_name": "Ita",
+      "entity_type": "moon",
+      "operational_classification": {
+        "category": "moon",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 4
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 4,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_MAGDA",
+      "canonical_name": "Magda",
+      "entity_type": "moon",
+      "operational_classification": {
+        "category": "moon",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 4
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 4,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_CALLIOPE",
+      "canonical_name": "Calliope",
+      "entity_type": "moon",
+      "operational_classification": {
+        "category": "moon",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 4
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 4,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_CLIO",
+      "canonical_name": "Clio",
+      "entity_type": "moon",
+      "operational_classification": {
+        "category": "moon",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 4
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 4,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_EUTERPE",
+      "canonical_name": "Euterpe",
+      "entity_type": "moon",
+      "operational_classification": {
+        "category": "moon",
+        "route_role": "general"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": "context_dependent"
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 4
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 5,
+        "dead_leg_risk": 4,
+        "stop_complexity": 5,
+        "cargo_turnaround_complexity": 5,
+        "atmospheric_burden": 5,
+        "expected_rep_efficiency": 5
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_LORVILLE",
+      "canonical_name": "Lorville",
+      "entity_type": "city_landing_zone",
+      "operational_classification": {
+        "category": "city_landing_zone",
+        "route_role": "major_city"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 4,
+        "docking_overhead": 3,
+        "hangar_traversal": 3,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 5,
+        "armistice_traversal": 3,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 3
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 4,
+        "dead_leg_risk": 3,
+        "stop_complexity": 7,
+        "cargo_turnaround_complexity": 7,
+        "atmospheric_burden": 9,
+        "expected_rep_efficiency": 4
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_EVERUS_HARBOR",
+      "canonical_name": "Everus Harbor",
+      "entity_type": "orbital_station",
+      "operational_classification": {
+        "category": "orbital_station",
+        "route_role": "orbital_hub"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 3,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 5,
+        "armistice_traversal": 3,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 1
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 9,
+        "dead_leg_risk": 1,
+        "stop_complexity": 2,
+        "cargo_turnaround_complexity": 2,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 9
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_AREA18",
+      "canonical_name": "Area18",
+      "entity_type": "city_landing_zone",
+      "operational_classification": {
+        "category": "city_landing_zone",
+        "route_role": "major_city"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 4,
+        "docking_overhead": 3,
+        "hangar_traversal": 3,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 5,
+        "armistice_traversal": 3,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 3
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 4,
+        "dead_leg_risk": 3,
+        "stop_complexity": 7,
+        "cargo_turnaround_complexity": 7,
+        "atmospheric_burden": 9,
+        "expected_rep_efficiency": 4
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_BAIJINI_POINT",
+      "canonical_name": "Baijini Point",
+      "entity_type": "orbital_station",
+      "operational_classification": {
+        "category": "orbital_station",
+        "route_role": "orbital_hub"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 3,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 5,
+        "armistice_traversal": 3,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 1
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 9,
+        "dead_leg_risk": 1,
+        "stop_complexity": 2,
+        "cargo_turnaround_complexity": 2,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 9
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_NEW_BABBAGE",
+      "canonical_name": "New Babbage",
+      "entity_type": "city_landing_zone",
+      "operational_classification": {
+        "category": "city_landing_zone",
+        "route_role": "major_city"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 4,
+        "docking_overhead": 3,
+        "hangar_traversal": 3,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 5,
+        "armistice_traversal": 3,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 3
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 4,
+        "dead_leg_risk": 3,
+        "stop_complexity": 7,
+        "cargo_turnaround_complexity": 7,
+        "atmospheric_burden": 9,
+        "expected_rep_efficiency": 4
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_PORT_TRESSLER",
+      "canonical_name": "Port Tressler",
+      "entity_type": "orbital_station",
+      "operational_classification": {
+        "category": "orbital_station",
+        "route_role": "orbital_hub"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 3,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 5,
+        "armistice_traversal": 3,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 1
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 9,
+        "dead_leg_risk": 1,
+        "stop_complexity": 2,
+        "cargo_turnaround_complexity": 2,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 9
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_ORISON",
+      "canonical_name": "Orison",
+      "entity_type": "city_landing_zone",
+      "operational_classification": {
+        "category": "city_landing_zone",
+        "route_role": "major_city"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 4,
+        "docking_overhead": 3,
+        "hangar_traversal": 3,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 5,
+        "armistice_traversal": 3,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 3
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 4,
+        "dead_leg_risk": 3,
+        "stop_complexity": 7,
+        "cargo_turnaround_complexity": 7,
+        "atmospheric_burden": 9,
+        "expected_rep_efficiency": 4
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_SERAPHIM_STATION",
+      "canonical_name": "Seraphim Station",
+      "entity_type": "orbital_station",
+      "operational_classification": {
+        "category": "orbital_station",
+        "route_role": "orbital_hub"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 3,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 5,
+        "armistice_traversal": 3,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 1
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 9,
+        "dead_leg_risk": 1,
+        "stop_complexity": 2,
+        "cargo_turnaround_complexity": 2,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 9
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_LYRIA_SAL2",
+      "canonical_name": "Shubin Mining Facility SAL-2",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_LYRIA_SAL5",
+      "canonical_name": "Shubin Mining Facility SAL-5",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_WALA_AREA045",
+      "canonical_name": "ArcCorp Mining Area 045",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_WALA_AREA048",
+      "canonical_name": "ArcCorp Mining Area 048",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_WALA_AREA056",
+      "canonical_name": "ArcCorp Mining Area 056",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_WALA_AREA061",
+      "canonical_name": "ArcCorp Mining Area 061",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_CELLIN_HICKES",
+      "canonical_name": "Hickes Research Outpost",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_CELLIN_TERRA_MILLS",
+      "canonical_name": "Terra Mills HydroFarm",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_DAYMAR_AREA141",
+      "canonical_name": "ArcCorp Mining Area 141",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_DAYMAR_SCD1",
+      "canonical_name": "Shubin Mining Facility SCD-1",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_YELA_AREA157",
+      "canonical_name": "ArcCorp Mining Area 157",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_YELA_DEAKINS",
+      "canonical_name": "Deakins Research Outpost",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_HDMS_EDMOND",
+      "canonical_name": "HDMS-Edmond",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_HDMS_HADLEY",
+      "canonical_name": "HDMS-Hadley",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_HDMS_OPAREI",
+      "canonical_name": "HDMS-Oparei",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_HDMS_PINEWOOD",
+      "canonical_name": "HDMS-Pinewood",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_HDMS_STANHOPE",
+      "canonical_name": "HDMS-Stanhope",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_HDMS_THEDUS",
+      "canonical_name": "HDMS-Thedus",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ARIAL_BEZDEK",
+      "canonical_name": "HDMS-Bezdek",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ARIAL_LATHAN",
+      "canonical_name": "HDMS-Lathan",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ABERDEEN_ANDERSON",
+      "canonical_name": "HDMS-Anderson",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ABERDEEN_NORGAARD",
+      "canonical_name": "HDMS-Norgaard",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ITA_RYDER",
+      "canonical_name": "HDMS-Ryder",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ITA_WOODRUFF",
+      "canonical_name": "HDMS-Woodruff",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HURSTON_MAGDA_PERLMAN",
+      "canonical_name": "HDMS-Perlman",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_SM018",
+      "canonical_name": "Shubin Mining Facility SM0-18",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_SM022",
+      "canonical_name": "Shubin Mining Facility SM0-22",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_CALLIOPE_SMCA6",
+      "canonical_name": "Shubin Mining Facility SMCa-6",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_CALLIOPE_SMCA8",
+      "canonical_name": "Shubin Mining Facility SMCa-8",
+      "entity_type": "outpost",
+      "operational_classification": {
+        "category": "outpost",
+        "route_role": "surface_outpost"
+      },
+      "sourced_facts": {
+        "surface": true,
+        "orbital": false,
+        "requires_spline": true
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 5,
+        "atmosphere_exit": 5,
+        "spline_routing": 4,
+        "tram_transit": 0,
+        "docking_overhead": 3,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 4,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 7,
+        "dead_leg_operational_risk": 8
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 2,
+        "dead_leg_risk": 8,
+        "stop_complexity": 6,
+        "cargo_turnaround_complexity": 6,
+        "atmospheric_burden": 7,
+        "expected_rep_efficiency": 2
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRU_L1",
+      "canonical_name": "CRU-L1",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRU_L2",
+      "canonical_name": "CRU-L2",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRU_L3",
+      "canonical_name": "CRU-L3",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRU_L4",
+      "canonical_name": "CRU-L4",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_CRU_L5",
+      "canonical_name": "CRU-L5",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HUR_L1",
+      "canonical_name": "HUR-L1",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HUR_L2",
+      "canonical_name": "HUR-L2",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HUR_L3",
+      "canonical_name": "HUR-L3",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HUR_L4",
+      "canonical_name": "HUR-L4",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_HUR_L5",
+      "canonical_name": "HUR-L5",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARC_L1",
+      "canonical_name": "ARC-L1",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARC_L2",
+      "canonical_name": "ARC-L2",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARC_L3",
+      "canonical_name": "ARC-L3",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARC_L4",
+      "canonical_name": "ARC-L4",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_ARC_L5",
+      "canonical_name": "ARC-L5",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MIC_L1",
+      "canonical_name": "MIC-L1",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MIC_L2",
+      "canonical_name": "MIC-L2",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MIC_L3",
+      "canonical_name": "MIC-L3",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MIC_L4",
+      "canonical_name": "MIC-L4",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    },
+    {
+      "location_id": "STANTON_MIC_L5",
+      "canonical_name": "MIC-L5",
+      "entity_type": "lagrange_point",
+      "operational_classification": {
+        "category": "lagrange_point",
+        "route_role": "lagrange_route_anchor"
+      },
+      "sourced_facts": {
+        "surface": false,
+        "orbital": true,
+        "requires_spline": false
+      },
+      "derived_penalties": {
+        "atmosphere_entry": 0,
+        "atmosphere_exit": 0,
+        "spline_routing": 0,
+        "tram_transit": 0,
+        "docking_overhead": 2,
+        "hangar_traversal": 2,
+        "freight_elevator_interactions": 3,
+        "cargo_deck_access": 2,
+        "station_congestion": 2,
+        "armistice_traversal": 1,
+        "hauling_hostility": 3,
+        "dead_leg_operational_risk": 2
+      },
+      "derived_operational_metrics": {
+        "hauling_efficiency_score": 8,
+        "dead_leg_risk": 2,
+        "stop_complexity": 1,
+        "cargo_turnaround_complexity": 1,
+        "atmospheric_burden": 0,
+        "expected_rep_efficiency": 8
+      },
+      "unresolved_values": [
+        "Current patch-specific freight elevator behaviour",
+        "Current hangar assignment efficiency",
+        "Server-state congestion variability",
+        "Actual live hauling mission density"
+      ],
+      "runtime_dependent_values": [
+        "Server performance",
+        "Freight elevator latency",
+        "Cargo desync",
+        "Quantum drive",
+        "Ship configuration",
+        "Patch-specific bugs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase3_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Operational hauling penalties are derived heuristics unless explicitly sourced later."
+        }
+      ],
+      "validation_status": "derived_operational_heuristics"
+    }
+  ]
+}

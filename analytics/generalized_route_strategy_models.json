@@ -1,0 +1,16 @@
+{
+  "dataset_name": "phase24b_generalized_route_strategy_models",
+  "generated_at": "2026-05-17T00:23:38Z",
+  "strategies": [
+    "issuer_specific_route_optimization",
+    "ship_specific_route_optimization",
+    "atmosphere_minimization",
+    "station_loop_preservation",
+    "dead_leg_suppression",
+    "congestion_avoidance",
+    "freight_elevator_minimization",
+    "route_density_maximization",
+    "practical_fatigue_minimization",
+    "route_sustainability_optimization"
+  ]
+}

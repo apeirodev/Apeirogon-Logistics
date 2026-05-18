@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Star Citizen Hauling Location",
+  "type": "object",
+  "required": [
+    "location_id",
+    "canonical_name",
+    "entity_type",
+    "system",
+    "source_refs",
+    "validation_status"
+  ],
+  "properties": {
+    "location_id": {
+      "type": "string"
+    },
+    "canonical_name": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entity_type": {
+      "type": "string"
+    },
+    "system": {
+      "type": "string"
+    },
+    "parent_location_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hierarchy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "location_class": {
+      "type": "string"
+    },
+    "facts": {
+      "type": "object"
+    },
+    "operational": {
+      "type": "object"
+    },
+    "derived_scores": {
+      "type": "object"
+    },
+    "source_refs": {
+      "type": "array"
+    },
+    "validation_status": {
+      "type": "string"
+    }
+  }
+}

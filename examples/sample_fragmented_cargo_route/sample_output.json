@@ -1,0 +1,8 @@
+{
+  "workflow": "sample_fragmented_cargo_route",
+  "confidence": "medium",
+  "unresolved_fields": [
+    "ocr_partial_text"
+  ],
+  "patch_version": "UNRESOLVED"
+}

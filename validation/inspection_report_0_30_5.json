@@ -1,0 +1,76 @@
+{
+  "authoritative_base": "apeirogon_logistics_0_30_3_completion_phase.zip",
+  "common_defined_functions_before": [
+    "governance_metadata",
+    "load_json",
+    "save_json",
+    "sha256_json"
+  ],
+  "comparison_references": {
+    "0_30_2_productionized_present": true,
+    "0_30_2_revalidated_present": true
+  },
+  "generated_at": "2026-05-17T14:19:20Z",
+  "missing_common_imports_before": [
+    "ensure_metadata",
+    "hash_payload",
+    "validate_metadata"
+  ],
+  "notes": [
+    "0.30.4 is intentionally skipped as abandoned_failed_run.",
+    "0.30.3 is treated as authoritative base."
+  ],
+  "placeholder_hits_before": [
+    {
+      "file": "tools/patch_compatibility_checker.py",
+      "markers": [
+        "placeholder"
+      ]
+    },
+    {
+      "file": "tools/run_route_analysis.py",
+      "markers": [
+        "placeholder"
+      ]
+    },
+    {
+      "file": "tools/validate_governance_metadata.py",
+      "markers": [
+        "placeholder"
+      ]
+    },
+    {
+      "file": "tools/validate_provider_output.py",
+      "markers": [
+        "placeholder"
+      ]
+    }
+  ],
+  "tool_files_before": [
+    "tools/OCR_result_normalizer.py",
+    "tools/check_patch_compatibility.py",
+    "tools/deterministic_scorer.py",
+    "tools/export_session_state.py",
+    "tools/import_telemetry.py",
+    "tools/lib/common.py",
+    "tools/patch_compatibility_checker.py",
+    "tools/provider_output_validator.py",
+    "tools/route_analysis_runner.py",
+    "tools/route_chain_analyzer.py",
+    "tools/run_route_analysis.py",
+    "tools/schema_validator.py",
+    "tools/session_state_manager.py",
+    "tools/telemetry_ingestion_pipeline.py",
+    "tools/telemetry_trust_classifier.py",
+    "tools/user_profile_loader.py",
+    "tools/validate_governance_metadata.py",
+    "tools/validate_provider_output.py"
+  ],
+  "version_before": {
+    "lineage": "0.30.1",
+    "patch_reset_policy": "patch resets on minor increment",
+    "validation_status": "partially_productionized",
+    "version": "0.30.3",
+    "versioning_rule": "semantic_three_level"
+  }
+}

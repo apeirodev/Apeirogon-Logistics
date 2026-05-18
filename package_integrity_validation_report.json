@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-05-17T00:26:14Z",
+  "version_before_finalization": "0.24.0",
+  "package_integrity": {
+    "version_json_present": true,
+    "readme_present": true,
+    "source_registry_present": true,
+    "schema_files": 25,
+    "analytics_files": 86,
+    "runtime_files": 23,
+    "data_files": 9,
+    "markdown_docs": 40
+  },
+  "critical_specialization_checks": {
+    "hull_b_covalex_playbook_present": true,
+    "generalized_hauling_schema_present": true,
+    "ocr_normalization_present": true,
+    "route_scoring_present": true,
+    "telemetry_schema_present": true
+  },
+  "validation_result": "pass_with_known_runtime_uncertainties",
+  "known_residual_risks": [
+    "Runtime QT timing remains drive, server, ship, cargo, and patch dependent.",
+    "OCR remains probabilistic.",
+    "Telemetry remains observational.",
+    "Some ship and issuer operational fields remain heuristic placeholders.",
+    "Patch changes can invalidate operational assumptions."
+  ]
+}

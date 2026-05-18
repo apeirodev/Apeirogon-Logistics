@@ -1,0 +1,72 @@
+{
+  "dataset_name": "star_citizen_hauling_phase7_strategy_profiles",
+  "generated_at": "2026-05-16T23:55:39Z",
+  "profiles": [
+    {
+      "profile_id": "HULLB_COVALEX_REP",
+      "name": "Hull-B Covalex Rep Grinding",
+      "priorities": [
+        "same_pickup_bonus",
+        "orbital_loops",
+        "destination_overlap",
+        "minimal_atmosphere"
+      ],
+      "avoid": [
+        "surface_outpost_deadlegs",
+        "high_stop_density"
+      ]
+    },
+    {
+      "profile_id": "ORBITAL_CHAIN_OPTIMIZATION",
+      "name": "Orbital Chain Optimization",
+      "priorities": [
+        "orbital_station_chains",
+        "Lagrange_loops",
+        "minimal_surface_penalties"
+      ]
+    },
+    {
+      "profile_id": "BULK_HAULING",
+      "name": "Bulk Hauling",
+      "priorities": [
+        "large_single_routes",
+        "fuel_efficiency",
+        "minimal_loading_events"
+      ]
+    },
+    {
+      "profile_id": "LOW_RISK_HAULING",
+      "name": "Low Risk Hauling",
+      "priorities": [
+        "major_hubs",
+        "short_routes",
+        "minimal_deadlegs"
+      ]
+    },
+    {
+      "profile_id": "HIGH_SPEED_CHAINING",
+      "name": "High-Speed Route Chaining",
+      "priorities": [
+        "rapid_multi_stop",
+        "route_density",
+        "fast_recovery"
+      ]
+    },
+    {
+      "profile_id": "ATMOSPHERE_AVOIDANCE",
+      "name": "Atmosphere Avoidance",
+      "priorities": [
+        "orbital_only_routes",
+        "minimal_spline_use"
+      ]
+    },
+    {
+      "profile_id": "DEADLEG_RECOVERY",
+      "name": "Dead-Leg Recovery",
+      "priorities": [
+        "return_path_generation",
+        "high_recovery_efficiency"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-05-17T00:26:14Z",
+  "purpose": "OCR and screenshot ingestion workflows.",
+  "recommended_files": [
+    "runtime/screenshot_ingestion_rules.json",
+    "runtime/OCR_normalization_rules.json",
+    "runtime/mission_extraction_pipeline.json",
+    "analytics/screenshot_batch_processing_models.json",
+    "schema/mission_schema.json"
+  ]
+}

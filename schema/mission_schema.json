@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Star Citizen Hauling Mission",
+  "type": "object",
+  "required": [
+    "mission_id",
+    "pickup_location",
+    "delivery_locations",
+    "cargo"
+  ]
+}

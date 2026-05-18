@@ -1,0 +1,5 @@
+{
+  "preliminary_baseline": 10,
+  "stable_baseline": 50,
+  "patch_recalibration": 25
+}

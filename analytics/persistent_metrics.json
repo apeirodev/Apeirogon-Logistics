@@ -1,0 +1,12 @@
+{
+  "dataset_name": "star_citizen_hauling_phase9_persistent_metrics",
+  "generated_at": "2026-05-16T23:56:52Z",
+  "derived_persistent_metrics": {
+    "historical_rep_hour_average": "probabilistic_runtime_heuristic",
+    "historical_route_stability": "probabilistic_runtime_heuristic",
+    "route_confidence_evolution": "probabilistic_runtime_heuristic",
+    "player_fit_efficiency_score": "probabilistic_runtime_heuristic",
+    "long_term_orbital_viability": "probabilistic_runtime_heuristic",
+    "route_degradation_trend": "probabilistic_runtime_heuristic"
+  }
+}

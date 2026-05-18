@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-05-17T00:26:14Z",
+  "status": "logical_consolidation_only",
+  "duplicate_reduction_strategy": [
+    "No files were deleted.",
+    "Overlapping conceptual areas were grouped by final manifest category.",
+    "Legacy phase artefacts remain intact for traceability.",
+    "Operational use should start from the final handoff guide and manifests."
+  ],
+  "consolidated_concept_groups": {
+    "route_scoring": [
+      "route scoring",
+      "route quality",
+      "route burden",
+      "route degradation"
+    ],
+    "telemetry": [
+      "execution telemetry",
+      "telemetry calibration",
+      "telemetry variance",
+      "telemetry retention"
+    ],
+    "forecasting": [
+      "mission forecasting",
+      "continuation probability",
+      "adaptive route prediction"
+    ],
+    "ship_and_issuer": [
+      "ship operational models",
+      "issuer profiles",
+      "generalized hauling profiles"
+    ]
+  }
+}

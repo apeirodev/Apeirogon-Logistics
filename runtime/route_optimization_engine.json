@@ -1,0 +1,29 @@
+{
+  "dataset_name": "star_citizen_hauling_phase7_optimization_engine",
+  "generated_at": "2026-05-16T23:55:39Z",
+  "runtime_dependencies": [
+    "active_ship",
+    "active_drive",
+    "active_cargo_state",
+    "current_server_conditions",
+    "current_patch_behavior",
+    "freight_elevator_behavior",
+    "current_mission_pool"
+  ],
+  "optimization_pipeline": [
+    "ingest_mission_batch",
+    "canonicalize_locations",
+    "detect_pickup_overlap",
+    "detect_destination_overlap",
+    "compute_operational_penalties",
+    "compute_route_chain_potential",
+    "compute_rep_efficiency",
+    "rank_mission_sets",
+    "recommend_accept_reject_defer"
+  ],
+  "dynamic_scoring_rules": [
+    "Runtime conditions can invalidate static optimization assumptions.",
+    "Current ship profile materially changes route viability.",
+    "Patch volatility must remain tracked."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "inherits_ccm_domains": true,
+  "additional_domain": "MDS",
+  "control_types": [
+    "Cloud-Specific",
+    "Cloud & AI Related",
+    "AI-Specific"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "required_fields": [
+    "source_class",
+    "confidence_level",
+    "provenance_chain",
+    "patch_era",
+    "verification_status"
+  ],
+  "rule": "Governance-sensitive objects must record provenance metadata."
+}

@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "controls": [
+    "schema_registry",
+    "validation_reports",
+    "migration_notes",
+    "backward_compatibility_notes"
+  ],
+  "rule": "Schema changes require changelog and migration notes."
+}

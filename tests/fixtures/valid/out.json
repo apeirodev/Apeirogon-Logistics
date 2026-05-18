@@ -1,0 +1,46 @@
+{
+  "score": 100,
+  "confidence": "high",
+  "recommendation": "accept",
+  "penalties": [
+    {
+      "stop_density": 0
+    },
+    {
+      "fragmentation": 6
+    },
+    {
+      "atmosphere_burden": 10
+    },
+    {
+      "freight_burden": 0
+    },
+    {
+      "dead_leg_risk": 0
+    },
+    {
+      "fatigue": 0
+    },
+    {
+      "congestion": 0
+    }
+  ],
+  "warnings": [],
+  "rationale": "Deterministic route evaluation completed for Hull-B",
+  "unresolved": [],
+  "patch_version": "4.1",
+  "governance_metadata": {
+    "source_class": "derived_heuristic",
+    "provenance_chain": [
+      "apeirogon_logistics"
+    ],
+    "confidence_level": "medium",
+    "verification_status": "unverified",
+    "patch_era": "4.1",
+    "telemetry_support_level": "none",
+    "operational_assurance_state": "implemented",
+    "unresolved_field_list": [],
+    "advisory_only": true,
+    "derivation_type": "deterministic_scoring"
+  }
+}

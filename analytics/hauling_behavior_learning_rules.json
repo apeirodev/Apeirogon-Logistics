@@ -1,0 +1,18 @@
+{
+  "dataset_name": "star_citizen_hauling_phase8_learning_rules",
+  "generated_at": "2026-05-16T23:56:18Z",
+  "explicit_rules": [
+    "Learned models are probabilistic only.",
+    "Historical patterns do not guarantee future mission pools.",
+    "Runtime volatility must remain tracked.",
+    "Unresolved learned values remain unresolved.",
+    "Patch volatility must not be normalized away."
+  ],
+  "runtime_volatility_sources": [
+    "server_performance",
+    "mission_generation_variability",
+    "patch_behavior",
+    "freight_elevator_state",
+    "regional_population_density"
+  ]
+}

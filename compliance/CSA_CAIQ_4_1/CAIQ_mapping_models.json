@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "framework": "CSA CAIQ v4.1.0",
+  "purpose": "Readiness model for future self-assessment style responses.",
+  "answer_statuses": [
+    "ready",
+    "partial",
+    "not_applicable",
+    "requires_evidence",
+    "future_applicable"
+  ],
+  "mapped_artifact_types": [
+    "README",
+    "SECURITY",
+    "PRIVACY",
+    "schema",
+    "source_registry",
+    "release_manifest",
+    "telemetry_workflow"
+  ]
+}

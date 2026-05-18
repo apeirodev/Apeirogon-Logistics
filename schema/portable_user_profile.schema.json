@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Portable User Profile",
+  "type": "object",
+  "required": [
+    "user_profile_id",
+    "data_export_timestamp"
+  ],
+  "properties": {
+    "user_profile_id": {
+      "type": "string"
+    },
+    "preferred_ship": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "available_ships": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preferred_issuers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preferred_hauling_style": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "risk_tolerance": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "atmosphere_tolerance": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dead_leg_tolerance": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "telemetry_consent": {
+      "type": "boolean"
+    },
+    "patch_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "data_export_timestamp": {
+      "type": "string"
+    }
+  }
+}

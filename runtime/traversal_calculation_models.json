@@ -1,0 +1,136 @@
+{
+  "dataset_name": "star_citizen_hauling_phase5_traversal_models",
+  "phase": "Phase 5 - Traversal Calculation Foundations",
+  "generated_at": "2026-05-16T23:54:20Z",
+  "runtime_qt_estimation_framework": {
+    "formula_type": "weighted_operational_traversal_model",
+    "factors": [
+      "quantum_drive_speed_class",
+      "quantum_drive_acceleration",
+      "ship_traversal_profile",
+      "cargo_state",
+      "distance",
+      "atmosphere_transition_weighting",
+      "spline_transition_weighting",
+      "docking_overhead_weighting",
+      "freight_interaction_weighting",
+      "route_complexity_weighting",
+      "server_conditions",
+      "patch_behavior"
+    ],
+    "explicit_rules": [
+      "QT time remains runtime-derived",
+      "Traversal is patch-sensitive",
+      "Traversal depends on ship and drive combination",
+      "Operational penalties are comparative heuristics"
+    ]
+  },
+  "weighting_models": {
+    "distance_normalization": 1.0,
+    "atmosphere_transition_weighting": 2.5,
+    "spline_traversal_weighting": 2.0,
+    "docking_overhead_weighting": 1.5,
+    "freight_interaction_weighting": 1.8,
+    "route_complexity_weighting": 1.6
+  },
+  "derived_runtime_metrics": {
+    "estimated_traversal_efficiency": "comparative_runtime_heuristic",
+    "route_chain_suitability": "comparative_runtime_heuristic",
+    "stop_density_tolerance": "comparative_runtime_heuristic",
+    "orbital_loop_suitability": "comparative_runtime_heuristic",
+    "atmosphere_traversal_burden": "comparative_runtime_heuristic",
+    "recovery_efficiency_after_dead_leg_routes": "comparative_runtime_heuristic"
+  },
+  "compatibility_profiles": [
+    {
+      "ship_id": "MISC_HULL_B",
+      "recommended_drive": "PONTES",
+      "profile_type": "rapid_multi_stop",
+      "route_chain_suitability": "high",
+      "orbital_loop_suitability": "excellent",
+      "atmosphere_traversal_burden": "moderate",
+      "recovery_efficiency_after_dead_leg_routes": "excellent"
+    },
+    {
+      "ship_id": "MISC_FREELANCER_MAX",
+      "recommended_drive": "PONTES",
+      "profile_type": "rapid_multi_stop",
+      "route_chain_suitability": "high",
+      "orbital_loop_suitability": "excellent",
+      "atmosphere_traversal_burden": "moderate",
+      "recovery_efficiency_after_dead_leg_routes": "excellent"
+    },
+    {
+      "ship_id": "MISC_HULL_B",
+      "recommended_drive": "TS2",
+      "profile_type": "fuel_efficiency",
+      "route_chain_suitability": "moderate",
+      "orbital_loop_suitability": "good",
+      "atmosphere_traversal_burden": "moderate",
+      "recovery_efficiency_after_dead_leg_routes": "moderate"
+    },
+    {
+      "ship_id": "RSI_CONSTELLATION_TAURUS",
+      "recommended_drive": "TS2",
+      "profile_type": "fuel_efficiency",
+      "route_chain_suitability": "moderate",
+      "orbital_loop_suitability": "good",
+      "atmosphere_traversal_burden": "moderate",
+      "recovery_efficiency_after_dead_leg_routes": "moderate"
+    },
+    {
+      "ship_id": "CRUSADER_C2_HERCULES",
+      "recommended_drive": "XL1",
+      "profile_type": "maximum_route_density",
+      "route_chain_suitability": "high",
+      "orbital_loop_suitability": "good",
+      "atmosphere_traversal_burden": "high",
+      "recovery_efficiency_after_dead_leg_routes": "excellent"
+    },
+    {
+      "ship_id": "RSI_CONSTELLATION_TAURUS",
+      "recommended_drive": "XL1",
+      "profile_type": "maximum_route_density",
+      "route_chain_suitability": "high",
+      "orbital_loop_suitability": "good",
+      "atmosphere_traversal_burden": "high",
+      "recovery_efficiency_after_dead_leg_routes": "excellent"
+    },
+    {
+      "ship_id": "MISC_FREELANCER_MAX",
+      "recommended_drive": "VOYAGE",
+      "profile_type": "orbital_loops",
+      "route_chain_suitability": "moderate",
+      "orbital_loop_suitability": "excellent",
+      "atmosphere_traversal_burden": "moderate",
+      "recovery_efficiency_after_dead_leg_routes": "moderate"
+    },
+    {
+      "ship_id": "MISC_HULL_B",
+      "recommended_drive": "VOYAGE",
+      "profile_type": "orbital_loops",
+      "route_chain_suitability": "moderate",
+      "orbital_loop_suitability": "excellent",
+      "atmosphere_traversal_burden": "moderate",
+      "recovery_efficiency_after_dead_leg_routes": "moderate"
+    },
+    {
+      "ship_id": "DRAKE_CATERPILLAR",
+      "recommended_drive": "EREBUS",
+      "profile_type": "bulk_station_chain",
+      "route_chain_suitability": "moderate",
+      "orbital_loop_suitability": "good",
+      "atmosphere_traversal_burden": "moderate",
+      "recovery_efficiency_after_dead_leg_routes": "moderate"
+    },
+    {
+      "ship_id": "CRUSADER_C2_HERCULES",
+      "recommended_drive": "EREBUS",
+      "profile_type": "bulk_station_chain",
+      "route_chain_suitability": "moderate",
+      "orbital_loop_suitability": "good",
+      "atmosphere_traversal_burden": "moderate",
+      "recovery_efficiency_after_dead_leg_routes": "moderate"
+    }
+  ]
+}

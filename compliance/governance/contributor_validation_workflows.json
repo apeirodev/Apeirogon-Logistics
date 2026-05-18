@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "workflows": [
+    "new_contributor_review",
+    "telemetry_review",
+    "OCR_correction_review",
+    "patch_validation_review",
+    "calibration_review"
+  ],
+  "required_checks": [
+    "patch_version",
+    "source_type",
+    "evidence",
+    "confidence",
+    "unresolved_values_preserved"
+  ]
+}

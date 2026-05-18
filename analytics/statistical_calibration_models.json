@@ -1,0 +1,33 @@
+{
+  "dataset_name": "phase23a_statistical_calibration_models",
+  "generated_at": "2026-05-17T00:19:13Z",
+  "systems": {
+    "confidence_interval_estimation": {
+      "classification": "observational_statistical_model",
+      "purpose": "Estimate confidence ranges for operational metrics once sufficient telemetry exists."
+    },
+    "route_score_variance_analysis": {
+      "classification": "observational_statistical_model"
+    },
+    "unloading_time_variance_analysis": {
+      "classification": "observational_statistical_model"
+    },
+    "dead_leg_frequency_variance": {
+      "classification": "observational_statistical_model"
+    },
+    "rep_hour_variance_analysis": {
+      "classification": "observational_statistical_model"
+    },
+    "mission_chain_stability_variance": {
+      "classification": "observational_statistical_model"
+    },
+    "orbital_loop_persistence_variance": {
+      "classification": "observational_statistical_model"
+    }
+  },
+  "guardrails": [
+    "Statistical models remain observational.",
+    "Confidence intervals require adequate telemetry sample size.",
+    "Statistical outputs must not overwrite sourced facts."
+  ]
+}

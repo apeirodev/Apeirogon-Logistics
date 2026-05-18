@@ -1,0 +1,37 @@
+{
+  "dataset_name": "phase26_addon_integration_contracts",
+  "generated_at": "2026-05-17T00:55:10Z",
+  "status": "future_contract_only",
+  "warning": "Star Citizen does not currently provide confirmed addon/plugin APIs for this project.",
+  "contracts": {
+    "mission_ingestion_contract": {
+      "input": "structured_mission_batch",
+      "source": "future_official_addon_API_or_manual_capture"
+    },
+    "route_recommendation_output_contract": {
+      "output": [
+        "accepted_missions",
+        "rejected_missions",
+        "route_sequence",
+        "warnings",
+        "unresolved_fields"
+      ]
+    },
+    "telemetry_event_contract": {
+      "output": [
+        "session_event",
+        "route_event",
+        "unloading_event",
+        "freight_event"
+      ]
+    },
+    "local_IPC_placeholder": {
+      "patterns": [
+        "localhost_HTTP",
+        "local_file_drop",
+        "named_pipe_or_platform_equivalent"
+      ],
+      "status": "future_design_placeholder"
+    }
+  }
+}

@@ -1,0 +1,2040 @@
+{
+  "deterministic_scorer": {
+    "parsed_stdout": {
+      "confidence_level": "medium",
+      "deterministic_hash": "63901b609678627bcee246592a28cc1d88fe837615e4d8ca483663b961438e3d",
+      "governance_metadata": {
+        "advisory_only": true,
+        "confidence_level": "medium",
+        "contributor_trust_tier": "T0",
+        "derivation_type": "deterministic_heuristic",
+        "operational_assurance_state": "implemented",
+        "patch_era": "UNRESOLVED",
+        "provenance_chain": [
+          {
+            "sha256": "d9fbcd332f88572329f7bf9dbff476171ae2e74780b2bfd351f6060028d8efd2",
+            "type": "input_hash"
+          }
+        ],
+        "source_class": "deterministic_output",
+        "telemetry_support_level": "none",
+        "unresolved_field_list": [
+          "exact_distance",
+          "patch_version"
+        ],
+        "verification_status": "not_human_verified"
+      },
+      "human_rationale": "Deterministic score 65/100 with medium operational risk. Recommendation: defer.",
+      "machine_rationale": {
+        "negative_factors": [
+          {
+            "base_weight": -8,
+            "factor": "freight",
+            "input_value": 1.0,
+            "modifier": 1.05,
+            "weighted_effect": -8.4
+          },
+          {
+            "base_weight": -12,
+            "factor": "fragmentation",
+            "input_value": 1.0,
+            "modifier": 1.1,
+            "weighted_effect": -13.2
+          }
+        ],
+        "positive_factors": [
+          {
+            "base_weight": 16,
+            "factor": "same_pickup",
+            "input_value": 1.0,
+            "modifier": 1.0,
+            "weighted_effect": 16.0
+          },
+          {
+            "base_weight": 12,
+            "factor": "destination_overlap",
+            "input_value": 1.0,
+            "modifier": 1.0,
+            "weighted_effect": 12.0
+          },
+          {
+            "base_weight": 12,
+            "factor": "orbital_loop",
+            "input_value": 1.0,
+            "modifier": 1.05,
+            "weighted_effect": 12.6
+          }
+        ]
+      },
+      "operational_risk": "medium",
+      "recommendation": "defer",
+      "score": 65,
+      "score_breakdown": {
+        "destination_overlap": 12.0,
+        "fragmentation": -13.2,
+        "freight": -8.4,
+        "orbital_loop": 12.6,
+        "same_pickup": 16.0
+      },
+      "unresolved_fields": [
+        "exact_distance",
+        "patch_version"
+      ],
+      "warnings": [
+        "Unresolved values present; confidence downgraded and human review recommended."
+      ],
+      "weighted_decision_trace": [
+        {
+          "base_weight": 16,
+          "factor": "same_pickup",
+          "input_value": 1.0,
+          "modifier": 1.0,
+          "weighted_effect": 16.0
+        },
+        {
+          "base_weight": 12,
+          "factor": "destination_overlap",
+          "input_value": 1.0,
+          "modifier": 1.0,
+          "weighted_effect": 12.0
+        },
+        {
+          "base_weight": 12,
+          "factor": "orbital_loop",
+          "input_value": 1.0,
+          "modifier": 1.05,
+          "weighted_effect": 12.6
+        },
+        {
+          "base_weight": -8,
+          "factor": "freight",
+          "input_value": 1.0,
+          "modifier": 1.05,
+          "weighted_effect": -8.4
+        },
+        {
+          "base_weight": -12,
+          "factor": "fragmentation",
+          "input_value": 1.0,
+          "modifier": 1.1,
+          "weighted_effect": -13.2
+        }
+      ]
+    },
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"confidence_level\": \"medium\",\n  \"deterministic_hash\": \"63901b609678627bcee246592a28cc1d88fe837615e4d8ca483663b961438e3d\",\n  \"governance_metadata\": {\n    \"advisory_only\": true,\n    \"confidence_level\": \"medium\",\n    \"contributor_trust_tier\": \"T0\",\n    \"derivation_type\": \"deterministic_heuristic\",\n    \"operational_assurance_state\": \"implemented\",\n    \"patch_era\": \"UNRESOLVED\",\n    \"provenance_chain\": [\n      {\n        \"sha256\": \"d9fbcd332f88572329f7bf9dbff476171ae2e74780b2bfd351f6060028d8efd2\",\n        \"type\": \"input_hash\"\n      }\n    ],\n    \"source_class\": \"deterministic_output\",\n    \"telemetry_support_level\": \"none\",\n    \"unresolved_field_list\": [\n      \"exact_distance\",\n      \"patch_version\"\n    ],\n    \"verification_status\": \"not_human_verified\"\n  },\n  \"human_rationale\": \"Deterministic score 65/100 with medium operational risk. Recommendation: defer.\",\n  \"machine_rationale\": {\n    \"negative_factors\": [\n      {\n        \"base_weight\": -8,\n        \"factor\": \"freight\",\n        \"input_value\": 1.0,\n        \"modifier\": 1.05,\n        \"weighted_effect\": -8.4\n      },\n      {\n        \"base_weight\": -12,\n        \"factor\": \"fragmentation\",\n        \"input_value\": 1.0,\n        \"modifier\": 1.1,\n        \"weighted_effect\": -13.2\n      }\n    ],\n    \"positive_factors\": [\n      {\n        \"base_weight\": 16,\n        \"factor\": \"same_pickup\",\n        \"input_value\": 1.0,\n        \"modifier\": 1.0,\n        \"weighted_effect\": 16.0\n      },\n      {\n        \"base_weight\": 12,\n        \"factor\": \"destination_overlap\",\n        \"input_value\": 1.0,\n        \"modifier\": 1.0,\n        \"weighted_effect\": 12.0\n      },\n      {\n        \"base_weight\": 12,\n        \"factor\": \"orbital_loop\",\n        \"input_value\": 1.0,\n        \"modifier\": 1.05,\n        \"weighted_effect\": 12.6\n      }\n    ]\n  },\n  \"operational_risk\": \"medium\",\n  \"recommendation\": \"defer\",\n  \"score\": 65,\n  \"score_breakdown\": {\n    \"destination_overlap\": 12.0,\n    \"fragmentation\": -13.2,\n    \"freight\": -8.4,\n    \"orbital_loop\": 12.6,\n    \"same_pickup\": 16.0\n  },\n  \"unresolved_fields\": [\n    \"exact_distance\",\n    \"patch_version\"\n  ],\n  \"warnings\": [\n    \"Unresolved values present; confidence downgraded and human review recommended.\"\n  ],\n  \"weighted_decision_trace\": [\n    {\n      \"base_weight\": 16,\n      \"factor\": \"same_pickup\",\n      \"input_value\": 1.0,\n      \"modifier\": 1.0,\n      \"weighted_effect\": 16.0\n    },\n    {\n      \"base_weight\": 12,\n      \"factor\": \"destination_overlap\",\n      \"input_value\": 1.0,\n      \"modifier\": 1.0,\n      \"weighted_effect\": 12.0\n    },\n    {\n      \"base_weight\": 12,\n      \"factor\": \"orbital_loop\",\n      \"input_value\": 1.0,\n      \"modifier\": 1.05,\n      \"weighted_effect\": 12.6\n    },\n    {\n      \"base_weight\": -8,\n      \"factor\": \"freight\",\n      \"input_value\": 1.0,\n      \"modifier\": 1.05,\n      \"weighted_effect\": -8.4\n    },\n    {\n      \"base_weight\": -12,\n      \"factor\": \"fragmentation\",\n      \"input_value\": 1.0,\n      \"modifier\": 1.1,\n      \"weighted_effect\": -13.2\n    }\n  ]\n}\n"
+  },
+  "governance_metadata_validator": {
+    "parsed_stdout": {
+      "problems": [],
+      "valid": true
+    },
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"problems\": [],\n  \"valid\": true\n}\n"
+  },
+  "manifest_validator": {
+    "parsed_stdout": {
+      "findings": [
+        {
+          "manifest": "export_manifest.json",
+          "missing_references": [],
+          "reference_count": 0,
+          "valid": true
+        },
+        {
+          "manifest": "final_export_manifest.json",
+          "missing_references": [],
+          "reference_count": 0,
+          "valid": true
+        },
+        {
+          "manifest": "manifests/OCR_ingestion_package_manifest.json",
+          "missing_references": [],
+          "reference_count": 5,
+          "valid": true
+        },
+        {
+          "manifest": "manifests/archival_package_manifest.json",
+          "missing_references": [],
+          "reference_count": 0,
+          "valid": true
+        },
+        {
+          "manifest": "manifests/lightweight_operational_package_manifest.json",
+          "missing_references": [],
+          "reference_count": 11,
+          "valid": true
+        },
+        {
+          "manifest": "manifests/telemetry_only_package_manifest.json",
+          "missing_references": [],
+          "reference_count": 9,
+          "valid": true
+        },
+        {
+          "manifest": "tests/schema/malformed_manifest_fixture.json",
+          "missing_references": [
+            "missing/file.json"
+          ],
+          "reference_count": 1,
+          "valid": false
+        }
+      ],
+      "manifest_count": 7,
+      "valid": false
+    },
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"findings\": [\n    {\n      \"manifest\": \"export_manifest.json\",\n      \"missing_references\": [],\n      \"reference_count\": 0,\n      \"valid\": true\n    },\n    {\n      \"manifest\": \"final_export_manifest.json\",\n      \"missing_references\": [],\n      \"reference_count\": 0,\n      \"valid\": true\n    },\n    {\n      \"manifest\": \"manifests/OCR_ingestion_package_manifest.json\",\n      \"missing_references\": [],\n      \"reference_count\": 5,\n      \"valid\": true\n    },\n    {\n      \"manifest\": \"manifests/archival_package_manifest.json\",\n      \"missing_references\": [],\n      \"reference_count\": 0,\n      \"valid\": true\n    },\n    {\n      \"manifest\": \"manifests/lightweight_operational_package_manifest.json\",\n      \"missing_references\": [],\n      \"reference_count\": 11,\n      \"valid\": true\n    },\n    {\n      \"manifest\": \"manifests/telemetry_only_package_manifest.json\",\n      \"missing_references\": [],\n      \"reference_count\": 9,\n      \"valid\": true\n    },\n    {\n      \"manifest\": \"tests/schema/malformed_manifest_fixture.json\",\n      \"missing_references\": [\n        \"missing/file.json\"\n      ],\n      \"reference_count\": 1,\n      \"valid\": false\n    }\n  ],\n  \"manifest_count\": 7,\n  \"valid\": false\n}\n"
+  },
+  "ocr_normalizer": {
+    "parsed_stdout": {
+      "ambiguity_level": "low",
+      "governance_metadata": {
+        "advisory_only": true,
+        "confidence_level": "medium",
+        "contributor_trust_tier": "T0",
+        "derivation_type": "OCR_normalization",
+        "operational_assurance_state": "implemented",
+        "patch_era": "UNRESOLVED",
+        "provenance_chain": [
+          {
+            "sha256": "7713ccb318fc442c42c55aa092316c454fe8da360e76938a94b2c3ba70dd4eeb",
+            "type": "ocr_input_hash"
+          }
+        ],
+        "source_class": "OCR_extraction",
+        "telemetry_support_level": "none",
+        "unresolved_field_list": [],
+        "verification_status": "not_human_verified"
+      },
+      "issuer": "Covalex",
+      "normalized_text": "COV ALEX 12 SCU deliver to Baijini",
+      "ocr_confidence": 0.72,
+      "scu_candidates": [
+        12.0
+      ],
+      "unresolved_fields": [],
+      "warnings": []
+    },
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"ambiguity_level\": \"low\",\n  \"governance_metadata\": {\n    \"advisory_only\": true,\n    \"confidence_level\": \"medium\",\n    \"contributor_trust_tier\": \"T0\",\n    \"derivation_type\": \"OCR_normalization\",\n    \"operational_assurance_state\": \"implemented\",\n    \"patch_era\": \"UNRESOLVED\",\n    \"provenance_chain\": [\n      {\n        \"sha256\": \"7713ccb318fc442c42c55aa092316c454fe8da360e76938a94b2c3ba70dd4eeb\",\n        \"type\": \"ocr_input_hash\"\n      }\n    ],\n    \"source_class\": \"OCR_extraction\",\n    \"telemetry_support_level\": \"none\",\n    \"unresolved_field_list\": [],\n    \"verification_status\": \"not_human_verified\"\n  },\n  \"issuer\": \"Covalex\",\n  \"normalized_text\": \"COV ALEX 12 SCU deliver to Baijini\",\n  \"ocr_confidence\": 0.72,\n  \"scu_candidates\": [\n    12.0\n  ],\n  \"unresolved_fields\": [],\n  \"warnings\": []\n}\n"
+  },
+  "provider_output_validator": {
+    "parsed_stdout": {
+      "problems": [],
+      "unresolved_fields": [
+        "distance",
+        "patch_era"
+      ],
+      "valid": true
+    },
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"problems\": [],\n  \"unresolved_fields\": [\n    \"distance\",\n    \"patch_era\"\n  ],\n  \"valid\": true\n}\n"
+  },
+  "release_checksum_generation": {
+    "parsed_stdout": null,
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  "replay_integrity": {
+    "parsed_stdout": {
+      "actual_hash": "d9fbcd332f88572329f7bf9dbff476171ae2e74780b2bfd351f6060028d8efd2",
+      "expected_hash": null,
+      "valid": true
+    },
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"actual_hash\": \"d9fbcd332f88572329f7bf9dbff476171ae2e74780b2bfd351f6060028d8efd2\",\n  \"expected_hash\": null,\n  \"valid\": true\n}\n"
+  },
+  "schema_validator": {
+    "parsed_stdout": {
+      "file_count": 285,
+      "results": [
+        {
+          "missing_refs": [],
+          "path": "VERSION.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "addon-contracts/addon_UI_overlay_contracts.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "addon-contracts/addon_integration_contracts.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "addon-contracts/future_plugin_capability_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/adaptive_convoy_command_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/adaptive_entropy_suppression_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/adaptive_operational_refinement_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/adaptive_player_profile_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/adaptive_route_prediction_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/alliance_scale_coordination_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/autonomous_faction_simulation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/autonomous_hauling_agent_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/autonomous_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/cargo_panel_assignment_rules.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/civilization_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/civilization_scale_logistics_ecosystems.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/commodity_flow_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/community_telemetry_governance.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/comparative_ship_efficiency_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/container_fragmentation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/continuation_probability_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/continuous_learning_pipeline_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/convoy_risk_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/cooperative_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/cooperative_route_distribution_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/cross_session_analytics_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/derived_route_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/deterministic_fallback_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/distributed_operational_planning_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/economic_forecasting_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/economic_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/equilibrium_preservation_architectures.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/execution_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/fleet_coordination_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/galactic_equilibrium_recovery_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/galactic_governance_balancing_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/galactic_logistics_simulation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/generalized_hauling_profiles.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/generalized_route_strategy_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/geopolitical_hauling_analysis_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/geopolitical_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/hauling_archetype_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/hauling_behavior_learning_rules.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/hauling_execution_telemetry_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/hauling_strategy_profiles.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/hauling_style_profiles.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/heuristic_decay_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/historical_mission_patterns.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/hull_b_performance_baselines.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/intersystem_route_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/live_operational_workflow_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/logistics_delegation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/macro_supply_chain_resilience_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/mission_acceptance_rules.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/mission_analytics_foundations.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/mission_chain_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/mission_chain_telemetry_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/mission_density_heatmaps.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/mission_issuer_profiles.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/multi_reputation_progression_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/multi_ship_operational_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/multiplayer_hauling_orchestration.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/observed_route_quality_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/operational_anomaly_detection_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/operational_decision_assist_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/operational_doctrine_rules.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/operational_specialization_profiles.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/patch_regression_detection_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/persistent_economic_campaign_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/persistent_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/persistent_mission_memory.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/post_scarcity_logistics_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/privacy_preserving_telemetry_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/probabilistic_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/provider_abstraction_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/public_operational_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/real_session_analytics_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/recursive_self_healing_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/regional_supply_pressure_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/route_distance_enrichment_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/route_readability_constraints.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/route_score_tuning_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/route_scoring_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/screenshot_batch_processing_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/ship_operational_capability_matrix.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/sovereignty_influence_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/stability_feedback_loops.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/statistical_calibration_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/strategic_civilization_resilience_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/strategic_corridor_control_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/strategic_logistics_governance_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/strategic_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/strategic_repopulation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/synthetic_economy_simulation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/synthetic_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/telemetry_calibration_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/telemetry_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/telemetry_retention_policy_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/telemetry_variance_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/transregional_equilibrium_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/unloading_sequence_rules.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "analytics/user_data_persistence_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "audit_reconstruction_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_AICM_1_0_3/AICM_applicability_matrix.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_AICM_1_0_3/AICM_control_mapping.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_AICM_1_0_3/AICM_domain_model.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_AICM_1_0_3/AICM_gap_assessment.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_AICM_1_0_3/AI_hallucination_containment_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_AICM_1_0_3/AI_model_governance_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_AICM_1_0_3/AI_operational_assurance_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_AICM_1_0_3/AI_output_trust_boundary_model.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_AICM_1_0_3/AI_provider_risk_model.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_AI_CAIQ_1_0_2/AI_CAIQ_mapping_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_AI_CAIQ_1_0_2/AI_CAIQ_operational_alignment.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_AI_CAIQ_1_0_2/AI_CAIQ_readiness_assessment.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_CAIQ_4_1/CAIQ_mapping_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_CAIQ_4_1/CAIQ_operational_alignment.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_CAIQ_4_1/CAIQ_readiness_assessment.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_CCM_4_1/CCM_applicability_matrix.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_CCM_4_1/CCM_control_mapping.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_CCM_4_1/CCM_control_status_registry.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_CCM_4_1/CCM_domain_taxonomy.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_CCM_4_1/CCM_gap_assessment.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_CCM_4_1/continuous_control_monitoring_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_CCM_4_1/control_evidence_lineage_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/CSA_REFERENCE_INVENTORY.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/AI_risk_register.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/contributor_validation_workflows.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/control_evidence_registry.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/data_classification_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/governance_metric_registry.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/operational_risk_register.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/provenance_enforcement_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/provider_assurance_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/provider_governance_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/release_integrity_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/schema_validation_governance.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/telemetry_assurance_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/governance/telemetry_trust_tiers.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/threat_models/OCR_manipulation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/threat_models/adversarial_telemetry_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/threat_models/calibration_corruption_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/threat_models/contributor_trust_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/threat_models/patch_era_contamination_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/threat_models/prompt_injection_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/threat_models/provider_hallucination_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/threat_models/provider_output_manipulation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/threat_models/route_poisoning_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "compliance/threat_models/telemetry_replay_attack_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "data/adjacency_matrix.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "data/hauling_penalties.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "data/location_aliases.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "data/locations.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "data/mission_batches.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "data/patch_lineage_registry.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "data/quantum_drive_profiles.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "data/route_edges.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "data/ship_profiles.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "data/source_registry.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "dataset_validation_report.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "deterministic_execution_replay_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "duplicate_reduction_report.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/deterministic_replay/input.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/ocr_normalization/input.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "governance_metadata_problems": [],
+          "governance_metadata_valid": true,
+          "missing_refs": [],
+          "path": "examples/provider_output_validation/input.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/sample_Covalex_session/sample_output.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/sample_Ling_session/sample_output.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/sample_dead_leg_recovery/sample_output.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/sample_deterministic_only_workflow/sample_output.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/sample_fragmented_cargo_route/sample_output.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/sample_manual_copy_paste_workflow/sample_output.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/sample_multi_stop_route/sample_output.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/sample_provider_neutral_workflow/sample_output.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/sample_route_recommendation.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/sample_session_state.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/sample_user_profile.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/session_state/input.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/telemetry_ingestion/input.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "examples/user_profile/input.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "export_manifest.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "exports/api_export_contracts.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "exports/dashboard_export_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "final_export_manifest.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "final_operational_metrics.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "governance_maturity_registry.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "local-runtime/local_cache_architecture_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "manifests/OCR_ingestion_package_manifest.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "manifests/archival_package_manifest.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "manifests/lightweight_operational_package_manifest.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "manifests/telemetry_only_package_manifest.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "offline_operation_validation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "operational_maturity_registry.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "operational_readiness_validation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "operational_replay_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "package_integrity_validation_report.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "providers/AI_provider_adapter_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "providers/AI_session_persistence_contracts.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "providers/AI_trust_boundary_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "providers/inference_portability_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "providers/provider_capability_negotiation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "providers/provider_usage_profiles.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "providers/structured_prompt_contracts.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "releases/release_integrity_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/OCR_normalization_rules.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/automated_route_simulation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/live_mission_ingestion_runtime.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/live_recommendation_adaptation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/live_route_execution_engine.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/local_execution_workflow_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/mission_extraction_pipeline.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/mission_state_machine_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/offline_operational_workflows.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/route_optimization_engine.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_autonomous_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_calibration_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_civilization_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_economic_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_equilibrium_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_execution_profiles.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_geopolitical_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_multiplayer_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_operational_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_operational_intelligence_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_provider_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_strategic_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_synthetic_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_telemetry_dependencies.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/runtime_traversal_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/screenshot_ingestion_rules.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/telemetry_collection_templates.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "runtime/traversal_calculation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/autonomous_event_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/civilization_event_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/commodity_event_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/equilibrium_event_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/execution_event_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/fleet_event_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/generalized_hauling_intelligence.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/geopolitical_event_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/governance_metadata.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/hauling_penalty.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/hauling_session_state.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/hauling_telemetry_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/live_hauling_session_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/location.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/mission_history_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/mission_pipeline.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/mission_schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/ocr_normalization.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/operational_intelligence_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/portable_user_profile.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/quantum_drive.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/route_edge.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/runtime_traversal.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/ship_profile.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/strategic_event_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/synthetic_event_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/telemetry_calibration_log.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema/traversal_calculation.schema.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema_cleanup_report.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "schema_dependency_map.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "telemetry/calibration_readiness_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "telemetry/minimum_sample_requirements.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "telemetry_readiness_registry.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "tests/OCR/adversarial_ocr_fixture.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "error": "Expecting value: line 1 column 13 (char 12)",
+          "missing_refs": [],
+          "path": "tests/fixtures/invalid/bad_route.json",
+          "refs": [],
+          "valid_json": false
+        },
+        {
+          "missing_refs": [],
+          "path": "tests/fixtures/invalid/impossible_ship_capacity.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "tests/fixtures/provider_outputs/sample_provider_output.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "tests/fixtures/telemetry/sample_telemetry.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "governance_metadata_problems": [
+            "missing fields: contributor_trust_tier",
+            "invalid contributor_trust_tier"
+          ],
+          "governance_metadata_valid": false,
+          "missing_refs": [],
+          "path": "tests/fixtures/valid/out.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "tests/fixtures/valid/route.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "tests/fixtures/valid/sample_route.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "tests/fixtures/valid/sample_valid.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "governance_metadata_problems": [
+            "missing fields: source_class, provenance_chain, confidence_level, verification_status, patch_era, telemetry_support_level, operational_assurance_state, advisory_only, contributor_trust_tier, derivation_type",
+            "invalid contributor_trust_tier",
+            "invalid operational_assurance_state",
+            "advisory_only must be true"
+          ],
+          "governance_metadata_valid": false,
+          "missing_refs": [],
+          "path": "tests/governance/unresolved_disappearance_fixture.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "governance_metadata_problems": [],
+          "governance_metadata_valid": true,
+          "missing_refs": [],
+          "path": "tests/provider_validation/provider_output_fixture.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "tests/regression/sample_route.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "tests/replay/replay_corruption_fixture.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "tests/schema/malformed_manifest_fixture.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "tests/telemetry/malformed_telemetry_fixture.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "tooling_maturity_registry.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "tooling_readiness_validation_models.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "user-state/example_hauling_session_state.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "user-state/example_portable_user_profile.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "validation/inspection_report_0_30_5.json",
+          "refs": [],
+          "valid_json": true
+        },
+        {
+          "missing_refs": [],
+          "path": "validation_reconciliation_report.json",
+          "refs": [],
+          "valid_json": true
+        }
+      ],
+      "valid": false
+    },
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"file_count\": 285,\n  \"results\": [\n    {\n      \"missing_refs\": [],\n      \"path\": \"VERSION.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"addon-contracts/addon_UI_overlay_contracts.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"addon-contracts/addon_integration_contracts.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"addon-contracts/future_plugin_capability_models.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/adaptive_convoy_command_models.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/adaptive_entropy_suppression_models.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/adaptive_operational_refinement_models.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/adaptive_player_profile_models.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/adaptive_route_prediction_models.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/alliance_scale_coordination_models.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/autonomous_faction_simulation_models.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/autonomous_hauling_agent_models.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/autonomous_metrics.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/cargo_panel_assignment_rules.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/civilization_metrics.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/civilization_scale_logistics_ecosystems.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/commodity_flow_models.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/community_telemetry_governance.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/comparative_ship_efficiency_models.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/container_fragmentation_models.json\",\n      \"refs\": [],\n      \"valid_json\": true\n    },\n    {\n      \"missing_refs\": [],\n      \"path\": \"analytics/continuation_probabi"
+  },
+  "telemetry_ingestion": {
+    "parsed_stdout": {
+      "accepted": true,
+      "calibration_allowed": false,
+      "calibration_reason": "Real telemetry review required; this tool does not calibrate heuristics.",
+      "deduplication_hash": "b9d10540bd3e91e9b19a88cd8119ecd82d9115a38caeacdccf2b6b7b7e05bf0e",
+      "errors": [],
+      "governance_metadata": {
+        "advisory_only": true,
+        "confidence_level": "medium",
+        "contributor_trust_tier": "T1",
+        "derivation_type": "telemetry_ingestion",
+        "operational_assurance_state": "implemented",
+        "patch_era": "UNRESOLVED",
+        "provenance_chain": [
+          {
+            "sha256": "b9d10540bd3e91e9b19a88cd8119ecd82d9115a38caeacdccf2b6b7b7e05bf0e",
+            "type": "telemetry_input_hash"
+          }
+        ],
+        "source_class": "telemetry_observational",
+        "telemetry_support_level": "observational",
+        "unresolved_field_list": [
+          "patch_version",
+          "server_fps"
+        ],
+        "verification_status": "not_human_verified"
+      },
+      "ingested_at_epoch": 1779027561,
+      "patch_version": "UNRESOLVED",
+      "quarantined": false,
+      "remediation": [
+        "Add patch_version before attempting calibration or baseline promotion."
+      ],
+      "trust_tier": "T1",
+      "unresolved_fields": [
+        "patch_version",
+        "server_fps"
+      ],
+      "warnings": [
+        "Patch version unresolved."
+      ]
+    },
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"accepted\": true,\n  \"calibration_allowed\": false,\n  \"calibration_reason\": \"Real telemetry review required; this tool does not calibrate heuristics.\",\n  \"deduplication_hash\": \"b9d10540bd3e91e9b19a88cd8119ecd82d9115a38caeacdccf2b6b7b7e05bf0e\",\n  \"errors\": [],\n  \"governance_metadata\": {\n    \"advisory_only\": true,\n    \"confidence_level\": \"medium\",\n    \"contributor_trust_tier\": \"T1\",\n    \"derivation_type\": \"telemetry_ingestion\",\n    \"operational_assurance_state\": \"implemented\",\n    \"patch_era\": \"UNRESOLVED\",\n    \"provenance_chain\": [\n      {\n        \"sha256\": \"b9d10540bd3e91e9b19a88cd8119ecd82d9115a38caeacdccf2b6b7b7e05bf0e\",\n        \"type\": \"telemetry_input_hash\"\n      }\n    ],\n    \"source_class\": \"telemetry_observational\",\n    \"telemetry_support_level\": \"observational\",\n    \"unresolved_field_list\": [\n      \"patch_version\",\n      \"server_fps\"\n    ],\n    \"verification_status\": \"not_human_verified\"\n  },\n  \"ingested_at_epoch\": 1779027561,\n  \"patch_version\": \"UNRESOLVED\",\n  \"quarantined\": false,\n  \"remediation\": [\n    \"Add patch_version before attempting calibration or baseline promotion.\"\n  ],\n  \"trust_tier\": \"T1\",\n  \"unresolved_fields\": [\n    \"patch_version\",\n    \"server_fps\"\n  ],\n  \"warnings\": [\n    \"Patch version unresolved.\"\n  ]\n}\n"
+  }
+}

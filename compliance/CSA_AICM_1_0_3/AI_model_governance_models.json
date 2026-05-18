@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "governance_controls": [
+    "provider_classification",
+    "capability_negotiation",
+    "output_validation",
+    "confidence_normalization",
+    "failure_reporting"
+  ]
+}

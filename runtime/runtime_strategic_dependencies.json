@@ -1,0 +1,13 @@
+{
+  "dataset_name": "star_citizen_hauling_phase14_runtime_dependencies",
+  "generated_at": "2026-05-17T00:00:28Z",
+  "dependencies": [
+    "alliance_participation_volatility",
+    "regional_instability_escalation",
+    "inter_system_conflict_pressure",
+    "jump_point_disruption_chains",
+    "economic_warfare_conditions",
+    "persistent_congestion_propagation",
+    "alliance_coordination_degradation"
+  ]
+}

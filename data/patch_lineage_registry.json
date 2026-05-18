@@ -1,0 +1,24 @@
+{
+  "dataset_name": "publicA_patch_lineage_registry",
+  "generated_at": "2026-05-17T00:41:37Z",
+  "current_patch": {
+    "star_citizen_patch_version": null,
+    "patch_validation_status": "unvalidated_public_seed",
+    "mechanic_generation": null
+  },
+  "fields": [
+    "star_citizen_patch_version",
+    "patch_lineage",
+    "patch_validation_status",
+    "mechanic_generation",
+    "patch_era_telemetry_segmentation",
+    "heuristic_validity_windows",
+    "patch_era_OCR_compatibility",
+    "patch_era_route_score_compatibility"
+  ],
+  "rules": [
+    "All telemetry must be tagged to a patch era.",
+    "Major hauling, cargo, freight elevator, QT, or UI changes require validation.",
+    "Old telemetry should be archived by patch era, not deleted."
+  ]
+}

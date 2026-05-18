@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-05-17T00:26:14Z",
+  "dashboard_views": {
+    "mission_ingestion": {
+      "inputs": [
+        "screenshots",
+        "OCR text",
+        "manual corrections"
+      ],
+      "outputs": [
+        "mission batch",
+        "confidence flags",
+        "unresolved fields"
+      ]
+    },
+    "route_analysis": {
+      "inputs": [
+        "mission batch",
+        "ship",
+        "issuer",
+        "hauling style"
+      ],
+      "outputs": [
+        "accepted missions",
+        "rejected missions",
+        "route sequence",
+        "route burden"
+      ]
+    },
+    "telemetry": {
+      "inputs": [
+        "session timings",
+        "unloading delays",
+        "completion outcomes"
+      ],
+      "outputs": [
+        "observed rep/hour",
+        "route stability",
+        "calibration candidates"
+      ]
+    },
+    "calibration": {
+      "inputs": [
+        "observed telemetry",
+        "patch era",
+        "verified OCR"
+      ],
+      "outputs": [
+        "heuristic drift",
+        "confidence intervals",
+        "recalibration triggers"
+      ]
+    }
+  },
+  "filters": [
+    "ship",
+    "issuer",
+    "hauling_style",
+    "patch_era",
+    "route_region",
+    "confidence_threshold",
+    "telemetry_verification_state"
+  ]
+}

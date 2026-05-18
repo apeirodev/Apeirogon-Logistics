@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Telemetry Calibration Log",
+  "type": "object",
+  "required": [
+    "calibration_id",
+    "timestamp",
+    "metric_name"
+  ],
+  "properties": {
+    "calibration_id": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "metric_name": {
+      "type": "string"
+    },
+    "observed_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "predicted_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "variance": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "telemetry_sample_size": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "verified_by_user": {
+      "type": "boolean"
+    }
+  }
+}

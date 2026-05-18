@@ -1,0 +1,8 @@
+{
+  "workflow": "sample_manual_copy_paste_workflow",
+  "confidence": "medium",
+  "unresolved_fields": [
+    "ocr_partial_text"
+  ],
+  "patch_version": "UNRESOLVED"
+}

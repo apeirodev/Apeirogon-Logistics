@@ -1,0 +1,22 @@
+{
+  "dataset_name": "phase18_feedback_loops",
+  "generated_at": "2026-05-17T00:08:40Z",
+  "loops": {
+    "recursive_stabilization_loops": {},
+    "convoy_correction_feedback": {},
+    "regional_pressure_equalization": {},
+    "adaptive_rerouting_propagation": {},
+    "autonomous_reserve_balancing": {},
+    "galactic_resilience_amplification": {},
+    "macro_scale_recovery_synchronization": {}
+  },
+  "derived_metrics": {
+    "equilibrium_persistence_score": "probabilistic_runtime_heuristic",
+    "entropy_suppression_efficiency": "probabilistic_runtime_heuristic",
+    "recursive_recovery_stability": "probabilistic_runtime_heuristic",
+    "autonomous_correction_latency": "probabilistic_runtime_heuristic",
+    "galactic_stability_propagation": "probabilistic_runtime_heuristic",
+    "systemic_collapse_resistance": "probabilistic_runtime_heuristic",
+    "resilience_reinforcement_efficiency": "probabilistic_runtime_heuristic"
+  }
+}

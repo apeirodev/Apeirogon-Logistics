@@ -1,0 +1,24 @@
+{
+  "dataset_name": "star_citizen_hauling_phase8_density_heatmaps",
+  "generated_at": "2026-05-16T23:56:18Z",
+  "heatmap_structures": {
+    "planetary_region_density": {
+      "type": "regional_density_map"
+    },
+    "orbital_station_density": {
+      "type": "orbital_density_map"
+    },
+    "lagrange_density": {
+      "type": "lagrange_density_map"
+    },
+    "outpost_density": {
+      "type": "outpost_density_map"
+    },
+    "route_poisoning_hotspots": {
+      "type": "risk_density_map"
+    },
+    "orbital_chain_hotspots": {
+      "type": "orbital_chain_density_map"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_name": "star_citizen_hauling_phase17_synthetic_metrics",
+  "generated_at": "2026-05-17T00:02:38Z",
+  "metrics": {
+    "galactic_equilibrium_recovery_score": "probabilistic_runtime_heuristic",
+    "synthetic_economic_stability": "probabilistic_runtime_heuristic",
+    "post_scarcity_logistics_efficiency": "probabilistic_runtime_heuristic",
+    "civilization_regeneration_viability": "probabilistic_runtime_heuristic",
+    "industrial_recovery_continuity": "probabilistic_runtime_heuristic",
+    "macro_scale_logistics_regeneration": "probabilistic_runtime_heuristic"
+  }
+}

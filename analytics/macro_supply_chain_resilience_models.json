@@ -1,0 +1,24 @@
+{
+  "dataset_name": "star_citizen_hauling_phase14_macro_resilience",
+  "generated_at": "2026-05-17T00:00:28Z",
+  "resilience_systems": {
+    "convoy_reserve_allocation": {
+      "classification": "strategic_resilience_model"
+    },
+    "strategic_rerouting_reserves": {
+      "classification": "strategic_resilience_model"
+    },
+    "deep_space_recovery_reserves": {
+      "classification": "strategic_resilience_model"
+    },
+    "alliance_fragmentation_mitigation": {
+      "classification": "strategic_resilience_model"
+    },
+    "logistics_resilience_propagation": {
+      "classification": "strategic_resilience_model"
+    },
+    "persistent_operational_continuity": {
+      "classification": "strategic_resilience_model"
+    }
+  }
+}

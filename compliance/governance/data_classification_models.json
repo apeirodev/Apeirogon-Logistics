@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "classes": [
+    "sourced_fact",
+    "OCR_extraction",
+    "user_verified",
+    "telemetry_observational",
+    "derived_heuristic",
+    "runtime_dependent",
+    "AI_generated_advisory",
+    "contributor_submitted",
+    "patch_validated",
+    "calibration_derived",
+    "governance_metadata",
+    "operational_evidence"
+  ]
+}

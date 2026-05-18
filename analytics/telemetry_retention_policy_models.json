@@ -1,0 +1,24 @@
+{
+  "dataset_name": "phase23a_telemetry_retention_policy_models",
+  "generated_at": "2026-05-17T00:19:13Z",
+  "retention_policies": {
+    "telemetry_aging_rules": {
+      "recommendation": "Segment by patch and gradually decay confidence as patch distance increases."
+    },
+    "patch_era_segmentation": {
+      "recommendation": "Maintain separate telemetry cohorts per major patch."
+    },
+    "stale_telemetry_invalidation": {
+      "recommendation": "Mark stale after major hauling, cargo, QT, UI, or freight elevator changes."
+    },
+    "telemetry_archival_recommendations": {
+      "recommendation": "Archive but do not delete old telemetry; preserve for historical comparison."
+    },
+    "calibration_retention_windows": {
+      "recommendation": "Use most recent compatible patch-era telemetry for active calibration."
+    },
+    "confidence_degradation_over_time": {
+      "recommendation": "Reduce confidence when data ages, sample size is low, or mechanics changed."
+    }
+  }
+}

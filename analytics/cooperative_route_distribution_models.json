@@ -1,0 +1,21 @@
+{
+  "dataset_name": "star_citizen_hauling_phase11_route_distribution",
+  "generated_at": "2026-05-16T23:58:11Z",
+  "distribution_logic": {
+    "route_density_balancing": {
+      "priority": "high"
+    },
+    "cargo_distribution_efficiency": {
+      "priority": "high"
+    },
+    "escort_coverage_distribution": {
+      "priority": "medium"
+    },
+    "dead_leg_recovery_distribution": {
+      "priority": "medium"
+    },
+    "orbital_chain_distribution": {
+      "priority": "high"
+    }
+  }
+}

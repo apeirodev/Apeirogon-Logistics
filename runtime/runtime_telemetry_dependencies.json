@@ -1,0 +1,13 @@
+{
+  "dataset_name": "phase21_runtime_telemetry_dependencies",
+  "generated_at": "2026-05-17T00:14:23Z",
+  "dependencies": [
+    "server_fps_degradation",
+    "freight_elevator_responsiveness",
+    "mission_pool_churn",
+    "player_interruption_events",
+    "hauling_session_duration",
+    "patch_operational_drift",
+    "cargo_handling_instability"
+  ]
+}

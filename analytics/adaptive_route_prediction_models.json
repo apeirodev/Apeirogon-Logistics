@@ -1,0 +1,26 @@
+{
+  "dataset_name": "star_citizen_hauling_phase8_adaptive_predictions",
+  "generated_at": "2026-05-16T23:56:18Z",
+  "prediction_models": {
+    "expected_future_mission_availability": {
+      "model_type": "adaptive_runtime_prediction",
+      "inputs": [
+        "historical_density",
+        "current_mission_pool",
+        "regional_activity"
+      ]
+    },
+    "expected_continuation_chains": {
+      "model_type": "adaptive_runtime_prediction"
+    },
+    "expected_route_degradation": {
+      "model_type": "adaptive_runtime_prediction"
+    },
+    "expected_congestion_accumulation": {
+      "model_type": "adaptive_runtime_prediction"
+    },
+    "expected_turnaround_efficiency_changes": {
+      "model_type": "adaptive_runtime_prediction"
+    }
+  }
+}

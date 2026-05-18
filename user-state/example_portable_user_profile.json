@@ -1,0 +1,13 @@
+{
+  "user_profile_id": "example-local-user",
+  "preferred_ship": null,
+  "available_ships": [],
+  "preferred_issuers": [],
+  "preferred_hauling_style": null,
+  "risk_tolerance": null,
+  "atmosphere_tolerance": null,
+  "dead_leg_tolerance": null,
+  "telemetry_consent": false,
+  "patch_version": null,
+  "data_export_timestamp": "2026-05-17T01:02:11Z"
+}

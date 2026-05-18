@@ -1,0 +1,27 @@
+{
+  "dataset_name": "star_citizen_hauling_phase17_equilibrium_recovery",
+  "generated_at": "2026-05-17T00:02:38Z",
+  "recovery_systems": {
+    "strategic_collapse_recovery": {
+      "classification": "equilibrium_recovery_model"
+    },
+    "corridor_rehabilitation_prioritization": {
+      "classification": "equilibrium_recovery_model"
+    },
+    "industrial_ecosystem_rebuilding": {
+      "classification": "equilibrium_recovery_model"
+    },
+    "sovereignty_restoration_balancing": {
+      "classification": "equilibrium_recovery_model"
+    },
+    "alliance_recovery_synchronization": {
+      "classification": "equilibrium_recovery_model"
+    },
+    "galactic_logistics_normalization": {
+      "classification": "equilibrium_recovery_model"
+    },
+    "macro_scale_convoy_rehabilitation": {
+      "classification": "equilibrium_recovery_model"
+    }
+  }
+}

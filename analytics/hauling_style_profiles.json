@@ -1,0 +1,18 @@
+{
+  "dataset_name": "phase24b_hauling_style_profiles",
+  "generated_at": "2026-05-17T00:23:38Z",
+  "styles": [
+    "solo_hauling",
+    "duo_hauling",
+    "convoy_hauling",
+    "high_speed_hauling",
+    "low_risk_hauling",
+    "bulk_hauling",
+    "orbital_chaining",
+    "atmosphere_avoidance",
+    "dead_leg_recovery",
+    "opportunistic_mission_stacking",
+    "long_session_hauling",
+    "casual_short_session_hauling"
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "dataset": "star_citizen_hauling_phase1",
+  "phase": "Phase 1 - Canonical Location Ingestion",
+  "retrieved_date": "2026-05-16",
+  "sources": [
+    {
+      "name": "Star Citizen Wiki - Stanton system",
+      "notes": "Unofficial community wiki. Use as high-quality structured reference, not primary official authority.",
+      "source_id": "starcitizen_tools_stanton_system",
+      "trust_level": "high_community",
+      "url": "https://starcitizen.tools/Stanton_System",
+      "use": "System-level facts, planets, satellites, stations count, jurisdictional context."
+    },
+    {
+      "name": "Star Citizen Wiki - List of Stanton locations",
+      "notes": "Useful for structured location enumeration. Some rows are sparse and require later validation.",
+      "source_id": "starcitizen_tools_list_stanton_locations",
+      "trust_level": "high_community",
+      "url": "https://starcitizen.tools/List_of_Stanton_locations",
+      "use": "Seed list of moons, landing zones, stations, outposts, services, and pads where visible."
+    },
+    {
+      "name": "Roberts Space Industries Support - Locations in Star Citizen",
+      "notes": "Official but not exhaustive for logistics details.",
+      "source_id": "rsi_locations_in_star_citizen",
+      "trust_level": "official",
+      "url": "https://support.robertsspaceindustries.com/hc/en-us/articles/360008085873-Locations-in-Star-Citizen",
+      "use": "Official confirmation of major implemented Stanton landing zones and new-player location context."
+    },
+    {
+      "name": "VerseGuide Search",
+      "notes": "Operationally useful fan site. Deeper extraction deferred to later phases.",
+      "source_id": "verseguide_search",
+      "trust_level": "medium_community",
+      "url": "https://verseguide.com/search",
+      "use": "Service taxonomy seed for future extraction, including cargo deck, freight elevators, landing services, trade terminals."
+    },
+    {
+      "name": "Phase 1 canonical location hierarchy",
+      "notes": "Edges require later distance validation and route behaviour validation.",
+      "source_id": "phase1_location_hierarchy",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Derived parent-child relationships used to create initial topology edges."
+    },
+    {
+      "name": "Phase 2 Lagrange placeholder seed",
+      "notes": "Station presence, services, and cargo capabilities unresolved.",
+      "source_id": "phase2_lagrange_seed",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Adds CRU/HUR/ARC/MIC L1-L5 placeholders so future Lagrange station extraction has stable node targets."
+    },
+    {
+      "name": "Phase 3 operational hauling heuristic model",
+      "notes": "Not authoritative gameplay data. Intended for comparative route optimization.",
+      "source_id": "phase3_operational_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Derived hauling penalties and operational route optimization heuristics."
+    },
+    {
+      "name": "Phase 4 ship operational model",
+      "notes": "Mixed sourced and derived ship handling heuristics.",
+      "source_id": "phase4_ship_operational_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Ship hauling suitability and operational heuristic modeling."
+    },
+    {
+      "name": "Phase 4 runtime traversal foundation model",
+      "notes": "Exact traversal performance unresolved pending quantum drive ingestion.",
+      "source_id": "phase4_runtime_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Runtime traversal placeholder modeling."
+    },
+    {
+      "name": "Phase 5 quantum traversal model",
+      "notes": "Exact traversal values intentionally not stored as fixed times.",
+      "source_id": "phase5_quantum_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Quantum drive operational modeling and traversal heuristics."
+    },
+    {
+      "name": "Phase 6 mission ingestion and OCR modeling",
+      "notes": "OCR outputs remain probabilistic.",
+      "source_id": "phase6_mission_ingestion_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Mission extraction, OCR normalization, and analytics foundations."
+    },
+    {
+      "name": "Phase 7 route optimization and mission scoring model",
+      "notes": "All scoring remains heuristic and runtime-dependent.",
+      "source_id": "phase7_route_optimization_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Mission scoring, route optimization, and strategy profile modeling."
+    },
+    {
+      "name": "Phase 8 probabilistic mission-learning model",
+      "notes": "All learned behaviors remain probabilistic.",
+      "source_id": "phase8_probabilistic_learning_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Historical mission-learning and adaptive route prediction."
+    },
+    {
+      "name": "Phase 9 persistent mission memory and cross-session analytics",
+      "notes": "Persistent analytics remain probabilistic and runtime-sensitive.",
+      "source_id": "phase9_persistent_memory_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Persistent mission tracking and adaptive analytics."
+    },
+    {
+      "name": "Phase 10 execution and automated simulation",
+      "notes": "Execution simulation remains probabilistic and runtime-sensitive.",
+      "source_id": "phase10_execution_simulation_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Live execution state modeling and probabilistic route simulation."
+    },
+    {
+      "name": "Phase 11 fleet coordination and cooperative hauling",
+      "notes": "Fleet coordination models remain probabilistic and player-dependent.",
+      "source_id": "phase11_fleet_coordination_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Distributed fleet orchestration and convoy optimization."
+    },
+    {
+      "name": "Phase 12 economic forecasting and inter-system logistics",
+      "notes": "Economic forecasting remains probabilistic and runtime-sensitive.",
+      "source_id": "phase12_economic_forecasting_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Commodity-flow analysis and inter-system hauling modeling."
+    },
+    {
+      "name": "Phase 13 autonomous logistics and distributed planning",
+      "notes": "Autonomous behaviors remain probabilistic and runtime-sensitive.",
+      "source_id": "phase13_autonomous_logistics_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Autonomous hauling-agent modeling and distributed convoy planning."
+    },
+    {
+      "name": "Phase 14 strategic governance and alliance logistics",
+      "notes": "Strategic systems remain probabilistic and runtime-sensitive.",
+      "source_id": "phase14_strategic_governance_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Alliance-scale hauling governance and macro-logistics planning."
+    },
+    {
+      "name": "Phase 15 galactic logistics and geopolitical simulation",
+      "notes": "Geopolitical systems remain probabilistic and runtime-sensitive.",
+      "source_id": "phase15_geopolitical_logistics_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Galactic-scale logistics and sovereignty influence modeling."
+    },
+    {
+      "name": "Phase 16 civilization-scale logistics ecosystems",
+      "notes": "Civilization-scale systems remain probabilistic and runtime-sensitive.",
+      "source_id": "phase16_civilization_ecosystem_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Civilization-scale logistics ecosystems and autonomous faction simulation."
+    },
+    {
+      "name": "Phase 17 synthetic recovery and post-scarcity logistics",
+      "notes": "Synthetic systems remain probabilistic and runtime-sensitive.",
+      "source_id": "phase17_synthetic_recovery_model",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Synthetic recovery ecosystems and post-scarcity logistics simulation."
+    },
+    {
+      "name": "Phase 17 repair validation",
+      "notes": "No duplicate Phase 17 changelog entries created.",
+      "source_id": "phase17_repair_validation",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Validation and repair lineage tracking for Phase 17 package."
+    },
+    {
+      "name": "Phase 18 recursive stabilization architectures",
+      "notes": "All equilibrium systems remain probabilistic and runtime-sensitive.",
+      "source_id": "phase18_recursive_equilibrium_models",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Recursive equilibrium preservation and autonomous governance balancing."
+    },
+    {
+      "name": "Phase 19 operational packaging and validation",
+      "notes": "Focused on practical Hull-B Covalex hauling analysis.",
+      "source_id": "phase19_operational_packaging",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Operational readiness hardening and export validation."
+    },
+    {
+      "name": "Phase 20 live operational integration",
+      "notes": "Operational systems remain probabilistic and runtime-sensitive.",
+      "source_id": "phase20_live_operational_integration",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Real-world screenshot ingestion and operational Hull-B hauling assistance."
+    },
+    {
+      "name": "Phase 21 execution telemetry and adaptive operational refinement",
+      "notes": "Telemetry is observational and must not overwrite sourced facts.",
+      "source_id": "phase21_execution_telemetry",
+      "trust_level": "internal_observational",
+      "url": null,
+      "use": "Observed hauling-session telemetry and practical Hull-B Covalex heuristic refinement."
+    },
+    {
+      "name": "Phase 22 telemetry calibration and route score tuning",
+      "notes": "Calibration is observational and runtime-sensitive.",
+      "source_id": "phase22_telemetry_calibration",
+      "trust_level": "internal_observational",
+      "url": null,
+      "use": "Observed Hull-B telemetry calibration and practical route-score refinement."
+    },
+    {
+      "name": "Phase 23A operational intelligence expansion",
+      "notes": "Operational intelligence is telemetry-driven and must not overwrite sourced facts.",
+      "source_id": "phase23a_operational_intelligence_expansion",
+      "trust_level": "internal_observational",
+      "url": null,
+      "use": "Statistical calibration, comparative ship efficiency, anomaly detection, and patch regression modeling."
+    },
+    {
+      "name": "Phase 25 final consolidation and operational hardening",
+      "notes": "Final phase preserves historical artefacts and adds non-destructive operational navigation layers.",
+      "source_id": "phase25_final_consolidation",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Final export, schema dependency mapping, operational handoff, and maintenance prompt generation."
+    },
+    {
+      "name": "Public Enhancement Phase A open-source readiness",
+      "notes": "Created to prepare the package for public GitHub publication and community contribution.",
+      "source_id": "publicA_open_source_readiness",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Contributor readiness, operational doctrine, telemetry governance, and patch-lineage readiness."
+    },
+    {
+      "name": "Phase 26 provider-neutral local-first addon-ready architecture",
+      "notes": "Addon support remains future-only and not a dependency.",
+      "source_id": "phase26_provider_neutral_local_first",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Provider abstraction, local-first workflows, future addon contracts, deterministic fallback, and privacy-preserving telemetry."
+    },
+    {
+      "name": "Version 0.28.1 AI provider usability and portable persistence",
+      "notes": "Designed so users can use ChatGPT, Claude, Gemini, Copilot, Perplexity, local LLMs, or manual copy/paste without relying on vendor memory.",
+      "source_id": "v0_28_1_ai_provider_usability",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Provider-specific usage guides, persistent user state models, portable profiles, and session continuity workflows."
+    },
+    {
+      "name": "Version 0.29.1 CSA CCM/CAIQ and AICM/AI CAIQ governance alignment",
+      "notes": "Alignment only. No certification or compliance claim.",
+      "source_id": "v0_29_1_CSA_governance_alignment",
+      "trust_level": "internal_derived",
+      "url": null,
+      "use": "Architecture and governance alignment using CSA CCM v4.1.0, CSA CAIQ v4.1.0, CSA AICM v1.0.3, and CSA AI CAIQ v1.0.2 reference bundles."
+    },
+    {
+      "name": "Apeirogon Logistics 0.30.5 rebuild from verified 0.30.3",
+      "notes": "Skips 0.30.4 as abandoned failed run and rebuilds non-telemetry operational completion scope.",
+      "source_id": "apeirogon_0_30_5_rebuild",
+      "trust_level": "internal_derived"
+    }
+  ]
+}

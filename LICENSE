@@ -1,0 +1,20 @@
+Star Citizen Hauling Intelligence Platform
+
+License Structure:
+
+1. Data, documentation, prompts, schemas, telemetry models, operational doctrine,
+heuristics, route intelligence, and analytical content:
+Licensed under Creative Commons Attribution-NonCommercial 4.0 International
+(CC BY-NC 4.0)
+
+2. Code, tooling, adapters, parsers, runtime helpers, local utilities, APIs,
+future addon/plugin code, and executable helper scripts:
+Licensed under the MIT License unless otherwise specified.
+
+Commercial use of the dataset, operational intelligence, or hosted monetized
+derivative services is prohibited without explicit permission.
+
+See:
+- LICENSE_DATA.md
+- LICENSE_CODE.md
+- LICENSES.md

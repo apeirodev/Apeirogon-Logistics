@@ -1,0 +1,23 @@
+{
+  "dataset_name": "publicA_community_telemetry_governance",
+  "generated_at": "2026-05-17T00:41:37Z",
+  "confidence_tiers": {
+    "tier_0_unverified": "Submitted without screenshot or corroboration.",
+    "tier_1_screenshot_supported": "Supported by screenshot evidence.",
+    "tier_2_repeatable": "Observed across multiple sessions or contributors.",
+    "tier_3_patch_validated": "Validated after patch-era review.",
+    "tier_4_curated": "Accepted into active calibration set."
+  },
+  "conflict_resolution": [
+    "Prefer patch-matched telemetry.",
+    "Prefer verified screenshots over memory-based reports.",
+    "Do not discard conflicting telemetry; quarantine until reviewed.",
+    "Segment by server condition and patch era when possible."
+  ],
+  "privacy_guidance": [
+    "Do not require personal identifiers.",
+    "Allow anonymous contributor IDs.",
+    "Strip unrelated screenshots where practical.",
+    "Do not collect account credentials or private chat content."
+  ]
+}

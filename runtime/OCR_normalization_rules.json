@@ -1,0 +1,28 @@
+{
+  "dataset_name": "star_citizen_hauling_phase6_ocr_rules",
+  "generated_at": "2026-05-16T23:54:59Z",
+  "normalization_rules": {
+    "alias_resolution": {
+      "Seraphim": "Seraphim Station",
+      "Baijini": "Baijini Point",
+      "Tressler": "Port Tressler"
+    },
+    "truncated_label_handling": [
+      "Attempt canonical resolution using alias database",
+      "Preserve unresolved labels if confidence < threshold"
+    ],
+    "ocr_ambiguity_handling": {
+      "minimum_confidence_threshold": 0.7,
+      "partial_match_strategy": "retain_original_and_flag",
+      "multi_candidate_strategy": "store_candidates_without_forcing_resolution"
+    },
+    "deduplication_rules": [
+      "Match on pickup + payout + commodity + timer proximity",
+      "Avoid duplicate ingestion across overlapping screenshots"
+    ],
+    "partial_screenshot_ingestion": {
+      "allowed": true,
+      "preserve_missing_fields": true
+    }
+  }
+}

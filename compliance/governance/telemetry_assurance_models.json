@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "assurance_dimensions": [
+    "patch_tagged",
+    "verified",
+    "corroborated",
+    "maintainer_reviewed",
+    "calibration_eligible"
+  ]
+}

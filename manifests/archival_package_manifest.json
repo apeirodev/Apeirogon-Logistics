@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-05-17T00:26:14Z",
+  "purpose": "Full historical archive preserving all phase artefacts and lineage.",
+  "archive_policy": [
+    "Do not delete phase artefacts.",
+    "Archive by package version.",
+    "Maintain patch-era telemetry separation.",
+    "Use final manifests for daily operational subsets."
+  ],
+  "file_count": {
+    "json": 146,
+    "markdown": 40,
+    "schemas": 25,
+    "analytics": 86,
+    "runtime": 23,
+    "data": 9
+  }
+}

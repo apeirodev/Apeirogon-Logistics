@@ -1,0 +1,38 @@
+{
+  "dataset_name": "star_citizen_hauling_phase6_analytics",
+  "generated_at": "2026-05-16T23:54:59Z",
+  "analytics_models": {
+    "same_pickup_clustering": {
+      "priority": "high",
+      "description": "Prefer mission stacking from identical pickup locations."
+    },
+    "destination_overlap_clustering": {
+      "priority": "high",
+      "description": "Detect shared delivery corridors."
+    },
+    "dead_leg_route_detection": {
+      "priority": "high",
+      "description": "Detect isolated destinations likely to strand the hauler."
+    },
+    "orbital_loop_detection": {
+      "priority": "high",
+      "description": "Identify efficient orbital delivery chains."
+    },
+    "atmosphere_burden_accumulation": {
+      "priority": "medium",
+      "description": "Accumulate operational penalties for atmosphere-heavy chains."
+    },
+    "stop_density_scoring": {
+      "priority": "high",
+      "description": "Penalize excessive stop counts."
+    }
+  },
+  "derived_mission_metrics": {
+    "estimated_rep_efficiency": "comparative_heuristic",
+    "estimated_operational_burden": "comparative_heuristic",
+    "route_chain_potential": "comparative_heuristic",
+    "unloading_complexity": "comparative_heuristic",
+    "multi_stop_efficiency": "comparative_heuristic",
+    "route_poisoning_risk": "comparative_heuristic"
+  }
+}

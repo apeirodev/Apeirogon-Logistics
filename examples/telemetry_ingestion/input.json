@@ -1,0 +1,11 @@
+{
+  "cargo_scu": 32,
+  "duration_minutes": 42,
+  "issuer": "Covalex",
+  "patch_version": "UNRESOLVED",
+  "ship": "Hull-B",
+  "unresolved_fields": [
+    "server_fps"
+  ],
+  "user_verified": true
+}

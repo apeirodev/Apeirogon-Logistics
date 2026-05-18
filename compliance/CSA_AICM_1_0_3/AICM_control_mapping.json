@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "framework": "CSA AICM v1.0.3",
+  "mappings": {
+    "AI_provider_abstraction": [
+      "AI_Provider_Governance",
+      "AI_Third_Party_Management",
+      "AI_Supply_Chain"
+    ],
+    "OCR_assisted_extraction": [
+      "AI_Data_Governance",
+      "AI_Reliability_and_Safety",
+      "AI_Security"
+    ],
+    "AI_route_recommendation": [
+      "AI_Human_Oversight",
+      "AI_Transparency_and_Explainability",
+      "AI_Operational_Assurance"
+    ],
+    "structured_prompt_contracts": [
+      "AI_Security",
+      "AI_Governance",
+      "AI_Reliability_and_Safety"
+    ],
+    "hallucination_containment": [
+      "AI_Reliability_and_Safety",
+      "AI_Human_Oversight",
+      "AI_Monitoring_and_Logging"
+    ],
+    "deterministic_fallback": [
+      "AI_Resilience",
+      "AI_Operational_Assurance"
+    ],
+    "AI_assisted_calibration": [
+      "AI_Lifecycle_Management",
+      "AI_Model_Governance",
+      "AI_Monitoring_and_Logging"
+    ]
+  },
+  "certification_claim": false
+}

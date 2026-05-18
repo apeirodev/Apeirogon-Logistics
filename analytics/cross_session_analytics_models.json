@@ -1,0 +1,24 @@
+{
+  "dataset_name": "star_citizen_hauling_phase9_cross_session_analytics",
+  "generated_at": "2026-05-16T23:56:52Z",
+  "cross_session_models": {
+    "recurring_profitable_loops": {
+      "classification": "probabilistic_pattern"
+    },
+    "recurring_inefficient_routes": {
+      "classification": "probabilistic_pattern"
+    },
+    "recurring_mission_hubs": {
+      "classification": "probabilistic_pattern"
+    },
+    "recurring_congestion_hotspots": {
+      "classification": "probabilistic_pattern"
+    },
+    "recurring_route_poisoning_zones": {
+      "classification": "probabilistic_pattern"
+    },
+    "long_term_continuation_reliability": {
+      "classification": "probabilistic_pattern"
+    }
+  }
+}

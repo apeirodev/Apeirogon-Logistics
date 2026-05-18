@@ -1,0 +1,2940 @@
+{
+  "dataset_name": "star_citizen_hauling_phase1_locations",
+  "phase": "Phase 2 - Topology Graph Construction",
+  "generated_at": "2026-05-16T23:49:18Z",
+  "retrieved_date": "2026-05-16",
+  "record_count": 75,
+  "scope": "Initial Stanton canonical location seed for hauling route optimisation.",
+  "locations": [
+    {
+      "location_id": "STANTON",
+      "canonical_name": "Stanton",
+      "aliases": [
+        "Stanton system"
+      ],
+      "entity_type": "system",
+      "system": "Stanton",
+      "parent_location_id": null,
+      "hierarchy": [
+        "Stanton"
+      ],
+      "location_class": "star_system",
+      "facts": {
+        "status": "Published",
+        "planets": 4,
+        "satellites": 12,
+        "stations": 24,
+        "jump_points": 4
+      },
+      "operational": {
+        "orbital": null,
+        "surface": null,
+        "atmospheric": null,
+        "requires_spline": null,
+        "cargo_services_known": null,
+        "freight_elevator_known": null,
+        "hull_b_supported": null
+      },
+      "derived_scores": {},
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced"
+    },
+    {
+      "location_id": "STANTON_STAR",
+      "canonical_name": "Stanton",
+      "aliases": [
+        "Stanton star"
+      ],
+      "entity_type": "star",
+      "system": "Stanton",
+      "parent_location_id": "STANTON",
+      "hierarchy": [
+        "Stanton",
+        "Stanton"
+      ],
+      "location_class": "star",
+      "facts": {
+        "star_type": "G-type main sequence"
+      },
+      "operational": {},
+      "derived_scores": {},
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced"
+    },
+    {
+      "location_id": "STANTON_HURSTON",
+      "canonical_name": "Hurston",
+      "aliases": [
+        "Stanton I"
+      ],
+      "entity_type": "planet",
+      "system": "Stanton",
+      "parent_location_id": "STANTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston"
+      ],
+      "location_class": "planet",
+      "facts": {
+        "designation": "Stanton I",
+        "corporate_owner": "Hurston Dynamics",
+        "known_child_locations_seed": [
+          "Lorville",
+          "Everus Harbor",
+          "Arial",
+          "Aberdeen",
+          "Ita",
+          "Magda"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 5,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRUSADER",
+      "canonical_name": "Crusader",
+      "aliases": [
+        "Stanton II"
+      ],
+      "entity_type": "planet",
+      "system": "Stanton",
+      "parent_location_id": "STANTON",
+      "hierarchy": [
+        "Stanton",
+        "Crusader"
+      ],
+      "location_class": "planet",
+      "facts": {
+        "designation": "Stanton II",
+        "corporate_owner": "Crusader Industries",
+        "known_child_locations_seed": [
+          "Orison",
+          "Seraphim Station",
+          "Cellin",
+          "Daymar",
+          "Yela"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 5,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_ARCCORP",
+      "canonical_name": "ArcCorp",
+      "aliases": [
+        "Stanton III"
+      ],
+      "entity_type": "planet",
+      "system": "Stanton",
+      "parent_location_id": "STANTON",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp"
+      ],
+      "location_class": "planet",
+      "facts": {
+        "designation": "Stanton III",
+        "corporate_owner": "ArcCorp",
+        "known_child_locations_seed": [
+          "Area18",
+          "Baijini Point",
+          "Lyria",
+          "Wala"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 5,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_MICROTECH",
+      "canonical_name": "microTech",
+      "aliases": [
+        "Stanton IV"
+      ],
+      "entity_type": "planet",
+      "system": "Stanton",
+      "parent_location_id": "STANTON",
+      "hierarchy": [
+        "Stanton",
+        "microTech"
+      ],
+      "location_class": "planet",
+      "facts": {
+        "designation": "Stanton IV",
+        "corporate_owner": "microTech",
+        "known_child_locations_seed": [
+          "New Babbage",
+          "Port Tressler",
+          "Calliope",
+          "Clio",
+          "Euterpe"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 5,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_LYRIA",
+      "canonical_name": "Lyria",
+      "aliases": [],
+      "entity_type": "moon",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "Lyria"
+      ],
+      "location_class": "moon",
+      "facts": {},
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_WALA",
+      "canonical_name": "Wala",
+      "aliases": [],
+      "entity_type": "moon",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "Wala"
+      ],
+      "location_class": "moon",
+      "facts": {},
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_CELLIN",
+      "canonical_name": "Cellin",
+      "aliases": [],
+      "entity_type": "moon",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "Cellin"
+      ],
+      "location_class": "moon",
+      "facts": {},
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_DAYMAR",
+      "canonical_name": "Daymar",
+      "aliases": [],
+      "entity_type": "moon",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "Daymar"
+      ],
+      "location_class": "moon",
+      "facts": {},
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_YELA",
+      "canonical_name": "Yela",
+      "aliases": [],
+      "entity_type": "moon",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "Yela"
+      ],
+      "location_class": "moon",
+      "facts": {},
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ARIAL",
+      "canonical_name": "Arial",
+      "aliases": [],
+      "entity_type": "moon",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Arial"
+      ],
+      "location_class": "moon",
+      "facts": {},
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ABERDEEN",
+      "canonical_name": "Aberdeen",
+      "aliases": [],
+      "entity_type": "moon",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Aberdeen"
+      ],
+      "location_class": "moon",
+      "facts": {},
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ITA",
+      "canonical_name": "Ita",
+      "aliases": [],
+      "entity_type": "moon",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Ita"
+      ],
+      "location_class": "moon",
+      "facts": {},
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_MAGDA",
+      "canonical_name": "Magda",
+      "aliases": [],
+      "entity_type": "moon",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Magda"
+      ],
+      "location_class": "moon",
+      "facts": {},
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_CALLIOPE",
+      "canonical_name": "Calliope",
+      "aliases": [],
+      "entity_type": "moon",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "Calliope"
+      ],
+      "location_class": "moon",
+      "facts": {},
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_CLIO",
+      "canonical_name": "Clio",
+      "aliases": [],
+      "entity_type": "moon",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "Clio"
+      ],
+      "location_class": "moon",
+      "facts": {},
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_EUTERPE",
+      "canonical_name": "Euterpe",
+      "aliases": [],
+      "entity_type": "moon",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "Euterpe"
+      ],
+      "location_class": "moon",
+      "facts": {},
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": "context_dependent"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_LORVILLE",
+      "canonical_name": "Lorville",
+      "aliases": [],
+      "entity_type": "city_landing_zone",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Lorville"
+      ],
+      "location_class": "city_landing_zone",
+      "facts": {
+        "services_visible_in_seed": [
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 5,
+        "expected_hauling_efficiency_class": "low_to_medium",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "rsi_locations_in_star_citizen",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_EVERUS_HARBOR",
+      "canonical_name": "Everus Harbor",
+      "aliases": [],
+      "entity_type": "orbital_station",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Everus Harbor"
+      ],
+      "location_class": "orbital_station",
+      "facts": {
+        "services_visible_in_seed": [
+          "Admin Office",
+          "Armor",
+          "Bar",
+          "Casaba Outlet",
+          "EZ Hab",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_AREA18",
+      "canonical_name": "Area18",
+      "aliases": [],
+      "entity_type": "city_landing_zone",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "Area18"
+      ],
+      "location_class": "city_landing_zone",
+      "facts": {
+        "services_visible_in_seed": []
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 5,
+        "expected_hauling_efficiency_class": "low_to_medium",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "rsi_locations_in_star_citizen",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_BAIJINI_POINT",
+      "canonical_name": "Baijini Point",
+      "aliases": [],
+      "entity_type": "orbital_station",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "Baijini Point"
+      ],
+      "location_class": "orbital_station",
+      "facts": {
+        "services_visible_in_seed": []
+      },
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_NEW_BABBAGE",
+      "canonical_name": "New Babbage",
+      "aliases": [],
+      "entity_type": "city_landing_zone",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "New Babbage"
+      ],
+      "location_class": "city_landing_zone",
+      "facts": {
+        "services_visible_in_seed": [
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 5,
+        "expected_hauling_efficiency_class": "low_to_medium",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "rsi_locations_in_star_citizen",
+          "retrieved_date": "2026-05-16"
+        },
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_PORT_TRESSLER",
+      "canonical_name": "Port Tressler",
+      "aliases": [],
+      "entity_type": "orbital_station",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "Port Tressler"
+      ],
+      "location_class": "orbital_station",
+      "facts": {
+        "services_visible_in_seed": []
+      },
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_ORISON",
+      "canonical_name": "Orison",
+      "aliases": [],
+      "entity_type": "city_landing_zone",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "Orison"
+      ],
+      "location_class": "city_landing_zone",
+      "facts": {
+        "services_visible_in_seed": []
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 5,
+        "expected_hauling_efficiency_class": "low_to_medium",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "rsi_locations_in_star_citizen",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_SERAPHIM_STATION",
+      "canonical_name": "Seraphim Station",
+      "aliases": [],
+      "entity_type": "orbital_station",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "Seraphim Station"
+      ],
+      "location_class": "orbital_station",
+      "facts": {
+        "services_visible_in_seed": []
+      },
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_stanton_system",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_LYRIA_SAL2",
+      "canonical_name": "Shubin Mining Facility SAL-2",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP_LYRIA",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "Lyria",
+        "Shubin Mining Facility SAL-2"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Shubin Interstellar",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_LYRIA_SAL5",
+      "canonical_name": "Shubin Mining Facility SAL-5",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP_LYRIA",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "Lyria",
+        "Shubin Mining Facility SAL-5"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Shubin Interstellar",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_WALA_AREA045",
+      "canonical_name": "ArcCorp Mining Area 045",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP_WALA",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "Wala",
+        "ArcCorp Mining Area 045"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "ArcCorp",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_WALA_AREA048",
+      "canonical_name": "ArcCorp Mining Area 048",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP_WALA",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "Wala",
+        "ArcCorp Mining Area 048"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "ArcCorp",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_WALA_AREA056",
+      "canonical_name": "ArcCorp Mining Area 056",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP_WALA",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "Wala",
+        "ArcCorp Mining Area 056"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "ArcCorp",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_ARCCORP_WALA_AREA061",
+      "canonical_name": "ArcCorp Mining Area 061",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP_WALA",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "Wala",
+        "ArcCorp Mining Area 061"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "ArcCorp",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_CELLIN_HICKES",
+      "canonical_name": "Hickes Research Outpost",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER_CELLIN",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "Cellin",
+        "Hickes Research Outpost"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_CELLIN_TERRA_MILLS",
+      "canonical_name": "Terra Mills HydroFarm",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER_CELLIN",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "Cellin",
+        "Terra Mills HydroFarm"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_DAYMAR_AREA141",
+      "canonical_name": "ArcCorp Mining Area 141",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER_DAYMAR",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "Daymar",
+        "ArcCorp Mining Area 141"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "ArcCorp",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_DAYMAR_SCD1",
+      "canonical_name": "Shubin Mining Facility SCD-1",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER_DAYMAR",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "Daymar",
+        "Shubin Mining Facility SCD-1"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Shubin Interstellar",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_YELA_AREA157",
+      "canonical_name": "ArcCorp Mining Area 157",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER_YELA",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "Yela",
+        "ArcCorp Mining Area 157"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "ArcCorp",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRUSADER_YELA_DEAKINS",
+      "canonical_name": "Deakins Research Outpost",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER_YELA",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "Yela",
+        "Deakins Research Outpost"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_HDMS_EDMOND",
+      "canonical_name": "HDMS-Edmond",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "HDMS-Edmond"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": []
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_HDMS_HADLEY",
+      "canonical_name": "HDMS-Hadley",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "HDMS-Hadley"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": []
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_HDMS_OPAREI",
+      "canonical_name": "HDMS-Oparei",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "HDMS-Oparei"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": []
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_HDMS_PINEWOOD",
+      "canonical_name": "HDMS-Pinewood",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "HDMS-Pinewood"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": []
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_HDMS_STANHOPE",
+      "canonical_name": "HDMS-Stanhope",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "HDMS-Stanhope"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": []
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_HDMS_THEDUS",
+      "canonical_name": "HDMS-Thedus",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "HDMS-Thedus"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": []
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ARIAL_BEZDEK",
+      "canonical_name": "HDMS-Bezdek",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON_ARIAL",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Arial",
+        "HDMS-Bezdek"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ARIAL_LATHAN",
+      "canonical_name": "HDMS-Lathan",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON_ARIAL",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Arial",
+        "HDMS-Lathan"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ABERDEEN_ANDERSON",
+      "canonical_name": "HDMS-Anderson",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON_ABERDEEN",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Aberdeen",
+        "HDMS-Anderson"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ABERDEEN_NORGAARD",
+      "canonical_name": "HDMS-Norgaard",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON_ABERDEEN",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Aberdeen",
+        "HDMS-Norgaard"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ITA_RYDER",
+      "canonical_name": "HDMS-Ryder",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON_ITA",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Ita",
+        "HDMS-Ryder"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_ITA_WOODRUFF",
+      "canonical_name": "HDMS-Woodruff",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON_ITA",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Ita",
+        "HDMS-Woodruff"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_HURSTON_MAGDA_PERLMAN",
+      "canonical_name": "HDMS-Perlman",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON_MAGDA",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "Magda",
+        "HDMS-Perlman"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_SM018",
+      "canonical_name": "Shubin Mining Facility SM0-18",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "Shubin Mining Facility SM0-18"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Shubin Interstellar",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_SM022",
+      "canonical_name": "Shubin Mining Facility SM0-22",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "Shubin Mining Facility SM0-22"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Shubin Interstellar",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_CALLIOPE_SMCA6",
+      "canonical_name": "Shubin Mining Facility SMCa-6",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH_CALLIOPE",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "Calliope",
+        "Shubin Mining Facility SMCa-6"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Shubin Interstellar",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_MICROTECH_CALLIOPE_SMCA8",
+      "canonical_name": "Shubin Mining Facility SMCa-8",
+      "aliases": [],
+      "entity_type": "outpost",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH_CALLIOPE",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "Calliope",
+        "Shubin Mining Facility SMCa-8"
+      ],
+      "location_class": "outpost",
+      "facts": {
+        "services_visible_in_seed": [
+          "Shubin Interstellar",
+          "Platinum Bay"
+        ]
+      },
+      "operational": {
+        "orbital": false,
+        "surface": true,
+        "atmospheric": true,
+        "requires_spline": true,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 4,
+        "expected_hauling_efficiency_class": "route_poison_if_single_stop",
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "starcitizen_tools_list_stanton_locations",
+          "retrieved_date": "2026-05-16"
+        }
+      ],
+      "validation_status": "sourced_with_derived_operational_fields"
+    },
+    {
+      "location_id": "STANTON_CRU_L1",
+      "canonical_name": "CRU-L1",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "CRU-L1"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_CRU_L2",
+      "canonical_name": "CRU-L2",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "CRU-L2"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_CRU_L3",
+      "canonical_name": "CRU-L3",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "CRU-L3"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_CRU_L4",
+      "canonical_name": "CRU-L4",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "CRU-L4"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_CRU_L5",
+      "canonical_name": "CRU-L5",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_CRUSADER",
+      "hierarchy": [
+        "Stanton",
+        "Crusader",
+        "CRU-L5"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_HUR_L1",
+      "canonical_name": "HUR-L1",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "HUR-L1"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_HUR_L2",
+      "canonical_name": "HUR-L2",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "HUR-L2"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_HUR_L3",
+      "canonical_name": "HUR-L3",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "HUR-L3"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_HUR_L4",
+      "canonical_name": "HUR-L4",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "HUR-L4"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_HUR_L5",
+      "canonical_name": "HUR-L5",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_HURSTON",
+      "hierarchy": [
+        "Stanton",
+        "Hurston",
+        "HUR-L5"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_ARC_L1",
+      "canonical_name": "ARC-L1",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "ARC-L1"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_ARC_L2",
+      "canonical_name": "ARC-L2",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "ARC-L2"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_ARC_L3",
+      "canonical_name": "ARC-L3",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "ARC-L3"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_ARC_L4",
+      "canonical_name": "ARC-L4",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "ARC-L4"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_ARC_L5",
+      "canonical_name": "ARC-L5",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_ARCCORP",
+      "hierarchy": [
+        "Stanton",
+        "ArcCorp",
+        "ARC-L5"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_MIC_L1",
+      "canonical_name": "MIC-L1",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "MIC-L1"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_MIC_L2",
+      "canonical_name": "MIC-L2",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "MIC-L2"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_MIC_L3",
+      "canonical_name": "MIC-L3",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "MIC-L3"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_MIC_L4",
+      "canonical_name": "MIC-L4",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "MIC-L4"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    },
+    {
+      "location_id": "STANTON_MIC_L5",
+      "canonical_name": "MIC-L5",
+      "aliases": [],
+      "entity_type": "lagrange_point",
+      "system": "Stanton",
+      "parent_location_id": "STANTON_MICROTECH",
+      "hierarchy": [
+        "Stanton",
+        "microTech",
+        "MIC-L5"
+      ],
+      "location_class": "lagrange_point",
+      "facts": {},
+      "operational": {
+        "orbital": true,
+        "surface": false,
+        "atmospheric": false,
+        "requires_spline": false,
+        "cargo_services_known": "unknown",
+        "freight_elevator_known": "unknown",
+        "hull_b_supported": "unknown"
+      },
+      "derived_scores": {
+        "atmosphere_penalty": 0,
+        "expected_hauling_efficiency_class": "high_if_station_present",
+        "confidence": "derived_placeholder"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase2_lagrange_seed",
+          "retrieved_date": "2026-05-16",
+          "note": "Canonical Lagrange placeholder added for route topology. Station presence and services unresolved."
+        }
+      ],
+      "validation_status": "derived_placeholder_requires_validation"
+    }
+  ]
+}

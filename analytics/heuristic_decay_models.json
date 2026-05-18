@@ -1,0 +1,21 @@
+{
+  "dataset_name": "phase23a_heuristic_decay_models",
+  "generated_at": "2026-05-17T00:19:13Z",
+  "decay_systems": {
+    "patch_sensitive_heuristic_expiration": {},
+    "confidence_degradation_tracking": {},
+    "recalibration_triggers": {},
+    "operational_drift_detection": {},
+    "route_score_confidence_decay": {},
+    "telemetry_freshness_scoring": {}
+  },
+  "derived_operational_intelligence_metrics": {
+    "statistical_confidence_score": "observational_statistical_metric",
+    "telemetry_reliability_index": "observational_statistical_metric",
+    "patch_stability_score": "observational_statistical_metric",
+    "heuristic_freshness_score": "observational_statistical_metric",
+    "operational_anomaly_severity": "observational_statistical_metric",
+    "comparative_hauling_efficiency_index": "observational_statistical_metric",
+    "route_score_confidence_interval": "observational_statistical_metric"
+  }
+}

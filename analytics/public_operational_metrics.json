@@ -1,0 +1,17 @@
+{
+  "dataset_name": "publicA_operational_metrics",
+  "generated_at": "2026-05-17T00:41:37Z",
+  "metrics": {
+    "contributor_readiness_score": 0.86,
+    "telemetry_readiness_score": 0.82,
+    "operational_realism_score": 0.88,
+    "validation_integrity_score": 0.84,
+    "route_analysis_maturity_score": 0.89,
+    "public_maintainability_score": 0.87
+  },
+  "notes": [
+    "Scores are derived readiness heuristics.",
+    "Telemetry readiness will improve only with real community data.",
+    "Validation integrity includes known non-destructive legacy artefact preservation."
+  ]
+}

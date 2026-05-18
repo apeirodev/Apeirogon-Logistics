@@ -1,0 +1,20 @@
+{
+  "dataset_name": "star_citizen_hauling_phase7_route_scoring",
+  "generated_at": "2026-05-16T23:55:39Z",
+  "heuristic_weights": {
+    "same_pickup_bonus": 30,
+    "destination_overlap_bonus": 25,
+    "orbital_loop_bonus": 20,
+    "atmosphere_burden_penalty": -25,
+    "stop_density_penalty": -20,
+    "dead_leg_penalty": -35,
+    "unloading_complexity_penalty": -15,
+    "freight_interaction_penalty": -10,
+    "route_poisoning_penalty": -40
+  },
+  "explicit_rules": [
+    "All route scores remain comparative heuristics.",
+    "Scoring is runtime-dependent.",
+    "No score should be treated as authoritative gameplay timing."
+  ]
+}

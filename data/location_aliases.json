@@ -1,0 +1,409 @@
+{
+  "aliases": [
+    {
+      "alias": "Stanton",
+      "location_id": "STANTON",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Stanton system",
+      "location_id": "STANTON",
+      "alias_type": "source_or_common"
+    },
+    {
+      "alias": "Stanton",
+      "location_id": "STANTON_STAR",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Stanton star",
+      "location_id": "STANTON_STAR",
+      "alias_type": "source_or_common"
+    },
+    {
+      "alias": "Hurston",
+      "location_id": "STANTON_HURSTON",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Stanton I",
+      "location_id": "STANTON_HURSTON",
+      "alias_type": "source_or_common"
+    },
+    {
+      "alias": "Crusader",
+      "location_id": "STANTON_CRUSADER",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Stanton II",
+      "location_id": "STANTON_CRUSADER",
+      "alias_type": "source_or_common"
+    },
+    {
+      "alias": "ArcCorp",
+      "location_id": "STANTON_ARCCORP",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Stanton III",
+      "location_id": "STANTON_ARCCORP",
+      "alias_type": "source_or_common"
+    },
+    {
+      "alias": "microTech",
+      "location_id": "STANTON_MICROTECH",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Stanton IV",
+      "location_id": "STANTON_MICROTECH",
+      "alias_type": "source_or_common"
+    },
+    {
+      "alias": "Lyria",
+      "location_id": "STANTON_ARCCORP_LYRIA",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Wala",
+      "location_id": "STANTON_ARCCORP_WALA",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Cellin",
+      "location_id": "STANTON_CRUSADER_CELLIN",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Daymar",
+      "location_id": "STANTON_CRUSADER_DAYMAR",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Yela",
+      "location_id": "STANTON_CRUSADER_YELA",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Arial",
+      "location_id": "STANTON_HURSTON_ARIAL",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Aberdeen",
+      "location_id": "STANTON_HURSTON_ABERDEEN",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Ita",
+      "location_id": "STANTON_HURSTON_ITA",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Magda",
+      "location_id": "STANTON_HURSTON_MAGDA",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Calliope",
+      "location_id": "STANTON_MICROTECH_CALLIOPE",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Clio",
+      "location_id": "STANTON_MICROTECH_CLIO",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Euterpe",
+      "location_id": "STANTON_MICROTECH_EUTERPE",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Lorville",
+      "location_id": "STANTON_HURSTON_LORVILLE",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Everus Harbor",
+      "location_id": "STANTON_HURSTON_EVERUS_HARBOR",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Area18",
+      "location_id": "STANTON_ARCCORP_AREA18",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Baijini Point",
+      "location_id": "STANTON_ARCCORP_BAIJINI_POINT",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "New Babbage",
+      "location_id": "STANTON_MICROTECH_NEW_BABBAGE",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Port Tressler",
+      "location_id": "STANTON_MICROTECH_PORT_TRESSLER",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Orison",
+      "location_id": "STANTON_CRUSADER_ORISON",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Seraphim Station",
+      "location_id": "STANTON_CRUSADER_SERAPHIM_STATION",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Shubin Mining Facility SAL-2",
+      "location_id": "STANTON_ARCCORP_LYRIA_SAL2",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Shubin Mining Facility SAL-5",
+      "location_id": "STANTON_ARCCORP_LYRIA_SAL5",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "ArcCorp Mining Area 045",
+      "location_id": "STANTON_ARCCORP_WALA_AREA045",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "ArcCorp Mining Area 048",
+      "location_id": "STANTON_ARCCORP_WALA_AREA048",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "ArcCorp Mining Area 056",
+      "location_id": "STANTON_ARCCORP_WALA_AREA056",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "ArcCorp Mining Area 061",
+      "location_id": "STANTON_ARCCORP_WALA_AREA061",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Hickes Research Outpost",
+      "location_id": "STANTON_CRUSADER_CELLIN_HICKES",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Terra Mills HydroFarm",
+      "location_id": "STANTON_CRUSADER_CELLIN_TERRA_MILLS",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "ArcCorp Mining Area 141",
+      "location_id": "STANTON_CRUSADER_DAYMAR_AREA141",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Shubin Mining Facility SCD-1",
+      "location_id": "STANTON_CRUSADER_DAYMAR_SCD1",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "ArcCorp Mining Area 157",
+      "location_id": "STANTON_CRUSADER_YELA_AREA157",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Deakins Research Outpost",
+      "location_id": "STANTON_CRUSADER_YELA_DEAKINS",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Edmond",
+      "location_id": "STANTON_HURSTON_HDMS_EDMOND",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Hadley",
+      "location_id": "STANTON_HURSTON_HDMS_HADLEY",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Oparei",
+      "location_id": "STANTON_HURSTON_HDMS_OPAREI",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Pinewood",
+      "location_id": "STANTON_HURSTON_HDMS_PINEWOOD",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Stanhope",
+      "location_id": "STANTON_HURSTON_HDMS_STANHOPE",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Thedus",
+      "location_id": "STANTON_HURSTON_HDMS_THEDUS",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Bezdek",
+      "location_id": "STANTON_HURSTON_ARIAL_BEZDEK",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Lathan",
+      "location_id": "STANTON_HURSTON_ARIAL_LATHAN",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Anderson",
+      "location_id": "STANTON_HURSTON_ABERDEEN_ANDERSON",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Norgaard",
+      "location_id": "STANTON_HURSTON_ABERDEEN_NORGAARD",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Ryder",
+      "location_id": "STANTON_HURSTON_ITA_RYDER",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Woodruff",
+      "location_id": "STANTON_HURSTON_ITA_WOODRUFF",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HDMS-Perlman",
+      "location_id": "STANTON_HURSTON_MAGDA_PERLMAN",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Shubin Mining Facility SM0-18",
+      "location_id": "STANTON_MICROTECH_SM018",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Shubin Mining Facility SM0-22",
+      "location_id": "STANTON_MICROTECH_SM022",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Shubin Mining Facility SMCa-6",
+      "location_id": "STANTON_MICROTECH_CALLIOPE_SMCA6",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "Shubin Mining Facility SMCa-8",
+      "location_id": "STANTON_MICROTECH_CALLIOPE_SMCA8",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "CRU-L1",
+      "location_id": "STANTON_CRU_L1",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "CRU-L2",
+      "location_id": "STANTON_CRU_L2",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "CRU-L3",
+      "location_id": "STANTON_CRU_L3",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "CRU-L4",
+      "location_id": "STANTON_CRU_L4",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "CRU-L5",
+      "location_id": "STANTON_CRU_L5",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HUR-L1",
+      "location_id": "STANTON_HUR_L1",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HUR-L2",
+      "location_id": "STANTON_HUR_L2",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HUR-L3",
+      "location_id": "STANTON_HUR_L3",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HUR-L4",
+      "location_id": "STANTON_HUR_L4",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "HUR-L5",
+      "location_id": "STANTON_HUR_L5",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "ARC-L1",
+      "location_id": "STANTON_ARC_L1",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "ARC-L2",
+      "location_id": "STANTON_ARC_L2",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "ARC-L3",
+      "location_id": "STANTON_ARC_L3",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "ARC-L4",
+      "location_id": "STANTON_ARC_L4",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "ARC-L5",
+      "location_id": "STANTON_ARC_L5",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "MIC-L1",
+      "location_id": "STANTON_MIC_L1",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "MIC-L2",
+      "location_id": "STANTON_MIC_L2",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "MIC-L3",
+      "location_id": "STANTON_MIC_L3",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "MIC-L4",
+      "location_id": "STANTON_MIC_L4",
+      "alias_type": "canonical"
+    },
+    {
+      "alias": "MIC-L5",
+      "location_id": "STANTON_MIC_L5",
+      "alias_type": "canonical"
+    }
+  ]
+}

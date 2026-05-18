@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ship Operational Profile",
+  "type": "object",
+  "required": [
+    "ship_id",
+    "canonical_name",
+    "manufacturer",
+    "sourced_facts",
+    "derived_operational_heuristics"
+  ]
+}

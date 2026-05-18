@@ -1,0 +1,30 @@
+{
+  "dataset_name": "phase26_AI_provider_adapter_models",
+  "generated_at": "2026-05-17T00:55:10Z",
+  "adapter_contract": {
+    "inputs": [
+      "prompt_contract",
+      "mission_batch",
+      "context_subset",
+      "provider_config"
+    ],
+    "outputs": [
+      "validated_structured_response",
+      "raw_provider_response",
+      "confidence",
+      "validation_errors"
+    ]
+  },
+  "adapter_types": [
+    "openai_compatible",
+    "anthropic_compatible",
+    "ollama",
+    "lm_studio",
+    "manual"
+  ],
+  "normalization_rules": [
+    "Normalize provider outputs into common route recommendation schema.",
+    "Preserve raw response for audit where user permits.",
+    "Reject responses that invent mission values."
+  ]
+}

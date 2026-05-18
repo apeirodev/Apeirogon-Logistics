@@ -1,0 +1,13 @@
+{
+  "dataset_name": "star_citizen_hauling_phase10_execution_metrics",
+  "generated_at": "2026-05-16T23:57:32Z",
+  "derived_execution_metrics": {
+    "live_execution_stability": "probabilistic_runtime_heuristic",
+    "reroute_frequency": "probabilistic_runtime_heuristic",
+    "congestion_recovery_efficiency": "probabilistic_runtime_heuristic",
+    "orbital_loop_survivability": "probabilistic_runtime_heuristic",
+    "route_execution_confidence": "probabilistic_runtime_heuristic",
+    "live_rep_hour_estimate": "probabilistic_runtime_heuristic",
+    "route_interruption_likelihood": "probabilistic_runtime_heuristic"
+  }
+}

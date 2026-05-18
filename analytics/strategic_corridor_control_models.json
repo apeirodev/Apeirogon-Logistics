@@ -1,0 +1,27 @@
+{
+  "dataset_name": "star_citizen_hauling_phase15_corridor_control",
+  "generated_at": "2026-05-17T00:01:14Z",
+  "control_systems": {
+    "corridor_survivability_analysis": {
+      "classification": "strategic_corridor_model"
+    },
+    "corridor_defense_allocation": {
+      "classification": "strategic_corridor_model"
+    },
+    "corridor_recovery_prioritization": {
+      "classification": "strategic_corridor_model"
+    },
+    "convoy_reinforcement_scheduling": {
+      "classification": "strategic_corridor_model"
+    },
+    "strategic_rerouting_under_pressure": {
+      "classification": "strategic_corridor_model"
+    },
+    "long_range_logistics_continuity": {
+      "classification": "strategic_corridor_model"
+    },
+    "corridor_collapse_prevention": {
+      "classification": "strategic_corridor_model"
+    }
+  }
+}

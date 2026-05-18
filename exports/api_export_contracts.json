@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-05-17T00:26:14Z",
+  "contracts": {
+    "mission_batch_input": {
+      "required": [
+        "batch_id",
+        "missions"
+      ],
+      "optional": [
+        "source_screenshot_ids",
+        "ocr_confidence",
+        "patch_version"
+      ]
+    },
+    "route_recommendation_output": {
+      "required": [
+        "accepted_missions",
+        "rejected_missions",
+        "recommended_route"
+      ],
+      "optional": [
+        "risks",
+        "confidence",
+        "unresolved_fields"
+      ]
+    },
+    "telemetry_input": {
+      "required": [
+        "session_id",
+        "event_type",
+        "timestamp"
+      ],
+      "optional": [
+        "mission_id",
+        "observed_duration_seconds",
+        "location",
+        "notes"
+      ]
+    },
+    "calibration_output": {
+      "required": [
+        "metric_name",
+        "observed_value",
+        "predicted_value",
+        "variance"
+      ],
+      "optional": [
+        "sample_size",
+        "confidence_score",
+        "patch_version"
+      ]
+    }
+  }
+}

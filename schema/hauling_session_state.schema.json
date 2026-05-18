@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hauling Session State",
+  "type": "object",
+  "required": [
+    "session_id",
+    "export_timestamp"
+  ],
+  "properties": {
+    "session_id": {
+      "type": "string"
+    },
+    "patch_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "AI_provider_used": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ship_used": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "issuer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mission_batch": {
+      "type": "array"
+    },
+    "accepted_missions": {
+      "type": "array"
+    },
+    "rejected_missions": {
+      "type": "array"
+    },
+    "route_sequence": {
+      "type": "array"
+    },
+    "unresolved_fields": {
+      "type": "array"
+    },
+    "telemetry_events": {
+      "type": "array"
+    },
+    "user_corrections": {
+      "type": "array"
+    },
+    "export_timestamp": {
+      "type": "string"
+    }
+  }
+}

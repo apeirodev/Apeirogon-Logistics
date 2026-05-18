@@ -1,0 +1,17 @@
+{
+  "dataset_name": "phase24b_mission_issuer_profiles",
+  "generated_at": "2026-05-17T00:23:38Z",
+  "issuers": {
+    "Covalex": {
+      "mission_structure_tendency": "multi_stop_distribution",
+      "orbital_loop_tendency": "high",
+      "dead_leg_tendency": "moderate"
+    },
+    "Ling Family": {
+      "mission_structure_tendency": "regional_routes"
+    },
+    "Red Wind": {
+      "mission_structure_tendency": "risk_weighted_routes"
+    }
+  }
+}

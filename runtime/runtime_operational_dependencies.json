@@ -1,0 +1,13 @@
+{
+  "dataset_name": "phase20_runtime_operational_dependencies",
+  "generated_at": "2026-05-17T00:12:56Z",
+  "dependencies": [
+    "screenshot_quality",
+    "ocr_confidence",
+    "mission_pool_volatility",
+    "hauling_session_continuity",
+    "server_degradation",
+    "patch_operational_drift",
+    "player_interruption_frequency"
+  ]
+}

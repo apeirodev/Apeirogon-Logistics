@@ -1,0 +1,35 @@
+{
+  "dataset_name": "phase24b_generalized_hauling_profiles",
+  "generated_at": "2026-05-17T00:23:38Z",
+  "profiles": {
+    "Covalex": {
+      "focus": "reputation_grinding_multi_stop"
+    },
+    "Ling Family": {
+      "focus": "regional_distribution"
+    },
+    "Red Wind": {
+      "focus": "higher_risk_transport"
+    },
+    "microTech": {
+      "focus": "corporate_distribution"
+    },
+    "Crusader": {
+      "focus": "orbital_logistics"
+    },
+    "Hurston": {
+      "focus": "industrial_distribution"
+    },
+    "ArcCorp": {
+      "focus": "urban_cargo_density"
+    },
+    "lawful_hauling": {},
+    "low_security_hauling": {},
+    "inter_system_hauling": {},
+    "bulk_hauling": {},
+    "rapid_multi_stop_hauling": {},
+    "reputation_grinding": {},
+    "cargo_arbitrage": {},
+    "mixed_cargo_operations": {}
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "dataset_name": "star_citizen_hauling_phase12_intersystem_routes",
+  "generated_at": "2026-05-16T23:58:51Z",
+  "route_models": {
+    "stanton_to_pyro_routes": {
+      "classification": "intersystem_corridor_model"
+    },
+    "jump_point_dependency_modeling": {
+      "classification": "jump_point_risk_model"
+    },
+    "fuel_risk_accumulation": {
+      "classification": "long_range_risk_model"
+    },
+    "deep_space_dead_leg_modeling": {
+      "classification": "deep_space_recovery_model"
+    },
+    "long_range_convoy_modeling": {
+      "classification": "extended_convoy_model"
+    },
+    "remote_recovery_feasibility": {
+      "classification": "recovery_feasibility_model"
+    },
+    "intersystem_orbital_chaining": {
+      "classification": "cross_system_loop_model"
+    }
+  }
+}

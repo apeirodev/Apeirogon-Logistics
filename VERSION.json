@@ -1,0 +1,22 @@
+{
+  "claims": {
+    "certification_or_compliance_claim": false,
+    "cloud_provider_dependency": false,
+    "hard_ocr_engine_dependency": false,
+    "telemetry_calibrated": false
+  },
+  "generated_utc": "2026-05-17T14:19:20Z",
+  "previous_version": "0.30.3",
+  "project": "Apeirogon Logistics",
+  "release_type": "0.30.4_scope_rebuild_from_verified_0.30.3",
+  "semantic_versioning": "three-level",
+  "skipped_versions": [
+    {
+      "status": "abandoned_failed_run",
+      "version": "0.30.4"
+    }
+  ],
+  "star_citizen_patch_version": "UNRESOLVED_REQUIRES_VALIDATION",
+  "status": "stable_pre_release_deterministic_toolkit",
+  "version": "0.30.5"
+}

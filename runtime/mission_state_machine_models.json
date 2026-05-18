@@ -1,0 +1,62 @@
+{
+  "dataset_name": "star_citizen_hauling_phase10_state_machine",
+  "generated_at": "2026-05-16T23:57:32Z",
+  "states": {
+    "mission_acquisition": {
+      "next_states": [
+        "cargo_acquisition",
+        "mission_failure"
+      ]
+    },
+    "cargo_acquisition": {
+      "next_states": [
+        "loading_state",
+        "mission_failure"
+      ]
+    },
+    "loading_state": {
+      "next_states": [
+        "departure_state",
+        "reroute_conditions"
+      ]
+    },
+    "departure_state": {
+      "next_states": [
+        "transit_state"
+      ]
+    },
+    "transit_state": {
+      "next_states": [
+        "arrival_state",
+        "reroute_conditions",
+        "mission_failure"
+      ]
+    },
+    "arrival_state": {
+      "next_states": [
+        "unloading_state"
+      ]
+    },
+    "unloading_state": {
+      "next_states": [
+        "mission_completion",
+        "reroute_conditions"
+      ]
+    },
+    "mission_completion": {
+      "terminal": true
+    },
+    "mission_abandonment": {
+      "terminal": true
+    },
+    "mission_failure": {
+      "terminal": true
+    },
+    "reroute_conditions": {
+      "next_states": [
+        "transit_state",
+        "mission_abandonment"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "classification": "AI outputs are advisory until validated.",
+  "required_metadata": [
+    "provider",
+    "prompt_contract",
+    "confidence",
+    "validation_status",
+    "unresolved_fields",
+    "human_confirmation_required"
+  ],
+  "hard_rejections": [
+    "fabricated_mission_details",
+    "fabricated_QT_times",
+    "unmarked_uncertainty",
+    "schema_invalid_output"
+  ]
+}

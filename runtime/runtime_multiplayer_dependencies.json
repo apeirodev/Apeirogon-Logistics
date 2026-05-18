@@ -1,0 +1,14 @@
+{
+  "dataset_name": "star_citizen_hauling_phase11_runtime_dependencies",
+  "generated_at": "2026-05-16T23:58:11Z",
+  "dependencies": [
+    "player_count",
+    "active_ship_mix",
+    "convoy_size",
+    "escort_availability",
+    "regional_congestion",
+    "server_stability",
+    "player_coordination_quality",
+    "mission_synchronization_timing"
+  ]
+}

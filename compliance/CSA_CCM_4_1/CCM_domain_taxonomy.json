@@ -1,0 +1,23 @@
+{
+  "version": "4.1.0",
+  "domains": [
+    "AIS",
+    "A&A",
+    "BCR",
+    "CCC",
+    "CEK",
+    "DCS",
+    "DSP",
+    "EKM",
+    "GRM",
+    "HRS",
+    "IAM",
+    "IPY",
+    "I&S",
+    "LOG",
+    "MOS",
+    "SEF",
+    "STA",
+    "TVM"
+  ]
+}

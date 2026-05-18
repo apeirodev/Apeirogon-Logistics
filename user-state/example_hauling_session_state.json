@@ -1,0 +1,15 @@
+{
+  "session_id": "example-session",
+  "patch_version": null,
+  "AI_provider_used": null,
+  "ship_used": null,
+  "issuer": null,
+  "mission_batch": [],
+  "accepted_missions": [],
+  "rejected_missions": [],
+  "route_sequence": [],
+  "unresolved_fields": [],
+  "telemetry_events": [],
+  "user_corrections": [],
+  "export_timestamp": "2026-05-17T01:02:11Z"
+}

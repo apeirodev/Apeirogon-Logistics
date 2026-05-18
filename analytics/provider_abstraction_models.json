@@ -1,0 +1,53 @@
+{
+  "dataset_name": "phase26_provider_abstraction_models",
+  "generated_at": "2026-05-17T00:55:10Z",
+  "providers": {
+    "openai_compatible": {
+      "execution_mode": "cloud_or_local_gateway",
+      "capabilities": [
+        "text",
+        "image_if_supported",
+        "structured_output_if_supported"
+      ],
+      "requires_user_api_key": true
+    },
+    "anthropic_compatible": {
+      "execution_mode": "cloud",
+      "capabilities": [
+        "text",
+        "image_if_supported",
+        "structured_output_if_supported"
+      ],
+      "requires_user_api_key": true
+    },
+    "ollama": {
+      "execution_mode": "local",
+      "capabilities": [
+        "text",
+        "image_if_model_supports"
+      ],
+      "requires_user_api_key": false
+    },
+    "lm_studio": {
+      "execution_mode": "local_openai_compatible",
+      "capabilities": [
+        "text",
+        "image_if_model_supports"
+      ],
+      "requires_user_api_key": false
+    },
+    "manual_copy_paste": {
+      "execution_mode": "manual",
+      "capabilities": [
+        "user_mediated_prompt_response"
+      ],
+      "requires_user_api_key": false
+    }
+  },
+  "rules": [
+    "No provider is authoritative.",
+    "Provider outputs must pass schema validation.",
+    "Unresolved values must remain unresolved.",
+    "Provider-specific features must have deterministic fallback paths."
+  ]
+}

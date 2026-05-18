@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Runtime Traversal Model",
+  "type": "object",
+  "required": [
+    "ship_id",
+    "canonical_name",
+    "runtime_traversal_foundations"
+  ]
+}

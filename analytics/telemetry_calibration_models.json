@@ -1,0 +1,17 @@
+{
+  "dataset_name": "phase22_telemetry_calibration",
+  "generated_at": "2026-05-17T00:15:44Z",
+  "systems": {
+    "observed_vs_predicted_route_burden": {},
+    "observed_vs_predicted_unloading_time": {},
+    "observed_vs_predicted_dead_leg_risk": {},
+    "observed_vs_predicted_orbital_loop_persistence": {},
+    "observed_vs_predicted_rep_hour": {},
+    "observed_vs_predicted_route_degradation": {}
+  },
+  "rules": [
+    "Telemetry calibration remains observational.",
+    "Derived heuristics must not overwrite sourced facts.",
+    "Runtime variability remains unresolved."
+  ]
+}

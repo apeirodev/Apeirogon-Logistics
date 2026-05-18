@@ -1,0 +1,18 @@
+{
+  "dataset_name": "phase23a_patch_regression_detection_models",
+  "generated_at": "2026-05-17T00:19:13Z",
+  "regression_detectors": {
+    "hauling_efficiency_regression_detection": {},
+    "unloading_slowdown_detection": {},
+    "freight_elevator_degradation_detection": {},
+    "route_chain_degradation_detection": {},
+    "mission_pool_volatility_escalation": {},
+    "orbital_loop_collapse_detection": {},
+    "patch_heuristic_invalidation_triggers": {}
+  },
+  "invalidation_rules": [
+    "Invalidate or downgrade telemetry confidence after major cargo refactors.",
+    "Segment telemetry by patch era.",
+    "Do not blend telemetry across materially different hauling mechanics without marking confidence degradation."
+  ]
+}

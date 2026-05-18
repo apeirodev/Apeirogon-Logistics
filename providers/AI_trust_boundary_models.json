@@ -1,0 +1,14 @@
+{
+  "dataset_name": "phase26_AI_trust_boundary_models",
+  "generated_at": "2026-05-17T00:55:10Z",
+  "boundaries": {
+    "provider_output_classification": "untrusted_until_validated",
+    "unresolved_value_preservation_enforcement": "required",
+    "hallucination_containment_rules": "schema_and_rule_validation",
+    "deterministic_validation_layers": "required",
+    "schema_first_validation": "required",
+    "route_recommendation_verification": "required",
+    "OCR_uncertainty_preservation": "required",
+    "confidence_floor_enforcement": "required"
+  }
+}

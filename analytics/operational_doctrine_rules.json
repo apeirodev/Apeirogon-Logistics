@@ -1,0 +1,44 @@
+{
+  "dataset_name": "publicA_operational_doctrine_rules",
+  "generated_at": "2026-05-17T00:41:37Z",
+  "classification": "hard_operational_constraints",
+  "rules": {
+    "destination_based_cargo_grouping": {
+      "constraint_level": "hard",
+      "description": "Cargo should be grouped by destination wherever physically and operationally practical."
+    },
+    "anti_fragmentation_cargo_loading": {
+      "constraint_level": "hard",
+      "description": "Avoid unnecessary fragmentation across panels, grids, or unloading sequences."
+    },
+    "anti_mixing_destination_rules": {
+      "constraint_level": "hard",
+      "description": "Avoid placing visually similar cargo for different destinations adjacent to each other when it can create unloading errors."
+    },
+    "unload_first_sequencing": {
+      "constraint_level": "hard",
+      "description": "Cargo for the next drop should remain easiest to identify and unload."
+    },
+    "panel_readability_preservation": {
+      "constraint_level": "hard",
+      "description": "Cargo panel assignments should remain human-readable by destination and purpose."
+    },
+    "unloading_cognitive_load_minimization": {
+      "constraint_level": "hard",
+      "description": "Operational plans should reduce sorting burden at the destination."
+    },
+    "operational_recovery_handling": {
+      "constraint_level": "heuristic",
+      "description": "Routes should include practical recovery options when dead-leg or congestion risk is high."
+    },
+    "practical_route_sustainability": {
+      "constraint_level": "heuristic",
+      "description": "Prefer route plans that remain executable under fatigue, server instability, and imperfect OCR."
+    }
+  },
+  "preservation_rules": [
+    "These doctrine rules do not replace sourced game facts.",
+    "Unknown cargo mechanics must remain unresolved.",
+    "Mission details must never be invented."
+  ]
+}

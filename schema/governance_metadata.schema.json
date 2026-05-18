@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Governance Metadata",
+  "type": "object",
+  "properties": {
+    "derivation_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "confidence_level": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "telemetry_support_level": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "patch_validation_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_trust_floor": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "AI_generation_allowed": {
+      "type": "boolean"
+    },
+    "human_confirmation_required": {
+      "type": "boolean"
+    },
+    "calibration_generation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "telemetry_freshness": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance_chain": {
+      "type": "array"
+    },
+    "governance_review_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "operational_assurance_level": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contributor_trust_tier": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

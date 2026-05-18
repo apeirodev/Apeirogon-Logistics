@@ -1,0 +1,31 @@
+{
+  "dataset_name": "star_citizen_hauling_phase6_pipeline",
+  "generated_at": "2026-05-16T23:54:59Z",
+  "pipeline_stages": [
+    {
+      "stage": 1,
+      "name": "ocr_extraction",
+      "description": "Extract raw mission text from screenshot."
+    },
+    {
+      "stage": 2,
+      "name": "canonical_normalization",
+      "description": "Resolve aliases and canonical locations."
+    },
+    {
+      "stage": 3,
+      "name": "route_overlap_analysis",
+      "description": "Detect shared pickups and delivery overlap."
+    },
+    {
+      "stage": 4,
+      "name": "route_scoring",
+      "description": "Apply operational and traversal scoring."
+    },
+    {
+      "stage": 5,
+      "name": "mission_acceptance_recommendation",
+      "description": "Recommend accept/reject/defer decisions."
+    }
+  ]
+}

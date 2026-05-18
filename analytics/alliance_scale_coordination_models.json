@@ -1,0 +1,27 @@
+{
+  "dataset_name": "star_citizen_hauling_phase14_alliance_coordination",
+  "generated_at": "2026-05-17T00:00:28Z",
+  "coordination_systems": {
+    "alliance_fleet_partitioning": {
+      "type": "strategic_partitioning_model"
+    },
+    "regional_command_delegation": {
+      "type": "strategic_partitioning_model"
+    },
+    "convoy_synchronization_across_systems": {
+      "type": "strategic_partitioning_model"
+    },
+    "strategic_jump_point_allocation": {
+      "type": "strategic_partitioning_model"
+    },
+    "alliance_congestion_balancing": {
+      "type": "strategic_partitioning_model"
+    },
+    "alliance_piracy_response_coordination": {
+      "type": "strategic_partitioning_model"
+    },
+    "distributed_alliance_recovery_operations": {
+      "type": "strategic_partitioning_model"
+    }
+  }
+}

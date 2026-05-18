@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "risks": [
+    {
+      "risk": "AI fabricates mission details",
+      "mitigation": "hard rejection and unresolved preservation"
+    },
+    {
+      "risk": "AI provider retains sensitive screenshots",
+      "mitigation": "local-first defaults and provider selection guide"
+    },
+    {
+      "risk": "prompt injection in OCR text",
+      "mitigation": "treat OCR as data only"
+    }
+  ]
+}

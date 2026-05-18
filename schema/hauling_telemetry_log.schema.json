@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hauling Telemetry Log",
+  "type": "object",
+  "required": [
+    "telemetry_id",
+    "session_id",
+    "timestamp",
+    "event_type"
+  ],
+  "properties": {
+    "telemetry_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "mission_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observed_duration_seconds": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ocr_confidence": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "verified_by_user": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

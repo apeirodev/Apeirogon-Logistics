@@ -1,0 +1,30 @@
+{
+  "dataset_name": "v0_28_1_user_data_persistence_models",
+  "generated_at": "2026-05-17T01:02:11Z",
+  "principle": "Persistent state must be portable and user-controlled, not dependent on vendor chat memory.",
+  "persistent_objects": {
+    "user_hauling_profile": {},
+    "preferred_ships": {},
+    "preferred_mission_issuers": {},
+    "patch_era_telemetry": {},
+    "accepted_mission_history": {},
+    "rejected_mission_history": {},
+    "route_recommendation_history": {},
+    "OCR_corrections": {},
+    "manual_corrections": {},
+    "ship_specific_preferences": {},
+    "issuer_specific_preferences": {},
+    "route_outcomes": {},
+    "calibration_data": {},
+    "unresolved_values": {}
+  },
+  "storage_options": {
+    "local_JSON_file": "recommended_default",
+    "local_folder_per_patch_version": "recommended_for_active_users",
+    "GitHub_personal_fork": "advanced_public_contribution_option",
+    "private_cloud_storage": "user_controlled",
+    "manual_copy_paste_export": "universal_fallback",
+    "future_local_app_storage": "future_runtime",
+    "future_addon_or_local_runtime_storage": "future_adapter"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "dataset_name": "phase26_deterministic_fallback_models",
+  "generated_at": "2026-05-17T00:55:10Z",
+  "fallbacks": {
+    "no_OCR_operation": "manual_mission_entry",
+    "no_AI_route_scoring": "deterministic_rule_based_scoring",
+    "offline_only_operation": "local_schemas_and_local_cache",
+    "partial_screenshot_handling": "extract_known_fields_and_preserve_unresolved",
+    "missing_telemetry_handling": "use_uncalibrated_heuristics_with_low_confidence"
+  },
+  "rule_based_scoring_inputs": [
+    "same_pickup",
+    "destination_overlap",
+    "atmosphere_burden",
+    "dead_leg_risk",
+    "freight_burden",
+    "cargo_fragmentation",
+    "issuer_profile",
+    "ship_profile"
+  ]
+}

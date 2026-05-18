@@ -1,0 +1,10 @@
+{
+  "dataset_name": "publicA_unloading_sequence_rules",
+  "generated_at": "2026-05-17T00:41:37Z",
+  "rules": {
+    "next_stop_priority": "Cargo for the immediate next delivery should be easiest to access and identify.",
+    "avoid_cross_destination_sorting": "Do not create unloading plans that require sorting multiple destinations at a single stop.",
+    "preserve_label_readability": "Prefer full readable destination names in operational plans and generated outputs.",
+    "unresolved_destination_handling": "If destination OCR is unresolved, do not assign it to a cargo panel group."
+  }
+}

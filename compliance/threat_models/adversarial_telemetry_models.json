@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "threats": [
+    "fake timings",
+    "route outcome manipulation",
+    "patch-era mislabeling"
+  ],
+  "mitigations": [
+    "schema validation",
+    "provenance tagging",
+    "trust tiers",
+    "human review",
+    "patch-era segmentation",
+    "anomaly detection"
+  ]
+}

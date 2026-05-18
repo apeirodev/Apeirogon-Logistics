@@ -1,0 +1,15 @@
+{
+  "dataset_name": "phase26_provider_capability_negotiation_models",
+  "generated_at": "2026-05-17T00:55:10Z",
+  "capabilities": {
+    "OCR_support_detection": {},
+    "image_input_capability_detection": {},
+    "structured_output_support_detection": {},
+    "context_window_awareness": {},
+    "latency_classification": {},
+    "token_cost_awareness": {},
+    "local_vs_remote_execution_awareness": {},
+    "fallback_provider_selection": {},
+    "provider_trust_classification": {}
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "dataset_name": "phase21_real_session_analytics",
+  "generated_at": "2026-05-17T00:14:23Z",
+  "systems": {
+    "practical_rep_hour_tracking": {},
+    "real_mission_chain_density_analysis": {},
+    "unloading_bottleneck_analysis": {},
+    "route_poisoning_frequency_analysis": {},
+    "cargo_turnover_efficiency": {},
+    "operational_interruption_analysis": {},
+    "live_recovery_efficiency_analysis": {}
+  }
+}

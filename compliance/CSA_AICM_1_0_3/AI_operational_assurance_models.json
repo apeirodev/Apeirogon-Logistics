@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "assurance_states": [
+    "unverified",
+    "schema_validated",
+    "human_verified",
+    "telemetry_supported",
+    "patch_validated",
+    "maintainer_curated"
+  ]
+}

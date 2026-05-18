@@ -1,0 +1,17 @@
+{
+  "dataset_name": "star_citizen_hauling_phase6_extraction_pipeline",
+  "generated_at": "2026-05-16T23:54:59Z",
+  "explicit_rules": [
+    "OCR results are probabilistic.",
+    "Unresolved OCR values must remain unresolved.",
+    "Mission scoring is runtime-dependent.",
+    "Current ship and drive materially affect recommendations.",
+    "Patch volatility must be preserved."
+  ],
+  "runtime_dependencies": [
+    "current_ship",
+    "current_quantum_drive",
+    "current_patch",
+    "current_server_conditions"
+  ]
+}

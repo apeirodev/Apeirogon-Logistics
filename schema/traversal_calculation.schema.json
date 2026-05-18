@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Traversal Calculation Model",
+  "type": "object",
+  "required": [
+    "runtime_qt_estimation_framework",
+    "weighting_models"
+  ]
+}

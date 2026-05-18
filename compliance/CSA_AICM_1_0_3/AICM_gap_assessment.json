@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "framework": "CSA AICM v1.0.3",
+  "gaps": [
+    {
+      "gap": "No real provider performance telemetry yet",
+      "severity": "medium",
+      "recommended_action": "Track provider structured-output reliability by user and patch era."
+    },
+    {
+      "gap": "No automated hallucination test suite yet",
+      "severity": "medium",
+      "recommended_action": "Create regression tests using adversarial mission examples."
+    },
+    {
+      "gap": "No implemented local runtime yet",
+      "severity": "low",
+      "recommended_action": "Keep deterministic contracts ready for future implementation."
+    },
+    {
+      "gap": "No AI incident process yet",
+      "severity": "low",
+      "recommended_action": "Add issue template for AI output failures once GitHub repo exists."
+    }
+  ]
+}

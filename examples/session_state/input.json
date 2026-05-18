@@ -1,0 +1,8 @@
+{
+  "issuer": "Covalex",
+  "session_id": "example_session",
+  "ship_used": "Hull-B",
+  "unresolved_fields": [
+    "exact_distance"
+  ]
+}

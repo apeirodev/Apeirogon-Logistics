@@ -1,0 +1,51 @@
+{
+  "dataset_name": "publicA_telemetry_collection_templates",
+  "generated_at": "2026-05-17T00:41:37Z",
+  "templates": {
+    "verified_session": {
+      "fields": [
+        "session_id",
+        "contributor_id_optional",
+        "patch_version",
+        "ship",
+        "issuer",
+        "accepted_missions",
+        "rejected_missions",
+        "start_time",
+        "end_time",
+        "verification_method"
+      ]
+    },
+    "route_execution": {
+      "fields": [
+        "route_id",
+        "mission_ids",
+        "pickup",
+        "drop_sequence",
+        "observed_completion_time",
+        "reroutes",
+        "dead_leg_result"
+      ]
+    },
+    "unloading_timing": {
+      "fields": [
+        "location",
+        "cargo_scu",
+        "container_count",
+        "unloading_start",
+        "unloading_end",
+        "freight_elevator_delay",
+        "issues"
+      ]
+    },
+    "dead_leg_event": {
+      "fields": [
+        "location",
+        "cause",
+        "recovery_route",
+        "recovery_duration",
+        "avoidable"
+      ]
+    }
+  }
+}

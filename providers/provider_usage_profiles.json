@@ -1,0 +1,135 @@
+{
+  "dataset_name": "v0_28_1_provider_usage_profiles",
+  "generated_at": "2026-05-17T01:02:11Z",
+  "providers": {
+    "ChatGPT": {
+      "best_for": [
+        "file_context",
+        "image_analysis",
+        "structured_route_reasoning",
+        "project_style_usage"
+      ],
+      "limitations": [
+        "memory_not_authoritative",
+        "file_context_may_need_refresh",
+        "export_state_manually"
+      ],
+      "recommended_mode": "project_or_chat_with_attached_lightweight_subset"
+    },
+    "Claude": {
+      "best_for": [
+        "large_context",
+        "project_knowledge",
+        "careful_document_reasoning"
+      ],
+      "limitations": [
+        "memory_not_authoritative",
+        "state_must_be_exported"
+      ],
+      "recommended_mode": "project_knowledge_or_file_attachment"
+    },
+    "Gemini": {
+      "best_for": [
+        "multimodal_file_context",
+        "Google_workspace_adjacent_workflows"
+      ],
+      "limitations": [
+        "validate_structured_outputs",
+        "state_must_be_portable"
+      ],
+      "recommended_mode": "file_upload_or_context_bundle"
+    },
+    "Microsoft Copilot": {
+      "best_for": [
+        "manual_guidance",
+        "lightweight_reasoning",
+        "Microsoft_ecosystem_users"
+      ],
+      "limitations": [
+        "less_reliable_as_structured_operational_runtime",
+        "manual_workflow_preferred"
+      ],
+      "recommended_mode": "manual_copy_paste"
+    },
+    "Perplexity": {
+      "best_for": [
+        "research",
+        "source_checking",
+        "patch_or_public_info_review"
+      ],
+      "limitations": [
+        "not_primary_operational_runtime",
+        "avoid_using_as_state_store"
+      ],
+      "recommended_mode": "research_support"
+    },
+    "Ollama": {
+      "best_for": [
+        "local_privacy",
+        "offline_operation",
+        "low_cost_repetition"
+      ],
+      "limitations": [
+        "model_quality_varies",
+        "vision_support_model_dependent"
+      ],
+      "recommended_mode": "local_provider_adapter"
+    },
+    "LM Studio": {
+      "best_for": [
+        "local_OpenAI_compatible_endpoint",
+        "privacy",
+        "experimentation"
+      ],
+      "limitations": [
+        "model_quality_varies",
+        "vision_support_model_dependent"
+      ],
+      "recommended_mode": "local_openai_compatible_adapter"
+    },
+    "OpenAI_compatible_API": {
+      "best_for": [
+        "automation",
+        "structured_outputs",
+        "provider_portability"
+      ],
+      "limitations": [
+        "requires_user_API_key",
+        "cost_and_rate_limits_apply"
+      ],
+      "recommended_mode": "API_adapter"
+    },
+    "Anthropic_compatible_API": {
+      "best_for": [
+        "automation",
+        "large_context_reasoning"
+      ],
+      "limitations": [
+        "requires_user_API_key",
+        "provider_specific_limits_apply"
+      ],
+      "recommended_mode": "API_adapter"
+    },
+    "manual_copy_paste": {
+      "best_for": [
+        "universal_access",
+        "no_API_key",
+        "fallback_operation"
+      ],
+      "limitations": [
+        "manual_state_management",
+        "manual_screenshot_transcription_or_upload"
+      ],
+      "recommended_mode": "baseline_universal_mode"
+    }
+  },
+  "capability_matrix": {
+    "file_upload_support": "provider_dependent",
+    "image_input_support": "provider_and_plan_dependent",
+    "structured_JSON_output_reliability": "provider_and_prompt_dependent",
+    "long_context_suitability": "provider_dependent",
+    "local_privacy_suitability": "highest_for_local_models",
+    "API_automation_suitability": "highest_for_API_and_local_endpoint_modes",
+    "manual_workflow_suitability": "universal"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "alignment_areas": [
+    "GitHub governance",
+    "data lifecycle",
+    "release management",
+    "local-first operation",
+    "provider abstraction"
+  ],
+  "evidence_placeholders": true
+}

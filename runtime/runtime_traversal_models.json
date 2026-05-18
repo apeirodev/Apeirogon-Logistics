@@ -1,0 +1,248 @@
+{
+  "dataset_name": "star_citizen_hauling_phase4_runtime_models",
+  "phase": "Phase 4 - Runtime Traversal Foundations",
+  "generated_at": "2026-05-16T23:53:22Z",
+  "record_count": 10,
+  "records": [
+    {
+      "ship_id": "MISC_HULL_B",
+      "canonical_name": "Hull-B",
+      "runtime_traversal_foundations": {
+        "quantum_drive_compatibility": "known_but_not_yet_ingested",
+        "fuel_capacity_placeholder": "unresolved",
+        "traversal_profile_class": "orbital_chain_specialist",
+        "atmospheric_traversal_class": "poor_loaded",
+        "docking_traversal_class": "pad_or_hangar"
+      },
+      "runtime_constraints": [
+        "QT time remains runtime-derived",
+        "Traversal varies by quantum drive",
+        "Traversal varies by cargo state",
+        "Traversal varies by server conditions"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_runtime_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Runtime traversal foundation placeholder model."
+        }
+      ]
+    },
+    {
+      "ship_id": "MISC_HULL_C",
+      "canonical_name": "Hull-C",
+      "runtime_traversal_foundations": {
+        "quantum_drive_compatibility": "known_but_not_yet_ingested",
+        "fuel_capacity_placeholder": "unresolved",
+        "traversal_profile_class": "bulk_station_logistics",
+        "atmospheric_traversal_class": "extremely_poor_loaded",
+        "docking_traversal_class": "docking_required"
+      },
+      "runtime_constraints": [
+        "QT time remains runtime-derived",
+        "Traversal varies by quantum drive",
+        "Traversal varies by cargo state",
+        "Traversal varies by server conditions"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_runtime_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Runtime traversal foundation placeholder model."
+        }
+      ]
+    },
+    {
+      "ship_id": "RSI_HERMES",
+      "canonical_name": "Hermes",
+      "runtime_traversal_foundations": {
+        "quantum_drive_compatibility": "known_but_not_yet_ingested",
+        "fuel_capacity_placeholder": "unresolved",
+        "traversal_profile_class": "fast_flexible_hauler",
+        "atmospheric_traversal_class": "medium",
+        "docking_traversal_class": "pad_or_hangar"
+      },
+      "runtime_constraints": [
+        "QT time remains runtime-derived",
+        "Traversal varies by quantum drive",
+        "Traversal varies by cargo state",
+        "Traversal varies by server conditions"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_runtime_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Runtime traversal foundation placeholder model."
+        }
+      ]
+    },
+    {
+      "ship_id": "MISC_STARLANCER_MAX",
+      "canonical_name": "Starlancer MAX",
+      "runtime_traversal_foundations": {
+        "quantum_drive_compatibility": "known_but_not_yet_ingested",
+        "fuel_capacity_placeholder": "unresolved",
+        "traversal_profile_class": "generalist_hauler",
+        "atmospheric_traversal_class": "moderate",
+        "docking_traversal_class": "pad_or_hangar"
+      },
+      "runtime_constraints": [
+        "QT time remains runtime-derived",
+        "Traversal varies by quantum drive",
+        "Traversal varies by cargo state",
+        "Traversal varies by server conditions"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_runtime_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Runtime traversal foundation placeholder model."
+        }
+      ]
+    },
+    {
+      "ship_id": "MISC_STARLANCER_TAC",
+      "canonical_name": "Starlancer TAC",
+      "runtime_traversal_foundations": {
+        "quantum_drive_compatibility": "known_but_not_yet_ingested",
+        "fuel_capacity_placeholder": "unresolved",
+        "traversal_profile_class": "combat_logistics_hybrid",
+        "atmospheric_traversal_class": "moderate",
+        "docking_traversal_class": "pad_or_hangar"
+      },
+      "runtime_constraints": [
+        "QT time remains runtime-derived",
+        "Traversal varies by quantum drive",
+        "Traversal varies by cargo state",
+        "Traversal varies by server conditions"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_runtime_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Runtime traversal foundation placeholder model."
+        }
+      ]
+    },
+    {
+      "ship_id": "DRAKE_CATERPILLAR",
+      "canonical_name": "Caterpillar",
+      "runtime_traversal_foundations": {
+        "quantum_drive_compatibility": "known_but_not_yet_ingested",
+        "fuel_capacity_placeholder": "unresolved",
+        "traversal_profile_class": "heavy_surface_logistics",
+        "atmospheric_traversal_class": "poor",
+        "docking_traversal_class": "pad_or_hangar"
+      },
+      "runtime_constraints": [
+        "QT time remains runtime-derived",
+        "Traversal varies by quantum drive",
+        "Traversal varies by cargo state",
+        "Traversal varies by server conditions"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_runtime_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Runtime traversal foundation placeholder model."
+        }
+      ]
+    },
+    {
+      "ship_id": "CRUSADER_C2_HERCULES",
+      "canonical_name": "C2 Hercules",
+      "runtime_traversal_foundations": {
+        "quantum_drive_compatibility": "known_but_not_yet_ingested",
+        "fuel_capacity_placeholder": "unresolved",
+        "traversal_profile_class": "surface_heavy_lifter",
+        "atmospheric_traversal_class": "good_for_size",
+        "docking_traversal_class": "pad_or_hangar"
+      },
+      "runtime_constraints": [
+        "QT time remains runtime-derived",
+        "Traversal varies by quantum drive",
+        "Traversal varies by cargo state",
+        "Traversal varies by server conditions"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_runtime_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Runtime traversal foundation placeholder model."
+        }
+      ]
+    },
+    {
+      "ship_id": "ARGO_IRONCLAD",
+      "canonical_name": "Ironclad",
+      "runtime_traversal_foundations": {
+        "quantum_drive_compatibility": "known_but_not_yet_ingested",
+        "fuel_capacity_placeholder": "unresolved",
+        "traversal_profile_class": "bulk_capital_logistics",
+        "atmospheric_traversal_class": "extremely_poor",
+        "docking_traversal_class": "docking_required"
+      },
+      "runtime_constraints": [
+        "QT time remains runtime-derived",
+        "Traversal varies by quantum drive",
+        "Traversal varies by cargo state",
+        "Traversal varies by server conditions"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_runtime_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Runtime traversal foundation placeholder model."
+        }
+      ]
+    },
+    {
+      "ship_id": "MISC_FREELANCER_MAX",
+      "canonical_name": "Freelancer MAX",
+      "runtime_traversal_foundations": {
+        "quantum_drive_compatibility": "known_but_not_yet_ingested",
+        "fuel_capacity_placeholder": "unresolved",
+        "traversal_profile_class": "midrange_generalist",
+        "atmospheric_traversal_class": "moderate",
+        "docking_traversal_class": "pad_or_hangar"
+      },
+      "runtime_constraints": [
+        "QT time remains runtime-derived",
+        "Traversal varies by quantum drive",
+        "Traversal varies by cargo state",
+        "Traversal varies by server conditions"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_runtime_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Runtime traversal foundation placeholder model."
+        }
+      ]
+    },
+    {
+      "ship_id": "RSI_CONSTELLATION_TAURUS",
+      "canonical_name": "Constellation Taurus",
+      "runtime_traversal_foundations": {
+        "quantum_drive_compatibility": "known_but_not_yet_ingested",
+        "fuel_capacity_placeholder": "unresolved",
+        "traversal_profile_class": "armed_generalist",
+        "atmospheric_traversal_class": "moderate",
+        "docking_traversal_class": "pad_or_hangar"
+      },
+      "runtime_constraints": [
+        "QT time remains runtime-derived",
+        "Traversal varies by quantum drive",
+        "Traversal varies by cargo state",
+        "Traversal varies by server conditions"
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_runtime_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Runtime traversal foundation placeholder model."
+        }
+      ]
+    }
+  ]
+}

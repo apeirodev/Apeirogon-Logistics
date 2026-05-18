@@ -1,0 +1,23 @@
+{
+  "base_package": "apeirogon_logistics_0_30_3_completion_phase.zip",
+  "generated_at": "2026-05-17T14:19:20Z",
+  "json_count": 287,
+  "markdown_count": 219,
+  "skipped_versions": [
+    "0.30.4 abandoned_failed_run"
+  ],
+  "smoke_test_returncodes": {
+    "deterministic_scorer": 0,
+    "governance_metadata_validator": 0,
+    "manifest_validator": 0,
+    "ocr_normalizer": 0,
+    "provider_output_validator": 0,
+    "release_checksum_generation": 0,
+    "replay_integrity": 0,
+    "schema_validator": 0,
+    "telemetry_ingestion": 0
+  },
+  "smoke_tests_passed": true,
+  "tool_count": 29,
+  "version": "0.30.5"
+}

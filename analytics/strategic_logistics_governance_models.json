@@ -1,0 +1,30 @@
+{
+  "dataset_name": "star_citizen_hauling_phase14_strategic_governance",
+  "generated_at": "2026-05-17T00:00:28Z",
+  "governance_systems": {
+    "alliance_hauling_doctrine": {
+      "classification": "macro_logistics_governance_model"
+    },
+    "strategic_convoy_scheduling": {
+      "classification": "macro_logistics_governance_model"
+    },
+    "regional_logistics_governance": {
+      "classification": "macro_logistics_governance_model"
+    },
+    "persistent_supply_chain_stabilization": {
+      "classification": "macro_logistics_governance_model"
+    },
+    "strategic_orbital_chain_preservation": {
+      "classification": "macro_logistics_governance_model"
+    },
+    "long_term_recovery_reserve_planning": {
+      "classification": "macro_logistics_governance_model"
+    },
+    "strategic_escort_reserve_management": {
+      "classification": "macro_logistics_governance_model"
+    },
+    "multi_convoy_orchestration": {
+      "classification": "macro_logistics_governance_model"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "dataset_name": "publicA_route_distance_enrichment_models",
+  "generated_at": "2026-05-17T00:41:37Z",
+  "models": {
+    "canonical_route_distance_placeholders": {
+      "status": "not_populated",
+      "purpose": "Allow future community-sourced distance or traversal-tier enrichment."
+    },
+    "orbital_adjacency_modeling": {},
+    "traversal_tier_classification": {
+      "tiers": [
+        "local",
+        "regional",
+        "planetary",
+        "interplanetary",
+        "intersystem"
+      ]
+    },
+    "route_cost_approximation_models": {
+      "note": "Use ordinal costs unless exact current distance sources are validated."
+    },
+    "station_transition_burden_weighting": {},
+    "atmosphere_transition_burden_weighting": {}
+  },
+  "rules": [
+    "Do not store fixed QT time as authoritative.",
+    "Distances require source attribution.",
+    "Traversal tiers can improve route scoring without pretending to be exact."
+  ]
+}

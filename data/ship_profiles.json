@@ -1,0 +1,467 @@
+{
+  "dataset_name": "star_citizen_hauling_phase4_ship_profiles",
+  "phase": "Phase 4 - Ship Operational Profiles",
+  "generated_at": "2026-05-16T23:53:22Z",
+  "record_count": 10,
+  "records": [
+    {
+      "ship_id": "MISC_HULL_B",
+      "canonical_name": "Hull-B",
+      "manufacturer": "MISC",
+      "sourced_facts": {
+        "cargo_capacity_scu": 512,
+        "cargo_layout_type": "external_spindle",
+        "external_cargo": true,
+        "internal_cargo": false,
+        "docking_required": false
+      },
+      "derived_operational_heuristics": {
+        "landing_profile": "medium_pad_capable_loaded",
+        "hangar_class": "medium",
+        "maneuverability_class": "medium",
+        "atmospheric_handling_class": "poor_loaded",
+        "freight_interaction_complexity": 2,
+        "operational_suitability": 9,
+        "expected_covalex_efficiency": 10,
+        "dead_leg_recovery_suitability": 8,
+        "traversal_profile": "orbital_chain_specialist"
+      },
+      "unresolved_implementation_details": [
+        "Patch-specific cargo handling behavior",
+        "Freight elevator interaction timing",
+        "Current live handling characteristics",
+        "Quantum fuel and runtime traversal tuning"
+      ],
+      "runtime_dependent_characteristics": [
+        "Quantum drive selection",
+        "Server performance",
+        "Cargo load state",
+        "Atmospheric flight path",
+        "Hangar assignment"
+      ],
+      "notes": [
+        "Largest currently practical non-docking Hull-series hauler.",
+        "External spindle cargo handling heavily favors Covalex route stacking."
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_ship_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced ship data and derived hauling suitability heuristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "ship_id": "MISC_HULL_C",
+      "canonical_name": "Hull-C",
+      "manufacturer": "MISC",
+      "sourced_facts": {
+        "cargo_capacity_scu": 4608,
+        "cargo_layout_type": "external_spindle",
+        "external_cargo": true,
+        "internal_cargo": false,
+        "docking_required": true
+      },
+      "derived_operational_heuristics": {
+        "landing_profile": "restricted_loaded",
+        "hangar_class": "capital",
+        "maneuverability_class": "poor",
+        "atmospheric_handling_class": "extremely_poor_loaded",
+        "freight_interaction_complexity": 7,
+        "operational_suitability": 5,
+        "expected_covalex_efficiency": 3,
+        "dead_leg_recovery_suitability": 2,
+        "traversal_profile": "bulk_station_logistics"
+      },
+      "unresolved_implementation_details": [
+        "Patch-specific cargo handling behavior",
+        "Freight elevator interaction timing",
+        "Current live handling characteristics",
+        "Quantum fuel and runtime traversal tuning"
+      ],
+      "runtime_dependent_characteristics": [
+        "Quantum drive selection",
+        "Server performance",
+        "Cargo load state",
+        "Atmospheric flight path",
+        "Hangar assignment"
+      ],
+      "notes": [
+        "Operationally inefficient for small multi-stop Covalex hauling.",
+        "Best suited for bulk station-to-station movement."
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_ship_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced ship data and derived hauling suitability heuristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "ship_id": "RSI_HERMES",
+      "canonical_name": "Hermes",
+      "manufacturer": "RSI",
+      "sourced_facts": {
+        "cargo_capacity_scu": null,
+        "cargo_layout_type": "internal",
+        "external_cargo": false,
+        "internal_cargo": true,
+        "docking_required": false
+      },
+      "derived_operational_heuristics": {
+        "landing_profile": "unknown_pending_live_validation",
+        "hangar_class": "unknown",
+        "maneuverability_class": "medium",
+        "atmospheric_handling_class": "medium",
+        "freight_interaction_complexity": 4,
+        "operational_suitability": 8,
+        "expected_covalex_efficiency": 8,
+        "dead_leg_recovery_suitability": 9,
+        "traversal_profile": "fast_flexible_hauler"
+      },
+      "unresolved_implementation_details": [
+        "Patch-specific cargo handling behavior",
+        "Freight elevator interaction timing",
+        "Current live handling characteristics",
+        "Quantum fuel and runtime traversal tuning"
+      ],
+      "runtime_dependent_characteristics": [
+        "Quantum drive selection",
+        "Server performance",
+        "Cargo load state",
+        "Atmospheric flight path",
+        "Hangar assignment"
+      ],
+      "notes": [
+        "User-specific hauling interest ship.",
+        "Exact finalized implementation details unresolved."
+      ],
+      "source_refs": [
+        {
+          "source_id": "phase4_ship_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced ship data and derived hauling suitability heuristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "ship_id": "MISC_STARLANCER_MAX",
+      "canonical_name": "Starlancer MAX",
+      "manufacturer": "MISC",
+      "sourced_facts": {
+        "cargo_capacity_scu": 224,
+        "cargo_layout_type": "internal",
+        "external_cargo": false,
+        "internal_cargo": true,
+        "docking_required": false
+      },
+      "derived_operational_heuristics": {
+        "landing_profile": "large_pad_capable",
+        "hangar_class": "large",
+        "maneuverability_class": "medium_heavy",
+        "atmospheric_handling_class": "moderate",
+        "freight_interaction_complexity": 4,
+        "operational_suitability": 8,
+        "expected_covalex_efficiency": 7,
+        "dead_leg_recovery_suitability": 8,
+        "traversal_profile": "generalist_hauler"
+      },
+      "unresolved_implementation_details": [
+        "Patch-specific cargo handling behavior",
+        "Freight elevator interaction timing",
+        "Current live handling characteristics",
+        "Quantum fuel and runtime traversal tuning"
+      ],
+      "runtime_dependent_characteristics": [
+        "Quantum drive selection",
+        "Server performance",
+        "Cargo load state",
+        "Atmospheric flight path",
+        "Hangar assignment"
+      ],
+      "notes": [],
+      "source_refs": [
+        {
+          "source_id": "phase4_ship_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced ship data and derived hauling suitability heuristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "ship_id": "MISC_STARLANCER_TAC",
+      "canonical_name": "Starlancer TAC",
+      "manufacturer": "MISC",
+      "sourced_facts": {
+        "cargo_capacity_scu": null,
+        "cargo_layout_type": "mixed",
+        "external_cargo": false,
+        "internal_cargo": true,
+        "docking_required": false
+      },
+      "derived_operational_heuristics": {
+        "landing_profile": "large_pad_capable",
+        "hangar_class": "large",
+        "maneuverability_class": "medium_heavy",
+        "atmospheric_handling_class": "moderate",
+        "freight_interaction_complexity": 5,
+        "operational_suitability": 6,
+        "expected_covalex_efficiency": 5,
+        "dead_leg_recovery_suitability": 8,
+        "traversal_profile": "combat_logistics_hybrid"
+      },
+      "unresolved_implementation_details": [
+        "Patch-specific cargo handling behavior",
+        "Freight elevator interaction timing",
+        "Current live handling characteristics",
+        "Quantum fuel and runtime traversal tuning"
+      ],
+      "runtime_dependent_characteristics": [
+        "Quantum drive selection",
+        "Server performance",
+        "Cargo load state",
+        "Atmospheric flight path",
+        "Hangar assignment"
+      ],
+      "notes": [],
+      "source_refs": [
+        {
+          "source_id": "phase4_ship_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced ship data and derived hauling suitability heuristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "ship_id": "DRAKE_CATERPILLAR",
+      "canonical_name": "Caterpillar",
+      "manufacturer": "Drake",
+      "sourced_facts": {
+        "cargo_capacity_scu": 576,
+        "cargo_layout_type": "modular_internal",
+        "external_cargo": false,
+        "internal_cargo": true,
+        "docking_required": false
+      },
+      "derived_operational_heuristics": {
+        "landing_profile": "large_pad_capable",
+        "hangar_class": "large",
+        "maneuverability_class": "poor",
+        "atmospheric_handling_class": "poor",
+        "freight_interaction_complexity": 6,
+        "operational_suitability": 7,
+        "expected_covalex_efficiency": 6,
+        "dead_leg_recovery_suitability": 6,
+        "traversal_profile": "heavy_surface_logistics"
+      },
+      "unresolved_implementation_details": [
+        "Patch-specific cargo handling behavior",
+        "Freight elevator interaction timing",
+        "Current live handling characteristics",
+        "Quantum fuel and runtime traversal tuning"
+      ],
+      "runtime_dependent_characteristics": [
+        "Quantum drive selection",
+        "Server performance",
+        "Cargo load state",
+        "Atmospheric flight path",
+        "Hangar assignment"
+      ],
+      "notes": [],
+      "source_refs": [
+        {
+          "source_id": "phase4_ship_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced ship data and derived hauling suitability heuristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "ship_id": "CRUSADER_C2_HERCULES",
+      "canonical_name": "C2 Hercules",
+      "manufacturer": "Crusader Industries",
+      "sourced_facts": {
+        "cargo_capacity_scu": 696,
+        "cargo_layout_type": "internal_vehicle_bay",
+        "external_cargo": false,
+        "internal_cargo": true,
+        "docking_required": false
+      },
+      "derived_operational_heuristics": {
+        "landing_profile": "large_surface_freighter",
+        "hangar_class": "large",
+        "maneuverability_class": "medium_heavy",
+        "atmospheric_handling_class": "good_for_size",
+        "freight_interaction_complexity": 5,
+        "operational_suitability": 8,
+        "expected_covalex_efficiency": 6,
+        "dead_leg_recovery_suitability": 8,
+        "traversal_profile": "surface_heavy_lifter"
+      },
+      "unresolved_implementation_details": [
+        "Patch-specific cargo handling behavior",
+        "Freight elevator interaction timing",
+        "Current live handling characteristics",
+        "Quantum fuel and runtime traversal tuning"
+      ],
+      "runtime_dependent_characteristics": [
+        "Quantum drive selection",
+        "Server performance",
+        "Cargo load state",
+        "Atmospheric flight path",
+        "Hangar assignment"
+      ],
+      "notes": [],
+      "source_refs": [
+        {
+          "source_id": "phase4_ship_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced ship data and derived hauling suitability heuristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "ship_id": "ARGO_IRONCLAD",
+      "canonical_name": "Ironclad",
+      "manufacturer": "ARGO",
+      "sourced_facts": {
+        "cargo_capacity_scu": null,
+        "cargo_layout_type": "heavy_internal",
+        "external_cargo": false,
+        "internal_cargo": true,
+        "docking_required": true
+      },
+      "derived_operational_heuristics": {
+        "landing_profile": "capital_logistics",
+        "hangar_class": "capital",
+        "maneuverability_class": "very_poor",
+        "atmospheric_handling_class": "extremely_poor",
+        "freight_interaction_complexity": 8,
+        "operational_suitability": 4,
+        "expected_covalex_efficiency": 2,
+        "dead_leg_recovery_suitability": 2,
+        "traversal_profile": "bulk_capital_logistics"
+      },
+      "unresolved_implementation_details": [
+        "Patch-specific cargo handling behavior",
+        "Freight elevator interaction timing",
+        "Current live handling characteristics",
+        "Quantum fuel and runtime traversal tuning"
+      ],
+      "runtime_dependent_characteristics": [
+        "Quantum drive selection",
+        "Server performance",
+        "Cargo load state",
+        "Atmospheric flight path",
+        "Hangar assignment"
+      ],
+      "notes": [],
+      "source_refs": [
+        {
+          "source_id": "phase4_ship_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced ship data and derived hauling suitability heuristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "ship_id": "MISC_FREELANCER_MAX",
+      "canonical_name": "Freelancer MAX",
+      "manufacturer": "MISC",
+      "sourced_facts": {
+        "cargo_capacity_scu": 120,
+        "cargo_layout_type": "internal",
+        "external_cargo": false,
+        "internal_cargo": true,
+        "docking_required": false
+      },
+      "derived_operational_heuristics": {
+        "landing_profile": "medium_pad_capable",
+        "hangar_class": "medium",
+        "maneuverability_class": "medium",
+        "atmospheric_handling_class": "moderate",
+        "freight_interaction_complexity": 4,
+        "operational_suitability": 7,
+        "expected_covalex_efficiency": 7,
+        "dead_leg_recovery_suitability": 8,
+        "traversal_profile": "midrange_generalist"
+      },
+      "unresolved_implementation_details": [
+        "Patch-specific cargo handling behavior",
+        "Freight elevator interaction timing",
+        "Current live handling characteristics",
+        "Quantum fuel and runtime traversal tuning"
+      ],
+      "runtime_dependent_characteristics": [
+        "Quantum drive selection",
+        "Server performance",
+        "Cargo load state",
+        "Atmospheric flight path",
+        "Hangar assignment"
+      ],
+      "notes": [],
+      "source_refs": [
+        {
+          "source_id": "phase4_ship_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced ship data and derived hauling suitability heuristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    },
+    {
+      "ship_id": "RSI_CONSTELLATION_TAURUS",
+      "canonical_name": "Constellation Taurus",
+      "manufacturer": "RSI",
+      "sourced_facts": {
+        "cargo_capacity_scu": 174,
+        "cargo_layout_type": "internal",
+        "external_cargo": false,
+        "internal_cargo": true,
+        "docking_required": false
+      },
+      "derived_operational_heuristics": {
+        "landing_profile": "large_pad_capable",
+        "hangar_class": "large",
+        "maneuverability_class": "medium_heavy",
+        "atmospheric_handling_class": "moderate",
+        "freight_interaction_complexity": 4,
+        "operational_suitability": 8,
+        "expected_covalex_efficiency": 7,
+        "dead_leg_recovery_suitability": 9,
+        "traversal_profile": "armed_generalist"
+      },
+      "unresolved_implementation_details": [
+        "Patch-specific cargo handling behavior",
+        "Freight elevator interaction timing",
+        "Current live handling characteristics",
+        "Quantum fuel and runtime traversal tuning"
+      ],
+      "runtime_dependent_characteristics": [
+        "Quantum drive selection",
+        "Server performance",
+        "Cargo load state",
+        "Atmospheric flight path",
+        "Hangar assignment"
+      ],
+      "notes": [],
+      "source_refs": [
+        {
+          "source_id": "phase4_ship_operational_model",
+          "retrieved_date": "2026-05-16",
+          "note": "Mixed sourced ship data and derived hauling suitability heuristics."
+        }
+      ],
+      "validation_status": "mixed_sourced_and_derived"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_name": "phase22_route_score_tuning",
+  "generated_at": "2026-05-17T00:15:44Z",
+  "systems": {
+    "same_pickup_bonus_recalibration": {},
+    "destination_overlap_bonus_recalibration": {},
+    "atmosphere_penalty_recalibration": {},
+    "stop_density_penalty_recalibration": {},
+    "freight_elevator_penalty_recalibration": {},
+    "route_poisoning_penalty_recalibration": {}
+  }
+}

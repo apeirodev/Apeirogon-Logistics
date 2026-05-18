@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "tiers": {
+    "T0": "raw unverified telemetry",
+    "T1": "user-verified telemetry",
+    "T2": "multi-user corroborated telemetry",
+    "T3": "maintainer-validated telemetry",
+    "T4": "patch-baselined telemetry"
+  },
+  "promotion_requires": [
+    "schema_validation",
+    "patch_tagging",
+    "review_or_corroboration"
+  ]
+}

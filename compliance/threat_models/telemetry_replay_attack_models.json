@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "threats": [
+    "duplicate submissions",
+    "reused old telemetry as current"
+  ],
+  "mitigations": [
+    "schema validation",
+    "provenance tagging",
+    "trust tiers",
+    "human review",
+    "patch-era segmentation",
+    "anomaly detection"
+  ]
+}

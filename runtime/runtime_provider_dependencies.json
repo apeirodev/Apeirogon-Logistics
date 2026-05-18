@@ -1,0 +1,16 @@
+{
+  "dataset_name": "phase26_runtime_provider_dependencies",
+  "generated_at": "2026-05-17T00:55:10Z",
+  "dependencies": [
+    "provider_API_stability",
+    "local_hardware_capability",
+    "OCR_engine_variability",
+    "patch_UI_changes",
+    "screenshot_quality_variability",
+    "addon_API_availability",
+    "anti_cheat_restrictions",
+    "provider_pricing_volatility",
+    "local_storage_constraints",
+    "telemetry_contributor_participation"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "dataset_name": "phase26_runtime_execution_profiles",
+  "generated_at": "2026-05-17T00:55:10Z",
+  "profiles": {
+    "local_only_runtime": {},
+    "hybrid_runtime": {},
+    "cloud_assisted_runtime": {},
+    "offline_runtime": {},
+    "deterministic_only_runtime": {},
+    "telemetry_disabled_runtime": {},
+    "low_resource_runtime": {},
+    "high_accuracy_runtime": {}
+  },
+  "metrics": {
+    "provider_portability_score": 0.9,
+    "offline_readiness_score": 0.86,
+    "deterministic_fallback_readiness": 0.88,
+    "addon_readiness_score": "limited_by_unknown_CIG_plugin_support",
+    "privacy_preservation_score": 0.9,
+    "runtime_portability_score": 0.88,
+    "provider_abstraction_maturity": 0.84,
+    "local_execution_readiness": 0.86,
+    "hallucination_containment_effectiveness": "depends_on_schema_validation_and_user_review"
+  }
+}

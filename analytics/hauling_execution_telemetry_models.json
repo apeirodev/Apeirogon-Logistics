@@ -1,0 +1,19 @@
+{
+  "dataset_name": "phase21_hauling_execution_telemetry",
+  "generated_at": "2026-05-17T00:14:23Z",
+  "systems": {
+    "actual_mission_completion_timing": {},
+    "real_unloading_duration_tracking": {},
+    "freight_elevator_delay_tracking": {},
+    "atmosphere_traversal_burden_tracking": {},
+    "orbital_loop_success_tracking": {},
+    "dead_leg_occurrence_tracking": {},
+    "reroute_frequency_tracking": {},
+    "cargo_fragmentation_tracking": {}
+  },
+  "rules": [
+    "Telemetry remains observational, not authoritative.",
+    "Runtime values remain runtime-derived.",
+    "Telemetry refines heuristics but must not overwrite sourced facts."
+  ]
+}

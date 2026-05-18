@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-05-17T00:41:37Z",
+  "issue": "Historical validation referenced analytics/ship_profiles.json while actual canonical file is data/ship_profiles.json.",
+  "resolution": "Preserve canonical data/ship_profiles.json. Add validation guidance that ship profiles live under data unless explicitly derived.",
+  "path_status": {
+    "data/ship_profiles.json": true,
+    "analytics/ship_profiles.json": false,
+    "data/source_registry.json": true,
+    "VERSION.json": true,
+    "analytics/route_scoring_models.json": true,
+    "runtime/OCR_normalization_rules.json": true,
+    "schema/mission_schema.json": true
+  },
+  "recommendation": "Future validators should resolve canonical data paths before analytics-derived path checks.",
+  "status": "reconciled_non_destructively"
+}

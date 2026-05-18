@@ -1,0 +1,30 @@
+{
+  "dataset_name": "star_citizen_hauling_phase17_post_scarcity",
+  "generated_at": "2026-05-17T00:02:38Z",
+  "systems": {
+    "autonomous_abundance_distribution": {
+      "classification": "post_scarcity_model"
+    },
+    "surplus_convoy_allocation": {
+      "classification": "post_scarcity_model"
+    },
+    "synthetic_industrial_balancing": {
+      "classification": "post_scarcity_model"
+    },
+    "galactic_overproduction_handling": {
+      "classification": "post_scarcity_model"
+    },
+    "strategic_resource_redistribution": {
+      "classification": "post_scarcity_model"
+    },
+    "autonomous_scarcity_suppression": {
+      "classification": "post_scarcity_model"
+    },
+    "macro_scale_logistics_equalization": {
+      "classification": "post_scarcity_model"
+    },
+    "civilization_recovery_throughput_optimization": {
+      "classification": "post_scarcity_model"
+    }
+  }
+}

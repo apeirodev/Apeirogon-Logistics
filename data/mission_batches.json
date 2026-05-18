@@ -1,0 +1,28 @@
+{
+  "dataset_name": "star_citizen_hauling_phase6_mission_batches",
+  "phase": "Phase 6 - Mission Ingestion Foundations",
+  "generated_at": "2026-05-16T23:54:59Z",
+  "example_batch": {
+    "batch_id": "EXAMPLE_BATCH_001",
+    "source_type": "screenshot",
+    "missions": [
+      {
+        "mission_id": "MISSION_EXAMPLE_001",
+        "pickup_location": "Seraphim Station",
+        "delivery_locations": [
+          "CRU-L4",
+          "Yela"
+        ],
+        "cargo": {
+          "commodity": "Processed Food",
+          "scu": 32
+        },
+        "payout": 48000,
+        "mission_timer": "01:15:00",
+        "mission_rank": "Member",
+        "mission_issuer": "Covalex",
+        "ocr_confidence": 0.94
+      }
+    ]
+  }
+}

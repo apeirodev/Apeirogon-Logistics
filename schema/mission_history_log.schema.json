@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mission History Log",
+  "type": "object",
+  "required": [
+    "mission_id",
+    "state",
+    "timestamp"
+  ],
+  "properties": {
+    "mission_id": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "route_score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "ocr_confidence": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  }
+}

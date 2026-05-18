@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Quantum Drive Profile",
+  "type": "object",
+  "required": [
+    "drive_id",
+    "canonical_name",
+    "manufacturer",
+    "sourced_facts",
+    "derived_runtime_characteristics"
+  ]
+}

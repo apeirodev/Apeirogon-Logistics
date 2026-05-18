@@ -1,0 +1,12 @@
+{
+  "dataset_name": "phase24b_ship_operational_capability_matrix",
+  "generated_at": "2026-05-17T00:23:38Z",
+  "matrix_dimensions": [
+    "cargo_density",
+    "route_chain_efficiency",
+    "dead_leg_recovery",
+    "orbital_efficiency",
+    "atmosphere_efficiency",
+    "freight_handling"
+  ]
+}

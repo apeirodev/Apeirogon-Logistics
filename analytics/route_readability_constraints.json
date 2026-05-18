@@ -1,0 +1,10 @@
+{
+  "dataset_name": "publicA_route_readability_constraints",
+  "generated_at": "2026-05-17T00:41:37Z",
+  "constraints": {
+    "full_word_panel_names": "Use full destination names in cargo grouping outputs where possible.",
+    "operator_scanability": "Route and cargo outputs should be readable under live play conditions.",
+    "avoid_ambiguous_abbreviations": "Avoid ambiguous abbreviations unless they are canonical in the dataset.",
+    "flag_unreadable_values": "Unreadable OCR must remain unresolved."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "dataset_name": "v0_28_1_AI_session_persistence_contracts",
+  "generated_at": "2026-05-17T01:02:11Z",
+  "continuity_rules": [
+    "Each new chat should begin by loading the current portable user profile.",
+    "Each new chat should load latest hauling session state if continuing work.",
+    "Each session should export updated state at the end.",
+    "AI memory must be treated as optional and unreliable.",
+    "The portable user profile is the source of continuity."
+  ],
+  "required_session_boundaries": {
+    "session_start": [
+      "load_user_profile",
+      "load_patch_context",
+      "load_latest_session_state_if_any"
+    ],
+    "during_session": [
+      "preserve_unresolved_values",
+      "record_user_corrections",
+      "separate_telemetry_from_heuristics"
+    ],
+    "session_end": [
+      "export_updated_user_profile",
+      "export_session_state",
+      "record_telemetry_if_available"
+    ]
+  }
+}

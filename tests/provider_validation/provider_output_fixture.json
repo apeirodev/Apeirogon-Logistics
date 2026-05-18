@@ -1,0 +1,19 @@
+{
+  "advisory_only": true,
+  "confidence_level": "medium",
+  "governance_metadata": {
+    "advisory_only": true,
+    "confidence_level": "medium",
+    "contributor_trust_tier": "T0",
+    "derivation_type": "provider_output",
+    "operational_assurance_state": "implemented",
+    "patch_era": "UNRESOLVED",
+    "provenance_chain": [],
+    "source_class": "AI_generated_advisory",
+    "telemetry_support_level": "none",
+    "unresolved_field_list": [
+      "distance"
+    ],
+    "verification_status": "not_human_verified"
+  }
+}

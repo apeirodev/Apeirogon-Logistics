@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "assurance_dimensions": [
+    "privacy",
+    "structured_output",
+    "vision",
+    "latency",
+    "cost",
+    "locality",
+    "retention",
+    "portability"
+  ]
+}

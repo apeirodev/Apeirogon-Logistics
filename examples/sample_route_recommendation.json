@@ -1,0 +1,17 @@
+{
+  "ship": "Hull-B",
+  "issuer": "Covalex",
+  "accepted_missions": [
+    "mission_01",
+    "mission_02"
+  ],
+  "route_sequence": [
+    "Baijini Point",
+    "Seraphim",
+    "Everus Harbor"
+  ],
+  "confidence": "medium",
+  "unresolved_fields": [
+    "exact_quantum_duration"
+  ]
+}

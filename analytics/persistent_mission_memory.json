@@ -1,0 +1,30 @@
+{
+  "dataset_name": "star_citizen_hauling_phase9_persistent_memory",
+  "generated_at": "2026-05-16T23:56:52Z",
+  "persistent_memory_models": {
+    "accepted_mission_history": {
+      "retention": "persistent"
+    },
+    "rejected_mission_history": {
+      "retention": "persistent"
+    },
+    "dead_leg_encounter_history": {
+      "retention": "persistent"
+    },
+    "orbital_loop_success_history": {
+      "retention": "persistent"
+    },
+    "route_poisoning_history": {
+      "retention": "persistent"
+    },
+    "turnaround_efficiency_history": {
+      "retention": "persistent"
+    },
+    "congestion_history": {
+      "retention": "persistent"
+    },
+    "freight_elevator_failure_history": {
+      "retention": "persistent"
+    }
+  }
+}

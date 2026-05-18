@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Star Citizen Hauling Route Edge",
+  "type": "object",
+  "required": [
+    "edge_id",
+    "from_location_id",
+    "to_location_id",
+    "route_class",
+    "qt_time",
+    "derived_traversal_penalties",
+    "source_refs"
+  ],
+  "properties": {
+    "edge_id": {
+      "type": "string"
+    },
+    "from_location_id": {
+      "type": "string"
+    },
+    "to_location_id": {
+      "type": "string"
+    },
+    "bidirectional": {
+      "type": "boolean"
+    },
+    "route_class": {
+      "type": "string"
+    },
+    "distance": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "qt_time": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "stored_fixed_time": {
+          "type": "boolean"
+        }
+      }
+    },
+    "route_traits": {
+      "type": "object"
+    },
+    "derived_traversal_penalties": {
+      "type": "object"
+    },
+    "source_refs": {
+      "type": "array"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

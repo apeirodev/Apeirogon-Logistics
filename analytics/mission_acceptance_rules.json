@@ -1,0 +1,22 @@
+{
+  "dataset_name": "star_citizen_hauling_phase7_acceptance_rules",
+  "generated_at": "2026-05-16T23:55:39Z",
+  "acceptance_logic": {
+    "accept": [
+      "same_pickup_clusters",
+      "orbital_chain_routes",
+      "high_destination_overlap",
+      "high_rep_efficiency"
+    ],
+    "reject": [
+      "isolated_surface_outposts",
+      "high_dead_leg_probability",
+      "single_low_value_atmospheric_runs"
+    ],
+    "defer": [
+      "moderate_overlap_routes",
+      "unknown_runtime_conditions",
+      "high_congestion_paths"
+    ]
+  }
+}

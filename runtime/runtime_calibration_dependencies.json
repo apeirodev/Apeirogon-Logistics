@@ -1,0 +1,13 @@
+{
+  "dataset_name": "phase22_runtime_calibration_dependencies",
+  "generated_at": "2026-05-17T00:15:44Z",
+  "dependencies": [
+    "telemetry_sample_size",
+    "patch_operational_volatility",
+    "ocr_verification_confidence",
+    "hauling_session_continuity",
+    "mission_pool_variability",
+    "freight_elevator_responsiveness",
+    "server_performance_degradation"
+  ]
+}

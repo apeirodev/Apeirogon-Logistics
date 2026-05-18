@@ -1,0 +1,27 @@
+{
+  "dataset_name": "star_citizen_hauling_phase12_supply_pressure",
+  "generated_at": "2026-05-16T23:58:51Z",
+  "pressure_models": {
+    "commodity_route_poisoning": {
+      "classification": "economic_risk_model"
+    },
+    "regional_hauling_collapse_probability": {
+      "classification": "economic_risk_model"
+    },
+    "jump_point_congestion": {
+      "classification": "economic_risk_model"
+    },
+    "piracy_pressure_accumulation": {
+      "classification": "economic_risk_model"
+    },
+    "convoy_interdiction_likelihood": {
+      "classification": "economic_risk_model"
+    },
+    "supply_chain_fragmentation": {
+      "classification": "economic_risk_model"
+    },
+    "logistics_instability_propagation": {
+      "classification": "economic_risk_model"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "evidence_types": [
+    "release_manifest",
+    "schema_validation_report",
+    "telemetry_review_record",
+    "source_registry_entry",
+    "provider_review_record",
+    "patch_validation_record",
+    "signed_release_artifact"
+  ],
+  "lineage_rule": "Evidence must identify source, timestamp, patch era if applicable, reviewer if applicable, and confidence."
+}

@@ -1,0 +1,22 @@
+{
+  "dataset_name": "phase20_operational_decision_assist",
+  "generated_at": "2026-05-17T00:12:56Z",
+  "systems": {
+    "mission_acceptance_scoring": {},
+    "route_sequencing_assistance": {},
+    "unloading_burden_warnings": {},
+    "operational_fatigue_estimation": {},
+    "route_poisoning_alerts": {},
+    "recovery_route_recommendations": {},
+    "rep_hour_optimization_assistance": {}
+  },
+  "derived_metrics": {
+    "live_route_confidence": "probabilistic_runtime_heuristic",
+    "screenshot_confidence_score": "probabilistic_runtime_heuristic",
+    "operational_chain_continuity": "probabilistic_runtime_heuristic",
+    "unloading_burden_estimate": "probabilistic_runtime_heuristic",
+    "live_route_degradation_risk": "probabilistic_runtime_heuristic",
+    "practical_rep_hour_efficiency": "probabilistic_runtime_heuristic",
+    "operational_recovery_efficiency": "probabilistic_runtime_heuristic"
+  }
+}

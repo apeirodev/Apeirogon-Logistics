@@ -1,0 +1,38 @@
+{
+  "dataset_name": "star_citizen_hauling_phase9_live_runtime",
+  "generated_at": "2026-05-16T23:56:52Z",
+  "live_ingestion_execution": {
+    "screenshot_batch_ingestion": {
+      "enabled": true,
+      "state_model": "persistent_runtime_batch_tracking"
+    },
+    "ocr_confidence_tracking": {
+      "enabled": true,
+      "confidence_model": "probabilistic"
+    },
+    "mission_state_persistence": {
+      "states": [
+        "detected",
+        "accepted",
+        "completed",
+        "expired",
+        "rejected",
+        "abandoned"
+      ]
+    },
+    "route_recommendation_history": {
+      "enabled": true,
+      "retention_model": "cross_session"
+    },
+    "runtime_route_recalculation": {
+      "enabled": true,
+      "trigger_conditions": [
+        "mission_expiration",
+        "mission_completion",
+        "server_degradation",
+        "cargo_change",
+        "new_batch_ingestion"
+      ]
+    }
+  }
+}

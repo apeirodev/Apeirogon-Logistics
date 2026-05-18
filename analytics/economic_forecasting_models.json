@@ -1,0 +1,27 @@
+{
+  "dataset_name": "star_citizen_hauling_phase12_economic_forecasting",
+  "generated_at": "2026-05-16T23:58:51Z",
+  "forecasting_models": {
+    "expected_mission_density_shifts": {
+      "type": "probabilistic_forecast"
+    },
+    "expected_congestion_shifts": {
+      "type": "probabilistic_forecast"
+    },
+    "expected_profitability_shifts": {
+      "type": "probabilistic_forecast"
+    },
+    "expected_route_saturation": {
+      "type": "probabilistic_forecast"
+    },
+    "expected_hauling_migration": {
+      "type": "probabilistic_forecast"
+    },
+    "expected_regional_demand_spikes": {
+      "type": "probabilistic_forecast"
+    },
+    "expected_commodity_scarcity_zones": {
+      "type": "probabilistic_forecast"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_name": "star_citizen_hauling_phase8_probabilistic_metrics",
+  "generated_at": "2026-05-16T23:56:18Z",
+  "metrics": {
+    "expected_future_rep_per_hour": "probabilistic_runtime_heuristic",
+    "continuation_confidence": "probabilistic_runtime_heuristic",
+    "loop_stability_score": "probabilistic_runtime_heuristic",
+    "mission_pool_volatility": "probabilistic_runtime_heuristic",
+    "recovery_likelihood": "probabilistic_runtime_heuristic",
+    "adaptive_efficiency_score": "probabilistic_runtime_heuristic"
+  }
+}

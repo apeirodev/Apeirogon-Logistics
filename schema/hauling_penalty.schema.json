@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Star Citizen Hauling Penalty Record",
+  "type": "object",
+  "required": [
+    "location_id",
+    "canonical_name",
+    "entity_type",
+    "derived_penalties",
+    "derived_operational_metrics"
+  ],
+  "properties": {
+    "location_id": {
+      "type": "string"
+    },
+    "canonical_name": {
+      "type": "string"
+    },
+    "entity_type": {
+      "type": "string"
+    },
+    "operational_classification": {
+      "type": "object"
+    },
+    "sourced_facts": {
+      "type": "object"
+    },
+    "derived_penalties": {
+      "type": "object"
+    },
+    "derived_operational_metrics": {
+      "type": "object"
+    },
+    "unresolved_values": {
+      "type": "array"
+    },
+    "runtime_dependent_values": {
+      "type": "array"
+    },
+    "source_refs": {
+      "type": "array"
+    },
+    "validation_status": {
+      "type": "string"
+    }
+  }
+}

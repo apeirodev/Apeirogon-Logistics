@@ -1,0 +1,14 @@
+{
+  "dataset_name": "phase23a_runtime_operational_intelligence_dependencies",
+  "generated_at": "2026-05-17T00:19:13Z",
+  "dependencies": [
+    "patch_cadence",
+    "telemetry_sample_age",
+    "OCR_verification_quality",
+    "hauling_session_diversity",
+    "server_performance_variability",
+    "mission_pool_churn",
+    "freight_elevator_instability",
+    "gameplay_system_refactors"
+  ]
+}

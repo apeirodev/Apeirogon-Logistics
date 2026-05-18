@@ -1,0 +1,13 @@
+{
+  "dataset_name": "phase21_telemetry_metrics",
+  "generated_at": "2026-05-17T00:14:23Z",
+  "derived_metrics": {
+    "observed_rep_hour": "observational_runtime_metric",
+    "actual_unloading_efficiency": "observational_runtime_metric",
+    "real_dead_leg_frequency": "observational_runtime_metric",
+    "operational_friction_score": "observational_runtime_metric",
+    "actual_route_chain_stability": "observational_runtime_metric",
+    "observed_recovery_efficiency": "observational_runtime_metric",
+    "live_hauling_throughput": "observational_runtime_metric"
+  }
+}

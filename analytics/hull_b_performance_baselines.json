@@ -1,0 +1,32 @@
+{
+  "dataset_name": "phase22_hull_b_performance_baselines",
+  "generated_at": "2026-05-17T00:15:44Z",
+  "baselines": {
+    "average_mission_completion_time": {
+      "unit": "minutes",
+      "value": null,
+      "status": "requires_observed_telemetry"
+    },
+    "average_unloading_time_by_stop_type": {
+      "status": "requires_observed_telemetry"
+    },
+    "average_scu_handled_per_route": {
+      "unit": "SCU",
+      "value": null,
+      "status": "requires_observed_telemetry"
+    },
+    "average_stops_per_efficient_chain": {
+      "value": null,
+      "status": "requires_observed_telemetry"
+    },
+    "average_dead_leg_recovery_time": {
+      "unit": "minutes",
+      "value": null,
+      "status": "requires_observed_telemetry"
+    },
+    "average_practical_rep_hour": {
+      "value": null,
+      "status": "requires_observed_telemetry"
+    }
+  }
+}

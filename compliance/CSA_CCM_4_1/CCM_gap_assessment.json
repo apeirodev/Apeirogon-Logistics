@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-05-17T01:34:30Z",
+  "framework": "CSA CCM v4.1.0",
+  "gaps": [
+    {
+      "gap": "Formal release signing not implemented",
+      "severity": "medium",
+      "recommended_action": "Add signed release workflow and verification documentation."
+    },
+    {
+      "gap": "Dependency governance placeholder only",
+      "severity": "medium",
+      "recommended_action": "Add dependency inventory once executable tooling exists."
+    },
+    {
+      "gap": "Operational evidence registry lacks real evidence",
+      "severity": "medium",
+      "recommended_action": "Populate after public repo launch and telemetry collection."
+    },
+    {
+      "gap": "Local runtime is architectural, not implemented",
+      "severity": "low",
+      "recommended_action": "Preserve contracts until code exists."
+    }
+  ]
+}

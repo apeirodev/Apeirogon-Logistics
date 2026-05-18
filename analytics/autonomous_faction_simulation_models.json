@@ -1,0 +1,27 @@
+{
+  "dataset_name": "star_citizen_hauling_phase16_autonomous_factions",
+  "generated_at": "2026-05-17T00:01:56Z",
+  "faction_systems": {
+    "autonomous_alliance_behavior": {
+      "classification": "autonomous_faction_model"
+    },
+    "faction_logistics_competition": {
+      "classification": "autonomous_faction_model"
+    },
+    "autonomous_territorial_expansion": {
+      "classification": "autonomous_faction_model"
+    },
+    "faction_convoy_deployment": {
+      "classification": "autonomous_faction_model"
+    },
+    "autonomous_economic_warfare_behavior": {
+      "classification": "autonomous_faction_model"
+    },
+    "strategic_alliance_collapse_modeling": {
+      "classification": "autonomous_faction_model"
+    },
+    "autonomous_recovery_prioritization": {
+      "classification": "autonomous_faction_model"
+    }
+  }
+}

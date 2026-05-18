@@ -1,0 +1,5755 @@
+{
+  "dataset_name": "star_citizen_hauling_phase2_route_edges",
+  "phase": "Phase 2 - Topology Graph Construction",
+  "generated_at": "2026-05-16T23:49:18Z",
+  "retrieved_date": "2026-05-16",
+  "scope": "Initial Stanton topology graph using Phase 1 location records plus Lagrange placeholders.",
+  "edge_count": 137,
+  "route_edges": [
+    {
+      "edge_id": "EDGE_STANTON_TO_STANTON_HURSTON",
+      "from_location_id": "STANTON",
+      "to_location_id": "STANTON_HURSTON",
+      "bidirectional": true,
+      "route_class": "system_to_planet",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_TO_STANTON_CRUSADER",
+      "from_location_id": "STANTON",
+      "to_location_id": "STANTON_CRUSADER",
+      "bidirectional": true,
+      "route_class": "system_to_planet",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_TO_STANTON_ARCCORP",
+      "from_location_id": "STANTON",
+      "to_location_id": "STANTON_ARCCORP",
+      "bidirectional": true,
+      "route_class": "system_to_planet",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_TO_STANTON_MICROTECH",
+      "from_location_id": "STANTON",
+      "to_location_id": "STANTON_MICROTECH",
+      "bidirectional": true,
+      "route_class": "system_to_planet",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_TO_STANTON_ARCCORP_LYRIA",
+      "from_location_id": "STANTON_ARCCORP",
+      "to_location_id": "STANTON_ARCCORP_LYRIA",
+      "bidirectional": true,
+      "route_class": "planet_to_moon",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_TO_STANTON_ARCCORP_WALA",
+      "from_location_id": "STANTON_ARCCORP",
+      "to_location_id": "STANTON_ARCCORP_WALA",
+      "bidirectional": true,
+      "route_class": "planet_to_moon",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_TO_STANTON_CRUSADER_CELLIN",
+      "from_location_id": "STANTON_CRUSADER",
+      "to_location_id": "STANTON_CRUSADER_CELLIN",
+      "bidirectional": true,
+      "route_class": "planet_to_moon",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_TO_STANTON_CRUSADER_DAYMAR",
+      "from_location_id": "STANTON_CRUSADER",
+      "to_location_id": "STANTON_CRUSADER_DAYMAR",
+      "bidirectional": true,
+      "route_class": "planet_to_moon",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_TO_STANTON_CRUSADER_YELA",
+      "from_location_id": "STANTON_CRUSADER",
+      "to_location_id": "STANTON_CRUSADER_YELA",
+      "bidirectional": true,
+      "route_class": "planet_to_moon",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HURSTON_ARIAL",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HURSTON_ARIAL",
+      "bidirectional": true,
+      "route_class": "planet_to_moon",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HURSTON_ABERDEEN",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HURSTON_ABERDEEN",
+      "bidirectional": true,
+      "route_class": "planet_to_moon",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HURSTON_ITA",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HURSTON_ITA",
+      "bidirectional": true,
+      "route_class": "planet_to_moon",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HURSTON_MAGDA",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HURSTON_MAGDA",
+      "bidirectional": true,
+      "route_class": "planet_to_moon",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_TO_STANTON_MICROTECH_CALLIOPE",
+      "from_location_id": "STANTON_MICROTECH",
+      "to_location_id": "STANTON_MICROTECH_CALLIOPE",
+      "bidirectional": true,
+      "route_class": "planet_to_moon",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_TO_STANTON_MICROTECH_CLIO",
+      "from_location_id": "STANTON_MICROTECH",
+      "to_location_id": "STANTON_MICROTECH_CLIO",
+      "bidirectional": true,
+      "route_class": "planet_to_moon",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_TO_STANTON_MICROTECH_EUTERPE",
+      "from_location_id": "STANTON_MICROTECH",
+      "to_location_id": "STANTON_MICROTECH_EUTERPE",
+      "bidirectional": true,
+      "route_class": "planet_to_moon",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HURSTON_LORVILLE",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HURSTON_LORVILLE",
+      "bidirectional": true,
+      "route_class": "planet_to_city",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 4,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 3,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HURSTON_EVERUS_HARBOR",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HURSTON_EVERUS_HARBOR",
+      "bidirectional": true,
+      "route_class": "planet_to_orbital_station",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_TO_STANTON_ARCCORP_AREA18",
+      "from_location_id": "STANTON_ARCCORP",
+      "to_location_id": "STANTON_ARCCORP_AREA18",
+      "bidirectional": true,
+      "route_class": "planet_to_city",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 4,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 3,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_TO_STANTON_ARCCORP_BAIJINI_POINT",
+      "from_location_id": "STANTON_ARCCORP",
+      "to_location_id": "STANTON_ARCCORP_BAIJINI_POINT",
+      "bidirectional": true,
+      "route_class": "planet_to_orbital_station",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_TO_STANTON_MICROTECH_NEW_BABBAGE",
+      "from_location_id": "STANTON_MICROTECH",
+      "to_location_id": "STANTON_MICROTECH_NEW_BABBAGE",
+      "bidirectional": true,
+      "route_class": "planet_to_city",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 4,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 3,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_TO_STANTON_MICROTECH_PORT_TRESSLER",
+      "from_location_id": "STANTON_MICROTECH",
+      "to_location_id": "STANTON_MICROTECH_PORT_TRESSLER",
+      "bidirectional": true,
+      "route_class": "planet_to_orbital_station",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_TO_STANTON_CRUSADER_ORISON",
+      "from_location_id": "STANTON_CRUSADER",
+      "to_location_id": "STANTON_CRUSADER_ORISON",
+      "bidirectional": true,
+      "route_class": "planet_to_city",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 4,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 3,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_TO_STANTON_CRUSADER_SERAPHIM_STATION",
+      "from_location_id": "STANTON_CRUSADER",
+      "to_location_id": "STANTON_CRUSADER_SERAPHIM_STATION",
+      "bidirectional": true,
+      "route_class": "planet_to_orbital_station",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_LYRIA_TO_STANTON_ARCCORP_LYRIA_SAL2",
+      "from_location_id": "STANTON_ARCCORP_LYRIA",
+      "to_location_id": "STANTON_ARCCORP_LYRIA_SAL2",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_LYRIA_TO_STANTON_ARCCORP_LYRIA_SAL5",
+      "from_location_id": "STANTON_ARCCORP_LYRIA",
+      "to_location_id": "STANTON_ARCCORP_LYRIA_SAL5",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_WALA_TO_STANTON_ARCCORP_WALA_AREA045",
+      "from_location_id": "STANTON_ARCCORP_WALA",
+      "to_location_id": "STANTON_ARCCORP_WALA_AREA045",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_WALA_TO_STANTON_ARCCORP_WALA_AREA048",
+      "from_location_id": "STANTON_ARCCORP_WALA",
+      "to_location_id": "STANTON_ARCCORP_WALA_AREA048",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_WALA_TO_STANTON_ARCCORP_WALA_AREA056",
+      "from_location_id": "STANTON_ARCCORP_WALA",
+      "to_location_id": "STANTON_ARCCORP_WALA_AREA056",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_WALA_TO_STANTON_ARCCORP_WALA_AREA061",
+      "from_location_id": "STANTON_ARCCORP_WALA",
+      "to_location_id": "STANTON_ARCCORP_WALA_AREA061",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_CELLIN_TO_STANTON_CRUSADER_CELLIN_HICKES",
+      "from_location_id": "STANTON_CRUSADER_CELLIN",
+      "to_location_id": "STANTON_CRUSADER_CELLIN_HICKES",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_CELLIN_TO_STANTON_CRUSADER_CELLIN_TERRA_MILLS",
+      "from_location_id": "STANTON_CRUSADER_CELLIN",
+      "to_location_id": "STANTON_CRUSADER_CELLIN_TERRA_MILLS",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_DAYMAR_TO_STANTON_CRUSADER_DAYMAR_AREA141",
+      "from_location_id": "STANTON_CRUSADER_DAYMAR",
+      "to_location_id": "STANTON_CRUSADER_DAYMAR_AREA141",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_DAYMAR_TO_STANTON_CRUSADER_DAYMAR_SCD1",
+      "from_location_id": "STANTON_CRUSADER_DAYMAR",
+      "to_location_id": "STANTON_CRUSADER_DAYMAR_SCD1",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_YELA_TO_STANTON_CRUSADER_YELA_AREA157",
+      "from_location_id": "STANTON_CRUSADER_YELA",
+      "to_location_id": "STANTON_CRUSADER_YELA_AREA157",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_YELA_TO_STANTON_CRUSADER_YELA_DEAKINS",
+      "from_location_id": "STANTON_CRUSADER_YELA",
+      "to_location_id": "STANTON_CRUSADER_YELA_DEAKINS",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HURSTON_HDMS_EDMOND",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HURSTON_HDMS_EDMOND",
+      "bidirectional": true,
+      "route_class": "planet_to_surface_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HURSTON_HDMS_HADLEY",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HURSTON_HDMS_HADLEY",
+      "bidirectional": true,
+      "route_class": "planet_to_surface_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HURSTON_HDMS_OPAREI",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HURSTON_HDMS_OPAREI",
+      "bidirectional": true,
+      "route_class": "planet_to_surface_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HURSTON_HDMS_PINEWOOD",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HURSTON_HDMS_PINEWOOD",
+      "bidirectional": true,
+      "route_class": "planet_to_surface_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HURSTON_HDMS_STANHOPE",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HURSTON_HDMS_STANHOPE",
+      "bidirectional": true,
+      "route_class": "planet_to_surface_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HURSTON_HDMS_THEDUS",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HURSTON_HDMS_THEDUS",
+      "bidirectional": true,
+      "route_class": "planet_to_surface_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_ARIAL_TO_STANTON_HURSTON_ARIAL_BEZDEK",
+      "from_location_id": "STANTON_HURSTON_ARIAL",
+      "to_location_id": "STANTON_HURSTON_ARIAL_BEZDEK",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_ARIAL_TO_STANTON_HURSTON_ARIAL_LATHAN",
+      "from_location_id": "STANTON_HURSTON_ARIAL",
+      "to_location_id": "STANTON_HURSTON_ARIAL_LATHAN",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_ABERDEEN_TO_STANTON_HURSTON_ABERDEEN_ANDERSON",
+      "from_location_id": "STANTON_HURSTON_ABERDEEN",
+      "to_location_id": "STANTON_HURSTON_ABERDEEN_ANDERSON",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_ABERDEEN_TO_STANTON_HURSTON_ABERDEEN_NORGAARD",
+      "from_location_id": "STANTON_HURSTON_ABERDEEN",
+      "to_location_id": "STANTON_HURSTON_ABERDEEN_NORGAARD",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_ITA_TO_STANTON_HURSTON_ITA_RYDER",
+      "from_location_id": "STANTON_HURSTON_ITA",
+      "to_location_id": "STANTON_HURSTON_ITA_RYDER",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_ITA_TO_STANTON_HURSTON_ITA_WOODRUFF",
+      "from_location_id": "STANTON_HURSTON_ITA",
+      "to_location_id": "STANTON_HURSTON_ITA_WOODRUFF",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_MAGDA_TO_STANTON_HURSTON_MAGDA_PERLMAN",
+      "from_location_id": "STANTON_HURSTON_MAGDA",
+      "to_location_id": "STANTON_HURSTON_MAGDA_PERLMAN",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_TO_STANTON_MICROTECH_SM018",
+      "from_location_id": "STANTON_MICROTECH",
+      "to_location_id": "STANTON_MICROTECH_SM018",
+      "bidirectional": true,
+      "route_class": "planet_to_surface_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_TO_STANTON_MICROTECH_SM022",
+      "from_location_id": "STANTON_MICROTECH",
+      "to_location_id": "STANTON_MICROTECH_SM022",
+      "bidirectional": true,
+      "route_class": "planet_to_surface_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_CALLIOPE_TO_STANTON_MICROTECH_CALLIOPE_SMCA6",
+      "from_location_id": "STANTON_MICROTECH_CALLIOPE",
+      "to_location_id": "STANTON_MICROTECH_CALLIOPE_SMCA6",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_CALLIOPE_TO_STANTON_MICROTECH_CALLIOPE_SMCA8",
+      "from_location_id": "STANTON_MICROTECH_CALLIOPE",
+      "to_location_id": "STANTON_MICROTECH_CALLIOPE_SMCA8",
+      "bidirectional": true,
+      "route_class": "moon_to_outpost",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 4,
+        "spline_penalty": 3,
+        "approach_penalty": 3,
+        "docking_or_landing_penalty": 3,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 4,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_TO_STANTON_CRU_L1",
+      "from_location_id": "STANTON_CRUSADER",
+      "to_location_id": "STANTON_CRU_L1",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_TO_STANTON_CRU_L2",
+      "from_location_id": "STANTON_CRUSADER",
+      "to_location_id": "STANTON_CRU_L2",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_TO_STANTON_CRU_L3",
+      "from_location_id": "STANTON_CRUSADER",
+      "to_location_id": "STANTON_CRU_L3",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_TO_STANTON_CRU_L4",
+      "from_location_id": "STANTON_CRUSADER",
+      "to_location_id": "STANTON_CRU_L4",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_TO_STANTON_CRU_L5",
+      "from_location_id": "STANTON_CRUSADER",
+      "to_location_id": "STANTON_CRU_L5",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HUR_L1",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HUR_L1",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HUR_L2",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HUR_L2",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HUR_L3",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HUR_L3",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HUR_L4",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HUR_L4",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_TO_STANTON_HUR_L5",
+      "from_location_id": "STANTON_HURSTON",
+      "to_location_id": "STANTON_HUR_L5",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_TO_STANTON_ARC_L1",
+      "from_location_id": "STANTON_ARCCORP",
+      "to_location_id": "STANTON_ARC_L1",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_TO_STANTON_ARC_L2",
+      "from_location_id": "STANTON_ARCCORP",
+      "to_location_id": "STANTON_ARC_L2",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_TO_STANTON_ARC_L3",
+      "from_location_id": "STANTON_ARCCORP",
+      "to_location_id": "STANTON_ARC_L3",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_TO_STANTON_ARC_L4",
+      "from_location_id": "STANTON_ARCCORP",
+      "to_location_id": "STANTON_ARC_L4",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_TO_STANTON_ARC_L5",
+      "from_location_id": "STANTON_ARCCORP",
+      "to_location_id": "STANTON_ARC_L5",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_TO_STANTON_MIC_L1",
+      "from_location_id": "STANTON_MICROTECH",
+      "to_location_id": "STANTON_MIC_L1",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_TO_STANTON_MIC_L2",
+      "from_location_id": "STANTON_MICROTECH",
+      "to_location_id": "STANTON_MIC_L2",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_TO_STANTON_MIC_L3",
+      "from_location_id": "STANTON_MICROTECH",
+      "to_location_id": "STANTON_MIC_L3",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_TO_STANTON_MIC_L4",
+      "from_location_id": "STANTON_MICROTECH",
+      "to_location_id": "STANTON_MIC_L4",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_TO_STANTON_MIC_L5",
+      "from_location_id": "STANTON_MICROTECH",
+      "to_location_id": "STANTON_MIC_L5",
+      "bidirectional": true,
+      "route_class": "planet_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 0,
+        "freight_elevator_penalty": 0,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_EVERUS_HARBOR_TO_STANTON_HURSTON_LORVILLE",
+      "from_location_id": "STANTON_HURSTON_EVERUS_HARBOR",
+      "to_location_id": "STANTON_HURSTON_LORVILLE",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_city",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 4,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 3,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Operational connector between major orbital station and corresponding city landing zone."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_BAIJINI_POINT_TO_STANTON_ARCCORP_AREA18",
+      "from_location_id": "STANTON_ARCCORP_BAIJINI_POINT",
+      "to_location_id": "STANTON_ARCCORP_AREA18",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_city",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 4,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 3,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Operational connector between major orbital station and corresponding city landing zone."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_PORT_TRESSLER_TO_STANTON_MICROTECH_NEW_BABBAGE",
+      "from_location_id": "STANTON_MICROTECH_PORT_TRESSLER",
+      "to_location_id": "STANTON_MICROTECH_NEW_BABBAGE",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_city",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 4,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 3,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Operational connector between major orbital station and corresponding city landing zone."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_SERAPHIM_STATION_TO_STANTON_CRUSADER_ORISON",
+      "from_location_id": "STANTON_CRUSADER_SERAPHIM_STATION",
+      "to_location_id": "STANTON_CRUSADER_ORISON",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_city",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": true,
+        "spline_required": true,
+        "surface_destination": true,
+        "orbital_destination": false,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 5,
+        "spline_penalty": 4,
+        "approach_penalty": 4,
+        "docking_or_landing_penalty": 4,
+        "freight_elevator_penalty": 3,
+        "dead_leg_risk": 3,
+        "route_complexity": 4,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Operational connector between major orbital station and corresponding city landing zone."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_SERAPHIM_STATION_TO_STANTON_CRU_L1",
+      "from_location_id": "STANTON_CRUSADER_SERAPHIM_STATION",
+      "to_location_id": "STANTON_CRU_L1",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_SERAPHIM_STATION_TO_STANTON_CRU_L2",
+      "from_location_id": "STANTON_CRUSADER_SERAPHIM_STATION",
+      "to_location_id": "STANTON_CRU_L2",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_SERAPHIM_STATION_TO_STANTON_CRU_L3",
+      "from_location_id": "STANTON_CRUSADER_SERAPHIM_STATION",
+      "to_location_id": "STANTON_CRU_L3",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_SERAPHIM_STATION_TO_STANTON_CRU_L4",
+      "from_location_id": "STANTON_CRUSADER_SERAPHIM_STATION",
+      "to_location_id": "STANTON_CRU_L4",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRUSADER_SERAPHIM_STATION_TO_STANTON_CRU_L5",
+      "from_location_id": "STANTON_CRUSADER_SERAPHIM_STATION",
+      "to_location_id": "STANTON_CRU_L5",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_EVERUS_HARBOR_TO_STANTON_HUR_L1",
+      "from_location_id": "STANTON_HURSTON_EVERUS_HARBOR",
+      "to_location_id": "STANTON_HUR_L1",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_EVERUS_HARBOR_TO_STANTON_HUR_L2",
+      "from_location_id": "STANTON_HURSTON_EVERUS_HARBOR",
+      "to_location_id": "STANTON_HUR_L2",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_EVERUS_HARBOR_TO_STANTON_HUR_L3",
+      "from_location_id": "STANTON_HURSTON_EVERUS_HARBOR",
+      "to_location_id": "STANTON_HUR_L3",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_EVERUS_HARBOR_TO_STANTON_HUR_L4",
+      "from_location_id": "STANTON_HURSTON_EVERUS_HARBOR",
+      "to_location_id": "STANTON_HUR_L4",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HURSTON_EVERUS_HARBOR_TO_STANTON_HUR_L5",
+      "from_location_id": "STANTON_HURSTON_EVERUS_HARBOR",
+      "to_location_id": "STANTON_HUR_L5",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_BAIJINI_POINT_TO_STANTON_ARC_L1",
+      "from_location_id": "STANTON_ARCCORP_BAIJINI_POINT",
+      "to_location_id": "STANTON_ARC_L1",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_BAIJINI_POINT_TO_STANTON_ARC_L2",
+      "from_location_id": "STANTON_ARCCORP_BAIJINI_POINT",
+      "to_location_id": "STANTON_ARC_L2",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_BAIJINI_POINT_TO_STANTON_ARC_L3",
+      "from_location_id": "STANTON_ARCCORP_BAIJINI_POINT",
+      "to_location_id": "STANTON_ARC_L3",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_BAIJINI_POINT_TO_STANTON_ARC_L4",
+      "from_location_id": "STANTON_ARCCORP_BAIJINI_POINT",
+      "to_location_id": "STANTON_ARC_L4",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARCCORP_BAIJINI_POINT_TO_STANTON_ARC_L5",
+      "from_location_id": "STANTON_ARCCORP_BAIJINI_POINT",
+      "to_location_id": "STANTON_ARC_L5",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_PORT_TRESSLER_TO_STANTON_MIC_L1",
+      "from_location_id": "STANTON_MICROTECH_PORT_TRESSLER",
+      "to_location_id": "STANTON_MIC_L1",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_PORT_TRESSLER_TO_STANTON_MIC_L2",
+      "from_location_id": "STANTON_MICROTECH_PORT_TRESSLER",
+      "to_location_id": "STANTON_MIC_L2",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_PORT_TRESSLER_TO_STANTON_MIC_L3",
+      "from_location_id": "STANTON_MICROTECH_PORT_TRESSLER",
+      "to_location_id": "STANTON_MIC_L3",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_PORT_TRESSLER_TO_STANTON_MIC_L4",
+      "from_location_id": "STANTON_MICROTECH_PORT_TRESSLER",
+      "to_location_id": "STANTON_MIC_L4",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MICROTECH_PORT_TRESSLER_TO_STANTON_MIC_L5",
+      "from_location_id": "STANTON_MICROTECH_PORT_TRESSLER",
+      "to_location_id": "STANTON_MIC_L5",
+      "bidirectional": true,
+      "route_class": "orbital_station_to_lagrange",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 2,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 1,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Initial local Lagrange access edge. Distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRU_L1_TO_STANTON_CRU_L2",
+      "from_location_id": "STANTON_CRU_L1",
+      "to_location_id": "STANTON_CRU_L2",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRU_L1_TO_STANTON_CRU_L3",
+      "from_location_id": "STANTON_CRU_L1",
+      "to_location_id": "STANTON_CRU_L3",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRU_L1_TO_STANTON_CRU_L4",
+      "from_location_id": "STANTON_CRU_L1",
+      "to_location_id": "STANTON_CRU_L4",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRU_L1_TO_STANTON_CRU_L5",
+      "from_location_id": "STANTON_CRU_L1",
+      "to_location_id": "STANTON_CRU_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRU_L2_TO_STANTON_CRU_L3",
+      "from_location_id": "STANTON_CRU_L2",
+      "to_location_id": "STANTON_CRU_L3",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRU_L2_TO_STANTON_CRU_L4",
+      "from_location_id": "STANTON_CRU_L2",
+      "to_location_id": "STANTON_CRU_L4",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRU_L2_TO_STANTON_CRU_L5",
+      "from_location_id": "STANTON_CRU_L2",
+      "to_location_id": "STANTON_CRU_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRU_L3_TO_STANTON_CRU_L4",
+      "from_location_id": "STANTON_CRU_L3",
+      "to_location_id": "STANTON_CRU_L4",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRU_L3_TO_STANTON_CRU_L5",
+      "from_location_id": "STANTON_CRU_L3",
+      "to_location_id": "STANTON_CRU_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_CRU_L4_TO_STANTON_CRU_L5",
+      "from_location_id": "STANTON_CRU_L4",
+      "to_location_id": "STANTON_CRU_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HUR_L1_TO_STANTON_HUR_L2",
+      "from_location_id": "STANTON_HUR_L1",
+      "to_location_id": "STANTON_HUR_L2",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HUR_L1_TO_STANTON_HUR_L3",
+      "from_location_id": "STANTON_HUR_L1",
+      "to_location_id": "STANTON_HUR_L3",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HUR_L1_TO_STANTON_HUR_L4",
+      "from_location_id": "STANTON_HUR_L1",
+      "to_location_id": "STANTON_HUR_L4",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HUR_L1_TO_STANTON_HUR_L5",
+      "from_location_id": "STANTON_HUR_L1",
+      "to_location_id": "STANTON_HUR_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HUR_L2_TO_STANTON_HUR_L3",
+      "from_location_id": "STANTON_HUR_L2",
+      "to_location_id": "STANTON_HUR_L3",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HUR_L2_TO_STANTON_HUR_L4",
+      "from_location_id": "STANTON_HUR_L2",
+      "to_location_id": "STANTON_HUR_L4",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HUR_L2_TO_STANTON_HUR_L5",
+      "from_location_id": "STANTON_HUR_L2",
+      "to_location_id": "STANTON_HUR_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HUR_L3_TO_STANTON_HUR_L4",
+      "from_location_id": "STANTON_HUR_L3",
+      "to_location_id": "STANTON_HUR_L4",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HUR_L3_TO_STANTON_HUR_L5",
+      "from_location_id": "STANTON_HUR_L3",
+      "to_location_id": "STANTON_HUR_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_HUR_L4_TO_STANTON_HUR_L5",
+      "from_location_id": "STANTON_HUR_L4",
+      "to_location_id": "STANTON_HUR_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARC_L1_TO_STANTON_ARC_L2",
+      "from_location_id": "STANTON_ARC_L1",
+      "to_location_id": "STANTON_ARC_L2",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARC_L1_TO_STANTON_ARC_L3",
+      "from_location_id": "STANTON_ARC_L1",
+      "to_location_id": "STANTON_ARC_L3",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARC_L1_TO_STANTON_ARC_L4",
+      "from_location_id": "STANTON_ARC_L1",
+      "to_location_id": "STANTON_ARC_L4",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARC_L1_TO_STANTON_ARC_L5",
+      "from_location_id": "STANTON_ARC_L1",
+      "to_location_id": "STANTON_ARC_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARC_L2_TO_STANTON_ARC_L3",
+      "from_location_id": "STANTON_ARC_L2",
+      "to_location_id": "STANTON_ARC_L3",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARC_L2_TO_STANTON_ARC_L4",
+      "from_location_id": "STANTON_ARC_L2",
+      "to_location_id": "STANTON_ARC_L4",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARC_L2_TO_STANTON_ARC_L5",
+      "from_location_id": "STANTON_ARC_L2",
+      "to_location_id": "STANTON_ARC_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARC_L3_TO_STANTON_ARC_L4",
+      "from_location_id": "STANTON_ARC_L3",
+      "to_location_id": "STANTON_ARC_L4",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARC_L3_TO_STANTON_ARC_L5",
+      "from_location_id": "STANTON_ARC_L3",
+      "to_location_id": "STANTON_ARC_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_ARC_L4_TO_STANTON_ARC_L5",
+      "from_location_id": "STANTON_ARC_L4",
+      "to_location_id": "STANTON_ARC_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MIC_L1_TO_STANTON_MIC_L2",
+      "from_location_id": "STANTON_MIC_L1",
+      "to_location_id": "STANTON_MIC_L2",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MIC_L1_TO_STANTON_MIC_L3",
+      "from_location_id": "STANTON_MIC_L1",
+      "to_location_id": "STANTON_MIC_L3",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MIC_L1_TO_STANTON_MIC_L4",
+      "from_location_id": "STANTON_MIC_L1",
+      "to_location_id": "STANTON_MIC_L4",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MIC_L1_TO_STANTON_MIC_L5",
+      "from_location_id": "STANTON_MIC_L1",
+      "to_location_id": "STANTON_MIC_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MIC_L2_TO_STANTON_MIC_L3",
+      "from_location_id": "STANTON_MIC_L2",
+      "to_location_id": "STANTON_MIC_L3",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MIC_L2_TO_STANTON_MIC_L4",
+      "from_location_id": "STANTON_MIC_L2",
+      "to_location_id": "STANTON_MIC_L4",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MIC_L2_TO_STANTON_MIC_L5",
+      "from_location_id": "STANTON_MIC_L2",
+      "to_location_id": "STANTON_MIC_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MIC_L3_TO_STANTON_MIC_L4",
+      "from_location_id": "STANTON_MIC_L3",
+      "to_location_id": "STANTON_MIC_L4",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MIC_L3_TO_STANTON_MIC_L5",
+      "from_location_id": "STANTON_MIC_L3",
+      "to_location_id": "STANTON_MIC_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    },
+    {
+      "edge_id": "EDGE_STANTON_MIC_L4_TO_STANTON_MIC_L5",
+      "from_location_id": "STANTON_MIC_L4",
+      "to_location_id": "STANTON_MIC_L5",
+      "bidirectional": true,
+      "route_class": "lagrange_chain",
+      "distance": {
+        "value": null,
+        "unit": null,
+        "status": "not_ingested_phase2"
+      },
+      "qt_time": {
+        "status": "runtime_derived_from_quantum_drive",
+        "stored_fixed_time": false
+      },
+      "route_traits": {
+        "atmosphere_required": false,
+        "spline_required": false,
+        "surface_destination": false,
+        "orbital_destination": true,
+        "freight_risk_known": false
+      },
+      "derived_traversal_penalties": {
+        "atmosphere_penalty": 0,
+        "spline_penalty": 0,
+        "approach_penalty": 1,
+        "docking_or_landing_penalty": 1,
+        "freight_elevator_penalty": 2,
+        "dead_leg_risk": 2,
+        "route_complexity": 1,
+        "confidence": "derived_general"
+      },
+      "source_refs": [
+        {
+          "source_id": "phase1_location_hierarchy",
+          "retrieved_date": "2026-05-16",
+          "note": "Edge derived from Phase 1 parent-child hierarchy and operational classification."
+        }
+      ],
+      "notes": [
+        "Pairwise same-parent Lagrange topology edge. Actual distance unresolved."
+      ]
+    }
+  ]
+}

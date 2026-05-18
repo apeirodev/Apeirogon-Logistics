@@ -1,0 +1,30 @@
+{
+  "dataset_name": "star_citizen_hauling_phase12_commodity_flow",
+  "generated_at": "2026-05-16T23:58:51Z",
+  "commodity_flow_systems": {
+    "commodity_source_clustering": {
+      "classification": "regional_supply_model"
+    },
+    "commodity_sink_clustering": {
+      "classification": "regional_demand_model"
+    },
+    "regional_demand_concentration": {
+      "classification": "demand_density_model"
+    },
+    "orbital_commodity_corridors": {
+      "classification": "orbital_flow_model"
+    },
+    "atmosphere_heavy_commodity_routes": {
+      "classification": "surface_logistics_model"
+    },
+    "convoy_commodity_specialization": {
+      "classification": "fleet_specialization_model"
+    },
+    "regional_logistics_dependency": {
+      "classification": "dependency_model"
+    },
+    "commodity_bottleneck_detection": {
+      "classification": "bottleneck_analysis_model"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "dataset_name": "star_citizen_hauling_phase7_route_metrics",
+  "generated_at": "2026-05-16T23:55:39Z",
+  "metrics": {
+    "estimated_rep_per_hour": "comparative_runtime_heuristic",
+    "estimated_operational_efficiency": "comparative_runtime_heuristic",
+    "estimated_route_burden": "comparative_runtime_heuristic",
+    "mission_density_score": "comparative_runtime_heuristic",
+    "orbital_chain_viability": "comparative_runtime_heuristic",
+    "route_continuity_score": "comparative_runtime_heuristic",
+    "expected_turnaround_efficiency": "comparative_runtime_heuristic"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "dataset_name": "phase18_recursive_self_healing",
+  "generated_at": "2026-05-17T00:08:40Z",
+  "systems": {
+    "autonomous_corridor_repair": {
+      "classification": "recursive_self_healing_model"
+    },
+    "convoy_destabilization_detection": {
+      "classification": "recursive_self_healing_model"
+    },
+    "recursive_congestion_suppression": {
+      "classification": "recursive_self_healing_model"
+    },
+    "supply_chain_imbalance_correction": {
+      "classification": "recursive_self_healing_model"
+    },
+    "regional_scarcity_suppression": {
+      "classification": "recursive_self_healing_model"
+    },
+    "strategic_reserve_redistribution": {
+      "classification": "recursive_self_healing_model"
+    },
+    "dead_leg_ecosystem_recovery": {
+      "classification": "recursive_self_healing_model"
+    },
+    "recursive_logistics_stabilization_propagation": {
+      "classification": "recursive_self_healing_model"
+    }
+  }
+}

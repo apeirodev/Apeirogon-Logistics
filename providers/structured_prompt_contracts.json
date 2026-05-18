@@ -1,0 +1,51 @@
+{
+  "dataset_name": "phase26_structured_prompt_contracts",
+  "generated_at": "2026-05-17T00:55:10Z",
+  "contracts": {
+    "screenshot_analysis": {
+      "required_behaviour": [
+        "preserve_unreadable_values",
+        "return_confidence",
+        "do_not_invent"
+      ]
+    },
+    "mission_extraction": {
+      "required_outputs": [
+        "pickup",
+        "deliveries",
+        "SCU",
+        "issuer",
+        "rank",
+        "payout",
+        "timer",
+        "unresolved_fields"
+      ]
+    },
+    "route_recommendation": {
+      "required_outputs": [
+        "accepted",
+        "rejected",
+        "deferred",
+        "route_sequence",
+        "risks",
+        "confidence"
+      ]
+    },
+    "telemetry_extraction": {
+      "required_outputs": [
+        "observed_values",
+        "patch_version",
+        "ship",
+        "issuer",
+        "confidence"
+      ]
+    },
+    "operational_doctrine_enforcement": {
+      "required_behaviour": [
+        "destination_grouping",
+        "anti_fragmentation",
+        "panel_readability"
+      ]
+    }
+  }
+}

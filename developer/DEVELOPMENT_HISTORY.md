@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.42.3: README Maintainer Line Fix
+
+Removed apeirogon.gg from the README.md footer maintainer line.
+
+---
+
 ## Version 0.42.2: CI Requirements Hash Fix
 
 Fixed requirements-dev.txt to include all transitive dependencies of pytest with their hashes. The file previously only specified a hash for pytest itself, which triggered pip's require-hashes mode. In that mode pip requires every package including transitive dependencies to have an explicit version pin and hash. The missing entries (iniconfig, pluggy, packaging, pygments) caused pip install to fail in any fresh environment (CI runner, new venv) with "In --require-hashes mode, all requirements must have their versions pinned with ==." This was the root cause of the validation workflow failing in CI on every push.

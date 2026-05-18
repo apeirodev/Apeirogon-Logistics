@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.42.3 README maintainer line fix",
+      "notes": "Removed apeirogon.gg from README.md footer maintainer line.",
+      "source_id": "apeirogon_0_42_3_readme_maintainer_line_fix",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.42.2 CI requirements hash fix",
       "notes": "Fixed requirements-dev.txt to include hashes for all transitive pytest dependencies (iniconfig, pluggy, packaging, pygments). Partial hash pinning triggered pip require-hashes mode and broke CI in every fresh environment.",
       "source_id": "apeirogon_0_42_2_ci_requirements_hash_fix",

@@ -87,6 +87,18 @@ question matters as much as the route itself.
 
 ---
 
+## Hull-B Cargo Panel Assignment
+
+The Hull-B has eight external cargo panels: top, bottom, port, starboard, front, and back — six named faces, but the spindle structure effectively gives you eight addressable panels when you count the forward and aft halves of the port and starboard sides.
+
+**Operational practice**: assign each destination its own panel or set of panels. When you know Panel A is "Baijini Point" and Panel B is "Shopp-L4", unloading at each stop is fast and clean — you are not sorting through mixed cargo to find what belongs there.
+
+This is why the `cargo_panel_clarity` modifier exists for Hull-B (×1.15). A mission set where each destination maps neatly to a panel section scores better because it executes better. Fragmented routes — where you'd be pulling cargo from multiple panels at each stop — lose this advantage.
+
+**Practical rule**: before loading, assign deliveries to panels mentally or in your notes. Prefer route sets where the number of destinations is ≤ the number of usable panels. When stacking three same-pickup Covalex missions to three different orbital stations, you get clean panel separation with cargo to spare.
+
+---
+
 ## Handling the Freight Elevator
 
 Hull-B specific: loading and unloading is via freight elevator, not ramp.

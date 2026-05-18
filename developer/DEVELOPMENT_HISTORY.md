@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.39.1 — Cargo Layout Specialization, Patch Tracking, and Addon Intent
+
+Added Hull-B 8-panel cargo assignment doctrine (top/bottom/port/starboard/front/back) to both the route playbook and ship specialization guide. Added Hermes two-side-to-four-quadrant divider technique. Created PATCH_SENSITIVE_DATA.md — structured checklist of data values that need re-verification on each new Star Citizen patch, including per-ship SCU risk levels, flyability flags, and files containing patch version references. Added future in-game addon intent to main README and player README — describes the planned real-time contract analyzer pending CIG addon/plugin support.
+
+---
+
 ## Version 0.38.1 — Ship Expansion and Covalex Reputation Ranks
 
 Expanded ship coverage from 5 to 23 ships (all 90+ SCU haulers in Alpha 4.8.0): added Hull-D, Hull-E, Hermes, Starlancer MAX, Starlancer TAC, Starfarer, Starfarer Gemini, ARGO RAFT, Valkyrie, Asgard, M2 Hercules, A2 Hercules, Ironclad, Ironclad Assault, Railen, Banu Merchantman, RSI Galaxy. Added 19 new ship modifier blocks to scoring_config.json. Added full Covalex reputation ranks (7 tiers: Trainee through Master) to mission_issuer_profiles.json, with recommended ships, strategies, and Master-rank unlock list. Added 3 new issuer placeholders: Hurston Dynamics, microTech, ArcCorp. Created SHIP_SPECIALIZATION_GUIDE.md (developer and player copies). Added ship_profiles.json to player/uploads/. Updated all SETUP_*.md guides to list 8 upload files.

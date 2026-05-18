@@ -136,6 +136,8 @@ All multipliers from `runtime/scoring_config.json`. A multiplier > 1.0 amplifies
 
 The Covalex orbital chain specialist. External spindle cargo rewards clean route stacking — each extra contract from the same pickup scores higher here than on any other ship. The `cargo_panel_clarity` bonus (×1.15) uniquely rewards having a readable, consistent mission set.
 
+**Cargo panel assignment**: The Hull-B has eight external cargo panels (top, bottom, port, starboard, front, back — plus the forward/aft halves of the port and starboard sides). Assign each delivery destination its own panel or panel section before loading. When Panel A is "Baijini Point" and Panel B is "Shopp-L4", unloading is fast and clean. Fragmented routes that mix cargo from multiple destinations per panel lose this advantage entirely, which is why the fragmentation penalty hits harder here than on any other ship.
+
 **Best for**: Covalex Member rank through Experienced. Same-pickup stacking at Everus Harbor. 10-mission runs, all orbital.
 
 **Avoid**: Atmosphere deliveries when loaded. Fragmented multi-stop sets. The fragmentation multiplier (×1.10) amplifies an already heavy -12 base penalty.
@@ -158,7 +160,9 @@ Required for Covalex Senior bulk rate contracts. Docking-only — cannot land wh
 
 Fast medium freighter / blockade runner (flyable since Alpha 4.6). The dead-leg multiplier (×0.90) makes it the best ship in the fleet for recovering from an empty fly-to. The fatigue dampener (×0.92) supports long sessions.
 
-**Best for**: Routes with some contested space, missions where you might need to recover dead legs. General Covalex Junior through Member work.
+**Cargo layout — quadrant assignment**: The Hermes has two long internal side grids. Place one or two 2-SCU personal storage boxes as a physical divider midway along each side to create four quadrants — forward port, aft port, forward starboard, aft starboard. Assign one destination per quadrant before loading. This gives you the same destination-separated unloading benefit that Hull-B gets from its eight named panels.
+
+**Best for**: Routes with some contested space, missions where you might need to recover dead legs. General Covalex Junior through Member work. Up to four well-separated destinations.
 
 **Avoid**: Very large volume runs where 288 SCU limits how many missions you can stack.
 

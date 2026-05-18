@@ -292,6 +292,12 @@
       "notes": "Expands ship coverage to 23 ships (90+ SCU). Adds Covalex 7-tier reputation ranks, 3 new issuer placeholders, SHIP_SPECIALIZATION_GUIDE, and ship_profiles player upload. All new SCU values community_sourced_advisory for Alpha 4.8.0.",
       "source_id": "apeirogon_0_38_1_ship_expansion",
       "trust_level": "community_sourced_advisory"
+    },
+    {
+      "name": "Apeirogon Logistics 0.39.1 cargo layout specialization and patch tracking",
+      "notes": "Hull-B 8-panel doctrine, Hermes quadrant divider technique, PATCH_SENSITIVE_DATA.md, future addon intent in READMEs.",
+      "source_id": "apeirogon_0_39_1_cargo_layout_patch_tracking",
+      "trust_level": "internal_derived"
     }
   ]
 }

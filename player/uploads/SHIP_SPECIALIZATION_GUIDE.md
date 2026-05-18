@@ -130,6 +130,8 @@ Multipliers from `scoring_config.json`. > 1.0 amplifies, < 1.0 dampens.
 
 The Covalex orbital chain specialist. External spindle cargo rewards clean route stacking — each extra contract from the same pickup scores higher here than on any other ship. The `cargo_panel_clarity` bonus (×1.15) rewards having a readable, consistent mission set.
 
+**Cargo panel assignment**: The Hull-B has eight external cargo panels (top, bottom, port, starboard, front, back — plus the forward/aft halves of the port and starboard sides). Assign each delivery destination its own panel or panel section before loading. When Panel A is "Baijini Point" and Panel B is "Shopp-L4", unloading is fast and clean. Fragmented routes that mix cargo from multiple destinations per panel lose this advantage entirely — this is why fragmentation hits harder on the Hull-B than any other ship.
+
 **Best for**: Covalex Member rank through Experienced. Same-pickup stacking at Everus Harbor. All-orbital routes.
 
 **Avoid**: Atmosphere deliveries when loaded. Fragmented multi-stop sets — the fragmentation multiplier makes them score worse than they would on any other ship.
@@ -152,7 +154,9 @@ Required for Covalex Senior bulk rate contracts. Cannot land while loaded — st
 
 Fast medium freighter. The dead-leg modifier (×0.90) makes it the best ship in the fleet for routes where you might fly empty to the pickup. Long-session capable.
 
-**Best for**: Routes with some contested space. Covalex Junior through Member. Sessions with likely dead-legs.
+**Cargo layout — quadrant assignment**: The Hermes has two long internal side grids. Place one or two 2-SCU personal storage boxes as a physical divider midway along each side to create four quadrants — forward port, aft port, forward starboard, aft starboard. Assign one destination per quadrant before loading. This gives you clean, fast unloading at each stop without sorting through mixed cargo.
+
+**Best for**: Routes with some contested space. Covalex Junior through Member. Sessions with likely dead-legs. Up to four well-separated destinations.
 
 ---
 

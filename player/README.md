@@ -35,9 +35,21 @@ This folder contains everything you need to use Apeirogon Logistics with your AI
 
 ## Files to upload when setting up your AI project
 
-Along with the instructions in your setup file, upload these two files from the `developer/runtime/` folder:
+Upload all eight files from the `uploads/` folder in this directory. Your setup guide lists them with descriptions.
 
-- `developer/runtime/scoring_config.json` — the scoring weights
-- `developer/runtime/OCR_normalization_rules.json` — the location name table
+The AI uses these files to score routes correctly. Without them it will still work but scoring will be approximate.
 
-The AI uses these to score routes correctly. Without them it will still work but scoring will be approximate.
+---
+
+## What's coming — in-game addon
+
+The long-term goal for Apeirogon Logistics is an **in-game addon** that analyzes contracts in real time as you browse the missions terminal — no screenshots, no copy-paste. You'd see contract scores and recommendations overlaid directly in the game UI.
+
+**This requires CIG (Cloud Imperium Games) to open up the game to addons or plugins.** That capability does not exist yet. When CIG enables it, Apeirogon Logistics will let you:
+
+- Connect your own OpenAI, Claude, Anthropic, or other AI provider API key
+- See Accept / Defer / Reject indicators on contracts as you scroll through the terminal
+- Get a smart summary panel showing the best combinations and run order
+- Configure what information shows and how the overlay looks
+
+Nothing about this requires changes to how you use the current version. When the addon becomes available it will be an optional installation — the AI assistant workflow you're using today will continue to work.

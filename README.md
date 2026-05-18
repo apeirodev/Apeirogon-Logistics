@@ -65,6 +65,21 @@ See [`LICENSES.md`](LICENSES.md) for full details.
 
 ---
 
+## What's coming — in-game addon
+
+The long-term goal is an **in-game addon** that analyzes contracts in real time as you browse the missions terminal — no screenshots, no copy-paste. You'd see contract scores and recommendations overlaid directly in the game UI.
+
+**This requires CIG (Cloud Imperium Games) to open up the game to addons or plugins.** That capability does not exist yet. When CIG enables it, Apeirogon Logistics will:
+
+- Let you connect your own API key for OpenAI, Claude, or another provider
+- Show Accept / Defer / Reject indicators on contracts as you scroll the terminal
+- Display a configurable info panel with scores, best combinations, and run order
+- Work entirely within the game — no alt-tabbing or screenshots needed
+
+The current AI assistant workflow will continue to work alongside it — nothing about the existing setup changes. The addon is an addition, not a replacement.
+
+---
+
 ## For developers and contributors
 
 The scoring tools, test suite, schemas, and documentation are in [`developer/`](developer/).
@@ -73,4 +88,4 @@ The deterministic Python scorer runs without any AI — useful if you want full 
 
 Contributions welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-**Maintainer:** ApeiroDev · apeirogon.gg · v0.38.1
+**Maintainer:** ApeiroDev · apeirogon.gg · v0.39.1

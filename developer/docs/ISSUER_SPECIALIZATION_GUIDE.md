@@ -21,22 +21,22 @@ If a mission has no issuer field or the issuer is not in the config, the scorer 
 | Issuer | Modifier | Value | Practical Meaning |
 |---|---|---|---|
 | covalex | issuer_alignment | ×1.10 | Strong bonus when mission type matches Covalex route profile |
-| covalex | orbital_loop | ×1.05 | Orbital loop chains score better — Covalex rewards tight orbital work |
+| covalex | orbital_loop | ×1.05 | Orbital loop chains score better; Covalex rewards tight orbital work |
 | covalex | route_continuity | ×1.05 | Bonus for missions that continue a clean route without dead legs |
 | ling / ling family | destination_overlap | ×1.05 | Small bonus when destinations stack with other missions |
 | ling / ling family | same_pickup | ×1.03 | Small bonus for same-pickup stacking |
-| red wind | dead_leg | ×1.10 | Dead legs cost more with Red Wind missions — already -15 base, now worse |
+| red wind | dead_leg | ×1.10 | Dead legs cost more with Red Wind missions; already -15 base, now worse |
 | red wind | congestion | ×1.05 | Congested delivery points penalised more |
 
 ### Covalex
 
-Covalex is the primary focus of this toolset. The issuer alignment, orbital loop, and route continuity multipliers all compound when you build a tight orbital chain — meaning Covalex missions score significantly better than their raw factor values when stacked correctly.
+Covalex is the primary focus of this toolset. The issuer alignment, orbital loop, and route continuity multipliers all compound when you build a tight orbital chain, meaning Covalex missions score significantly better than their raw factor values when stacked correctly.
 
 Best use: Build a mission set that stays in orbital space, chains pickups and deliveries without dead legs, and uses Hull-B if available. The combination of Hull-B ship modifiers and Covalex issuer modifiers is the highest-scoring configuration the tool supports.
 
 ### Ling / Ling Family
 
-The destination overlap and same_pickup multipliers are small (×1.05 and ×1.03). Ling missions get a modest bonus for stacking but no strong route-shape incentive. They work well as fill missions when you already have a destination or pickup cluster — the small bonuses reward missions that fit your existing run rather than missions you'd build a run around.
+The destination overlap and same_pickup multipliers are small (×1.05 and ×1.03). Ling missions get a modest bonus for stacking but no strong route-shape incentive. They work well as fill missions when you already have a destination or pickup cluster; the small bonuses reward missions that fit your existing run rather than missions you'd build a run around.
 
 Both `ling` and `ling family` map to the same modifier block in the config.
 
@@ -96,4 +96,4 @@ If you are unsure what modifiers to assign to a new issuer, start with an empty 
 
 ## A Note on Payout Ranges
 
-Issuer mission availability, payout ranges, and mission frequency all change with game patches. The modifiers in `scoring_config.json` reflect route-shape tendencies, not specific payout values. Never use AI-generated payout estimates for any issuer — those values are patch-dependent and will be wrong. Enter actual in-game values manually or via verified OCR.
+Issuer mission availability, payout ranges, and mission frequency all change with game patches. The modifiers in `scoring_config.json` reflect route-shape tendencies, not specific payout values. Never use AI-generated payout estimates for any issuer; those values are patch-dependent and will be wrong. Enter actual in-game values manually or via verified OCR.

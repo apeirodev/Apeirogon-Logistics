@@ -6,7 +6,7 @@ Technical reference for how the Apeirogon Logistics codebase identifies, flags, 
 
 ## The Problem
 
-In preliminary testing across multiple AI providers without strict prompting, more than 50% of numeric fields in provider output were hallucinated — that is, the AI produced values that were not present in the source material provided.
+In preliminary testing across multiple AI providers without strict prompting, more than 50% of numeric fields in provider output were hallucinated, meaning the AI produced values that were not present in the source material provided.
 
 Star Citizen game values (prices, rewards, fees, distances, cargo capacities) change on a patch cycle. AI training data is always behind the current patch. When asked to extract or reason about these values, AI providers fill gaps with plausible-sounding invented data that is indistinguishable from real values in format and presentation.
 
@@ -25,7 +25,7 @@ It is intentionally not a number. This means:
 
 **Why UNRESOLVED is better than a guess:**
 
-A wrong number looks right. A -2 penalty from UNRESOLVED is visible and bounded. A hallucinated `fee_usc` that is off by 40,000 aUEC can flip a mission from profitable to a loss. The scoring system is designed so that UNRESOLVED produces a predictable, visible, limited penalty — while a bad number produces a confidently wrong result.
+A wrong number looks right. A -2 penalty from UNRESOLVED is visible and bounded. A hallucinated `fee_usc` that is off by 40,000 aUEC can flip a mission from profitable to a loss. The scoring system is designed so that UNRESOLVED produces a predictable, visible, limited penalty, while a bad number produces a confidently wrong result.
 
 When AI extraction returns a value for a field that was not present in the source, replace it with UNRESOLVED before running the pipeline.
 
@@ -57,7 +57,7 @@ Before AI extraction output reaches the normalizer or scorer, it passes through 
 2. **`source_class` must be `ai_output` or `ai_vision_extraction`.** The governance metadata block must correctly identify the data's origin.
 3. **Unsourced numeric fields are flagged.** The validator compares every numeric field in the AI output against the set of fields the operator actually supplied. Any numeric field present in the AI output that was not in the user-supplied input is added to `hallucination_flags`.
 
-The validator does not auto-reject on hallucination flags — it surfaces them for operator review. Some fields may be correctly derivable (e.g., `profit_usc` = `reward_usc` - `fee_usc` when both were supplied). The operator must review each flag.
+The validator does not auto-reject on hallucination flags; it surfaces them for operator review. Some fields may be correctly derivable (e.g., `profit_usc` = `reward_usc` - `fee_usc` when both were supplied). The operator must review each flag.
 
 ---
 

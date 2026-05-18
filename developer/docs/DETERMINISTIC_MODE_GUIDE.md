@@ -1,6 +1,6 @@
 # Deterministic Mode Guide
 
-This guide covers running the scoring pipeline with no AI involvement — pure Python scoring from data you supply directly.
+This guide covers running the scoring pipeline with no AI involvement: pure Python scoring from data you supply directly.
 
 ---
 
@@ -19,7 +19,7 @@ The accept/defer/reject thresholds are: accept >= 70, defer 45 to 69, reject < 4
 Use deterministic mode when:
 - You have no internet connection.
 - You prefer not to send data to an AI provider.
-- You are in active gameplay and typing fast — manual entry is faster than the OCR pipeline when you already know the values.
+- You are in active gameplay and typing fast; manual entry is faster than the OCR pipeline when you already know the values.
 - You want to re-score a previous mission set with different config weights.
 - You are testing config changes and want immediate feedback without waiting for AI processing.
 
@@ -93,7 +93,7 @@ The minimal input for a batch:
 
 | Field | Description | If omitted |
 |-------|-------------|------------|
-| `reward_usc` | Mission reward in aUEC | UNRESOLVED — -2 score penalty |
+| `reward_usc` | Mission reward in aUEC | UNRESOLVED: -2 score penalty |
 | `cargo_scu` | Cargo size | Not used in current scoring |
 | `issuer` | Mission company | No issuer modifier applied |
 | `ship` | Ship name | No ship modifier applied |
@@ -109,7 +109,7 @@ Each UNRESOLVED field:
 - Penalties are capped at -12 total (6 or more UNRESOLVED fields all trigger the same maximum).
 - Drops the confidence rating to `medium`.
 
-A result with unresolved fields is still returned — the tool does not refuse to score. But the recommendation is less reliable. Verify any UNRESOLVED field before acting on the score.
+A result with unresolved fields is still returned; the tool does not refuse to score. But the recommendation is less reliable. Verify any UNRESOLVED field before acting on the score.
 
 To fix an UNRESOLVED field: add the correct value to your JSON and re-run. The scorer is fast enough that re-running with corrected data is always the right approach.
 
@@ -144,7 +144,7 @@ To change a weight, edit the value in `scoring_config.json` and re-run. Changes 
 | Speed | Fast | Slower (AI round-trip) |
 | Data entry | Manual JSON | Screenshot + AI extraction |
 | Best when | You know the values | You have screenshots and want to skip typing |
-| Hallucination risk | None | Present — see HALLUCINATION_GUARDRAILS.md |
+| Hallucination risk | None | Present; see HALLUCINATION_GUARDRAILS.md |
 | Reliability | High | Depends on OCR quality and strict prompt compliance |
 
 Both modes use the same scorer. The difference is only in how input data arrives. Use whichever fits your current session.

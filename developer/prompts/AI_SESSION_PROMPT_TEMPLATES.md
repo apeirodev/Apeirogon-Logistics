@@ -1,6 +1,6 @@
 # AI Session Prompt Templates
 
-> **CRITICAL — READ FIRST**: Every AI session must begin with the strict
+> **CRITICAL, READ FIRST**: Every AI session must begin with the strict
 > guardrail prompt. AI assistants hallucinate Star Citizen data more than 50%
 > of the time without it. Paste the full prompt from
 > `prompts/STRICT_AI_SESSION_PROMPT.md` before using any template below.

@@ -24,7 +24,7 @@ If you already have Python 3.10+, skip this step.
 
 1. Go to https://www.python.org/downloads/
 2. Download the latest Python 3.x installer
-3. Run the installer — **on Windows, tick "Add Python to PATH"**
+3. Run the installer. **On Windows, tick "Add Python to PATH"**
 4. Open a terminal and run: `python --version` (or `python3 --version` on Mac/Linux)
 5. You should see something like `Python 3.12.x`
 
@@ -32,12 +32,12 @@ If you already have Python 3.10+, skip this step.
 
 ## Step 2: Get the Repository
 
-**Option A — Download ZIP:**
+**Option A: Download ZIP:**
 1. Go to the repository page on GitHub
 2. Click Code → Download ZIP
 3. Extract the ZIP to a folder you'll remember (e.g. `Documents/Apeirogon-Logistics`)
 
-**Option B — Git clone:**
+**Option B: Git clone:**
 ```
 git clone https://github.com/apeirodev/Apeirogon-Logistics.git
 ```
@@ -113,7 +113,7 @@ Look for:
 | `recommendation` | The system's suggestion. You decide. |
 | `operational_risk` | low/medium/high |
 | `warnings` | Things that lowered the score (dead legs, fragmentation, etc.) |
-| `unresolved_fields` | Data you didn't provide — score is less confident |
+| `unresolved_fields` | Data you didn't provide; score is less confident |
 | `score_breakdown` | Which factors added or subtracted points |
 
 ---
@@ -180,7 +180,7 @@ Reinstall Python and tick "Add Python to PATH".
 You're not in the repository folder. `cd` to the folder first.
 
 **"JSONDecodeError" or "Expecting value":**
-Check your JSON syntax — every key and string needs double quotes. Use the examples above.
+Check your JSON syntax; every key and string needs double quotes. Use the examples above.
 
 **The score seems wrong:**
 The score is a heuristic. It uses only what you provide. If important fields are

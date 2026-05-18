@@ -29,7 +29,7 @@ These are not bugs; they are things the tool does not model yet, or game behavio
 
 ## Scoring Model Limitations
 
-**Live mission distribution patterns are not learned.** The tool scores individual mission sets you provide. It does not have data on mission frequency, spawn rates, or typical availability at each location. Same-pickup stacking bonuses require you to have multiple missions from the same location — the tool cannot tell you how likely that is.
+**Live mission distribution patterns are not learned.** The tool scores individual mission sets you provide. It does not have data on mission frequency, spawn rates, or typical availability at each location. Same-pickup stacking bonuses require you to have multiple missions from the same location; the tool cannot tell you how likely that is.
 
 **Atmospheric flight burden varies by ship and pilot.** The atmosphere penalty (-12) is a fixed heuristic. Actual atmospheric difficulty depends on your ship's handling, your piloting, current weather effects, and server performance. Hull-B loaded in atmosphere is harder than other ships; the modifier amplifies this, but the actual time cost is not modeled precisely.
 
@@ -51,7 +51,7 @@ These are not bugs; they are things the tool does not model yet, or game behavio
 
 ## Patch Sensitivity
 
-**All payout and capacity values are patch-dependent.** The scoring tool does not store game values. When CIG changes mission payouts, cargo capacities, or station availability in a patch, you need to update your input data. The tool will score whatever you give it — wrong input produces wrong scores.
+**All payout and capacity values are patch-dependent.** The scoring tool does not store game values. When CIG changes mission payouts, cargo capacities, or station availability in a patch, you need to update your input data. The tool will score whatever you give it; wrong input produces wrong scores.
 
 **Issuer and ship modifier calibration is manual.** The modifiers in `scoring_config.json` reflect patterns observed in testing. They may drift from actual game behaviour after patches. If scores feel wrong for your ship or issuer, adjust the relevant modifiers.
 

@@ -24,9 +24,9 @@ Final score = 50 + (positive factors) - (negative factors) ± issuer/ship modifi
 
 | Score Range | Recommendation | Practical Meaning |
 |-------------|---------------|-------------------|
-| 70 to 100 | **accept** | Worth doing — good structure, low risk |
-| 45 to 69 | **defer** | Marginal — consider stacking with other missions |
-| 0 to 44 | **reject** | Poor structure — skip unless no alternatives |
+| 70 to 100 | **accept** | Worth doing, good structure, low risk |
+| 45 to 69 | **defer** | Marginal, consider stacking with other missions |
+| 0 to 44 | **reject** | Poor structure, skip unless no alternatives |
 
 These thresholds are configurable in `runtime/scoring_config.json` under
 `score_bands`. Adjust them if the defaults don't match your playstyle.
@@ -38,7 +38,7 @@ These thresholds are configurable in `runtime/scoring_config.json` under
 ### same_pickup (+16 per point)
 The most valuable factor. Triggers when multiple missions share a pickup location.
 
-A mission with `same_pickup: 1` means one extra mission shares your pickup — you
+A mission with `same_pickup: 1` means one extra mission shares your pickup; you
 load cargo for two missions at one location. This adds 16 points.
 
 Three missions at Port Olisar = `same_pickup: 2` = +32 points.
@@ -77,7 +77,7 @@ reflecting the importance of clear panel reads for external spindle management.
 
 ### dead_leg (-15 per point)
 The most damaging penalty. A dead leg is an empty flight from one place to
-another — burning time and fuel for nothing. Each dead-leg event costs 15 points.
+another, burning time and fuel for nothing. Each dead-leg event costs 15 points.
 
 **Avoid missions that require a separate pickup at a distant location** unless
 the reward justifies the positioning cost.
@@ -88,7 +88,7 @@ and collapse under server instability. -14 points when stop count exceeds 6.
 
 ### fragmentation (-12 per point)
 Multiple deliveries spread across different locations. Each extra unique destination
-adds to fragmentation. Hull-B gets a 10% modifier here — fragmented routes are
+adds to fragmentation. Hull-B gets a 10% modifier here; fragmented routes are
 especially costly for its external cargo handling.
 
 ### atmosphere (-12 per point)
@@ -100,7 +100,7 @@ Triggers for each stop beyond 3. A 5-stop route incurs -12 points for stop densi
 (2 excess stops × -6). Discourages excessive multi-stop complexity.
 
 ### fatigue (-7 per point)
-Route complexity fatigue — accumulates on long routes. Hull-B is relatively
+Route complexity fatigue: accumulates on long routes. Hull-B is relatively
 resilient here (0.95× modifier, i.e. 5% reduction), reflecting its
 orbital-loop specialisation.
 
@@ -109,7 +109,7 @@ Delivery to high-traffic or contested locations. Penalises routes with
 predictable bottlenecks.
 
 ### unloading_cognitive_load (-7 per point)
-Complex unloading scenarios — multiple cargo types, fragmented holds, or
+Complex unloading scenarios: multiple cargo types, fragmented holds, or
 mixed delivery manifests.
 
 ---
@@ -152,7 +152,7 @@ The output includes a `warnings` list. Common warnings and what to do:
 | "Dead-leg risk detected" | A dead-leg factor is present | Reconsider the route unless reward justifies it |
 | "Cargo fragmentation exceeds recommended threshold" | More than 2 fragmentation points | Consider accepting fewer missions |
 | "High stop density may degrade practical execution" | 6+ stops | Trim the run; too many stops is hard to execute |
-| "Route-chain collapse risk detected" | 7+ stops | Strongly reconsider — this run will probably break |
+| "Route-chain collapse risk detected" | 7+ stops | Strongly reconsider; this run will probably break |
 | "Atmosphere burden detected" | Atmosphere deliveries present | Factor in planetary flight time and risk |
 
 ---
@@ -163,7 +163,7 @@ Every output includes `unresolved_fields`: a list of data you didn't provide.
 For each unresolved field, the score is less precise.
 
 The system applies a penalty of up to -12 points for unresolved fields
-(2 points per field, capped at 6 fields). This is intentional — if you don't know
+(2 points per field, capped at 6 fields). This is intentional; if you don't know
 the reward or cargo quantity, the system is appropriately less confident.
 
 `confidence_level` in `governance_metadata` will be:
@@ -176,10 +176,10 @@ Supply more mission data (reward, SCU, exact locations) for more accurate scores
 
 ## Batch Scoring vs Single Route Scoring
 
-**Single route scoring** (`deterministic_scorer.py`) — best for verifying a
+**Single route scoring** (`deterministic_scorer.py`): best for verifying a
 specific route you've already planned. Pass the full route as one input.
 
-**Batch scoring** (`ingest_mission_batch.py`) — best for deciding which missions
+**Batch scoring** (`ingest_mission_batch.py`): best for deciding which missions
 to accept from a list. Scores each mission individually and then computes the
 optimal combined route. Use this when you're looking at the mission terminal
 and choosing what to take.
@@ -216,4 +216,4 @@ your experience:
 - If you tolerate dead legs more than average → reduce `dead_leg` weight (make it less negative)
 - If your Hull-B handles fragmentation better than the default assumes → reduce `fragmentation` weight
 
-Changes to the config file take effect immediately — no code changes needed.
+Changes to the config file take effect immediately, with no code changes needed.

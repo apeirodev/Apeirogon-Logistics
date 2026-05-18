@@ -64,7 +64,7 @@ python -c "import zipfile; z=zipfile.ZipFile('exports/telemetry_bundle.zip'); pr
 Open the zip and check:
 
 - `_BUNDLE_MANIFEST.json`: lists every file included and their key fields
-- Each telemetry file — confirm it contains only what you intended to share
+- Each telemetry file: confirm it contains only what you intended to share
 
 Check specifically:
 - No location information that identifies you personally
@@ -76,7 +76,7 @@ Check specifically:
 
 ## Submit
 
-Submit via the current contribution channel listed in the project's GitHub repository. The exact submission method may change over time — check the repository for current instructions.
+Submit via the current contribution channel listed in the project's GitHub repository. The exact submission method may change over time; check the repository for current instructions.
 
 When submitting, include:
 - The bundle zip file
@@ -90,7 +90,7 @@ When submitting, include:
 
 | Default | Setting |
 |---------|---------|
-| Telemetry contribution | Opt-in only — nothing sent automatically |
+| Telemetry contribution | Opt-in only; nothing sent automatically |
 | Screenshots | Local only by default |
 | Contributor identity | Optional |
 | API keys | Never collected |

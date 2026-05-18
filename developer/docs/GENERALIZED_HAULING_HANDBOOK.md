@@ -25,7 +25,7 @@ The generalized workflow extends the same tools to:
 
 Pass your ship via the `"ship"` field in your mission JSON. The scorer applies that ship's modifier block from `scoring_config.json`.
 
-For ships not in the supported list, omit the ship field — the scorer uses base weights with no ship modifier. This is not ideal for calibrated scoring, but it produces a usable result for route shape analysis.
+For ships not in the supported list, omit the ship field; the scorer uses base weights with no ship modifier. This is not ideal for calibrated scoring, but it produces a usable result for route shape analysis.
 
 See `docs/SHIP_SPECIALIZATION_GUIDE.md` for the full ship modifier table and per-ship guidance.
 
@@ -64,7 +64,7 @@ This tells the scorer that atmosphere deliveries cost the Taurus 80% of what the
 
 ## Issuer-Specific Planning
 
-**Ling / Ling Family:** Destination overlap and same-pickup bonuses reward stacking. The same batch analysis strategy as Covalex applies — identify same-pickup groups and stack them. Smaller ships work well for Ling missions given their typical cargo sizes.
+**Ling / Ling Family:** Destination overlap and same-pickup bonuses reward stacking. The same batch analysis strategy as Covalex applies: identify same-pickup groups and stack them. Smaller ships work well for Ling missions given their typical cargo sizes.
 
 **Red Wind:** Dead leg and congestion penalties are amplified. Only accept Red Wind missions when you are already positioned near the pickup and the delivery is orbital and on your route. Isolated Red Wind missions in congested areas are consistently poor performers.
 
@@ -77,7 +77,7 @@ This tells the scorer that atmosphere deliveries cost the Taurus 80% of what the
 The location alias file (`runtime/OCR_normalization_rules.json`) currently covers Stanton locations. If you are hauling in Pyro or other systems:
 
 1. Add any new location names to `location_aliases` when you encounter them.
-2. The scorer will still work — it just treats unfamiliar locations as non-orbital (unknown type) rather than orbital. This slightly understates scores for orbital stations in other systems.
+2. The scorer will still work; it just treats unfamiliar locations as non-orbital (unknown type) rather than orbital. This slightly understates scores for orbital stations in other systems.
 3. Classify stops manually: if you know a stop is orbital, add it to the `_ORBITAL_KEYWORDS` list in `calculate_traversal.py` or add a comment noting its type in your notes field.
 
 ---

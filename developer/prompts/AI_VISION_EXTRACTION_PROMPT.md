@@ -18,7 +18,7 @@ AI will fabricate numbers and the extraction will be useless.
 6. Run: `python tools/OCR_result_normalizer.py -i missions.json`
 7. Run: `python tools/ingest_mission_batch.py -i missions_normalised.json`
 
-For multiple screenshots, run steps 3–6 for each, then combine the
+For multiple screenshots, run steps 3 to 6 for each, then combine the
 `missions` arrays before running `ingest_mission_batch.py`.
 
 ---
@@ -99,11 +99,11 @@ supply this. Do not let the AI guess or estimate your ship's capacity.
 
 **Check these things before running the normaliser:**
 
-1. Every `reward_usc` value — does it match what you see on screen?
-2. Every `cargo_scu` value — does it match what you see on screen?
-3. Any field that is a round number (5000, 10000, 50000) — did you
+1. Every `reward_usc` value: does it match what you see on screen?
+2. Every `cargo_scu` value: does it match what you see on screen?
+3. Any field that is a round number (5000, 10000, 50000): did you
    actually see that exact number on screen? If not, it was fabricated.
-4. Any location name — is it spelled correctly and does it match the screen?
+4. Any location name: is it spelled correctly and does it match the screen?
 
 If anything looks wrong, go back to the AI session and say:
 > "You invented [field]. I did not give you that value. Replace it with UNRESOLVED."

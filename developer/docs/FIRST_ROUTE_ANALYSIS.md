@@ -48,23 +48,23 @@ python tools/ingest_mission_batch.py -i my_missions.json
 
 If you have a screenshot of the mission terminal:
 
-**Step 1 — Open your AI account** (ChatGPT, Claude, or Gemini)
+**Step 1: Open your AI account** (ChatGPT, Claude, or Gemini)
 
-**Step 2 — Paste the guardrail prompt**
+**Step 2: Paste the guardrail prompt**
 Open `prompts/STRICT_AI_SESSION_PROMPT.md`, copy the full block, paste it into
 the AI chat. Wait for the AI to respond with: "STRICT MODE ACTIVE"
 
 If the AI doesn't acknowledge, paste the prompt again before proceeding.
 
-**Step 3 — Tell the AI your ship**
+**Step 3: Tell the AI your ship**
 Type: *"I am flying a Hull-B."*
 
-**Step 4 — Paste the extraction prompt and attach the screenshot**
+**Step 4: Paste the extraction prompt and attach the screenshot**
 Open `prompts/AI_VISION_EXTRACTION_PROMPT.md`, copy the extraction prompt
 block (everything between the lines), paste it into the chat, and attach your
 screenshot.
 
-**Step 5 — Verify the AI's output**
+**Step 5: Verify the AI's output**
 The AI returns JSON. Before using it, check:
 - Every `reward_usc` matches what you see on screen
 - Every `cargo_scu` matches what you see on screen
@@ -74,13 +74,13 @@ The AI returns JSON. Before using it, check:
 If anything looks wrong, tell the AI: *"You invented [field]. I did not give
 you that. Replace it with UNRESOLVED."*
 
-**Step 6 — Save and normalise**
+**Step 6: Save and normalise**
 Save the AI's JSON as `raw_extraction.json`. Then:
 ```bash
 python tools/OCR_result_normalizer.py -i raw_extraction.json -o missions_norm.json
 ```
 
-**Step 7 — Score the batch**
+**Step 7: Score the batch**
 ```bash
 python tools/ingest_mission_batch.py -i missions_norm.json
 ```
@@ -131,7 +131,7 @@ Sorted from highest to lowest score:
 but combined they score 82 (accept) because three missions share Port Olisar
 as their pickup, adding +32 for the same-pickup stacking bonus.
 
-Mission D (Microtech) scores 35 (reject) — it's a dead leg away from your
+Mission D (Microtech) scores 35 (reject); it's a dead leg away from your
 current location and breaks the orbital chain. Skip it unless the payout
 justifies the empty flight to Microtech.
 
@@ -157,7 +157,7 @@ This is one pickup, three deliveries, no dead legs. The system scored it 82/100.
 ## What to Do Next
 
 Go back to the mission terminal and look for more Port Olisar pickups to add
-to the stack. The same-pickup bonus rewards stacking — each additional Port Olisar
+to the stack. The same-pickup bonus rewards stacking; each additional Port Olisar
 mission adds more value to the run.
 
 When you're done hauling, save your session for next time:

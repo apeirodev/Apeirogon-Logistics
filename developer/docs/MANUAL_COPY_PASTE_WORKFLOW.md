@@ -22,7 +22,7 @@ This is a first-class workflow, not a fallback. The deterministic scorer produce
 
 ### 2. Create a missions JSON file
 
-Create a new file — for example, `my_missions.json`: using the template in the next section.
+Create a new file, for example `my_missions.json`, using the template in the next section.
 
 ### 3. Fill in values from your screen
 
@@ -73,7 +73,7 @@ Replace the `UNRESOLVED` values with numbers once you have read them from screen
 
 | Field | What it is | Notes |
 |-------|-----------|-------|
-| `pickup` | Exact location name as shown | Check spelling — it must match for alias resolution |
+| `pickup` | Exact location name as shown | Check spelling; it must match for alias resolution |
 | `delivery` | Delivery location(s) as a list | Even one location should be in a list: `["Baijini Point"]` |
 | `reward_usc` | Total payout in aUEC | Enter as a number, no commas: `12500` |
 | `cargo_scu` | Cargo size in SCU | Enter as a number |

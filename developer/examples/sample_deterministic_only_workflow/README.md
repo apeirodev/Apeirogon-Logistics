@@ -1,6 +1,6 @@
 # sample_deterministic_only_workflow
 
-Fully deterministic scoring with no AI provider. The user types mission data directly as JSON and pipes it to the scorer — no screenshot, no OCR, no AI. This is the baseline workflow that always remains available regardless of AI provider access.
+Fully deterministic scoring with no AI provider. The user types mission data directly as JSON and pipes it to the scorer, with no screenshot, no OCR, and no AI. This is the baseline workflow that always remains available regardless of AI provider access.
 
 **Command:**
 ```bash

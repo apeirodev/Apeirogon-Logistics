@@ -33,11 +33,11 @@ If you have a single atmosphere delivery mixed into an otherwise orbital run, ev
 
 ## What UNRESOLVED Means in Practice
 
-UNRESOLVED appears in tool output when a field — most often `reward_usc`: could not be read from OCR or was not supplied in your input.
+UNRESOLVED appears in tool output when a field, most often `reward_usc`, could not be read from OCR or was not supplied in your input.
 
 An UNRESOLVED reward means the tool does not know whether this mission is profitable. It applies a 2-point penalty per unresolved field, capped at -12 across all fields, and drops the confidence rating to medium.
 
-Do not fly a mission with an UNRESOLVED reward unless you have verified the actual value in-game. The tool cannot tell you whether the mission is worth your time if it does not know the reward. Accepting an UNRESOLVED mission is accepting an unknown — sometimes fine, sometimes a waste of a run.
+Do not fly a mission with an UNRESOLVED reward unless you have verified the actual value in-game. The tool cannot tell you whether the mission is worth your time if it does not know the reward. Accepting an UNRESOLVED mission is accepting an unknown: sometimes fine, sometimes a waste of a run.
 
 To resolve it: look at the mission offer screen in-game, note the reward, add it to your JSON input manually, and re-run the scorer. This takes less than a minute and is worth doing for any mission you plan to accept.
 
@@ -53,7 +53,7 @@ Practical rules:
 - Partial loads happen. If you cannot fit everything on one elevator run, note what you loaded and what remains. The cargo panel is your record.
 - Come back for partial loads. Do not abandon remaining cargo at a station because it is inconvenient. Incomplete deliveries cancel the mission.
 
-If you are running Hull-B on a fragmented route (multiple small deliveries to different stations), the fragmentation×1.10 modifier will hurt your score. This is by design — the Hull-B is not well-suited to fragmented routes and the tool reflects that.
+If you are running Hull-B on a fragmented route (multiple small deliveries to different stations), the fragmentation×1.10 modifier will hurt your score. This is by design; the Hull-B is not well-suited to fragmented routes and the tool reflects that.
 
 ---
 
@@ -62,7 +62,7 @@ If you are running Hull-B on a fragmented route (multiple small deliveries to di
 The score is advisory. There are legitimate reasons to accept a mission the tool scores below 70 or reject one it scores above 70.
 
 Accept below threshold when:
-- You have direct knowledge that a usually-penalised condition (congestion, dead leg) does not apply right now — for example, a normally-congested station that is empty on your current server.
+- You have direct knowledge that a usually-penalised condition (congestion, dead leg) does not apply right now, for example a normally-congested station that is empty on your current server.
 - The payout is exceptionally high for the route length and you are willing to take a less efficient run for the income.
 - You are positioning to a pickup cluster anyway and the dead leg cost is already paid.
 
@@ -97,4 +97,4 @@ After each completed run:
 - Check what missions are available from your current location.
 - If the pickups are thin, plan your final delivery to put you near your next pickup cluster rather than at the most convenient delivery point.
 
-This is not always possible — sometimes the best delivery comes last and that delivery is in the wrong place. But when you have a choice about which mission to complete last, choose the one that positions you best for the next run. Over a full session, positioning discipline compounds into meaningful time savings.
+This is not always possible; sometimes the best delivery comes last and that delivery is in the wrong place. But when you have a choice about which mission to complete last, choose the one that positions you best for the next run. Over a full session, positioning discipline compounds into meaningful time savings.

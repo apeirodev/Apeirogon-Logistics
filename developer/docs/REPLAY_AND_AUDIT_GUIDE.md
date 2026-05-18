@@ -6,7 +6,7 @@ How to replay a past route analysis and verify that the scorer produces the same
 
 ## Why Replay Matters
 
-The deterministic scorer always produces the same output from the same input — this is the core auditability guarantee. Replay lets you:
+The deterministic scorer always produces the same output from the same input; this is the core auditability guarantee. Replay lets you:
 
 - Verify that a scoring config change did or did not affect a past decision
 - Confirm that a route recommendation you acted on matches the current tool version

@@ -1,6 +1,6 @@
 # sample_manual_copy_paste_workflow
 
-Scoring a mission where the user could only read the pickup location from the terminal — delivery, cargo_scu, and reward_usc are all `UNRESOLVED`. The scorer processes the mission with reduced confidence and penalises each unresolved field. The output shows a `reject` at 44/100 with a human review warning.
+Scoring a mission where the user could only read the pickup location from the terminal; delivery, cargo_scu, and reward_usc are all `UNRESOLVED`. The scorer processes the mission with reduced confidence and penalises each unresolved field. The output shows a `reject` at 44/100 with a human review warning.
 
 **Command:**
 ```bash

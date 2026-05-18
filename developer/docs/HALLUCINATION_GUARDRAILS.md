@@ -72,7 +72,7 @@ When an AI returns `"UNRESOLVED"` for a field, it means:
 An `UNRESOLVED` in the output is **correct and safe behaviour**. It is far better
 than an invented number.
 
-The scoring system handles `UNRESOLVED` fields gracefully — they are excluded
+The scoring system handles `UNRESOLVED` fields gracefully; they are excluded
 from scoring calculations and flagged in the `unresolved_field_list`.
 
 ---
@@ -125,7 +125,7 @@ This re-establishes the constraint without starting a new session.
 
 ## Operator Responsibility
 
-This platform cannot prevent hallucination — it can only detect it after the fact
+This platform cannot prevent hallucination; it can only detect it after the fact
 through schema validation and governance metadata checks.
 
 **The human operator is the final check.** Before accepting any AI recommendation:
@@ -133,7 +133,7 @@ through schema validation and governance metadata checks.
 1. Verify every number in the output against what you typed in
 2. Reject anything you didn't supply
 3. Run the output through `provider_output_validator.py`
-4. Treat the score as advisory — your in-game judgment overrides it
+4. Treat the score as advisory; your in-game judgment overrides it
 
 ---
 
@@ -143,9 +143,9 @@ The Hull-B has very specific capacity constraints that AI assistants frequently
 get wrong:
 
 - Cargo is measured in SCU, not boxes or units
-- Hull-B max capacity is patch-dependent — do not trust the AI's stated capacity
+- Hull-B max capacity is patch-dependent; do not trust the AI's stated capacity
 - Always supply capacity from your in-game ship loadout screen
-- Fee calculations depend on route distance — AI cannot know your current
+- Fee calculations depend on route distance; AI cannot know your current
   quantum route unless you provide it explicitly
 
 Supply these values yourself. Do not let the AI fill them in.

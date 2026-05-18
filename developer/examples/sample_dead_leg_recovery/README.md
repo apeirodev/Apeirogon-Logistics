@@ -1,6 +1,6 @@
 # sample_dead_leg_recovery
 
-Red Wind batch showing dead-leg rejection. The first mission requires flying from the current position to MIC-L1 before pickup — a dead leg — and scores `reject` (34/100). The second mission at Baijini Point scores `defer`. This example shows how the dead-leg penalty drives the scorer to discard the Red Wind mission and focus on the closer pickup.
+Red Wind batch showing dead-leg rejection. The first mission requires flying from the current position to MIC-L1 before pickup, a dead leg, and scores `reject` (34/100). The second mission at Baijini Point scores `defer`. This example shows how the dead-leg penalty drives the scorer to discard the Red Wind mission and focus on the closer pickup.
 
 **Command:**
 ```bash

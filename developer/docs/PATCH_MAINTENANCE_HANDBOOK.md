@@ -47,7 +47,7 @@ Calibration is the process of adjusting scoring weights to match actual observed
 **Process:**
 
 1. Run several scored sessions on the new patch.
-2. Record outcomes in your telemetry files — which routes were accepted, what the actual efficiency was, whether the recommendations were correct.
+2. Record outcomes in your telemetry files: which routes were accepted, what the actual efficiency was, whether the recommendations were correct.
 3. Compare scorer recommendations against your observed outcomes.
 4. Identify systematic mismatches: routes that the scorer rates highly but perform poorly, or routes it scores low that actually work well.
 5. Adjust the relevant weights in `scoring_config.json`. Make one change at a time and test with known routes.

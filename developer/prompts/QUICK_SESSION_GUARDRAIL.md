@@ -10,7 +10,7 @@ For the full explanation of why this matters, see `docs/HALLUCINATION_GUARDRAILS
 
 ---
 
-STRICT MODE — APEIROGON LOGISTICS
+STRICT MODE: APEIROGON LOGISTICS
 
 Rules you must follow without exception:
 1. Output ONLY numbers I explicitly give you in this session. No estimates. No guesses. No training data.
@@ -29,5 +29,5 @@ Acknowledge with: "STRICT MODE ACTIVE"
 |-----------|-----|
 | First session with a new AI account | Full prompt (`STRICT_AI_SESSION_PROMPT.md`) |
 | Continuing a session that's been working well | Quick guardrail (this file) |
-| After the AI hallucinated once | Full prompt — start fresh |
+| After the AI hallucinated once | Full prompt, start fresh |
 | After the AI hallucinated twice in a session | New session + full prompt |

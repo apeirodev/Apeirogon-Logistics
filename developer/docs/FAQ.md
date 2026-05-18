@@ -4,7 +4,7 @@
 
 It helps you decide which hauling missions to accept and in what order to run them.
 You give it your mission list (by typing it in or using AI to read a screenshot),
-and it scores each mission based on route efficiency factors — same-pickup stacking,
+and it scores each mission based on route efficiency factors: same-pickup stacking,
 dead-leg risk, cargo fragmentation, issuer modifiers, and ship suitability.
 
 It tells you: accept, defer, or reject. You make the final call.
@@ -23,7 +23,7 @@ The setup guide is at `docs/GETTING_STARTED.md`.
 ## What is Python and do I need it?
 
 Python is a programming language. You need version 3.10 or newer installed to run
-the tools. You don't need to write any Python — you just need it installed.
+the tools. You don't need to write any Python; you just need it installed.
 
 Download from https://www.python.org/downloads/ (get the latest 3.x release).
 On Windows, tick "Add Python to PATH" during installation.
@@ -34,9 +34,9 @@ On Windows, tick "Add Python to PATH" during installation.
 
 | Score | Recommendation | What it means |
 |-------|---------------|---------------|
-| 70 to 100 | **accept** | Good route — worth taking |
-| 45 to 69 | **defer** | Marginal — consider combining with other missions |
-| 0 to 44 | **reject** | Poor route — avoid unless no alternatives |
+| 70 to 100 | **accept** | Good route, worth taking |
+| 45 to 69 | **defer** | Marginal, consider combining with other missions |
+| 0 to 44 | **reject** | Poor route, avoid unless no alternatives |
 
 The score starts at 50 and goes up or down based on factors like same-pickup
 stacking (+16 per match), dead-leg risk (-15), cargo fragmentation (-12), and
@@ -60,7 +60,7 @@ Two missions from Port Olisar score 16 points higher than two separate pickups.
 ## What is a "dead leg"?
 
 A route segment with no cargo. You fly from delivery point A to pickup point B
-empty — burning fuel and time without earning anything. The scoring system
+empty, burning fuel and time without earning anything. The scoring system
 penalises dead legs by -15 points.
 
 ---
@@ -86,10 +86,10 @@ You can customise all ship modifiers in `runtime/scoring_config.json`.
 
 ## Why do I need an AI account (ChatGPT, Claude, Gemini)?
 
-You don't — the scoring tool works without any AI. If you type your mission
+You don't need AI; the scoring tool works without it. If you type your mission
 details by hand, you get a full score without touching any AI.
 
-The AI is only needed for OCR — reading your mission screenshots and turning
+The AI is only needed for OCR: reading your mission screenshots and turning
 them into structured data. If you prefer to type your missions manually,
 skip the AI steps entirely.
 
@@ -114,7 +114,7 @@ See `docs/HALLUCINATION_GUARDRAILS.md` for the full explanation.
 ## What is "UNRESOLVED"?
 
 A field that was not supplied or could not be read. The scoring system
-handles UNRESOLVED fields gracefully — they are excluded from calculations
+handles UNRESOLVED fields gracefully; they are excluded from calculations
 and flagged in the output. An UNRESOLVED field is safer than an invented number.
 
 ---
@@ -170,7 +170,7 @@ Every output from the AI is tagged `"advisory_only": true`. This means the
 AI's recommendation is a suggestion, not a command. Your in-game judgment,
 real-time server conditions, and current market prices override the score.
 
-The scoring tool's own output is also advisory — it tells you what patterns
+The scoring tool's own output is also advisory; it tells you what patterns
 historically work well, not what will definitely work right now.
 
 ---

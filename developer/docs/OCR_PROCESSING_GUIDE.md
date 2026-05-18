@@ -6,7 +6,7 @@ How the OCR normalisation pipeline works, when to use it, and how to fix common 
 
 ## What OCR Processing Does
 
-The OCR normaliser (`tools/OCR_result_normalizer.py`) takes raw extraction output — either from an AI provider reading a screenshot, or from a manual copy-paste — and:
+The OCR normaliser (`tools/OCR_result_normalizer.py`) takes raw extraction output, either from an AI provider reading a screenshot or from a manual copy-paste, and:
 
 1. Resolves location aliases (e.g. "Shopp-L4" → "Covalex Hub Shopp-L4")
 2. Resolves issuer aliases (e.g. "cov alex" → "Covalex")
@@ -57,7 +57,7 @@ If a location or issuer is not resolving correctly:
 1. Open `runtime/OCR_normalization_rules.json`.
 2. Find the `location_aliases` or `issuer_aliases` block.
 3. Add an entry: `"ocr variant": "Canonical Name"`.
-4. Save the file — changes take effect immediately.
+4. Save the file; changes take effect immediately.
 
 Example:
 ```json
@@ -88,7 +88,7 @@ Before running the batch scorer, open `missions_norm.json` and check:
 
 - Every `pickup` field matches your in-game pickup location
 - Every `delivery` field is a list of the correct locations
-- `reward_usc` is a number, not UNRESOLVED — if UNRESOLVED, check the original screenshot
+- `reward_usc` is a number, not UNRESOLVED; if UNRESOLVED, check the original screenshot
 - No locations appear that were not in your terminal
 
 If anything looks wrong, fix it in the JSON before running the scorer. The normaliser output is a plain JSON file you can edit directly.

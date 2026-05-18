@@ -6,7 +6,7 @@ How to record session outcomes in a format that is useful for future calibration
 
 ## What Telemetry Is For
 
-Telemetry records what actually happened on a run — not what the scorer predicted, but what occurred in practice. Over time, telemetry from real sessions can be used to validate and calibrate the scoring heuristics.
+Telemetry records what actually happened on a run, not what the scorer predicted, but what occurred in practice. Over time, telemetry from real sessions can be used to validate and calibrate the scoring heuristics.
 
 Telemetry contribution is opt-in. Nothing is recorded or sent automatically. You decide what to record and whether to share it.
 
@@ -77,7 +77,7 @@ All numeric fields should come from your actual in-game observations, not from e
 The `ocr_verified` flag on each mission indicates whether you visually confirmed the OCR/AI extraction values against your screen during the session. Set it to:
 - `true`: you checked the value against your screen
 - `false`: you did not verify (values came from OCR only)
-- omit — same as false
+- omit: same as false
 
 Records with `ocr_verified: true` are more useful for calibration because the input values are confirmed to be accurate.
 

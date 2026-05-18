@@ -8,9 +8,9 @@ What the project collects, what it does not collect, and how to control your dat
 
 | Item | Default |
 |------|---------|
-| Telemetry contribution | Opt-in — nothing is sent automatically |
-| Screenshots | Local only — never uploaded unless you choose to |
-| Contributor identity | Optional — you decide what to include |
+| Telemetry contribution | Opt-in; nothing is sent automatically |
+| Screenshots | Local only; never uploaded unless you choose to |
+| Contributor identity | Optional; you decide what to include |
 | API keys | Never requested or stored by the project |
 | Personal account information | Never collected |
 
@@ -54,7 +54,7 @@ If you have accidentally put an API key into a telemetry or session file, the bu
 
 ## Screenshots
 
-Screenshots of the mission terminal stay local on your machine by default. The bundle tool (`tools/bundle_telemetry.py`) only bundles `.json` files from the `telemetry/` directory — not images.
+Screenshots of the mission terminal stay local on your machine by default. The bundle tool (`tools/bundle_telemetry.py`) only bundles `.json` files from the `telemetry/` directory, not images.
 
 If you want to share a screenshot as supporting evidence for a telemetry submission (for example, to show a specific UI element or mission offer), you may include it separately. Before sharing any screenshot:
 
@@ -102,4 +102,4 @@ Submitted telemetry may be published as anonymized datasets to support the broad
 
 ## Opting Out Completely
 
-You never need to submit telemetry. The scoring tools work identically with and without telemetry. If you prefer to use the tool privately with no data sharing, nothing in the workflow requires you to take any action — just do not run the bundle or submission steps.
+You never need to submit telemetry. The scoring tools work identically with and without telemetry. If you prefer to use the tool privately with no data sharing, nothing in the workflow requires you to take any action; just do not run the bundle or submission steps.

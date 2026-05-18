@@ -16,7 +16,7 @@ Open a new chat session with your chosen provider.
 
 Paste the full contents of `prompts/STRICT_AI_SESSION_PROMPT.md` into the chat. Send it on its own before attaching any images.
 
-Wait for the AI to explicitly acknowledge the constraints — specifically that it will:
+Wait for the AI to explicitly acknowledge the constraints, specifically that it will:
 - Only return values present in the material you provide
 - Use UNRESOLVED for any field it cannot read
 - Not estimate, infer, or fill gaps
@@ -56,7 +56,7 @@ python tools/ingest_mission_batch.py -i normalized.json
 
 ## Why Provider Does Not Matter for Extraction
 
-When constrained by the strict prompt, all supported providers behave the same for the extraction task. They are reading text from an image and transcribing it to JSON — a transcription task, not a reasoning task.
+When constrained by the strict prompt, all supported providers behave the same for the extraction task. They are reading text from an image and transcribing it to JSON, a transcription task rather than a reasoning task.
 
 The strict prompt is what controls quality. Without it, all providers hallucinate at rates above 50% for numeric fields. With it, all providers reduce that rate significantly. Switching providers does not change your workflow, your prompts, or your verification steps.
 

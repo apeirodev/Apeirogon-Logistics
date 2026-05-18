@@ -14,7 +14,7 @@ When told that a new patch is out, work through the sections below in order. Sta
 
 1. User tells you: "New patch: Alpha X.Y.Z"
 2. Update `VERSION.json` → `star_citizen_patch_version`
-3. Work through each section below — note which fields are UNRESOLVED (not yet verified in-game)
+3. Work through each section below and note which fields are UNRESOLVED (not yet verified in-game)
 4. Search for and replace the old patch reference string across all files (grep for the old version number)
 5. Update all six version files (see CLAUDE.md versioning rule)
 6. Commit with a message indicating the patch version update
@@ -30,36 +30,36 @@ CIG periodically rebalances ship cargo capacities. Any patch that includes ship 
 | Ship | Current SCU | Risk | Notes |
 |---|---|---|---|
 | Hull-B | 512 | Medium | Stable for several patches but subject to Hull series rebalance |
-| Hull-C | 4608 | Medium | Same — Hull series rebalance risk |
-| Hull-D | 6912 | High | Not flyable — estimate only. **Verify on release** |
-| Hull-E | null | High | Not flyable — post-rebalance SCU not yet published |
+| Hull-C | 4608 | Medium | Same, Hull series rebalance risk |
+| Hull-D | 6912 | High | Not flyable; estimate only. **Verify on release** |
+| Hull-E | null | High | Not flyable; post-rebalance SCU not yet published |
 | Hermes | 288 | Low | Recently released (Alpha 4.6), unlikely to change immediately |
 | Starlancer MAX | 224 | Low | Stable |
-| Starlancer TAC | null | High | SCU unconfirmed — verify in-game |
+| Starlancer TAC | null | High | SCU unconfirmed; verify in-game |
 | Freelancer MAX | 120 | Low | Stable |
 | Starfarer | 291 | Low | Stable |
 | Starfarer Gemini | 291 | Low | Stable |
 | Constellation Taurus | 174 | Low | Stable |
 | Caterpillar | 576 | Low | Stable |
 | C2 Hercules | 696 | Low | Stable |
-| M2 Hercules | 522 | Medium | Military variant — may be adjusted |
+| M2 Hercules | 522 | Medium | Military variant, may be adjusted |
 | A2 Hercules | 216 | Medium | Bomb-bay configuration may change |
 | ARGO RAFT | 192 | Low | Stable |
 | Valkyrie | 90 | Low | Stable |
-| Asgard | 180 | Medium | Newer ship — may be adjusted |
-| Ironclad | 2204 | High | New in Alpha 4.8 — early release values often change |
-| Ironclad Assault | 1440 | High | New in Alpha 4.8 — early release values often change |
-| Railen | 640 | Medium | Xi'an ship — may see adjustments |
-| Banu Merchantman | 2880 | High | Not flyable — estimate. **Verify on release** |
-| Galaxy | 576 | High | Not flyable — estimate. **Verify on release** |
+| Asgard | 180 | Medium | Newer ship, may be adjusted |
+| Ironclad | 2204 | High | New in Alpha 4.8; early release values often change |
+| Ironclad Assault | 1440 | High | New in Alpha 4.8; early release values often change |
+| Railen | 640 | Medium | Xi'an ship, may see adjustments |
+| Banu Merchantman | 2880 | High | Not flyable; estimate. **Verify on release** |
+| Galaxy | 576 | High | Not flyable; estimate. **Verify on release** |
 
 ### Ship Flyability (`developer/data/ship_profiles.json`)
 
 Ships flagged `"flyable": false` may become flyable in a new patch. Check each:
-- Hull-D — check if flyable
-- Hull-E — check if flyable
-- Banu Merchantman — check if flyable
-- Galaxy — check if flyable
+- Hull-D: check if flyable
+- Hull-E: check if flyable
+- Banu Merchantman: check if flyable
+- Galaxy: check if flyable
 
 When a ship becomes flyable, change `"flyable": true`, update SCU if the pre-release estimate was wrong, update notes to remove "NOT YET FLYABLE", and update scoring modifiers (speculative → live-tested values).
 
@@ -76,7 +76,7 @@ The contracts available at each rank and the mission structure may be adjusted b
 
 ### Scoring Weights (`developer/runtime/scoring_config.json`)
 
-The base scoring weights are internal heuristics, not game data — they don't change with patches. However:
+The base scoring weights are internal heuristics, not game data; they don't change with patches. However:
 - Ship modifier values for newly-flyable ships should be updated from speculative to live-tested
 - Issuer modifier values may need adjustment if new patch changes issuer route structures
 
@@ -103,9 +103,9 @@ When new issuer reputation data becomes available (Hurston Dynamics, microTech, 
 
 ## What NOT to Change Based on Patch Notes Alone
 
-- Scoring weights (`default_weights` in scoring_config.json) — these are tuned heuristics, not game values. Only change based on observed scoring drift in live sessions.
-- Source attribution fields — don't update unless the actual source changes.
-- Schema files — patch updates don't require schema changes.
+- Scoring weights (`default_weights` in scoring_config.json): these are tuned heuristics, not game values. Only change based on observed scoring drift in live sessions.
+- Source attribution fields: don't update unless the actual source changes.
+- Schema files: patch updates don't require schema changes.
 
 ---
 

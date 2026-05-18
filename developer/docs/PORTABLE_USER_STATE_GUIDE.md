@@ -12,7 +12,7 @@ Two files carry your persistent data between sessions:
 
 **`hauling_session_state.json`**: the current session: active missions, completed missions, current position, notes. This changes every run.
 
-Neither file is required. The scoring tools work without them. They become useful when you want session continuity — knowing where you ended last time, which missions you completed, and what reputation you have with which issuer.
+Neither file is required. The scoring tools work without them. They become useful when you want session continuity: knowing where you ended last time, which missions you completed, and what reputation you have with which issuer.
 
 ---
 
@@ -124,7 +124,7 @@ At session end:
 
 ## What the Tools Do With Profile Data
 
-The profile and session state are inputs you can reference manually — the tools do not automatically load them. When you run the scorer, you pass ship and issuer directly in your mission JSON. The profile is a convenient record, not an automatic config loader.
+The profile and session state are inputs you can reference manually; the tools do not automatically load them. When you run the scorer, you pass ship and issuer directly in your mission JSON. The profile is a convenient record, not an automatic config loader.
 
 If you want ship and issuer defaults applied without typing them every time, include them in your mission input templates or write a small shell alias that prepopulates the fields from your profile.
 

@@ -316,6 +316,12 @@
       "notes": "Added SETUP_COPILOT.md, SETUP_PERPLEXITY.md, SETUP_LMSTUDIO.md. Covers Microsoft Copilot, Perplexity, LM Studio, and Ollama. Updated README tables and SETUP_OTHER.md cross-references.",
       "source_id": "apeirogon_0_41_1_new_player_setup_guides",
       "trust_level": "internal_derived"
+    },
+    {
+      "name": "Apeirogon Logistics 0.41.2 ChatGPT no-project option fix",
+      "notes": "Reframed Option B in SETUP_CHATGPT.md to cover no-project and mobile app users, not just free accounts. Added scoring_config.json paste step for sessions without persistent file uploads.",
+      "source_id": "apeirogon_0_41_2_chatgpt_option_b_fix",
+      "trust_level": "internal_derived"
     }
   ]
 }

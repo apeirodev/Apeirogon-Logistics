@@ -2,7 +2,7 @@
 
 **Time needed: about 5 minutes. You do this once.**
 
-There are two ways to do this on ChatGPT. Use **Option A** if you have ChatGPT Plus or Team. Use **Option B** if you have a free account.
+There are two ways to do this on ChatGPT. Use **Option A** if you have access to ChatGPT Projects (Plus, Team, or Pro accounts on desktop). Use **Option B** if you are on a free account, using the mobile app, or just prefer not to set up a project.
 
 ---
 
@@ -123,14 +123,15 @@ Every new conversation you start inside this project will have these instruction
 
 ---
 
-## Option B — Free account (paste instructions each session)
+## Option B — No project / mobile app (paste instructions each session)
 
-If you don't have a Plus account, you can still use this. You just need to paste the instructions at the start of every new conversation instead of storing them in a project.
+If you don't have access to ChatGPT Projects, or you're on the mobile app, paste the instructions at the start of every new conversation instead.
 
 1. Start a new ChatGPT conversation
 2. Paste the full instructions block above as your first message
-3. Wait for ChatGPT to confirm it understood
-4. Then paste `session_start_prompt.md` with your ship and location
-5. Start pasting screenshots
+3. Paste the contents of `scoring_config.json` from `player/uploads/` — this gives ChatGPT the exact scoring weights since there are no uploaded files in this mode
+4. Wait for ChatGPT to confirm it understood
+5. Paste `session_start_prompt.md` with your ship and location
+6. Start pasting screenshots
 
-This works well but takes an extra 30 seconds at the start of each session.
+This works well but takes an extra minute at the start of each session.

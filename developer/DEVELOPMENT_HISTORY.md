@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.41.2 — ChatGPT No-Project Option Fix
+
+Reframed SETUP_CHATGPT.md Option B from "Free account" to "No project / mobile app" to capture users on paid plans who don't use Projects and mobile app users where Projects may not be accessible. Added step to paste scoring_config.json content in Option B sessions to compensate for the absence of persistent file uploads.
+
+---
+
 ## Version 0.41.1 — New Player Setup Guides
 
 Added dedicated setup guides for three additional AI platforms: `SETUP_COPILOT.md` (Microsoft Copilot — Notebook-based persistent instructions and free-tier paste workflow), `SETUP_PERPLEXITY.md` (Perplexity — paste-each-session with note on disabling search mode), and `SETUP_LMSTUDIO.md` (LM Studio and Ollama — local/offline AI with system prompt configuration, model recommendations, manual file paste workflow, and vision model notes). Updated `SETUP_OTHER.md` to reference the new dedicated guides. Updated README.md and player/README.md tables to list all seven AI options. Main README description updated to mention Copilot, Perplexity, LM Studio, and Ollama.

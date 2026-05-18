@@ -289,3 +289,9 @@ Set Star Citizen patch version to Alpha 4.8.0 across all canonical files: VERSIO
 ## Version 0.37.1 — Player Uploads Folder
 
 Added `player/uploads/` containing six files players upload to their AI project: scoring_config.json, OCR_normalization_rules.json, mission_schema.json, mission_issuer_profiles.json, hull_b_covalex_route_playbook.md (player-adapted), and GENERALIZED_HAULING_HANDBOOK.md (player-adapted). Four JSON files are exact copies; two markdown files have developer-specific sections replaced with the screenshot workflow. Cross-reference notes added to all canonical developer files. All four SETUP_*.md guides updated to reference player/uploads/.
+
+---
+
+## Version 0.38.1 — Ship Expansion and Covalex Reputation Ranks
+
+Expanded ship coverage from 5 to 23 ships (all 90+ SCU haulers in Alpha 4.8.0): added Hull-D, Hull-E, Hermes, Starlancer MAX, Starlancer TAC, Starfarer, Starfarer Gemini, ARGO RAFT, Valkyrie, Asgard, M2 Hercules, A2 Hercules, Ironclad, Ironclad Assault, Railen, Banu Merchantman, RSI Galaxy. Added 19 new ship modifier blocks to scoring_config.json. Added full Covalex reputation ranks (7 tiers: Trainee through Master) to mission_issuer_profiles.json, with recommended ships, strategies, and Master-rank unlock list. Added 3 new issuer placeholders: Hurston Dynamics, microTech, ArcCorp. Created SHIP_SPECIALIZATION_GUIDE.md (developer and player copies). Added ship_profiles.json to player/uploads/. Updated all SETUP_*.md guides to list 8 upload files.

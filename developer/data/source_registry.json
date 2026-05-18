@@ -286,6 +286,12 @@
       "notes": "Introduces player/ directory with AI-native workflow. Reorganizes repository for non-technical users.",
       "source_id": "apeirogon_0_36_1_player_release",
       "trust_level": "internal_derived"
+    },
+    {
+      "name": "Apeirogon Logistics 0.38.1 ship expansion and Covalex reputation ranks",
+      "notes": "Expands ship coverage to 23 ships (90+ SCU). Adds Covalex 7-tier reputation ranks, 3 new issuer placeholders, SHIP_SPECIALIZATION_GUIDE, and ship_profiles player upload. All new SCU values community_sourced_advisory for Alpha 4.8.0.",
+      "source_id": "apeirogon_0_38_1_ship_expansion",
+      "trust_level": "community_sourced_advisory"
     }
   ]
 }

@@ -6,13 +6,72 @@
     "Covalex": {
       "mission_structure_tendency": "multi_stop_distribution",
       "orbital_loop_tendency": "high",
-      "dead_leg_tendency": "moderate"
+      "dead_leg_tendency": "moderate",
+      "reputation_ranks": {
+        "1_trainee": {
+          "contracts_available": "extra-small direct delivery only",
+          "recommended_ships": ["any small hauler"],
+          "notes": "Complete the intro job to advance to Rookie."
+        },
+        "2_rookie": {
+          "contracts_available": "small and planetary delivery",
+          "recommended_ships": ["Avenger Titan", "Cutlass Black", "Freelancer"],
+          "strategy": "Stack Baijini → Riker contracts for fastest progression."
+        },
+        "3_junior": {
+          "contracts_available": "small and medium cargo, max 8 SCU containers",
+          "recommended_ships": ["ARGO RAFT", "Constellation Taurus", "Freelancer MAX"],
+          "strategy": "Add medium contracts on same Baijini → Riker route."
+        },
+        "4_member": {
+          "contracts_available": "broader route pool, higher-tier medium contracts, Everus Harbor unlocks",
+          "recommended_ships": ["Hull-B", "Caterpillar", "Starlancer MAX", "Railen"],
+          "strategy": "Hull-B becomes viable here. Focus on same-pickup stacking.",
+          "this_is_the_hull_b_sweet_spot": true
+        },
+        "5_experienced": {
+          "contracts_available": "large hauls begin, increased medium limits",
+          "recommended_ships": ["Hull-B", "C2 Hercules", "Railen", "Ironclad"],
+          "strategy": "10-mission stacking at Everus Harbor. About 26 Experienced missions to reach Senior.",
+          "notes": "Member → Experienced: use Everus Harbor route with 10-mission stacks."
+        },
+        "6_senior": {
+          "contracts_available": "bulk rate hauls, Lagrange delivery stacking",
+          "recommended_ships": ["Hull-C", "C2 Hercules", "Ironclad"],
+          "strategy": "Hull-C required for bulk rate contracts. Use ATLS exosuit for freight handling. About 40 Senior missions to reach Master.",
+          "notes": "Lagrange delivery stacking and partial-submit strategies optimal here."
+        },
+        "7_master": {
+          "contracts_available": "interstellar hauling missions",
+          "recommended_ships": ["Hull-C", "Hull-D (when flyable)"],
+          "strategy": "Stack Lagrange deliveries, submit efficient partials.",
+          "unlocks": ["Interstellar Covalex hauling", "Blueprint: VK-00 quantum drive", "Blueprint: XL-1 quantum drive", "Blueprint: TS-2 quantum drive"]
+        }
+      }
     },
     "Ling Family": {
       "mission_structure_tendency": "regional_routes"
     },
     "Red Wind": {
       "mission_structure_tendency": "risk_weighted_routes"
+    },
+    "Hurston Dynamics": {
+      "mission_structure_tendency": "industrial_distribution",
+      "orbital_loop_tendency": "low",
+      "dead_leg_tendency": "high",
+      "notes": "Placeholder — scoring modifiers not yet tuned. Missions tend toward surface and industrial locations around Hurston. Expect more atmosphere stops and longer dead legs than Covalex."
+    },
+    "microTech": {
+      "mission_structure_tendency": "corporate_distribution",
+      "orbital_loop_tendency": "moderate",
+      "dead_leg_tendency": "moderate",
+      "notes": "Placeholder — scoring modifiers not yet tuned. microTech routes typically involve Microtech planetary locations and nearby Lagrange stations."
+    },
+    "ArcCorp": {
+      "mission_structure_tendency": "urban_cargo_density",
+      "orbital_loop_tendency": "moderate",
+      "dead_leg_tendency": "moderate",
+      "notes": "Placeholder — scoring modifiers not yet tuned. ArcCorp missions concentrate around ArcCorp's urban stations and Lagrange points."
     }
   }
 }

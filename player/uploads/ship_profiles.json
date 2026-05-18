@@ -2,7 +2,7 @@
   "dataset_name": "star_citizen_hauling_phase4_ship_profiles",
   "phase": "Phase 4 - Ship Operational Profiles",
   "generated_at": "2026-05-18T00:00:00Z",
-  "_copy_note": "CANONICAL FILE — player copy is at player/uploads/ship_profiles.json. If you update ships here, update the player copy too.",
+  "_copy_note": "PLAYER COPY — canonical version is at developer/data/ship_profiles.json. This file is an exact copy. If you update ships in the canonical file, update this copy too.",
   "record_count": 23,
   "records": [
     {

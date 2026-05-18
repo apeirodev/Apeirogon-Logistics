@@ -9,7 +9,7 @@ This works with any AI that supports image uploads and lets you set a custom ins
 1. Find the system prompt or custom instructions field for your AI
 2. Copy everything between the lines below and paste it there
 3. Save it — you only need to do this once
-4. If your AI supports file uploads or a knowledge base, upload all six files from `player/uploads/`
+4. If your AI supports file uploads or a knowledge base, upload all eight files from `player/uploads/`
 5. From then on, use `session_start_prompt.md` at the start of each session
 
 ---

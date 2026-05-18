@@ -46,6 +46,7 @@
     }
   },
   "ship_modifiers": {
+    "_modifiers_note": "Ship scoring modifiers for all ships with 90+ SCU cargo capacity. All values for non-flyable ships (hull-d, hull-e, merchantman, galaxy) are speculative placeholders — update after live testing.",
     "hull-b": {
       "freight": 1.05,
       "fragmentation": 1.10,
@@ -68,6 +69,100 @@
     "freelancer max": {
       "ship_suitability": 1.02,
       "fatigue": 0.98
+    },
+    "starlancer max": {
+      "ship_suitability": 1.05,
+      "fatigue": 0.95,
+      "freight": 1.03
+    },
+    "starlancer tac": {
+      "ship_suitability": 0.88
+    },
+    "raft": {
+      "ship_suitability": 1.05,
+      "freight": 1.05,
+      "dead_leg": 0.95
+    },
+    "valkyrie": {
+      "ship_suitability": 0.90,
+      "atmosphere": 0.85,
+      "fatigue": 0.92
+    },
+    "asgard": {
+      "ship_suitability": 0.95,
+      "atmosphere": 0.85,
+      "fatigue": 0.95,
+      "freight": 1.03
+    },
+    "a2 hercules": {
+      "ship_suitability": 0.85,
+      "atmosphere": 0.90,
+      "freight": 1.05
+    },
+    "m2 hercules": {
+      "ship_suitability": 1.05,
+      "atmosphere": 0.90,
+      "freight": 1.10,
+      "fragmentation": 1.08
+    },
+    "c2 hercules": {
+      "ship_suitability": 1.08,
+      "atmosphere": 0.88,
+      "freight": 1.10,
+      "fragmentation": 1.08
+    },
+    "starfarer": {
+      "ship_suitability": 0.88,
+      "freight": 1.05,
+      "stop_density": 1.10
+    },
+    "starfarer gemini": {
+      "ship_suitability": 0.85,
+      "freight": 1.05,
+      "stop_density": 1.10
+    },
+    "ironclad": {
+      "ship_suitability": 1.10,
+      "freight": 1.15,
+      "stop_density": 1.25,
+      "fragmentation": 1.15
+    },
+    "ironclad assault": {
+      "ship_suitability": 0.90,
+      "freight": 1.10,
+      "stop_density": 1.20
+    },
+    "hermes": {
+      "ship_suitability": 1.05,
+      "dead_leg": 0.90,
+      "fatigue": 0.92
+    },
+    "galaxy": {
+      "ship_suitability": 1.05,
+      "stop_density": 1.05,
+      "freight": 1.05
+    },
+    "railen": {
+      "ship_suitability": 1.05,
+      "freight": 1.08,
+      "atmosphere": 0.90
+    },
+    "hull-d": {
+      "ship_suitability": 1.15,
+      "freight": 1.40,
+      "stop_density": 1.35,
+      "fragmentation": 1.25
+    },
+    "hull-e": {
+      "ship_suitability": 1.20,
+      "freight": 1.60,
+      "stop_density": 1.50,
+      "fragmentation": 1.40
+    },
+    "merchantman": {
+      "ship_suitability": 1.20,
+      "freight": 1.20,
+      "destination_overlap": 1.10
     }
   }
 }

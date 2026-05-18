@@ -49,11 +49,11 @@ It won't invent numbers. If it can't read something from your screenshot it will
 
 ## Ships supported
 
-Hull-B · Hull-C · Taurus · Caterpillar · Freelancer MAX · any ship (with reduced scoring precision)
+23 ships with 90+ SCU capacity, including Hull-B through Hull-E, C2/M2/A2 Hercules, Caterpillar, Ironclad, Railen, Hermes, RAFT, Starlancer MAX, and more. See [`player/uploads/SHIP_SPECIALIZATION_GUIDE.md`](player/uploads/SHIP_SPECIALIZATION_GUIDE.md) for the full list and per-ship advice.
 
 ## Mission issuers supported
 
-Covalex · Ling / Ling Family · Red Wind · others (with base scoring)
+Covalex (all 7 reputation ranks) · Ling / Ling Family · Red Wind · Hurston Dynamics · microTech · ArcCorp · others (with base scoring)
 
 ---
 
@@ -73,4 +73,4 @@ The deterministic Python scorer runs without any AI — useful if you want full 
 
 Contributions welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-**Maintainer:** ApeiroDev · apeirogon.gg · v0.37.1
+**Maintainer:** ApeiroDev · apeirogon.gg · v0.38.1

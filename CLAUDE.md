@@ -7,6 +7,25 @@ Full upstream rule files are in `.claude/rules/`.
 
 ---
 
+## Versioning Rule (Mandatory)
+
+This project uses **Semantic Versioning** (SemVer): `Major.Minor.Patch`.
+
+- **Every change to any file** must increment the version before committing.
+- **Patch increment** (`0.0.1`): small or inconsequential changes — typo fixes, comment updates, minor corrections.
+- **Minor increment** (`0.1.x`): significant changes — new features, new files, structural changes, scoring logic updates. Patch resets to `1` (not `0`) on a minor bump.
+- **Major increment**: breaking changes to the scoring system, schema, or public-facing API. Discuss with maintainer before bumping.
+
+Update the version in **all** of these files on every change:
+- `README.md` — footer line (`v0.X.Y`)
+- `pyproject.toml` — `version = "0.X.Y"`
+- `VERSION.json` — `"version"` field, `"previous_version"`, and add a `version_history` entry
+- `developer/PROJECT_STATUS.md` — `**Version:**` line
+- `developer/DEVELOPMENT_HISTORY.md` — add a new `## Version 0.X.Y` section
+- `developer/data/source_registry.json` — add a new source entry for the release
+
+---
+
 ## Project Security Context
 
 Apeirogon Logistics is a **Python-first, local-first, JSON-centric** platform. It:

@@ -1,4 +1,4 @@
-# Known Limitations 0.30.5
+# Known Limitations 0.36.1
 
 - No real telemetry baselines.
 - Deterministic scoring is heuristic, not telemetry calibrated.

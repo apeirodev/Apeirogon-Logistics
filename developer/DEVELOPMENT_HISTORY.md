@@ -271,3 +271,9 @@ Productionisation and placeholder elimination release.
 Rebuilt the failed 0.30.4 scope from verified 0.30.3. Version 0.30.4 is recorded as `abandoned_failed_run`.
 
 See `CHANGELOG_0_30_5.md` for full details.
+
+---
+
+## Version 0.36.1 — Player Accessibility Release
+
+Introduced the `player/` directory with AI-native workflow: per-platform setup guides (Claude, ChatGPT, Gemini, Other), session start prompt, and embedded scoring logic so players can get route recommendations from any AI assistant without installing Python. Reorganized repository so all technical and developer files live under `developer/`, leaving the root clean for non-technical users. Established Semantic Versioning (Major.Minor.Patch) as the project versioning standard.

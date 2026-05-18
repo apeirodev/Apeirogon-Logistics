@@ -280,6 +280,12 @@
       "notes": "Skips 0.30.4 as abandoned failed run and rebuilds non-telemetry operational completion scope.",
       "source_id": "apeirogon_0_30_5_rebuild",
       "trust_level": "internal_derived"
+    },
+    {
+      "name": "Apeirogon Logistics 0.36.1 player accessibility release",
+      "notes": "Introduces player/ directory with AI-native workflow. Reorganizes repository for non-technical users.",
+      "source_id": "apeirogon_0_36_1_player_release",
+      "trust_level": "internal_derived"
     }
   ]
 }

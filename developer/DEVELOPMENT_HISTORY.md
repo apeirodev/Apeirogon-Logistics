@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.41.4 — README Wording Fix
+
+Corrected "you open one panel" to "you focus one panel" in the Hull-B cargo placement example.
+
+---
+
 ## Version 0.41.3 — README What It Does Rewrite
 
 Rewrote the "What it does" section in README.md to lead with concrete player outcome rather than scoring mechanics. New text explains cargo placement planning alongside contract selection, using the Hull-B panel assignment example (load by destination panel at the elevator, arrive at CRU-L1 and open one panel) to make the value immediately tangible to haulers.

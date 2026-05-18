@@ -6,9 +6,9 @@
     "telemetry_calibrated": false
   },
   "generated_utc": "2026-05-18T00:00:00Z",
-  "previous_version": "0.41.2",
+  "previous_version": "0.41.3",
   "project": "Apeirogon Logistics",
-  "release_type": "0.41.3_readme_what_it_does_rewrite",
+  "release_type": "0.41.4_readme_focus_panel_wording_fix",
   "semantic_versioning": "three-level",
   "skipped_versions": [
     {
@@ -18,7 +18,7 @@
   ],
   "star_citizen_patch_version": "Alpha 4.8.0",
   "status": "stable_pre_release_deterministic_toolkit",
-  "version": "0.41.3",
+  "version": "0.41.4",
   "version_history": [
     {
       "version": "0.30.3",
@@ -71,6 +71,10 @@
     {
       "version": "0.41.3",
       "status": "readme_what_it_does_rewrite_cargo_placement"
+    },
+    {
+      "version": "0.41.4",
+      "status": "readme_focus_panel_wording_fix"
     }
   ]
 }

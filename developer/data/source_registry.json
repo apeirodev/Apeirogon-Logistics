@@ -318,6 +318,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.41.4 README wording fix",
+      "notes": "Corrected 'open one panel' to 'focus one panel' in Hull-B cargo placement example.",
+      "source_id": "apeirogon_0_41_4_readme_wording_fix",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.41.3 README what it does rewrite",
       "notes": "Rewrote What it does section to lead with cargo placement planning and the Hull-B panel example rather than abstract scoring mechanics.",
       "source_id": "apeirogon_0_41_3_readme_rewrite",

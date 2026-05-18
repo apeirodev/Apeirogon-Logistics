@@ -38,7 +38,7 @@ Setup takes about 5 minutes and you only do it once.
 
 Apeirogon Logistics helps you plan your haul before you commit to it: which contracts to take, how to stack them, and where to physically place cargo on your ship so each stop is a clean unload rather than a hunt through mixed boxes.
 
-For example: if you take ten Member-rank Covalex contracts with shared pickups and three drop-offs each, it will tell you which panel on your Hull-B to load each destination's cargo onto as it comes up the freight elevator. When you arrive at CRU-L1, you open one panel, unload everything on it, and leave. No sorting mid-route, no cross-referencing contracts, no guessing which boxes go where.
+For example: if you take ten Member-rank Covalex contracts with shared pickups and three drop-offs each, it will tell you which panel on your Hull-B to load each destination's cargo onto as it comes up the freight elevator. When you arrive at CRU-L1, you focus one panel, unload everything on it, and leave. No sorting mid-route, no cross-referencing contracts, no guessing which boxes go where.
 
 It scores each contract from 0 to 100 and recommends Accept, Defer, or Reject. It also looks at route order, same-pickup stacking, dead legs, and whether your ship suits the cargo. It won't invent numbers. If it can't read something from your screenshot it will ask you rather than guess.
 
@@ -85,4 +85,4 @@ The deterministic Python scorer runs without any AI — useful if you want full 
 
 Contributions welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-**Maintainer:** ApeiroDev · apeirogon.gg · v0.41.3
+**Maintainer:** ApeiroDev · apeirogon.gg · v0.41.4

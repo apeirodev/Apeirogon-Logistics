@@ -1,34 +1,34 @@
 # Ship Specialization Guide
 
-_PLAYER COPY — canonical version is at `developer/docs/SHIP_SPECIALIZATION_GUIDE.md`. This file is a player-adapted copy (developer tuning sections removed). Upload this file to your AI project._
+_PLAYER COPY: canonical version is at `developer/docs/SHIP_SPECIALIZATION_GUIDE.md`. This file is a player-adapted copy (developer tuning sections removed). Upload this file to your AI project._
 
-This guide tells your AI which ships suit which missions and how ship modifiers affect scoring. All cargo capacity values are community-sourced (Alpha 4.8.0) — verify in-game before mission planning.
+This guide tells your AI which ships suit which missions and how ship modifiers affect scoring. All cargo capacity values are community-sourced (Alpha 4.8.0); verify in-game before mission planning.
 
 ---
 
 ## How Ship Modifiers Work
 
-When you tell your AI your ship, it uses that ship's modifier block to adjust scoring. A modifier greater than 1.0 amplifies a factor — a bonus scores higher and a penalty scores worse. A modifier less than 1.0 dampens a factor.
+When you tell your AI your ship, it uses that ship's modifier block to adjust scoring. A modifier greater than 1.0 amplifies a factor: a bonus scores higher and a penalty scores worse. A modifier less than 1.0 dampens a factor.
 
 Example: if a fragmented route normally costs -12 points and your ship has `fragmentation×1.10`, the actual cost is -13.2. The Hull-B scores fragmented routes harsher than other ships because fragmented loads are operationally worse on that hull.
 
 ---
 
-## Quick Reference — All Supported Ships
+## Quick Reference: All Supported Ships
 
 | Ship | Manufacturer | SCU | Flyable | Best Use |
 |---|---|---|---|---|
-| RAFT | ARGO | 192 | Yes | Orbital station freight, Covalex Junior–Member |
+| RAFT | ARGO | 192 | Yes | Orbital station freight, Covalex Junior-Member |
 | Freelancer MAX | MISC | 120 | Yes | Entry-level generalist, near-neutral modifiers |
-| Constellation Taurus | RSI | 174 | Yes | Armed generalist, Covalex Rookie–Member |
-| Starlancer MAX | MISC | 224 | Yes | Deep space generalist, Covalex Junior–Member |
+| Constellation Taurus | RSI | 174 | Yes | Armed generalist, Covalex Rookie-Member |
+| Starlancer MAX | MISC | 224 | Yes | Deep space generalist, Covalex Junior-Member |
 | Asgard | Anvil | 180 | Yes | Vehicle carrier / secondary hauler, atmospheric |
 | A2 Hercules | Crusader | 216 | Yes | Heavy bomber, incidental hauler only |
 | Valkyrie | Anvil | 90 | Yes | Atmosphere-heavy routes, incidental hauler only |
 | Hermes | RSI | 288 | Yes | Fast blockade runner, dead-leg recovery |
 | Starfarer | MISC | 291 | Yes | Tanker, secondary hauler |
 | Starfarer Gemini | MISC | 291 | Yes | Armed tanker, secondary hauler |
-| Railen | Gatac | 640 | Yes | Xi'an freighter, Covalex Member–Experienced |
+| Railen | Gatac | 640 | Yes | Xi'an freighter, Covalex Member-Experienced |
 | Caterpillar | Drake | 576 | Yes | High-volume single-destination |
 | C2 Hercules | Crusader | 696 | Yes | Best atmo lifter, Covalex Experienced |
 | M2 Hercules | Crusader | 522 | Yes | Military transport, contested routes |
@@ -66,7 +66,7 @@ Multipliers from `scoring_config.json`. > 1.0 amplifies, < 1.0 dampens.
 | starlancer max | ship_suitability | ×1.05 | Good fit for deep-space missions |
 | starlancer max | fatigue | ×0.95 | Long routes accumulate less fatigue |
 | starlancer max | freight | ×1.03 | Small freight bonus |
-| starlancer tac | ship_suitability | ×0.88 | Poor fit — combat ship, not a hauler |
+| starlancer tac | ship_suitability | ×0.88 | Poor fit: combat ship, not a hauler |
 | raft | ship_suitability | ×1.05 | Good fit for station freight |
 | raft | freight | ×1.05 | Small freight bonus |
 | raft | dead_leg | ×0.95 | Flying empty to pickup hurts slightly less |
@@ -77,7 +77,7 @@ Multipliers from `scoring_config.json`. > 1.0 amplifies, < 1.0 dampens.
 | asgard | atmosphere | ×0.85 | Atmosphere penalty significantly reduced |
 | asgard | fatigue | ×0.95 | Fatigue slightly dampened |
 | asgard | freight | ×1.03 | Small freight bonus |
-| a2 hercules | ship_suitability | ×0.85 | Poor fit — bomber, not hauler |
+| a2 hercules | ship_suitability | ×0.85 | Poor fit: bomber, not hauler |
 | a2 hercules | atmosphere | ×0.90 | Atmosphere penalty slightly reduced |
 | a2 hercules | freight | ×1.05 | Small freight bonus |
 | m2 hercules | ship_suitability | ×1.05 | Good fit for contested routes |

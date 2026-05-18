@@ -1,4 +1,4 @@
-# Apeirogon Logistics — Player Files
+# Apeirogon Logistics: Player Files
 
 This folder contains everything you need to use Apeirogon Logistics with your AI.
 
@@ -6,9 +6,9 @@ This folder contains everything you need to use Apeirogon Logistics with your AI
 
 ## Two things, used differently
 
-**`project_instructions/`** — Set up once. These are the instructions you load into your AI so it knows how to score hauling contracts. You do this one time when you create your AI project.
+**`project_instructions/`**: Set up once. These are the instructions you load into your AI so it knows how to score hauling contracts. You do this one time when you create your AI project.
 
-**`session_start_prompt.md`** — Use every session. Paste this at the start of every hauling session to tell the AI which ship you're flying and where you are.
+**`session_start_prompt.md`**: Use every session. Paste this at the start of every hauling session to tell the AI which ship you're flying and where you are.
 
 ---
 
@@ -44,9 +44,9 @@ The AI uses these files to score routes correctly. Without them it will still wo
 
 ---
 
-## What's coming — in-game addon
+## What's coming: in-game addon
 
-The long-term goal for Apeirogon Logistics is an **in-game addon** that analyzes contracts in real time as you browse the missions terminal — no screenshots, no copy-paste. You'd see contract scores and recommendations overlaid directly in the game UI.
+The long-term goal for Apeirogon Logistics is an **in-game addon** that analyzes contracts in real time as you browse the missions terminal, with no screenshots or copy-paste. You'd see contract scores and recommendations overlaid directly in the game UI.
 
 **This requires CIG (Cloud Imperium Games) to release an addon or plugin framework for Star Citizen.** That capability does not exist yet. When CIG enables it, Apeirogon Logistics will let you:
 
@@ -55,4 +55,4 @@ The long-term goal for Apeirogon Logistics is an **in-game addon** that analyzes
 - Get a smart summary panel showing the best combinations and run order
 - Configure what information shows and how the overlay looks
 
-Nothing about this requires changes to how you use the current version. When the addon becomes available it will be an optional installation — the AI assistant workflow you're using today will continue to work.
+Nothing about this requires changes to how you use the current version. When the addon becomes available it will be an optional installation; the AI assistant workflow you're using today will continue to work.

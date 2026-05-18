@@ -9,9 +9,9 @@ Perplexity is primarily a research and search tool. It does not support persiste
 ## What to expect
 
 - **Works well for**: reading contracts, scoring runs, giving recommendations
-- **Limitation**: no persistent memory — instructions must be pasted each session
+- **Limitation**: no persistent memory; instructions must be pasted each session
 - **Image support**: Perplexity supports image uploads in the chat (Pro tier and some free tiers)
-- **File uploads**: limited — paste file contents directly if needed
+- **File uploads**: limited; paste file contents directly if needed
 
 ---
 
@@ -58,7 +58,7 @@ GOOD FACTORS — add these points:
 - The whole route stays in orbital space, no atmosphere landings: +12 (×1.05 for Covalex)
 - The ship suits the cargo type well: +10
 - Pickup locations chain well from one to the next: +10
-- Covalex issuer: +9 extra for alignment
+- Covalex issuer alignment: +9
 
 BAD FACTORS — subtract these points:
 - Player must fly empty to reach the pickup (dead leg): −15 (×1.10 for Red Wind contracts)
@@ -66,7 +66,7 @@ BAD FACTORS — subtract these points:
 - Each delivery stop beyond the first: −13 (Hull-B) or −12 (other ships)
 - Each stop that requires an atmospheric landing: −12
 - Congested stations on the route: −8
-- Difficult freight handling: −8 (×1.05 for Hull-B)
+- Difficult freight handling: −8
 - Each stop beyond 2 total in the route: −6
 - Tiring multi-leg route: −7
 - Each field the player couldn't read (UNRESOLVED): −2
@@ -122,7 +122,7 @@ For better results, also paste the contents of `scoring_config.json` from `playe
 
 ## Perplexity Spaces (optional)
 
-If you have access to **Perplexity Spaces**, you can create a Space and add the instructions as a persistent context. This avoids pasting each session. The setup is similar to the ChatGPT free option — add the instructions block as the Space description or system context.
+If you have access to **Perplexity Spaces**, you can create a Space and add the instructions as a persistent context. This avoids pasting each session. The setup is similar to the ChatGPT free option; add the instructions block as the Space description or system context.
 
 ---
 

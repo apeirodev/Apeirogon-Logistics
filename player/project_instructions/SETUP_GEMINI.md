@@ -6,18 +6,18 @@ There are two ways depending on which Gemini product you use.
 
 ---
 
-## Option A — Gemini Gems (Gemini Advanced)
+## Option A: Gemini Gems (Gemini Advanced)
 
-Gems are custom Gemini assistants — similar to Claude Projects or ChatGPT Custom GPTs. If you have Gemini Advanced (included with Google One AI Premium), this is the best option.
+Gems are custom Gemini assistants, similar to Claude Projects or ChatGPT Custom GPTs. If you have Gemini Advanced (included with Google One AI Premium), this is the best option.
 
-### Step 1 — Create a Gem
+### Step 1: Create a Gem
 
 1. Go to [gemini.google.com](https://gemini.google.com)
 2. Click **Gems** in the left sidebar
 3. Click **New Gem**
 4. Name it "Star Citizen Hauling"
 
-### Step 2 — Set the instructions
+### Step 2: Set the instructions
 
 In the **Instructions** field, copy everything between the lines below and paste it there.
 
@@ -50,7 +50,7 @@ GOOD FACTORS — add these points:
 - The whole route stays in orbital space, no atmosphere landings: +12 (×1.05 for Covalex)
 - The ship suits the cargo type well: +10
 - Pickup locations chain well from one to the next: +10
-- Covalex issuer: +9 extra for alignment
+- Covalex issuer alignment: +9
 
 BAD FACTORS — subtract these points:
 - Player must fly empty to reach the pickup (dead leg): −15 (×1.10 for Red Wind contracts)
@@ -58,7 +58,7 @@ BAD FACTORS — subtract these points:
 - Each delivery stop beyond the first: −13 (Hull-B) or −12 (other ships)
 - Each stop that requires an atmospheric landing: −12
 - Congested stations on the route: −8
-- Difficult freight handling: −8 (×1.05 for Hull-B)
+- Difficult freight handling: −8
 - Each stop beyond 2 total in the route: −6
 - Tiring multi-leg route: −7
 - Each field the player couldn't read (UNRESOLVED): −2
@@ -104,26 +104,26 @@ You'd have to fly empty across the system to reach the pickup. Not worth it unle
 When the player starts a session they will tell you their ship and current location. Use that to identify dead legs and adjust ship modifiers accordingly.
 ```
 
-### Step 3 — Upload the scoring files
+### Step 3: Upload the scoring files
 
 In the **Knowledge** section of your Gem, upload **all eight files** from the `player/uploads/` folder:
 
-- `scoring_config.json` — exact scoring weights
-- `OCR_normalization_rules.json` — location and issuer name lookups
-- `mission_schema.json` — mission field definitions
-- `mission_issuer_profiles.json` — issuer tendencies and Covalex reputation ranks
-- `ship_profiles.json` — operational data for all 23 supported ships
-- `SHIP_SPECIALIZATION_GUIDE.md` — per-ship advice and modifier reference
-- `hull_b_covalex_route_playbook.md` — Hull-B route strategy guide
-- `GENERALIZED_HAULING_HANDBOOK.md` — advice for other ships and issuers
+- `scoring_config.json`: exact scoring weights
+- `OCR_normalization_rules.json`: location and issuer name lookups
+- `mission_schema.json`: mission field definitions
+- `mission_issuer_profiles.json`: issuer tendencies and Covalex reputation ranks
+- `ship_profiles.json`: operational data for all 23 supported ships
+- `SHIP_SPECIALIZATION_GUIDE.md`: per-ship advice and modifier reference
+- `hull_b_covalex_route_playbook.md`: Hull-B route strategy guide
+- `GENERALIZED_HAULING_HANDBOOK.md`: advice for other ships and issuers
 
-### Step 4 — Save your Gem
+### Step 4: Save your Gem
 
 Click **Save**. Your Gem is ready. Open it whenever you want to haul.
 
 ---
 
-## Option B — Standard Gemini (paste instructions each session)
+## Option B: Standard Gemini (paste instructions each session)
 
 If you don't have Gemini Advanced, paste the full instructions block above as your first message at the start of each new conversation, then continue with `session_start_prompt.md`.
 
@@ -131,4 +131,4 @@ If you don't have Gemini Advanced, paste the full instructions block above as yo
 
 ## Note on image uploads
 
-Gemini supports pasting images directly into the chat. Take a screenshot of each contract panel in-game and paste it into your Gemini conversation. If Gemini cannot read a value from the image, it will ask you to type it — that is correct behaviour, not an error.
+Gemini supports pasting images directly into the chat. Take a screenshot of each contract panel in-game and paste it into your Gemini conversation. If Gemini cannot read a value from the image, it will ask you to type it; that is correct behaviour, not an error.

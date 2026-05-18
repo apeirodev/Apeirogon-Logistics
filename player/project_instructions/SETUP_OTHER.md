@@ -2,7 +2,7 @@
 
 This works with any AI that supports image uploads and lets you set a custom instruction or system prompt. That includes Mistral, Grok, and others.
 
-**Dedicated guides are available for**: [Copilot](SETUP_COPILOT.md) · [Perplexity](SETUP_PERPLEXITY.md) · [LM Studio / Ollama](SETUP_LMSTUDIO.md) — check those first if you're using one of them.
+**Dedicated guides are available for**: [Copilot](SETUP_COPILOT.md) · [Perplexity](SETUP_PERPLEXITY.md) · [LM Studio / Ollama](SETUP_LMSTUDIO.md). Check those first if you're using one of them.
 
 ---
 
@@ -10,7 +10,7 @@ This works with any AI that supports image uploads and lets you set a custom ins
 
 1. Find the system prompt or custom instructions field for your AI
 2. Copy everything between the lines below and paste it there
-3. Save it — you only need to do this once
+3. Save it; you only need to do this once
 4. If your AI supports file uploads or a knowledge base, upload all eight files from `player/uploads/`
 5. From then on, use `session_start_prompt.md` at the start of each session
 
@@ -60,7 +60,7 @@ GOOD FACTORS — add these points:
 - The whole route stays in orbital space, no atmosphere landings: +12 (×1.05 for Covalex)
 - The ship suits the cargo type well: +10
 - Pickup locations chain well from one to the next: +10
-- Covalex issuer: +9 extra for alignment
+- Covalex issuer alignment: +9
 
 BAD FACTORS — subtract these points:
 - Player must fly empty to reach the pickup (dead leg): −15 (×1.10 for Red Wind contracts)
@@ -68,7 +68,7 @@ BAD FACTORS — subtract these points:
 - Each delivery stop beyond the first: −13 (Hull-B) or −12 (other ships)
 - Each stop that requires an atmospheric landing: −12
 - Congested stations on the route: −8
-- Difficult freight handling: −8 (×1.05 for Hull-B)
+- Difficult freight handling: −8
 - Each stop beyond 2 total in the route: −6
 - Tiring multi-leg route: −7
 - Each field the player couldn't read (UNRESOLVED): −2
@@ -122,4 +122,4 @@ Most modern AI assistants do. If yours does not, you can type out the contract d
 
 ## Local models (LM Studio, Ollama)
 
-Local models vary widely in how well they follow instructions and how reliably they read images. The instructions above work the same way — paste them as a system prompt in your local model interface. If the model ignores the rules and starts inventing numbers, it may not be capable enough for reliable contract scoring. Try a larger model if available.
+Local models vary widely in how well they follow instructions and how reliably they read images. The instructions above work the same way; paste them as a system prompt in your local model interface. If the model ignores the rules and starts inventing numbers, it may not be capable enough for reliable contract scoring. Try a larger model if available.

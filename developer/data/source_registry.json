@@ -318,6 +318,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.41.6 scoring instruction accuracy fixes",
+      "notes": "Fixed Covalex alignment wording and Hull-B freight notation across all seven SETUP files based on full project accuracy audit.",
+      "source_id": "apeirogon_0_41_6_scoring_instruction_fixes",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.41.5 remove em and en dashes across all docs",
       "notes": "Removed all em dashes and en dashes from every markdown file. Replaced with commas, colons, periods, or rephrased sentences. Excludes third-party .claude/rules/ files.",
       "source_id": "apeirogon_0_41_5_remove_dashes_all_docs",

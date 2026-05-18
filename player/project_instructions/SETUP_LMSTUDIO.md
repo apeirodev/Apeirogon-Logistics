@@ -2,7 +2,7 @@
 
 **Time needed: about 10 minutes. You do this once.**
 
-LM Studio lets you run an AI model entirely on your own computer — no account, no internet, no cost per message. This is the offline and privacy-first option.
+LM Studio lets you run an AI model entirely on your own computer, with no account, no internet, and no cost per message. This is the offline and privacy-first option.
 
 ---
 
@@ -14,19 +14,19 @@ LM Studio lets you run an AI model entirely on your own computer — no account,
 
 ---
 
-## Step 1 — Download a model
+## Step 1: Download a model
 
 In LM Studio, open the **Discover** tab and search for a model. For reliable contract scoring:
 
-- **Llama 3.1 8B Instruct** or **Llama 3.2 3B Instruct** — fast, good instruction following
-- **Mistral 7B Instruct** — good alternative
+- **Llama 3.1 8B Instruct** or **Llama 3.2 3B Instruct**: fast, good instruction following
+- **Mistral 7B Instruct**: good alternative
 - For screenshot reading (multimodal): **Llama 3.2 11B Vision Instruct** or **LLaVA 1.6**
 
 If your model does not support image uploads (most don't), you will need to type out contract details instead of pasting screenshots. See the note at the bottom.
 
 ---
 
-## Step 2 — Set the system prompt
+## Step 2: Set the system prompt
 
 1. Open the **Chat** tab in LM Studio
 2. Click the gear icon or find the **System Prompt** field above the chat
@@ -61,7 +61,7 @@ GOOD FACTORS — add these points:
 - The whole route stays in orbital space, no atmosphere landings: +12 (×1.05 for Covalex)
 - The ship suits the cargo type well: +10
 - Pickup locations chain well from one to the next: +10
-- Covalex issuer: +9 extra for alignment
+- Covalex issuer alignment: +9
 
 BAD FACTORS — subtract these points:
 - Player must fly empty to reach the pickup (dead leg): −15 (×1.10 for Red Wind contracts)
@@ -69,7 +69,7 @@ BAD FACTORS — subtract these points:
 - Each delivery stop beyond the first: −13 (Hull-B) or −12 (other ships)
 - Each stop that requires an atmospheric landing: −12
 - Congested stations on the route: −8
-- Difficult freight handling: −8 (×1.05 for Hull-B)
+- Difficult freight handling: −8
 - Each stop beyond 2 total in the route: −6
 - Tiring multi-leg route: −7
 - Each field the player couldn't read (UNRESOLVED): −2
@@ -117,7 +117,7 @@ When the player starts a session they will tell you their ship and current locat
 
 ---
 
-## Step 3 — Paste the scoring files
+## Step 3: Paste the scoring files
 
 LM Studio does not have a persistent file upload feature like Claude Projects or ChatGPT. Instead, at the start of each session, copy and paste the content of these files from `player/uploads/` directly into the chat:
 
@@ -128,7 +128,7 @@ Pasting these two gives the model the exact numbers it needs. The other files ar
 
 ---
 
-## Step 4 — Each session
+## Step 4: Each session
 
 1. Open LM Studio and load your model
 2. Start a new chat (system prompt should already be set)
@@ -140,8 +140,8 @@ Pasting these two gives the model the exact numbers it needs. The other files ar
 
 ## Model notes
 
-**Small models (3B–7B)** can follow the scoring rules but may drift on complex multi-contract analysis. If recommendations seem off, ask it to show its working.
+**Small models (3B to 7B)** can follow the scoring rules but may drift on complex multi-contract analysis. If recommendations seem off, ask it to show its working.
 
-**Vision models** (Llama 3.2 11B Vision, LLaVA 1.6) can read screenshots directly. Load these the same way — they work in the Chat tab with image upload support.
+**Vision models** (Llama 3.2 11B Vision, LLaVA 1.6) can read screenshots directly. Load these the same way; they work in the Chat tab with image upload support.
 
 **Ollama users**: Ollama works the same way as LM Studio for this workflow. Use Open WebUI or any Ollama-compatible chat interface and set the system prompt there. The instructions block above is identical.

@@ -8,19 +8,19 @@ Microsoft Copilot is available free at [copilot.microsoft.com](https://copilot.m
 
 ## Two options
 
-Use **Option A** if you have a Microsoft 365 or Copilot Pro account — you can create a Notebook to store the instructions permanently. Use **Option B** for free accounts — you paste the instructions at the start of each session.
+Use **Option A** if you have a Microsoft 365 or Copilot Pro account; you can create a Notebook to store the instructions permanently. Use **Option B** for free accounts: paste the instructions at the start of each session.
 
 ---
 
-## Option A — Notebook (Microsoft 365 / Copilot Pro)
+## Option A: Notebook (Microsoft 365 / Copilot Pro)
 
-### Step 1 — Create a Notebook
+### Step 1: Create a Notebook
 
 1. Go to [copilot.microsoft.com](https://copilot.microsoft.com) and sign in
 2. Click **Notebooks** in the left sidebar (or look for a similar persistent context feature)
 3. Create a new notebook and name it "Star Citizen Hauling"
 
-### Step 2 — Set the instructions
+### Step 2: Set the instructions
 
 In the notebook's system or instruction field, copy everything between the lines below and paste it there.
 
@@ -53,7 +53,7 @@ GOOD FACTORS — add these points:
 - The whole route stays in orbital space, no atmosphere landings: +12 (×1.05 for Covalex)
 - The ship suits the cargo type well: +10
 - Pickup locations chain well from one to the next: +10
-- Covalex issuer: +9 extra for alignment
+- Covalex issuer alignment: +9
 
 BAD FACTORS — subtract these points:
 - Player must fly empty to reach the pickup (dead leg): −15 (×1.10 for Red Wind contracts)
@@ -61,7 +61,7 @@ BAD FACTORS — subtract these points:
 - Each delivery stop beyond the first: −13 (Hull-B) or −12 (other ships)
 - Each stop that requires an atmospheric landing: −12
 - Congested stations on the route: −8
-- Difficult freight handling: −8 (×1.05 for Hull-B)
+- Difficult freight handling: −8
 - Each stop beyond 2 total in the route: −6
 - Tiring multi-leg route: −7
 - Each field the player couldn't read (UNRESOLVED): −2
@@ -109,7 +109,7 @@ When the player starts a session they will tell you their ship and current locat
 
 ---
 
-### Step 3 — Upload the scoring files
+### Step 3: Upload the scoring files
 
 If your Notebook supports file uploads, upload **all eight files** from `player/uploads/`:
 
@@ -124,13 +124,13 @@ If your Notebook supports file uploads, upload **all eight files** from `player/
 
 If file upload is not available in your notebook, paste the contents of `scoring_config.json` and `mission_issuer_profiles.json` into the chat at the start of each session instead.
 
-### Step 4 — Done
+### Step 4: Done
 
 Open your notebook for each session, paste `session_start_prompt.md` with your ship and location, then paste screenshots of the contracts terminal.
 
 ---
 
-## Option B — Free account (paste instructions each session)
+## Option B: Free account (paste instructions each session)
 
 1. Go to [copilot.microsoft.com](https://copilot.microsoft.com)
 2. Start a new conversation
@@ -139,7 +139,7 @@ Open your notebook for each session, paste `session_start_prompt.md` with your s
 5. Paste `session_start_prompt.md` with your ship and location
 6. Paste screenshots of the contracts terminal
 
-Copilot supports image uploads in the chat — click the image icon or drag your screenshot in.
+Copilot supports image uploads in the chat; click the image icon or drag your screenshot in.
 
 ---
 

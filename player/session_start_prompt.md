@@ -22,7 +22,7 @@ I'll paste screenshots of the contracts terminal. Score each mission and tell me
 
 You don't need to type anything out. Take a screenshot of each contract on the terminal and paste it directly into the chat. The AI will read the contract details from the image.
 
-If the AI can't read something clearly, it will ask you to type that one value out. That's normal — some terminal layouts are harder to read than others.
+If the AI can't read something clearly, it will ask you to type that one value out. That's normal; some terminal layouts are harder to read than others.
 
 ---
 
@@ -44,5 +44,5 @@ Acknowledge this before continuing.
 
 - Take screenshots of the full contract panel including the reward, cargo size, pickup, and delivery
 - If a contract has multiple delivery stops, scroll and screenshot each one
-- You can paste several screenshots in one message — the AI will score all of them
+- You can paste several screenshots in one message; the AI will score all of them
 - Tell the AI your current location so it can identify dead legs (missions where you'd fly empty to the pickup)

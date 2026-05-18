@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.41.6: Scoring Instruction Accuracy Fixes
+
+Fixed two misleading entries in the scoring instruction blocks across all seven SETUP files (Claude, ChatGPT, Gemini, Copilot, Perplexity, LM Studio, Other). Changed "Covalex issuer: +9 extra for alignment" to "Covalex issuer alignment: +9", removing "extra" which falsely implied a second additive bonus. Removed the "(x1.05 for Hull-B)" notation from the freight handling line since the effective value rounds to the same integer as the base, and the multiplier is already covered in the SHIP ADJUSTMENTS section. Findings from full project accuracy audit.
+
+---
+
 ## Version 0.41.5: Remove Em and En Dashes Across All Docs
 
 Removed all em dashes and en dashes from every markdown file in the repository (excluding third-party .claude/rules/ files). Replaced with commas, colons, periods, or rephrased sentences as appropriate. Fixed resulting sentence structure throughout.

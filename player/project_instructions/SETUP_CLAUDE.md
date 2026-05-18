@@ -4,7 +4,7 @@
 
 ---
 
-## Step 1 — Create a Claude Project
+## Step 1: Create a Claude Project
 
 1. Go to [claude.ai](https://claude.ai) and sign in
 2. Click **Projects** in the left sidebar
@@ -13,24 +13,24 @@
 
 ---
 
-## Step 2 — Upload the scoring files
+## Step 2: Upload the scoring files
 
 Inside your new project, look for an option to add files or knowledge. Upload **all eight files** from the `player/uploads/` folder of this repository:
 
-- `scoring_config.json` — exact scoring weights
-- `OCR_normalization_rules.json` — location and issuer name lookups
-- `mission_schema.json` — mission field definitions
-- `mission_issuer_profiles.json` — issuer tendencies and Covalex reputation ranks
-- `ship_profiles.json` — operational data for all 23 supported ships
-- `SHIP_SPECIALIZATION_GUIDE.md` — per-ship advice and modifier reference
-- `hull_b_covalex_route_playbook.md` — Hull-B route strategy guide
-- `GENERALIZED_HAULING_HANDBOOK.md` — advice for other ships and issuers
+- `scoring_config.json`: exact scoring weights
+- `OCR_normalization_rules.json`: location and issuer name lookups
+- `mission_schema.json`: mission field definitions
+- `mission_issuer_profiles.json`: issuer tendencies and Covalex reputation ranks
+- `ship_profiles.json`: operational data for all 23 supported ships
+- `SHIP_SPECIALIZATION_GUIDE.md`: per-ship advice and modifier reference
+- `hull_b_covalex_route_playbook.md`: Hull-B route strategy guide
+- `GENERALIZED_HAULING_HANDBOOK.md`: advice for other ships and issuers
 
 These give Claude the exact numbers and context it needs to score accurately.
 
 ---
 
-## Step 3 — Set the project instructions
+## Step 3: Set the project instructions
 
 Look for **Project instructions** or **Custom instructions** in your project settings. Copy everything between the lines below and paste it there.
 
@@ -63,7 +63,7 @@ GOOD FACTORS — add these points:
 - The whole route stays in orbital space, no atmosphere landings: +12 (×1.05 for Covalex)
 - The ship suits the cargo type well: +10
 - Pickup locations chain well from one to the next: +10
-- Covalex issuer: +9 extra for alignment
+- Covalex issuer alignment: +9
 
 BAD FACTORS — subtract these points:
 - Player must fly empty to reach the pickup (dead leg): −15 (×1.10 for Red Wind contracts)
@@ -71,7 +71,7 @@ BAD FACTORS — subtract these points:
 - Each delivery stop beyond the first: −13 (Hull-B) or −12 (other ships)
 - Each stop that requires an atmospheric landing: −12
 - Congested stations on the route: −8
-- Difficult freight handling: −8 (×1.05 for Hull-B)
+- Difficult freight handling: −8
 - Each stop beyond 2 total in the route: −6
 - Tiring multi-leg route: −7
 - Each field the player couldn't read (UNRESOLVED): −2
@@ -119,7 +119,7 @@ When the player starts a session they will tell you their ship and current locat
 
 ---
 
-## Step 4 — Done
+## Step 4: Done
 
 Your project is set up. Every new conversation you start inside this project will automatically have these instructions active.
 

@@ -1,10 +1,10 @@
 # Hull-B Covalex Route Playbook
 
-> **PLAYER COPY** — adapted from `developer/hull_b_covalex_route_playbook.md` for the
+> **PLAYER COPY**: adapted from `developer/hull_b_covalex_route_playbook.md` for the
 > screenshot-paste workflow. The developer version includes additional sections covering
 > the Python CLI tools, which are not needed here.
 
-Practical guide for Hull-B Covalex hauling. Not theory — operational patterns
+Practical guide for Hull-B Covalex hauling. Not theory, but operational patterns
 that score well and execute cleanly in practice.
 
 ---
@@ -15,10 +15,10 @@ The Hull-B is MISC's mid-tier external spindle hauler. Its external cargo
 configuration means you load at freight elevators, not internal bays. It handles
 medium pads and is agile enough for orbital-loop Covalex routes. It does not do
 well in atmosphere when loaded. Its sweet spot is station-to-station Covalex
-chains in the same system — same pickup, multiple orbital deliveries.
+chains in the same system, with the same pickup and multiple orbital deliveries.
 
 Its cargo capacity is patch-dependent. **Always check your in-game loadout screen.
-Do not trust AI estimates of Hull-B capacity — they are frequently wrong.**
+Do not trust AI estimates of Hull-B capacity; they are frequently wrong.**
 
 ---
 
@@ -36,7 +36,7 @@ Port Olisar as their pickup, accept all of them and deliver in one run.
 
 ---
 
-## Mission Selection — What to Accept
+## Mission Selection: What to Accept
 
 **Accept if:**
 - Pickup matches your current location (no dead leg to get there)
@@ -53,7 +53,7 @@ Port Olisar as their pickup, accept all of them and deliver in one run.
 - Pickup requires flying to a different planet empty (dead leg)
 - Delivery requires entering atmosphere loaded
 - Route has 7 or more stops total
-- The mission is isolated — different pickup, no nearby deliveries
+- The mission is isolated, with a different pickup and no nearby deliveries
 
 ---
 
@@ -62,7 +62,7 @@ Port Olisar as their pickup, accept all of them and deliver in one run.
 At the mission terminal, before accepting anything:
 
 1. Note the pickup location of every available Covalex mission
-2. Group them by pickup — "Port Olisar × 3", "Microtech × 1", etc.
+2. Group them by pickup: "Port Olisar × 3", "Microtech × 1", etc.
 3. Accept all missions from your largest pickup group first
 4. Only add missions from other pickups if they don't create dead legs
 
@@ -77,9 +77,9 @@ to ARC-L1 to pick up costs more in time and positioning than the ARC-L1 mission 
 Once you've accepted missions, order deliveries like this:
 
 1. **Pick up all cargo** at the first pickup (all same-pickup missions)
-2. **Orbital deliveries** (L-point stations, asteroid belts) — no atmospheric entry
-3. **Moon deliveries** (if unavoidable) — low atmosphere, manageable
-4. **Return positioning** — end near your next pickup cluster
+2. **Orbital deliveries** (L-point stations, asteroid belts): no atmospheric entry
+3. **Moon deliveries** (if unavoidable): low atmosphere, manageable
+4. **Return positioning**: end near your next pickup cluster
 
 **Never end a run far from the next opportunity.** If your next run is likely
 from Port Olisar, end near Port Olisar. The "where does this route leave me?"
@@ -89,11 +89,11 @@ question matters as much as the route itself.
 
 ## Hull-B Cargo Panel Assignment
 
-The Hull-B has eight external cargo panels: top, bottom, port, starboard, front, and back — six named faces, but the spindle structure effectively gives you eight addressable panels when you count the forward and aft halves of the port and starboard sides.
+The Hull-B has eight external cargo panels: top, bottom, port, starboard, front, and back. That is six named faces, but the spindle structure effectively gives you eight addressable panels when you count the forward and aft halves of the port and starboard sides.
 
-**Operational practice**: assign each destination its own panel or set of panels. When you know Panel A is "Baijini Point" and Panel B is "Shopp-L4", unloading at each stop is fast and clean — you are not sorting through mixed cargo to find what belongs there.
+**Operational practice**: assign each destination its own panel or set of panels. When you know Panel A is "Baijini Point" and Panel B is "Shopp-L4", unloading at each stop is fast and clean; you are not sorting through mixed cargo to find what belongs there.
 
-This is why the `cargo_panel_clarity` modifier exists for Hull-B (×1.15). A mission set where each destination maps neatly to a panel section scores better because it executes better. Fragmented routes — where you'd be pulling cargo from multiple panels at each stop — lose this advantage.
+This is why the `cargo_panel_clarity` modifier exists for Hull-B (×1.15). A mission set where each destination maps neatly to a panel section scores better because it executes better. Fragmented routes, where you'd be pulling cargo from multiple panels at each stop, lose this advantage.
 
 **Practical rule**: before loading, assign deliveries to panels mentally or in your notes. Prefer route sets where the number of destinations is ≤ the number of usable panels. When stacking three same-pickup Covalex missions to three different orbital stations, you get clean panel separation with cargo to spare.
 
@@ -108,7 +108,7 @@ This matters for timing:
 - Partial loads are sometimes necessary (come back for second load)
 - Unloading order can affect how long you're docked
 
-Plan for freight elevator interaction time — actual elapsed time per stop
+Plan for freight elevator interaction time; actual elapsed time per stop
 is higher than quantum travel time alone. Routes with 4+ stops feel longer
 than they look on paper.
 
@@ -134,17 +134,17 @@ Fastest workflow for live play:
 
 1. At the mission terminal, take a screenshot of your available contracts
 2. Open your AI project (Claude, ChatGPT, Gemini, or whichever you set up)
-3. Paste `player/session_start_prompt.md` — fill in ship: Hull-B and your location
+3. Paste `player/session_start_prompt.md` and fill in ship: Hull-B and your location
 4. Paste the screenshot
 5. Your AI scores each contract and tells you what to accept and in what order
 
 If the AI cannot read a value from your screenshot, it will ask you to type
-that one value. This is correct — do not skip it. An unresolved fee or reward
+that one value. This is correct; do not skip it. An unresolved fee or reward
 can change the recommendation.
 
 ---
 
-## Red Flags — Skip These Missions
+## Red Flags: Skip These Missions
 
 | Pattern | Why |
 |---------|-----|
@@ -156,14 +156,14 @@ can change the recommendation.
 
 ---
 
-## Green Flags — Look for These
+## Green Flags: Look for These
 
 | Pattern | Why |
 |---------|-----|
 | 3× Port Olisar pickup | +32 stacking bonus, ideal |
 | All deliveries at orbital stations | No atmosphere, fast runs |
 | Covalex + Ling mix at same pickup | Both issuers have orbital deliveries |
-| Deliveries cluster at 2–3 L-points | Clean route, low fragmentation |
+| Deliveries cluster at 2 to 3 L-points | Clean route, low fragmentation |
 | Route ends near next pickup | Good positioning for next run |
 
 ---
@@ -173,7 +173,7 @@ can change the recommendation.
 Covalex reputation progression matters for contract availability and quality.
 The scoring system doesn't directly model reputation, but the factors that
 produce high scores (same-pickup stacking, low dead legs, orbital chains) are
-also the patterns that build reputation efficiently — you're completing more
+also the patterns that build reputation efficiently; you're completing more
 Covalex missions per hour than scattered routes would allow.
 
 Prioritising reputation over one-off payout is usually correct in the medium term.

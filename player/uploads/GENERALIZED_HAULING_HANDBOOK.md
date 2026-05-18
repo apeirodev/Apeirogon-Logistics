@@ -1,6 +1,6 @@
 # Generalized Hauling Handbook
 
-> **PLAYER COPY** — adapted from `developer/docs/GENERALIZED_HAULING_HANDBOOK.md` for the
+> **PLAYER COPY**: adapted from `developer/docs/GENERALIZED_HAULING_HANDBOOK.md` for the
 > screenshot-paste workflow. Sections covering Python tool configuration and weight tuning
 > are in the developer version and are not needed here.
 
@@ -41,9 +41,9 @@ For ships not in this list, tell your AI what ship you are flying anyway. It wil
 
 The scoring system handles missions from multiple issuers in a single session. Each mission uses its own issuer's modifier. When you have contracts from multiple issuers at the terminal:
 
-- Same-pickup stacking still applies regardless of issuer — a Covalex mission and a Ling mission at the same pickup can be stacked
+- Same-pickup stacking still applies regardless of issuer; a Covalex mission and a Ling mission at the same pickup can be stacked
 - Issuer modifiers apply per-mission, not per-batch
-- Mixed batches score the combined route shape — overlapping deliveries and shared pickups are rewarded across issuer lines
+- Mixed batches score the combined route shape; overlapping deliveries and shared pickups are rewarded across issuer lines
 
 ---
 
@@ -63,7 +63,7 @@ The scoring system handles missions from multiple issuers in a single session. E
 
 The atmosphere penalty is calibrated for Hull-B where atmospheric flight when fully loaded is a practical problem. Ships with better atmospheric handling (Taurus, Cutlass, smaller ships) handle atmosphere more comfortably.
 
-If your AI is penalizing atmosphere stops too aggressively for your ship, tell it: *"I am flying a [ship] which handles atmosphere well — reduce the atmosphere penalty."* The AI can adjust its weighting for your session.
+If your AI is penalizing atmosphere stops too aggressively for your ship, tell it: *"I am flying a [ship] which handles atmosphere well, reduce the atmosphere penalty."* The AI can adjust its weighting for your session.
 
 ---
 
@@ -71,8 +71,8 @@ If your AI is penalizing atmosphere stops too aggressively for your ship, tell i
 
 The location lookup file (`OCR_normalization_rules.json`) currently covers Stanton locations. If you are hauling in Pyro or another system:
 
-- The scoring system still works — it treats unfamiliar locations as unknown type rather than orbital, which slightly understates scores for orbital stations in other systems
-- If you know a stop is orbital, tell your AI: *"[Location name] is an orbital station"* — it will score it correctly
+- The scoring system still works; it treats unfamiliar locations as unknown type rather than orbital, which slightly understates scores for orbital stations in other systems
+- If you know a stop is orbital, tell your AI: *"[Location name] is an orbital station"*; it will score it correctly
 - As you encounter new locations, you can report them for addition to future updates
 
 ---
@@ -81,9 +81,9 @@ The location lookup file (`OCR_normalization_rules.json`) currently covers Stant
 
 For the most accurate scoring on any ship or issuer:
 
-1. **Your ship** — exact model, e.g. "Hull-B", "Taurus", "Caterpillar"
-2. **Your current location** — so the AI can identify dead legs
-3. **The issuer(s)** on screen — if more than one, say so
-4. **Any values you cannot read** — paste them as text; do not let the AI guess
+1. **Your ship**: exact model, e.g. "Hull-B", "Taurus", "Caterpillar"
+2. **Your current location**: so the AI can identify dead legs
+3. **The issuer(s)** on screen: if more than one, say so
+4. **Any values you cannot read**: paste them as text; do not let the AI guess
 
 The more context you give, the more accurate the recommendations.

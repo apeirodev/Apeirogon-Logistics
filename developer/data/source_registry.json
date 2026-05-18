@@ -298,6 +298,12 @@
       "notes": "Hull-B 8-panel doctrine, Hermes quadrant divider technique, PATCH_SENSITIVE_DATA.md, future addon intent in READMEs.",
       "source_id": "apeirogon_0_39_1_cargo_layout_patch_tracking",
       "trust_level": "internal_derived"
+    },
+    {
+      "name": "Apeirogon Logistics 0.40.1 Lua addon framework functionality stub",
+      "notes": "addon/ directory with complete Lua 5.1 architecture. Deterministic scoring logic complete. All game API calls are CIG_API.* placeholders pending CIG addon spec. Two-layer design: local deterministic scorer + optional AI provider commentary.",
+      "source_id": "apeirogon_0_40_1_lua_addon_framework",
+      "trust_level": "internal_derived"
     }
   ]
 }

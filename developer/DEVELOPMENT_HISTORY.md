@@ -292,6 +292,14 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.40.1 — Lua Addon Framework (Functionality Stub)
+
+Created `addon/` directory with a complete Lua 5.1 addon framework targeting CIG's future addon/plugin API. The architecture is fully designed and the deterministic scoring logic is implemented; all game API calls are clearly-marked placeholder stubs pending CIG's specification.
+
+Added: `addon/ApeirogonLogistics.toc` (WoW-style manifest placeholder), `addon/lua/scoring_engine.lua` (complete — full deterministic scorer), `addon/lua/scoring_config.lua` (complete — Lua translation of `developer/runtime/scoring_config.json`), `addon/lua/utils.lua` (complete — shared helpers including minimal JSON encoder/decoder), `addon/lua/settings.lua` (stub — CIG_API placeholders), `addon/lua/contract_parser.lua` (stub — CIG_API placeholders), `addon/lua/ui_overlay.lua` (stub — SC_UI placeholders), `addon/lua/api_client.lua` (stub — Claude and OpenAI providers, non-blocking async pattern), `addon/lua/main.lua` (stub — event registration and /apl slash command). Added `addon/docs/ADDON_ARCHITECTURE.md` and `addon/docs/LUA_API_NOTES.md`. Updated main README and player README with future addon intent section.
+
+---
+
 ## Version 0.39.1 — Cargo Layout Specialization, Patch Tracking, and Addon Intent
 
 Added Hull-B 8-panel cargo assignment doctrine (top/bottom/port/starboard/front/back) to both the route playbook and ship specialization guide. Added Hermes two-side-to-four-quadrant divider technique. Created PATCH_SENSITIVE_DATA.md — structured checklist of data values that need re-verification on each new Star Citizen patch, including per-ship SCU risk levels, flyability flags, and files containing patch version references. Added future in-game addon intent to main README and player README — describes the planned real-time contract analyzer pending CIG addon/plugin support.

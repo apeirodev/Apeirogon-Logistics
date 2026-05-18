@@ -45,7 +45,7 @@ The AI uses these files to score routes correctly. Without them it will still wo
 
 The long-term goal for Apeirogon Logistics is an **in-game addon** that analyzes contracts in real time as you browse the missions terminal — no screenshots, no copy-paste. You'd see contract scores and recommendations overlaid directly in the game UI.
 
-**This requires CIG (Cloud Imperium Games) to open up the game to addons or plugins.** That capability does not exist yet. When CIG enables it, Apeirogon Logistics will let you:
+**This requires CIG (Cloud Imperium Games) to release an addon or plugin framework for Star Citizen.** That capability does not exist yet. When CIG enables it, Apeirogon Logistics will let you:
 
 - Connect your own OpenAI, Claude, Anthropic, or other AI provider API key
 - See Accept / Defer / Reject indicators on contracts as you scroll through the terminal

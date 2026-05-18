@@ -69,14 +69,14 @@ See [`LICENSES.md`](LICENSES.md) for full details.
 
 The long-term goal is an **in-game addon** that analyzes contracts in real time as you browse the missions terminal — no screenshots, no copy-paste. You'd see contract scores and recommendations overlaid directly in the game UI.
 
-**This requires CIG (Cloud Imperium Games) to open up the game to addons or plugins.** That capability does not exist yet. When CIG enables it, Apeirogon Logistics will:
+**This requires CIG (Cloud Imperium Games) to release an addon or plugin framework for Star Citizen.** No such framework exists as of Alpha 4.8.0. The addon code lives in [`addon/`](addon/) and is currently a functionality stub — the scoring logic is complete, but all game API calls are placeholders pending CIG's spec. When CIG releases the framework, Apeirogon Logistics will:
 
 - Let you connect your own API key for OpenAI, Claude, or another provider
 - Show Accept / Defer / Reject indicators on contracts as you scroll the terminal
 - Display a configurable info panel with scores, best combinations, and run order
 - Work entirely within the game — no alt-tabbing or screenshots needed
 
-The current AI assistant workflow will continue to work alongside it — nothing about the existing setup changes. The addon is an addition, not a replacement.
+The current AI assistant workflow continues to work alongside it — nothing about the existing setup changes.
 
 ---
 
@@ -88,4 +88,4 @@ The deterministic Python scorer runs without any AI — useful if you want full 
 
 Contributions welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-**Maintainer:** ApeiroDev · apeirogon.gg · v0.39.1
+**Maintainer:** ApeiroDev · apeirogon.gg · v0.40.1

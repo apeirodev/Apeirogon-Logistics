@@ -318,6 +318,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.41.5 remove em and en dashes across all docs",
+      "notes": "Removed all em dashes and en dashes from every markdown file. Replaced with commas, colons, periods, or rephrased sentences. Excludes third-party .claude/rules/ files.",
+      "source_id": "apeirogon_0_41_5_remove_dashes_all_docs",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.41.4 README wording fix",
       "notes": "Corrected 'open one panel' to 'focus one panel' in Hull-B cargo placement example.",
       "source_id": "apeirogon_0_41_4_readme_wording_fix",

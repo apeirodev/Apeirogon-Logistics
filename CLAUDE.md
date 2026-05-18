@@ -1,4 +1,4 @@
-# Apeirogon Logistics — Claude Code Security Rules
+# Apeirogon Logistics: Claude Code Security Rules
 
 Security rules for Claude Code when working in this repository.
 Derived from [TikiTribe/claude-secure-coding-rules](https://github.com/TikiTribe/claude-secure-coding-rules).
@@ -12,17 +12,17 @@ Full upstream rule files are in `.claude/rules/`.
 This project uses **Semantic Versioning** (SemVer): `Major.Minor.Patch`.
 
 - **Every change to any file** must increment the version before committing.
-- **Patch increment** (`0.0.1`): small or inconsequential changes — typo fixes, comment updates, minor corrections.
-- **Minor increment** (`0.1.x`): significant changes — new features, new files, structural changes, scoring logic updates. Patch resets to `1` (not `0`) on a minor bump.
+- **Patch increment** (`0.0.1`): small or inconsequential changes, such as typo fixes, comment updates, and minor corrections.
+- **Minor increment** (`0.1.x`): significant changes, such as new features, new files, structural changes, and scoring logic updates. Patch resets to `1` (not `0`) on a minor bump.
 - **Major increment**: breaking changes to the scoring system, schema, or public-facing API. Discuss with maintainer before bumping.
 
 Update the version in **all** of these files on every change:
-- `README.md` — footer line (`v0.X.Y`)
-- `pyproject.toml` — `version = "0.X.Y"`
-- `VERSION.json` — `"version"` field, `"previous_version"`, and add a `version_history` entry
-- `developer/PROJECT_STATUS.md` — `**Version:**` line
-- `developer/DEVELOPMENT_HISTORY.md` — add a new `## Version 0.X.Y` section
-- `developer/data/source_registry.json` — add a new source entry for the release
+- `README.md`: footer line (`v0.X.Y`)
+- `pyproject.toml`: `version = "0.X.Y"`
+- `VERSION.json`: `"version"` field, `"previous_version"`, and add a `version_history` entry
+- `developer/PROJECT_STATUS.md`: `**Version:**` line
+- `developer/DEVELOPMENT_HISTORY.md`: add a new `## Version 0.X.Y` section
+- `developer/data/source_registry.json`: add a new source entry for the release
 
 ---
 
@@ -75,7 +75,7 @@ with open(args.output, "w") as f:
 
 ---
 
-### FILE-02: Never Use pickle — JSON Only
+### FILE-02: Never Use pickle, JSON Only
 
 **When**: Deserializing any data.
 
@@ -94,7 +94,7 @@ import pickle
 data = pickle.loads(raw_input)      # VULNERABLE: arbitrary code execution
 ```
 
-**Why**: `pickle` deserializes arbitrary Python objects and executes code on load. This codebase uses JSON exclusively — there is no reason to introduce pickle.
+**Why**: `pickle` deserializes arbitrary Python objects and executes code on load. This codebase uses JSON exclusively; there is no reason to introduce pickle.
 
 **Refs**: OWASP A08:2025, CWE-502
 
@@ -102,7 +102,7 @@ data = pickle.loads(raw_input)      # VULNERABLE: arbitrary code execution
 
 ### FILE-03: No subprocess with Shell Interpolation
 
-**When**: Any shell command execution (currently rare in this codebase — keep it that way).
+**When**: Any shell command execution (currently rare in this codebase, keep it that way).
 
 **Do**:
 
@@ -224,7 +224,7 @@ def validate_numeric_sourcing(ai_output: dict, user_input: dict) -> tuple[bool, 
     return not problems, problems
 ```
 
-Flag but do not auto-reject — let the human operator decide. Set
+Flag but do not auto-reject; let the human operator decide. Set
 `hallucination_flags` in governance metadata so the operator sees the warning.
 
 **Don't**:

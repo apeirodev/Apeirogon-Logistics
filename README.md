@@ -85,4 +85,4 @@ The deterministic Python scorer runs without any AI — useful if you want full 
 
 Contributions welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-**Maintainer:** ApeiroDev · apeirogon.gg · v0.41.4
+**Maintainer:** ApeiroDev · apeirogon.gg · v0.41.5

@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.41.5 — Remove Em and En Dashes Across All Docs
+
+Removed all em dashes and en dashes from every markdown file in the repository (excluding third-party .claude/rules/ files). Replaced with commas, colons, periods, or rephrased sentences as appropriate. Fixed resulting sentence structure throughout.
+
+---
+
 ## Version 0.41.4 — README Wording Fix
 
 Corrected "you open one panel" to "you focus one panel" in the Hull-B cargo placement example.

@@ -1,0 +1,50 @@
+{
+  "advisory_only": true,
+  "source_class": "ai_vision_extraction",
+  "extraction_confidence": 0.88,
+  "patch_version": "UNRESOLVED",
+  "ship": "Hull-B",
+  "missions": [
+    {
+      "issuer": "Covalex",
+      "pickup": "Port Olisar",
+      "delivery": ["Covalex Hub Shopp-L4"],
+      "cargo_type": "Processed Food",
+      "cargo_scu": 24,
+      "reward_usc": 12500,
+      "fee_usc": "UNRESOLVED",
+      "timer_minutes": "UNRESOLVED",
+      "contract_type": "cargo_hauling",
+      "unresolved_fields": ["fee_usc", "timer_minutes", "patch_version"],
+      "notes": ""
+    },
+    {
+      "issuer": "Covalex",
+      "pickup": "Port Olisar",
+      "delivery": ["Baijini Point"],
+      "cargo_type": "Scrap",
+      "cargo_scu": 16,
+      "reward_usc": 9000,
+      "fee_usc": "UNRESOLVED",
+      "timer_minutes": "UNRESOLVED",
+      "contract_type": "cargo_hauling",
+      "unresolved_fields": ["fee_usc", "timer_minutes"],
+      "notes": ""
+    },
+    {
+      "issuer": "Ling Family",
+      "pickup": "Port Olisar",
+      "delivery": ["Port Tressler"],
+      "cargo_type": "Medical Supplies",
+      "cargo_scu": 10,
+      "reward_usc": 6800,
+      "fee_usc": "UNRESOLVED",
+      "timer_minutes": 90,
+      "contract_type": "cargo_hauling",
+      "unresolved_fields": ["fee_usc"],
+      "notes": ""
+    }
+  ],
+  "unresolved_fields": ["patch_version"],
+  "session_notes": "Screenshot was clear. Fee fields not visible on contract list view."
+}

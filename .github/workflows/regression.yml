@@ -107,3 +107,22 @@ jobs:
 
       - name: Manifest validator — root manifests (exclude test fixtures)
         run: python tools/manifest_validator.py --root . --base . --exclude "tests/*"
+
+      - name: OCR normalizer — raw OCR mode
+        run: echo '{"raw_text":"Covalex 24 SCU"}' | python tools/OCR_result_normalizer.py
+
+      - name: OCR normalizer — AI vision mode
+        run: |
+          echo '{"advisory_only":true,"source_class":"ai_vision_extraction","extraction_confidence":0.88,"ship":"Hull-B","missions":[{"issuer":"Covalex","pickup":"Port Olisar","delivery":["Covalex Hub Shopp-L4"],"cargo_type":"Processed Food","cargo_scu":24,"reward_usc":12500,"fee_usc":"UNRESOLVED","timer_minutes":"UNRESOLVED","unresolved_fields":["fee_usc","timer_minutes"]}]}' \
+            | python tools/OCR_result_normalizer.py
+
+      - name: Ingest mission batch — raw batch
+        run: |
+          echo '{"issuer":"covalex","ship":"hull-b","missions":[{"pickup":"Port Olisar","delivery":["Covalex Hub Shopp-L4"],"cargo_scu":24,"reward_usc":12500},{"pickup":"Port Olisar","delivery":["Baijini Point"],"cargo_scu":16,"reward_usc":9000}]}' \
+            | python tools/ingest_mission_batch.py
+
+      - name: Ingest mission batch — end-to-end via normalizer
+        run: |
+          echo '{"advisory_only":true,"source_class":"ai_vision_extraction","extraction_confidence":0.88,"ship":"Hull-B","missions":[{"issuer":"Covalex","pickup":"Port Olisar","delivery":["Covalex Hub Shopp-L4"],"cargo_type":"Processed Food","cargo_scu":24,"reward_usc":12500,"fee_usc":"UNRESOLVED","timer_minutes":"UNRESOLVED","unresolved_fields":["fee_usc","timer_minutes"]}]}' \
+            | python tools/OCR_result_normalizer.py \
+            | python tools/ingest_mission_batch.py

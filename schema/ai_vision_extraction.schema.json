@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Vision Mission Extraction",
+  "description": "Schema for structured JSON returned by an AI vision assistant after analysing Star Citizen mission contract screenshots.",
+  "type": "object",
+  "required": ["advisory_only", "source_class", "missions"],
+  "properties": {
+    "advisory_only": {
+      "const": true,
+      "description": "Must always be true. AI output is never authoritative."
+    },
+    "source_class": {
+      "const": "ai_vision_extraction",
+      "description": "Fixed class identifier for AI vision output."
+    },
+    "extraction_confidence": {
+      "oneOf": [
+        {"type": "number", "minimum": 0, "maximum": 1},
+        {"const": "UNRESOLVED"}
+      ],
+      "description": "AI's self-reported confidence in the extraction (0.0–1.0), or UNRESOLVED."
+    },
+    "patch_version": {
+      "type": "string",
+      "description": "Patch version visible in the screenshot, or UNRESOLVED."
+    },
+    "ship": {
+      "type": "string",
+      "description": "Ship name if visible or supplied by the user, or UNRESOLVED."
+    },
+    "missions": {
+      "type": "array",
+      "description": "One entry per mission contract visible in the screenshot.",
+      "items": {
+        "type": "object",
+        "required": ["issuer", "pickup", "delivery", "cargo_scu", "reward_usc"],
+        "properties": {
+          "issuer": {
+            "type": "string",
+            "description": "Mission issuer name exactly as shown, or UNRESOLVED."
+          },
+          "pickup": {
+            "type": "string",
+            "description": "Pick-up location exactly as shown, or UNRESOLVED."
+          },
+          "delivery": {
+            "oneOf": [
+              {"type": "string"},
+              {"type": "array", "items": {"type": "string"}}
+            ],
+            "description": "Delivery location(s) exactly as shown, or UNRESOLVED."
+          },
+          "cargo_type": {
+            "type": "string",
+            "description": "Cargo commodity name, or UNRESOLVED."
+          },
+          "cargo_scu": {
+            "oneOf": [
+              {"type": "number", "minimum": 0},
+              {"const": "UNRESOLVED"}
+            ],
+            "description": "Cargo quantity in SCU exactly as shown. UNRESOLVED if not visible."
+          },
+          "reward_usc": {
+            "oneOf": [
+              {"type": "number", "minimum": 0},
+              {"const": "UNRESOLVED"}
+            ],
+            "description": "Contract reward in aUEC exactly as shown. UNRESOLVED if not visible."
+          },
+          "fee_usc": {
+            "oneOf": [
+              {"type": "number", "minimum": 0},
+              {"const": "UNRESOLVED"}
+            ],
+            "description": "Any fees shown in aUEC exactly as shown. UNRESOLVED if not visible."
+          },
+          "timer_minutes": {
+            "oneOf": [
+              {"type": "number", "minimum": 0},
+              {"const": "UNRESOLVED"}
+            ],
+            "description": "Contract timer in minutes, or UNRESOLVED."
+          },
+          "contract_type": {
+            "type": "string",
+            "description": "Contract category if visible (e.g. cargo_hauling), or UNRESOLVED."
+          },
+          "unresolved_fields": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "List of field names the AI could not extract from the screenshot."
+          },
+          "notes": {
+            "type": "string",
+            "description": "Any extraction caveats. Must NOT contain fabricated data."
+          }
+        }
+      }
+    },
+    "unresolved_fields": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Fields that could not be extracted from the screenshot at the batch level."
+    },
+    "session_notes": {
+      "type": "string",
+      "description": "Any overall extraction notes. Must NOT contain fabricated data."
+    }
+  }
+}

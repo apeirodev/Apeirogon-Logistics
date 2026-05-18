@@ -352,6 +352,12 @@
       "notes": "Both GitHub Actions workflows (regression.yml and validation.yml) were failing because they ran tools and tests from the repo root. Added defaults: run: working-directory: developer to both jobs. Updated pip install in validation.yml to use ../requirements-dev.txt.",
       "source_id": "apeirogon_0_41_7_ci_workflow_working_directory_fix",
       "trust_level": "internal_derived"
+    },
+    {
+      "name": "Apeirogon Logistics 0.41.8 validation workflow YAML syntax fix",
+      "notes": "Fixed pre-existing YAML syntax error in validation.yml. Two run blocks used unquoted inline python -c with Python code at column 1, breaking YAML parsing and causing No jobs were run. Collapsed to single-line python -c calls.",
+      "source_id": "apeirogon_0_41_8_validation_workflow_yaml_syntax_fix",
+      "trust_level": "internal_derived"
     }
   ]
 }

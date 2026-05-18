@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.41.8: Validation Workflow YAML Syntax Fix
+
+Fixed a pre-existing YAML syntax error in validation.yml that caused "No jobs were run." Two run blocks used an unquoted inline python -c "..." construct with the Python code at column 1, which breaks YAML parsing. Collapsed each block to a single-line python -c call inside a pipe block scalar.
+
+---
+
 ## Version 0.41.7: CI Workflow Working Directory Fix
 
 Both GitHub Actions workflows (regression.yml and validation.yml) were failing because they ran python tools/ and pytest tests/ from the repo root, but all tooling lives under developer/. Added defaults: run: working-directory: developer to both jobs. Also updated the pip install step in validation.yml to reference ../requirements-dev.txt since that file sits at the repo root.

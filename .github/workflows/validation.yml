@@ -26,24 +26,10 @@ jobs:
         run: python -m pytest tests/ -v --tb=short
 
       - name: Validate JSON schemas
-        run: python tools/schema_validator.py --root schema | python -c "
-import json, sys
-d = json.load(sys.stdin)
-assert d['valid'], d
-print('schemas valid:', d['file_count'])
-"
+        run: |
+          python tools/schema_validator.py --root schema | python -c "import json,sys; d=json.load(sys.stdin); assert d['valid'], d; print('schemas valid:', d['file_count'])"
 
       - name: Validate manifests
         run: |
-          python tools/manifest_validator.py --root manifests --base . | python -c "
-import json, sys
-d = json.load(sys.stdin)
-assert d['valid'], d
-print('manifests valid:', d['manifest_count'])
-"
-          python tools/manifest_validator.py --root . --base . --exclude "tests/*" | python -c "
-import json, sys
-d = json.load(sys.stdin)
-assert d['valid'], d
-print('root manifests valid:', d['manifest_count'])
-"
+          python tools/manifest_validator.py --root manifests --base . | python -c "import json,sys; d=json.load(sys.stdin); assert d['valid'], d; print('manifests valid:', d['manifest_count'])"
+          python tools/manifest_validator.py --root . --base . --exclude "tests/*" | python -c "import json,sys; d=json.load(sys.stdin); assert d['valid'], d; print('root manifests valid:', d['manifest_count'])"

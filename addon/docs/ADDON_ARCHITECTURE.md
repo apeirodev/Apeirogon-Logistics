@@ -8,12 +8,12 @@ Design decisions for the Apeirogon Logistics in-game addon.
 
 ## Core Principle: Deterministic-First
 
-The scoring engine runs entirely in Lua with no external dependencies. No internet access, no AI provider call, no Python process required. A player with no API key gets the same deterministic scores as a player with one — the API key only unlocks the optional AI commentary layer.
+The scoring engine runs entirely in Lua with no external dependencies. No internet access, no AI provider call, no Python process required. A player with no API key gets the same deterministic scores as a player with one. The API key only unlocks the optional AI commentary layer.
 
 This means:
 - **The addon works offline** (except for AI commentary)
-- **The scoring is auditable** — the same weights that power the Python scorer power the Lua scorer
-- **The config is shared** — `scoring_config.lua` is a direct translation of `developer/runtime/scoring_config.json`
+- **The scoring is auditable**: the same weights that power the Python scorer power the Lua scorer
+- **The config is shared**: `scoring_config.lua` is a direct translation of `developer/runtime/scoring_config.json`
 
 ---
 
@@ -82,7 +82,7 @@ The overlay attaches to the contracts list. For each contract it shows:
 When a player hovers over a contract line:
 - Breakdown of top positive and negative factors
 - If AI commentary is available, one sentence of analysis
-- Stack indicator: "3 contracts share this pickup — accept together for +32"
+- Stack indicator: "3 contracts share this pickup, accept together for +32"
 
 The overlay panel is configurable:
 - Show/hide the numeric score
@@ -101,7 +101,7 @@ Settings are stored using CIG's addon settings mechanism (API TBD). Settings inc
 | `ship` | string | "" | Current ship key (e.g., "hull-b") |
 | `location` | string | "" | Current location for dead-leg detection |
 | `ai_provider` | string | "" | "openai", "anthropic", or "" for none |
-| `api_key` | string | "" | Stored securely — never logged |
+| `api_key` | string | "" | Stored securely, never logged |
 | `show_score` | bool | true | Show numeric score in overlay |
 | `show_factors` | bool | true | Show factor breakdown on hover |
 | `show_ai_commentary` | bool | true | Show AI text when available |
@@ -117,18 +117,18 @@ Rules (mirror the project's CLAUDE.md security rules, adapted for addon context)
 1. The key is never written to a log file or chat output
 2. The key is never included in error messages
 3. The key is loaded from settings immediately before the API call and not stored in a global variable
-4. If the key is missing or invalid, the addon falls back to deterministic-only mode silently — no error popup that could expose the key in a screenshot
+4. If the key is missing or invalid, the addon falls back to deterministic-only mode silently, with no error popup that could expose the key in a screenshot
 
 ---
 
 ## AI Provider Calls
 
-When an API key is configured, the addon sends a compact contract summary to the provider and requests a one-sentence recommendation. The request uses the same STRICT_MODE rules as the screenshot workflow — the AI is instructed not to invent numbers and to defer to the deterministic score.
+When an API key is configured, the addon sends a compact contract summary to the provider and requests a one-sentence recommendation. The request uses the same STRICT_MODE rules as the screenshot workflow; the AI is instructed not to invent numbers and to defer to the deterministic score.
 
 The AI call is:
-- **Non-blocking** — the contract is scored and displayed with deterministic results while the AI call is in flight
-- **Cached** — if the same contract appears again in the same session, the cached response is used
-- **Optional** — disabling AI commentary does not reduce scoring accuracy
+- **Non-blocking**: the contract is scored and displayed with deterministic results while the AI call is in flight
+- **Cached**: if the same contract appears again in the same session, the cached response is used
+- **Optional**: disabling AI commentary does not reduce scoring accuracy
 
 ---
 
@@ -138,6 +138,6 @@ The Lua and Python scorers must produce identical scores for the same input. To 
 
 1. Run a contract batch through the Python scorer (`deterministic_scorer.py`)
 2. Run the same input through the Lua scorer (test harness TBD)
-3. Compare outputs — any difference is a bug in one of the two implementations
+3. Compare outputs. Any difference is a bug in one of the two implementations.
 
 When `scoring_config.json` is updated, `scoring_config.lua` must be updated to match. The CI pipeline should eventually include a test that checks both produce the same result on the reference fixture set.

@@ -50,4 +50,4 @@ The release tag matches the Star Citizen patch the scoring config was calibrated
 
 ## No Automatic Updates
 
-Apeirogon Logistics does not phone home or auto-update. Users adopt new releases manually. This is intentional — stability matters more than automatic updates for a calibration-dependent tool.
+Apeirogon Logistics does not phone home or auto-update. Users adopt new releases manually. This is intentional; stability matters more than automatic updates for a calibration-dependent tool.

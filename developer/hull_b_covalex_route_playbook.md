@@ -1,10 +1,10 @@
 # Hull-B Covalex Route Playbook
 
-> **CANONICAL FILE** — a player-adapted copy (with Python CLI sections replaced by the
+> **CANONICAL FILE**: a player-adapted copy (with Python CLI sections replaced by the
 > screenshot workflow) is at `player/uploads/hull_b_covalex_route_playbook.md`.
 > If you update strategy or scoring content here, apply the same changes to the player copy.
 
-Practical guide for Hull-B Covalex hauling. Not theory — operational patterns
+Practical guide for Hull-B Covalex hauling. Not theory, but operational patterns
 that score well and execute cleanly in practice.
 
 ---
@@ -15,10 +15,10 @@ The Hull-B is MISC's mid-tier external spindle hauler. Its external cargo
 configuration means you load at freight elevators, not internal bays. It handles
 medium pads and is agile enough for orbital-loop Covalex routes. It does not do
 well in atmosphere when loaded. Its sweet spot is station-to-station Covalex
-chains in the same system — same pickup, multiple orbital deliveries.
+chains in the same system, with the same pickup and multiple orbital deliveries.
 
 Its cargo capacity is patch-dependent. **Always check your in-game loadout screen.
-Do not trust AI estimates of Hull-B capacity — they are frequently wrong.**
+Do not trust AI estimates of Hull-B capacity; they are frequently wrong.**
 
 ---
 
@@ -36,7 +36,7 @@ Port Olisar as their pickup, accept all of them and deliver in one run.
 
 ---
 
-## Mission Selection — What to Accept
+## Mission Selection: What to Accept
 
 **Accept if:**
 - Pickup matches your current location (no dead leg to get there)
@@ -53,7 +53,7 @@ Port Olisar as their pickup, accept all of them and deliver in one run.
 - Pickup requires flying to a different planet empty (dead leg)
 - Delivery requires entering atmosphere loaded
 - Route has 7 or more stops total
-- The mission is isolated — different pickup, no nearby deliveries
+- The mission is isolated, with a different pickup and no nearby deliveries
 
 ---
 
@@ -62,7 +62,7 @@ Port Olisar as their pickup, accept all of them and deliver in one run.
 At the mission terminal, before accepting anything:
 
 1. Note the pickup location of every available Covalex mission
-2. Group them by pickup — "Port Olisar × 3", "Microtech × 1", etc.
+2. Group them by pickup: "Port Olisar × 3", "Microtech × 1", etc.
 3. Accept all missions from your largest pickup group first
 4. Only add missions from other pickups if they don't create dead legs
 

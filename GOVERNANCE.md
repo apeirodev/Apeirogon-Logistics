@@ -46,4 +46,4 @@ Session state files and user profiles are owned by the user. The project tools p
 
 ## Conflict Resolution
 
-Disputes about scoring weights, operational doctrine, or project direction are discussed in GitHub Issues. Maintainers make the final decision after community input. This is a small project — there is no formal voting process.
+Disputes about scoring weights, operational doctrine, or project direction are discussed in GitHub Issues. Maintainers make the final decision after community input. This is a small project; there is no formal voting process.

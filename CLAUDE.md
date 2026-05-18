@@ -298,7 +298,7 @@ def verify_file_checksum(filepath: str, expected_sha256: str) -> bool:
 data = json.load(open(release_file))    # no integrity check
 ```
 
-**Why**: Tampered release packages or manifests can silently corrupt operational data. The project already has `generate_release_checksums.py` and `verify_release_integrity.py` — always use them.
+**Why**: Tampered release packages or manifests can silently corrupt operational data. The project already has `generate_release_checksums.py` and `verify_release_integrity.py`. Always use them.
 
 **Refs**: OWASP A03:2025, CWE-829, NIST SSDF PS.3.1
 
@@ -328,7 +328,7 @@ jsonschema>=4.0   # unpinned — supply chain risk
 
 ---
 
-### ERR-01: Fail Closed — Deny on Error
+### ERR-01: Fail Closed, Deny on Error
 
 **When**: Any permission check, schema validation, or governance metadata check encounters an unexpected exception.
 
@@ -449,7 +449,7 @@ result = {**sourced_data, **ai_output}
 
 **Why**: Silent merges destroy provenance, violate source separation, and allow AI or OCR uncertainty to masquerade as sourced facts. This is a core non-negotiable project rule.
 
-**Refs**: Project brief — Source Separation; NIST AI RMF MAP 1.5
+**Refs**: Project brief, Source Separation; NIST AI RMF MAP 1.5
 
 ---
 
@@ -475,7 +475,7 @@ def safe_load_json(path: str) -> Any:
 
 ### WARN-03: Use `hmac.compare_digest` for All Hash Comparisons
 
-Never use `==` to compare hash strings — use `hmac.compare_digest` to prevent timing attacks.
+Never use `==` to compare hash strings. Use `hmac.compare_digest` to prevent timing attacks.
 
 ```python
 import hmac
@@ -483,7 +483,7 @@ if not hmac.compare_digest(computed, expected):
     raise SecurityError("Hash mismatch")
 ```
 
-### WARN-04: GitHub Actions — Pin Action Versions to Full SHA
+### WARN-04: GitHub Actions, Pin Action Versions to Full SHA
 
 ```yaml
 # Do:
@@ -493,7 +493,7 @@ if not hmac.compare_digest(computed, expected):
 - uses: actions/checkout@v4   # mutable tag — supply chain risk
 ```
 
-### WARN-05: GitHub Actions — Limit GITHUB_TOKEN Permissions
+### WARN-05: GitHub Actions, Limit GITHUB_TOKEN Permissions
 
 ```yaml
 permissions:
@@ -508,10 +508,10 @@ permissions:
 
 The following OWASP categories are not applicable to this codebase and should not generate warnings:
 
-- **A07 Authentication Failures** — no user authentication system
-- **A01 Broken Access Control** — no multi-user access model
-- **A04 Cryptographic Failures** (password hashing) — no user accounts
-- **A06 Insecure Design** (web threat modeling) — no web server
+- **A07 Authentication Failures**: no user authentication system
+- **A01 Broken Access Control**: no multi-user access model
+- **A04 Cryptographic Failures** (password hashing): no user accounts
+- **A06 Insecure Design** (web threat modeling): no web server
 
 ---
 

@@ -1,4 +1,4 @@
-# Apeirogon Logistics — Development History
+# Apeirogon Logistics: Development History
 
 This file records the phase-by-phase construction history of the platform. It is reference material only and does not describe the current operational state of the project.
 
@@ -194,7 +194,7 @@ Introduced generalised hauling intelligence, issuer profiles, multi-ship operati
 
 ---
 
-## Phase 25 — Finalization
+## Phase 25: Finalization
 
 Platform finalised as a mature Star Citizen hauling intelligence platform.
 
@@ -210,7 +210,7 @@ Additions: operational doctrine rules, cargo panel assignment rules, patch linea
 
 ---
 
-## Phase 26 — Provider-Neutral Local-First Architecture
+## Phase 26: Provider-Neutral Local-First Architecture
 
 Platform explicitly declared local-first, provider-neutral, and addon-ready.
 
@@ -218,7 +218,7 @@ Key rules established: users bring their own AI provider or run locally; manual 
 
 ---
 
-## Version 0.28.1 — AI Provider Usability and Portable Persistence
+## Version 0.28.1: AI Provider Usability and Portable Persistence
 
 Added provider-specific usage guides and portable persistence models.
 
@@ -226,13 +226,13 @@ Supported workflows: ChatGPT, Claude, Gemini, Microsoft Copilot, Perplexity, Oll
 
 ---
 
-## Version 0.28.2 — Licensing Update
+## Version 0.28.2: Licensing Update
 
 License unified to CC BY-NC 4.0 for all project assets: code, tooling, adapters, runtimes, datasets, prompts, schemas, documentation, and operational intelligence.
 
 ---
 
-## Version 0.29.1 — Governance Alignment
+## Version 0.29.1: Governance Alignment
 
 Added architectural governance alignment materials for CSA CCM v4.1.0, CSA CAIQ v4.1.0, CSA AICM v1.0.3, and CSA AI CAIQ v1.0.2.
 
@@ -240,19 +240,19 @@ Added: provenance enforcement, telemetry trust tiers, AI output trust boundaries
 
 ---
 
-## Version 0.29.2 — Operational Hardening
+## Version 0.29.2: Operational Hardening
 
 Governance correction, operational realism hardening, deterministic fallback execution, contributor usability improvements, CI validation, provider-neutral operation.
 
 ---
 
-## Version 0.29.3 — Operational Tooling Expansion
+## Version 0.29.3: Operational Tooling Expansion
 
 Expanded deterministic operational tooling, telemetry ingestion readiness, contributor onboarding, provider-neutral workflows, executable route-analysis tooling, CI/CD operational hardening.
 
 ---
 
-## Version 0.30.1 — MVP Operational Platform Transition
+## Version 0.30.1: MVP Operational Platform Transition
 
 Transitioned from specification-heavy scaffolding to a minimally viable executable operational platform.
 
@@ -260,13 +260,13 @@ Added: executable CLI tooling, telemetry ingestion workflows, governance metadat
 
 ---
 
-## Version 0.30.2 — Productionisation
+## Version 0.30.2: Productionisation
 
 Productionisation and placeholder elimination release.
 
 ---
 
-## Version 0.30.5 — Rebuild Release
+## Version 0.30.5: Rebuild Release
 
 Rebuilt the failed 0.30.4 scope from verified 0.30.3. Version 0.30.4 is recorded as `abandoned_failed_run`.
 
@@ -274,74 +274,74 @@ See `CHANGELOG_0_30_5.md` for full details.
 
 ---
 
-## Version 0.36.2 — Player Accessibility Release
+## Version 0.36.2: Player Accessibility Release
 
 Introduced the `player/` directory with AI-native workflow: per-platform setup guides (Claude, ChatGPT, Gemini, Other), session start prompt, and embedded scoring logic so players can get route recommendations from any AI assistant without installing Python. Reorganized repository so all technical and developer files live under `developer/`, leaving the root clean for non-technical users. Established Semantic Versioning (Major.Minor.Patch) as the project versioning standard.
 
 ---
 
-## Version 0.36.2 — Star Citizen Patch Update
+## Version 0.36.2: Star Citizen Patch Update
 
 Set Star Citizen patch version to Alpha 4.8.0 across all canonical files: VERSION.json, patch_lineage_registry.json, example sessions and outputs, test fixtures, and documentation examples. Previous placeholder values (UNRESOLVED_REQUIRES_VALIDATION, UNRESOLVED, 4.x, 4.1, Alpha 3.23) replaced with the confirmed current patch.
 
 ---
 
-## Version 0.37.1 — Player Uploads Folder
+## Version 0.37.1: Player Uploads Folder
 
 Added `player/uploads/` containing six files players upload to their AI project: scoring_config.json, OCR_normalization_rules.json, mission_schema.json, mission_issuer_profiles.json, hull_b_covalex_route_playbook.md (player-adapted), and GENERALIZED_HAULING_HANDBOOK.md (player-adapted). Four JSON files are exact copies; two markdown files have developer-specific sections replaced with the screenshot workflow. Cross-reference notes added to all canonical developer files. All four SETUP_*.md guides updated to reference player/uploads/.
 
 ---
 
-## Version 0.41.5 — Remove Em and En Dashes Across All Docs
+## Version 0.41.5: Remove Em and En Dashes Across All Docs
 
 Removed all em dashes and en dashes from every markdown file in the repository (excluding third-party .claude/rules/ files). Replaced with commas, colons, periods, or rephrased sentences as appropriate. Fixed resulting sentence structure throughout.
 
 ---
 
-## Version 0.41.4 — README Wording Fix
+## Version 0.41.4: README Wording Fix
 
 Corrected "you open one panel" to "you focus one panel" in the Hull-B cargo placement example.
 
 ---
 
-## Version 0.41.3 — README What It Does Rewrite
+## Version 0.41.3: README What It Does Rewrite
 
 Rewrote the "What it does" section in README.md to lead with concrete player outcome rather than scoring mechanics. New text explains cargo placement planning alongside contract selection, using the Hull-B panel assignment example (load by destination panel at the elevator, arrive at CRU-L1 and open one panel) to make the value immediately tangible to haulers.
 
 ---
 
-## Version 0.41.2 — ChatGPT No-Project Option Fix
+## Version 0.41.2: ChatGPT No-Project Option Fix
 
 Reframed SETUP_CHATGPT.md Option B from "Free account" to "No project / mobile app" to capture users on paid plans who don't use Projects and mobile app users where Projects may not be accessible. Added step to paste scoring_config.json content in Option B sessions to compensate for the absence of persistent file uploads.
 
 ---
 
-## Version 0.41.1 — New Player Setup Guides
+## Version 0.41.1: New Player Setup Guides
 
-Added dedicated setup guides for three additional AI platforms: `SETUP_COPILOT.md` (Microsoft Copilot — Notebook-based persistent instructions and free-tier paste workflow), `SETUP_PERPLEXITY.md` (Perplexity — paste-each-session with note on disabling search mode), and `SETUP_LMSTUDIO.md` (LM Studio and Ollama — local/offline AI with system prompt configuration, model recommendations, manual file paste workflow, and vision model notes). Updated `SETUP_OTHER.md` to reference the new dedicated guides. Updated README.md and player/README.md tables to list all seven AI options. Main README description updated to mention Copilot, Perplexity, LM Studio, and Ollama.
-
----
-
-## Version 0.40.2 — License Consolidation and Redundancy Cleanup
-
-Removed four redundant files with no active references. License files consolidated: deleted `LICENSE_CODE.md` and `LICENSE_DATA.md` — their content is fully covered by `LICENSE` and `LICENSES.md`. Updated `LICENSE` to reference `LICENSES.md` instead of the deleted file. Removed two developer stub files (`developer/manual_copy_paste_workflow.md`, `developer/user_export_import_workflow.md`) whose content is superseded by comprehensive equivalents in `developer/docs/`. Removed three thin/redirect docs with no references (`OFFLINE_OPERATION_GUIDE.md`, `OFFLINE_OPERATIONAL_WORKFLOW.md`, `DETERMINISTIC_FALLBACK_HANDBOOK.md`). No functionality changed.
+Added dedicated setup guides for three additional AI platforms: `SETUP_COPILOT.md` (Microsoft Copilot: Notebook-based persistent instructions and free-tier paste workflow), `SETUP_PERPLEXITY.md` (Perplexity: paste-each-session with note on disabling search mode), and `SETUP_LMSTUDIO.md` (LM Studio and Ollama: local/offline AI with system prompt configuration, model recommendations, manual file paste workflow, and vision model notes). Updated `SETUP_OTHER.md` to reference the new dedicated guides. Updated README.md and player/README.md tables to list all seven AI options. Main README description updated to mention Copilot, Perplexity, LM Studio, and Ollama.
 
 ---
 
-## Version 0.40.1 — Lua Addon Framework (Functionality Stub)
+## Version 0.40.2: License Consolidation and Redundancy Cleanup
+
+Removed four redundant files with no active references. License files consolidated: deleted `LICENSE_CODE.md` and `LICENSE_DATA.md`; their content is fully covered by `LICENSE` and `LICENSES.md`. Updated `LICENSE` to reference `LICENSES.md` instead of the deleted file. Removed two developer stub files (`developer/manual_copy_paste_workflow.md`, `developer/user_export_import_workflow.md`) whose content is superseded by comprehensive equivalents in `developer/docs/`. Removed three thin/redirect docs with no references (`OFFLINE_OPERATION_GUIDE.md`, `OFFLINE_OPERATIONAL_WORKFLOW.md`, `DETERMINISTIC_FALLBACK_HANDBOOK.md`). No functionality changed.
+
+---
+
+## Version 0.40.1: Lua Addon Framework (Functionality Stub)
 
 Created `addon/` directory with a complete Lua 5.1 addon framework targeting CIG's future addon/plugin API. The architecture is fully designed and the deterministic scoring logic is implemented; all game API calls are clearly-marked placeholder stubs pending CIG's specification.
 
-Added: `addon/ApeirogonLogistics.toc` (WoW-style manifest placeholder), `addon/lua/scoring_engine.lua` (complete — full deterministic scorer), `addon/lua/scoring_config.lua` (complete — Lua translation of `developer/runtime/scoring_config.json`), `addon/lua/utils.lua` (complete — shared helpers including minimal JSON encoder/decoder), `addon/lua/settings.lua` (stub — CIG_API placeholders), `addon/lua/contract_parser.lua` (stub — CIG_API placeholders), `addon/lua/ui_overlay.lua` (stub — SC_UI placeholders), `addon/lua/api_client.lua` (stub — Claude and OpenAI providers, non-blocking async pattern), `addon/lua/main.lua` (stub — event registration and /apl slash command). Added `addon/docs/ADDON_ARCHITECTURE.md` and `addon/docs/LUA_API_NOTES.md`. Updated main README and player README with future addon intent section.
+Added: `addon/ApeirogonLogistics.toc` (WoW-style manifest placeholder), `addon/lua/scoring_engine.lua` (complete: full deterministic scorer), `addon/lua/scoring_config.lua` (complete: Lua translation of `developer/runtime/scoring_config.json`), `addon/lua/utils.lua` (complete: shared helpers including minimal JSON encoder/decoder), `addon/lua/settings.lua` (stub: CIG_API placeholders), `addon/lua/contract_parser.lua` (stub: CIG_API placeholders), `addon/lua/ui_overlay.lua` (stub: SC_UI placeholders), `addon/lua/api_client.lua` (stub: Claude and OpenAI providers, non-blocking async pattern), `addon/lua/main.lua` (stub: event registration and /apl slash command). Added `addon/docs/ADDON_ARCHITECTURE.md` and `addon/docs/LUA_API_NOTES.md`. Updated main README and player README with future addon intent section.
 
 ---
 
-## Version 0.39.1 — Cargo Layout Specialization, Patch Tracking, and Addon Intent
+## Version 0.39.1: Cargo Layout Specialization, Patch Tracking, and Addon Intent
 
-Added Hull-B 8-panel cargo assignment doctrine (top/bottom/port/starboard/front/back) to both the route playbook and ship specialization guide. Added Hermes two-side-to-four-quadrant divider technique. Created PATCH_SENSITIVE_DATA.md — structured checklist of data values that need re-verification on each new Star Citizen patch, including per-ship SCU risk levels, flyability flags, and files containing patch version references. Added future in-game addon intent to main README and player README — describes the planned real-time contract analyzer pending CIG addon/plugin support.
+Added Hull-B 8-panel cargo assignment doctrine (top/bottom/port/starboard/front/back) to both the route playbook and ship specialization guide. Added Hermes two-side-to-four-quadrant divider technique. Created PATCH_SENSITIVE_DATA.md: a structured checklist of data values that need re-verification on each new Star Citizen patch, including per-ship SCU risk levels, flyability flags, and files containing patch version references. Added future in-game addon intent to main README and player README, describing the planned real-time contract analyzer pending CIG addon/plugin support.
 
 ---
 
-## Version 0.38.1 — Ship Expansion and Covalex Reputation Ranks
+## Version 0.38.1: Ship Expansion and Covalex Reputation Ranks
 
 Expanded ship coverage from 5 to 23 ships (all 90+ SCU haulers in Alpha 4.8.0): added Hull-D, Hull-E, Hermes, Starlancer MAX, Starlancer TAC, Starfarer, Starfarer Gemini, ARGO RAFT, Valkyrie, Asgard, M2 Hercules, A2 Hercules, Ironclad, Ironclad Assault, Railen, Banu Merchantman, RSI Galaxy. Added 19 new ship modifier blocks to scoring_config.json. Added full Covalex reputation ranks (7 tiers: Trainee through Master) to mission_issuer_profiles.json, with recommended ships, strategies, and Master-rank unlock list. Added 3 new issuer placeholders: Hurston Dynamics, microTech, ArcCorp. Created SHIP_SPECIALIZATION_GUIDE.md (developer and player copies). Added ship_profiles.json to player/uploads/. Updated all SETUP_*.md guides to list 8 upload files.

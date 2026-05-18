@@ -20,7 +20,7 @@ The tier is stored in `governance_metadata.contributor_trust_tier` on every pipe
 
 ## Promotion
 
-Promotion from T4 → T3 → T2 happens by track record: accepted pull requests and validated telemetry submissions. There is no formal application process — maintainers assign tiers when merging contributions.
+Promotion from T4 → T3 → T2 happens by track record: accepted pull requests and validated telemetry submissions. There is no formal application process; maintainers assign tiers when merging contributions.
 
 T1 is reserved for maintainers with write access to the repository. T0 is non-human (pipeline-only) and is never assigned to a person.
 

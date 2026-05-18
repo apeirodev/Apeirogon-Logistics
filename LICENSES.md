@@ -2,7 +2,7 @@
 
 ## This Project
 
-**License: CC BY-NC 4.0 — Creative Commons Attribution-NonCommercial 4.0 International**
+**License: CC BY-NC 4.0, Creative Commons Attribution-NonCommercial 4.0 International**
 
 All contents of this repository are licensed under CC BY-NC 4.0. This covers:
 
@@ -25,7 +25,7 @@ Full license text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
 
 ---
 
-## Exceptions — Files That Retain MIT License
+## Exceptions: Files That Retain MIT License
 
 The following files are derived from [TikiTribe/claude-secure-coding-rules](https://github.com/TikiTribe/claude-secure-coding-rules) and retain their original **MIT License**. They are not covered by CC BY-NC 4.0:
 

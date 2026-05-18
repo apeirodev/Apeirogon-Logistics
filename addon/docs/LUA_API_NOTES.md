@@ -95,7 +95,7 @@ local ship = ApeirogonLogisticsDB.ship
 ApeirogonLogisticsDB.ship = "hull-b"
 ```
 
-The API key is stored here too. CIG may provide a more secure storage mechanism for sensitive values — use that if available, and clearly mark where the key is stored in `settings.lua`.
+The API key is stored here too. CIG may provide a more secure storage mechanism for sensitive values. Use that if available, and clearly mark where the key is stored in `settings.lua`.
 
 ---
 
@@ -103,9 +103,9 @@ The API key is stored here too. CIG may provide a more secure storage mechanism 
 
 Lua's standard library has no JSON support. Options:
 
-1. **Bundled library** — include a small Lua JSON library (e.g., `dkjson`, `lua-cjson` if available)
-2. **Game-provided** — many games provide a JSON utility in their addon API
-3. **Manual serialization** — for simple outbound payloads to AI APIs, hand-roll a minimal serializer
+1. **Bundled library**: include a small Lua JSON library (e.g., `dkjson`, `lua-cjson` if available)
+2. **Game-provided**: many games provide a JSON utility in their addon API
+3. **Manual serialization**: for simple outbound payloads to AI APIs, hand-roll a minimal serializer
 
 We use option 3 for the AI provider call (the payload is simple and predictable) and option 1 (`utils.lua` includes a minimal pure-Lua JSON decoder for parsing AI responses). The `utils.lua` bundled decoder handles only the subset of JSON that AI providers return.
 
@@ -113,14 +113,14 @@ We use option 3 for the AI provider call (the payload is simple and predictable)
 
 ## Math and String Libraries
 
-Standard Lua 5.1 `math.*` and `string.*` are available in all game addon environments. We rely only on these — no external math libraries.
+Standard Lua 5.1 `math.*` and `string.*` are available in all game addon environments. We rely only on these, with no external math libraries.
 
 ---
 
 ## Module System
 
 Lua 5.1 modules use `require()`. In game addon environments, `require()` behavior varies:
-- WoW does not support `require()` — files share a global namespace
+- WoW does not support `require()`; files share a global namespace
 - Other environments do support it
 
 We write the code using `require()` for clarity and maintainability. A compatibility shim in `main.lua` can handle environments where `require()` is not available by manually declaring the module tables globally before each file loads.

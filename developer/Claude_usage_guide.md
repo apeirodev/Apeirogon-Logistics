@@ -9,12 +9,12 @@ This guide covers the AI vision extraction workflow from start to finish.
 
 Claude reads your in-game mission terminal screenshots and extracts mission
 data into JSON that the Apeirogon Logistics tools can score. It does **not**
-make route decisions — that's the scorer's job. Claude is strictly a vision
+make route decisions; that's the scorer's job. Claude is strictly a vision
 extraction tool in this workflow.
 
 **Important**: Claude will hallucinate numbers if not constrained. In testing,
-more than half of unconstrained AI responses invented or modified game values —
-reward amounts, SCU counts, fees — producing confident-looking but wrong output
+more than half of unconstrained AI responses invented or modified game values,
+including reward amounts, SCU counts, and fees, producing confident-looking but wrong output
 that wastes contracts and in-game time. The strict prompt below prevents this.
 
 ---
@@ -32,33 +32,33 @@ screenshots in one session.
 
 ---
 
-## Step 1 — Start a New Conversation
+## Step 1: Start a New Conversation
 
 Go to claude.ai and start a **new conversation**. Do not continue from a previous
-session for a new gaming run — prior context can affect extraction results.
+session for a new gaming run, as prior context can affect extraction results.
 
 ---
 
-## Step 2 — Paste the Strict Guardrail Prompt
+## Step 2: Paste the Strict Guardrail Prompt
 
 Open `prompts/STRICT_AI_SESSION_PROMPT.md` from this repository.
 Copy the entire contents and paste it into the Claude conversation. Send it.
 
 Wait for Claude to respond with:
 
-> **STRICT MODE ACTIVE** — I will not invent, estimate, or adjust any numeric values.
+> **STRICT MODE ACTIVE**: I will not invent, estimate, or adjust any numeric values.
 
 If Claude does not acknowledge with those words, paste the prompt again before
 continuing. Do not proceed until you get the acknowledgement.
 
 **Why this step is mandatory**: Without the strict prompt, Claude fills in
 missing or unclear values from its training data. Star Citizen prices, fees, and
-capacities change with every patch — training data is always wrong. The strict
+capacities change with every patch, so training data is always wrong. The strict
 prompt forces Claude to output `"UNRESOLVED"` instead of guessing.
 
 ---
 
-## Step 3 — Tell Claude Your Ship
+## Step 3: Tell Claude Your Ship
 
 In the same conversation, type: *"I am flying a Hull-B."*
 
@@ -67,7 +67,7 @@ This tells Claude which ship context to apply to the extraction. Replace
 
 ---
 
-## Step 4 — Paste the Extraction Prompt and Attach Your Screenshot
+## Step 4: Paste the Extraction Prompt and Attach Your Screenshot
 
 Open `prompts/AI_VISION_EXTRACTION_PROMPT.md`. Copy the extraction instructions
 block (everything inside the document). Paste it into the conversation.
@@ -78,7 +78,7 @@ Send the message with both the extraction prompt and the image attached.
 
 ---
 
-## Step 5 — Review Claude's Output
+## Step 5: Review Claude's Output
 
 Claude will return a JSON block. **Before saving it**, check every value:
 
@@ -90,7 +90,7 @@ Claude will return a JSON block. **Before saving it**, check every value:
 | `pickup` | Is this the exact location shown? |
 | `delivery` | Does this match all delivery locations shown? |
 
-**Red flags — tell Claude to correct these:**
+**Red flags, tell Claude to correct these:**
 - Any suspiciously round number you don't recall seeing (50,000, 100, etc.)
 - A fee or reward that wasn't on screen at all
 - A location that wasn't in the terminal
@@ -104,7 +104,7 @@ Every number must come from your screen or be marked UNRESOLVED.
 
 ---
 
-## Step 6 — Save the JSON
+## Step 6: Save the JSON
 
 Once verified, copy the JSON block Claude returned. Save it as a file:
 
@@ -116,7 +116,7 @@ Place it in your Apeirogon Logistics folder (or anywhere you can reference it).
 
 ---
 
-## Step 7 — Run the Pipeline
+## Step 7: Run the Pipeline
 
 ```bash
 python tools/OCR_result_normalizer.py -i raw_extraction.json -o missions_norm.json
@@ -143,7 +143,7 @@ only activates when missions are combined.
 
 **3. `ranked_missions`**
 Individual scores. Missions that score "defer" individually often score "accept"
-when combined — this is the primary reason to use the batch tool.
+when combined, which is the primary reason to use the batch tool.
 
 ---
 
@@ -157,7 +157,7 @@ project knowledge to save pasting them each session:
 
 With these in project knowledge, Claude loads the guardrail rules automatically.
 You still need to confirm at the start of each conversation that strict mode is
-active — type *"Confirm strict mode"* and wait for acknowledgement before
+active. Type *"Confirm strict mode"* and wait for acknowledgement before
 attaching screenshots.
 
 **Note**: Do not add session state files or mission data to project knowledge.
@@ -173,7 +173,7 @@ Ask it: *"Please return the extraction result as a JSON code block only, no comm
 
 **Claude adds a disclaimer after the JSON**
 
-The JSON is still valid — copy only the JSON block, not the disclaimer text.
+The JSON is still valid. Copy only the JSON block, not the disclaimer text.
 
 **Claude says it can't see details in the screenshot**
 
@@ -197,10 +197,10 @@ accurate. Go back and verify those values from your screenshot.
 
 | Don't | Why |
 |-------|-----|
-| Ask Claude to recommend the best route | It doesn't have the scoring logic — use the tools |
+| Ask Claude to recommend the best route | It doesn't have the scoring logic; use the tools |
 | Add mission data to project knowledge | It changes every session; put it in the conversation |
 | Skip the strict prompt | Without it, hallucination rate exceeds 50% |
-| Accept values Claude "inferred" | Inferred values are invented — use UNRESOLVED |
+| Accept values Claude "inferred" | Inferred values are invented; use UNRESOLVED |
 | Reuse an old conversation for a new session | Prior context bleeds into extraction |
 
 ---
@@ -212,7 +212,7 @@ of `STRICT_AI_SESSION_PROMPT.md` for repeat sessions. It's a condensed 5-rule
 version that still enforces the critical constraints.
 
 If you have added the full strict prompt to project knowledge, you can skip
-pasting it each time — just confirm strict mode is active at conversation start.
+pasting it each time. Just confirm strict mode is active at conversation start.
 
 ---
 

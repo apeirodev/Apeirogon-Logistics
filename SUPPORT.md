@@ -22,10 +22,10 @@ Do not include API keys, credentials, or personal identifiers in bug reports.
 
 For usage questions, open a GitHub Issue with the question label. Check the documentation first:
 
-- `docs/QUICK_START_GUIDE.md` — first-run walkthrough
-- `docs/OPERATIONAL_DOCTRINE_HANDBOOK.md` — how to use the tool day-to-day
-- `docs/GENERALIZED_HAULING_HANDBOOK.md` — using the tool with non-Hull-B ships and non-Covalex issuers
-- `docs/PATCH_MAINTENANCE_HANDBOOK.md` — updating the config after a Star Citizen patch
+- `docs/QUICK_START_GUIDE.md`: first-run walkthrough
+- `docs/OPERATIONAL_DOCTRINE_HANDBOOK.md`: how to use the tool day-to-day
+- `docs/GENERALIZED_HAULING_HANDBOOK.md`: using the tool with non-Hull-B ships and non-Covalex issuers
+- `docs/PATCH_MAINTENANCE_HANDBOOK.md`: updating the config after a Star Citizen patch
 
 ---
 

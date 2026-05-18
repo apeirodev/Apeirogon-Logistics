@@ -318,6 +318,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.41.3 README what it does rewrite",
+      "notes": "Rewrote What it does section to lead with cargo placement planning and the Hull-B panel example rather than abstract scoring mechanics.",
+      "source_id": "apeirogon_0_41_3_readme_rewrite",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.41.2 ChatGPT no-project option fix",
       "notes": "Reframed Option B in SETUP_CHATGPT.md to cover no-project and mobile app users, not just free accounts. Added scoring_config.json paste step for sessions without persistent file uploads.",
       "source_id": "apeirogon_0_41_2_chatgpt_option_b_fix",

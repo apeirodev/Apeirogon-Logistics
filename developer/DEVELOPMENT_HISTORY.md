@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.41.3 — README What It Does Rewrite
+
+Rewrote the "What it does" section in README.md to lead with concrete player outcome rather than scoring mechanics. New text explains cargo placement planning alongside contract selection, using the Hull-B panel assignment example (load by destination panel at the elevator, arrive at CRU-L1 and open one panel) to make the value immediately tangible to haulers.
+
+---
+
 ## Version 0.41.2 — ChatGPT No-Project Option Fix
 
 Reframed SETUP_CHATGPT.md Option B from "Free account" to "No project / mobile app" to capture users on paid plans who don't use Projects and mobile app users where Projects may not be accessible. Added step to paste scoring_config.json content in Option B sessions to compensate for the absence of persistent file uploads.

@@ -36,17 +36,11 @@ Setup takes about 5 minutes and you only do it once.
 
 ## What it does
 
-The advisor scores each contract from 0 to 100 and recommends Accept, Defer, or Reject.
+Apeirogon Logistics helps you plan your haul before you commit to it: which contracts to take, how to stack them, and where to physically place cargo on your ship so each stop is a clean unload rather than a hunt through mixed boxes.
 
-It looks at things like:
+For example: if you take ten Member-rank Covalex contracts with shared pickups and three drop-offs each, it will tell you which panel on your Hull-B to load each destination's cargo onto as it comes up the freight elevator. When you arrive at CRU-L1, you open one panel, unload everything on it, and leave. No sorting mid-route, no cross-referencing contracts, no guessing which boxes go where.
 
-- **Same-pickup stacking** — two contracts leaving from the same location is worth a lot
-- **Orbital vs. atmosphere** — routes that stay in space are more efficient
-- **Dead legs** — flying empty to reach a pickup hurts your run
-- **Too many drop-off stops** — fragmented deliveries eat your time
-- **Ship fit** — some routes suit certain ships better
-
-It won't invent numbers. If it can't read something from your screenshot it will ask you to type that one value. This is intentional — AI assistants regularly make up Star Citizen prices and distances, and that will waste your contracts.
+It scores each contract from 0 to 100 and recommends Accept, Defer, or Reject. It also looks at route order, same-pickup stacking, dead legs, and whether your ship suits the cargo. It won't invent numbers. If it can't read something from your screenshot it will ask you rather than guess.
 
 ---
 
@@ -91,4 +85,4 @@ The deterministic Python scorer runs without any AI — useful if you want full 
 
 Contributions welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-**Maintainer:** ApeiroDev · apeirogon.gg · v0.41.2
+**Maintainer:** ApeiroDev · apeirogon.gg · v0.41.3

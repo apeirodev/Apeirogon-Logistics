@@ -10,7 +10,6 @@
     "analytics/mission_acceptance_rules.json",
     "analytics/generalized_hauling_profiles.json",
     "analytics/mission_issuer_profiles.json",
-    "analytics/multi_ship_operational_models.json",
     "runtime/OCR_normalization_rules.json",
     "schema/mission_schema.json"
   ]

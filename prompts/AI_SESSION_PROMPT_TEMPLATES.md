@@ -1,5 +1,13 @@
 # AI Session Prompt Templates
 
+> **CRITICAL — READ FIRST**: Every AI session must begin with the strict
+> guardrail prompt. AI assistants hallucinate Star Citizen data more than 50%
+> of the time without it. Paste the full prompt from
+> `prompts/STRICT_AI_SESSION_PROMPT.md` before using any template below.
+> See `docs/HALLUCINATION_GUARDRAILS.md` for why this is mandatory.
+
+---
+
 ## Start New Hauling Session
 Load my Star Citizen hauling profile and begin a new hauling session. Preserve all unresolved values. Do not rely on memory. Ask me for ship, issuer, patch version, and screenshots or mission text if not provided.
 

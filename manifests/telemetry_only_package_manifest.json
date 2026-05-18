@@ -3,8 +3,6 @@
   "purpose": "Telemetry capture, calibration, and statistical refinement.",
   "recommended_files": [
     "docs/TELEMETRY_COLLECTION_WORKFLOW.md",
-    "docs/TELEMETRY_SAMPLE_SIZE_GUIDANCE.md",
-    "docs/TELEMETRY_RETENTION_AND_CALIBRATION_GUIDANCE.md",
     "analytics/hauling_execution_telemetry_models.json",
     "analytics/real_session_analytics_models.json",
     "analytics/telemetry_calibration_models.json",

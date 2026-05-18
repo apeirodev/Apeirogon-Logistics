@@ -140,6 +140,89 @@ data["route"] = ai_output["recommended_route"]   # no validation, no advisory ta
 
 ---
 
+### AI-03: Enforce Hallucination Guardrails on All AI-Assisted Workflows
+
+**When**: Any tool, prompt, or document workflow involves AI provider output.
+
+**Context**: In live testing, AI assistants hallucinated mission-critical Star Citizen
+values (prices, capacities, fees, distances) more than 50% of the time without
+explicit constraints. Hallucinated numbers waste real in-game time and burn contracts.
+
+**Do**:
+
+```python
+HALLUCINATION_RISK_FIELDS = {
+    "reward_usc", "fee_usc", "profit_usc", "cargo_scu",
+    "price_usc", "distance_km", "capacity_scu",
+}
+
+def flag_hallucination_risk(ai_output: dict, user_supplied_fields: set) -> list[str]:
+    """Return list of fields present in AI output that were not in user-supplied data."""
+    flags = []
+    for field in HALLUCINATION_RISK_FIELDS:
+        if field in ai_output and field not in user_supplied_fields:
+            flags.append(f"HALLUCINATION_RISK: {field} not in user-supplied data")
+    return flags
+```
+
+Every user-facing AI workflow document (provider guides, quick start, first route
+analysis) must reference `prompts/STRICT_AI_SESSION_PROMPT.md` and instruct users
+to paste it before any AI interaction.
+
+**Don't**:
+
+```python
+# WRONG: accepting AI numeric output without checking if user supplied it
+result["reward_usc"] = ai_output.get("reward_usc")   # may be hallucinated
+```
+
+**Why**: AI training data for Star Citizen is outdated by definition (game patches
+change all values). Without explicit constraint, AI assistants fill gaps with
+plausible-sounding invented data indistinguishable from real values.
+
+**Refs**: `docs/HALLUCINATION_GUARDRAILS.md`, `prompts/STRICT_AI_SESSION_PROMPT.md`,
+OWASP LLM09 (Misinformation), NIST AI RMF MAP 5.1
+
+---
+
+### AI-04: Reject AI Output That Contains Unsourced Numeric Fields
+
+**When**: Processing AI provider output that includes numeric operational fields.
+
+**Do**:
+
+```python
+def validate_numeric_sourcing(ai_output: dict, user_input: dict) -> tuple[bool, list[str]]:
+    """Verify that numeric fields in AI output trace back to user-supplied input."""
+    problems = []
+    numeric_fields = [k for k, v in ai_output.items() if isinstance(v, (int, float))]
+    for field in numeric_fields:
+        if field not in user_input:
+            problems.append(
+                f"field '{field}' has numeric value {ai_output[field]!r} "
+                f"but was not in user-supplied input — possible hallucination"
+            )
+    return not problems, problems
+```
+
+Flag but do not auto-reject — let the human operator decide. Set
+`hallucination_flags` in governance metadata so the operator sees the warning.
+
+**Don't**:
+
+```python
+# WRONG: silently passing numeric AI output downstream without sourcing check
+pipeline.process(ai_output)
+```
+
+**Why**: The operator cannot catch hallucination if the system doesn't flag the
+fields that were not user-supplied. Silent passage of unsourced numbers into the
+scoring pipeline produces confident-looking wrong results.
+
+**Refs**: `docs/HALLUCINATION_GUARDRAILS.md`, OWASP LLM09
+
+---
+
 ### AI-02: Sanitize Provider Outputs Before Downstream Use
 
 **When**: Any AI provider response is parsed and used to produce operational data.

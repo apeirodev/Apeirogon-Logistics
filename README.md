@@ -2,7 +2,7 @@
 
 A hauling advisor for Star Citizen. Show it your contracts terminal. It tells you what to take, what to skip, and in what order to run them.
 
-Works with Claude, ChatGPT, Gemini, and most other AI assistants. No installation required.
+Works with Claude, ChatGPT, Gemini, Copilot, Perplexity, LM Studio, Ollama, and most other AI assistants. No installation required.
 
 ---
 
@@ -15,6 +15,9 @@ Works with Claude, ChatGPT, Gemini, and most other AI assistants. No installatio
 | Claude (claude.ai) | [`player/project_instructions/SETUP_CLAUDE.md`](player/project_instructions/SETUP_CLAUDE.md) |
 | ChatGPT | [`player/project_instructions/SETUP_CHATGPT.md`](player/project_instructions/SETUP_CHATGPT.md) |
 | Gemini | [`player/project_instructions/SETUP_GEMINI.md`](player/project_instructions/SETUP_GEMINI.md) |
+| Microsoft Copilot | [`player/project_instructions/SETUP_COPILOT.md`](player/project_instructions/SETUP_COPILOT.md) |
+| Perplexity | [`player/project_instructions/SETUP_PERPLEXITY.md`](player/project_instructions/SETUP_PERPLEXITY.md) |
+| LM Studio / Ollama (local AI) | [`player/project_instructions/SETUP_LMSTUDIO.md`](player/project_instructions/SETUP_LMSTUDIO.md) |
 | Something else | [`player/project_instructions/SETUP_OTHER.md`](player/project_instructions/SETUP_OTHER.md) |
 
 Setup takes about 5 minutes and you only do it once.
@@ -88,4 +91,4 @@ The deterministic Python scorer runs without any AI — useful if you want full 
 
 Contributions welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-**Maintainer:** ApeiroDev · apeirogon.gg · v0.40.2
+**Maintainer:** ApeiroDev · apeirogon.gg · v0.41.1

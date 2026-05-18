@@ -1,35 +1,28 @@
-# Setting Up Apeirogon Logistics on Any Other AI
+# Setting Up Apeirogon Logistics on Microsoft Copilot
 
-This works with any AI that supports image uploads and lets you set a custom instruction or system prompt. That includes Mistral, Grok, and others.
+**Time needed: about 5 minutes. You do this once.**
 
-**Dedicated guides are available for**: [Copilot](SETUP_COPILOT.md) · [Perplexity](SETUP_PERPLEXITY.md) · [LM Studio / Ollama](SETUP_LMSTUDIO.md) — check those first if you're using one of them.
-
----
-
-## If your AI supports a system prompt or custom instructions (set once)
-
-1. Find the system prompt or custom instructions field for your AI
-2. Copy everything between the lines below and paste it there
-3. Save it — you only need to do this once
-4. If your AI supports file uploads or a knowledge base, upload all eight files from `player/uploads/`
-5. From then on, use `session_start_prompt.md` at the start of each session
+Microsoft Copilot is available free at [copilot.microsoft.com](https://copilot.microsoft.com) and built into Windows. It supports image uploads and file uploads, which makes it a capable option for contract scoring.
 
 ---
 
-## If your AI does not have a persistent system prompt (paste each session)
+## Two options
 
-1. Start a new conversation
-2. Paste the full instructions block below as your first message
-3. Wait for the AI to confirm it understood
-4. Paste the contents of any files from `player/uploads/` that your AI will accept (even pasting `scoring_config.json` helps)
-5. Then paste `session_start_prompt.md` with your ship and location
-6. Start pasting screenshots
+Use **Option A** if you have a Microsoft 365 or Copilot Pro account — you can create a Notebook to store the instructions permanently. Use **Option B** for free accounts — you paste the instructions at the start of each session.
 
 ---
 
-## The instructions to paste
+## Option A — Notebook (Microsoft 365 / Copilot Pro)
 
-Copy everything between the lines:
+### Step 1 — Create a Notebook
+
+1. Go to [copilot.microsoft.com](https://copilot.microsoft.com) and sign in
+2. Click **Notebooks** in the left sidebar (or look for a similar persistent context feature)
+3. Create a new notebook and name it "Star Citizen Hauling"
+
+### Step 2 — Set the instructions
+
+In the notebook's system or instruction field, copy everything between the lines below and paste it there.
 
 ---
 
@@ -116,10 +109,44 @@ When the player starts a session they will tell you their ship and current locat
 
 ---
 
-## Does my AI support image uploads?
+### Step 3 — Upload the scoring files
 
-Most modern AI assistants do. If yours does not, you can type out the contract details instead of pasting a screenshot. See `session_start_prompt.md` for guidance on what information to include.
+If your Notebook supports file uploads, upload **all eight files** from `player/uploads/`:
 
-## Local models (LM Studio, Ollama)
+- `scoring_config.json`
+- `OCR_normalization_rules.json`
+- `mission_schema.json`
+- `mission_issuer_profiles.json`
+- `ship_profiles.json`
+- `SHIP_SPECIALIZATION_GUIDE.md`
+- `hull_b_covalex_route_playbook.md`
+- `GENERALIZED_HAULING_HANDBOOK.md`
 
-Local models vary widely in how well they follow instructions and how reliably they read images. The instructions above work the same way — paste them as a system prompt in your local model interface. If the model ignores the rules and starts inventing numbers, it may not be capable enough for reliable contract scoring. Try a larger model if available.
+If file upload is not available in your notebook, paste the contents of `scoring_config.json` and `mission_issuer_profiles.json` into the chat at the start of each session instead.
+
+### Step 4 — Done
+
+Open your notebook for each session, paste `session_start_prompt.md` with your ship and location, then paste screenshots of the contracts terminal.
+
+---
+
+## Option B — Free account (paste instructions each session)
+
+1. Go to [copilot.microsoft.com](https://copilot.microsoft.com)
+2. Start a new conversation
+3. Paste the instructions block above as your first message
+4. Wait for Copilot to confirm it understood
+5. Paste `session_start_prompt.md` with your ship and location
+6. Paste screenshots of the contracts terminal
+
+Copilot supports image uploads in the chat — click the image icon or drag your screenshot in.
+
+---
+
+## Notes
+
+**Image support**: Copilot supports screenshots in the free tier. You can paste images directly into the chat.
+
+**Copilot in Windows / Microsoft 365**: The built-in Copilot (Windows taskbar, Teams, Edge sidebar) works the same way as the web version. Paste the instructions block at the start of the conversation.
+
+**Context length**: Copilot has a conversation context limit. For long sessions with many contracts, start a new conversation and paste the instructions again if responses become inconsistent.

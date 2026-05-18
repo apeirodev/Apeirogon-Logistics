@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.41.1 — New Player Setup Guides
+
+Added dedicated setup guides for three additional AI platforms: `SETUP_COPILOT.md` (Microsoft Copilot — Notebook-based persistent instructions and free-tier paste workflow), `SETUP_PERPLEXITY.md` (Perplexity — paste-each-session with note on disabling search mode), and `SETUP_LMSTUDIO.md` (LM Studio and Ollama — local/offline AI with system prompt configuration, model recommendations, manual file paste workflow, and vision model notes). Updated `SETUP_OTHER.md` to reference the new dedicated guides. Updated README.md and player/README.md tables to list all seven AI options. Main README description updated to mention Copilot, Perplexity, LM Studio, and Ollama.
+
+---
+
 ## Version 0.40.2 — License Consolidation and Redundancy Cleanup
 
 Removed four redundant files with no active references. License files consolidated: deleted `LICENSE_CODE.md` and `LICENSE_DATA.md` — their content is fully covered by `LICENSE` and `LICENSES.md`. Updated `LICENSE` to reference `LICENSES.md` instead of the deleted file. Removed two developer stub files (`developer/manual_copy_paste_workflow.md`, `developer/user_export_import_workflow.md`) whose content is superseded by comprehensive equivalents in `developer/docs/`. Removed three thin/redirect docs with no references (`OFFLINE_OPERATION_GUIDE.md`, `OFFLINE_OPERATIONAL_WORKFLOW.md`, `DETERMINISTIC_FALLBACK_HANDBOOK.md`). No functionality changed.

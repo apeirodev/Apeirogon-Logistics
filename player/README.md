@@ -19,6 +19,9 @@ This folder contains everything you need to use Apeirogon Logistics with your AI
 | Claude (claude.ai) | `project_instructions/SETUP_CLAUDE.md` |
 | ChatGPT | `project_instructions/SETUP_CHATGPT.md` |
 | Gemini | `project_instructions/SETUP_GEMINI.md` |
+| Microsoft Copilot | `project_instructions/SETUP_COPILOT.md` |
+| Perplexity | `project_instructions/SETUP_PERPLEXITY.md` |
+| LM Studio / Ollama (local AI) | `project_instructions/SETUP_LMSTUDIO.md` |
 | Something else | `project_instructions/SETUP_OTHER.md` |
 
 ---

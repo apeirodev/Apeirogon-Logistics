@@ -1,29 +1,27 @@
-# Setting Up Apeirogon Logistics on Any Other AI
+# Setting Up Apeirogon Logistics on Perplexity
 
-This works with any AI that supports image uploads and lets you set a custom instruction or system prompt. That includes Mistral, Grok, and others.
+**Time needed: about 2 minutes per session.**
 
-**Dedicated guides are available for**: [Copilot](SETUP_COPILOT.md) · [Perplexity](SETUP_PERPLEXITY.md) · [LM Studio / Ollama](SETUP_LMSTUDIO.md) — check those first if you're using one of them.
-
----
-
-## If your AI supports a system prompt or custom instructions (set once)
-
-1. Find the system prompt or custom instructions field for your AI
-2. Copy everything between the lines below and paste it there
-3. Save it — you only need to do this once
-4. If your AI supports file uploads or a knowledge base, upload all eight files from `player/uploads/`
-5. From then on, use `session_start_prompt.md` at the start of each session
+Perplexity is primarily a research and search tool. It does not support persistent project instructions the way Claude or ChatGPT do, so you will paste the instructions at the start of each hauling session. This takes about 30 extra seconds.
 
 ---
 
-## If your AI does not have a persistent system prompt (paste each session)
+## What to expect
 
-1. Start a new conversation
-2. Paste the full instructions block below as your first message
-3. Wait for the AI to confirm it understood
-4. Paste the contents of any files from `player/uploads/` that your AI will accept (even pasting `scoring_config.json` helps)
-5. Then paste `session_start_prompt.md` with your ship and location
-6. Start pasting screenshots
+- **Works well for**: reading contracts, scoring runs, giving recommendations
+- **Limitation**: no persistent memory — instructions must be pasted each session
+- **Image support**: Perplexity supports image uploads in the chat (Pro tier and some free tiers)
+- **File uploads**: limited — paste file contents directly if needed
+
+---
+
+## Each session
+
+1. Go to [perplexity.ai](https://perplexity.ai) and start a new conversation
+2. Paste the instructions block below as your **first message**
+3. Wait for Perplexity to confirm it understood
+4. Paste `session_start_prompt.md` and fill in your ship and location
+5. Paste screenshots of the contracts terminal (or type contract details if image upload is unavailable)
 
 ---
 
@@ -116,10 +114,18 @@ When the player starts a session they will tell you their ship and current locat
 
 ---
 
-## Does my AI support image uploads?
+## Improving accuracy with scoring files
 
-Most modern AI assistants do. If yours does not, you can type out the contract details instead of pasting a screenshot. See `session_start_prompt.md` for guidance on what information to include.
+For better results, also paste the contents of `scoring_config.json` from `player/uploads/` after the instructions block. This gives Perplexity the exact scoring weights rather than relying solely on the numbers in the instructions.
 
-## Local models (LM Studio, Ollama)
+---
 
-Local models vary widely in how well they follow instructions and how reliably they read images. The instructions above work the same way — paste them as a system prompt in your local model interface. If the model ignores the rules and starts inventing numbers, it may not be capable enough for reliable contract scoring. Try a larger model if available.
+## Perplexity Spaces (optional)
+
+If you have access to **Perplexity Spaces**, you can create a Space and add the instructions as a persistent context. This avoids pasting each session. The setup is similar to the ChatGPT free option — add the instructions block as the Space description or system context.
+
+---
+
+## Note on search mode
+
+Perplexity's default mode searches the web. For contract scoring, **switch to Assistant mode** (or disable search / use "Focus: Writing") so it doesn't try to look up Star Citizen prices online. Searched prices will be outdated and wrong. You want the AI to use only what you paste to it.

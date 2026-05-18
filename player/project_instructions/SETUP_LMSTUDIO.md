@@ -1,35 +1,36 @@
-# Setting Up Apeirogon Logistics on Any Other AI
+# Setting Up Apeirogon Logistics with LM Studio
 
-This works with any AI that supports image uploads and lets you set a custom instruction or system prompt. That includes Mistral, Grok, and others.
+**Time needed: about 10 minutes. You do this once.**
 
-**Dedicated guides are available for**: [Copilot](SETUP_COPILOT.md) · [Perplexity](SETUP_PERPLEXITY.md) · [LM Studio / Ollama](SETUP_LMSTUDIO.md) — check those first if you're using one of them.
-
----
-
-## If your AI supports a system prompt or custom instructions (set once)
-
-1. Find the system prompt or custom instructions field for your AI
-2. Copy everything between the lines below and paste it there
-3. Save it — you only need to do this once
-4. If your AI supports file uploads or a knowledge base, upload all eight files from `player/uploads/`
-5. From then on, use `session_start_prompt.md` at the start of each session
+LM Studio lets you run an AI model entirely on your own computer — no account, no internet, no cost per message. This is the offline and privacy-first option.
 
 ---
 
-## If your AI does not have a persistent system prompt (paste each session)
+## What you need
 
-1. Start a new conversation
-2. Paste the full instructions block below as your first message
-3. Wait for the AI to confirm it understood
-4. Paste the contents of any files from `player/uploads/` that your AI will accept (even pasting `scoring_config.json` helps)
-5. Then paste `session_start_prompt.md` with your ship and location
-6. Start pasting screenshots
+- [LM Studio](https://lmstudio.ai) installed
+- A capable model downloaded (see model recommendations below)
+- At least 8 GB VRAM (GPU) or 16 GB RAM (CPU-only, slower)
 
 ---
 
-## The instructions to paste
+## Step 1 — Download a model
 
-Copy everything between the lines:
+In LM Studio, open the **Discover** tab and search for a model. For reliable contract scoring:
+
+- **Llama 3.1 8B Instruct** or **Llama 3.2 3B Instruct** — fast, good instruction following
+- **Mistral 7B Instruct** — good alternative
+- For screenshot reading (multimodal): **Llama 3.2 11B Vision Instruct** or **LLaVA 1.6**
+
+If your model does not support image uploads (most don't), you will need to type out contract details instead of pasting screenshots. See the note at the bottom.
+
+---
+
+## Step 2 — Set the system prompt
+
+1. Open the **Chat** tab in LM Studio
+2. Click the gear icon or find the **System Prompt** field above the chat
+3. Copy everything between the lines below and paste it as the system prompt
 
 ---
 
@@ -116,10 +117,31 @@ When the player starts a session they will tell you their ship and current locat
 
 ---
 
-## Does my AI support image uploads?
+## Step 3 — Paste the scoring files
 
-Most modern AI assistants do. If yours does not, you can type out the contract details instead of pasting a screenshot. See `session_start_prompt.md` for guidance on what information to include.
+LM Studio does not have a persistent file upload feature like Claude Projects or ChatGPT. Instead, at the start of each session, copy and paste the content of these files from `player/uploads/` directly into the chat:
 
-## Local models (LM Studio, Ollama)
+1. Paste the contents of `scoring_config.json`
+2. Paste the contents of `mission_issuer_profiles.json`
 
-Local models vary widely in how well they follow instructions and how reliably they read images. The instructions above work the same way — paste them as a system prompt in your local model interface. If the model ignores the rules and starts inventing numbers, it may not be capable enough for reliable contract scoring. Try a larger model if available.
+Pasting these two gives the model the exact numbers it needs. The other files are helpful but these two are most important. You only need to do this once per chat session, not every message.
+
+---
+
+## Step 4 — Each session
+
+1. Open LM Studio and load your model
+2. Start a new chat (system prompt should already be set)
+3. Paste `scoring_config.json` and `mission_issuer_profiles.json` content into chat
+4. Paste `session_start_prompt.md` and fill in your ship and location
+5. Type out your contract details (or paste a screenshot if using a vision model)
+
+---
+
+## Model notes
+
+**Small models (3B–7B)** can follow the scoring rules but may drift on complex multi-contract analysis. If recommendations seem off, ask it to show its working.
+
+**Vision models** (Llama 3.2 11B Vision, LLaVA 1.6) can read screenshots directly. Load these the same way — they work in the Chat tab with image upload support.
+
+**Ollama users**: Ollama works the same way as LM Studio for this workflow. Use Open WebUI or any Ollama-compatible chat interface and set the system prompt there. The instructions block above is identical.

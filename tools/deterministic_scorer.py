@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 import argparse
+import logging
 from typing import Any, Dict, List
 from lib.common import add_common_args, collect_unresolved, dump_json, governance_metadata, load_json, normalize_patch, stable_hash
+
+logger = logging.getLogger(__name__)
 
 DEFAULT_WEIGHTS = {
     "same_pickup": 16,
@@ -48,7 +51,8 @@ def factor(route: Dict[str, Any], key: str) -> float:
     if key in route:
         try:
             return float(route[key])
-        except Exception:
+        except (TypeError, ValueError) as exc:
+            logger.warning("factor(%r): could not convert value %r to float: %s", key, route[key], exc)
             return 0.0
     missions = route.get("missions", [])
     seq = sequence(route)

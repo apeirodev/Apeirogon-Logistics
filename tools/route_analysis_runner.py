@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 import argparse
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent))
 from deterministic_scorer import score_route
 from route_chain_analyzer import analyze
 from lib.common import add_common_args, dump_json, load_json, stable_hash

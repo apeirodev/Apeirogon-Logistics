@@ -12,5 +12,98 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
-      - name: Run deterministic scorer smoke test
+
+      - name: Deterministic scorer — basic route
         run: echo '{"same_pickup":1}' | python tools/deterministic_scorer.py
+
+      - name: Deterministic scorer — with issuer and ship
+        run: |
+          echo '{"issuer":"covalex","ship":"hull-b","stops":["Port Olisar","Covalex Hub Shopp-L4"],"same_pickup":2}' \
+            | python tools/deterministic_scorer.py
+
+      - name: Route chain analyzer
+        run: echo '{"route_sequence":["A","B","C"]}' | python tools/route_chain_analyzer.py
+
+      - name: Route analysis runner — from repo root
+        run: echo '{"issuer":"covalex","ship":"hull-b","stops":["A","B"]}' | python tools/route_analysis_runner.py
+
+      - name: Run route analysis — alias entrypoint
+        run: echo '{"issuer":"covalex","ship":"hull-b","stops":["A","B"]}' | python tools/run_route_analysis.py
+
+      - name: Replay route analysis — re-run and verify
+        run: |
+          OUT=$(echo '{"issuer":"covalex","ship":"hull-b","stops":["A","B"]}' | python tools/route_analysis_runner.py)
+          echo "$OUT" | python tools/replay_route_analysis.py
+
+      - name: Governance metadata validation
+        run: |
+          echo '{"source_class":"deterministic_output","provenance_chain":[],"confidence_level":"high","verification_status":"not_human_verified","patch_era":"UNRESOLVED","telemetry_support_level":"none","operational_assurance_state":"implemented","unresolved_field_list":[],"advisory_only":true,"contributor_trust_tier":"T0","derivation_type":"deterministic"}' \
+            | python -c "
+          import json, sys
+          sys.path.insert(0, 'tools')
+          from lib.common import validate_governance_metadata
+          data = json.load(sys.stdin)
+          ok, problems = validate_governance_metadata(data)
+          assert ok, problems
+          print('OK')
+          "
+
+      - name: OCR normalizer
+        run: echo '{"raw_text":"Covalex 24 SCU"}' | python tools/OCR_result_normalizer.py
+
+      - name: OCR confidence analyzer
+        run: echo '{"ocr_confidence":0.85,"unresolved_fields":[]}' | python tools/OCR_confidence_analyzer.py
+
+      - name: Telemetry ingestion pipeline
+        run: echo '{"ship":"hull-b","issuer":"covalex","patch_version":"3.23"}' | python tools/telemetry_ingestion_pipeline.py
+
+      - name: Telemetry trust classifier
+        run: echo '{"user_verified":true}' | python tools/telemetry_trust_classifier.py
+
+      - name: Patch compatibility checker
+        run: echo '{"patch_version":"3.23"}' | python tools/patch_compatibility_checker.py
+
+      - name: Check patch compatibility — alias
+        run: echo '{"patch_version":"3.23"}' | python tools/check_patch_compatibility.py
+
+      - name: Provider output validator
+        run: |
+          echo '{"advisory_only":true,"governance_metadata":{"source_class":"ai_output","provenance_chain":[],"confidence_level":"medium","verification_status":"not_human_verified","patch_era":"UNRESOLVED","telemetry_support_level":"none","operational_assurance_state":"implemented","unresolved_field_list":[],"advisory_only":true,"contributor_trust_tier":"T0","derivation_type":"ai_generated"}}' \
+            | python tools/provider_output_validator.py
+
+      - name: Validate provider output — alias
+        run: |
+          echo '{"advisory_only":true,"governance_metadata":{"source_class":"ai_output","provenance_chain":[],"confidence_level":"medium","verification_status":"not_human_verified","patch_era":"UNRESOLVED","telemetry_support_level":"none","operational_assurance_state":"implemented","unresolved_field_list":[],"advisory_only":true,"contributor_trust_tier":"T0","derivation_type":"ai_generated"}}' \
+            | python tools/validate_provider_output.py
+
+      - name: Governance metadata validator
+        run: |
+          echo '{"governance_metadata":{"source_class":"deterministic_output","provenance_chain":[],"confidence_level":"high","verification_status":"not_human_verified","patch_era":"UNRESOLVED","telemetry_support_level":"none","operational_assurance_state":"implemented","unresolved_field_list":[],"advisory_only":true,"contributor_trust_tier":"T0","derivation_type":"deterministic"}}' \
+            | python tools/validate_governance_metadata.py
+
+      - name: Audit chain reconstruction
+        run: echo '{"governance_metadata":{"provenance_chain":[{"type":"input_hash","sha256":"abc"}]}}' | python tools/reconstruct_audit_chain.py
+
+      - name: Replay integrity verification
+        run: |
+          echo '{"deterministic_hash":"abc","payload":{"x":1}}' | python tools/verify_replay_integrity.py
+
+      - name: Release checksum generation
+        run: python tools/generate_release_checksums.py --root tests
+
+      - name: Release integrity verification — structure check
+        run: |
+          MANIFEST=$(python tools/generate_release_checksums.py --root tests)
+          echo "$MANIFEST" | python tools/verify_release_integrity.py --root tests
+
+      - name: Schema validator
+        run: python tools/schema_validator.py --root schema
+
+      - name: Schema dependency mapper
+        run: python tools/schema_dependency_mapper.py --root schema
+
+      - name: Manifest validator — package manifests
+        run: python tools/manifest_validator.py --root manifests --base .
+
+      - name: Manifest validator — root manifests (exclude test fixtures)
+        run: python tools/manifest_validator.py --root . --base . --exclude "tests/*"

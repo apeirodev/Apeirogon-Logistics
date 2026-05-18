@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-import argparse, json
+import argparse
 from pathlib import Path
+from lib.common import dump_json
+
 
 def main():
     parser = argparse.ArgumentParser(description="Generate local OCR preprocessing guidance")
@@ -20,13 +22,11 @@ def main():
             "increase contrast",
             "sharpen text edges",
             "run optional local OCR engine such as Tesseract",
-            "preserve unreadable values as unresolved"
-        ]
+            "preserve unreadable values as unresolved",
+        ],
     }
-    text = json.dumps(report, indent=2, sort_keys=True)
-    if args.output == "-":
-        print(text)
-    else:
-        Path(args.output).write_text(text + "\n", encoding="utf-8")
+    dump_json(report, args.output)
+
+
 if __name__ == "__main__":
     main()

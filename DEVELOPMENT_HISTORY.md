@@ -228,7 +228,7 @@ Supported workflows: ChatGPT, Claude, Gemini, Microsoft Copilot, Perplexity, Oll
 
 ## Version 0.28.2 — Licensing Update
 
-Licensing split by asset type: MIT for tooling/adapters/runtimes; CC BY-NC 4.0 for datasets, prompts, schemas, documentation, and operational intelligence.
+License unified to CC BY-NC 4.0 for all project assets: code, tooling, adapters, runtimes, datasets, prompts, schemas, documentation, and operational intelligence.
 
 ---
 

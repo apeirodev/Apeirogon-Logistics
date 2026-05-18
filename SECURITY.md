@@ -8,7 +8,7 @@ Report security issues privately — do not open a public issue. Contact the mai
 
 ## Secure Coding Rules
 
-This project integrates security rules from [TikiTribe/claude-secure-coding-rules](https://github.com/TikiTribe/claude-secure-coding-rules) (MIT).
+This project adapts security rules from [TikiTribe/claude-secure-coding-rules](https://github.com/TikiTribe/claude-secure-coding-rules) (MIT — original source). This project's adaptation is licensed CC BY-NC 4.0.
 
 Rules are applied via Claude Code through `CLAUDE.md` (project root) and `.claude/rules/`:
 

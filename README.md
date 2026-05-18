@@ -219,11 +219,9 @@ For offline/deterministic-only operation: `docs/OFFLINE_OPERATION_GUIDE.md`
 
 ## Licensing
 
-**MIT** — executable tooling, adapters, runtimes, utilities (`LICENSE_CODE.md`)
+**CC BY-NC 4.0** — all project contents: code, tooling, schemas, datasets, operational intelligence, heuristics, doctrine, prompts, and documentation.
 
-**CC BY-NC 4.0** — datasets, operational intelligence, heuristics, doctrine, calibration content, telemetry artefacts, schemas, prompts, documentation (`LICENSE_DATA.md`)
-
-Commercial use of the operational intelligence platform or dataset is prohibited without permission.
+Attribution required. Commercial use prohibited without explicit permission. See `LICENSE` and `LICENSES.md`.
 
 ---
 

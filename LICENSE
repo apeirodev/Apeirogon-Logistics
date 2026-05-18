@@ -1,20 +1,26 @@
-Star Citizen Hauling Intelligence Platform
+Apeirogon Logistics — Star Citizen Hauling Intelligence Platform
 
-License Structure:
+Copyright (c) ApeiroDev
 
-1. Data, documentation, prompts, schemas, telemetry models, operational doctrine,
-heuristics, route intelligence, and analytical content:
-Licensed under Creative Commons Attribution-NonCommercial 4.0 International
-(CC BY-NC 4.0)
+All contents of this repository — including but not limited to source code,
+tooling, adapters, parsers, runtimes, helper scripts, datasets, schemas,
+prompts, documentation, operational doctrine, heuristics, telemetry models,
+and analytical content — are licensed under:
 
-2. Code, tooling, adapters, parsers, runtime helpers, local utilities, APIs,
-future addon/plugin code, and executable helper scripts:
-Licensed under the MIT License unless otherwise specified.
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
-Commercial use of the dataset, operational intelligence, or hosted monetized
-derivative services is prohibited without explicit permission.
+You are free to share and adapt this work under the following terms:
+- Attribution — you must give appropriate credit and indicate if changes were made
+- NonCommercial — you may not use this work for commercial purposes
 
-See:
-- LICENSE_DATA.md
-- LICENSE_CODE.md
-- LICENSES.md
+Commercial use, resale, hosted monetized services, or commercial redistribution
+require explicit written permission from the project owner.
+
+Full license text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+Summary: https://creativecommons.org/licenses/by-nc/4.0/
+
+See LICENSE_DATA.md for the full CC BY-NC 4.0 terms.
+
+Attribution note: Security rules in .claude/rules/ are adapted from
+TikiTribe/claude-secure-coding-rules (MIT). This adaptation is covered by
+CC BY-NC 4.0.

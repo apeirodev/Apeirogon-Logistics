@@ -1,19 +1,21 @@
-MIT License
+# License — Code and Tooling
 
-Applies to:
-- tooling
-- adapters
-- parsers
-- local runtimes
-- helper scripts
-- APIs
-- future addon/plugin implementations
-- utilities
+All code, tooling, adapters, parsers, runtimes, helper scripts, APIs, and
+utilities in this repository are licensed under:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files, to deal in the Software
-without restriction, including without limitation the rights to use, copy,
-modify, merge, publish, distribute, sublicense, and/or sell copies of the
-Software, subject to inclusion of the copyright notice.
+**Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+This includes:
+- `tools/` — all Python tools and library modules
+- `schema/` — JSON schema files
+- `runtime/` — runtime configuration files
+- Any adapter, parser, or helper script in the project
+
+You are free to share and adapt this work under the following terms:
+- **Attribution** — give appropriate credit, provide a link to the license,
+  and indicate if changes were made
+- **NonCommercial** — you may not use this work for commercial purposes
+
+Commercial use requires explicit written permission from the project owner.
+
+Full license: https://creativecommons.org/licenses/by-nc/4.0/legalcode

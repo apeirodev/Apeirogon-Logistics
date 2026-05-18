@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.42.2: CI Requirements Hash Fix
+
+Fixed requirements-dev.txt to include all transitive dependencies of pytest with their hashes. The file previously only specified a hash for pytest itself, which triggered pip's require-hashes mode. In that mode pip requires every package including transitive dependencies to have an explicit version pin and hash. The missing entries (iniconfig, pluggy, packaging, pygments) caused pip install to fail in any fresh environment (CI runner, new venv) with "In --require-hashes mode, all requirements must have their versions pinned with ==." This was the root cause of the validation workflow failing in CI on every push.
+
+---
+
 ## Version 0.42.1: Scoring Completeness and Checksum Fix
 
 Added two scoring factors missing from all seven player-facing SETUP files: cargo panel clarity (+8, with Hull-B modifier x1.15) and complex unloading sequence (-7). Added the UNRESOLVED field cap ("maximum -12 total") to the per-field penalty line, matching the actual scorer behaviour. Updated the Hull-B SHIP ADJUSTMENTS line to include the cargo panel clarity bonus explicitly. Fixed generate_release_checksums.py and verify_release_integrity.py to exclude __pycache__ directories and .pyc/.pyo files, making manifests portable across environments. Regenerated developer/releases/checksum_manifest.json with 27 clean entries; round-trip verification now reports valid: true with zero mismatches, missing, or untracked files.

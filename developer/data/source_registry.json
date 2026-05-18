@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.42.2 CI requirements hash fix",
+      "notes": "Fixed requirements-dev.txt to include hashes for all transitive pytest dependencies (iniconfig, pluggy, packaging, pygments). Partial hash pinning triggered pip require-hashes mode and broke CI in every fresh environment.",
+      "source_id": "apeirogon_0_42_2_ci_requirements_hash_fix",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.42.1 scoring completeness and checksum fix",
       "notes": "Added cargo_panel_clarity (+8, Hull-B x1.15) and unloading_cognitive_load (-7) to all seven SETUP scoring blocks. Added UNRESOLVED cap (max -12) to match scorer behaviour. Fixed generate_release_checksums.py and verify_release_integrity.py to exclude __pycache__ and .pyc files. Regenerated checksum_manifest.json with 27 clean entries.",
       "source_id": "apeirogon_0_42_1_scoring_completeness_checksum_fix",

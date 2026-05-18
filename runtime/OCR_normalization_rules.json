@@ -1,28 +1,56 @@
 {
-  "dataset_name": "star_citizen_hauling_phase6_ocr_rules",
-  "generated_at": "2026-05-16T23:54:59Z",
-  "normalization_rules": {
-    "alias_resolution": {
-      "Seraphim": "Seraphim Station",
-      "Baijini": "Baijini Point",
-      "Tressler": "Port Tressler"
-    },
-    "truncated_label_handling": [
-      "Attempt canonical resolution using alias database",
-      "Preserve unresolved labels if confidence < threshold"
-    ],
-    "ocr_ambiguity_handling": {
-      "minimum_confidence_threshold": 0.7,
-      "partial_match_strategy": "retain_original_and_flag",
-      "multi_candidate_strategy": "store_candidates_without_forcing_resolution"
-    },
-    "deduplication_rules": [
-      "Match on pickup + payout + commodity + timer proximity",
-      "Avoid duplicate ingestion across overlapping screenshots"
-    ],
-    "partial_screenshot_ingestion": {
-      "allowed": true,
-      "preserve_missing_fields": true
-    }
+  "dataset_name": "star_citizen_hauling_ocr_normalization_rules",
+  "generated_at": "2026-05-18T00:00:00Z",
+  "issuer_aliases": {
+    "cov alex": "Covalex",
+    "covalex": "Covalex",
+    "ling family": "Ling Family",
+    "ling": "Ling Family",
+    "red wind": "Red Wind",
+    "redwind": "Red Wind",
+    "reclaimers": "Reclaimers",
+    "cnd": "CND",
+    "hurston dynamics": "Hurston Dynamics",
+    "hurston": "Hurston Dynamics"
+  },
+  "location_aliases": {
+    "Seraphim": "Seraphim Station",
+    "Baijini": "Baijini Point",
+    "Tressler": "Port Tressler",
+    "Olisar": "Port Olisar",
+    "Lyria": "Lyria",
+    "Wala": "Wala",
+    "ARC-L1": "ARC-L1 Wide Forest Station",
+    "ARC-L2": "ARC-L2 Lively Pathway Station",
+    "ARC-L3": "ARC-L3 Modern Express Station",
+    "ARC-L4": "ARC-L4 Summit Station",
+    "ARC-L5": "ARC-L5 Yellow Core Station",
+    "CRU-L1": "CRU-L1 Ambitious Dream Station",
+    "CRU-L4": "CRU-L4 Shallow Fields Station",
+    "CRU-L5": "CRU-L5 Beautiful Glen Station",
+    "HUR-L1": "HUR-L1 Green Glade Station",
+    "HUR-L2": "HUR-L2 Faithful Dream Station",
+    "HUR-L3": "HUR-L3 Thundering Express Station",
+    "HUR-L4": "HUR-L4 Melodic Fields Station",
+    "HUR-L5": "HUR-L5 High Course Station",
+    "MIC-L1": "MIC-L1 Shallow Frontier Station",
+    "MIC-L2": "MIC-L2 Long Forest Station",
+    "MIC-L3": "MIC-L3 Endless Odyssey Station",
+    "MIC-L4": "MIC-L4 Red Crossroads Station",
+    "MIC-L5": "MIC-L5 Modern Icebox Station",
+    "Shopp-L4": "Covalex Hub Shopp-L4"
+  },
+  "ocr_ambiguity_handling": {
+    "minimum_confidence_threshold": 0.65,
+    "partial_match_strategy": "retain_original_and_flag",
+    "multi_candidate_strategy": "store_candidates_without_forcing_resolution"
+  },
+  "deduplication_rules": [
+    "Match on pickup + payout + commodity + timer proximity",
+    "Avoid duplicate ingestion across overlapping screenshots"
+  ],
+  "partial_screenshot_ingestion": {
+    "allowed": true,
+    "preserve_missing_fields": true
   }
 }

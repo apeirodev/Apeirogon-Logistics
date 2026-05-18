@@ -1,13 +1,32 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 import argparse
+import json
 import logging
+import sys
+from pathlib import Path
 from typing import Any, Dict, List
+
+sys.path.insert(0, str(Path(__file__).parent))
 from lib.common import add_common_args, collect_unresolved, dump_json, governance_metadata, load_json, normalize_patch, stable_hash
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_WEIGHTS = {
+_CONFIG_PATH = Path(__file__).parent.parent / "runtime" / "scoring_config.json"
+
+
+def _load_scoring_config() -> dict:
+    if _CONFIG_PATH.exists():
+        try:
+            return json.loads(_CONFIG_PATH.read_text(encoding="utf-8"))
+        except Exception as exc:
+            logger.warning("Could not load scoring_config.json: %s — using built-in defaults", exc)
+    return {}
+
+
+_SCORING_CONFIG = _load_scoring_config()
+
+DEFAULT_WEIGHTS: Dict[str, float] = _SCORING_CONFIG.get("default_weights") or {
     "same_pickup": 16,
     "destination_overlap": 12,
     "orbital_loop": 12,
@@ -23,23 +42,30 @@ DEFAULT_WEIGHTS = {
     "fatigue": -7,
     "congestion": -8,
     "unloading_cognitive_load": -7,
-    "chain_collapse": -14
+    "chain_collapse": -14,
 }
 
-ISSUER_MODIFIERS = {
+ISSUER_MODIFIERS: Dict[str, Dict[str, float]] = _SCORING_CONFIG.get("issuer_modifiers") or {
     "covalex": {"issuer_alignment": 1.10, "orbital_loop": 1.05, "route_continuity": 1.05},
     "ling": {"destination_overlap": 1.05, "same_pickup": 1.03},
     "ling family": {"destination_overlap": 1.05, "same_pickup": 1.03},
-    "red wind": {"dead_leg": 1.10, "congestion": 1.05}
+    "red wind": {"dead_leg": 1.10, "congestion": 1.05},
 }
 
-SHIP_MODIFIERS = {
+SHIP_MODIFIERS: Dict[str, Dict[str, float]] = _SCORING_CONFIG.get("ship_modifiers") or {
     "hull-b": {"freight": 1.05, "fragmentation": 1.10, "cargo_panel_clarity": 1.15, "ship_suitability": 1.05},
     "hull-c": {"freight": 1.25, "stop_density": 1.20, "ship_suitability": 1.15},
     "taurus": {"ship_suitability": 1.05, "fatigue": 0.95},
     "caterpillar": {"freight": 1.10, "ship_suitability": 1.10},
-    "freelancer max": {"ship_suitability": 1.02, "fatigue": 0.98}
+    "freelancer max": {"ship_suitability": 1.02, "fatigue": 0.98},
 }
+
+_BANDS = _SCORING_CONFIG.get("score_bands") or {}
+_ACCEPT_THRESHOLD: int = _BANDS.get("accept_threshold", 70)
+_DEFER_THRESHOLD: int = _BANDS.get("defer_threshold", 45)
+_RISK_LOW: int = _BANDS.get("risk_low_threshold", 75)
+_RISK_MEDIUM: int = _BANDS.get("risk_medium_threshold", 50)
+_BASE_SCORE: float = float(_SCORING_CONFIG.get("base_score", 50))
 
 def clamp(value: float, lo: int = 0, hi: int = 100) -> int:
     return int(max(lo, min(hi, round(value))))
@@ -83,7 +109,7 @@ def score_route(route: Dict[str, Any], weights: Dict[str, float] | None = None) 
     ship = str(route.get("ship", "")).lower()
     issuer_mod = ISSUER_MODIFIERS.get(issuer, {})
     ship_mod = SHIP_MODIFIERS.get(ship, {})
-    total = 50.0
+    total = _BASE_SCORE
     trace = []
     warnings = []
     breakdown = {}
@@ -121,8 +147,8 @@ def score_route(route: Dict[str, Any], weights: Dict[str, float] | None = None) 
         warnings.append("Route-chain collapse risk detected.")
 
     score = clamp(total)
-    risk = "low" if score >= 75 else "medium" if score >= 50 else "high"
-    recommendation = "accept" if score >= 70 else "defer" if score >= 45 else "reject"
+    risk = "low" if score >= _RISK_LOW else "medium" if score >= _RISK_MEDIUM else "high"
+    recommendation = "accept" if score >= _ACCEPT_THRESHOLD else "defer" if score >= _DEFER_THRESHOLD else "reject"
     confidence = "medium" if unresolved or warnings else "high"
 
     output = {

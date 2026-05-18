@@ -1,5 +1,71 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "OCR Normalization Rules",
-  "type": "object"
+  "description": "Schema for runtime/OCR_normalization_rules.json. Defines alias tables and ingestion rules used by OCR_result_normalizer.py.",
+  "type": "object",
+  "required": ["dataset_name", "location_aliases"],
+  "properties": {
+    "dataset_name": {
+      "type": "string",
+      "description": "Human-readable identifier for this ruleset."
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when this file was last updated."
+    },
+    "issuer_aliases": {
+      "type": "object",
+      "description": "Map of raw OCR text variants to canonical issuer names. Keys are lowercase raw text; values are canonical strings.",
+      "additionalProperties": { "type": "string" }
+    },
+    "location_aliases": {
+      "type": "object",
+      "description": "Map of raw OCR text variants to canonical location names. Keys are partial or variant strings; values are canonical station names.",
+      "additionalProperties": { "type": "string" }
+    },
+    "ocr_ambiguity_handling": {
+      "type": "object",
+      "description": "Configuration for how ambiguous or low-confidence OCR matches are handled.",
+      "properties": {
+        "minimum_confidence_threshold": {
+          "type": "number",
+          "description": "OCR confidence below which a match is flagged for human review.",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "partial_match_strategy": {
+          "type": "string",
+          "description": "Strategy when a raw OCR string partially matches an alias key.",
+          "enum": ["retain_original_and_flag", "use_best_match", "reject"]
+        },
+        "multi_candidate_strategy": {
+          "type": "string",
+          "description": "Strategy when multiple alias keys match the same raw OCR string.",
+          "enum": ["store_candidates_without_forcing_resolution", "use_highest_confidence", "reject"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "deduplication_rules": {
+      "type": "array",
+      "description": "Plain-language rules for deduplicating missions ingested from overlapping screenshots.",
+      "items": { "type": "string" }
+    },
+    "partial_screenshot_ingestion": {
+      "type": "object",
+      "description": "Rules for handling screenshots where only part of the terminal is visible.",
+      "properties": {
+        "allowed": {
+          "type": "boolean",
+          "description": "Whether partial screenshots are accepted."
+        },
+        "preserve_missing_fields": {
+          "type": "boolean",
+          "description": "When true, fields not visible in a partial screenshot are set to UNRESOLVED rather than rejected."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
 }

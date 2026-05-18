@@ -1,8 +1,124 @@
 {
-  "workflow": "sample_Covalex_session",
-  "confidence": "medium",
-  "unresolved_fields": [
-    "ocr_partial_text"
+  "batch_summary": {
+    "accepted": 0,
+    "deferred": 3,
+    "issuer": "covalex",
+    "mission_count": 3,
+    "patch_version": "UNRESOLVED",
+    "rejected": 0,
+    "ship": "hull-b"
+  },
+  "governance_metadata": {
+    "advisory_only": true,
+    "confidence_level": "high",
+    "contributor_trust_tier": "T0",
+    "derivation_type": "batch_deterministic_scoring",
+    "operational_assurance_state": "implemented",
+    "patch_era": "UNRESOLVED",
+    "provenance_chain": [
+      {
+        "sha256": "9f8a9c196f88f0249bc10199dc9b1653cc0157d91e9e3407b49349398879409c",
+        "type": "batch_input_hash"
+      }
+    ],
+    "source_class": "deterministic_output",
+    "telemetry_support_level": "none",
+    "unresolved_field_list": [],
+    "verification_status": "not_human_verified"
+  },
+  "ranked_missions": [
+    {
+      "cargo_scu": 64,
+      "cargo_type": "UNRESOLVED",
+      "delivery": [
+        "Covalex Hub Shopp-L4"
+      ],
+      "issuer": "covalex",
+      "mission_index": 0,
+      "operational_risk": "medium",
+      "pickup": "Port Olisar",
+      "recommendation": "defer",
+      "reward_usc": 50000,
+      "score": 50,
+      "score_breakdown": {},
+      "unresolved_fields": [],
+      "warnings": []
+    },
+    {
+      "cargo_scu": 48,
+      "cargo_type": "UNRESOLVED",
+      "delivery": [
+        "Baijini Point"
+      ],
+      "issuer": "covalex",
+      "mission_index": 1,
+      "operational_risk": "medium",
+      "pickup": "Port Olisar",
+      "recommendation": "defer",
+      "reward_usc": 38000,
+      "score": 50,
+      "score_breakdown": {},
+      "unresolved_fields": [],
+      "warnings": []
+    },
+    {
+      "cargo_scu": 32,
+      "cargo_type": "UNRESOLVED",
+      "delivery": [
+        "Port Olisar"
+      ],
+      "issuer": "covalex",
+      "mission_index": 2,
+      "operational_risk": "medium",
+      "pickup": "Seraphim Station",
+      "recommendation": "defer",
+      "reward_usc": 24000,
+      "score": 50,
+      "score_breakdown": {},
+      "unresolved_fields": [],
+      "warnings": []
+    }
   ],
-  "patch_version": "UNRESOLVED"
+  "same_pickup_stacking": {
+    "Port Olisar": [
+      0,
+      1
+    ]
+  },
+  "suggested_combined_route": {
+    "chain_analysis": {
+      "chain_collapse_risk": "medium",
+      "governance_metadata": {
+        "advisory_only": true,
+        "confidence_level": "high",
+        "contributor_trust_tier": "T0",
+        "derivation_type": "route_chain_analysis",
+        "operational_assurance_state": "implemented",
+        "patch_era": "UNRESOLVED",
+        "provenance_chain": [
+          {
+            "sha256": "010036e6692787fa9761ff7d8180d9bb51a82387872eec2f462c0ad394e28662",
+            "type": "route_chain_input_hash"
+          }
+        ],
+        "source_class": "deterministic_output",
+        "telemetry_support_level": "none",
+        "unresolved_field_list": [],
+        "verification_status": "not_human_verified"
+      },
+      "mission_count": 0,
+      "route_chain_continuity": "fragile",
+      "stop_count": 4,
+      "unique_stop_count": 4
+    },
+    "recommendation": "defer",
+    "same_pickup_bonus": 1,
+    "score": 60,
+    "stops": [
+      "Port Olisar",
+      "Seraphim Station",
+      "Covalex Hub Shopp-L4",
+      "Baijini Point"
+    ]
+  }
 }

@@ -1,8 +1,104 @@
 {
-  "workflow": "sample_dead_leg_recovery",
-  "confidence": "medium",
-  "unresolved_fields": [
-    "ocr_partial_text"
+  "batch_summary": {
+    "accepted": 0,
+    "deferred": 1,
+    "issuer": "red wind",
+    "mission_count": 2,
+    "patch_version": "UNRESOLVED",
+    "rejected": 1,
+    "ship": "hull-b"
+  },
+  "governance_metadata": {
+    "advisory_only": true,
+    "confidence_level": "high",
+    "contributor_trust_tier": "T0",
+    "derivation_type": "batch_deterministic_scoring",
+    "operational_assurance_state": "implemented",
+    "patch_era": "UNRESOLVED",
+    "provenance_chain": [
+      {
+        "sha256": "01b941d150666edd85ff0d728524f0ec2a06470a330a6864693c1d18e1ac483c",
+        "type": "batch_input_hash"
+      }
+    ],
+    "source_class": "deterministic_output",
+    "telemetry_support_level": "none",
+    "unresolved_field_list": [],
+    "verification_status": "not_human_verified"
+  },
+  "ranked_missions": [
+    {
+      "cargo_scu": 48,
+      "cargo_type": "UNRESOLVED",
+      "delivery": [
+        "Port Olisar"
+      ],
+      "issuer": "red wind",
+      "mission_index": 1,
+      "operational_risk": "medium",
+      "pickup": "Baijini Point",
+      "recommendation": "defer",
+      "reward_usc": 38000,
+      "score": 50,
+      "score_breakdown": {},
+      "unresolved_fields": [],
+      "warnings": []
+    },
+    {
+      "cargo_scu": 64,
+      "cargo_type": "UNRESOLVED",
+      "delivery": [
+        "MIC-L3 Endless Odyssey Station"
+      ],
+      "issuer": "red wind",
+      "mission_index": 0,
+      "operational_risk": "high",
+      "pickup": "MIC-L1 Shallow Frontier Station",
+      "recommendation": "reject",
+      "reward_usc": 55000,
+      "score": 34,
+      "score_breakdown": {
+        "dead_leg": -16.5
+      },
+      "unresolved_fields": [],
+      "warnings": [
+        "Dead-leg risk detected."
+      ]
+    }
   ],
-  "patch_version": "UNRESOLVED"
+  "same_pickup_stacking": {},
+  "suggested_combined_route": {
+    "chain_analysis": {
+      "chain_collapse_risk": "low",
+      "governance_metadata": {
+        "advisory_only": true,
+        "confidence_level": "high",
+        "contributor_trust_tier": "T0",
+        "derivation_type": "route_chain_analysis",
+        "operational_assurance_state": "implemented",
+        "patch_era": "UNRESOLVED",
+        "provenance_chain": [
+          {
+            "sha256": "21d0e62e924f73dd90bafe83d51f9ae7a0d5e91c77358b7e17242b428eff8813",
+            "type": "route_chain_input_hash"
+          }
+        ],
+        "source_class": "deterministic_output",
+        "telemetry_support_level": "none",
+        "unresolved_field_list": [],
+        "verification_status": "not_human_verified"
+      },
+      "mission_count": 0,
+      "route_chain_continuity": "fragile",
+      "stop_count": 2,
+      "unique_stop_count": 2
+    },
+    "recommendation": "defer",
+    "same_pickup_bonus": 0,
+    "score": 50,
+    "stops": [
+      "Baijini Point",
+      "Port Olisar"
+    ]
+  }
 }

@@ -1,1 +1,4 @@
-{"invalid": }
+{
+  "ship": "hull-b",
+  "stops": "not-a-list"
+}

@@ -1,5 +1,50 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Mission Extraction Pipeline",
-  "type": "object"
+  "description": "Schema for runtime/screenshot_ingestion_rules.json. Defines the 5-stage pipeline from screenshot OCR to acceptance recommendation.",
+  "type": "object",
+  "required": ["dataset_name", "pipeline_stages"],
+  "properties": {
+    "dataset_name": {
+      "type": "string",
+      "description": "Human-readable identifier for this pipeline ruleset."
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when this file was last updated."
+    },
+    "pipeline_stages": {
+      "type": "array",
+      "description": "Ordered list of pipeline stages. The standard pipeline has 5 stages.",
+      "items": {
+        "type": "object",
+        "required": ["stage", "name", "description"],
+        "properties": {
+          "stage": {
+            "type": "integer",
+            "description": "Stage number, 1-indexed.",
+            "minimum": 1
+          },
+          "name": {
+            "type": "string",
+            "description": "Machine-readable stage identifier.",
+            "enum": [
+              "ocr_extraction",
+              "canonical_normalization",
+              "route_overlap_analysis",
+              "route_scoring",
+              "mission_acceptance_recommendation"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "description": "Human-readable description of what this stage does."
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false
 }

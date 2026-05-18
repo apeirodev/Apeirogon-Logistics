@@ -1,76 +1,90 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Governance Metadata",
+  "description": "Provenance and trustworthiness envelope attached to every pipeline output. Fields match REQUIRED_GOVERNANCE_FIELDS in tools/lib/common.py.",
   "type": "object",
+  "required": [
+    "source_class",
+    "provenance_chain",
+    "confidence_level",
+    "verification_status",
+    "patch_era",
+    "telemetry_support_level",
+    "operational_assurance_state",
+    "unresolved_field_list",
+    "advisory_only",
+    "contributor_trust_tier",
+    "derivation_type"
+  ],
   "properties": {
-    "derivation_type": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "confidence_level": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "telemetry_support_level": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "patch_validation_status": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "source_trust_floor": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "AI_generation_allowed": {
-      "type": "boolean"
-    },
-    "human_confirmation_required": {
-      "type": "boolean"
-    },
-    "calibration_generation": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "telemetry_freshness": {
-      "type": [
-        "string",
-        "null"
+    "source_class": {
+      "type": "string",
+      "description": "Provenance class of the data that produced this output.",
+      "enum": [
+        "deterministic_output",
+        "ai_vision_extraction",
+        "ai_output",
+        "OCR_extraction",
+        "telemetry_observational",
+        "user_profile_validation",
+        "session_state_validation",
+        "manual_entry"
       ]
     },
     "provenance_chain": {
-      "type": "array"
+      "type": "array",
+      "description": "Ordered list of provenance entries tracing this output back to its inputs.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string" },
+          "sha256": { "type": "string" }
+        }
+      }
     },
-    "governance_review_status": {
-      "type": [
-        "string",
-        "null"
-      ]
+    "confidence_level": {
+      "type": "string",
+      "description": "Confidence in the output's accuracy. 'high' when no UNRESOLVED fields; 'medium' otherwise.",
+      "enum": ["high", "medium", "low", "UNRESOLVED"]
     },
-    "operational_assurance_level": {
-      "type": [
-        "string",
-        "null"
-      ]
+    "verification_status": {
+      "type": "string",
+      "description": "Whether a human has confirmed the output against source material.",
+      "enum": ["not_human_verified", "human_verified", "peer_reviewed"]
+    },
+    "patch_era": {
+      "type": "string",
+      "description": "Star Citizen patch version in effect when this output was produced, or 'UNRESOLVED'."
+    },
+    "telemetry_support_level": {
+      "type": "string",
+      "description": "Degree to which this output is backed by real session telemetry.",
+      "enum": ["none", "partial", "observational", "full"]
+    },
+    "operational_assurance_state": {
+      "type": "string",
+      "description": "Maturity/validation state of the scoring logic that produced this output.",
+      "enum": ["designed", "implemented", "operational", "validated", "community_validated"]
+    },
+    "unresolved_field_list": {
+      "type": "array",
+      "description": "List of field names in this output that carry the UNRESOLVED sentinel.",
+      "items": { "type": "string" }
+    },
+    "advisory_only": {
+      "type": "boolean",
+      "description": "Must always be true. Outputs from this pipeline are advisory, never authoritative.",
+      "const": true
     },
     "contributor_trust_tier": {
-      "type": [
-        "string",
-        "null"
-      ]
+      "type": "string",
+      "description": "Trust tier of the source or contributor. T0 = system-generated; T4 = unvetted external.",
+      "enum": ["T0", "T1", "T2", "T3", "T4"]
+    },
+    "derivation_type": {
+      "type": "string",
+      "description": "Label for the specific pipeline stage or algorithm that produced this output."
     }
-  }
+  },
+  "additionalProperties": false
 }

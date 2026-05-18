@@ -1,8 +1,94 @@
 {
-  "workflow": "sample_fragmented_cargo_route",
-  "confidence": "medium",
-  "unresolved_fields": [
-    "ocr_partial_text"
+  "batch_summary": {
+    "accepted": 0,
+    "deferred": 0,
+    "issuer": "covalex",
+    "mission_count": 1,
+    "patch_version": "UNRESOLVED",
+    "rejected": 1,
+    "ship": "hull-b"
+  },
+  "governance_metadata": {
+    "advisory_only": true,
+    "confidence_level": "high",
+    "contributor_trust_tier": "T0",
+    "derivation_type": "batch_deterministic_scoring",
+    "operational_assurance_state": "implemented",
+    "patch_era": "UNRESOLVED",
+    "provenance_chain": [
+      {
+        "sha256": "5321def60abb3e712db5c0ef27089289afa66e54c09e88854b6b7c94bde8598d",
+        "type": "batch_input_hash"
+      }
+    ],
+    "source_class": "deterministic_output",
+    "telemetry_support_level": "none",
+    "unresolved_field_list": [],
+    "verification_status": "not_human_verified"
+  },
+  "ranked_missions": [
+    {
+      "cargo_scu": 128,
+      "cargo_type": "UNRESOLVED",
+      "delivery": [
+        "Baijini Point",
+        "Seraphim Station",
+        "ARC-L1 Wide Forest Station",
+        "CRU-L1 Ambitious Dream Station"
+      ],
+      "issuer": "covalex",
+      "mission_index": 0,
+      "operational_risk": "high",
+      "pickup": "Port Olisar",
+      "recommendation": "reject",
+      "reward_usc": 85000,
+      "score": 0,
+      "score_breakdown": {
+        "fragmentation": -52.8,
+        "stop_density": -12.0
+      },
+      "unresolved_fields": [],
+      "warnings": [
+        "Cargo fragmentation exceeds recommended deterministic threshold."
+      ]
+    }
   ],
-  "patch_version": "UNRESOLVED"
+  "same_pickup_stacking": {},
+  "suggested_combined_route": {
+    "chain_analysis": {
+      "chain_collapse_risk": "medium",
+      "governance_metadata": {
+        "advisory_only": true,
+        "confidence_level": "high",
+        "contributor_trust_tier": "T0",
+        "derivation_type": "route_chain_analysis",
+        "operational_assurance_state": "implemented",
+        "patch_era": "UNRESOLVED",
+        "provenance_chain": [
+          {
+            "sha256": "9b122503b6bbd9a3fa848b05488a34b40a03760145aff61390dc0705508cb546",
+            "type": "route_chain_input_hash"
+          }
+        ],
+        "source_class": "deterministic_output",
+        "telemetry_support_level": "none",
+        "unresolved_field_list": [],
+        "verification_status": "not_human_verified"
+      },
+      "mission_count": 0,
+      "route_chain_continuity": "fragile",
+      "stop_count": 5,
+      "unique_stop_count": 5
+    },
+    "recommendation": "reject",
+    "same_pickup_bonus": 0,
+    "score": 38,
+    "stops": [
+      "Port Olisar",
+      "Baijini Point",
+      "Seraphim Station",
+      "ARC-L1 Wide Forest Station",
+      "CRU-L1 Ambitious Dream Station"
+    ]
+  }
 }

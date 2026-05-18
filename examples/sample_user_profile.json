@@ -4,5 +4,7 @@
   "preferred_issuers": [
     "Covalex"
   ],
-  "telemetry_consent": true
+  "telemetry_consent": true,
+  "patch_version": "UNRESOLVED",
+  "data_export_timestamp": "2026-05-18T00:00:00Z"
 }

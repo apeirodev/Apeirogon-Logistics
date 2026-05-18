@@ -1,8 +1,92 @@
 {
-  "workflow": "sample_manual_copy_paste_workflow",
-  "confidence": "medium",
-  "unresolved_fields": [
-    "ocr_partial_text"
+  "batch_summary": {
+    "accepted": 0,
+    "deferred": 0,
+    "issuer": "covalex",
+    "mission_count": 1,
+    "patch_version": "UNRESOLVED",
+    "rejected": 1,
+    "ship": "hull-b"
+  },
+  "governance_metadata": {
+    "advisory_only": true,
+    "confidence_level": "low",
+    "contributor_trust_tier": "T0",
+    "derivation_type": "batch_deterministic_scoring",
+    "operational_assurance_state": "implemented",
+    "patch_era": "UNRESOLVED",
+    "provenance_chain": [
+      {
+        "sha256": "b7ffeb870511377a7298840ae72a995126a43710015d118709310b80b0357120",
+        "type": "batch_input_hash"
+      }
+    ],
+    "source_class": "deterministic_output",
+    "telemetry_support_level": "none",
+    "unresolved_field_list": [
+      "cargo_scu",
+      "delivery",
+      "reward_usc"
+    ],
+    "verification_status": "not_human_verified"
+  },
+  "ranked_missions": [
+    {
+      "cargo_scu": "UNRESOLVED",
+      "cargo_type": "UNRESOLVED",
+      "delivery": [
+        "UNRESOLVED"
+      ],
+      "issuer": "covalex",
+      "mission_index": 0,
+      "operational_risk": "high",
+      "pickup": "Port Olisar",
+      "recommendation": "reject",
+      "reward_usc": "UNRESOLVED",
+      "score": 44,
+      "score_breakdown": {},
+      "unresolved_fields": [
+        "delivery",
+        "cargo_scu",
+        "reward_usc"
+      ],
+      "warnings": [
+        "Unresolved values present; confidence downgraded and human review recommended."
+      ]
+    }
   ],
-  "patch_version": "UNRESOLVED"
+  "same_pickup_stacking": {},
+  "suggested_combined_route": {
+    "chain_analysis": {
+      "chain_collapse_risk": "low",
+      "governance_metadata": {
+        "advisory_only": true,
+        "confidence_level": "high",
+        "contributor_trust_tier": "T0",
+        "derivation_type": "route_chain_analysis",
+        "operational_assurance_state": "implemented",
+        "patch_era": "UNRESOLVED",
+        "provenance_chain": [
+          {
+            "sha256": "bbe2b1d1164367c1a3635991ae346f495454f316970dbf2cd2ce8ad0d54ebd29",
+            "type": "route_chain_input_hash"
+          }
+        ],
+        "source_class": "deterministic_output",
+        "telemetry_support_level": "none",
+        "unresolved_field_list": [],
+        "verification_status": "not_human_verified"
+      },
+      "mission_count": 0,
+      "route_chain_continuity": "stable",
+      "stop_count": 1,
+      "unique_stop_count": 1
+    },
+    "recommendation": "defer",
+    "same_pickup_bonus": 0,
+    "score": 50,
+    "stops": [
+      "Port Olisar"
+    ]
+  }
 }

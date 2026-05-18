@@ -1,8 +1,106 @@
 {
-  "workflow": "sample_Ling_session",
-  "confidence": "medium",
-  "unresolved_fields": [
-    "ocr_partial_text"
+  "batch_summary": {
+    "accepted": 0,
+    "deferred": 2,
+    "issuer": "ling",
+    "mission_count": 2,
+    "patch_version": "UNRESOLVED",
+    "rejected": 0,
+    "ship": "taurus"
+  },
+  "governance_metadata": {
+    "advisory_only": true,
+    "confidence_level": "high",
+    "contributor_trust_tier": "T0",
+    "derivation_type": "batch_deterministic_scoring",
+    "operational_assurance_state": "implemented",
+    "patch_era": "UNRESOLVED",
+    "provenance_chain": [
+      {
+        "sha256": "9de7a1c81d42c0e5aa842c37f55ca42dc1cacef446487d67013f24751f663cec",
+        "type": "batch_input_hash"
+      }
+    ],
+    "source_class": "deterministic_output",
+    "telemetry_support_level": "none",
+    "unresolved_field_list": [],
+    "verification_status": "not_human_verified"
+  },
+  "ranked_missions": [
+    {
+      "cargo_scu": 20,
+      "cargo_type": "UNRESOLVED",
+      "delivery": [
+        "Hurston"
+      ],
+      "issuer": "ling",
+      "mission_index": 0,
+      "operational_risk": "medium",
+      "pickup": "HUR-L1 Green Glade Station",
+      "recommendation": "defer",
+      "reward_usc": 18000,
+      "score": 50,
+      "score_breakdown": {},
+      "unresolved_fields": [],
+      "warnings": []
+    },
+    {
+      "cargo_scu": 16,
+      "cargo_type": "UNRESOLVED",
+      "delivery": [
+        "HUR-L2 Faithful Dream Station"
+      ],
+      "issuer": "ling",
+      "mission_index": 1,
+      "operational_risk": "medium",
+      "pickup": "HUR-L1 Green Glade Station",
+      "recommendation": "defer",
+      "reward_usc": 15000,
+      "score": 50,
+      "score_breakdown": {},
+      "unresolved_fields": [],
+      "warnings": []
+    }
   ],
-  "patch_version": "UNRESOLVED"
+  "same_pickup_stacking": {
+    "HUR-L1 Green Glade Station": [
+      0,
+      1
+    ]
+  },
+  "suggested_combined_route": {
+    "chain_analysis": {
+      "chain_collapse_risk": "low",
+      "governance_metadata": {
+        "advisory_only": true,
+        "confidence_level": "high",
+        "contributor_trust_tier": "T0",
+        "derivation_type": "route_chain_analysis",
+        "operational_assurance_state": "implemented",
+        "patch_era": "UNRESOLVED",
+        "provenance_chain": [
+          {
+            "sha256": "73b94c1ea4edaf27e2cfe733c391c996692918fa7cf85d0a47c873cf3f75697e",
+            "type": "route_chain_input_hash"
+          }
+        ],
+        "source_class": "deterministic_output",
+        "telemetry_support_level": "none",
+        "unresolved_field_list": [],
+        "verification_status": "not_human_verified"
+      },
+      "mission_count": 0,
+      "route_chain_continuity": "fragile",
+      "stop_count": 3,
+      "unique_stop_count": 3
+    },
+    "recommendation": "defer",
+    "same_pickup_bonus": 1,
+    "score": 66,
+    "stops": [
+      "HUR-L1 Green Glade Station",
+      "Hurston",
+      "HUR-L2 Faithful Dream Station"
+    ]
+  }
 }

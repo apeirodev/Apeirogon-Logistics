@@ -2,16 +2,14 @@
   "ship": "Hull-B",
   "issuer": "Covalex",
   "accepted_missions": [
-    "mission_01",
-    "mission_02"
+    0,
+    1
   ],
   "route_sequence": [
     "Baijini Point",
-    "Seraphim",
+    "Seraphim Station",
     "Everus Harbor"
   ],
-  "confidence": "medium",
-  "unresolved_fields": [
-    "exact_quantum_duration"
-  ]
+  "confidence_level": "medium",
+  "unresolved_fields": []
 }

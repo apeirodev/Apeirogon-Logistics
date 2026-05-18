@@ -1,8 +1,52 @@
 {
-  "workflow": "sample_deterministic_only_workflow",
-  "confidence": "medium",
-  "unresolved_fields": [
-    "ocr_partial_text"
-  ],
-  "patch_version": "UNRESOLVED"
+  "confidence_level": "high",
+  "deterministic_hash": "5be53e8e6d77857cd7aafebc92e595428a936d08b773f3dd312e455cb9b1a89e",
+  "governance_metadata": {
+    "advisory_only": true,
+    "confidence_level": "high",
+    "contributor_trust_tier": "T0",
+    "derivation_type": "deterministic_heuristic",
+    "operational_assurance_state": "implemented",
+    "patch_era": "UNRESOLVED",
+    "provenance_chain": [
+      {
+        "sha256": "cdaaf4797cde9cd4f3462cffe6baa42d62b07d8abe7918af0e235663824d62bd",
+        "type": "input_hash"
+      }
+    ],
+    "source_class": "deterministic_output",
+    "telemetry_support_level": "none",
+    "unresolved_field_list": [],
+    "verification_status": "not_human_verified"
+  },
+  "human_rationale": "Deterministic score 82/100 with low operational risk. Recommendation: accept.",
+  "machine_rationale": {
+    "negative_factors": [],
+    "positive_factors": [
+      {
+        "base_weight": 16,
+        "factor": "same_pickup",
+        "input_value": 2.0,
+        "modifier": 1.0,
+        "weighted_effect": 32.0
+      }
+    ]
+  },
+  "operational_risk": "low",
+  "recommendation": "accept",
+  "score": 82,
+  "score_breakdown": {
+    "same_pickup": 32.0
+  },
+  "unresolved_fields": [],
+  "warnings": [],
+  "weighted_decision_trace": [
+    {
+      "base_weight": 16,
+      "factor": "same_pickup",
+      "input_value": 2.0,
+      "modifier": 1.0,
+      "weighted_effect": 32.0
+    }
+  ]
 }

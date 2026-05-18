@@ -12,7 +12,5 @@
   ],
   "same_pickup": 1,
   "ship": "Hull-B",
-  "unresolved_fields": [
-    "exact_distance"
-  ]
+  "unresolved_fields": []
 }

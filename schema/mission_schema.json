@@ -1,11 +1,79 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Star Citizen Hauling Mission",
+  "description": "A single hauling mission as accepted by ingest_mission_batch.py and the deterministic scorer. All numeric fields may carry the string 'UNRESOLVED' when the value could not be read from the terminal.",
   "type": "object",
-  "required": [
-    "mission_id",
-    "pickup_location",
-    "delivery_locations",
-    "cargo"
-  ]
+  "required": ["pickup", "delivery"],
+  "properties": {
+    "issuer": {
+      "type": "string",
+      "description": "Mission-issuing company. Overrides the batch-level issuer when present. Examples: 'covalex', 'Ling Family', 'Red Wind'."
+    },
+    "pickup": {
+      "type": "string",
+      "description": "Canonical name of the pickup location, or 'UNRESOLVED'."
+    },
+    "delivery": {
+      "type": "array",
+      "description": "Ordered list of delivery stop names. Each entry is a canonical location name or 'UNRESOLVED'.",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "cargo_type": {
+      "type": "string",
+      "description": "Commodity label as shown on the terminal, or 'UNRESOLVED'."
+    },
+    "cargo_scu": {
+      "description": "Cargo volume in SCU, or 'UNRESOLVED'.",
+      "oneOf": [
+        { "type": "number", "minimum": 0 },
+        { "type": "string", "const": "UNRESOLVED" }
+      ]
+    },
+    "reward_usc": {
+      "description": "Mission reward in aUEC, or 'UNRESOLVED'.",
+      "oneOf": [
+        { "type": "number", "minimum": 0 },
+        { "type": "string", "const": "UNRESOLVED" }
+      ]
+    },
+    "fee_usc": {
+      "description": "Total fees deducted from reward (landing fees, freight elevator costs) in aUEC, or 'UNRESOLVED'.",
+      "oneOf": [
+        { "type": "number", "minimum": 0 },
+        { "type": "string", "const": "UNRESOLVED" }
+      ]
+    },
+    "timer_minutes": {
+      "description": "Mission timer in minutes, or 'UNRESOLVED'.",
+      "oneOf": [
+        { "type": "number", "minimum": 0 },
+        { "type": "string", "const": "UNRESOLVED" }
+      ]
+    },
+    "atmosphere": {
+      "description": "Number of atmosphere-entry stops on this mission. Used by scorer's atmosphere penalty.",
+      "oneOf": [
+        { "type": "number", "minimum": 0 },
+        { "type": "string", "const": "UNRESOLVED" }
+      ]
+    },
+    "fragmentation": {
+      "description": "Number of distinct delivery stops. Higher values increase fragmentation penalty.",
+      "oneOf": [
+        { "type": "number", "minimum": 0 },
+        { "type": "string", "const": "UNRESOLVED" }
+      ]
+    },
+    "unresolved_fields": {
+      "type": "array",
+      "description": "List of field names in this mission object that carry the UNRESOLVED sentinel.",
+      "items": { "type": "string" }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Free-text operator note attached to this mission. Not used in scoring."
+    }
+  },
+  "additionalProperties": false
 }

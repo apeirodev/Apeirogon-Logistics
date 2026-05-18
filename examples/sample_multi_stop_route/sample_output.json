@@ -1,8 +1,83 @@
 {
-  "workflow": "sample_multi_stop_route",
-  "confidence": "medium",
-  "unresolved_fields": [
-    "ocr_partial_text"
-  ],
-  "patch_version": "UNRESOLVED"
+  "confidence_level": "high",
+  "deterministic_hash": "499a77a858dbdbfcb56de091594d9dcd5541c628124b25ddcf26cf14777ccd2d",
+  "governance_metadata": {
+    "advisory_only": true,
+    "confidence_level": "high",
+    "contributor_trust_tier": "T0",
+    "derivation_type": "deterministic_heuristic",
+    "operational_assurance_state": "implemented",
+    "patch_era": "UNRESOLVED",
+    "provenance_chain": [
+      {
+        "sha256": "77377a2bf8d0bd37e2b143e0567fe8777f77908c873d476073e3b2bb512d15fe",
+        "type": "input_hash"
+      }
+    ],
+    "source_class": "deterministic_output",
+    "telemetry_support_level": "none",
+    "unresolved_field_list": [],
+    "verification_status": "not_human_verified"
+  },
+  "human_rationale": "Deterministic score 73/100 with medium operational risk. Recommendation: accept.",
+  "machine_rationale": {
+    "negative_factors": [
+      {
+        "base_weight": -6,
+        "factor": "stop_density",
+        "input_value": 1,
+        "modifier": 1.0,
+        "weighted_effect": -6.0
+      }
+    ],
+    "positive_factors": [
+      {
+        "base_weight": 16,
+        "factor": "same_pickup",
+        "input_value": 1.0,
+        "modifier": 1.0,
+        "weighted_effect": 16.0
+      },
+      {
+        "base_weight": 12,
+        "factor": "orbital_loop",
+        "input_value": 1.0,
+        "modifier": 1.05,
+        "weighted_effect": 12.6
+      }
+    ]
+  },
+  "operational_risk": "medium",
+  "recommendation": "accept",
+  "score": 73,
+  "score_breakdown": {
+    "orbital_loop": 12.6,
+    "same_pickup": 16.0,
+    "stop_density": -6.0
+  },
+  "unresolved_fields": [],
+  "warnings": [],
+  "weighted_decision_trace": [
+    {
+      "base_weight": 16,
+      "factor": "same_pickup",
+      "input_value": 1.0,
+      "modifier": 1.0,
+      "weighted_effect": 16.0
+    },
+    {
+      "base_weight": 12,
+      "factor": "orbital_loop",
+      "input_value": 1.0,
+      "modifier": 1.05,
+      "weighted_effect": 12.6
+    },
+    {
+      "base_weight": -6,
+      "factor": "stop_density",
+      "input_value": 1,
+      "modifier": 1.0,
+      "weighted_effect": -6.0
+    }
+  ]
 }

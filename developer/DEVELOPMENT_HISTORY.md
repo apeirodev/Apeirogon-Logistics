@@ -274,6 +274,12 @@ See `CHANGELOG_0_30_5.md` for full details.
 
 ---
 
-## Version 0.36.1 — Player Accessibility Release
+## Version 0.36.2 — Player Accessibility Release
 
 Introduced the `player/` directory with AI-native workflow: per-platform setup guides (Claude, ChatGPT, Gemini, Other), session start prompt, and embedded scoring logic so players can get route recommendations from any AI assistant without installing Python. Reorganized repository so all technical and developer files live under `developer/`, leaving the root clean for non-technical users. Established Semantic Versioning (Major.Minor.Patch) as the project versioning standard.
+
+---
+
+## Version 0.36.2 — Star Citizen Patch Update
+
+Set Star Citizen patch version to Alpha 4.8.0 across all canonical files: VERSION.json, patch_lineage_registry.json, example sessions and outputs, test fixtures, and documentation examples. Previous placeholder values (UNRESOLVED_REQUIRES_VALIDATION, UNRESOLVED, 4.x, 4.1, Alpha 3.23) replaced with the confirmed current patch.

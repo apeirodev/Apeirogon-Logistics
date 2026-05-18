@@ -2,7 +2,7 @@
   "cargo_scu": 32,
   "duration_minutes": 42,
   "issuer": "Covalex",
-  "patch_version": "UNRESOLVED",
+  "patch_version": "Alpha 4.8.0",
   "ship": "Hull-B",
   "unresolved_fields": [
     "server_fps"

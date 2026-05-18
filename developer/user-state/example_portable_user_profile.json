@@ -8,6 +8,6 @@
   "atmosphere_tolerance": null,
   "dead_leg_tolerance": null,
   "telemetry_consent": false,
-  "patch_version": null,
+  "patch_version": "Alpha 4.8.0",
   "data_export_timestamp": "2026-05-17T01:02:11Z"
 }

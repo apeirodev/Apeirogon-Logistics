@@ -7,7 +7,7 @@
     "contributor_trust_tier": "T0",
     "derivation_type": "deterministic_heuristic",
     "operational_assurance_state": "implemented",
-    "patch_era": "UNRESOLVED",
+    "patch_era": "Alpha 4.8.0",
     "provenance_chain": [
       {
         "sha256": "77377a2bf8d0bd37e2b143e0567fe8777f77908c873d476073e3b2bb512d15fe",

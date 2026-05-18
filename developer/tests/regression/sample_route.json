@@ -4,7 +4,7 @@
   "freight": 1,
   "issuer": "Covalex",
   "orbital_loop": 1,
-  "patch_version": "UNRESOLVED",
+  "patch_version": "Alpha 4.8.0",
   "route_sequence": [
     "Pickup A",
     "Drop B",

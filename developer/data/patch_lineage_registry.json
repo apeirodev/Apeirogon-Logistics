@@ -2,7 +2,7 @@
   "dataset_name": "publicA_patch_lineage_registry",
   "generated_at": "2026-05-17T00:41:37Z",
   "current_patch": {
-    "star_citizen_patch_version": null,
+    "star_citizen_patch_version": "Alpha 4.8.0",
     "patch_validation_status": "unvalidated_public_seed",
     "mechanic_generation": null
   },

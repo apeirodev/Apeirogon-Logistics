@@ -4,7 +4,7 @@
     "deferred": 2,
     "issuer": "ling",
     "mission_count": 2,
-    "patch_version": "UNRESOLVED",
+    "patch_version": "Alpha 4.8.0",
     "rejected": 0,
     "ship": "taurus"
   },
@@ -14,7 +14,7 @@
     "contributor_trust_tier": "T0",
     "derivation_type": "batch_deterministic_scoring",
     "operational_assurance_state": "implemented",
-    "patch_era": "UNRESOLVED",
+    "patch_era": "Alpha 4.8.0",
     "provenance_chain": [
       {
         "sha256": "9de7a1c81d42c0e5aa842c37f55ca42dc1cacef446487d67013f24751f663cec",
@@ -77,7 +77,7 @@
         "contributor_trust_tier": "T0",
         "derivation_type": "route_chain_analysis",
         "operational_assurance_state": "implemented",
-        "patch_era": "UNRESOLVED",
+        "patch_era": "Alpha 4.8.0",
         "provenance_chain": [
           {
             "sha256": "73b94c1ea4edaf27e2cfe733c391c996692918fa7cf85d0a47c873cf3f75697e",

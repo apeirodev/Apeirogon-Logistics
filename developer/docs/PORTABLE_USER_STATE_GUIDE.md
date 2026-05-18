@@ -37,7 +37,7 @@ Optional fields:
   "preferred_ship": "hull-b",
   "preferred_issuer": "covalex",
   "home_location": "Port Olisar",
-  "patch_version": "Alpha 3.23",
+  "patch_version": "Alpha 4.8.0",
   "reputation": {
     "covalex": 450,
     "ling family": 120
@@ -65,7 +65,7 @@ Minimal session state:
   "session_id": "session-2024-001",
   "ship": "hull-b",
   "issuer": "covalex",
-  "patch_version": "Alpha 3.23"
+  "patch_version": "Alpha 4.8.0"
 }
 ```
 
@@ -76,7 +76,7 @@ Extended example:
   "session_id": "session-2024-001",
   "ship": "hull-b",
   "issuer": "covalex",
-  "patch_version": "Alpha 3.23",
+  "patch_version": "Alpha 4.8.0",
   "session_start_epoch": 1700000000,
   "current_pickup": "Port Olisar",
   "completed_missions": [
@@ -103,7 +103,7 @@ Suggested folder structure:
 hauling-state/
   user_profile.json
   patches/
-    Alpha 3.23/
+    Alpha 4.8.0/
       sessions/
         2024-01-15.json
         2024-01-16.json

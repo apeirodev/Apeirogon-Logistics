@@ -4,7 +4,7 @@
     "deferred": 1,
     "issuer": "red wind",
     "mission_count": 2,
-    "patch_version": "UNRESOLVED",
+    "patch_version": "Alpha 4.8.0",
     "rejected": 1,
     "ship": "hull-b"
   },
@@ -14,7 +14,7 @@
     "contributor_trust_tier": "T0",
     "derivation_type": "batch_deterministic_scoring",
     "operational_assurance_state": "implemented",
-    "patch_era": "UNRESOLVED",
+    "patch_era": "Alpha 4.8.0",
     "provenance_chain": [
       {
         "sha256": "01b941d150666edd85ff0d728524f0ec2a06470a330a6864693c1d18e1ac483c",
@@ -76,7 +76,7 @@
         "contributor_trust_tier": "T0",
         "derivation_type": "route_chain_analysis",
         "operational_assurance_state": "implemented",
-        "patch_era": "UNRESOLVED",
+        "patch_era": "Alpha 4.8.0",
         "provenance_chain": [
           {
             "sha256": "21d0e62e924f73dd90bafe83d51f9ae7a0d5e91c77358b7e17242b428eff8813",

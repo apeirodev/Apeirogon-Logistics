@@ -4,7 +4,7 @@
     "deferred": 3,
     "issuer": "covalex",
     "mission_count": 3,
-    "patch_version": "UNRESOLVED",
+    "patch_version": "Alpha 4.8.0",
     "rejected": 0,
     "ship": "hull-b"
   },
@@ -14,7 +14,7 @@
     "contributor_trust_tier": "T0",
     "derivation_type": "batch_deterministic_scoring",
     "operational_assurance_state": "implemented",
-    "patch_era": "UNRESOLVED",
+    "patch_era": "Alpha 4.8.0",
     "provenance_chain": [
       {
         "sha256": "9f8a9c196f88f0249bc10199dc9b1653cc0157d91e9e3407b49349398879409c",
@@ -94,7 +94,7 @@
         "contributor_trust_tier": "T0",
         "derivation_type": "route_chain_analysis",
         "operational_assurance_state": "implemented",
-        "patch_era": "UNRESOLVED",
+        "patch_era": "Alpha 4.8.0",
         "provenance_chain": [
           {
             "sha256": "010036e6692787fa9761ff7d8180d9bb51a82387872eec2f462c0ad394e28662",

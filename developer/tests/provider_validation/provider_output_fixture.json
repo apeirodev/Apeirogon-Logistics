@@ -7,7 +7,7 @@
     "contributor_trust_tier": "T0",
     "derivation_type": "provider_output",
     "operational_assurance_state": "implemented",
-    "patch_era": "UNRESOLVED",
+    "patch_era": "Alpha 4.8.0",
     "provenance_chain": [],
     "source_class": "AI_generated_advisory",
     "telemetry_support_level": "none",

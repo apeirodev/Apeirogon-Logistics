@@ -1,6 +1,6 @@
 {
   "session_id": "example_session_001",
-  "patch_version": "UNRESOLVED",
+  "patch_version": "Alpha 4.8.0",
   "ship_used": "Hull-B",
   "issuer": "Covalex",
   "accepted_missions": [

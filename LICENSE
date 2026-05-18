@@ -19,7 +19,7 @@ require explicit written permission from the project owner.
 Full license text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
 Summary: https://creativecommons.org/licenses/by-nc/4.0/
 
-See LICENSE_DATA.md for the full CC BY-NC 4.0 terms.
+See LICENSES.md for human-readable coverage details and the MIT exception for .claude/rules/.
 
 Exception: Files in .claude/rules/ are derived from
 TikiTribe/claude-secure-coding-rules and retain their original MIT License.

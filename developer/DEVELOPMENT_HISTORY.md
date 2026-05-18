@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.40.2 — License Consolidation and Redundancy Cleanup
+
+Removed four redundant files with no active references. License files consolidated: deleted `LICENSE_CODE.md` and `LICENSE_DATA.md` — their content is fully covered by `LICENSE` and `LICENSES.md`. Updated `LICENSE` to reference `LICENSES.md` instead of the deleted file. Removed two developer stub files (`developer/manual_copy_paste_workflow.md`, `developer/user_export_import_workflow.md`) whose content is superseded by comprehensive equivalents in `developer/docs/`. Removed three thin/redirect docs with no references (`OFFLINE_OPERATION_GUIDE.md`, `OFFLINE_OPERATIONAL_WORKFLOW.md`, `DETERMINISTIC_FALLBACK_HANDBOOK.md`). No functionality changed.
+
+---
+
 ## Version 0.40.1 — Lua Addon Framework (Functionality Stub)
 
 Created `addon/` directory with a complete Lua 5.1 addon framework targeting CIG's future addon/plugin API. The architecture is fully designed and the deterministic scoring logic is implemented; all game API calls are clearly-marked placeholder stubs pending CIG's specification.

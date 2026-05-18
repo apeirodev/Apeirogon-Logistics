@@ -304,6 +304,12 @@
       "notes": "addon/ directory with complete Lua 5.1 architecture. Deterministic scoring logic complete. All game API calls are CIG_API.* placeholders pending CIG addon spec. Two-layer design: local deterministic scorer + optional AI provider commentary.",
       "source_id": "apeirogon_0_40_1_lua_addon_framework",
       "trust_level": "internal_derived"
+    },
+    {
+      "name": "Apeirogon Logistics 0.40.2 license consolidation and redundancy cleanup",
+      "notes": "Removed LICENSE_CODE.md, LICENSE_DATA.md (covered by LICENSE and LICENSES.md), two developer stub files superseded by docs/ equivalents, and three thin docs with no references.",
+      "source_id": "apeirogon_0_40_2_license_consolidation_cleanup",
+      "trust_level": "internal_derived"
     }
   ]
 }

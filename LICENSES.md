@@ -25,14 +25,15 @@ Full license text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
 
 ---
 
-## Third-Party Attribution
+## Exceptions — Files That Retain MIT License
 
-**TikiTribe/claude-secure-coding-rules** (MIT)
-Source: https://github.com/TikiTribe/claude-secure-coding-rules
+The following files are derived from [TikiTribe/claude-secure-coding-rules](https://github.com/TikiTribe/claude-secure-coding-rules) and retain their original **MIT License**. They are not covered by CC BY-NC 4.0:
 
-Security rules in `.claude/rules/` are adapted from this MIT-licensed project.
-The MIT license of the original source is noted here for attribution compliance.
-This project's adaptation of those rules is covered by CC BY-NC 4.0.
+- `.claude/rules/owasp-2025.md`
+- `.claude/rules/agent-security.md`
+- `.claude/rules/ai-security.md`
+
+The MIT License permits use, copy, modification, and distribution subject to inclusion of the copyright notice. See the source repository for the full MIT license text.
 
 ---
 

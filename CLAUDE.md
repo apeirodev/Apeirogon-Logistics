@@ -498,5 +498,5 @@ The following OWASP categories are not applicable to this codebase and should no
 
 ## Rule Source
 
-Rules adapted from [TikiTribe/claude-secure-coding-rules](https://github.com/TikiTribe/claude-secure-coding-rules) (MIT — original source).
-This project's adaptation is licensed CC BY-NC 4.0. Full upstream rule files: `.claude/rules/`
+Rules derived from [TikiTribe/claude-secure-coding-rules](https://github.com/TikiTribe/claude-secure-coding-rules) (MIT).
+Full upstream rule files: `.claude/rules/`

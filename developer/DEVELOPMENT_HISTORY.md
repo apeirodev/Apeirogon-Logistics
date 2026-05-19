@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.45.1: Player Uploads Sync Tool
+
+Added developer/tools/sync_player_uploads.py. Syncs the five player/uploads/ JSON files (scoring_config.json, OCR_normalization_rules.json, mission_issuer_profiles.json, mission_schema.json, ship_profiles.json) from their canonical developer sources. Each pair is compared ignoring the _copy_note field, which differs intentionally between canonical ("CANONICAL FILE") and player copy ("PLAYER COPY"). Running --check exits 1 if any copy differs from its canonical; --write updates all player copies while preserving their _copy_note. Added TestPlayerUploadsSync test and CI step in validation.yml.
+
+---
+
 ## Version 0.44.1: Scoring Number Validator
 
 Added developer/tools/validate_scoring_numbers.py. Reads scoring_config.json and the canonical scoring instruction template, then verifies that every numeric value in the template (base weights, score thresholds, modifier multipliers, and computed effective values like Covalex issuer alignment) matches the corresponding entry in the config. 23 checks covering all good factors, bad factors, score band thresholds, and key multipliers. Exits 1 on any mismatch or missing pattern. Added TestScoringNumbers test and a CI step in validation.yml. Any change to scoring_config.json weights that is not reflected in the template now fails the build immediately.

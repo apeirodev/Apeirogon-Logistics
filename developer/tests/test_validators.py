@@ -78,3 +78,12 @@ class TestScoringNumbers:
         assert result["valid"] is True, result
         assert result["mismatch_count"] == 0
         assert result["not_found_count"] == 0
+
+
+class TestPlayerUploadsSync:
+    def test_all_player_uploads_match_canonical(self):
+        result = subprocess.run(
+            [sys.executable, str(_TOOLS / "sync_player_uploads.py"), "--check"],
+            capture_output=True, text=True, cwd=str(_REPO)
+        )
+        assert result.returncode == 0, f"Player uploads sync check failed:\n{result.stderr}"

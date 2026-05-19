@@ -39,3 +39,6 @@ jobs:
 
       - name: Validate scoring numbers match config
         run: python tools/validate_scoring_numbers.py | python -c "import json,sys; d=json.load(sys.stdin); assert d['valid'], d; print('scoring numbers valid:', d['check_count'], 'checks')"
+
+      - name: Check player uploads match canonical sources
+        run: python tools/sync_player_uploads.py --check

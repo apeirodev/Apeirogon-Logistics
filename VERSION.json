@@ -6,9 +6,9 @@
     "telemetry_calibrated": false
   },
   "generated_utc": "2026-05-18T00:00:00Z",
-  "previous_version": "0.50.1",
+  "previous_version": "0.50.2",
   "project": "Apeirogon Logistics",
-  "release_type": "0.50.2_atmosphere_rule_correction",
+  "release_type": "0.51.1_hallucination_guard_expansion",
   "semantic_versioning": "three-level",
   "skipped_versions": [
     {
@@ -18,7 +18,7 @@
   ],
   "star_citizen_patch_version": "Alpha 4.8.0",
   "status": "stable_pre_release_deterministic_toolkit",
-  "version": "0.50.2",
+  "version": "0.51.1",
   "version_history": [
     {
       "version": "0.30.3",
@@ -139,6 +139,10 @@
     {
       "version": "0.50.2",
       "status": "atmosphere_rule_correction"
+    },
+    {
+      "version": "0.51.1",
+      "status": "hallucination_guard_expansion"
     }
   ]
 }

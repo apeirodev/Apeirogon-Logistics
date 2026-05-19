@@ -1,6 +1,6 @@
 # Project Status
 
-**Version:** 0.50.2  
+**Version:** 0.51.1  
 **Status:** Stable pre-release, deterministic toolkit  
 
 ## Current State

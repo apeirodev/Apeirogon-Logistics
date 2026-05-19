@@ -292,6 +292,28 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.51.1: Hallucination Guard Expansion
+
+Comprehensive review of all player-facing files and AI instruction content. Identified and fixed six categories of hallucination risk:
+
+1. Atmosphere weight override invitation removed from GENERALIZED_HAULING_HANDBOOK.md. The handbook previously told players to ask their AI to "reduce the atmosphere penalty" -- an explicit invitation to invent scoring weights. Replaced with a note that ship atmosphere modifiers are already built in and the AI should not be asked to override them.
+
+2. Scoring instruction block SHIP ADJUSTMENTS expanded from 4 ships to 19. Players on Hermes, Starlancer MAX, RAFT, Ironclad, Railen, C2/M2/A2 Hercules, Starfarer variants, Valkyrie, and Asgard previously got no ship-specific guidance. Added all tuned modifiers from scoring_config.json. Added "for unlisted ships, apply base weights and say so."
+
+3. Non-flyable ship guard added to RULES section. Hull-D, Hull-E, Banu Merchantman, and Galaxy have full data profiles but are not yet in the game. New rule instructs the AI to refuse scoring for these ships and tell the player they are speculative placeholders.
+
+4. Placeholder issuer guard added to RULES section and ISSUER ADJUSTMENTS. Hurston Dynamics, microTech, and ArcCorp are recognized by the OCR system but have no calibrated scoring modifiers. New rule instructs the AI to score these on base weights only and state this to the player. Also added to GENERALIZED_HAULING_HANDBOOK.md player copy.
+
+5. Unrecognized location classification rule added to RULES section. If a delivery location cannot be identified as an orbital station or a surface location, the AI must ask the player rather than guessing. Addresses cases where planet surface landing zones (not in OCR aliases) might be misclassified.
+
+6. Non-Hull-B cargo bay naming rule strengthened in CARGO PANEL TRACKING. Now explicitly requires the player to name each bay before tracking begins for any ship other than Hull-B. Prohibits constructing labels like "bay 1", "port bay", or "mid section" without player-supplied terms.
+
+Also updated GENERALIZED_HAULING_HANDBOOK.md ship table to include all 19 flyable ships with tuned modifiers.
+
+Synced scoring instruction block to all 7 SETUP files.
+
+---
+
 ## Version 0.50.2: Atmosphere Rule Correction
 
 Corrected the atmosphere location rule added in v0.50.1. The original rule was too broad ("never infer atmosphere status from training knowledge"). Replaced with an accurate rule: all stations are in space (orbital stations, Lagrange point stations, asteroid stations, space platforms) -- atmosphere landings only occur when delivering to a planet surface or moon surface. If all deliveries are to stations, the route is fully orbital. Ask the player only when the destination type is genuinely ambiguous.

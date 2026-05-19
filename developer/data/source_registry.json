@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.51.1 hallucination guard expansion",
+      "notes": "Removed atmosphere weight override invitation from GENERALIZED_HAULING_HANDBOOK. Expanded SHIP ADJUSTMENTS in instruction block from 4 to 19 ships. Added non-flyable ship guard (Hull-D, Hull-E, Merchantman, Galaxy). Added placeholder issuer guard (Hurston Dynamics, microTech, ArcCorp). Added unrecognized location classification rule. Strengthened non-Hull-B cargo bay naming rule. Synced to all 7 SETUP files.",
+      "source_id": "apeirogon_0_51_1_hallucination_guard_expansion",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.50.2 atmosphere rule correction",
       "notes": "Corrected overly broad atmosphere rule from v0.50.1. All stations (orbital, Lagrange, asteroid, platform) are in space. Atmosphere only for planet/moon surfaces. Ask player only when destination type is genuinely ambiguous.",
       "source_id": "apeirogon_0_50_2_atmosphere_rule_correction",

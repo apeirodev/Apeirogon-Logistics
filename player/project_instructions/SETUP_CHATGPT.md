@@ -121,7 +121,7 @@ When the player starts a session they will tell you their ship and current locat
 
 ### Step 4: Done
 
-Every new conversation you start inside this project will have these instructions active. Paste `session_start_prompt.md` at the start of each hauling session.
+Every new conversation you start inside this project will have these instructions active. Paste the session start block at the bottom of this page at the start of each hauling session.
 
 ---
 
@@ -133,7 +133,46 @@ If you don't have access to ChatGPT Projects, or you're on the mobile app, paste
 2. Paste the full instructions block above as your first message
 3. Paste the contents of `scoring_config.json` from `player/uploads/`; this gives ChatGPT the exact scoring weights since there are no uploaded files in this mode
 4. Wait for ChatGPT to confirm it understood
-5. Paste `session_start_prompt.md` with your ship and location
+5. Paste the session start block (below) with your ship and location
 6. Start pasting screenshots
 
 This works well but takes an extra minute at the start of each session.
+
+---
+
+## Starting a session
+
+At the start of each hauling session, paste this block into the chat. Fill in your ship and current location before sending. Leave "Patch version" blank if you do not know it.
+
+```
+Starting a hauling session.
+
+Ship: [your ship -- e.g. Hull-B, Taurus, Caterpillar]
+Current location: [where you are now -- e.g. Port Olisar, Baijini Point]
+Patch version: [optional -- e.g. Alpha 3.24]
+
+I'll paste screenshots of the contracts terminal. Score each mission and tell me which ones to take, which to skip, and the best order to run them if I'm taking more than one.
+```
+
+After you send that, paste screenshots of each contract. The AI will read the details from the image. If it cannot read a value clearly, it will ask you to type it.
+
+---
+
+**If the AI starts making up numbers**, paste this to reset it:
+
+```
+Stop. You are using numbers that are not in the screenshot I provided.
+Replace any invented value with UNRESOLVED.
+Only use numbers you can see in the images I give you.
+Do not use your training knowledge about Star Citizen prices or distances.
+Acknowledge this before continuing.
+```
+
+---
+
+**Tips**
+
+- Screenshot the full contract panel including the reward, cargo size, pickup, and delivery
+- If a contract has multiple delivery stops, scroll and screenshot each one
+- You can paste several screenshots in one message; the AI will score all of them
+- Tell the AI your current location so it can flag dead legs (missions where you fly empty to the pickup)

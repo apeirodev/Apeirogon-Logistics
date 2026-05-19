@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.48.1 inline session start in SETUP files",
+      "notes": "Added inline session start content to all 7 SETUP files. Each file now has a Starting a session section with the copy-pasteable session start block, hallucination reset block, and tips. All references to session_start_prompt.md updated to point to the inline section.",
+      "source_id": "apeirogon_0_48_1_setup_inline_session_start",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.47.1 score worksheet",
       "notes": "Added developer/tools/score_worksheet.py: interactive CLI that walks through scoring factors and produces a score, recommendation, and factor breakdown using the deterministic scorer. Prompts go to stderr so stdout is clean JSON with --json. Added 2 smoke tests; total 191 tests.",
       "source_id": "apeirogon_0_47_1_score_worksheet",

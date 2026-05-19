@@ -127,10 +127,49 @@ Click **Save**. Your Gem is ready. Open it whenever you want to haul.
 
 ## Option B: Standard Gemini (paste instructions each session)
 
-If you don't have Gemini Advanced, paste the full instructions block above as your first message at the start of each new conversation, then continue with `session_start_prompt.md`.
+If you don't have Gemini Advanced, paste the full instructions block above as your first message at the start of each new conversation, then use the session start block below.
 
 ---
 
 ## Note on image uploads
 
 Gemini supports pasting images directly into the chat. Take a screenshot of each contract panel in-game and paste it into your Gemini conversation. If Gemini cannot read a value from the image, it will ask you to type it; that is correct behaviour, not an error.
+
+---
+
+## Starting a session
+
+At the start of each hauling session, paste this block into the chat. Fill in your ship and current location before sending. Leave "Patch version" blank if you do not know it.
+
+```
+Starting a hauling session.
+
+Ship: [your ship -- e.g. Hull-B, Taurus, Caterpillar]
+Current location: [where you are now -- e.g. Port Olisar, Baijini Point]
+Patch version: [optional -- e.g. Alpha 3.24]
+
+I'll paste screenshots of the contracts terminal. Score each mission and tell me which ones to take, which to skip, and the best order to run them if I'm taking more than one.
+```
+
+After you send that, paste screenshots of each contract. The AI will read the details from the image. If it cannot read a value clearly, it will ask you to type it.
+
+---
+
+**If the AI starts making up numbers**, paste this to reset it:
+
+```
+Stop. You are using numbers that are not in the screenshot I provided.
+Replace any invented value with UNRESOLVED.
+Only use numbers you can see in the images I give you.
+Do not use your training knowledge about Star Citizen prices or distances.
+Acknowledge this before continuing.
+```
+
+---
+
+**Tips**
+
+- Screenshot the full contract panel including the reward, cargo size, pickup, and delivery
+- If a contract has multiple delivery stops, scroll and screenshot each one
+- You can paste several screenshots in one message; the AI will score all of them
+- Tell the AI your current location so it can flag dead legs (missions where you fly empty to the pickup)

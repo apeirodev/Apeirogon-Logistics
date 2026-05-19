@@ -12,7 +12,7 @@ This works with any AI that supports image uploads and lets you set a custom ins
 2. Copy everything between the lines below and paste it there
 3. Save it; you only need to do this once
 4. If your AI supports file uploads or a knowledge base, upload all eight files from `player/uploads/`
-5. From then on, use `session_start_prompt.md` at the start of each session
+5. From then on, use the session start block at the bottom of this page at the start of each session
 
 ---
 
@@ -22,7 +22,7 @@ This works with any AI that supports image uploads and lets you set a custom ins
 2. Paste the full instructions block below as your first message
 3. Wait for the AI to confirm it understood
 4. Paste the contents of any files from `player/uploads/` that your AI will accept (even pasting `scoring_config.json` helps)
-5. Then paste `session_start_prompt.md` with your ship and location
+5. Then paste the session start block (below) with your ship and location
 6. Start pasting screenshots
 
 ---
@@ -120,8 +120,47 @@ When the player starts a session they will tell you their ship and current locat
 
 ## Does my AI support image uploads?
 
-Most modern AI assistants do. If yours does not, you can type out the contract details instead of pasting a screenshot. See `session_start_prompt.md` for guidance on what information to include.
+Most modern AI assistants do. If yours does not, you can type out the contract details instead of pasting a screenshot. The session start block below shows what information to include.
 
 ## Local models (LM Studio, Ollama)
 
 Local models vary widely in how well they follow instructions and how reliably they read images. The instructions above work the same way; paste them as a system prompt in your local model interface. If the model ignores the rules and starts inventing numbers, it may not be capable enough for reliable contract scoring. Try a larger model if available.
+
+---
+
+## Starting a session
+
+At the start of each hauling session, paste this block into the chat. Fill in your ship and current location before sending. Leave "Patch version" blank if you do not know it.
+
+```
+Starting a hauling session.
+
+Ship: [your ship -- e.g. Hull-B, Taurus, Caterpillar]
+Current location: [where you are now -- e.g. Port Olisar, Baijini Point]
+Patch version: [optional -- e.g. Alpha 3.24]
+
+I'll paste screenshots of the contracts terminal. Score each mission and tell me which ones to take, which to skip, and the best order to run them if I'm taking more than one.
+```
+
+After you send that, paste screenshots of each contract. The AI will read the details from the image. If it cannot read a value clearly, it will ask you to type it.
+
+---
+
+**If the AI starts making up numbers**, paste this to reset it:
+
+```
+Stop. You are using numbers that are not in the screenshot I provided.
+Replace any invented value with UNRESOLVED.
+Only use numbers you can see in the images I give you.
+Do not use your training knowledge about Star Citizen prices or distances.
+Acknowledge this before continuing.
+```
+
+---
+
+**Tips**
+
+- Screenshot the full contract panel including the reward, cargo size, pickup, and delivery
+- If a contract has multiple delivery stops, scroll and screenshot each one
+- You can paste several screenshots in one message; the AI will score all of them
+- Tell the AI your current location so it can flag dead legs (missions where you fly empty to the pickup)

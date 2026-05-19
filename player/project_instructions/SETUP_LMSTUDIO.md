@@ -135,7 +135,7 @@ Pasting these two gives the model the exact numbers it needs. The other files ar
 1. Open LM Studio and load your model
 2. Start a new chat (system prompt should already be set)
 3. Paste `scoring_config.json` and `mission_issuer_profiles.json` content into chat
-4. Paste `session_start_prompt.md` and fill in your ship and location
+4. Paste the session start block (below) with your ship and location
 5. Type out your contract details (or paste a screenshot if using a vision model)
 
 ---
@@ -147,3 +147,42 @@ Pasting these two gives the model the exact numbers it needs. The other files ar
 **Vision models** (Llama 3.2 11B Vision, LLaVA 1.6) can read screenshots directly. Load these the same way; they work in the Chat tab with image upload support.
 
 **Ollama users**: Ollama works the same way as LM Studio for this workflow. Use Open WebUI or any Ollama-compatible chat interface and set the system prompt there. The instructions block above is identical.
+
+---
+
+## Starting a session
+
+At the start of each hauling session, paste this block into the chat. Fill in your ship and current location before sending. Leave "Patch version" blank if you do not know it.
+
+```
+Starting a hauling session.
+
+Ship: [your ship -- e.g. Hull-B, Taurus, Caterpillar]
+Current location: [where you are now -- e.g. Port Olisar, Baijini Point]
+Patch version: [optional -- e.g. Alpha 3.24]
+
+I'll paste screenshots of the contracts terminal. Score each mission and tell me which ones to take, which to skip, and the best order to run them if I'm taking more than one.
+```
+
+After you send that, paste screenshots of each contract. The AI will read the details from the image. If it cannot read a value clearly, it will ask you to type it.
+
+---
+
+**If the AI starts making up numbers**, paste this to reset it:
+
+```
+Stop. You are using numbers that are not in the screenshot I provided.
+Replace any invented value with UNRESOLVED.
+Only use numbers you can see in the images I give you.
+Do not use your training knowledge about Star Citizen prices or distances.
+Acknowledge this before continuing.
+```
+
+---
+
+**Tips**
+
+- Screenshot the full contract panel including the reward, cargo size, pickup, and delivery
+- If a contract has multiple delivery stops, scroll and screenshot each one
+- You can paste several screenshots in one message; the AI will score all of them
+- Tell the AI your current location so it can flag dead legs (missions where you fly empty to the pickup)

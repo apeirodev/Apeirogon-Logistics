@@ -128,7 +128,7 @@ If file upload is not available in your notebook, paste the contents of `scoring
 
 ### Step 4: Done
 
-Open your notebook for each session, paste `session_start_prompt.md` with your ship and location, then paste screenshots of the contracts terminal.
+Open your notebook for each session, paste the session start block (below) with your ship and location, then paste screenshots of the contracts terminal.
 
 ---
 
@@ -138,7 +138,7 @@ Open your notebook for each session, paste `session_start_prompt.md` with your s
 2. Start a new conversation
 3. Paste the instructions block above as your first message
 4. Wait for Copilot to confirm it understood
-5. Paste `session_start_prompt.md` with your ship and location
+5. Paste the session start block (below) with your ship and location
 6. Paste screenshots of the contracts terminal
 
 Copilot supports image uploads in the chat; click the image icon or drag your screenshot in.
@@ -152,3 +152,42 @@ Copilot supports image uploads in the chat; click the image icon or drag your sc
 **Copilot in Windows / Microsoft 365**: The built-in Copilot (Windows taskbar, Teams, Edge sidebar) works the same way as the web version. Paste the instructions block at the start of the conversation.
 
 **Context length**: Copilot has a conversation context limit. For long sessions with many contracts, start a new conversation and paste the instructions again if responses become inconsistent.
+
+---
+
+## Starting a session
+
+At the start of each hauling session, paste this block into the chat. Fill in your ship and current location before sending. Leave "Patch version" blank if you do not know it.
+
+```
+Starting a hauling session.
+
+Ship: [your ship -- e.g. Hull-B, Taurus, Caterpillar]
+Current location: [where you are now -- e.g. Port Olisar, Baijini Point]
+Patch version: [optional -- e.g. Alpha 3.24]
+
+I'll paste screenshots of the contracts terminal. Score each mission and tell me which ones to take, which to skip, and the best order to run them if I'm taking more than one.
+```
+
+After you send that, paste screenshots of each contract. The AI will read the details from the image. If it cannot read a value clearly, it will ask you to type it.
+
+---
+
+**If the AI starts making up numbers**, paste this to reset it:
+
+```
+Stop. You are using numbers that are not in the screenshot I provided.
+Replace any invented value with UNRESOLVED.
+Only use numbers you can see in the images I give you.
+Do not use your training knowledge about Star Citizen prices or distances.
+Acknowledge this before continuing.
+```
+
+---
+
+**Tips**
+
+- Screenshot the full contract panel including the reward, cargo size, pickup, and delivery
+- If a contract has multiple delivery stops, scroll and screenshot each one
+- You can paste several screenshots in one message; the AI will score all of them
+- Tell the AI your current location so it can flag dead legs (missions where you fly empty to the pickup)

@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.48.1: Inline Session Start Prompt in All SETUP Files
+
+Added the session start prompt content inline to all seven SETUP files (SETUP_CHATGPT.md, SETUP_CLAUDE.md, SETUP_COPILOT.md, SETUP_GEMINI.md, SETUP_PERPLEXITY.md, SETUP_LMSTUDIO.md, SETUP_OTHER.md). Each file now has a "## Starting a session" section at the bottom containing the copy-pasteable session start block, the hallucination reset block, and tips -- players no longer need to open session_start_prompt.md separately. All references to session_start_prompt.md within the SETUP files were updated to point to the inline section.
+
+---
+
 ## Version 0.47.1: Interactive Score Worksheet
 
 Added developer/tools/score_worksheet.py. Interactive CLI tool that walks through scoring factors for a hauling route and produces a score, recommendation, and factor breakdown using the same deterministic scorer as the AI-assisted workflow. All prompts go to stderr so stdout is clean JSON when --json is used, making it safe to pipe. Fixed a display bug where the factor sign was printed twice (+{effect:+.1f} formatting). Added TestScoreWorksheet tests (test_json_output_accept, test_json_output_reject) to test_validators.py; total test count is now 191.

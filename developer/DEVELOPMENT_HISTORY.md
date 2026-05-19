@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.50.2: Atmosphere Rule Correction
+
+Corrected the atmosphere location rule added in v0.50.1. The original rule was too broad ("never infer atmosphere status from training knowledge"). Replaced with an accurate rule: all stations are in space (orbital stations, Lagrange point stations, asteroid stations, space platforms) -- atmosphere landings only occur when delivering to a planet surface or moon surface. If all deliveries are to stations, the route is fully orbital. Ask the player only when the destination type is genuinely ambiguous.
+
+---
+
 ## Version 0.50.1: Hallucination Guardrails Expanded
 
 Added five new rule sections to the scoring instruction block (developer/templates/scoring_instruction_block.md), synced to all 7 SETUP files:

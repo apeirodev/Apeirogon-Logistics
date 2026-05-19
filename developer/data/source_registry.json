@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.50.2 atmosphere rule correction",
+      "notes": "Corrected overly broad atmosphere rule from v0.50.1. All stations (orbital, Lagrange, asteroid, platform) are in space. Atmosphere only for planet/moon surfaces. Ask player only when destination type is genuinely ambiguous.",
+      "source_id": "apeirogon_0_50_2_atmosphere_rule_correction",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.50.1 hallucination guardrails expanded",
       "notes": "Added atmosphere/congestion/capacity rules to RULES, new CONTRACT READING section (field identification, partial screenshot handling, reward vs fee distinction), new SESSION STATE section (session reset, Available/Accepted/Delivered tracking, dead leg recalculation on accepted set change). Synced to all 7 SETUP files. Updated WHATS_NEW.md.",
       "source_id": "apeirogon_0_50_1_hallucination_guardrails_expanded",

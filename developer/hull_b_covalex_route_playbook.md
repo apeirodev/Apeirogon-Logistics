@@ -89,13 +89,26 @@ question matters as much as the route itself.
 
 ## Hull-B Cargo Panel Assignment
 
-The Hull-B has eight external cargo panels: top, bottom, port, starboard, front, and back. That is six named faces, but the spindle structure effectively gives you eight addressable panels when you count the forward and aft halves of the port and starboard sides.
+The Hull-B has eight cargo panel quadrants. These are the only valid names:
 
-**Operational practice**: assign each destination its own panel or set of panels. When you know Panel A is "Baijini Point" and Panel B is "Shopp-L4", unloading at each stop is fast and clean; you are not sorting through mixed cargo to find what belongs there.
+- Left top front
+- Left top back
+- Left bottom front
+- Left bottom back
+- Right top front
+- Right top back
+- Right bottom front
+- Right bottom back
 
-This is why the `cargo_panel_clarity` modifier exists for Hull-B (×1.15). A mission set where each destination maps neatly to a panel section scores better because it executes better. Fragmented routes, where you'd be pulling cargo from multiple panels at each stop, lose this advantage.
+Do not use any other names (not mid, not centre, not wide, not inner, not outer, not face). These eight names map directly to the CARGO PANEL TRACKING rules in the scoring instruction block, which require the AI to use this exact vocabulary.
 
-**Practical rule**: before loading, assign deliveries to panels mentally or in your notes. Prefer route sets where the number of destinations is ≤ the number of usable panels. When stacking three same-pickup Covalex missions to three different orbital stations, you get clean panel separation with cargo to spare.
+**Operational practice**: assign each destination its own quadrant or set of quadrants before loading. When "Left top front" is always Baijini Point cargo and "Right top front" is always Shopp-L4 cargo, unloading at each stop is fast and clean -- you focus one quadrant, unload it, and leave. You are not sorting through mixed boxes to find what belongs at the stop.
+
+This is why the `cargo_panel_clarity` modifier exists for Hull-B (x1.15). A mission set where each destination maps cleanly to its own quadrant scores better because it executes better. Fragmented routes where you pull cargo from multiple quadrants at each stop lose this advantage.
+
+**Practical rule**: before loading, assign deliveries to quadrants and write it down or tell your AI. Prefer route sets where the number of destinations is no more than the number of usable quadrants. When stacking three same-pickup Covalex missions to three different orbital stations, you get clean quadrant separation with space to spare.
+
+**Cargo ledger**: when loading across multiple accepted contracts, tell your AI the quadrant, commodity, SCU, and destination for each quadrant you load. The AI will track required vs planned vs observed and flag any mismatch. If the numbers do not match your contracts, stop before loading more.
 
 ---
 

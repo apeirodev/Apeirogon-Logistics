@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.49.1: Cargo Panel Tracking Rules
+
+Added CARGO PANEL TRACKING section to the scoring instruction block (developer/templates/scoring_instruction_block.md), synced to all 7 SETUP files. The section defines the Hull-B's 8 valid panel quadrant names (left/right x top/bottom x front/back), prohibits invented names with the same force as the no-invented-numbers rule, and requires a 4-state cargo ledger (required by contracts / planned panel state / observed loadout / variance) before every loading step. The response format for cargo tracking sessions is now standardised. Updated the Hull-B cargo panel section in both developer/hull_b_covalex_route_playbook.md and player/uploads/hull_b_covalex_route_playbook.md to replace vague panel terminology with the authoritative 8-quadrant vocabulary and added a cargo ledger explanation.
+
+---
+
 ## Version 0.48.1: Inline Session Start Prompt in All SETUP Files
 
 Added the session start prompt content inline to all seven SETUP files (SETUP_CHATGPT.md, SETUP_CLAUDE.md, SETUP_COPILOT.md, SETUP_GEMINI.md, SETUP_PERPLEXITY.md, SETUP_LMSTUDIO.md, SETUP_OTHER.md). Each file now has a "## Starting a session" section at the bottom containing the copy-pasteable session start block, the hallucination reset block, and tips -- players no longer need to open session_start_prompt.md separately. All references to session_start_prompt.md within the SETUP files were updated to point to the inline section.

@@ -7,6 +7,42 @@ Changes that are purely internal (tooling, CI, developer workflow) are not liste
 
 ---
 
+## v0.50.1 — Hallucination guardrails expanded (re-paste your instructions)
+
+**You need to re-paste the instruction block into your AI if you set it up before this version.**
+
+Five new rule sections were added to the instructions. Without re-pasting, your AI has no
+constraints against the following failure modes:
+
+**Atmosphere and congestion status from training data.** The AI will claim a route is fully
+orbital, or that a station is congested, based on its outdated training knowledge. Both are
+now explicitly player-reported only. If the screenshot does not show it, the AI must ask
+rather than infer.
+
+**Ship cargo capacity from training data.** If you ask whether your cargo fits, the AI will
+give a confident SCU number from its training. Capacity changes between patches. The AI is
+now instructed to tell you to check your in-game loadout screen instead.
+
+**Contract field confusion.** The AI can misread which field is reward vs fee vs collateral
+on the contracts terminal. The new CONTRACT READING section requires the AI to identify and
+show all fields before scoring, and to flag when a field is unclear.
+
+**Session state drift.** In long sessions the AI mixes up contracts from different messages.
+The new SESSION STATE section requires the AI to expire all prior contract data when a new
+session starts, and to track Available / Accepted / Delivered states explicitly.
+
+**Travel time and profit-per-hour estimates.** The AI now knows not to give these. They are
+not scoring inputs and the numbers are always invented.
+
+Also in this version: Hull-B cargo panel quadrant rules were added (v0.49.1) and the session
+start prompt was embedded inline in all SETUP files (v0.48.1). If you set up before v0.49.1,
+re-pasting covers all of these at once.
+
+**What to do:** Open your SETUP file for your platform, copy the instruction block, and
+re-paste it into your AI project or system prompt.
+
+---
+
 ## v0.42.1 — Scoring completeness fix (re-paste your instructions)
 
 **You need to re-paste the instruction block into your AI if you set it up before this version.**

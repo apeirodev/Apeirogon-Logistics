@@ -292,6 +292,20 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.50.1: Hallucination Guardrails Expanded
+
+Added five new rule sections to the scoring instruction block (developer/templates/scoring_instruction_block.md), synced to all 7 SETUP files:
+
+1. Atmosphere and congestion status: never infer from training knowledge; always player-reported or UNRESOLVED.
+2. Ship cargo capacity: never state from training knowledge; player checks in-game loadout screen.
+3. Travel time and profit-per-hour: explicitly prohibited as they are not scoring inputs.
+4. CONTRACT READING section: AI must state how many complete contracts are visible before scoring, identify all fields (pickup, delivery, commodity, SCU, reward, fee), distinguish reward from fee for net profit calculation, and output UNRESOLVED for any unclear or cut-off field rather than gap-filling.
+5. SESSION STATE section: session start message expires all prior contract data; contracts tracked as Available/Accepted/Delivered with player confirmation required for state transitions; dead legs and route order must be recalculated when the accepted set changes.
+
+Updated player/WHATS_NEW.md with v0.50.1 entry explaining all five changes and instructing players to re-paste.
+
+---
+
 ## Version 0.49.1: Cargo Panel Tracking Rules
 
 Added CARGO PANEL TRACKING section to the scoring instruction block (developer/templates/scoring_instruction_block.md), synced to all 7 SETUP files. The section defines the Hull-B's 8 valid panel quadrant names (left/right x top/bottom x front/back), prohibits invented names with the same force as the no-invented-numbers rule, and requires a 4-state cargo ledger (required by contracts / planned panel state / observed loadout / variance) before every loading step. The response format for cargo tracking sessions is now standardised. Updated the Hull-B cargo panel section in both developer/hull_b_covalex_route_playbook.md and player/uploads/hull_b_covalex_route_playbook.md to replace vague panel terminology with the authoritative 8-quadrant vocabulary and added a cargo ledger explanation.

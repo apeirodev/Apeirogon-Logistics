@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.50.1 hallucination guardrails expanded",
+      "notes": "Added atmosphere/congestion/capacity rules to RULES, new CONTRACT READING section (field identification, partial screenshot handling, reward vs fee distinction), new SESSION STATE section (session reset, Available/Accepted/Delivered tracking, dead leg recalculation on accepted set change). Synced to all 7 SETUP files. Updated WHATS_NEW.md.",
+      "source_id": "apeirogon_0_50_1_hallucination_guardrails_expanded",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.49.1 cargo panel tracking rules",
       "notes": "Added CARGO PANEL TRACKING section to scoring instruction block. Defines Hull-B 8 quadrant names, prohibits invented panel names, requires 4-state cargo ledger before every loading step. Synced to all 7 SETUP files. Updated Hull-B playbook panel section in both developer and player copies.",
       "source_id": "apeirogon_0_49_1_cargo_panel_tracking_rules",

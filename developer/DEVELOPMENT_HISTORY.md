@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.47.1: Interactive Score Worksheet
+
+Added developer/tools/score_worksheet.py. Interactive CLI tool that walks through scoring factors for a hauling route and produces a score, recommendation, and factor breakdown using the same deterministic scorer as the AI-assisted workflow. All prompts go to stderr so stdout is clean JSON when --json is used, making it safe to pipe. Fixed a display bug where the factor sign was printed twice (+{effect:+.1f} formatting). Added TestScoreWorksheet tests (test_json_output_accept, test_json_output_reject) to test_validators.py; total test count is now 191.
+
+---
+
 ## Version 0.46.1: Player Changelog
 
 Added player/WHATS_NEW.md. Plain-language release notes for players covering changes that affect their setup or scoring: 0.42.1 scoring completeness fix (two missing factors, UNRESOLVED cap), 0.41.x new platform guides and wording fixes, 0.38.1 ship expansion, and the original player folder introduction at 0.36.x. Distinct from DEVELOPMENT_HISTORY.md which is technical and developer-facing. Tells players specifically what to re-paste or reconfigure when they update.

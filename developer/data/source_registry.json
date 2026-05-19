@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.47.1 score worksheet",
+      "notes": "Added developer/tools/score_worksheet.py: interactive CLI that walks through scoring factors and produces a score, recommendation, and factor breakdown using the deterministic scorer. Prompts go to stderr so stdout is clean JSON with --json. Added 2 smoke tests; total 191 tests.",
+      "source_id": "apeirogon_0_47_1_score_worksheet",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.46.1 player changelog",
       "notes": "Added player/WHATS_NEW.md: plain-language release notes covering changes that affect player setup or scoring. Distinct from developer DEVELOPMENT_HISTORY.md.",
       "source_id": "apeirogon_0_46_1_player_changelog",

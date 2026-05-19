@@ -87,3 +87,28 @@ class TestPlayerUploadsSync:
             capture_output=True, text=True, cwd=str(_REPO)
         )
         assert result.returncode == 0, f"Player uploads sync check failed:\n{result.stderr}"
+
+
+class TestScoreWorksheet:
+    def test_json_output_accept(self):
+        piped = "hull-b\ncovalex\n0\n0\ny\n1\nn\ny\ny\ny\nn\nn\nn\nn\nn\n0\n"
+        result = subprocess.run(
+            [sys.executable, str(_TOOLS / "score_worksheet.py"), "--json"],
+            input=piped, capture_output=True, text=True, cwd=str(_REPO)
+        )
+        assert result.returncode == 0, f"score_worksheet.py exited non-zero:\n{result.stderr}"
+        data = json.loads(result.stdout)
+        assert data["recommendation"] in ("accept", "defer", "reject")
+        assert isinstance(data["score"], (int, float))
+        assert data.get("governance_metadata", {}).get("advisory_only") is True
+
+    def test_json_output_reject(self):
+        piped = "hull-b\n\n0\n0\nn\n4\n3\ny\nn\nn\nn\ny\nn\ny\ny\ny\n2\n"
+        result = subprocess.run(
+            [sys.executable, str(_TOOLS / "score_worksheet.py"), "--json"],
+            input=piped, capture_output=True, text=True, cwd=str(_REPO)
+        )
+        assert result.returncode == 0, f"score_worksheet.py exited non-zero:\n{result.stderr}"
+        data = json.loads(result.stdout)
+        assert data["recommendation"] in ("accept", "defer", "reject")
+        assert data["score"] < 60

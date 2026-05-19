@@ -36,3 +36,6 @@ jobs:
 
       - name: Check SETUP file scoring block sync
         run: python tools/sync_setup_scoring.py --check
+
+      - name: Validate scoring numbers match config
+        run: python tools/validate_scoring_numbers.py | python -c "import json,sys; d=json.load(sys.stdin); assert d['valid'], d; print('scoring numbers valid:', d['check_count'], 'checks')"

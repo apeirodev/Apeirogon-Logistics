@@ -70,3 +70,11 @@ class TestSetupSync:
             capture_output=True, text=True, cwd=str(_REPO)
         )
         assert result.returncode == 0, f"SETUP sync check failed:\n{result.stderr}"
+
+
+class TestScoringNumbers:
+    def test_template_matches_config(self):
+        result = _run_tool("validate_scoring_numbers.py")
+        assert result["valid"] is True, result
+        assert result["mismatch_count"] == 0
+        assert result["not_found_count"] == 0

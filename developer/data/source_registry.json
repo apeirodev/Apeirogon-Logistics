@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.44.1 scoring number validator",
+      "notes": "Added validate_scoring_numbers.py: 23 checks that all numeric values in the scoring instruction template match scoring_config.json. CI step added to validation.yml. Catches config-to-template drift immediately.",
+      "source_id": "apeirogon_0_44_1_scoring_number_validator",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.43.1 SETUP sync tool",
       "notes": "Added sync_setup_scoring.py and scoring_instruction_block.md template. Single canonical source for the scoring instruction block across all seven SETUP files. CI check step added to validation.yml. Prevents scoring factor drift.",
       "source_id": "apeirogon_0_43_1_setup_sync_tool",

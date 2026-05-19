@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.43.1: SETUP Sync Tool
+
+Added developer/tools/sync_setup_scoring.py and developer/templates/scoring_instruction_block.md. The tool maintains a single canonical source for the scoring instruction block that appears identically in all seven player SETUP files. Running with --check verifies all files match the template (exits 1 if any differ); running with --write injects the canonical block into all files. Added a test (TestSetupSync.test_all_setup_files_match_template) and a CI step to validation.yml so any drift between the template and the SETUP files fails the build immediately. This directly prevents the class of bug that caused 0.42.1 (two scoring factors missing from all SETUP files because they were added to scoring_config.json but not propagated to the player docs).
+
+---
+
 ## Version 0.42.3: README Maintainer Line Fix
 
 Removed apeirogon.gg from the README.md footer maintainer line.

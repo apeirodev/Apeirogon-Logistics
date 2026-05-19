@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.43.1 SETUP sync tool",
+      "notes": "Added sync_setup_scoring.py and scoring_instruction_block.md template. Single canonical source for the scoring instruction block across all seven SETUP files. CI check step added to validation.yml. Prevents scoring factor drift.",
+      "source_id": "apeirogon_0_43_1_setup_sync_tool",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.42.3 README maintainer line fix",
       "notes": "Removed apeirogon.gg from README.md footer maintainer line.",
       "source_id": "apeirogon_0_42_3_readme_maintainer_line_fix",

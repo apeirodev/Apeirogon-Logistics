@@ -33,3 +33,6 @@ jobs:
         run: |
           python tools/manifest_validator.py --root manifests --base . | python -c "import json,sys; d=json.load(sys.stdin); assert d['valid'], d; print('manifests valid:', d['manifest_count'])"
           python tools/manifest_validator.py --root . --base . --exclude "tests/*" | python -c "import json,sys; d=json.load(sys.stdin); assert d['valid'], d; print('root manifests valid:', d['manifest_count'])"
+
+      - name: Check SETUP file scoring block sync
+        run: python tools/sync_setup_scoring.py --check

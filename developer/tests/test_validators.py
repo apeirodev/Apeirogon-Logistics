@@ -61,3 +61,12 @@ class TestReleaseIntegrity:
         assert result["valid"] is True
         assert result["mismatch_count"] == 0
         assert result["missing_count"] == 0
+
+
+class TestSetupSync:
+    def test_all_setup_files_match_template(self):
+        result = subprocess.run(
+            [sys.executable, str(_TOOLS / "sync_setup_scoring.py"), "--check"],
+            capture_output=True, text=True, cwd=str(_REPO)
+        )
+        assert result.returncode == 0, f"SETUP sync check failed:\n{result.stderr}"

@@ -292,6 +292,12 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.46.1: Player Changelog
+
+Added player/WHATS_NEW.md. Plain-language release notes for players covering changes that affect their setup or scoring: 0.42.1 scoring completeness fix (two missing factors, UNRESOLVED cap), 0.41.x new platform guides and wording fixes, 0.38.1 ship expansion, and the original player folder introduction at 0.36.x. Distinct from DEVELOPMENT_HISTORY.md which is technical and developer-facing. Tells players specifically what to re-paste or reconfigure when they update.
+
+---
+
 ## Version 0.45.1: Player Uploads Sync Tool
 
 Added developer/tools/sync_player_uploads.py. Syncs the five player/uploads/ JSON files (scoring_config.json, OCR_normalization_rules.json, mission_issuer_profiles.json, mission_schema.json, ship_profiles.json) from their canonical developer sources. Each pair is compared ignoring the _copy_note field, which differs intentionally between canonical ("CANONICAL FILE") and player copy ("PLAYER COPY"). Running --check exits 1 if any copy differs from its canonical; --write updates all player copies while preserving their _copy_note. Added TestPlayerUploadsSync test and CI step in validation.yml.

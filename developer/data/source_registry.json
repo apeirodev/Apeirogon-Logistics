@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.46.1 player changelog",
+      "notes": "Added player/WHATS_NEW.md: plain-language release notes covering changes that affect player setup or scoring. Distinct from developer DEVELOPMENT_HISTORY.md.",
+      "source_id": "apeirogon_0_46_1_player_changelog",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.45.1 player uploads sync tool",
       "notes": "Added sync_player_uploads.py: syncs 5 player/uploads JSON files from canonical developer sources, comparing while ignoring the _copy_note field. CI check step added. Prevents player upload drift.",
       "source_id": "apeirogon_0_45_1_player_uploads_sync_tool",

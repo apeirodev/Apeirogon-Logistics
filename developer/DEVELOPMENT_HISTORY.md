@@ -292,6 +292,32 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.51.3: Cargo Panel Rules Expanded
+
+Full rewrite of the CARGO PANEL TRACKING section in the scoring instruction block based on a live test session error log. Eight issues identified by the player were addressed:
+
+1. One destination per panel added as a hard rule. AI must never propose mixing delivery destinations on a single panel.
+
+2. Drop-before-pickup added as a hard routing rule. Panel reuse within a run (deliver then reload) must sequence delivery first, pickup second. Enforced without player prompting. Dependency flagged in state table every time the panel appears.
+
+3. Destination overlap check added as a required step before proposing panel assignment on each new contract. Three outcome cases: full match (no new panels needed), partial match (N new destinations), no match (all new destinations). If no free panels remain, the AI must flag this explicitly.
+
+4. Contract swap comparison table added. When proposing to drop one contract for another, show pickup, commodity, SCU, reward, and panel impact for both.
+
+5. LOADED and PENDING PICKUP state tables are now mandatory separate tables. They must never be merged. A panel moves from PENDING PICKUP to LOADED only on explicit player confirmation -- screenshots do not count.
+
+6. SCU integrity rule added. All SCU totals must be derived from source contract data at every update -- never incremented from a prior running total. Discrepancies between source-derived and prior totals must be flagged immediately.
+
+7. Response format for contract intake standardized: (1) contract extraction, (2) overlap check, (3) panel assignment for this contract only. Full state table shown only on player request, conflict, or first contract of session. Column structure must not change during a session.
+
+8. Route sequencing rules: drop-before-pickup enforced in output, SHARED STOP labels required for stops that are both delivery and pickup, surface stop ordering deferred to player.
+
+Also added RETURNING to session phase list (PRE-DEPARTURE / IN-TRANSIT / AT-DESTINATION / RETURNING). Updated dead leg recalculation step to explicitly require source-derived totals, not increments.
+
+Synced instruction block to all 7 SETUP files.
+
+---
+
 ## Version 0.51.2: Cargo State Tracking Fix
 
 Three errors identified from live Claude.ai testing of a Hull-B multi-pickup session:

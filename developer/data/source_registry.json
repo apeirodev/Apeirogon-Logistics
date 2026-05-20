@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.51.3 cargo panel rules expanded",
+      "notes": "Full rewrite of CARGO PANEL TRACKING section. Added: one-destination-per-panel hard rule, drop-before-pickup hard routing rule with dependency flagging, destination overlap check on contract intake, contract swap comparison table, mandatory separate LOADED/PENDING PICKUP tables, SCU integrity rule (source-derived at every update), standardized contract intake response format, route sequencing rules. Added RETURNING to session phase list. Synced to all 7 SETUP files.",
+      "source_id": "apeirogon_0_51_3_cargo_panel_rules_expanded",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.51.2 cargo state tracking fix",
       "notes": "Three fixes from live test session: (1) screenshots do not advance cargo state -- only player confirmation does; (2) planned panel state table now includes loads-at and delivers-to columns to distinguish mid-route pickups from departure-point loads; (3) explicit PRE-DEPARTURE / IN-TRANSIT / AT-DESTINATION session phase field added to SESSION STATE. Synced to all 7 SETUP files.",
       "source_id": "apeirogon_0_51_2_cargo_state_tracking_fix",

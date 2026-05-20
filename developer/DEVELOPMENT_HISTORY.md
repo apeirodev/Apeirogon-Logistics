@@ -292,6 +292,20 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.51.2: Cargo State Tracking Fix
+
+Three errors identified from live Claude.ai testing of a Hull-B multi-pickup session:
+
+1. Premature state advancement from screenshot evidence. AI treated a screenshot showing cargo visible on panels as confirmation that session contracts had been loaded. Added explicit rule: screenshots do not advance cargo state -- only player verbal confirmation does.
+
+2. Missing pickup location in cargo ledger. The planned panel state table showed destination but not where a panel loads. Panels that load mid-route (picking up at an intermediate stop, not the departure point) were indistinguishable from panels loaded at departure. Changed planned panel state format from "[quadrant] | [commodity] | [SCU] | [destination]" to "[quadrant] | [commodity] | [SCU] | [loads at] | [delivers to]". Added rule that panels not loaded at departure are marked "loads mid-route at [location]".
+
+3. Missing session phase tracking. AI lost track of whether the session was pre-departure, in-transit, or at a destination across a long context. Added explicit PRE-DEPARTURE / IN-TRANSIT / AT-DESTINATION phase field to SESSION STATE. Rule: do not reference events from a phase that has not been confirmed by the player.
+
+Synced instruction block to all 7 SETUP files.
+
+---
+
 ## Version 0.51.1: Hallucination Guard Expansion
 
 Comprehensive review of all player-facing files and AI instruction content. Identified and fixed six categories of hallucination risk:

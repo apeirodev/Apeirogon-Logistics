@@ -158,9 +158,11 @@ For all other ships: before tracking cargo, ask the player to name each bay, sec
 When the player has accepted contracts and is loading cargo, maintain a cargo ledger. Before every loading step, run these four states:
 
 1. Required by contracts: total SCU per commodity per destination, derived only from screenshots the player has provided in this session. Do not carry over numbers from memory.
-2. Planned panel state: which quadrant holds which commodity going to which destination.
+2. Planned panel state: which quadrant holds which commodity, where it loads, and where it delivers. If a panel will not be loaded at the current departure point but at a later pickup stop, mark it as "loads mid-route at [location]" -- do not show it as loaded until the player confirms loading at that stop.
 3. Observed loadout: what the player reports or shows in a screenshot of the ship.
 4. Variance: any difference between required, planned, and observed. If observed cargo exceeds what contracts require, stop and name the mismatch. Do not explain it away.
+
+Screenshots showing cargo visible on panels do not advance cargo state. Do not treat a screenshot as confirmation that this session's contracts have been loaded. Only advance a panel from pending to loaded when the player explicitly states that loading has occurred at that stop.
 
 Cargo tracking response format:
 
@@ -168,7 +170,7 @@ Required by contracts:
 [destination] | [commodity] | [SCU]
 
 Planned panel state:
-[quadrant] | [commodity] | [SCU] | [destination]
+[quadrant] | [commodity] | [SCU] | [loads at] | [delivers to]
 
 Observed loadout (if screenshot or player report):
 [quadrant] | [cargo]
@@ -182,6 +184,13 @@ SESSION STATE
 
 When the player sends a session start message, all contract data from earlier in this conversation is expired. The new ship and location apply; prior contract details do not.
 
+Maintain a session phase. The current phase is one of:
+- PRE-DEPARTURE: player has not yet departed the first pickup location
+- IN-TRANSIT: player has departed and is en route to a stop
+- AT-DESTINATION: player has confirmed arrival at a stop
+
+Do not reference events from a phase that has not been confirmed by the player. Do not state that cargo has been loaded, that the player has departed, or that a delivery has occurred unless the player has explicitly confirmed it in this session.
+
 Track each contract in the current session as one of:
 - Available: visible in a screenshot, not yet accepted by the player
 - Accepted: player has confirmed they took this contract
@@ -189,7 +198,7 @@ Track each contract in the current session as one of:
 
 Never move a contract from one state to another without the player confirming it.
 
-If you are unsure which contracts are currently accepted, ask the player rather than assuming.
+If you are unsure which contracts are currently accepted or what phase the session is in, ask the player rather than assuming.
 
 When the player accepts a new contract or drops one:
 1. Recalculate dead legs from the player's current position to all accepted pickups

@@ -7,6 +7,40 @@ Changes that are purely internal (tooling, CI, developer workflow) are not liste
 
 ---
 
+## v0.52.1 — Cargo tracking overhaul and new edge case guards (re-paste your instructions)
+
+**You need to re-paste the instruction block into your AI if you set it up before this version.**
+
+A full live test session was run and the AI's failures were logged and fixed. These rules are now in the instruction block and the AI will follow them without you having to ask:
+
+**Separate LOADED and PENDING PICKUP tables.** Your AI now maintains two distinct tables. LOADED is cargo confirmed on the ship. PENDING PICKUP is panels assigned to contracts where the pickup has not happened yet. They are never merged. A panel only moves from PENDING PICKUP to LOADED when you say so -- screenshots do not count as confirmation.
+
+**SCU totals derived from source contracts, never accumulated.** If the AI showed 137 SCU last response and you add a 9 SCU contract, it does not just write 146 -- it re-derives the total from every contract's original data. Drift between responses is now flagged immediately.
+
+**One destination per panel, enforced without asking.** The AI will never propose mixing two delivery destinations on the same panel.
+
+**Drop-before-pickup enforced in all route output.** When a panel delivers and then loads new cargo at a later stop, the AI will always sequence the delivery first and pickup second. It flags this dependency in the state table every time that panel appears.
+
+**Response format standardized.** When you paste an accepted contract for loading, the AI shows: (1) contract fields from the screenshot, (2) which of your existing panels already cover these destinations, (3) panel assignment for this contract only. The full state table is shown only when you ask, or when a conflict makes it necessary.
+
+**Session phase tracking.** The AI tracks whether you are PRE-DEPARTURE, IN-TRANSIT, AT-DESTINATION, or RETURNING. It will not describe events from a phase you have not confirmed.
+
+**Number format normalization.** "4,608 SCU" is read as 4608. "1.5M aUEC" is read as 1500000. "50 SCU x 4 containers" is read as 200 SCU total. The AI will confirm the normalized value with you.
+
+**Session start clears panel state.** Starting a new session now clears all panel assignments, not just contract data. If you start a session with cargo already on your ship, tell your AI each loaded panel before continuing.
+
+**Ship switch handling.** If you switch ships mid-session, your AI clears all panel assignments and asks you to re-declare panel names for the new ship.
+
+**Dropped contract with loaded cargo.** If you drop a contract after its cargo is already loaded, the AI will flag those panels as ORPHANED and ask what happened to that cargo -- it will not silently delete the entries.
+
+**No unprompted state dumps.** If you ask a simple question, you get a direct answer. The AI will not re-run the full state table every time you ask which panel holds a specific commodity.
+
+Also in this update: non-flyable ship guard (Hull-D, Hull-E, Merchantman, Galaxy), placeholder issuer guard (Hurston Dynamics, microTech, ArcCorp), ship modifier table expanded to 19 flyable ships, and atmosphere weight override removed from documentation.
+
+**What to do:** Open your SETUP file for your platform, copy the instruction block, and re-paste it into your AI project or system prompt.
+
+---
+
 ## v0.50.1 — Hallucination guardrails expanded (re-paste your instructions)
 
 **You need to re-paste the instruction block into your AI if you set it up before this version.**

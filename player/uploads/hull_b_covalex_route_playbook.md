@@ -106,7 +106,7 @@ This is why the `cargo_panel_clarity` modifier exists for Hull-B (x1.15). A miss
 
 **Practical rule**: before loading, assign deliveries to quadrants and write it down or tell your AI. Prefer route sets where the number of destinations is no more than the number of usable quadrants. When stacking three same-pickup Covalex missions to three different orbital stations, you get clean quadrant separation with space to spare.
 
-**Cargo ledger**: when loading across multiple accepted contracts, tell your AI the quadrant, commodity, SCU, and destination for each quadrant you load. The AI will track required vs planned vs observed and flag any mismatch. If the numbers do not match your contracts, stop before loading more.
+**Cargo ledger**: your AI maintains two separate tables throughout the run -- LOADED (cargo you have confirmed is physically on the ship) and PENDING PICKUP (panels assigned to cargo you will collect at a later stop). A panel only moves from PENDING PICKUP to LOADED when you explicitly confirm loading; screenshots alone do not move it. When loading across multiple contracts, tell your AI the quadrant, commodity, SCU, pickup location, and destination for each panel. The AI tracks per-contract SCU from your original screenshot data -- it will never silently carry a running total forward. If it shows a total that does not match your contracts, it will flag the discrepancy and ask you to confirm.
 
 ---
 

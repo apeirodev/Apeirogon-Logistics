@@ -292,6 +292,40 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.52.1: Cargo Tracking Overhaul and Edge Case Guards
+
+Full review of all AI-relevant files. Updated scoring instruction block, hull_b_covalex_route_playbook.md, and WHATS_NEW.md.
+
+Extrapolated failure modes identified and guarded against:
+
+1. Number format normalization: "4,608" = 4608, "1.5M" = 1500000, "50 SCU x 4 containers" = 200 SCU total. AI must normalize and confirm with player.
+
+2. Screenshot reading limited to text fields: AI may not infer values from UI icons, color coding, progress bars, or background imagery. Non-text indicators must be UNRESOLVED.
+
+3. Terminal scrolling: added explicit rule that a screenshot does not show all available contracts. Evidence of a partial list must be noted.
+
+4. Same commodity, same destination, multiple contracts: tracked as separate rows per contract (one row per contract), not merged. Per-contract traceability required for SCU integrity.
+
+5. Player-reported SCU vs contract SCU conflict: discrepancy must be flagged immediately and player asked to confirm.
+
+6. Panel reassignment mid-session: all table rows referencing the reassigned panel must be updated. Stale references prohibited.
+
+7. Dropped contract with loaded cargo: panels become ORPHANED status. Player is asked what happened to the cargo before state tables are updated.
+
+8. Session start clears panel state: added explicit rule that panel assignments expire on session start, not just contract data. Player must declare pre-existing loaded panels before tracking continues.
+
+9. Ship switch mid-session: panel assignments cleared, player asked to re-declare panel names for new ship, new ship modifiers applied immediately.
+
+10. Output hygiene: added rule that responses must match the scope of the question. No unprompted state dumps, tips, or commentary beyond the specified response format.
+
+Playbook update: updated "Cargo ledger" paragraph in hull_b_covalex_route_playbook.md to describe the current LOADED/PENDING PICKUP dual-table format, source-derived SCU totals, and explicit confirmation requirement.
+
+WHATS_NEW.md: added v0.52.1 entry covering all changes since v0.50.1 with player-facing explanations and re-paste instruction.
+
+Synced instruction block to all 7 SETUP files.
+
+---
+
 ## Version 0.51.3: Cargo Panel Rules Expanded
 
 Full rewrite of the CARGO PANEL TRACKING section in the scoring instruction block based on a live test session error log. Eight issues identified by the player were addressed:

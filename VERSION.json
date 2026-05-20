@@ -6,9 +6,9 @@
     "telemetry_calibrated": false
   },
   "generated_utc": "2026-05-18T00:00:00Z",
-  "previous_version": "0.51.2",
+  "previous_version": "0.51.3",
   "project": "Apeirogon Logistics",
-  "release_type": "0.51.3_cargo_panel_rules_expanded",
+  "release_type": "0.52.1_cargo_tracking_overhaul_edge_cases",
   "semantic_versioning": "three-level",
   "skipped_versions": [
     {
@@ -18,7 +18,7 @@
   ],
   "star_citizen_patch_version": "Alpha 4.8.0",
   "status": "stable_pre_release_deterministic_toolkit",
-  "version": "0.51.3",
+  "version": "0.52.1",
   "version_history": [
     {
       "version": "0.30.3",
@@ -151,6 +151,10 @@
     {
       "version": "0.51.3",
       "status": "cargo_panel_rules_expanded"
+    },
+    {
+      "version": "0.52.1",
+      "status": "cargo_tracking_overhaul_edge_cases"
     }
   ]
 }

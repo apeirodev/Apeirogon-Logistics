@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.52.1 cargo tracking overhaul and edge case guards",
+      "notes": "Full review of all AI-relevant files. Instruction block additions: number format normalization rule, screenshot text-only rule, terminal scrolling note, per-contract row rule for duplicate commodity/destination, player vs contract SCU conflict flag, panel reassignment propagation, ORPHANED cargo state for dropped contracts, panel state cleared on session start, ship switch handling, output hygiene rule. Updated playbook cargo ledger section. Added v0.52.1 entry to WHATS_NEW.md. Synced to all 7 SETUP files.",
+      "source_id": "apeirogon_0_52_1_cargo_tracking_overhaul_edge_cases",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.51.3 cargo panel rules expanded",
       "notes": "Full rewrite of CARGO PANEL TRACKING section. Added: one-destination-per-panel hard rule, drop-before-pickup hard routing rule with dependency flagging, destination overlap check on contract intake, contract swap comparison table, mandatory separate LOADED/PENDING PICKUP tables, SCU integrity rule (source-derived at every update), standardized contract intake response format, route sequencing rules. Added RETURNING to session phase list. Synced to all 7 SETUP files.",
       "source_id": "apeirogon_0_51_3_cargo_panel_rules_expanded",

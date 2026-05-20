@@ -292,6 +292,24 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.53.1: Session Capability Gaps
+
+Five gaps identified from a live hauling session and addressed in the scoring instruction block:
+
+1. Panel state display suppression strengthened. Added explicit language that suppression is the default after the first contract. A one-line running SCU total is permitted per contract; the full state table is not. "Suppress means suppress" added to rule text.
+
+2. Capacity tracking added. At session start the AI asks the player for their confirmed in-game cargo capacity. Tracks combined SCU (LOADED + PENDING PICKUP) against that figure. Flags at 80% of confirmed capacity. Flags at or above confirmed capacity and blocks further assignments without override. If no capacity confirmed, shows running SCU total numerically for player self-monitoring.
+
+3. Mixed commodity, same destination rule made explicit. Multiple commodities may share a panel if and only if all deliver to the same destination. Each commodity listed as a separate row with its own SCU and mission reference.
+
+4. Scoring suspension toggle added to SESSION STATE. ACTIVE/SUSPENDED states with explicit player-triggered transitions. SUSPENDED state processes contract intake (extraction, overlap, panel assignment) but omits score recommendation. Does not auto-resume on route or issuer change. Acknowledges suspension state at each contract intake.
+
+5. Timer urgency flag added to HOW TO RESPOND. When timer is 90 minutes or less AND total delivery stop count across accepted contracts is 3 or more, adds a one-line flag after the recommendation. Does not estimate travel time. Does not assess achievability. Flags the combination for player assessment only.
+
+Synced to all 7 SETUP files.
+
+---
+
 ## Version 0.52.1: Cargo Tracking Overhaul and Edge Case Guards
 
 Full review of all AI-relevant files. Updated scoring instruction block, hull_b_covalex_route_playbook.md, and WHATS_NEW.md.

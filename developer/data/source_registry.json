@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.53.1 session capability gaps",
+      "notes": "Five gaps from live session: (1) panel state display suppression strengthened -- default suppress after first contract, one-line SCU total permitted; (2) capacity tracking added -- player confirms in-game capacity, AI flags at 80% and at limit; (3) mixed commodity same-destination rule made explicit -- permitted, each as separate row; (4) scoring suspension ACTIVE/SUSPENDED toggle added to SESSION STATE; (5) timer urgency flag added -- 90 min or less with 3+ stops triggers one-line flag without travel time estimation. Synced to all 7 SETUP files.",
+      "source_id": "apeirogon_0_53_1_session_capability_gaps",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.52.1 cargo tracking overhaul and edge case guards",
       "notes": "Full review of all AI-relevant files. Instruction block additions: number format normalization rule, screenshot text-only rule, terminal scrolling note, per-contract row rule for duplicate commodity/destination, player vs contract SCU conflict flag, panel reassignment propagation, ORPHANED cargo state for dropped contracts, panel state cleared on session start, ship switch handling, output hygiene rule. Updated playbook cargo ledger section. Added v0.52.1 entry to WHATS_NEW.md. Synced to all 7 SETUP files.",
       "source_id": "apeirogon_0_52_1_cargo_tracking_overhaul_edge_cases",

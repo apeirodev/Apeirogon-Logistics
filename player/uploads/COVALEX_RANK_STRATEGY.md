@@ -1,7 +1,9 @@
-COVALEX REPUTATION GUIDE: SENIOR TO MASTER
+COVALEX REPUTATION GUIDE: RANK FOCUS AT ANY RANK
 
 This guide covers the single-leg partial submit strategy for grinding Covalex reputation
-from Senior to Master rank efficiently.
+efficiently at any rank. The mechanic works the same whether you are at Associate,
+Member, Senior, or anywhere in between. The threshold and submission rules do not
+change with rank -- only contract size does.
 
 ---
 
@@ -30,13 +32,23 @@ rank progression.
 
 ---
 
-CONTRACT PATTERN
+CONTRACT PATTERNS BY RANK
 
-Senior-rank Covalex contracts are typically stellar routes between Lagrange
-stations and main stations. Common pattern: one pickup location delivering to
-four separate main stations.
+The partial submit mechanic works at every Covalex rank. Contract structure
+varies by rank, but the 26% rule is the same.
 
-Your job at the kiosk is to check whether any single leg in the contract
+Lower ranks (Associate, Member):
+  Contracts tend to be smaller in total SCU and may have fewer legs -- sometimes
+  just 2 to 3 destinations rather than 4. With fewer legs each leg is naturally a
+  larger share of the total, so hitting 26% is often easier. Planetary and moon
+  surface deliveries may appear in the mix.
+
+Higher ranks (Senior, Master):
+  Contracts grow in total SCU and typically run stellar routes between Lagrange
+  stations and main orbital stations. Four legs is common. Individual legs can
+  still represent well over 26% of the total.
+
+At any rank your job at the kiosk is the same: check whether any single leg
 represents 26% or more of the total cargo volume.
 
 If yes: accept the contract. At the pickup, load only the minimum qualifying
@@ -88,7 +100,7 @@ Your AI assistant can analyze contract screenshots and identify the best single
 leg for each contract automatically.
 
 To activate:
-  Tell your AI: "covalex rank mode"
+  Tell your AI: "covalex rank mode" (works at any Covalex rank)
 
 The AI will ask you to paste screenshots of all available master-rank contracts.
 For each contract it will show:
@@ -132,7 +144,12 @@ IMPORTANT NOTES
 
 Credits vs. Reputation: At the 25%+ tier you earn very few credits (~15% of
 the listed reward). This strategy is for rank grinding, not credit farming.
-If you need credits, run full contracts.
+It works at every rank. If you need credits, run full contracts instead.
+
+Lower-rank contracts and smaller SCU: at earlier ranks the minimum qualifying
+load will be lower in absolute SCU terms, so a smaller ship can run this
+strategy just as effectively. The AI calculates the minimum for whatever
+contract size you are working with.
 
 Abandoning is free: Abandoning a contract you have NOT yet accepted costs
 nothing. No rep penalty, no credit loss. If the contracts on offer are all

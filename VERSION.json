@@ -6,9 +6,9 @@
     "telemetry_calibrated": false
   },
   "generated_utc": "2026-05-23T00:00:00Z",
-  "previous_version": "0.54.1",
+  "previous_version": "0.54.2",
   "project": "Apeirogon Logistics",
-  "release_type": "0.54.2_covalex_rank_minimum_load_fix",
+  "release_type": "0.54.3_covalex_rank_all_ranks",
   "semantic_versioning": "three-level",
   "skipped_versions": [
     {
@@ -18,7 +18,7 @@
   ],
   "star_citizen_patch_version": "Alpha 4.8.0",
   "status": "stable_pre_release_deterministic_toolkit",
-  "version": "0.54.2",
+  "version": "0.54.3",
   "version_history": [
     {
       "version": "0.30.3",
@@ -167,6 +167,10 @@
     {
       "version": "0.54.2",
       "status": "covalex_rank_minimum_load_fix"
+    },
+    {
+      "version": "0.54.3",
+      "status": "covalex_rank_all_ranks"
     }
   ]
 }

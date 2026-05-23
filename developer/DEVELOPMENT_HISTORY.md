@@ -292,6 +292,25 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.54.3: Covalex Rank Mode Extended to All Ranks
+
+Removed the Senior-to-Master restriction from rank mode. The partial submit
+mechanic applies at every Covalex rank -- threshold and submission rules are
+identical across all ranks. Only contract size and leg count vary.
+
+Instruction block: trigger now also accepts "rank focus mode". Confirmation
+message no longer says "master-rank". Added note that lower-rank contracts have
+fewer legs and smaller total SCU, making the 26% threshold proportionally easier
+to hit. Threshold logic and output format unchanged.
+
+Handbook: retitled to "Rank Focus at Any Rank". CONTRACT PATTERN section replaced
+with CONTRACT PATTERNS BY RANK covering lower ranks (Associate, Member) and higher
+ranks (Senior, Master). Notes section updated with lower-rank guidance.
+
+Synced to all 7 SETUP files.
+
+---
+
 ## Version 0.54.2: Covalex Rank Minimum Load Fix
 
 Corrected the rank mode output to distinguish between the full leg SCU and the

@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.54.3 covalex rank mode extended to all ranks",
+      "notes": "Removed master-rank restriction from rank mode. Mechanic applies at any Covalex rank. Added 'rank focus mode' trigger. Confirmation message generalized. Note added that lower-rank contracts have fewer legs. Handbook retitled and CONTRACT PATTERN section replaced with CONTRACT PATTERNS BY RANK covering all rank tiers. Synced to all 7 SETUP files.",
+      "source_id": "apeirogon_0_54_3_covalex_rank_all_ranks",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.54.2 covalex rank minimum load fix",
       "notes": "Corrected rank mode to compute minimum qualifying SCU (total SCU x 0.26, rounded up) separately from full leg SCU. Output now shows full leg, minimum for rep, and space saved. Ranking updated to use minimum qualifying SCU. Stacking summary added: combined minimums vs confirmed capacity. Player workflow reminder updated. Handbook updated with minimum-load explanation and worked example. Synced to all 7 SETUP files.",
       "source_id": "apeirogon_0_54_2_covalex_rank_minimum_load_fix",

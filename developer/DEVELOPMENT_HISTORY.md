@@ -292,6 +292,33 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.54.1: Covalex Rank Strategy Mode
+
+New analysis mode for Covalex reputation grinding (Senior to Master rank).
+
+Added COVALEX RANK STRATEGY MODE section to scoring_instruction_block.md:
+- Trigger phrase: "covalex rank mode", "strategize covalex rank", or "senior to master mode"
+- Separate mode that suspends standard scoring and cargo panel tracking
+- Mechanic encoded: 25% game threshold, 26% working viability threshold with safety margin
+- Partial submission credit payout tiers documented: ~15% credits at 25-50%, ~45% at 51-75%, ~76% at 76-99%
+- For each contract: extracts all legs, calculates each leg's percentage of total SCU, identifies the highest-SCU single leg
+- NOT VIABLE contracts flagged with advice to abandon at the kiosk (no rep penalty)
+- Legs within 2 SCU of each other shown as tied options for player to choose
+- Ranking output: all contracts ordered by recommended-leg SCU descending
+- Player workflow reminder output once per mode entry: accept -> load one leg -> deliver -> submit manually
+- Mode exit: "exit rank mode", "back to scoring", or new session start
+
+Created player/uploads/COVALEX_RANK_STRATEGY.md:
+- Player-facing guide explaining the mechanic, payout tiers, and workflow
+- Two-contract stacking instructions
+- AI rank mode usage instructions with trigger phrase and output format
+- Workflow checklist
+- Notes on credits vs. rep trade-off, abandon-is-free rule, manual submit requirement, and capacity check reminder
+
+Synced to all 7 SETUP files.
+
+---
+
 ## Version 0.53.1: Session Capability Gaps
 
 Five gaps identified from a live hauling session and addressed in the scoring instruction block:

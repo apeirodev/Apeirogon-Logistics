@@ -322,28 +322,39 @@ Identify the recommended leg:
 
 If two legs are within 2 SCU of each other, show both as options and let the player choose.
 
+For the recommended leg, also calculate the minimum qualifying load:
+- Minimum qualifying SCU = total contract SCU multiplied by 0.26, rounded up to the nearest whole SCU
+- The player does not need to load the full leg -- only this minimum amount is required to earn reputation
+- Space saved = recommended leg SCU minus minimum qualifying SCU
+- If space saved is zero or negative, the full leg is already at or below the minimum threshold and must be fully loaded
+
 OUTPUT FORMAT PER CONTRACT:
 
 Contract [ref] -- [commodity] -- [total SCU] SCU total
-Recommended leg: [pickup location] --> [delivery destination] | [commodity] | [SCU] SCU ([X.X]% of contract)
-Payout tier: [15% credits / 45% credits / 76% credits] at this delivery volume
+Recommended leg: [pickup location] --> [destination] | [commodity]
+  Full leg: [Y] SCU ([Y/total X.X]%)
+  Minimum for rep: [Z] SCU (26% of [total], rounded up)
+  Space saved by loading minimum: [Y minus Z] SCU
+Payout tier at minimum load: ~15% credits, ~90-100% rep
 Status: VIABLE / NOT VIABLE
 [If NOT VIABLE: state the highest single-leg percentage achieved and advise abandoning at the kiosk]
-[If two legs are within 2 SCU: show both with percentages]
+[If two legs are within 2 SCU: show both with their minimum qualifying loads]
 
 RANKING:
-After analyzing all contracts, list them in order from highest recommended-leg SCU to lowest. The highest-SCU single leg delivers the most cargo per trip. Do not rank by percentage alone -- a 40% leg on a 50 SCU contract is worse than a 28% leg on a 200 SCU contract.
+After analyzing all contracts, list them in order from highest minimum qualifying SCU to lowest. This ranks by how much cargo must be loaded per contract -- the player can use this to plan stacking across ship capacity. Do not rank by percentage alone or by full leg SCU alone.
 
-If two contracts have equal recommended-leg SCU, prefer the one closer to the player's current position if location was stated. If location is unknown, flag the tie and ask the player to choose.
+If two contracts have equal minimum qualifying SCU, prefer the one with the lower full leg SCU (less excess cargo if the player chooses to fill the leg completely). If still tied, flag it and ask the player to choose.
+
+After ranking, show a stacking summary if multiple VIABLE contracts were analyzed: sum of minimum qualifying SCU across all VIABLE contracts versus the player's confirmed ship capacity (if known). If capacity was not confirmed, note it as required for stacking math.
 
 PLAYER WORKFLOW REMINDER (output this once when entering mode, do not repeat on every contract):
 1. At the contracts kiosk, check each contract before accepting -- if no single leg is >= 26% of total SCU, abandon it immediately (no rep penalty)
 2. Accept only VIABLE contracts
-3. Load only the cargo for the recommended leg at the recommended pickup location
-4. Fly to the recommended delivery destination only
+3. At the pickup location, load only the minimum qualifying SCU for each contract's recommended leg -- do not load the full leg unless you have capacity to spare
+4. Fly to each recommended delivery destination
 5. Deliver the cargo
-6. Open the contract manager and manually submit the contract
-7. Do not load or deliver the remaining legs -- leave those panels empty
+6. Open the contract manager and manually submit each contract after delivery
+7. Do not load or deliver any other legs -- leave those panels empty
 
 TO EXIT THIS MODE: the player says "exit rank mode", "back to scoring", or starts a new session message.
 

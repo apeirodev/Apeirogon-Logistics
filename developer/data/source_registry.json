@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.54.2 covalex rank minimum load fix",
+      "notes": "Corrected rank mode to compute minimum qualifying SCU (total SCU x 0.26, rounded up) separately from full leg SCU. Output now shows full leg, minimum for rep, and space saved. Ranking updated to use minimum qualifying SCU. Stacking summary added: combined minimums vs confirmed capacity. Player workflow reminder updated. Handbook updated with minimum-load explanation and worked example. Synced to all 7 SETUP files.",
+      "source_id": "apeirogon_0_54_2_covalex_rank_minimum_load_fix",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.54.1 covalex rank strategy mode",
       "notes": "New COVALEX RANK STRATEGY MODE in scoring instruction block. Trigger phrase activates separate analysis mode. Mechanic: 25% game threshold, 26% working threshold. Payout tiers: ~15% credits at 25-50% delivered, ~45% at 51-75%, ~76% at 76-99%. Per-contract analysis: extract all legs, calculate percentage of total SCU, recommend highest-SCU single leg, flag NOT VIABLE if below 26%. Ranking by recommended-leg SCU descending. Player workflow: accept -> load one leg -> deliver -> submit manually. Created player/uploads/COVALEX_RANK_STRATEGY.md player handbook. Synced to all 7 SETUP files.",
       "source_id": "apeirogon_0_54_1_covalex_rank_strategy_mode",

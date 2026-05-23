@@ -39,24 +39,46 @@ four separate main stations.
 Your job at the kiosk is to check whether any single leg in the contract
 represents 26% or more of the total cargo volume.
 
-If yes: accept the contract, load only that leg, deliver it, submit manually.
+If yes: accept the contract. At the pickup, load only the minimum qualifying
+SCU (26% of the contract total, rounded up) -- not necessarily the entire leg.
+Fly to that one destination, deliver, submit manually.
+
 If no: abandon the contract immediately. There is no rep penalty for abandoning
 before accepting. A new offer will appear.
 
+MINIMUM QUALIFYING LOAD:
+
+You do not have to load the entire highest-SCU leg. You only need to load
+enough to reach 26% of the contract's total SCU.
+
+Example:
+  Contract total: 200 SCU across 4 legs
+  Best leg: 80 SCU to Everus Harbor
+  26% of 200 = 52 SCU (minimum qualifying load)
+  Space saved: 80 - 52 = 28 SCU free for another contract
+
+Loading the minimum frees ship capacity to stack additional contracts in the
+same run. Your AI calculates this for you automatically in rank mode.
+
 ---
 
-HOW TO STACK TWO CONTRACTS
+HOW TO STACK MULTIPLE CONTRACTS
 
-If you can accept two contracts with the same pickup location and overlapping
-delivery destinations, you can run both in a single trip:
+If you can accept two or more contracts with the same pickup location, you can
+run them in a single trip by loading only the minimum qualifying SCU for each.
 
-- Accept both contracts at the kiosk
-- Load only the recommended leg from each contract
-- Deliver to each destination
-- Submit both contracts in the contract manager after delivery
+- Accept all VIABLE contracts at the kiosk
+- At the pickup location, load the minimum qualifying SCU for each contract's
+  recommended leg -- not the full leg
+- Deliver each load to its recommended destination
+- Submit each contract in the contract manager after its delivery
 
-Verify that both recommended legs fit within your ship's confirmed cargo capacity
-before accepting. Do not guess at capacity -- check your loadout screen in-game.
+Your AI will show a stacking summary when you are in rank mode: the sum of
+all minimum qualifying SCU loads across VIABLE contracts versus your confirmed
+ship capacity. This tells you exactly whether all the minimums fit in one run.
+
+Verify your ship's actual cargo capacity from the in-game loadout screen before
+accepting. Do not guess at capacity -- it changes with patches.
 
 ---
 
@@ -72,12 +94,16 @@ The AI will ask you to paste screenshots of all available master-rank contracts.
 For each contract it will show:
 
   Contract [ref] -- [commodity] -- [total SCU] SCU total
-  Recommended leg: [pickup] --> [destination] | [commodity] | [SCU] SCU ([X.X]%)
-  Payout tier: [credit tier at this delivery volume]
+  Recommended leg: [pickup] --> [destination] | [commodity]
+    Full leg: [Y] SCU ([Y/total]%)
+    Minimum for rep: [Z] SCU (26% of total, rounded up)
+    Space saved by loading minimum: [Y minus Z] SCU
+  Payout tier at minimum load: ~15% credits, ~90-100% rep
   Status: VIABLE / NOT VIABLE
 
-It will then rank all VIABLE contracts from highest to lowest recommended-leg
-SCU so you can pick the best option.
+It will then rank all VIABLE contracts by minimum qualifying SCU and show a
+stacking summary: total minimum SCU across all contracts versus your confirmed
+ship capacity.
 
 If a contract is marked NOT VIABLE -- no single leg reaches 26% -- abandon it
 at the kiosk and show the AI fresh screenshots of the replacement offers.
@@ -94,7 +120,7 @@ WORKFLOW CHECKLIST
   [ ] Review the AI's ranked output
   [ ] Abandon any NOT VIABLE contracts at the kiosk
   [ ] Accept VIABLE contracts
-  [ ] Load only the recommended leg cargo at the pickup location
+  [ ] At pickup: load only the minimum qualifying SCU per contract (not the full leg)
   [ ] Fly to the recommended delivery destination
   [ ] Deliver cargo
   [ ] Open contract manager -- manually submit the contract

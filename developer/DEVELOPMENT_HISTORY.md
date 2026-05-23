@@ -292,6 +292,32 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.54.2: Covalex Rank Minimum Load Fix
+
+Corrected the rank mode output to distinguish between the full leg SCU and the
+minimum qualifying load required to reach the 26% threshold.
+
+Key change: the AI now calculates minimum qualifying SCU = total contract SCU
+multiplied by 0.26, rounded up. It reports the full leg, the minimum for rep,
+and the space saved by loading only the minimum. Players should load the minimum
+to preserve ship capacity for stacking additional contracts.
+
+Ranking updated: contracts now rank by minimum qualifying SCU (not full leg SCU)
+to reflect the actual capacity cost per contract in a stacking run.
+
+Stacking summary added: after analyzing all contracts, the AI shows the combined
+minimum qualifying SCU across all VIABLE contracts versus confirmed ship capacity.
+
+Player workflow reminder updated to specify loading the minimum qualifying SCU at
+the pickup location, not the full leg.
+
+Player handbook (COVALEX_RANK_STRATEGY.md) updated with minimum-load explanation,
+worked example, and stacking instructions updated to reference minimum loads.
+
+Synced to all 7 SETUP files.
+
+---
+
 ## Version 0.54.1: Covalex Rank Strategy Mode
 
 New analysis mode for Covalex reputation grinding (Senior to Master rank).

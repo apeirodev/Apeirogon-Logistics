@@ -1,3 +1,5 @@
+> **LEGACY -- this guide describes the old two-step JSON extraction workflow (AI extracts JSON, Python scores it). The current workflow is AI-as-advisor: paste the instruction block from your platform's SETUP file in `player/project_instructions/` and use screenshots directly. This file is kept for historical reference only.**
+
 # Claude Usage Guide
 
 How to use Claude (claude.ai) as your screenshot OCR assistant for Apeirogon Logistics.

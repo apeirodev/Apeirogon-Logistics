@@ -31,8 +31,8 @@ the same pickup location add +32 to your combined route score. That's the
 difference between a 50-point (defer) individual mission and an 82-point
 (accept) combined run.
 
-**Look for Port Olisar clusters.** When three or more Covalex missions share
-Port Olisar as their pickup, accept all of them and deliver in one run.
+**Look for Hur-L2 clusters.** When three or more Covalex missions share
+Hur-L2 as their pickup, accept all of them and deliver in one run.
 
 ---
 
@@ -62,12 +62,12 @@ Port Olisar as their pickup, accept all of them and deliver in one run.
 At the mission terminal, before accepting anything:
 
 1. Note the pickup location of every available Covalex mission
-2. Group them by pickup: "Port Olisar × 3", "Microtech × 1", etc.
+2. Group them by pickup: "Hur-L2 × 3", "Microtech × 1", etc.
 3. Accept all missions from your largest pickup group first
 4. Only add missions from other pickups if they don't create dead legs
 
-If you have three Port Olisar missions and one ARC-L1 mission, accept the
-three Port Olisar missions and skip ARC-L1. Flying empty from Covalex Hub Shopp-L4
+If you have three Hur-L2 missions and one ARC-L1 mission, accept the
+three Hur-L2 missions and skip ARC-L1. Flying empty from Covalex Hub Shopp-L4
 to ARC-L1 to pick up costs more in time and positioning than the ARC-L1 mission earns.
 
 ---
@@ -82,7 +82,7 @@ Once you've accepted missions, order deliveries like this:
 4. **Return positioning**: end near your next pickup cluster
 
 **Never end a run far from the next opportunity.** If your next run is likely
-from Port Olisar, end near Port Olisar. The "where does this route leave me?"
+from Hur-L2, end near Hur-L2. The "where does this route leave me?"
 question matters as much as the route itself.
 
 ---
@@ -107,6 +107,27 @@ This is why the `cargo_panel_clarity` modifier exists for Hull-B (x1.15). A miss
 **Practical rule**: before loading, assign deliveries to quadrants and write it down or tell your AI. Prefer route sets where the number of destinations is no more than the number of usable quadrants. When stacking three same-pickup Covalex missions to three different orbital stations, you get clean quadrant separation with space to spare.
 
 **Cargo ledger**: your AI maintains two separate tables throughout the run -- LOADED (cargo you have confirmed is physically on the ship) and PENDING PICKUP (panels assigned to cargo you will collect at a later stop). A panel only moves from PENDING PICKUP to LOADED when you explicitly confirm loading; screenshots alone do not move it. When loading across multiple contracts, tell your AI the quadrant, commodity, SCU, pickup location, and destination for each panel. The AI tracks per-contract SCU from your original screenshot data -- it will never silently carry a running total forward. If it shows a total that does not match your contracts, it will flag the discrepancy and ask you to confirm.
+
+---
+
+## COMBINED STOP Handling
+
+When a delivery destination for one contract is also a pickup location for another contract, that stop is a COMBINED STOP. Your AI will detect this automatically when building the run plan.
+
+At a COMBINED STOP:
+1. Deliver your existing cargo first
+2. Submit the contract via the in-game contract manager
+3. Then load the new pickup cargo
+
+Your AI's route table will show combined stops as a single entry labeled "COMBINED STOP -- deliver first, submit, then load." Never split them into two separate rows.
+
+## Route Table Format
+
+When your AI builds a run plan, it always outputs the route in this exact column order:
+
+Location | Action | Contract | Commodity | Containers
+
+"Containers" is always shown as [N] x 16 SCU. Never accept a route table in a different column order -- if the format is wrong, ask your AI to reformat it.
 
 ---
 
@@ -171,7 +192,7 @@ can change the recommendation.
 
 | Pattern | Why |
 |---------|-----|
-| 3× Port Olisar pickup | +32 stacking bonus, ideal |
+| 3× Hur-L2 pickup | +32 stacking bonus, ideal |
 | All deliveries at orbital stations | No atmosphere, fast runs |
 | Covalex + Ling mix at same pickup | Both issuers have orbital deliveries |
 | Deliveries cluster at 2 to 3 L-points | Clean route, low fragmentation |
@@ -190,3 +211,11 @@ Covalex missions per hour than scattered routes would allow.
 Prioritising reputation over one-off payout is usually correct in the medium term.
 A route that pays slightly less but completes faster and positions you for the next
 run is better than a high-payout isolated mission that leaves you out of position.
+
+---
+
+## Covalex Rank Grinding (Rank Mode)
+
+If you are focused on grinding Covalex reputation rather than maximizing credits, the system has a dedicated rank mode. Type "covalex rank mode" to activate it. In rank mode, you only load the minimum cargo needed to qualify for a reputation credit on each contract (26% of total SCU), which lets you stack more contracts per run and complete them faster.
+
+See `COVALEX_RANK_STRATEGY.md` in this folder for a full guide.

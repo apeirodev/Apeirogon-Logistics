@@ -14,6 +14,7 @@ location lookups, and route strategy it needs to advise you accurately.
 | `SHIP_SPECIALIZATION_GUIDE.md` | Per-ship advice: which ships suit which missions and how modifiers work |
 | `hull_b_covalex_route_playbook.md` | Hull-B Covalex operational guide: patterns, stacking, route sequencing |
 | `GENERALIZED_HAULING_HANDBOOK.md` | Advice for other ships and issuers beyond Hull-B Covalex |
+| `COVALEX_RANK_STRATEGY.md` | Rank grinding guide: how to use the 26% partial submission mechanic to build Covalex reputation efficiently |
 
 ## How to upload
 

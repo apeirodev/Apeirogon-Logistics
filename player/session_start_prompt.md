@@ -10,7 +10,7 @@ You can leave "Patch version" blank if you don't know it.
 Starting a hauling session.
 
 Ship: [your ship — e.g. Hull-B, Taurus, Caterpillar]
-Current location: [where you are now — e.g. Port Olisar, Baijini Point]
+Current location: [where you are now -- e.g. Hur-L2, Baijini Point, Everus Harbor]
 Patch version: [optional — e.g. Alpha 3.24]
 
 I'll paste screenshots of the contracts terminal. Score each mission and tell me which ones to take, which to skip, and the best order to run them if I'm taking more than one.
@@ -46,3 +46,15 @@ Acknowledge this before continuing.
 - If a contract has multiple delivery stops, scroll and screenshot each one
 - You can paste several screenshots in one message; the AI will score all of them
 - Tell the AI your current location so it can identify dead legs (missions where you'd fly empty to the pickup)
+
+---
+
+## Covalex Rank Mode
+
+If you are grinding Covalex reputation and want to use the partial-submission mechanic (loading only 26% of each contract's SCU for reputation credit), type:
+
+```
+covalex rank mode
+```
+
+Your AI will switch to rank mode and walk you through a different run-planning workflow optimized for reputation grinding.

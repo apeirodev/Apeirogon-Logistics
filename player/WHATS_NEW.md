@@ -7,7 +7,129 @@ Changes that are purely internal (tooling, CI, developer workflow) are not liste
 
 ---
 
-## v0.52.1 — Cargo tracking overhaul and new edge case guards (re-paste your instructions)
+## v0.58.1 -- Audit fixes and player content update (re-paste your instructions)
+
+**You need to re-paste the instruction block into your AI if you set it up before this version.**
+
+**Run size is now calculated automatically in Covalex rank mode.** Previously the system asked "how many contracts do you want in this run?" You now confirm your ship capacity instead, and the system calculates the run cap after analyzing available contracts. It tells you how many minimum qualifying loads fit in your capacity and asks you to confirm or reduce.
+
+**Port Olisar has been removed from all examples.** Port Olisar is no longer in the game. All location examples now use active Stanton stations (Hur-L2, Baijini Point, Everus Harbor).
+
+**Hull-B route playbook updated.** Added COMBINED STOP handling instructions (deliver first, submit contract, then load pickup cargo), route table format reference, and a Covalex rank mode discovery note.
+
+**Ship modifier table corrected.** M2 Hercules Starlifter and C2 Hercules Starlifter were missing fragmentation x1.08 in the GENERALIZED_HAULING_HANDBOOK. Asgard was missing freight x1.03. All corrected.
+
+**What to do:** Open your SETUP file for your platform, copy the instruction block, and re-paste it into your AI project or system prompt. If you use the Hull-B playbook or generalized handbook as uploads, replace those files too.
+
+---
+
+## v0.57.1 -- Rank mode run management (re-paste your instructions)
+
+**You need to re-paste the instruction block into your AI if you set it up before this version.**
+
+Eight live-session fixes to Covalex rank mode:
+
+**Running capacity tracking.** After each accepted contract, your AI shows running total SCU, ship capacity, and remaining capacity. It warns you when capacity is nearly full (under 96 SCU remaining) and hard-blocks further acceptance when capacity is reached.
+
+**Run size confirmed at run start.** The system now asks how many contracts you want before evaluating any contracts. This is the run cap -- your AI will not recommend accepting beyond this number.
+
+**Opportunistic same-location contracts handled.** When a contract's pickup is your current location or a stop already in the run, your AI recalculates total SCU before recommending acceptance and blocks it if adding the contract would exceed capacity.
+
+**COMBINED STOP detection.** When a delivery destination and pickup location are the same, your AI now treats that as a single COMBINED STOP in the route plan (deliver first, submit, then load). These are never split into two separate rows.
+
+**DEFERRED list introduced.** VIABLE contracts that don't fit in the current run are tracked in a DEFERRED list. It is shown at the start of every new run planning cycle so you can include them.
+
+**Declared run target for drop-off consolidation.** You now declare the run target destination at run start. Any contract whose qualifying leg delivers elsewhere is flagged immediately as an outlier rather than discovered after analysis.
+
+**Route table column order fixed.** All route output now uses: Location | Action | Contract | Commodity | Containers. This order is mandatory.
+
+**Current location pickup check.** After confirming run target and size, your AI now asks whether any contracts are available at your current location. Qualifying contracts are flagged as ZERO DEAD LEG PICKUP and factored into capacity before evaluating other contracts.
+
+**What to do:** Re-paste the instruction block from your platform's SETUP file.
+
+---
+
+## v0.56.1 -- Rank mode run plan infrastructure (re-paste your instructions)
+
+**You need to re-paste the instruction block into your AI if you set it up before this version.**
+
+Seven live-session fixes to Covalex rank mode:
+
+**NOT VIABLE contracts fully excluded from downstream.** After the NOT VIABLE output, the contract is never referenced again in capacity totals, run plan, stacking summary, or drop-off checks.
+
+**Multi-commodity contracts handled correctly.** Each commodity-to-destination pair is evaluated independently. If one commodity qualifies alone, only that one is recommended and others are explicitly suppressed with "Do not load [commodity] -- [reason]." Combined qualifiers are listed per-commodity with separate container counts.
+
+**Container counts always shown with minimum loads.** The minimum qualifying SCU is never output alone -- it is always paired with container count and actual loaded SCU (e.g. "3 containers x 16 SCU = 48 SCU").
+
+**Drop-off consolidation check added.** Before run plan construction, your AI checks that all accepted contracts deliver to the run target. Outliers are flagged before the run plan is built.
+
+**Panel separation for outlier contracts.** If you choose to keep a contract that delivers to a non-target destination, your AI asks which panel to assign it to before printing the route.
+
+**Route table format enforced.** Location | Action | Contract | Commodity | Containers column order introduced.
+
+**COMBINED STOP detection introduced.** Locations appearing as both delivery destination and pickup across accepted contracts are identified and handled as combined stops.
+
+**What to do:** Re-paste the instruction block from your platform's SETUP file.
+
+---
+
+## v0.55.1 -- Rank mode viability and multi-commodity fixes (re-paste your instructions)
+
+**You need to re-paste the instruction block into your AI if you set it up before this version.**
+
+**All four blocking fields enforced with exact output format.** In normal scoring mode, the four blocking fields (pickup location, delivery destination, cargo SCU, reward) now each produce a specific request message when UNRESOLVED, rather than a generic flag. In rank mode, reward is non-blocking -- the AI marks it UNRESOLVED and proceeds.
+
+**Multi-commodity leg handling corrected.** When a contract contains multiple commodities, each commodity-to-destination pair is evaluated separately for viability. Previously, commodities were not evaluated independently.
+
+**NOT VIABLE flag on zero-qualifying contracts.** Contracts with no single leg at or above 26% of total SCU now receive a NOT VIABLE output with the highest leg percentage, rather than a partial analysis.
+
+**What to do:** Re-paste the instruction block from your platform's SETUP file.
+
+---
+
+## v0.54.3 -- Covalex rank mode at all ranks (re-paste your instructions)
+
+**You need to re-paste the instruction block into your AI if you set it up before this version.**
+
+**Rank mode now applies at all Covalex ranks, not just Senior to Master.** The 26% threshold and output format are identical regardless of rank. Earlier releases implied the mode was only for Senior-to-Master grinding.
+
+**What to do:** Re-paste the instruction block from your platform's SETUP file.
+
+---
+
+## v0.54.1 to v0.54.2 -- Covalex rank strategy mode introduced (re-paste your instructions)
+
+**You need to re-paste the instruction block into your AI if you set it up before this version.**
+
+**New mode: Covalex rank strategy mode.** Type "covalex rank mode" to activate it. In rank mode your AI uses the partial submission mechanic: delivering at least 26% of a contract's total SCU to a single destination earns Covalex reputation. The AI calculates minimum qualifying loads (with container counts), identifies viable and non-viable contracts, and builds a run plan optimized for reputation grinding rather than credit maximization.
+
+**New upload: `COVALEX_RANK_STRATEGY.md`.** A full player guide to the rank grinding mechanic, contract patterns by rank, and how to stack multiple contracts within your ship capacity. Upload it to your AI project alongside the other files in `player/uploads/`.
+
+**What to do:** Re-paste the instruction block from your platform's SETUP file. Upload `COVALEX_RANK_STRATEGY.md` to your AI project.
+
+---
+
+## v0.53.1 -- Session capability gaps (re-paste your instructions)
+
+**You need to re-paste the instruction block into your AI if you set it up before this version.**
+
+Five session workflow improvements identified from live use:
+
+**Duplicate contract detection.** If you abandon a contract and the same contract (same pickup, commodity, SCU, and leg structure) appears again, your AI immediately flags it: "This is the same contract you just abandoned. Abandon again." No re-analysis.
+
+**Non-flyable ship guard improved.** If you mention a ship not yet in the game (Hull-D, Hull-E, Merchantman, Galaxy), your AI now explicitly tells you it cannot score for that ship in Alpha 4.8.
+
+**Issuer guard improved.** For issuers without calibrated modifiers (Hurston Dynamics, microTech, ArcCorp), your AI tells you explicitly which issuer it is scoring on base weights.
+
+**Timer + stop count warning.** When a contract's timer is 90 minutes or less and you have 3 or more delivery stops total, your AI flags the combination for you to assess. It does not estimate whether you can make it -- that judgment is yours.
+
+**Session start clears all contract and panel state.** Starting a new session fully resets all prior contract data, panel assignments, and phase tracking.
+
+**What to do:** Re-paste the instruction block from your platform's SETUP file.
+
+---
+
+## v0.52.1 -- Cargo tracking overhaul and new edge case guards (re-paste your instructions)
 
 **You need to re-paste the instruction block into your AI if you set it up before this version.**
 

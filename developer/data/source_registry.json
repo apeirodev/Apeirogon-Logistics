@@ -4,6 +4,12 @@
   "retrieved_date": "2026-05-16",
   "sources": [
     {
+      "name": "Apeirogon Logistics 0.58.1 audit fixes and player content update",
+      "notes": "Comprehensive content audit: Issue 9 dynamic run cap, Port Olisar removal, player changelog update, COMBINED STOP documentation, ship modifier table corrections, legacy guide marking, validation archive.",
+      "source_id": "apeirogon_0_58_1_audit_fixes_player_content_update",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Star Citizen Wiki - Stanton system",
       "notes": "Unofficial community wiki. Use as high-quality structured reference, not primary official authority.",
       "source_id": "starcitizen_tools_stanton_system",

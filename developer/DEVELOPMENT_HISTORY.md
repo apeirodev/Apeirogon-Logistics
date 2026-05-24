@@ -689,3 +689,27 @@ Added Hull-B 8-panel cargo assignment doctrine (top/bottom/port/starboard/front/
 ## Version 0.38.1: Ship Expansion and Covalex Reputation Ranks
 
 Expanded ship coverage from 5 to 23 ships (all 90+ SCU haulers in Alpha 4.8.0): added Hull-D, Hull-E, Hermes, Starlancer MAX, Starlancer TAC, Starfarer, Starfarer Gemini, ARGO RAFT, Valkyrie, Asgard, M2 Hercules, A2 Hercules, Ironclad, Ironclad Assault, Railen, Banu Merchantman, RSI Galaxy. Added 19 new ship modifier blocks to scoring_config.json. Added full Covalex reputation ranks (7 tiers: Trainee through Master) to mission_issuer_profiles.json, with recommended ships, strategies, and Master-rank unlock list. Added 3 new issuer placeholders: Hurston Dynamics, microTech, ArcCorp. Created SHIP_SPECIALIZATION_GUIDE.md (developer and player copies). Added ship_profiles.json to player/uploads/. Updated all SETUP_*.md guides to list 8 upload files.
+
+---
+
+## Version 0.58.1: Audit Fixes and Player Content Update
+
+Comprehensive content audit and player-facing documentation update.
+
+**Instruction block changes:**
+- Issue 9 fix: replaced fixed "how many contracts" run start question with dynamic capacity-based cap calculation. Run cap is now determined after viability analysis by summing minimum qualifying loads against confirmed capacity. Player confirms or reduces.
+- EXAMPLE RESPONSE updated: replaced removed Port Olisar location with Hur-L2; em dashes replaced with double hyphens throughout.
+- Covalex issuer alignment clarification added to ISSUER ADJUSTMENTS.
+- All em dashes and en dashes replaced with double hyphens throughout.
+- Synced to all 7 SETUP files.
+
+**Player content updates:**
+- `hull_b_covalex_route_playbook.md`: Port Olisar replaced with Hur-L2 throughout; COMBINED STOP handling section added; route table format documented; Covalex rank mode discovery note added.
+- `session_start_prompt.md`: Port Olisar replaced with Hur-L2 in location example; rank mode trigger note added.
+- `GENERALIZED_HAULING_HANDBOOK.md`: ship modifier table corrected -- added M2 fragmentation x1.08, C2 fragmentation x1.08, Asgard freight x1.03.
+- `player/uploads/README.md`: COVALEX_RANK_STRATEGY.md added to uploads table.
+- `player/WHATS_NEW.md`: player changelog updated with entries for v0.53.1 through v0.58.1.
+
+**Developer housekeeping:**
+- All 8 developer usage guides marked as legacy (old two-step JSON extraction workflow).
+- Old validation reports (v0.30.5, v0.36.1) archived to `developer/validation/archive/`.

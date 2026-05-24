@@ -36,10 +36,10 @@ Tell your AI which ship you are flying at the start of each session. The scoring
 | Starlancer TAC | Suitability x0.88 (combat variant -- reduced hauling suitability) |
 | RAFT | Suitability x1.05, freight x1.05, dead leg x0.95 |
 | Valkyrie | Suitability x0.90, atmosphere x0.85 (reduced), fatigue x0.92 |
-| Asgard | Suitability x0.95, atmosphere x0.85 (reduced), fatigue x0.95 |
+| Asgard | Suitability x0.95, atmosphere x0.85 (reduced), fatigue x0.95, freight x1.03 |
 | A2 Hercules Starlifter | Suitability x0.85 (bomber), atmosphere x0.90, freight x1.05 |
-| M2 Hercules Starlifter | Suitability x1.05, atmosphere x0.90 (reduced), freight x1.10 |
-| C2 Hercules Starlifter | Suitability x1.08, atmosphere x0.88 (reduced), freight x1.10 |
+| M2 Hercules Starlifter | Suitability x1.05, atmosphere x0.90 (reduced), freight x1.10, fragmentation x1.08 |
+| C2 Hercules Starlifter | Suitability x1.08, atmosphere x0.88 (reduced), freight x1.10, fragmentation x1.08 |
 | Starfarer | Suitability x0.88 (tanker), freight x1.05, stop density x1.10 |
 | Starfarer Gemini | Suitability x0.85, freight x1.05, stop density x1.10 |
 | Ironclad | Suitability x1.10, freight x1.15, stop density x1.25, fragmentation x1.15 |

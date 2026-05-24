@@ -292,6 +292,20 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.55.1: Rank Mode Viability Check, Multi-Commodity, and Reward Block
+
+Three live-session fixes:
+
+1. Pre-acceptance viability check (rank mode): viability is now the first output item for every contract. If no single leg reaches 26%, the AI outputs NOT VIABLE immediately with the highest leg percentage and abandon advice, then stops all further analysis for that contract. The full leg breakdown, minimum load, and payout tier are suppressed for NOT VIABLE contracts. The AI no longer waits for the player to ask.
+
+2. Multi-commodity leg handling (rank mode): contracts with multiple commodities at the same pickup now evaluate each [commodity --> destination] pair independently. If one commodity alone qualifies (>= 26% of total), only that commodity is recommended and all others are suppressed from output. If no single commodity qualifies alone but combined delivery to one destination does, the minimum qualifying load is listed per-commodity, loaded highest-SCU first, with non-contributing commodities suppressed. The output format now requires per-commodity quantity breakdown whenever multiple commodities contribute to the minimum load.
+
+3. Reward field blocking (normal scoring mode): if the reward field is UNRESOLVED for any contract, the AI outputs the readable fields, marks reward UNRESOLVED, and stops -- explicitly asking the player to type the reward before proceeding. A score or Accept/Defer/Reject recommendation is not output until the reward is supplied. The existing -2 UNRESOLVED penalty is not a substitute.
+
+Synced to all 7 SETUP files.
+
+---
+
 ## Version 0.54.3: Covalex Rank Mode Extended to All Ranks
 
 Removed the Senior-to-Master restriction from rank mode. The partial submit

@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.55.1 rank mode viability check, multi-commodity, and reward block",
+      "notes": "Three live-session fixes: (1) viability check now runs first and short-circuits before detailed analysis for NOT VIABLE contracts in rank mode; (2) multi-commodity contracts evaluate each commodity-destination pair independently -- single qualifying commodity recommended exclusively, non-qualifying commodities suppressed, per-commodity minimum load breakdown required; (3) UNRESOLVED reward blocks score output in normal scoring mode -- AI stops and asks for value before proceeding. Synced to all 7 SETUP files.",
+      "source_id": "apeirogon_0_55_1_rank_viability_multicommod_reward_block",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.54.3 covalex rank mode extended to all ranks",
       "notes": "Removed master-rank restriction from rank mode. Mechanic applies at any Covalex rank. Added 'rank focus mode' trigger. Confirmation message generalized. Note added that lower-rank contracts have fewer legs. Handbook retitled and CONTRACT PATTERN section replaced with CONTRACT PATTERNS BY RANK covering all rank tiers. Synced to all 7 SETUP files.",
       "source_id": "apeirogon_0_54_3_covalex_rank_all_ranks",

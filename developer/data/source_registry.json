@@ -360,6 +360,12 @@
       "trust_level": "internal_derived"
     },
     {
+      "name": "Apeirogon Logistics 0.57.1 rank mode run management",
+      "notes": "Eight live-session fixes (Issues 8-15): running capacity tracking with threshold warnings and cap enforcement; run size target declared at run start; opportunistic same-location capacity recheck before recommendation; COMBINED STOP detection in route builder; DEFERRED LIST section for cross-run contract tracking; declared run target replaces dominant-destination inference in drop-off consolidation; route table column order fixed to Location/Action/Contract/Commodity/Containers; current-location ZERO DEAD LEG pickup check at run start. Synced to all 7 SETUP files.",
+      "source_id": "apeirogon_0_57_1_rank_mode_run_management",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.56.1 rank mode run plan infrastructure",
       "notes": "Seven live-session fixes: (1) NOT VIABLE contracts excluded from all downstream processing; (2) multi-commodity suppression uses explicit 'Do not load' output per commodity; (3) blocking fields extended to pickup/delivery/cargo_scu/reward in normal mode, reward non-blocking in rank mode; (4) drop-off consolidation check added -- dominant destination identification, outlier flagging, player confirmation gate; (5) 16 SCU container math added throughout -- container count and actual SCU always shown; (6) duplicate contract detection tracks abandoned contracts and flags re-offers immediately; (7) run plan construction section defines pickup listing, panel separation prompt, panel naming gate, and per-pickup exclusion reminders. Synced to all 7 SETUP files.",
       "source_id": "apeirogon_0_56_1_rank_mode_run_plan_infrastructure",

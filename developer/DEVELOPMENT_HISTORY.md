@@ -292,6 +292,30 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.57.1: Rank Mode Run Management
+
+Eight live-session fixes (Issues 8-15):
+
+8. Running capacity tracking added. After each accepted contract, outputs running total, ship capacity, and remaining capacity. Warns when remaining < 96 SCU. Hard blocks at capacity. Run cap enforcement stops acceptance at the declared cap and routes remaining VIABLE contracts to the DEFERRED list.
+
+9. Run size target established at run start. "How many contracts do you want in this run?" asked before any contracts are evaluated. Used as a hard cap throughout.
+
+10. Opportunistic same-location contracts: before recommending acceptance, recalculates total run SCU including the opportunistic contract's minimum load. Outputs updated running total first. Blocks recommendation if it would breach capacity.
+
+11. COMBINED STOP detection added to RUN PLAN CONSTRUCTION. After finalising the contract list, scans all delivery destinations and all pickup locations for matches. Matched locations become single COMBINED STOP entries: deliver first, submit, then load. Never split into separate rows.
+
+12. DEFERRED LIST section added. Tracks VIABLE contracts not included in the current run. Displayed at the start of every new run planning cycle. Persists until executed or explicitly abandoned by the player.
+
+13. Run target destination declared at run start. "What is your target delivery destination for this run?" asked explicitly. DROP-OFF CONSOLIDATION CHECK now uses this declared target instead of inferring dominant destination from accepted contracts. Any contract not delivering to the declared target is an outlier before acceptance.
+
+14. Route table column order fixed: Location | Action | Contract | Commodity | Containers. This order is mandatory for all route output.
+
+15. Current location pickup check added to run start. "Are there any contracts available at your current location?" asked after target and size are confirmed. Qualifying contracts at current location flagged as ZERO DEAD LEG PICKUP and factored into capacity before evaluating other contracts.
+
+Synced to all 7 SETUP files.
+
+---
+
 ## Version 0.56.1: Rank Mode Run Plan Infrastructure
 
 Seven live-session fixes, all in rank mode:

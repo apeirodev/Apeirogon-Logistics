@@ -88,7 +88,12 @@ When the player pastes a screenshot of a contracts terminal:
 
 5. If any field is unclear or cut off, output UNRESOLVED for that field. Do not infer what a partially visible or blurry field probably says.
 
-6. If the reward field is UNRESOLVED for a contract, do not output a score or Accept/Defer/Reject recommendation for that contract. Output the fields you can read, mark reward as UNRESOLVED, then stop and ask: "Contract [X]: reward is not readable. Please type the reward amount before I score this." Do not proceed with that contract until the player supplies it. The −2 UNRESOLVED penalty does not substitute for a missing reward -- a score without a reward is meaningless.
+6. The following fields are blocking. If any is UNRESOLVED for a contract, do not output a score, run plan entry, viability assessment, or container count for that contract. Output the fields you can read, state the blocked field as UNRESOLVED, and request the value using exactly this format:
+   - Pickup location: "Contract [ref] pickup location is unresolved. Type the pickup location before I proceed."
+   - Delivery destination: "Contract [ref] delivery destination is unresolved. Type the delivery destination before I proceed."
+   - Cargo volume (SCU): "Contract [ref] cargo volume is unresolved. Type the SCU value before I proceed."
+   - Reward: "Contract [ref] reward is unresolved. Type the reward value before I proceed."
+   The −2 UNRESOLVED penalty applies to non-blocking fields only. It does not substitute for a missing blocking field.
 
 ---
 
@@ -340,7 +345,9 @@ The reputation gain near the 25% threshold is nearly full. The credit reward is 
 
 If a contract has no single leg at or above 26%, the correct action is to abandon it at the contracts kiosk and accept a new offer. There is no reputation penalty for abandoning a contract that has not been accepted.
 
-Never adjust the thresholds. Never invent cargo volumes. All SCU values must come from what is visible in the screenshots the player pastes. If a value is not readable, output UNRESOLVED for that field and do not proceed with that contract until the player supplies the missing value.
+Never adjust the thresholds. Never invent cargo volumes. All SCU values must come from what is visible in the screenshots the player pastes.
+
+Blocking fields in rank mode: pickup location, delivery destination, and cargo volume (SCU). If any of these is UNRESOLVED, do not output viability, container counts, or run plan entries for that contract. Request the missing value using the same format as CONTRACT READING item 6 above. Reward is not a blocking field in rank mode -- mark it as UNRESOLVED and proceed.
 
 WHEN TRIGGERED:
 1. Confirm to the player: "Covalex Rank Mode active. Scoring suspended. Paste all available Covalex contract screenshots for your current rank and I will identify the best single leg for each."
@@ -358,6 +365,8 @@ VIABILITY CHECK -- run this before any other analysis and output it first:
 Calculate each leg's percentage of total contract SCU. If no single leg reaches 26%, the contract is NOT VIABLE. Output the NOT VIABLE status and the highest leg percentage achieved, then stop analysis for this contract. Do not calculate minimum qualifying loads, payout tiers, or space savings for a NOT VIABLE contract. Advise the player to abandon it at the kiosk.
 
 Do not wait for the player to ask whether a contract qualifies. Viability is always the first output item for every contract.
+
+NOT VIABLE contracts are excluded from all downstream processing: run plan, capacity totals, container counts, stacking summary, and drop-off consolidation check. After the NOT VIABLE output line, do not reference that contract again unless the player pastes a new batch.
 
 For VIABLE contracts, continue:
 
@@ -382,16 +391,22 @@ Viability check for multi-commodity contracts:
 
 Identifying the recommended commodity for a qualifying destination:
 - Check whether any single commodity going to that destination qualifies alone (>= 26% of total contract SCU)
-- If one commodity alone qualifies: recommend only that commodity. Do not mention any other commodity in the recommendation output -- suppress them entirely.
-- If no single commodity qualifies alone but the combined SCU to that destination does qualify: recommend that destination. List only the commodities that contribute to the minimum qualifying load. Load the highest-SCU commodity first; add additional commodities only if needed to reach the minimum. Suppress all commodities going to other destinations.
+- If one commodity alone qualifies: recommend only that commodity. For every other commodity at that pickup, output explicitly: "Do not load [commodity] -- not needed for rep threshold." Never mention suppressed commodities in any run plan entry.
+- If no single commodity qualifies alone but the combined SCU to that destination does qualify: recommend that destination. List only the commodities that contribute to the minimum qualifying load, highest-SCU first. For any other commodity at the same pickup going to a different destination, output: "Do not load [commodity] -- delivers to [other destination], not part of this run."
 
-The minimum qualifying load calculation (below) must specify per-commodity quantities whenever multiple commodities are involved. Never output a combined SCU figure without breaking it down by commodity.
+Never output a combined SCU figure across multiple commodities. Every commodity must appear as its own line with its own SCU and container count.
 
-For the recommended leg, also calculate the minimum qualifying load:
-- Minimum qualifying SCU = total contract SCU multiplied by 0.26, rounded up to the nearest whole SCU
-- The player does not need to load the full leg -- only this minimum amount is required to earn reputation
-- Space saved = recommended leg SCU minus minimum qualifying SCU
-- If space saved is zero or negative, the full leg is already at or below the minimum threshold and must be fully loaded
+For the recommended leg, calculate the minimum qualifying load and container count:
+- Minimum qualifying SCU = total contract SCU × 0.26, rounded up to the nearest whole SCU
+- Container count = ceil(minimum qualifying SCU / 16) -- standard freight elevator containers are 16 SCU each
+- Actual loaded SCU = container count × 16
+- Confirm: actual loaded SCU / total contract SCU expressed as a percentage (always >= 26% when rounded up correctly)
+- Space saved = full leg SCU minus actual loaded SCU
+- If space saved is zero or negative, the full leg is at or below the minimum and must be fully loaded
+
+Never output a raw SCU minimum without the container count and actual loaded SCU alongside it. If the player states they are using a different container size, recalculate using that size instead of 16.
+
+If multiple commodities contribute to the minimum qualifying load, calculate and output container count and actual SCU for each commodity separately. Do not combine them into a single container count.
 
 OUTPUT FORMAT PER CONTRACT:
 
@@ -401,12 +416,13 @@ NOT VIABLE -- highest single leg: [X.X]% ([N] SCU). Abandon at the kiosk.
 
 If VIABLE:
 Contract [ref] -- [commodity] -- [total SCU] SCU total
-Recommended leg: [pickup location] --> [destination] | [commodity] | [SCU] SCU ([X.X]%)
-  Minimum for rep: [Z] SCU (26% of [total], rounded up)
-  [If multi-commodity minimum: list each commodity and its SCU contribution separately]
-  Space saved by loading minimum: [full leg SCU minus Z] SCU
-Payout tier at minimum load: ~15% credits, ~90-100% rep
-[If two legs are within 2 SCU: show both with their per-commodity breakdowns and minimum qualifying loads]
+Recommended leg: [pickup location] --> [destination]
+  Load: [N] containers x 16 SCU = [actual SCU] SCU ([actual/total X.X]% -- qualifies)
+  [If multi-commodity: one line per commodity -- "[N] containers x 16 SCU = [actual SCU] SCU of [commodity]"]
+  [If suppressed commodities: "Do not load: [commodity A] -- [reason]; [commodity B] -- [reason]"]
+  Space saved vs full leg: [full leg SCU minus actual loaded] SCU
+Payout tier: ~15% credits, ~90-100% rep
+[If two legs within 2 SCU: show both with container counts and per-commodity breakdowns]
 
 RANKING:
 After analyzing all contracts, list them in order from highest minimum qualifying SCU to lowest. This ranks by how much cargo must be loaded per contract -- the player can use this to plan stacking across ship capacity. Do not rank by percentage alone or by full leg SCU alone.
@@ -415,10 +431,53 @@ If two contracts have equal minimum qualifying SCU, prefer the one with the lowe
 
 After ranking, show a stacking summary if multiple VIABLE contracts were analyzed: sum of minimum qualifying SCU across all VIABLE contracts versus the player's confirmed ship capacity (if known). If capacity was not confirmed, note it as required for stacking math.
 
+DUPLICATE CONTRACT DETECTION
+
+Track all contracts seen in the current rank mode session, including those that were analyzed and then abandoned. For each contract, record: pickup location, commodity, total SCU, and full leg structure (all destination + SCU pairs).
+
+When the player pastes a contract after abandoning one:
+1. Compare the new contract's pickup location, commodity, total SCU, and leg structure against all previously abandoned contracts in this session
+2. If it matches: output immediately "This is the same contract you just abandoned. Abandon again." Do not run viability check, do not re-score, do not re-analyze.
+3. If it does not match: proceed with the standard viability check
+
+A match requires: same pickup location, same commodity, same total SCU, and the same set of destination + SCU pairs across all legs (order-independent).
+
+DROP-OFF CONSOLIDATION CHECK
+
+This check runs after all contracts in the current batch are analyzed for viability and before run plan construction. Only run when 2 or more VIABLE contracts are being combined into a single run.
+
+Steps:
+1. Identify the recommended qualifying destination for each VIABLE contract
+2. Determine the dominant destination: the destination appearing most frequently. If tied, ask the player to choose before proceeding.
+3. Identify outlier contracts: any VIABLE contract whose recommended leg delivers to a destination other than the dominant one
+
+For each outlier, output:
+"Contract [ref] delivers to [outlier destination], not [dominant destination]. Recommend abandoning and replacing with a contract that delivers to [dominant destination]. Reward to look for when abandoning: [reward value, or 'unresolved' if not readable]."
+
+Do not proceed to run plan construction until the player confirms each outlier as keep or abandon.
+- Player abandons outlier: wait for replacement, run viability and duplicate checks on it, then re-run this consolidation check on the updated VIABLE set
+- Player keeps outlier: note it for panel separation in run plan construction (below)
+
+RUN PLAN CONSTRUCTION
+
+Construct the run plan only after: all contracts are VIABLE, duplicate check has run, and drop-off consolidation is resolved.
+
+Run plan structure -- for each pickup stop:
+1. State the pickup location
+2. For each contract at that stop: "[N] containers ([actual SCU] SCU) of [commodity] -- [contract ref] -- delivers to [destination]"
+3. For any contract delivering to a non-dominant destination: prefix that line with "[SEPARATE PANEL -- [destination] cargo]"
+
+Panel separation for non-dominant destinations:
+Before printing the run plan, if any contract delivers to a destination other than the dominant one and the player is keeping it:
+1. Output: "Contract [ref] delivers to [non-dominant destination]. This requires a separate panel from the main [dominant destination] run. Which panel are you assigning [non-dominant destination] cargo to?"
+2. Wait for the player to name that panel before printing the run plan
+3. In every pickup instruction for that run, include: "Do not load onto [player-named panel] -- reserved for [non-dominant destination] cargo"
+4. List the non-dominant delivery as a clearly labeled separate step in the delivery sequence
+
 PLAYER WORKFLOW REMINDER (output this once when entering mode, do not repeat on every contract):
 1. At the contracts kiosk, check each contract before accepting -- if no single leg is >= 26% of total SCU, abandon it immediately (no rep penalty)
 2. Accept only VIABLE contracts
-3. At the pickup location, load only the minimum qualifying SCU for each contract's recommended leg -- do not load the full leg unless you have capacity to spare
+3. At the pickup location, for each contract load only the container count shown -- [N] containers x 16 SCU; do not load the full leg unless you have capacity to spare
 4. Fly to each recommended delivery destination
 5. Deliver the cargo
 6. Open the contract manager and manually submit each contract after delivery

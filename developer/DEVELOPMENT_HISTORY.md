@@ -292,6 +292,28 @@ Added `player/uploads/` containing six files players upload to their AI project:
 
 ---
 
+## Version 0.56.1: Rank Mode Run Plan Infrastructure
+
+Seven live-session fixes, all in rank mode:
+
+1. NOT VIABLE contracts now explicitly excluded from all downstream processing: run plan, capacity totals, container counts, stacking summary, drop-off consolidation check. Short-circuit is complete -- the contract does not appear again after the NOT VIABLE output.
+
+2. Multi-commodity suppression now uses explicit "Do not load" output for every commodity not recommended. Single qualifying commodity: all others labelled "Do not load [commodity] -- not needed for rep threshold." Combined minimum: commodities at other destinations labelled "Do not load [commodity] -- delivers to [destination], not part of this run." Never outputs a combined SCU total.
+
+3. Blocking fields extended: CONTRACT READING item 6 now lists all four blocking fields (pickup, delivery, cargo_scu, reward) with exact output format per field. In rank mode specifically, reward is not blocking -- it is marked UNRESOLVED and analysis continues. Pickup, delivery, and cargo_scu remain blocking in both modes.
+
+4. Drop-off consolidation check added. Runs after all contracts are analyzed and before run plan construction. Identifies dominant destination, flags outlier contracts with exact output format and recommend-abandon instruction, blocks run plan until player confirms keep or abandon for each outlier.
+
+5. Container math added throughout. Minimum qualifying SCU is now always converted to: container count = ceil(minimum/16), actual SCU = container count x 16. Per-commodity container counts for multi-commodity loads. Raw SCU minimum never shown without container count alongside it.
+
+6. Duplicate contract detection added. Tracks all seen/abandoned contracts by pickup, commodity, total SCU, and leg structure. Detects duplicates immediately on paste and instructs "Abandon again" without re-analyzing.
+
+7. Run plan construction section added. Defines structure for pickup stop listing, per-contract load lines, panel separation prompt for non-dominant destinations, panel naming gate before run plan output, and panel exclusion reminder in every subsequent pickup instruction.
+
+Synced to all 7 SETUP files.
+
+---
+
 ## Version 0.55.1: Rank Mode Viability Check, Multi-Commodity, and Reward Block
 
 Three live-session fixes:

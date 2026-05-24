@@ -4,6 +4,12 @@
   "retrieved_date": "2026-05-16",
   "sources": [
     {
+      "name": "Apeirogon Logistics 0.58.2 grammar and style rules",
+      "notes": "Added grammar and style rules to CLAUDE.md and instruction block: 'that' after 'ensure', Oxford 'ize' spelling, no em/en dashes. Synced to all 7 SETUP files.",
+      "source_id": "apeirogon_0_58_2_grammar_style_rules",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.58.1 audit fixes and player content update",
       "notes": "Comprehensive content audit: Issue 9 dynamic run cap, Port Olisar removal, player changelog update, COMBINED STOP documentation, ship modifier table corrections, legacy guide marking, validation archive.",
       "source_id": "apeirogon_0_58_1_audit_fixes_player_content_update",

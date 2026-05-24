@@ -713,3 +713,15 @@ Comprehensive content audit and player-facing documentation update.
 **Developer housekeeping:**
 - All 8 developer usage guides marked as legacy (old two-step JSON extraction workflow).
 - Old validation reports (v0.30.5, v0.36.1) archived to `developer/validation/archive/`.
+
+---
+
+## Version 0.58.2: Grammar and Style Rules
+
+Added grammar and style rules to CLAUDE.md and to the AI advisor's instruction block RULES section:
+
+- "that" must always follow "ensure" and conjugations thereof.
+- Oxford spelling with "ize" endings (organize, recognize, analyze, synchronize).
+- No em dashes or en dashes -- double hyphens (--) for parenthetical breaks, plain hyphens (-) for ranges.
+
+Synced to all 7 SETUP files.

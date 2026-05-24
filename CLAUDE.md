@@ -7,6 +7,17 @@ Full upstream rule files are in `.claude/rules/`.
 
 ---
 
+## Grammar and Style Rules (Mandatory)
+
+All documentation, commit messages, and code comments written in this repository must follow these rules:
+
+- **"that" after "ensure"**: Always write "ensure that", "ensures that", "ensuring that". Never write "ensure X happens" without "that".
+- **Oxford spelling with "ize"**: Use "organize", "recognize", "analyze", "synchronize", "minimize", etc. Do not use "ise" endings where "ize" is standard Canadian/Oxford English.
+- **No em dashes or en dashes**: Never use -- or -- in any file. Use double hyphens (--) for parenthetical breaks and plain hyphens (-) for ranges.
+- These rules apply to all new text written in any file in this repository.
+
+---
+
 ## Versioning Rule (Mandatory)
 
 This project uses **Semantic Versioning** (SemVer): `Major.Minor.Patch`.

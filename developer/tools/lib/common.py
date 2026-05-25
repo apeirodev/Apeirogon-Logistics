@@ -3,11 +3,14 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import logging
 import re
 import sys
 import time
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
+
+logger = logging.getLogger(__name__)
 
 REQUIRED_GOVERNANCE_FIELDS = [
     "source_class",
@@ -29,17 +32,45 @@ ASSURANCE_STATES = ["designed", "implemented", "operational", "validated", "comm
 class ToolError(Exception):
     pass
 
+_MAX_INPUT_BYTES = 10 * 1024 * 1024  # 10 MB -- WARN-02
+
+
 def load_json(path: str | Path | None = None) -> Any:
     if path is None or str(path) == "-":
         return json.load(sys.stdin)
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def dump_json(data: Any, path: str | Path | None = None) -> None:
+
+def safe_load_json(path: str | Path) -> Any:
+    """Load JSON from a file, enforcing a 10 MB size cap (WARN-02).
+
+    Raises ValueError if the file exceeds _MAX_INPUT_BYTES.
+    Always reads from a named file path, never from stdin.
+    """
+    p = Path(path)
+    size = p.stat().st_size
+    if size > _MAX_INPUT_BYTES:
+        raise ValueError(
+            f"Input file too large: {size} bytes (limit {_MAX_INPUT_BYTES} bytes): {path}"
+        )
+    return json.loads(p.read_text(encoding="utf-8"))
+
+def dump_json(data: Any, path: str | Path | None = None, skip_path_check: bool = False) -> None:
+    """Serialize data as indented JSON and write to path or stdout.
+
+    When path is an explicit file path (not None or "-"), this function
+    enforces FILE-01 by calling safe_write_path() before writing. Pass
+    skip_path_check=True only in internal tool contexts where the path is
+    constructed from trusted, hard-coded sources (e.g. release tooling that
+    writes to a fixed output directory under developer/).
+    """
     text = json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False) + "\n"
     if path is None or str(path) == "-":
         sys.stdout.write(text)
     else:
+        if not skip_path_check:
+            safe_write_path(str(path))
         path = Path(path)
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(text, encoding="utf-8")
@@ -61,7 +92,16 @@ def file_sha256(path: str | Path) -> str:
 _ALLOWED_WRITE_ROOTS: list[Path] = [Path("output"), Path("exports"), Path("telemetry")]
 
 def safe_write_path(raw_path: str, allowed_roots: list[Path] | None = None) -> Path:
-    """Validate that raw_path resolves within one of the allowed write roots (FILE-01)."""
+    """Validate that raw_path resolves within one of the allowed write roots (FILE-01).
+
+    Always pass the user-supplied --output path through this function before
+    writing to it. Stdout (raw_path == "-") is unconditionally safe and is
+    returned as the sentinel Path("-") without further validation.
+
+    Raises ValueError for paths that escape the allowed roots.
+    """
+    if raw_path == "-":
+        return Path("-")
     roots = allowed_roots if allowed_roots is not None else _ALLOWED_WRITE_ROOTS
     p = Path(raw_path).resolve()
     for root in roots:
@@ -136,6 +176,20 @@ def ensure_metadata(data: Dict[str, Any], source_class: str = "deterministic_out
     return data
 
 def validate_governance_metadata(meta: Dict[str, Any]) -> Tuple[bool, List[str]]:
+    """Validate governance metadata fields.
+
+    Fails closed on unexpected exceptions (ERR-01): any exception during
+    validation returns (False, ["validation_error_fail_closed"]) rather than
+    allowing untrusted data to pass.
+    """
+    try:
+        return _validate_governance_metadata_inner(meta)
+    except Exception as exc:
+        logger.error("Governance validation error: %s", exc)
+        return False, ["validation_error_fail_closed"]
+
+
+def _validate_governance_metadata_inner(meta: Dict[str, Any]) -> Tuple[bool, List[str]]:
     problems = []
     missing = [field for field in REQUIRED_GOVERNANCE_FIELDS if field not in meta]
     if missing:

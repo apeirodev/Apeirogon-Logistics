@@ -844,3 +844,63 @@ Added `developer/tests/test_version_consistency.py` with three assertions:
 The root cause of the 0.60.1 regression (agent updated version_history but not the root "version" field) would have been caught by the first assertion. The test runs on every commit via the existing pytest suite.
 
 CLAUDE.md Versioning Rule updated to explicitly call out that VERSION.json has three fields to update (root "version", "previous_version", and a version_history entry) and to reference this test as the completion criterion for a version bump.
+
+## Version 0.62.1: Security Hardening and Governance Alignment
+
+Full repository security audit: bandit SAST scan (zero findings), pip-audit (no
+CVEs), keyword scan, and tool-by-tool code review against the project's own
+.claude/rules/ security rule files.
+
+**Defects fixed:**
+
+- **H-02/ERR-02** -- `local_OCR_preprocessor.py`: `str(exc)` was returned verbatim
+  in JSON output on path validation failure. Replaced with a safe summary
+  (`"invalid image path"`) and full exception detail logged to stderr via
+  `logger.error()`.
+
+- **ERR-01** -- `lib/common.py: validate_governance_metadata()`: No fail-closed
+  wrapper existed. Unexpected exceptions (e.g. non-dict inputs) would propagate
+  uncaught instead of returning `(False, ["validation_error_fail_closed"])`.
+  Added outer try/except with fail-closed behavior. Inner logic extracted to
+  `_validate_governance_metadata_inner()`.
+
+- **FILE-01** -- `lib/common.py: dump_json()`: User-supplied output paths were
+  written without a FILE-01 path traversal check. `dump_json()` now calls
+  `safe_write_path()` on all explicit file paths. Stdout sentinel (`"-"`) remains
+  unconditionally safe. `skip_path_check=True` parameter available for trusted
+  internal tooling.
+
+- **WARN-02** -- `lib/common.py`: No `safe_load_json()` function existed.
+  Added with 10 MB size cap enforcement as required by WARN-02.
+
+**New security controls in `lib/common.py`:**
+
+- `safe_load_json(path)` -- enforces 10 MB file size cap before reading (WARN-02)
+- `validate_governance_metadata()` -- now fails closed on unexpected exceptions (ERR-01)
+- `dump_json()` -- now enforces `safe_write_path()` on user-supplied file output (FILE-01)
+- `safe_write_path("-")` -- stdout sentinel now explicitly allowed without root check
+
+**New tests** (`developer/tests/test_security.py`, 20 tests):
+
+- `TestSafeWritePath` (5 tests): path traversal rejected, absolute system paths
+  rejected, stdout sentinel allowed, valid roots allowed, traversal-within-prefix
+  rejected
+- `TestSafeLoadJson` (3 tests): normal file loads, >10 MB raises ValueError,
+  file at exactly the limit loads
+- `TestValidateGovernanceMetadataFailClosed` (4 tests): valid passes, None input
+  fails closed, list input fails closed, fail-closed sentinel present
+- `TestHallucinationFlagPropagation` (5 tests): unsourced numeric flagged, user-
+  supplied not flagged, multiple fields all flagged, None user-supplied skips check,
+  string values not flagged
+- `TestDumpJsonPathGuard` (3 tests): traversal rejected, stdout works, skip_path_check
+  bypasses guard for trusted internal use
+
+**New documentation** (`developer/docs/SECURITY_CONTROLS.md`):
+
+Complete CSA CCM v4.0, CSA AICM draft 2025, OWASP ASVS, OWASP Top 10 2025,
+OWASP LLM Top 10 v2.0, OWASP Agentic Top 10 2026 draft, and MITRE ATLAS alignment
+document. Maps each implemented control to its exact code location. Identifies
+partially implemented controls and residual risks. Prioritized hardening
+recommendations.
+
+**Test count:** 214 (up from 194).

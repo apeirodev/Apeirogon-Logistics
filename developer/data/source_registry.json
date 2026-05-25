@@ -4,6 +4,12 @@
   "retrieved_date": "2026-05-16",
   "sources": [
     {
+      "name": "Apeirogon Logistics 0.62.1 security hardening and governance alignment",
+      "notes": "Full repository audit: bandit SAST (zero findings), pip-audit (no CVEs), keyword scan, tool-by-tool review. Fixes: local_OCR_preprocessor ERR-02 str(exc) in output, validate_governance_metadata ERR-01 fail-closed wrapper, dump_json FILE-01 safe_write_path enforcement, safe_load_json WARN-02 10 MB cap. 20 new security regression tests. New SECURITY_CONTROLS.md with CSA CCM/AICM/OWASP mappings.",
+      "source_id": "apeirogon_0_62_1_security_hardening_governance_alignment",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.61.2 version consistency test",
       "notes": "test_version_consistency.py added: three assertions ensure all version files agree and VERSION.json root field is not forgotten. CLAUDE.md versioning rule updated with explicit field list and test reference.",
       "source_id": "apeirogon_0_61_2_version_consistency_test",

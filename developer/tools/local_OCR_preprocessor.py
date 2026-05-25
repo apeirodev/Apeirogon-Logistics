@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 import argparse
+import logging
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from lib.common import add_common_args, dump_json, governance_metadata
+
+logger = logging.getLogger(__name__)
 
 _ALLOWED_IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".bmp", ".tiff", ".tif", ".webp"}
 _BLOCKED_PATH_PREFIXES = ["/etc", "/proc", "/sys", "/root", "/home"]
@@ -34,7 +37,8 @@ def main():
     try:
         image = _validate_image_path(args.image)
     except ValueError as exc:
-        dump_json({"error": str(exc)}, args.output)
+        logger.error("Image path validation failed: %s", exc)
+        dump_json({"error": "invalid image path"}, args.output)
         sys.exit(1)
 
     report = {

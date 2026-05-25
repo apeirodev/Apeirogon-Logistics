@@ -6,9 +6,9 @@
     "telemetry_calibrated": false
   },
   "generated_utc": "2026-05-23T00:00:00Z",
-  "previous_version": "0.58.2",
+  "previous_version": "0.59.1",
   "project": "Apeirogon Logistics",
-  "release_type": "0.59.1_rep_grinding_ship_selection",
+  "release_type": "0.60.1_codebase_audit_fixes",
   "semantic_versioning": "three-level",
   "skipped_versions": [
     {
@@ -195,6 +195,10 @@
     {
       "version": "0.59.1",
       "status": "rep_grinding_ship_selection"
+    },
+    {
+      "version": "0.60.1",
+      "status": "codebase_audit_fixes"
     }
   ]
 }

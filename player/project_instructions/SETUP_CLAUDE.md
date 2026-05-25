@@ -15,7 +15,7 @@
 
 ## Step 2: Upload the scoring files
 
-Inside your new project, look for an option to add files or knowledge. Upload **all eight files** from the `player/uploads/` folder of this repository:
+Inside your new project, look for an option to add files or knowledge. Upload **all nine files** from the `player/uploads/` folder of this repository:
 
 - `scoring_config.json`: exact scoring weights
 - `OCR_normalization_rules.json`: location and issuer name lookups
@@ -25,6 +25,7 @@ Inside your new project, look for an option to add files or knowledge. Upload **
 - `SHIP_SPECIALIZATION_GUIDE.md`: per-ship advice and modifier reference
 - `hull_b_covalex_route_playbook.md`: Hull-B route strategy guide
 - `GENERALIZED_HAULING_HANDBOOK.md`: advice for other ships and issuers
+- `COVALEX_RANK_STRATEGY.md`: Covalex reputation rank grinding guide
 
 These give Claude the exact numbers and context it needs to score accurately.
 
@@ -609,7 +610,7 @@ At the start of each hauling session, paste this block into the chat. Fill in yo
 Starting a hauling session.
 
 Ship: [your ship -- e.g. Hull-B, Taurus, Caterpillar]
-Current location: [where you are now -- e.g. Port Olisar, Baijini Point]
+Current location: [where you are now -- e.g. Hur-L2, Baijini Point, Everus Harbor]
 Patch version: [optional -- e.g. Alpha 3.24]
 
 I'll paste screenshots of the contracts terminal. Score each mission and tell me which ones to take, which to skip, and the best order to run them if I'm taking more than one.

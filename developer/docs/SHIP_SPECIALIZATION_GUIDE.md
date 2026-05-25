@@ -61,7 +61,7 @@ All multipliers from `runtime/scoring_config.json`. A multiplier > 1.0 amplifies
 | hull-b | cargo_panel_clarity | ×1.15 | Clean mission sets score higher |
 | hull-b | ship_suitability | ×1.05 | Slightly better baseline fit |
 | hull-c | freight | ×1.25 | Strong reward for high-value freight |
-| hull-c | stop_density | ×1.20 | High stop counts penalised hard |
+| hull-c | stop_density | ×1.20 | High stop counts penalized hard |
 | hull-c | ship_suitability | ×1.15 | Best match for mission size |
 | taurus | ship_suitability | ×1.05 | Better baseline fit |
 | taurus | fatigue | ×0.95 | Long chains accumulate less fatigue |
@@ -96,17 +96,17 @@ All multipliers from `runtime/scoring_config.json`. A multiplier > 1.0 amplifies
 | c2 hercules | fragmentation | ×1.08 | Fragmented routes hurt somewhat more |
 | starfarer | ship_suitability | ×0.88 | Poor fit: primary role is fueling |
 | starfarer | freight | ×1.05 | Small freight bonus |
-| starfarer | stop_density | ×1.10 | Multiple stops penalised more |
+| starfarer | stop_density | ×1.10 | Multiple stops penalized more |
 | starfarer gemini | ship_suitability | ×0.85 | Poor fit: military fueling ship |
 | starfarer gemini | freight | ×1.05 | Small freight bonus |
-| starfarer gemini | stop_density | ×1.10 | Multiple stops penalised more |
+| starfarer gemini | stop_density | ×1.10 | Multiple stops penalized more |
 | ironclad | ship_suitability | ×1.10 | Excellent fit for armored deep-space cargo |
 | ironclad | freight | ×1.15 | Strong freight bonus |
 | ironclad | stop_density | ×1.25 | Multiple stops hurt severely; fly single-stop only |
 | ironclad | fragmentation | ×1.15 | Fragmented routes hurt badly |
 | ironclad assault | ship_suitability | ×0.90 | Sub-optimal: vehicle carrier, not hauler |
 | ironclad assault | freight | ×1.10 | Moderate freight bonus |
-| ironclad assault | stop_density | ×1.20 | Multiple stops penalised hard |
+| ironclad assault | stop_density | ×1.20 | Multiple stops penalized hard |
 | hermes | ship_suitability | ×1.05 | Good fit for fast medium routes |
 | hermes | dead_leg | ×0.90 | Dead-leg penalty dampened, good recovery ship |
 | hermes | fatigue | ×0.92 | Fatigue dampened, suited to long sessions |

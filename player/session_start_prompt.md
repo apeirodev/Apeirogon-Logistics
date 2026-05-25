@@ -9,9 +9,9 @@ You can leave "Patch version" blank if you don't know it.
 ```
 Starting a hauling session.
 
-Ship: [your ship — e.g. Hull-B, Taurus, Caterpillar]
+Ship: [your ship -- e.g. Hull-B, Taurus, Caterpillar]
 Current location: [where you are now -- e.g. Hur-L2, Baijini Point, Everus Harbor]
-Patch version: [optional — e.g. Alpha 3.24]
+Patch version: [optional -- e.g. Alpha 3.24]
 
 I'll paste screenshots of the contracts terminal. Score each mission and tell me which ones to take, which to skip, and the best order to run them if I'm taking more than one.
 ```

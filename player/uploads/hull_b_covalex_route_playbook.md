@@ -24,7 +24,7 @@ Do not trust AI estimates of Hull-B capacity; they are frequently wrong.**
 
 ## The Core Strategy
 
-Maximise same-pickup stacking. Everything else is secondary.
+Maximize same-pickup stacking. Everything else is secondary.
 
 The `same_pickup` factor is worth +16 per stacked mission. Three missions from
 the same pickup location add +32 to your combined route score. That's the

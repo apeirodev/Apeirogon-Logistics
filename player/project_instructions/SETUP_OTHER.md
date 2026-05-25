@@ -11,7 +11,7 @@ This works with any AI that supports image uploads and lets you set a custom ins
 1. Find the system prompt or custom instructions field for your AI
 2. Copy everything between the lines below and paste it there
 3. Save it; you only need to do this once
-4. If your AI supports file uploads or a knowledge base, upload all eight files from `player/uploads/`
+4. If your AI supports file uploads or a knowledge base, upload all nine files from `player/uploads/`
 5. From then on, use the session start block at the bottom of this page at the start of each session
 
 ---
@@ -608,7 +608,7 @@ At the start of each hauling session, paste this block into the chat. Fill in yo
 Starting a hauling session.
 
 Ship: [your ship -- e.g. Hull-B, Taurus, Caterpillar]
-Current location: [where you are now -- e.g. Port Olisar, Baijini Point]
+Current location: [where you are now -- e.g. Hur-L2, Baijini Point, Everus Harbor]
 Patch version: [optional -- e.g. Alpha 3.24]
 
 I'll paste screenshots of the contracts terminal. Score each mission and tell me which ones to take, which to skip, and the best order to run them if I'm taking more than one.

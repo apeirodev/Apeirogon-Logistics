@@ -10,7 +10,7 @@ The deterministic scorer always produces the same output from the same input; th
 
 - Verify that a scoring config change did or did not affect a past decision
 - Confirm that a route recommendation you acted on matches the current tool version
-- Audit AI-assisted sessions by re-running the normalised input through the scorer
+- Audit AI-assisted sessions by re-running the normalized input through the scorer
 
 ---
 
@@ -46,8 +46,8 @@ A replay hash mismatch means the scorer produced a different result. Causes:
 
 If you used an AI provider for OCR extraction, the AI's output went through `OCR_result_normalizer.py` before scoring. To audit:
 
-1. Recover the normalised JSON from your session output directory.
-2. Run it through the scorer: `python tools/deterministic_scorer.py -i normalised.json`
+1. Recover the normalized JSON from your session output directory.
+2. Run it through the scorer: `python tools/deterministic_scorer.py -i normalized.json`
 3. Compare the `deterministic_hash` to the original session's scoring output.
 
 If you want to audit the AI's extraction itself, compare the raw AI output to what was on your screen. The scorer is deterministic; hallucination risk is in the extraction stage, not the scoring stage.

@@ -61,7 +61,7 @@ Two missions from Port Olisar score 16 points higher than two separate pickups.
 
 A route segment with no cargo. You fly from delivery point A to pickup point B
 empty, burning fuel and time without earning anything. The scoring system
-penalises dead legs by -15 points.
+penalizes dead legs by -15 points.
 
 ---
 
@@ -69,7 +69,7 @@ penalises dead legs by -15 points.
 
 When deliveries are spread across many different destinations, each requiring
 a separate stop. High fragmentation means more unloading complexity and more
-stops per run. The scoring system penalises fragmentation by -12 points.
+stops per run. The scoring system penalizes fragmentation by -12 points.
 
 ---
 

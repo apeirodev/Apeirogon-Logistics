@@ -195,7 +195,7 @@ def _collect_input() -> dict:
     if issuer:
         route["issuer"] = issuer
     if unresolved:
-        route["unresolved"] = unresolved
+        route["unresolved_fields"] = unresolved
 
     return route
 

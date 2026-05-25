@@ -74,7 +74,7 @@ The AI returns JSON. Before using it, check:
 If anything looks wrong, tell the AI: *"You invented [field]. I did not give
 you that. Replace it with UNRESOLVED."*
 
-**Step 6: Save and normalise**
+**Step 6: Save and normalize**
 Save the AI's JSON as `raw_extraction.json`. Then:
 ```bash
 python tools/OCR_result_normalizer.py -i raw_extraction.json -o missions_norm.json

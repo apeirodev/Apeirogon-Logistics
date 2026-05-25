@@ -90,17 +90,17 @@ Multipliers from `scoring_config.json`. > 1.0 amplifies, < 1.0 dampens.
 | c2 hercules | fragmentation | ×1.08 | Fragmented routes hurt somewhat more |
 | starfarer | ship_suitability | ×0.88 | Poor fit: primary role is fueling |
 | starfarer | freight | ×1.05 | Small freight bonus |
-| starfarer | stop_density | ×1.10 | Multiple delivery stops penalised more |
+| starfarer | stop_density | ×1.10 | Multiple delivery stops penalized more |
 | starfarer gemini | ship_suitability | ×0.85 | Poor fit: military fueling ship |
 | starfarer gemini | freight | ×1.05 | Small freight bonus |
-| starfarer gemini | stop_density | ×1.10 | Multiple delivery stops penalised more |
+| starfarer gemini | stop_density | ×1.10 | Multiple delivery stops penalized more |
 | ironclad | ship_suitability | ×1.10 | Excellent fit for armored deep-space cargo |
 | ironclad | freight | ×1.15 | Strong freight bonus |
 | ironclad | stop_density | ×1.25 | Multiple stops hurt severely: only take single-destination runs |
 | ironclad | fragmentation | ×1.15 | Fragmented routes hurt badly |
 | ironclad assault | ship_suitability | ×0.90 | Sub-optimal: vehicle carrier, not hauler |
 | ironclad assault | freight | ×1.10 | Moderate freight bonus |
-| ironclad assault | stop_density | ×1.20 | Multiple stops penalised hard |
+| ironclad assault | stop_density | ×1.20 | Multiple stops penalized hard |
 | hermes | ship_suitability | ×1.05 | Good fit for fast medium routes |
 | hermes | dead_leg | ×0.90 | Flying empty to pickup hurts least of any ship |
 | hermes | fatigue | ×0.92 | Fatigue dampened: suited to long sessions |

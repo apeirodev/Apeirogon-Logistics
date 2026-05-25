@@ -14,6 +14,7 @@ import argparse
 import fnmatch
 import json
 import re
+import sys
 from pathlib import Path
 from lib.common import dump_json
 
@@ -74,10 +75,11 @@ def main():
                 "missing_references": missing[:100],
             })
         except Exception as e:
+            print(f"manifest error: {e}", file=sys.stderr)
             findings.append({
                 "manifest": rel,
                 "valid": False,
-                "error": str(e),
+                "error": "manifest read error",
             })
 
     dump_json({

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import argparse, json
+import argparse, json, sys
 from pathlib import Path
 from lib.common import dump_json, validate_governance_metadata
 
@@ -40,8 +40,9 @@ def validate_tree(root: Path):
                 record["governance_metadata_valid"] = ok
                 record["governance_metadata_problems"] = problems
         except Exception as e:
+            print(f"schema validation error: {e}", file=sys.stderr)
             record["valid_json"] = False
-            record["error"] = str(e)
+            record["error"] = "validation error"
         results.append(record)
     return {
         "valid": all(r.get("valid_json") and not r.get("missing_refs") for r in results),

@@ -101,6 +101,9 @@ def factor(route: Dict[str, Any], key: str) -> float:
         return 1 if len(seq) >= 2 and len(set(seq)) < len(seq) else 0
     if key == "chain_collapse":
         return 1 if len(seq) > 6 else 0
+    if key == "issuer_alignment":
+        issuer = str(route.get("issuer", "")).lower()
+        return 1.0 if issuer in ("covalex", "ling", "ling family", "red wind") else 0.0
     return 0.0
 
 def score_route(route: Dict[str, Any], weights: Dict[str, float] | None = None) -> Dict[str, Any]:

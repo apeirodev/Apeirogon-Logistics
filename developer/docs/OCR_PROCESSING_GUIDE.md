@@ -1,12 +1,12 @@
 # OCR Processing Guide
 
-How the OCR normalisation pipeline works, when to use it, and how to fix common problems.
+How the OCR normalization pipeline works, when to use it, and how to fix common problems.
 
 ---
 
 ## What OCR Processing Does
 
-The OCR normaliser (`tools/OCR_result_normalizer.py`) takes raw extraction output, either from an AI provider reading a screenshot or from a manual copy-paste, and:
+The OCR normalizer (`tools/OCR_result_normalizer.py`) takes raw extraction output, either from an AI provider reading a screenshot or from a manual copy-paste, and:
 
 1. Resolves location aliases (e.g. "Shopp-L4" → "Covalex Hub Shopp-L4")
 2. Resolves issuer aliases (e.g. "cov alex" → "Covalex")
@@ -14,7 +14,7 @@ The OCR normaliser (`tools/OCR_result_normalizer.py`) takes raw extraction outpu
 4. Marks fields that could not be resolved as UNRESOLVED
 5. Adds governance metadata tracking provenance
 
-The output of the normaliser is what you pass to `ingest_mission_batch.py`.
+The output of the normalizer is what you pass to `ingest_mission_batch.py`.
 
 ---
 
@@ -22,7 +22,7 @@ The output of the normaliser is what you pass to `ingest_mission_batch.py`.
 
 ### AI Vision Mode
 
-When the input contains a `"missions"` array or has `"source_class": "ai_vision_extraction"`, the normaliser processes it as structured AI output:
+When the input contains a `"missions"` array or has `"source_class": "ai_vision_extraction"`, the normalizer processes it as structured AI output:
 
 ```bash
 python tools/OCR_result_normalizer.py -i raw_extraction.json -o missions_norm.json
@@ -32,7 +32,7 @@ The input should be the JSON the AI returned after reading your screenshot.
 
 ### Raw OCR Mode
 
-When the input is unstructured text extracted from OCR (no `"missions"` key), the normaliser applies regex-based field extraction and alias resolution.
+When the input is unstructured text extracted from OCR (no `"missions"` key), the normalizer applies regex-based field extraction and alias resolution.
 
 ---
 
@@ -71,14 +71,14 @@ Example:
 
 ## Handling UNRESOLVED Fields
 
-When a field cannot be resolved from the extraction, the normaliser sets it to `"UNRESOLVED"`. This propagates to the scorer, which applies a -2 penalty per unresolved field (capped at -12).
+When a field cannot be resolved from the extraction, the normalizer sets it to `"UNRESOLVED"`. This propagates to the scorer, which applies a -2 penalty per unresolved field (capped at -12).
 
 Common reasons for UNRESOLVED:
 - Reward or fee was not visible in the screenshot
 - Location name did not match any alias
 - OCR read the field but it was ambiguous
 
-To fix: add the correct value manually to the normalised JSON before scoring, or re-extract from a clearer screenshot.
+To fix: add the correct value manually to the normalized JSON before scoring, or re-extract from a clearer screenshot.
 
 ---
 
@@ -91,13 +91,13 @@ Before running the batch scorer, open `missions_norm.json` and check:
 - `reward_usc` is a number, not UNRESOLVED; if UNRESOLVED, check the original screenshot
 - No locations appear that were not in your terminal
 
-If anything looks wrong, fix it in the JSON before running the scorer. The normaliser output is a plain JSON file you can edit directly.
+If anything looks wrong, fix it in the JSON before running the scorer. The normalizer output is a plain JSON file you can edit directly.
 
 ---
 
 ## Confidence Threshold
 
-The normaliser applies a minimum confidence threshold (default: 0.65, configurable in `OCR_normalization_rules.json` under `ocr_ambiguity_handling.minimum_confidence_threshold`). Extractions below this threshold are flagged in warnings.
+The normalizer applies a minimum confidence threshold (default: 0.65, configurable in `OCR_normalization_rules.json` under `ocr_ambiguity_handling.minimum_confidence_threshold`). Extractions below this threshold are flagged in warnings.
 
 If you are getting many low-confidence warnings:
 - Use a higher-resolution screenshot

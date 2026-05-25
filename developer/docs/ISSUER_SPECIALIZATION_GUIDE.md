@@ -26,7 +26,7 @@ If a mission has no issuer field or the issuer is not in the config, the scorer 
 | ling / ling family | destination_overlap | ×1.05 | Small bonus when destinations stack with other missions |
 | ling / ling family | same_pickup | ×1.03 | Small bonus for same-pickup stacking |
 | red wind | dead_leg | ×1.10 | Dead legs cost more with Red Wind missions; already -15 base, now worse |
-| red wind | congestion | ×1.05 | Congested delivery points penalised more |
+| red wind | congestion | ×1.05 | Congested delivery points penalized more |
 
 ### Covalex
 

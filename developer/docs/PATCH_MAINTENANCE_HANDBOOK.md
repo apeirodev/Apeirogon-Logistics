@@ -36,7 +36,7 @@ If an issuer was added, modified, or removed, update `issuer_modifiers` in `scor
 
 **4. Update patch_version in your session state.**
 
-When you start your first session on the new patch, update `patch_version` in your `session_state.json` and `user_profile.json`. This ensures your telemetry is tagged correctly.
+When you start your first session on the new patch, update `patch_version` in your `session_state.json` and `user_profile.json`. This ensures that your telemetry is tagged correctly.
 
 ---
 

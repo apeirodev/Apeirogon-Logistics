@@ -1,6 +1,6 @@
 {
-  "_copy_note": "PLAYER COPY — exact copy of developer/runtime/scoring_config.json. If you edit scoring weights, update both files. The canonical file for developers is developer/runtime/scoring_config.json.",
-  "description": "Deterministic scorer configuration — weights, modifiers, and thresholds. Edit this file to tune scoring without changing code.",
+  "_copy_note": "PLAYER COPY -- exact copy of developer/runtime/scoring_config.json. If you edit scoring weights, update both files. The canonical file for developers is developer/runtime/scoring_config.json.",
+  "description": "Deterministic scorer configuration -- weights, modifiers, and thresholds. Edit this file to tune scoring without changing code.",
   "base_score": 50,
   "score_bands": {
     "accept_threshold": 70,
@@ -46,7 +46,7 @@
     }
   },
   "ship_modifiers": {
-    "_modifiers_note": "Ship scoring modifiers for all ships with 90+ SCU cargo capacity. All values for non-flyable ships (hull-d, hull-e, merchantman, galaxy) are speculative placeholders — update after live testing.",
+    "_modifiers_note": "Ship scoring modifiers for all ships with 90+ SCU cargo capacity. All values for non-flyable ships (hull-d, hull-e, merchantman, galaxy) are speculative placeholders -- update after live testing.",
     "hull-b": {
       "freight": 1.05,
       "fragmentation": 1.10,

@@ -78,7 +78,7 @@ Do not put API keys in JSON input files, config files, or command-line arguments
 
 If you want screenshot OCR without sending data to a cloud provider, local AI models via Ollama or LM Studio can provide vision OCR without cloud access. Model availability and names change with software updates, so check the current Ollama or LM Studio documentation for which models support image input.
 
-The rest of the pipeline (normaliser → batch scorer) is unaffected by which OCR source you use. The only difference is whether the AI call goes to a cloud endpoint or a local one.
+The rest of the pipeline (normalizer → batch scorer) is unaffected by which OCR source you use. The only difference is whether the AI call goes to a cloud endpoint or a local one.
 
 Using a local model means your screenshots never leave your machine and there is no per-call cost. The tradeoff is that local models may be slower or less accurate depending on your hardware.
 

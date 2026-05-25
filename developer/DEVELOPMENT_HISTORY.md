@@ -751,3 +751,41 @@ Scoring modifier suppression rule added: fragmentation penalty, stop density pen
 `COVALEX_RANK_STRATEGY.md` updated with ship selection section covering all disqualifiers, verdicts, and verification steps.
 
 Synced to all 7 SETUP files.
+
+---
+
+## Version 0.60.1: Codebase Audit Fixes
+
+Comprehensive codebase audit -- 26 findings corrected.
+
+**Critical:**
+- CI-01: regression.yml was missing the setup-python step. All 20+ regression steps would have failed on a fresh runner with "python: command not found". Step added. Em dashes in step names fixed. Port Olisar test fixtures updated to Hur-L2.
+
+**Python bugs:**
+- BUG-01: calculate_traversal.py: "Aberdeen" in _ATMOSPHERE_LOCATIONS was capitalized and never matched against lowercased location strings. Fixed to "aberdeen".
+- BUG-02: calculate_traversal.py: "arc corp" (with space) never matched "arccorp". Fixed to "arccorp".
+- BUG-03: deterministic_scorer.py: issuer_alignment factor was never auto-computed for any issuer, creating a 9-point gap between AI-assisted and tool-based Covalex scoring. Auto-computation added: returns 1.0 for Covalex, Ling, Ling Family, and Red Wind.
+- BUG-04: score_worksheet.py: route["unresolved"] key corrected to route["unresolved_fields"] for consistency.
+- BUG-05: route_chain_analyzer.py: "fragile"/"stable" labels renamed to "linear"/"looping" for clarity.
+- BUG-06: lib/common.py: parse_positive_number() allowed zero. Fixed guard to num > 0.
+
+**Security:**
+- SEC-01: verify_replay_integrity.py: hash comparison used "in" operator instead of hmac.compare_digest (WARN-03). Fixed.
+- SEC-02: local_OCR_preprocessor.py: _validate_image_path() added blocked directory check (FILE-01).
+- SEC-03: lib/common.py: safe_write_path() utility added (FILE-01).
+- SEC-04/05: schema_validator.py, manifest_validator.py: str(e) in output replaced with safe summary strings (ERR-02).
+
+**Player docs:**
+- PLAYER-01: Port Olisar in session start template in all 7 SETUP files updated to active locations.
+- PLAYER-02: All 7 SETUP files updated from "eight files" to "nine files"; COVALEX_RANK_STRATEGY.md added to upload list.
+
+**Data:**
+- DATA-01: developer/hull_b_covalex_route_playbook.md Port Olisar references updated to Hur-L2.
+
+**Style (grammar rules enforcement):**
+- STYLE-01: WHATS_NEW.md em dashes in old section headings replaced.
+- STYLE-02: session_start_prompt.md em dashes in code block replaced.
+- STYLE-03/04: scoring_config.json and mission_issuer_profiles.json em dashes replaced.
+- STYLE-05/06: "penalised" and "Maximise" in player docs corrected.
+- STYLE-07: "ise" spellings across 13 developer docs corrected to "ize".
+- STYLE-08/09: "ensure" without "that" in two developer docs corrected.

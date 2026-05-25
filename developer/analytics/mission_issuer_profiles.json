@@ -1,5 +1,5 @@
 {
-  "_copy_note": "CANONICAL FILE — player copy is at player/uploads/mission_issuer_profiles.json. If you update issuer profiles here, update the player copy too.",
+  "_copy_note": "CANONICAL FILE -- player copy is at player/uploads/mission_issuer_profiles.json. If you update issuer profiles here, update the player copy too.",
   "dataset_name": "phase24b_mission_issuer_profiles",
   "generated_at": "2026-05-17T00:23:38Z",
   "issuers": {
@@ -59,19 +59,19 @@
       "mission_structure_tendency": "industrial_distribution",
       "orbital_loop_tendency": "low",
       "dead_leg_tendency": "high",
-      "notes": "Placeholder — scoring modifiers not yet tuned. Missions tend toward surface and industrial locations around Hurston. Expect more atmosphere stops and longer dead legs than Covalex."
+      "notes": "Placeholder -- scoring modifiers not yet tuned. Missions tend toward surface and industrial locations around Hurston. Expect more atmosphere stops and longer dead legs than Covalex."
     },
     "microTech": {
       "mission_structure_tendency": "corporate_distribution",
       "orbital_loop_tendency": "moderate",
       "dead_leg_tendency": "moderate",
-      "notes": "Placeholder — scoring modifiers not yet tuned. microTech routes typically involve Microtech planetary locations and nearby Lagrange stations."
+      "notes": "Placeholder -- scoring modifiers not yet tuned. microTech routes typically involve Microtech planetary locations and nearby Lagrange stations."
     },
     "ArcCorp": {
       "mission_structure_tendency": "urban_cargo_density",
       "orbital_loop_tendency": "moderate",
       "dead_leg_tendency": "moderate",
-      "notes": "Placeholder — scoring modifiers not yet tuned. ArcCorp missions concentrate around ArcCorp's urban stations and Lagrange points."
+      "notes": "Placeholder -- scoring modifiers not yet tuned. ArcCorp missions concentrate around ArcCorp's urban stations and Lagrange points."
     }
   }
 }

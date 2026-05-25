@@ -58,6 +58,17 @@ def file_sha256(path: str | Path) -> str:
             h.update(chunk)
     return h.hexdigest()
 
+_ALLOWED_WRITE_ROOTS: list[Path] = [Path("output"), Path("exports"), Path("telemetry")]
+
+def safe_write_path(raw_path: str, allowed_roots: list[Path] | None = None) -> Path:
+    """Validate that raw_path resolves within one of the allowed write roots (FILE-01)."""
+    roots = allowed_roots if allowed_roots is not None else _ALLOWED_WRITE_ROOTS
+    p = Path(raw_path).resolve()
+    for root in roots:
+        if p.is_relative_to(root.resolve()):
+            return p
+    raise ValueError(f"Output path outside allowed write roots: {raw_path}")
+
 def collect_unresolved(data: Any) -> List[str]:
     fields: List[str] = []
     if isinstance(data, dict):
@@ -157,7 +168,7 @@ def parse_positive_number(value: Any) -> float | None:
     if not match:
         return None
     num = float(match.group(0))
-    return num if num >= 0 else None
+    return num if num > 0 else None
 
 def normalize_text(value: Any) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()

@@ -6,6 +6,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from lib.common import add_common_args, dump_json, governance_metadata
 
 _ALLOWED_IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".bmp", ".tiff", ".tif", ".webp"}
+_BLOCKED_PATH_PREFIXES = ["/etc", "/proc", "/sys", "/root", "/home"]
 
 
 def _validate_image_path(raw: str) -> Path:
@@ -15,9 +16,11 @@ def _validate_image_path(raw: str) -> Path:
             f"Image path has unexpected extension '{p.suffix}'. "
             f"Allowed: {sorted(_ALLOWED_IMAGE_SUFFIXES)}"
         )
-    # Path traversal guard: require the resolved path to be absolute and non-root
     if p == p.root or str(p) in ("/", ""):
         raise ValueError(f"Image path resolves to filesystem root: {raw}")
+    for blocked in _BLOCKED_PATH_PREFIXES:
+        if str(p).startswith(blocked):
+            raise ValueError(f"Image path is in a restricted directory: {raw}")
     return p
 
 

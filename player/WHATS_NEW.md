@@ -185,7 +185,7 @@ Also in this update: non-flyable ship guard (Hull-D, Hull-E, Merchantman, Galaxy
 
 ---
 
-## v0.50.1 — Hallucination guardrails expanded (re-paste your instructions)
+## v0.50.1 -- Hallucination guardrails expanded (re-paste your instructions)
 
 **You need to re-paste the instruction block into your AI if you set it up before this version.**
 
@@ -221,7 +221,7 @@ re-paste it into your AI project or system prompt.
 
 ---
 
-## v0.42.1 — Scoring completeness fix (re-paste your instructions)
+## v0.42.1 -- Scoring completeness fix (re-paste your instructions)
 
 **You need to re-paste the instruction block into your AI if you set it up before this version.**
 
@@ -248,7 +248,7 @@ the start of your next session.
 
 ---
 
-## v0.41.1 to v0.41.6 — New platform guides and wording fixes
+## v0.41.1 to v0.41.6 -- New platform guides and wording fixes
 
 Added dedicated setup guides for three new platforms:
 - **Microsoft Copilot** (see `project_instructions/SETUP_COPILOT.md`)
@@ -264,7 +264,7 @@ No scoring logic changed in these versions. If your setup was working, it still 
 
 ---
 
-## v0.38.1 — 23 ships and Covalex reputation ranks
+## v0.38.1 -- 23 ships and Covalex reputation ranks
 
 Ship coverage expanded from 5 to 23 ships (all 90+ SCU haulers in Alpha 4.8.0).
 
@@ -277,7 +277,7 @@ If you use ship_profiles.json as an upload, replace your copy with the updated f
 
 ---
 
-## v0.36.1 to v0.36.2 — Player folder and Alpha 4.8.0
+## v0.36.1 to v0.36.2 -- Player folder and Alpha 4.8.0
 
 The `player/` folder was introduced in this version. If you were using an earlier version
 you were working directly with developer files. Everything is now in `player/`.

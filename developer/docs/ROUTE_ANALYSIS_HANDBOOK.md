@@ -102,10 +102,10 @@ Triggers for each stop beyond 3. A 5-stop route incurs -12 points for stop densi
 ### fatigue (-7 per point)
 Route complexity fatigue: accumulates on long routes. Hull-B is relatively
 resilient here (0.95× modifier, i.e. 5% reduction), reflecting its
-orbital-loop specialisation.
+orbital-loop specialization.
 
 ### congestion (-8 per point)
-Delivery to high-traffic or contested locations. Penalises routes with
+Delivery to high-traffic or contested locations. Penalizes routes with
 predictable bottlenecks.
 
 ### unloading_cognitive_load (-7 per point)
@@ -123,7 +123,7 @@ is detected in the route.
 |--------|-----------------|--------|
 | Covalex | issuer_alignment ×1.10, orbital_loop ×1.05, route_continuity ×1.05 | Rewards Covalex orbital chain structure |
 | Ling / Ling Family | destination_overlap ×1.05, same_pickup ×1.03 | Small bonus for destination stacking |
-| Red Wind | dead_leg ×1.10, congestion ×1.05 | Red Wind routes penalised more for dead legs |
+| Red Wind | dead_leg ×1.10, congestion ×1.05 | Red Wind routes penalized more for dead legs |
 
 These are in `runtime/scoring_config.json` under `issuer_modifiers`. Edit them
 to match your observed experience with each issuer.
@@ -134,8 +134,8 @@ to match your observed experience with each issuer.
 
 | Ship | Modified Factors | Effect |
 |------|-----------------|--------|
-| Hull-B | freight ×1.05, fragmentation ×1.10, cargo_panel_clarity ×1.15, ship_suitability ×1.05 | Rewards clear-panel runs; penalises fragmentation more |
-| Hull-C | freight ×1.25, stop_density ×1.20, ship_suitability ×1.15 | Strongly penalises high stop counts |
+| Hull-B | freight ×1.05, fragmentation ×1.10, cargo_panel_clarity ×1.15, ship_suitability ×1.05 | Rewards clear-panel runs; penalizes fragmentation more |
+| Hull-C | freight ×1.25, stop_density ×1.20, ship_suitability ×1.15 | Strongly penalizes high stop counts |
 | Taurus | ship_suitability ×1.05, fatigue ×0.95 | Slightly more resilient to long chains |
 | Caterpillar | freight ×1.10, ship_suitability ×1.10 | Moderate freight bonus |
 | Freelancer MAX | ship_suitability ×1.02, fatigue ×0.98 | Near-neutral modifiers |

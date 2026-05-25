@@ -72,4 +72,4 @@ Never put keys in:
 - Command-line arguments (visible in process list)
 - Log files
 
-The project's security rules (LOG-01 in `CLAUDE.md`) require that API keys never appear in logs or output files. If you extend any tool to use a provider API, ensure the key is read from the environment and never written to any output structure.
+The project's security rules (LOG-01 in `CLAUDE.md`) require that API keys never appear in logs or output files. If you extend any tool to use a provider API, ensure that the key is read from the environment and never written to any output structure.

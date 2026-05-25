@@ -125,7 +125,7 @@ python tools/OCR_result_normalizer.py -i raw_extraction.json -o missions_norm.js
 python tools/ingest_mission_batch.py -i missions_norm.json
 ```
 
-The normaliser resolves location aliases and issuer name variants.
+The normalizer resolves location aliases and issuer name variants.
 The batch tool scores each mission individually, identifies same-pickup stacking
 opportunities, and suggests a combined route.
 
@@ -182,7 +182,7 @@ The JSON is still valid. Copy only the JSON block, not the disclaimer text.
 Try: a higher-resolution screenshot, cropping to the mission terminal area only,
 or increasing in-game UI scale before screenshotting.
 
-**JSON parse error when running the normaliser**
+**JSON parse error when running the normalizer**
 
 Check the file with a JSON validator. Claude occasionally produces minor syntax
 issues on complex structures. Fix any syntax errors before running the pipeline.

@@ -7,7 +7,7 @@ def analyze(data):
     missions = data.get("missions", [])
     unique = len(set(sequence))
     count = len(sequence)
-    continuity = "stable" if count and unique <= max(1, count - 1) else "fragile"
+    continuity = "looping" if count and unique <= max(1, count - 1) else "linear"
     collapse = "high" if count > 6 else "medium" if count > 3 else "low"
     return {
         "route_chain_continuity": continuity,

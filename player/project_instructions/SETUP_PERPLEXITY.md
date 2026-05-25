@@ -614,7 +614,7 @@ At the start of each hauling session, paste this block into the chat. Fill in yo
 Starting a hauling session.
 
 Ship: [your ship -- e.g. Hull-B, Taurus, Caterpillar]
-Current location: [where you are now -- e.g. Port Olisar, Baijini Point]
+Current location: [where you are now -- e.g. Hur-L2, Baijini Point, Everus Harbor]
 Patch version: [optional -- e.g. Alpha 3.24]
 
 I'll paste screenshots of the contracts terminal. Score each mission and tell me which ones to take, which to skip, and the best order to run them if I'm taking more than one.

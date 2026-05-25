@@ -31,8 +31,8 @@ the same pickup location add +32 to your combined route score. That's the
 difference between a 50-point (defer) individual mission and an 82-point
 (accept) combined run.
 
-**Look for Port Olisar clusters.** When three or more Covalex missions share
-Port Olisar as their pickup, accept all of them and deliver in one run.
+**Look for Hur-L2 clusters.** When three or more Covalex missions share
+Hur-L2 as their pickup, accept all of them and deliver in one run.
 
 ---
 
@@ -62,12 +62,12 @@ Port Olisar as their pickup, accept all of them and deliver in one run.
 At the mission terminal, before accepting anything:
 
 1. Note the pickup location of every available Covalex mission
-2. Group them by pickup: "Port Olisar × 3", "Microtech × 1", etc.
+2. Group them by pickup: "Hur-L2 × 3", "Microtech × 1", etc.
 3. Accept all missions from your largest pickup group first
 4. Only add missions from other pickups if they don't create dead legs
 
-If you have three Port Olisar missions and one ARC-L1 mission, accept the
-three Port Olisar missions and skip ARC-L1. Flying empty from Covalex Hub Shopp-L4
+If you have three Hur-L2 missions and one ARC-L1 mission, accept the
+three Hur-L2 missions and skip ARC-L1. Flying empty from Covalex Hub Shopp-L4
 to ARC-L1 to pick up costs more in time and positioning than the ARC-L1 mission earns.
 
 ---
@@ -82,7 +82,7 @@ Once you've accepted missions, order deliveries like this:
 4. **Return positioning**: end near your next pickup cluster
 
 **Never end a run far from the next opportunity.** If your next run is likely
-from Port Olisar, end near Port Olisar. The "where does this route leave me?"
+from Hur-L2, end near Hur-L2. The "where does this route leave me?"
 question matters as much as the route itself.
 
 ---
@@ -151,8 +151,8 @@ echo '{
   "issuer": "covalex",
   "ship": "hull-b",
   "missions": [
-    {"pickup": "Port Olisar", "delivery": ["Covalex Hub Shopp-L4"], "cargo_scu": 24, "reward_usc": 12500},
-    {"pickup": "Port Olisar", "delivery": ["Baijini Point"], "cargo_scu": 16, "reward_usc": 9000},
+    {"pickup": "Hur-L2", "delivery": ["Covalex Hub Shopp-L4"], "cargo_scu": 24, "reward_usc": 12500},
+    {"pickup": "Hur-L2", "delivery": ["Baijini Point"], "cargo_scu": 16, "reward_usc": 9000},
     {"pickup": "Microtech", "delivery": ["ARC-L1"], "cargo_scu": 32, "reward_usc": 8000}
   ]
 }' | python tools/ingest_mission_batch.py
@@ -219,7 +219,7 @@ running. If anything is fabricated, the batch score will be wrong. See
 
 | Pattern | Why |
 |---------|-----|
-| 3× Port Olisar pickup | +32 stacking bonus, ideal |
+| 3× Hur-L2 pickup | +32 stacking bonus, ideal |
 | All deliveries at orbital stations | No atmosphere, fast runs |
 | Covalex + Ling mix at same pickup | Both issuers have orbital deliveries |
 | Deliveries cluster at 2 to 3 L-points | Clean route, low fragmentation |

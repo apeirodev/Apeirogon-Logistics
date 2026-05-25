@@ -16,24 +16,31 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
 
-      - name: Deterministic scorer — basic route
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b  # v5.3.0
+        with:
+          python-version: '3.11'
+
+      - name: Install dev dependencies
+        run: pip install -r ../requirements-dev.txt
+
+      - name: Deterministic scorer -- basic route
         run: echo '{"same_pickup":1}' | python tools/deterministic_scorer.py
 
-      - name: Deterministic scorer — with issuer and ship
+      - name: Deterministic scorer -- with issuer and ship
         run: |
-          echo '{"issuer":"covalex","ship":"hull-b","stops":["Port Olisar","Covalex Hub Shopp-L4"],"same_pickup":2}' \
+          echo '{"issuer":"covalex","ship":"hull-b","stops":["Hur-L2","Covalex Hub Shopp-L4"],"same_pickup":2}' \
             | python tools/deterministic_scorer.py
 
       - name: Route chain analyzer
         run: echo '{"route_sequence":["A","B","C"]}' | python tools/route_chain_analyzer.py
 
-      - name: Route analysis runner — from repo root
+      - name: Route analysis runner -- from repo root
         run: echo '{"issuer":"covalex","ship":"hull-b","stops":["A","B"]}' | python tools/route_analysis_runner.py
 
-      - name: Run route analysis — alias entrypoint
+      - name: Run route analysis -- alias entrypoint
         run: echo '{"issuer":"covalex","ship":"hull-b","stops":["A","B"]}' | python tools/run_route_analysis.py
 
-      - name: Replay route analysis — re-run and verify
+      - name: Replay route analysis -- re-run and verify
         run: |
           OUT=$(echo '{"issuer":"covalex","ship":"hull-b","stops":["A","B"]}' | python tools/route_analysis_runner.py)
           echo "$OUT" | python tools/replay_route_analysis.py
@@ -66,7 +73,7 @@ jobs:
       - name: Patch compatibility checker
         run: echo '{"patch_version":"3.23"}' | python tools/patch_compatibility_checker.py
 
-      - name: Check patch compatibility — alias
+      - name: Check patch compatibility -- alias
         run: echo '{"patch_version":"3.23"}' | python tools/check_patch_compatibility.py
 
       - name: Provider output validator
@@ -74,7 +81,7 @@ jobs:
           echo '{"advisory_only":true,"governance_metadata":{"source_class":"ai_output","provenance_chain":[],"confidence_level":"medium","verification_status":"not_human_verified","patch_era":"UNRESOLVED","telemetry_support_level":"none","operational_assurance_state":"implemented","unresolved_field_list":[],"advisory_only":true,"contributor_trust_tier":"T0","derivation_type":"ai_generated"}}' \
             | python tools/provider_output_validator.py
 
-      - name: Validate provider output — alias
+      - name: Validate provider output -- alias
         run: |
           echo '{"advisory_only":true,"governance_metadata":{"source_class":"ai_output","provenance_chain":[],"confidence_level":"medium","verification_status":"not_human_verified","patch_era":"UNRESOLVED","telemetry_support_level":"none","operational_assurance_state":"implemented","unresolved_field_list":[],"advisory_only":true,"contributor_trust_tier":"T0","derivation_type":"ai_generated"}}' \
             | python tools/validate_provider_output.py
@@ -94,7 +101,7 @@ jobs:
       - name: Release checksum generation
         run: python tools/generate_release_checksums.py --root tests
 
-      - name: Release integrity verification — structure check
+      - name: Release integrity verification -- structure check
         run: |
           MANIFEST=$(python tools/generate_release_checksums.py --root tests)
           echo "$MANIFEST" | python tools/verify_release_integrity.py --root tests
@@ -105,27 +112,27 @@ jobs:
       - name: Schema dependency mapper
         run: python tools/schema_dependency_mapper.py --root schema
 
-      - name: Manifest validator — package manifests
+      - name: Manifest validator -- package manifests
         run: python tools/manifest_validator.py --root manifests --base .
 
-      - name: Manifest validator — root manifests (exclude test fixtures)
+      - name: Manifest validator -- root manifests (exclude test fixtures)
         run: python tools/manifest_validator.py --root . --base . --exclude "tests/*"
 
-      - name: OCR normalizer — raw OCR mode
+      - name: OCR normalizer -- raw OCR mode
         run: echo '{"raw_text":"Covalex 24 SCU"}' | python tools/OCR_result_normalizer.py
 
-      - name: OCR normalizer — AI vision mode
+      - name: OCR normalizer -- AI vision mode
         run: |
-          echo '{"advisory_only":true,"source_class":"ai_vision_extraction","extraction_confidence":0.88,"ship":"Hull-B","missions":[{"issuer":"Covalex","pickup":"Port Olisar","delivery":["Covalex Hub Shopp-L4"],"cargo_type":"Processed Food","cargo_scu":24,"reward_usc":12500,"fee_usc":"UNRESOLVED","timer_minutes":"UNRESOLVED","unresolved_fields":["fee_usc","timer_minutes"]}]}' \
+          echo '{"advisory_only":true,"source_class":"ai_vision_extraction","extraction_confidence":0.88,"ship":"Hull-B","missions":[{"issuer":"Covalex","pickup":"Hur-L2","delivery":["Covalex Hub Shopp-L4"],"cargo_type":"Processed Food","cargo_scu":24,"reward_usc":12500,"fee_usc":"UNRESOLVED","timer_minutes":"UNRESOLVED","unresolved_fields":["fee_usc","timer_minutes"]}]}' \
             | python tools/OCR_result_normalizer.py
 
-      - name: Ingest mission batch — raw batch
+      - name: Ingest mission batch -- raw batch
         run: |
-          echo '{"issuer":"covalex","ship":"hull-b","missions":[{"pickup":"Port Olisar","delivery":["Covalex Hub Shopp-L4"],"cargo_scu":24,"reward_usc":12500},{"pickup":"Port Olisar","delivery":["Baijini Point"],"cargo_scu":16,"reward_usc":9000}]}' \
+          echo '{"issuer":"covalex","ship":"hull-b","missions":[{"pickup":"Hur-L2","delivery":["Covalex Hub Shopp-L4"],"cargo_scu":24,"reward_usc":12500},{"pickup":"Hur-L2","delivery":["Baijini Point"],"cargo_scu":16,"reward_usc":9000}]}' \
             | python tools/ingest_mission_batch.py
 
-      - name: Ingest mission batch — end-to-end via normalizer
+      - name: Ingest mission batch -- end-to-end via normalizer
         run: |
-          echo '{"advisory_only":true,"source_class":"ai_vision_extraction","extraction_confidence":0.88,"ship":"Hull-B","missions":[{"issuer":"Covalex","pickup":"Port Olisar","delivery":["Covalex Hub Shopp-L4"],"cargo_type":"Processed Food","cargo_scu":24,"reward_usc":12500,"fee_usc":"UNRESOLVED","timer_minutes":"UNRESOLVED","unresolved_fields":["fee_usc","timer_minutes"]}]}' \
+          echo '{"advisory_only":true,"source_class":"ai_vision_extraction","extraction_confidence":0.88,"ship":"Hull-B","missions":[{"issuer":"Covalex","pickup":"Hur-L2","delivery":["Covalex Hub Shopp-L4"],"cargo_type":"Processed Food","cargo_scu":24,"reward_usc":12500,"fee_usc":"UNRESOLVED","timer_minutes":"UNRESOLVED","unresolved_fields":["fee_usc","timer_minutes"]}]}' \
             | python tools/OCR_result_normalizer.py \
             | python tools/ingest_mission_batch.py

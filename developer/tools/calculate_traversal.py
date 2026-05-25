@@ -21,8 +21,8 @@ from lib.common import add_common_args, collect_unresolved, dump_json, governanc
 
 # Locations known to require atmospheric entry
 _ATMOSPHERE_LOCATIONS: set[str] = {
-    "hurston", "microtech", "arc corp", "crusader",
-    "lyria", "wala", "cellin", "daymar", "yela", "Aberdeen", "magda",
+    "hurston", "microtech", "arccorp", "crusader",
+    "lyria", "wala", "cellin", "daymar", "yela", "aberdeen", "magda",
     "ita", "euterpe", "calliope",
 }
 

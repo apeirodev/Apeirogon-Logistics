@@ -4,6 +4,12 @@
   "retrieved_date": "2026-05-16",
   "sources": [
     {
+      "name": "Apeirogon Logistics 0.60.1 codebase audit fixes",
+      "notes": "26-finding codebase audit: CI regression fix, Python bugs, security fixes, SETUP file updates, Port Olisar removal from developer files, style rule enforcement across all docs.",
+      "source_id": "apeirogon_0_60_1_codebase_audit_fixes",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.59.1 rep grinding ship selection",
       "notes": "Ship selection rules for rank mode: hard disqualifiers, verdicts, verification prompt for Railen/Ironclad, scoring modifier suppression. loading_method added to ship_profiles.json. COVALEX_RANK_STRATEGY.md ship section added.",
       "source_id": "apeirogon_0_59_1_rep_grinding_ship_selection",

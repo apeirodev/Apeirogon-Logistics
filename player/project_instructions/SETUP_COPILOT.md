@@ -585,7 +585,7 @@ When the player starts a session they will tell you their ship and current locat
 
 ### Step 3: Upload the scoring files
 
-If your Notebook supports file uploads, upload **all eight files** from `player/uploads/`:
+If your Notebook supports file uploads, upload **all nine files** from `player/uploads/`:
 
 - `scoring_config.json`
 - `OCR_normalization_rules.json`
@@ -595,6 +595,7 @@ If your Notebook supports file uploads, upload **all eight files** from `player/
 - `SHIP_SPECIALIZATION_GUIDE.md`
 - `hull_b_covalex_route_playbook.md`
 - `GENERALIZED_HAULING_HANDBOOK.md`
+- `COVALEX_RANK_STRATEGY.md`
 
 If file upload is not available in your notebook, paste the contents of `scoring_config.json` and `mission_issuer_profiles.json` into the chat at the start of each session instead.
 
@@ -635,7 +636,7 @@ At the start of each hauling session, paste this block into the chat. Fill in yo
 Starting a hauling session.
 
 Ship: [your ship -- e.g. Hull-B, Taurus, Caterpillar]
-Current location: [where you are now -- e.g. Port Olisar, Baijini Point]
+Current location: [where you are now -- e.g. Hur-L2, Baijini Point, Everus Harbor]
 Patch version: [optional -- e.g. Alpha 3.24]
 
 I'll paste screenshots of the contracts terminal. Score each mission and tell me which ones to take, which to skip, and the best order to run them if I'm taking more than one.

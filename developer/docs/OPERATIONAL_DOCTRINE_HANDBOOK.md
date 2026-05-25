@@ -10,7 +10,7 @@ Before you undock, open your cargo panel and read it. Every delivery destination
 
 Practical rules:
 - Know how many distinct delivery points you have before you leave the pad.
-- If you cannot read the panel clearly (OCR noise, overlapping items, UI glitch), flag the mission set as uncertain and re-run the normaliser with corrected data before committing.
+- If you cannot read the panel clearly (OCR noise, overlapping items, UI glitch), flag the mission set as uncertain and re-run the normalizer with corrected data before committing.
 - If any mission shows UNRESOLVED in the tool output, do not leave dock until you have verified it manually. See the UNRESOLVED section below.
 - Check that your physical cargo matches what the panel says. Discrepancies before departure are recoverable. Discrepancies mid-route waste time.
 
@@ -62,7 +62,7 @@ If you are running Hull-B on a fragmented route (multiple small deliveries to di
 The score is advisory. There are legitimate reasons to accept a mission the tool scores below 70 or reject one it scores above 70.
 
 Accept below threshold when:
-- You have direct knowledge that a usually-penalised condition (congestion, dead leg) does not apply right now, for example a normally-congested station that is empty on your current server.
+- You have direct knowledge that a usually-penalized condition (congestion, dead leg) does not apply right now, for example a normally-congested station that is empty on your current server.
 - The payout is exceptionally high for the route length and you are willing to take a less efficient run for the income.
 - You are positioning to a pickup cluster anyway and the dead leg cost is already paid.
 

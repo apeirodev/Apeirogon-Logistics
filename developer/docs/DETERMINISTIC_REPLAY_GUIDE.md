@@ -74,10 +74,10 @@ With these three files, you can always recreate the original scoring environment
 
 ## Replaying AI-Assisted Sessions
 
-If the original session used AI extraction, the scorer only saw the normalised JSON output of the AI pipeline, not the raw AI response. To replay:
+If the original session used AI extraction, the scorer only saw the normalized JSON output of the AI pipeline, not the raw AI response. To replay:
 
-1. Retrieve `missions_norm.json` from the original session (the normaliser output).
+1. Retrieve `missions_norm.json` from the original session (the normalizer output).
 2. Run it through the scorer: `python tools/deterministic_scorer.py -i missions_norm.json`
-3. The scorer output is deterministic from the normalised input forward.
+3. The scorer output is deterministic from the normalized input forward.
 
-The AI extraction stage is not deterministic (AI responses vary). Replay auditability begins at the normalised JSON, not at the screenshot.
+The AI extraction stage is not deterministic (AI responses vary). Replay auditability begins at the normalized JSON, not at the screenshot.

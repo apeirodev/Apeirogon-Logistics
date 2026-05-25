@@ -6,9 +6,9 @@
     "telemetry_calibrated": false
   },
   "generated_utc": "2026-05-23T00:00:00Z",
-  "previous_version": "0.60.1",
+  "previous_version": "0.61.1",
   "project": "Apeirogon Logistics",
-  "release_type": "0.61.1_security_rule_files_owasp_llm_agentic_supply_chain",
+  "release_type": "0.61.2_version_consistency_test",
   "semantic_versioning": "three-level",
   "skipped_versions": [
     {
@@ -18,7 +18,7 @@
   ],
   "star_citizen_patch_version": "Alpha 4.8.0",
   "status": "stable_pre_release_deterministic_toolkit",
-  "version": "0.61.1",
+  "version": "0.61.2",
   "version_history": [
     {
       "version": "0.30.3",
@@ -203,6 +203,10 @@
     {
       "version": "0.61.1",
       "status": "security_rule_files_owasp_llm_agentic_supply_chain"
+    },
+    {
+      "version": "0.61.2",
+      "status": "version_consistency_test"
     }
   ]
 }

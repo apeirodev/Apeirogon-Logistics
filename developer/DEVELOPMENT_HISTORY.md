@@ -833,3 +833,14 @@ formally represented in the TikiTribe-derived rules.
 to 0.60.1 by the previous automated run -- corrected as part of this bump.
 **CLAUDE.md Rule Source section** updated with a table mapping all 6 rule files
 to their source standards.
+
+## Version 0.61.2: Version Consistency Test
+
+Added `developer/tests/test_version_consistency.py` with three assertions:
+- All four primary version files agree (VERSION.json root field, pyproject.toml, README.md, PROJECT_STATUS.md)
+- Current version appears in VERSION.json version_history
+- previous_version differs from current version
+
+The root cause of the 0.60.1 regression (agent updated version_history but not the root "version" field) would have been caught by the first assertion. The test runs on every commit via the existing pytest suite.
+
+CLAUDE.md Versioning Rule updated to explicitly call out that VERSION.json has three fields to update (root "version", "previous_version", and a version_history entry) and to reference this test as the completion criterion for a version bump.

@@ -30,10 +30,12 @@ This project uses **Semantic Versioning** (SemVer): `Major.Minor.Patch`.
 Update the version in **all** of these files on every change:
 - `README.md`: footer line (`v0.X.Y`)
 - `pyproject.toml`: `version = "0.X.Y"`
-- `VERSION.json`: `"version"` field, `"previous_version"`, and add a `version_history` entry
+- `VERSION.json`: **three fields** -- `"version"` (top-level, line ~21), `"previous_version"`, and add a `version_history` entry. The `"version"` field at the top level is separate from the entries inside `version_history`; both must be updated.
 - `developer/PROJECT_STATUS.md`: `**Version:**` line
 - `developer/DEVELOPMENT_HISTORY.md`: add a new `## Version 0.X.Y` section
 - `developer/data/source_registry.json`: add a new source entry for the release
+
+The test `developer/tests/test_version_consistency.py` asserts that all four primary version files agree. A version bump is not complete until that test passes.
 
 ---
 

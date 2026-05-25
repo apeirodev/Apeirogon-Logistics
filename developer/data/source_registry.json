@@ -4,6 +4,12 @@
   "retrieved_date": "2026-05-16",
   "sources": [
     {
+      "name": "Apeirogon Logistics 0.61.2 version consistency test",
+      "notes": "test_version_consistency.py added: three assertions ensure all version files agree and VERSION.json root field is not forgotten. CLAUDE.md versioning rule updated with explicit field list and test reference.",
+      "source_id": "apeirogon_0_61_2_version_consistency_test",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.61.1 security rule files",
       "notes": "Three new .claude/rules/ files: owasp-llm.md (LLM Top 10 v2.0), owasp-agentic.md (Agentic Top 10 2026 draft), supply-chain-python.md (OWASP A03, NIST SSDF, SLSA). CLAUDE.md Rule Source table added. VERSION.json root field bug fixed.",
       "source_id": "apeirogon_0_61_1_security_rule_files",

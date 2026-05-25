@@ -22,6 +22,9 @@ jobs:
       - name: Install dev dependencies
         run: pip install -r ../requirements-dev.txt
 
+      - name: Audit dependencies for known CVEs
+        run: pip-audit --requirement ../requirements-dev.txt
+
       - name: Run pytest suite
         run: python -m pytest tests/ -v --tb=short
 

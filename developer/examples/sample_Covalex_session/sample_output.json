@@ -36,7 +36,7 @@
       "issuer": "covalex",
       "mission_index": 0,
       "operational_risk": "medium",
-      "pickup": "Port Olisar",
+      "pickup": "Hur-L2",
       "recommendation": "defer",
       "reward_usc": 50000,
       "score": 50,
@@ -53,7 +53,7 @@
       "issuer": "covalex",
       "mission_index": 1,
       "operational_risk": "medium",
-      "pickup": "Port Olisar",
+      "pickup": "Hur-L2",
       "recommendation": "defer",
       "reward_usc": 38000,
       "score": 50,
@@ -65,7 +65,7 @@
       "cargo_scu": 32,
       "cargo_type": "UNRESOLVED",
       "delivery": [
-        "Port Olisar"
+        "Hur-L2"
       ],
       "issuer": "covalex",
       "mission_index": 2,
@@ -80,7 +80,7 @@
     }
   ],
   "same_pickup_stacking": {
-    "Port Olisar": [
+    "Hur-L2": [
       0,
       1
     ]
@@ -115,7 +115,7 @@
     "same_pickup_bonus": 1,
     "score": 60,
     "stops": [
-      "Port Olisar",
+      "Hur-L2",
       "Seraphim Station",
       "Covalex Hub Shopp-L4",
       "Baijini Point"

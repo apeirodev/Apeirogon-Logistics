@@ -6,7 +6,7 @@ Identifies stop types, flags risks (chain collapse, atmospheric burden, dead leg
 and suggests an optimised ordering.
 
 Usage:
-  echo '{"stops":["Port Olisar","Covalex Hub Shopp-L4","Hurston","Baijini Point"]}' \
+  echo '{"stops":["Hur-L2","Covalex Hub Shopp-L4","Hurston","Baijini Point"]}' \
     | python tools/calculate_traversal.py
 
   python tools/calculate_traversal.py -i route.json

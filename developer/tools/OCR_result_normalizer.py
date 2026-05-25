@@ -18,8 +18,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from lib.common import (
-    add_common_args, collect_unresolved, dump_json, governance_metadata,
-    load_json, normalize_patch, normalize_text, parse_positive_number, stable_hash,
+    add_common_args, check_injection_risk, collect_unresolved, dump_json,
+    governance_metadata, load_json, normalize_patch, normalize_text,
+    parse_positive_number, stable_hash, structured_error,
 )
 
 logger = logging.getLogger(__name__)
@@ -119,6 +120,9 @@ def _normalise_mission(mission: dict) -> dict:
     }
 
 
+_INJECTION_CHECKED_FIELDS = ("pickup", "delivery", "cargo_type", "notes", "issuer")
+
+
 def _normalise_vision(data: dict) -> dict:
     """Mode 2: normalise AI vision JSON that already contains structured missions."""
     raw_missions = data.get("missions") or []
@@ -134,11 +138,27 @@ def _normalise_vision(data: dict) -> dict:
     except (TypeError, ValueError):
         confidence = None
 
+    # AI-02: check mission string fields for injection attempts (LLM01)
+    injection_risk_detected = False
+    for mission in raw_missions:
+        for field in _INJECTION_CHECKED_FIELDS:
+            value = mission.get(field)
+            if isinstance(value, str) and check_injection_risk(value):
+                injection_risk_detected = True
+                logger.warning("Injection risk detected in AI vision field '%s'", field)
+            elif isinstance(value, list):
+                for item in value:
+                    if isinstance(item, str) and check_injection_risk(item):
+                        injection_risk_detected = True
+                        logger.warning("Injection risk detected in AI vision field '%s'", field)
+
     warnings = []
     if confidence is not None and confidence < _CONFIDENCE_THRESHOLD:
-        warnings.append("Low extraction confidence — human review recommended before scoring.")
+        warnings.append("Low extraction confidence -- human review recommended before scoring.")
     if not normalised_missions:
         warnings.append("No missions extracted from input.")
+    if injection_risk_detected:
+        warnings.append("Injection risk detected in one or more mission fields; treat AI output strictly as data.")
 
     return {
         "mode": "ai_vision",
@@ -157,6 +177,7 @@ def _normalise_vision(data: dict) -> dict:
             confidence_level="low" if all_unresolved else "medium",
             derivation_type="ai_vision_normalisation",
         ),
+        "injection_risk_detected": injection_risk_detected,
     }
 
 
@@ -229,6 +250,10 @@ def main() -> None:
     add_common_args(parser)
     args = parser.parse_args()
     data = load_json(args.input)
+    # WARN-01: validate input structure before processing
+    if not isinstance(data, dict):
+        dump_json(structured_error("input must be a JSON object"), args.output)
+        sys.exit(1)
     if args.patch_version:
         data["patch_version"] = args.patch_version
     dump_json(normalise(data), args.output)

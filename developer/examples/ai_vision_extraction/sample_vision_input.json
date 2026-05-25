@@ -7,7 +7,7 @@
   "missions": [
     {
       "issuer": "Covalex",
-      "pickup": "Port Olisar",
+      "pickup": "Hur-L2",
       "delivery": ["Covalex Hub Shopp-L4"],
       "cargo_type": "Processed Food",
       "cargo_scu": 24,
@@ -20,7 +20,7 @@
     },
     {
       "issuer": "Covalex",
-      "pickup": "Port Olisar",
+      "pickup": "Hur-L2",
       "delivery": ["Baijini Point"],
       "cargo_type": "Scrap",
       "cargo_scu": 16,
@@ -33,7 +33,7 @@
     },
     {
       "issuer": "Ling Family",
-      "pickup": "Port Olisar",
+      "pickup": "Hur-L2",
       "delivery": ["Port Tressler"],
       "cargo_type": "Medical Supplies",
       "cargo_scu": 10,

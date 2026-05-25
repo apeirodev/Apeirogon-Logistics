@@ -48,6 +48,8 @@ It scores each contract from 0 to 100 and recommends Accept, Defer, or Reject. I
 
 23 ships with 90+ SCU capacity, including Hull-B through Hull-E, C2/M2/A2 Hercules, Caterpillar, Ironclad, Railen, Hermes, RAFT, Starlancer MAX, and more. See [`player/uploads/SHIP_SPECIALIZATION_GUIDE.md`](player/uploads/SHIP_SPECIALIZATION_GUIDE.md) for the full list and per-ship advice.
 
+**Validated patch**: Alpha 4.8.0. Scoring weights are validated against the Hull-B. All other ships use heuristic modifiers that have not been in-game verified for this patch.
+
 ## Mission issuers supported
 
 Covalex (all 7 reputation ranks) · Ling / Ling Family · Red Wind · Hurston Dynamics · microTech · ArcCorp · others (with base scoring)
@@ -85,4 +87,4 @@ The deterministic Python scorer runs without any AI, useful if you want full aud
 
 Contributions welcome. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-**Maintainer:** ApeiroDev · v0.62.1
+**Maintainer:** ApeiroDev · v0.63.1

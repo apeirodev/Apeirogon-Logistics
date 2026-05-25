@@ -41,10 +41,10 @@ The most valuable factor. Triggers when multiple missions share a pickup locatio
 A mission with `same_pickup: 1` means one extra mission shares your pickup; you
 load cargo for two missions at one location. This adds 16 points.
 
-Three missions at Port Olisar = `same_pickup: 2` = +32 points.
+Three missions at Hur-L2 = `same_pickup: 2` = +32 points.
 
 **For Hull-B**: The same-pickup stacking bonus is the primary value driver.
-Look for Port Olisar clusters when choosing missions.
+Look for Hur-L2 clusters when choosing missions.
 
 ### destination_overlap (+12 per point)
 Multiple missions deliver to the same location. Each extra mission going to

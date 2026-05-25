@@ -40,7 +40,7 @@
       "issuer": "covalex",
       "mission_index": 0,
       "operational_risk": "high",
-      "pickup": "Port Olisar",
+      "pickup": "Hur-L2",
       "recommendation": "reject",
       "reward_usc": "UNRESOLVED",
       "score": 44,
@@ -86,7 +86,7 @@
     "same_pickup_bonus": 0,
     "score": 50,
     "stops": [
-      "Port Olisar"
+      "Hur-L2"
     ]
   }
 }

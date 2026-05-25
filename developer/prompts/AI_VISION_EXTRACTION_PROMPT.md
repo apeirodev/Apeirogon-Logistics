@@ -124,7 +124,7 @@ Only run the normaliser once you are confident the extracted values match the sc
   "missions": [
     {
       "issuer": "Covalex",
-      "pickup": "Port Olisar",
+      "pickup": "Hur-L2",
       "delivery": ["Covalex Hub Shopp-L4"],
       "cargo_type": "Processed Food",
       "cargo_scu": 24,

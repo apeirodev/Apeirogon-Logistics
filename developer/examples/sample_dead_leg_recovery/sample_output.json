@@ -31,7 +31,7 @@
       "cargo_scu": 48,
       "cargo_type": "UNRESOLVED",
       "delivery": [
-        "Port Olisar"
+        "Hur-L2"
       ],
       "issuer": "red wind",
       "mission_index": 1,
@@ -98,7 +98,7 @@
     "score": 50,
     "stops": [
       "Baijini Point",
-      "Port Olisar"
+      "Hur-L2"
     ]
   }
 }

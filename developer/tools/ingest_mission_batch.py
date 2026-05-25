@@ -11,7 +11,7 @@ Input structure (raw batch):
     "issuer": "covalex",
     "ship": "hull-b",
     "missions": [
-      {"pickup": "Port Olisar", "delivery": ["Baijini Point"], "cargo_scu": 24, "reward_usc": 12500},
+      {"pickup": "Hur-L2", "delivery": ["Baijini Point"], "cargo_scu": 24, "reward_usc": 12500},
       ...
     ]
   }
@@ -31,7 +31,7 @@ from deterministic_scorer import score_route, DEFAULT_WEIGHTS
 from route_chain_analyzer import analyze
 from lib.common import (
     add_common_args, collect_unresolved, dump_json, governance_metadata,
-    load_json, normalize_patch, stable_hash,
+    load_json, normalize_patch, stable_hash, structured_error,
 )
 
 
@@ -199,6 +199,15 @@ def main() -> None:
     add_common_args(parser)
     args = parser.parse_args()
     data = load_json(args.input)
+    # WARN-01: validate required top-level structure before processing
+    problems = []
+    if not isinstance(data, dict):
+        problems.append("input must be a JSON object")
+    elif "missions" not in data and not any(k in data for k in ("stops", "issuer", "ship")):
+        problems.append("input must contain at least one of: missions, stops, issuer, ship")
+    if problems:
+        dump_json(structured_error("invalid input structure", "; ".join(problems)), args.output)
+        sys.exit(1)
     if args.patch_version:
         data["patch_version"] = args.patch_version
     dump_json(ingest_batch(data), args.output)

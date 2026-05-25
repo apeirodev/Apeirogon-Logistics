@@ -97,7 +97,7 @@ Do not guess. The -2 point penalty per UNRESOLVED field is bounded and predictab
 
 Key sections in the scored output:
 
-**`same_pickup_stacking`**: missions that share a pickup location. These are your stacking opportunities. Three Port Olisar pickups = +32 stacking bonus.
+**`same_pickup_stacking`**: missions that share a pickup location. These are your stacking opportunities. Three Hur-L2 pickups = +32 stacking bonus.
 
 **`suggested_combined_route`**: the highest-value combination. Often scores higher than any individual mission because the same-pickup bonus only activates at the combined level.
 

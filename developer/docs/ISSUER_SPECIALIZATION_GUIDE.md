@@ -58,7 +58,7 @@ Think carefully before accepting an isolated Red Wind mission. If you are alread
   "ship": "hull-b",
   "missions": [
     {
-      "pickup": "Port Olisar",
+      "pickup": "Hur-L2",
       "delivery": ["Covalex Hub Shopp-L4"],
       "cargo_scu": 24,
       "reward_usc": 12500

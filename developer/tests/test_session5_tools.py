@@ -66,7 +66,7 @@ class TestSessionStateManager:
         assert any("completed_missions" in e for e in r["errors"])
 
     def test_valid_completed_missions(self):
-        r = validate_session({"session_id": "s1", "completed_missions": [{"pickup": "Port Olisar"}]})
+        r = validate_session({"session_id": "s1", "completed_missions": [{"pickup": "Hur-L2"}]})
         assert r["valid"] is True
 
     def test_future_epoch_warning(self):
@@ -210,10 +210,10 @@ from calculate_traversal import analyze_traversal
 
 class TestCalculateTraversal:
     def _orbital_route(self):
-        return {"stops": ["Port Olisar", "Covalex Hub Shopp-L4", "Baijini Point"]}
+        return {"stops": ["Hur-L2", "Covalex Hub Shopp-L4", "Baijini Point"]}
 
     def _atm_route(self):
-        return {"stops": ["Port Olisar", "Hurston", "Covalex Hub Shopp-L4"]}
+        return {"stops": ["Hur-L2", "Hurston", "Covalex Hub Shopp-L4"]}
 
     def _long_route(self):
         return {"stops": [f"Stop {i}" for i in range(8)]}
@@ -257,7 +257,7 @@ class TestCalculateTraversal:
         assert atm_idx > orb_idx
 
     def test_dead_leg_detection(self):
-        route = {"stops": ["Port Olisar", "Shopp-L4", "Baijini", "Port Olisar", "Shopp-L4"]}
+        route = {"stops": ["Hur-L2", "Shopp-L4", "Baijini", "Hur-L2", "Shopp-L4"]}
         r = analyze_traversal(route)
         assert len(r["dead_leg_candidates"]) > 0
 
@@ -266,7 +266,7 @@ class TestCalculateTraversal:
         assert r["governance_metadata"]["derivation_type"] == "traversal_analysis"
 
     def test_route_sequence_alias(self):
-        r = analyze_traversal({"route_sequence": ["Port Olisar", "Baijini Point"]})
+        r = analyze_traversal({"route_sequence": ["Hur-L2", "Baijini Point"]})
         assert r["stop_count"] == 2
 
 

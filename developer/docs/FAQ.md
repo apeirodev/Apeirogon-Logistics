@@ -53,7 +53,7 @@ When two or more missions share the same pickup location, you can load cargo for
 all of them in one stop. This is the most valuable efficiency gain in Hull-B hauling.
 
 The scoring system adds +16 points for each additional mission sharing a pickup.
-Two missions from Port Olisar score 16 points higher than two separate pickups.
+Two missions from Hur-L2 score 16 points higher than two separate pickups.
 
 ---
 

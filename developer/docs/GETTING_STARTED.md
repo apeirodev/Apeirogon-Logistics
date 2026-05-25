@@ -89,13 +89,13 @@ echo '{
   "issuer": "covalex",
   "ship": "hull-b",
   "same_pickup": 2,
-  "stops": ["Port Olisar", "Covalex Hub Shopp-L4", "Baijini Point"]
+  "stops": ["Hur-L2", "Covalex Hub Shopp-L4", "Baijini Point"]
 }' | python tools/deterministic_scorer.py
 ```
 
 **Windows (PowerShell):**
 ```powershell
-'{"issuer":"covalex","ship":"hull-b","same_pickup":2,"stops":["Port Olisar","Covalex Hub Shopp-L4","Baijini Point"]}' | python tools\deterministic_scorer.py
+'{"issuer":"covalex","ship":"hull-b","same_pickup":2,"stops":["Hur-L2","Covalex Hub Shopp-L4","Baijini Point"]}' | python tools\deterministic_scorer.py
 ```
 
 Look for:
@@ -128,8 +128,8 @@ echo '{
   "issuer": "covalex",
   "ship": "hull-b",
   "missions": [
-    {"pickup": "Port Olisar", "delivery": ["Covalex Hub Shopp-L4"], "cargo_scu": 24, "reward_usc": 12500},
-    {"pickup": "Port Olisar", "delivery": ["Baijini Point"], "cargo_scu": 16, "reward_usc": 9000},
+    {"pickup": "Hur-L2", "delivery": ["Covalex Hub Shopp-L4"], "cargo_scu": 24, "reward_usc": 12500},
+    {"pickup": "Hur-L2", "delivery": ["Baijini Point"], "cargo_scu": 16, "reward_usc": 9000},
     {"pickup": "Microtech", "delivery": ["ARC-L1"], "cargo_scu": 32, "reward_usc": 8000}
   ]
 }' | python tools/ingest_mission_batch.py

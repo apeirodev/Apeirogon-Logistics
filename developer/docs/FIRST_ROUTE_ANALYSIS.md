@@ -7,16 +7,16 @@ Logistics. Follow along with the example, then substitute your own mission data.
 
 ## Scenario
 
-You're at Port Olisar with your Hull-B. You have four Covalex missions on screen:
+You're at Hur-L2 with your Hull-B. You have four Covalex missions on screen:
 
 | Mission | Pickup | Delivery | SCU | Reward |
 |---------|--------|----------|-----|--------|
-| A | Port Olisar | Covalex Hub Shopp-L4 | 24 | 12,500 aUEC |
-| B | Port Olisar | Baijini Point | 16 | 9,000 aUEC |
-| C | Port Olisar | Seraphim Station | 20 | 11,000 aUEC |
+| A | Hur-L2 | Covalex Hub Shopp-L4 | 24 | 12,500 aUEC |
+| B | Hur-L2 | Baijini Point | 16 | 9,000 aUEC |
+| C | Hur-L2 | Seraphim Station | 20 | 11,000 aUEC |
 | D | Microtech | ARC-L1 | 32 | 8,500 aUEC |
 
-Mission D has a different pickup (Microtech). Missions A, B, C all pick up from Port Olisar.
+Mission D has a different pickup (Microtech). Missions A, B, C all pick up from Hur-L2.
 
 ---
 
@@ -29,9 +29,9 @@ Create a file called `my_missions.json` with this content:
   "issuer": "covalex",
   "ship": "hull-b",
   "missions": [
-    {"pickup": "Port Olisar", "delivery": ["Covalex Hub Shopp-L4"], "cargo_scu": 24, "reward_usc": 12500},
-    {"pickup": "Port Olisar", "delivery": ["Baijini Point"], "cargo_scu": 16, "reward_usc": 9000},
-    {"pickup": "Port Olisar", "delivery": ["Seraphim Station"], "cargo_scu": 20, "reward_usc": 11000},
+    {"pickup": "Hur-L2", "delivery": ["Covalex Hub Shopp-L4"], "cargo_scu": 24, "reward_usc": 12500},
+    {"pickup": "Hur-L2", "delivery": ["Baijini Point"], "cargo_scu": 16, "reward_usc": 9000},
+    {"pickup": "Hur-L2", "delivery": ["Seraphim Station"], "cargo_scu": 20, "reward_usc": 11000},
     {"pickup": "Microtech", "delivery": ["ARC-L1"], "cargo_scu": 32, "reward_usc": 8500}
   ]
 }
@@ -107,9 +107,9 @@ The output has three main sections:
 Sorted from highest to lowest score:
 ```json
 "ranked_missions": [
-  {"pickup": "Port Olisar", "delivery": ["Covalex Hub Shopp-L4"], "score": 50, "recommendation": "defer"},
-  {"pickup": "Port Olisar", "delivery": ["Baijini Point"], "score": 50, "recommendation": "defer"},
-  {"pickup": "Port Olisar", "delivery": ["Seraphim Station"], "score": 50, "recommendation": "defer"},
+  {"pickup": "Hur-L2", "delivery": ["Covalex Hub Shopp-L4"], "score": 50, "recommendation": "defer"},
+  {"pickup": "Hur-L2", "delivery": ["Baijini Point"], "score": 50, "recommendation": "defer"},
+  {"pickup": "Hur-L2", "delivery": ["Seraphim Station"], "score": 50, "recommendation": "defer"},
   {"pickup": "Microtech", "delivery": ["ARC-L1"], "score": 35, "recommendation": "reject"}
 ]
 ```
@@ -117,10 +117,10 @@ Sorted from highest to lowest score:
 ### same_pickup_stacking and suggested_combined_route
 ```json
 "same_pickup_stacking": {
-  "Port Olisar": [0, 1, 2]
+  "Hur-L2": [0, 1, 2]
 },
 "suggested_combined_route": {
-  "stops": ["Port Olisar", "Covalex Hub Shopp-L4", "Baijini Point", "Seraphim Station"],
+  "stops": ["Hur-L2", "Covalex Hub Shopp-L4", "Baijini Point", "Seraphim Station"],
   "score": 82,
   "recommendation": "accept",
   "same_pickup_bonus": 2
@@ -128,7 +128,7 @@ Sorted from highest to lowest score:
 ```
 
 **This is the key insight**: Missions A, B, and C individually score 50 (defer),
-but combined they score 82 (accept) because three missions share Port Olisar
+but combined they score 82 (accept) because three missions share Hur-L2
 as their pickup, adding +32 for the same-pickup stacking bonus.
 
 Mission D (Microtech) scores 35 (reject); it's a dead leg away from your
@@ -141,11 +141,11 @@ justifies the empty flight to Microtech.
 
 Based on this output, the recommended play is:
 
-1. **Accept missions A, B, and C**: they stack at Port Olisar
+1. **Accept missions A, B, and C**: they stack at Hur-L2
 2. **Skip mission D**: dead leg to Microtech breaks the chain
 
 **Route sequence:**
-1. Port Olisar → load cargo for all three missions
+1. Hur-L2 → load cargo for all three missions
 2. Covalex Hub Shopp-L4 → deliver A
 3. Baijini Point → deliver B
 4. Seraphim Station → deliver C
@@ -156,8 +156,8 @@ This is one pickup, three deliveries, no dead legs. The system scored it 82/100.
 
 ## What to Do Next
 
-Go back to the mission terminal and look for more Port Olisar pickups to add
-to the stack. The same-pickup bonus rewards stacking; each additional Port Olisar
+Go back to the mission terminal and look for more Hur-L2 pickups to add
+to the stack. The same-pickup bonus rewards stacking; each additional Hur-L2
 mission adds more value to the run.
 
 When you're done hauling, save your session for next time:

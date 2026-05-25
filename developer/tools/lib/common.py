@@ -232,3 +232,20 @@ def structured_error(message: str, remediation: str | None = None) -> Dict[str, 
 
 def timestamp() -> int:
     return int(time.time())
+
+
+_INJECTION_PATTERNS = [
+    r"ignore\s+(previous|above|all)\s+instructions",
+    r"system\s*:",
+    r"<\s*/?system\s*>",
+    r"\bact\s+as\b",
+    r"\byou\s+are\s+now\b",
+]
+
+
+def check_injection_risk(value: str) -> bool:
+    """Return True if value contains a probable prompt injection attempt (LLM01)."""
+    if not isinstance(value, str):
+        return False
+    lower = value.lower()
+    return any(re.search(p, lower) for p in _INJECTION_PATTERNS)

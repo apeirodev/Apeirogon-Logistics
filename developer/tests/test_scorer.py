@@ -51,8 +51,8 @@ class TestFactor:
 
     def test_same_pickup_from_missions(self):
         missions = [
-            {"pickup": "Port Olisar"},
-            {"pickup": "Port Olisar"},
+            {"pickup": "Hur-L2"},
+            {"pickup": "Hur-L2"},
             {"pickup": "Microtech"},
         ]
         assert factor({"missions": missions}, "same_pickup") == 1

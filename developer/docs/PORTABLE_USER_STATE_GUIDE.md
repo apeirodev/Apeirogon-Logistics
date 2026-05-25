@@ -25,7 +25,7 @@ Minimal profile:
   "user_profile_id": "my-profile-001",
   "preferred_ship": "hull-b",
   "preferred_issuer": "covalex",
-  "home_location": "Port Olisar"
+  "home_location": "Hur-L2"
 }
 ```
 
@@ -36,7 +36,7 @@ Optional fields:
   "user_profile_id": "my-profile-001",
   "preferred_ship": "hull-b",
   "preferred_issuer": "covalex",
-  "home_location": "Port Olisar",
+  "home_location": "Hur-L2",
   "patch_version": "Alpha 4.8.0",
   "reputation": {
     "covalex": 450,
@@ -78,9 +78,9 @@ Extended example:
   "issuer": "covalex",
   "patch_version": "Alpha 4.8.0",
   "session_start_epoch": 1700000000,
-  "current_pickup": "Port Olisar",
+  "current_pickup": "Hur-L2",
   "completed_missions": [
-    {"pickup": "Port Olisar", "delivery": "Covalex Hub Shopp-L4", "reward_usc": 12500}
+    {"pickup": "Hur-L2", "delivery": "Covalex Hub Shopp-L4", "reward_usc": 12500}
   ],
   "pending_missions": [],
   "notes": "Good server tonight, elevator wait under 1 minute"

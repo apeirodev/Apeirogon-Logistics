@@ -46,7 +46,7 @@ Aliases are defined in `runtime/OCR_normalization_rules.json`. The file contains
 Examples already defined:
 - `"Shopp-L4"` → `"Covalex Hub Shopp-L4"`
 - `"Baijini"` → `"Baijini Point"`
-- `"Olisar"` → `"Port Olisar"`
+- `"Tressler"` → `"Port Tressler"`
 - `"cov alex"` → `"Covalex"`
 - `"ling family"` → `"Ling Family"`
 

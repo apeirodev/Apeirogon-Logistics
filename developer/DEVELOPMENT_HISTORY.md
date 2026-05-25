@@ -904,3 +904,57 @@ partially implemented controls and residual risks. Prioritized hardening
 recommendations.
 
 **Test count:** 214 (up from 194).
+
+## Version 0.63.1: Pre-Release Technical Fixes
+
+**FIX-1 -- SC-02: pip-audit added to CI workflow**
+
+`pip-audit --requirement ../requirements-dev.txt` step added to `.github/workflows/validation.yml`
+immediately after the "Install dev dependencies" step. All future CI builds now check
+installed packages against the OSV database for known CVEs.
+
+**FIX-2 -- Calibration scope and validated patch fields in VERSION.json**
+
+Two new top-level fields added to `VERSION.json`:
+- `calibration_scope`: documents that scoring weights are validated against Hull-B only;
+  all other ships use heuristic modifiers that have not been in-game verified against SC 4.8.0-alpha.
+  Fields: `calibration_note`, `ships_validated`, `status_hull_b` (true), `status_others` (false).
+- `star_citizen_validated_patch`: `"4.8.0-alpha"` -- explicit declaration of the patch
+  against which the current scoring weights were validated.
+
+**FIX-3 -- README calibration note**
+
+Added calibration note to the "Ships supported" section: validated patch (Alpha 4.8.0),
+Hull-B validation status, and advisory for all other ships.
+
+**FIX-4 -- WARN-01: Structural input validation at entry points**
+
+`ingest_mission_batch.py` and `OCR_result_normalizer.py` now validate input structure
+at the start of `main()` before any processing. Non-dict inputs and inputs missing
+all expected top-level keys are rejected with a `structured_error` response and
+`sys.exit(1)`.
+
+**FIX-5 -- AI-02: Injection check extended to AI vision path**
+
+`check_injection_risk()` function added to `lib/common.py` (LLM01 guardrail pattern).
+`OCR_result_normalizer.py` `_normalise_vision()` now checks all string fields in
+each mission (`pickup`, `delivery`, `cargo_type`, `notes`, `issuer`) for injection
+patterns. Detection sets `injection_risk_detected: true` in the output and adds a
+warning. The raw OCR path already had a basic check; the vision path now has
+equivalent coverage.
+
+**FIX-6 -- Port Olisar final sweep**
+
+All remaining Port Olisar location examples replaced with Hur-L2 across developer
+docs, example files, test fixtures, prompts, and tool docstrings. The `"Olisar"` ->
+`"Port Olisar"` alias removed from both `developer/runtime/OCR_normalization_rules.json`
+and `player/uploads/OCR_normalization_rules.json` (Port Olisar is no longer in the
+game). The alias test updated to use `"Tressler"` -> `"Port Tressler"` instead.
+Historical mentions in DEVELOPMENT_HISTORY.md left unchanged (historical context).
+
+**Files changed:** `.github/workflows/validation.yml`, `VERSION.json`, `README.md`,
+`developer/tools/lib/common.py`, `developer/tools/ingest_mission_batch.py`,
+`developer/tools/OCR_result_normalizer.py`, `developer/tools/calculate_traversal.py`,
+`developer/runtime/OCR_normalization_rules.json`, `player/uploads/OCR_normalization_rules.json`,
+`developer/tests/test_session3.py`, `developer/tests/test_scorer.py`,
+`developer/tests/test_session5_tools.py`, multiple developer docs and example files.

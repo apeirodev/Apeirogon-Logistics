@@ -39,7 +39,7 @@
       "issuer": "covalex",
       "mission_index": 0,
       "operational_risk": "high",
-      "pickup": "Port Olisar",
+      "pickup": "Hur-L2",
       "recommendation": "reject",
       "reward_usc": 85000,
       "score": 0,
@@ -84,7 +84,7 @@
     "same_pickup_bonus": 0,
     "score": 38,
     "stops": [
-      "Port Olisar",
+      "Hur-L2",
       "Baijini Point",
       "Seraphim Station",
       "ARC-L1 Wide Forest Station",

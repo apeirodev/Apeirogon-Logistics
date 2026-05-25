@@ -34,7 +34,7 @@ Deterministic mode is the default way to use this tool in live play. The AI-assi
 Use this for scoring one mission or one route in a single call.
 
 ```bash
-echo '{"issuer":"covalex","ship":"hull-b","same_pickup":2,"stops":["Port Olisar","Covalex Hub Shopp-L4","Baijini Point"]}' \
+echo '{"issuer":"covalex","ship":"hull-b","same_pickup":2,"stops":["Hur-L2","Covalex Hub Shopp-L4","Baijini Point"]}' \
   | python tools/deterministic_scorer.py
 ```
 
@@ -67,13 +67,13 @@ The minimal input for a batch:
   "ship": "hull-b",
   "missions": [
     {
-      "pickup": "Port Olisar",
+      "pickup": "Hur-L2",
       "delivery": ["Covalex Hub Shopp-L4"],
       "cargo_scu": 24,
       "reward_usc": 12500
     },
     {
-      "pickup": "Port Olisar",
+      "pickup": "Hur-L2",
       "delivery": ["Baijini Point"],
       "cargo_scu": 16,
       "reward_usc": 9000

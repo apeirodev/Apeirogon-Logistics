@@ -16,7 +16,7 @@ def _vision_input(**overrides):
         "missions": [
             {
                 "issuer": "Covalex",
-                "pickup": "Port Olisar",
+                "pickup": "Hur-L2",
                 "delivery": ["Covalex Hub Shopp-L4"],
                 "cargo_type": "Processed Food",
                 "cargo_scu": 24,
@@ -27,7 +27,7 @@ def _vision_input(**overrides):
             },
             {
                 "issuer": "Covalex",
-                "pickup": "Port Olisar",
+                "pickup": "Hur-L2",
                 "delivery": ["Baijini Point"],
                 "cargo_type": "Scrap",
                 "cargo_scu": 16,
@@ -48,8 +48,8 @@ def _raw_batch(**overrides):
         "issuer": "covalex",
         "ship": "hull-b",
         "missions": [
-            {"pickup": "Port Olisar", "delivery": ["Covalex Hub Shopp-L4"], "cargo_scu": 24, "reward_usc": 12500},
-            {"pickup": "Port Olisar", "delivery": ["Baijini Point"], "cargo_scu": 16, "reward_usc": 9000},
+            {"pickup": "Hur-L2", "delivery": ["Covalex Hub Shopp-L4"], "cargo_scu": 24, "reward_usc": 12500},
+            {"pickup": "Hur-L2", "delivery": ["Baijini Point"], "cargo_scu": 16, "reward_usc": 9000},
         ],
     }
     base.update(overrides)
@@ -77,9 +77,9 @@ class TestOCRNormalizerVisionMode:
 
     def test_location_alias_resolved(self):
         data = _vision_input()
-        data["missions"][0]["pickup"] = "Olisar"  # alias for Port Olisar
+        data["missions"][0]["pickup"] = "Tressler"  # alias for Port Tressler
         result = normalise(data)
-        assert result["missions"][0]["pickup"] == "Port Olisar"
+        assert result["missions"][0]["pickup"] == "Port Tressler"
 
     def test_tressler_alias_resolved(self):
         data = _vision_input()
@@ -128,7 +128,7 @@ class TestOCRNormalizerVisionMode:
 
     def test_missions_dispatched_when_no_source_class(self):
         # If source_class absent but missions present, should use vision mode
-        data = {"missions": [{"issuer": "Covalex", "pickup": "Port Olisar",
+        data = {"missions": [{"issuer": "Covalex", "pickup": "Hur-L2",
                                "delivery": ["Baijini Point"], "cargo_scu": 10, "reward_usc": 5000}]}
         result = normalise(data)
         assert result["mode"] == "ai_vision"
@@ -155,8 +155,8 @@ class TestIngestMissionBatch:
 
     def test_same_pickup_detected(self):
         result = ingest_batch(_raw_batch())
-        assert "Port Olisar" in result["same_pickup_stacking"]
-        assert len(result["same_pickup_stacking"]["Port Olisar"]) == 2
+        assert "Hur-L2" in result["same_pickup_stacking"]
+        assert len(result["same_pickup_stacking"]["Hur-L2"]) == 2
 
     def test_same_pickup_not_detected_without_sharing(self):
         data = _raw_batch()
@@ -199,8 +199,8 @@ class TestIngestMissionBatch:
         })
         result = ingest_batch(data)
         dead_leg_mission = next(m for m in result["ranked_missions"] if m["pickup"] == "Microtech")
-        # dead_leg mission should score lower than Port Olisar missions
-        port_olisar_scores = [m["score"] for m in result["ranked_missions"] if m["pickup"] == "Port Olisar"]
+        # dead_leg mission should score lower than Hur-L2 missions
+        port_olisar_scores = [m["score"] for m in result["ranked_missions"] if m["pickup"] == "Hur-L2"]
         assert dead_leg_mission["score"] < min(port_olisar_scores)
 
     def test_accepts_normaliser_output(self):
@@ -227,13 +227,13 @@ class TestIngestMissionBatch:
 class TestSamePickupDetection:
     def test_two_same_pickup(self):
         missions = [
-            {"pickup": "Port Olisar"},
-            {"pickup": "Port Olisar"},
+            {"pickup": "Hur-L2"},
+            {"pickup": "Hur-L2"},
             {"pickup": "Microtech"},
         ]
         result = _detect_same_pickup(missions)
-        assert "Port Olisar" in result
-        assert len(result["Port Olisar"]) == 2
+        assert "Hur-L2" in result
+        assert len(result["Hur-L2"]) == 2
         assert "Microtech" not in result
 
     def test_all_unique_pickups(self):

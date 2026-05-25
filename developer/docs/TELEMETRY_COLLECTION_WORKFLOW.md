@@ -54,7 +54,7 @@ Minimum useful fields:
   "session_start_epoch": 1700000000,
   "completed_missions": [
     {
-      "pickup": "Port Olisar",
+      "pickup": "Hur-L2",
       "delivery": "Covalex Hub Shopp-L4",
       "reward_usc": 12500,
       "actual_delivery_time_minutes": 8,

@@ -725,3 +725,29 @@ Added grammar and style rules to CLAUDE.md and to the AI advisor's instruction b
 - No em dashes or en dashes -- double hyphens (--) for parenthetical breaks, plain hyphens (-) for ranges.
 
 Synced to all 7 SETUP files.
+
+---
+
+## Version 0.59.1: Rep Grinding Ship Selection
+
+Added ship selection logic to Covalex rank strategy mode based on operational constraints not captured by scoring modifiers.
+
+Hard disqualifiers implemented (checked in order before run start):
+1. Not flyable in Alpha 4.8: Hull-D, Hull-E, Galaxy, Banu Merchantman
+2. Non-cargo primary role: A2 Hercules, Valkyrie, Starfarer, Starfarer Gemini, Starlancer TAC, Ironclad Assault
+3. Station landing incompatibility when loaded: Hull-C
+4. Ramp loading at freight elevators: C2/M2/A2 Hercules, Caterpillar, Starfarer, Starfarer Gemini, Valkyrie, Asgard, Ironclad Assault, Hermes, Starlancer MAX, Starlancer TAC, Freelancer MAX, Constellation Taurus
+
+Ship verdicts: Hull-B (OPTIMAL), RAFT (NOT RECOMMENDED), Railen (UNCONFIRMED), Ironclad (UNCONFIRMED).
+
+Verification prompt added for Railen and Ironclad: requires player to confirm freight elevator access, 16 SCU container compatibility, and pad availability at all 4 Covalex Senior destinations before approving for rep grinding.
+
+Ship recommendation decision tree added: Hull-B first, Railen second (if verified), Ironclad third (if verified).
+
+Scoring modifier suppression rule added: fragmentation penalty, stop density penalty, and cargo panel clarity bonus are not applied in rep grinding mode.
+
+`loading_method` field added to all 23 ship records in `ship_profiles.json`: external_panel, external_pod, internal_ramp, external_panel_unconfirmed (Railen, Ironclad).
+
+`COVALEX_RANK_STRATEGY.md` updated with ship selection section covering all disqualifiers, verdicts, and verification steps.
+
+Synced to all 7 SETUP files.

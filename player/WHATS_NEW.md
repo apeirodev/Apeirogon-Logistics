@@ -7,6 +7,28 @@ Changes that are purely internal (tooling, CI, developer workflow) are not liste
 
 ---
 
+## v0.59.1 -- Rep grinding ship selection rules (re-paste your instructions)
+
+**You need to re-paste the instruction block into your AI if you set it up before this version.**
+
+**Ship selection is now checked when you activate Covalex rank mode.** If you have not stated your ship, your AI will ask. It will then check your ship against a list of hard disqualifiers before proceeding with run setup.
+
+**Hard disqualifiers applied automatically.** Ramp-loading ships (C2/M2/A2 Hercules, Caterpillar, Starlancer series, Hermes, and others) are flagged as not recommended for rep grinding because ramp loading at freight elevators adds time per stop that compounds across every run. Hull-C is blocked because it cannot land at standard orbital stations when loaded. Non-flyable ships are blocked.
+
+**Hull-B is the confirmed optimal ship** and is approved immediately with no additional checks.
+
+**Railen and Ironclad are flagged as unconfirmed alternatives.** If you want to use either, your AI will ask you to confirm that you have verified freight elevator compatibility, 16 SCU container handling, and pad availability at all four Covalex Senior destinations (Port Tressler, Baijini Point, Seraphim Station, Everus Harbor) in the current patch.
+
+**Ship recommendation decision tree.** If you ask your AI which ship to use for rep grinding, it will walk you through the confirmed-optimal-first decision: Hull-B first, Railen second (if verified), Ironclad third (if verified).
+
+**Scoring modifier suppression in rank mode.** Fragmentation penalty, stop density penalty, and cargo panel clarity bonus are no longer applied in rep grinding mode. These factors are irrelevant for single-leg partial submit and were producing misleading output.
+
+**`COVALEX_RANK_STRATEGY.md` updated** with a new ship selection section covering all disqualifiers, verdicts, and verification requirements. Replace your copy in your AI project uploads.
+
+**What to do:** Re-paste the instruction block from your platform's SETUP file. Replace `COVALEX_RANK_STRATEGY.md` in your AI project uploads.
+
+---
+
 ## v0.58.1 -- Audit fixes and player content update (re-paste your instructions)
 
 **You need to re-paste the instruction block into your AI if you set it up before this version.**

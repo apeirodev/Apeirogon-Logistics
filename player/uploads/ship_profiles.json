@@ -2,7 +2,7 @@
   "dataset_name": "star_citizen_hauling_phase4_ship_profiles",
   "phase": "Phase 4 - Ship Operational Profiles",
   "generated_at": "2026-05-18T00:00:00Z",
-  "_copy_note": "PLAYER COPY — canonical version is at developer/data/ship_profiles.json. This file is an exact copy. If you update ships in the canonical file, update this copy too.",
+  "_copy_note": "PLAYER COPY \u2014 canonical version is at developer/data/ship_profiles.json. This file is an exact copy. If you update ships in the canonical file, update this copy too.",
   "record_count": 23,
   "records": [
     {
@@ -27,7 +27,8 @@
         "operational_suitability": 9,
         "expected_covalex_efficiency": 10,
         "dead_leg_recovery_suitability": 8,
-        "traversal_profile": "orbital_chain_specialist"
+        "traversal_profile": "orbital_chain_specialist",
+        "loading_method": "external_panel"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -51,7 +52,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "mixed_sourced_and_derived"
@@ -78,7 +79,8 @@
         "operational_suitability": 5,
         "expected_covalex_efficiency": 3,
         "dead_leg_recovery_suitability": 2,
-        "traversal_profile": "bulk_station_logistics"
+        "traversal_profile": "bulk_station_logistics",
+        "loading_method": "external_panel"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -95,14 +97,14 @@
       ],
       "notes": [
         "Required for Covalex Senior bulk rate contracts.",
-        "Cannot land while loaded — station docking only.",
+        "Cannot land while loaded \u2014 station docking only.",
         "Poor for small multi-stop Covalex work; excellent for bulk orbital runs."
       ],
       "source_refs": [
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "mixed_sourced_and_derived"
@@ -129,7 +131,8 @@
         "operational_suitability": 4,
         "expected_covalex_efficiency": 2,
         "dead_leg_recovery_suitability": 1,
-        "traversal_profile": "bulk_capital_logistics"
+        "traversal_profile": "bulk_capital_logistics",
+        "loading_method": "external_panel"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -146,14 +149,14 @@
       ],
       "notes": [
         "NOT YET FLYABLE as of Alpha 4.8.",
-        "SCU figure (6912) is post-rebalance community estimate — verify on release.",
+        "SCU figure (6912) is post-rebalance community estimate \u2014 verify on release.",
         "Designed for Covalex Master interstellar bulk contracts."
       ],
       "source_refs": [
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -180,7 +183,8 @@
         "operational_suitability": 3,
         "expected_covalex_efficiency": 1,
         "dead_leg_recovery_suitability": 1,
-        "traversal_profile": "capital_bulk_logistics"
+        "traversal_profile": "capital_bulk_logistics",
+        "loading_method": "external_panel"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -197,14 +201,14 @@
       ],
       "notes": [
         "NOT YET FLYABLE as of Alpha 4.8.",
-        "Original SCU figures described by CIG as 'completely unrealistic' for physicalized cargo — post-rebalance figure not yet published.",
+        "Original SCU figures described by CIG as 'completely unrealistic' for physicalized cargo \u2014 post-rebalance figure not yet published.",
         "Largest ship in the Hull series. Practical only for capital-class interstellar bulk routes."
       ],
       "source_refs": [
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -231,7 +235,8 @@
         "operational_suitability": 8,
         "expected_covalex_efficiency": 8,
         "dead_leg_recovery_suitability": 9,
-        "traversal_profile": "fast_blockade_runner"
+        "traversal_profile": "fast_blockade_runner",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -255,7 +260,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "mixed_sourced_and_derived"
@@ -282,7 +287,8 @@
         "operational_suitability": 8,
         "expected_covalex_efficiency": 7,
         "dead_leg_recovery_suitability": 8,
-        "traversal_profile": "deep_space_generalist"
+        "traversal_profile": "deep_space_generalist",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -305,7 +311,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "mixed_sourced_and_derived"
@@ -332,7 +338,8 @@
         "operational_suitability": 6,
         "expected_covalex_efficiency": 5,
         "dead_leg_recovery_suitability": 7,
-        "traversal_profile": "combat_logistics_hybrid"
+        "traversal_profile": "combat_logistics_hybrid",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -349,14 +356,14 @@
       ],
       "notes": [
         "Combat-logistics variant of the Starlancer.",
-        "Cargo SCU unconfirmed — verify in-game. Prioritizes weapons over cargo space.",
-        "Not recommended as primary hauler — use MAX variant for cargo work."
+        "Cargo SCU unconfirmed \u2014 verify in-game. Prioritizes weapons over cargo space.",
+        "Not recommended as primary hauler \u2014 use MAX variant for cargo work."
       ],
       "source_refs": [
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -383,7 +390,8 @@
         "operational_suitability": 7,
         "expected_covalex_efficiency": 7,
         "dead_leg_recovery_suitability": 8,
-        "traversal_profile": "midrange_generalist"
+        "traversal_profile": "midrange_generalist",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -406,7 +414,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "mixed_sourced_and_derived"
@@ -433,7 +441,8 @@
         "operational_suitability": 6,
         "expected_covalex_efficiency": 5,
         "dead_leg_recovery_suitability": 6,
-        "traversal_profile": "tanker_secondary_hauler"
+        "traversal_profile": "tanker_secondary_hauler",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -449,7 +458,7 @@
         "Hangar assignment"
       ],
       "notes": [
-        "Primary role is fuel collection and refueling — cargo is secondary.",
+        "Primary role is fuel collection and refueling \u2014 cargo is secondary.",
         "291 SCU available when not carrying fuel. Not recommended as a dedicated hauler.",
         "Poor atmospheric capability makes atmosphere-heavy routes costly."
       ],
@@ -457,7 +466,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -484,7 +493,8 @@
         "operational_suitability": 5,
         "expected_covalex_efficiency": 5,
         "dead_leg_recovery_suitability": 6,
-        "traversal_profile": "armed_tanker_secondary_hauler"
+        "traversal_profile": "armed_tanker_secondary_hauler",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -508,7 +518,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -535,7 +545,8 @@
         "operational_suitability": 8,
         "expected_covalex_efficiency": 7,
         "dead_leg_recovery_suitability": 9,
-        "traversal_profile": "armed_generalist"
+        "traversal_profile": "armed_generalist",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -558,7 +569,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "mixed_sourced_and_derived"
@@ -585,7 +596,8 @@
         "operational_suitability": 7,
         "expected_covalex_efficiency": 6,
         "dead_leg_recovery_suitability": 6,
-        "traversal_profile": "heavy_surface_logistics"
+        "traversal_profile": "heavy_surface_logistics",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -602,14 +614,14 @@
       ],
       "notes": [
         "Five modular cargo bays. Max container size per bay is 24 SCU (main bays) or 16 SCU (forward).",
-        "Large and unwieldy in atmosphere — prefer orbital routes.",
+        "Large and unwieldy in atmosphere \u2014 prefer orbital routes.",
         "Good for high-volume single-destination runs where fragmentation is low."
       ],
       "source_refs": [
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "mixed_sourced_and_derived"
@@ -636,7 +648,8 @@
         "operational_suitability": 8,
         "expected_covalex_efficiency": 6,
         "dead_leg_recovery_suitability": 8,
-        "traversal_profile": "heavy_atmospheric_lifter"
+        "traversal_profile": "heavy_atmospheric_lifter",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -660,7 +673,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "mixed_sourced_and_derived"
@@ -687,7 +700,8 @@
         "operational_suitability": 7,
         "expected_covalex_efficiency": 6,
         "dead_leg_recovery_suitability": 7,
-        "traversal_profile": "military_heavy_transport"
+        "traversal_profile": "military_heavy_transport",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -703,7 +717,7 @@
         "Hangar assignment"
       ],
       "notes": [
-        "Military variant with armored hull and gun turrets. 522 SCU — less than C2 due to military equipment.",
+        "Military variant with armored hull and gun turrets. 522 SCU \u2014 less than C2 due to military equipment.",
         "Good atmospheric capability. Use when route security matters.",
         "Suitable for Covalex Experienced rank, especially in contested zones."
       ],
@@ -711,7 +725,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -738,7 +752,8 @@
         "operational_suitability": 5,
         "expected_covalex_efficiency": 4,
         "dead_leg_recovery_suitability": 6,
-        "traversal_profile": "heavy_bomber_incidental_hauler"
+        "traversal_profile": "heavy_bomber_incidental_hauler",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -754,7 +769,7 @@
         "Hangar assignment"
       ],
       "notes": [
-        "Heavy bomber. Cargo is incidental — most interior is bomb bay.",
+        "Heavy bomber. Cargo is incidental \u2014 most interior is bomb bay.",
         "216 SCU available when not carrying ordnance. Not a recommended primary hauler.",
         "Use only if you own one and have no better option."
       ],
@@ -762,7 +777,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -789,7 +804,8 @@
         "operational_suitability": 8,
         "expected_covalex_efficiency": 7,
         "dead_leg_recovery_suitability": 8,
-        "traversal_profile": "orbital_station_freight"
+        "traversal_profile": "orbital_station_freight",
+        "loading_method": "external_pod"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -806,14 +822,14 @@
       ],
       "notes": [
         "Reinforced freight hauler designed for secure station-to-station cargo.",
-        "External pod configuration — each pod holds one 32-SCU container.",
+        "External pod configuration \u2014 each pod holds one 32-SCU container.",
         "Good for Covalex Junior through Member rank. Limited atmospheric capability."
       ],
       "source_refs": [
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -840,7 +856,8 @@
         "operational_suitability": 5,
         "expected_covalex_efficiency": 4,
         "dead_leg_recovery_suitability": 7,
-        "traversal_profile": "troop_dropship_secondary_hauler"
+        "traversal_profile": "troop_dropship_secondary_hauler",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -864,7 +881,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -891,7 +908,8 @@
         "operational_suitability": 6,
         "expected_covalex_efficiency": 5,
         "dead_leg_recovery_suitability": 7,
-        "traversal_profile": "vehicle_carrier_secondary_hauler"
+        "traversal_profile": "vehicle_carrier_secondary_hauler",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -908,14 +926,14 @@
       ],
       "notes": [
         "Evolved from Valkyrie. Internal bay carries tall ground vehicles (Nova, Atlas series) or 180 SCU of cargo.",
-        "Excellent atmospheric capability — better than most ships its size.",
+        "Excellent atmospheric capability \u2014 better than most ships its size.",
         "Not a primary hauler, but flexible. Good for mixed operations (cargo + vehicle transport)."
       ],
       "source_refs": [
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -942,7 +960,8 @@
         "operational_suitability": 8,
         "expected_covalex_efficiency": 5,
         "dead_leg_recovery_suitability": 4,
-        "traversal_profile": "armored_deep_space_freight"
+        "traversal_profile": "armored_deep_space_freight",
+        "loading_method": "external_panel_unconfirmed"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -966,7 +985,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -993,7 +1012,8 @@
         "operational_suitability": 6,
         "expected_covalex_efficiency": 4,
         "dead_leg_recovery_suitability": 4,
-        "traversal_profile": "armored_vehicle_carrier"
+        "traversal_profile": "armored_vehicle_carrier",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -1009,7 +1029,7 @@
         "Hangar assignment"
       ],
       "notes": [
-        "Assault variant of the Ironclad. 1440 SCU — reduced from base due to vehicle bay and combat service bay.",
+        "Assault variant of the Ironclad. 1440 SCU \u2014 reduced from base due to vehicle bay and combat service bay.",
         "Carries up to 4 Tumbril Novas. 34 infantry seats.",
         "Use only if combat capability is the primary need; pure hauling should use the base Ironclad."
       ],
@@ -1017,7 +1037,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -1044,7 +1064,8 @@
         "operational_suitability": 8,
         "expected_covalex_efficiency": 7,
         "dead_leg_recovery_suitability": 8,
-        "traversal_profile": "xenotech_medium_heavy_freighter"
+        "traversal_profile": "xenotech_medium_heavy_freighter",
+        "loading_method": "external_panel_unconfirmed"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -1061,14 +1082,14 @@
       ],
       "notes": [
         "Xi'an-designed medium-heavy freighter. First alien cargo ship built for the human market.",
-        "640 SCU using Xi'an grav-lev cargo handling — may interact differently with human freight elevators.",
+        "640 SCU using Xi'an grav-lev cargo handling \u2014 may interact differently with human freight elevators.",
         "Good all-rounder. Suitable for Covalex Member through Experienced rank."
       ],
       "source_refs": [
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -1095,7 +1116,8 @@
         "operational_suitability": 7,
         "expected_covalex_efficiency": 5,
         "dead_leg_recovery_suitability": 5,
-        "traversal_profile": "trading_hub_freighter"
+        "traversal_profile": "trading_hub_freighter",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -1112,14 +1134,14 @@
       ],
       "notes": [
         "NOT YET FLYABLE as of Alpha 4.8. Most anticipated community hauling ship.",
-        "2880 SCU across internal market bays — players can set up vendor stalls inside.",
+        "2880 SCU across internal market bays \u2014 players can set up vendor stalls inside.",
         "Scoring modifiers are speculative placeholders pending live testing."
       ],
       "source_refs": [
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"
@@ -1146,7 +1168,8 @@
         "operational_suitability": 7,
         "expected_covalex_efficiency": 6,
         "dead_leg_recovery_suitability": 6,
-        "traversal_profile": "modular_freighter"
+        "traversal_profile": "modular_freighter",
+        "loading_method": "internal_ramp"
       },
       "unresolved_implementation_details": [
         "Patch-specific cargo handling behavior",
@@ -1170,7 +1193,7 @@
         {
           "source_id": "web_research_2026_05_18",
           "retrieved_date": "2026-05-18",
-          "note": "Community wiki and guide data. All SCU values are advisory — verify in-game before mission planning."
+          "note": "Community wiki and guide data. All SCU values are advisory \u2014 verify in-game before mission planning."
         }
       ],
       "validation_status": "community_sourced_advisory"

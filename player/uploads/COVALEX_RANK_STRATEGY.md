@@ -7,6 +7,57 @@ change with rank -- only contract size does.
 
 ---
 
+SHIP SELECTION FOR REP GRINDING
+
+Not every ship is suitable for rep grinding mode. The right ship makes a
+material difference in runs per session.
+
+OPTIMAL SHIP: Hull-B
+
+External panel loading, confirmed docking and freight elevator compatibility
+at all Covalex Senior destinations (Port Tressler, Baijini Point, Seraphim
+Station, Everus Harbor), and 5 contracts per run at minimum qualifying loads.
+If you have a Hull-B, use it.
+
+HARD DISQUALIFIERS (these ships cannot be used for rep grinding):
+
+  Hull-C -- cannot land at standard orbital stations when loaded. A single
+  failed delivery wastes the entire run.
+
+  C2/M2/A2 Hercules, Caterpillar, Starlancer MAX/TAC, Freelancer MAX,
+  Constellation Taurus, Hermes, Valkyrie, Asgard, Starfarer, Starfarer
+  Gemini, Ironclad Assault -- all use ramp loading at freight elevators.
+  Ramp loading adds significant time per stop versus external panel ships.
+  In a workflow where you are making one delivery per contract and submitting
+  immediately, this overhead compounds across every run in a session.
+
+  Hull-D, Hull-E, Galaxy, Banu Merchantman -- not currently flyable in
+  Alpha 4.8.
+
+ALTERNATIVES (higher potential, require in-game verification first):
+
+  Railen (640 SCU, 6-7 contracts per run potential): Xi'an grav-lev cargo
+  handling at human freight elevators has not been confirmed to work correctly
+  in Alpha 4.8. Before using the Railen, verify at all 4 Senior destinations:
+  freight elevator access works, 16 SCU containers load/unload without bugs,
+  and pad availability supports the ship's footprint. If all 3 confirm, the
+  Railen supersedes the Hull-B.
+
+  Ironclad (2204 SCU, entire contract pool per run potential): external cargo
+  handling avoids the ramp penalty. Station docking compatibility at Covalex
+  Senior destinations is unconfirmed. Verify docking and freight elevator
+  access at all 4 stations before using it for rep grinding. If compatible,
+  the Ironclad eliminates the per-run ceiling entirely.
+
+  RAFT (192 SCU): compatible loading method but only 2 contracts per run.
+  Rep grinding efficiency is too low to recommend.
+
+If you tell your AI which ship you are using when you activate rank mode, it
+will run this check automatically and flag any compatibility issues before
+you start.
+
+---
+
 THE CORE MECHANIC
 
 You do not have to complete all legs of a Covalex contract to earn reputation.

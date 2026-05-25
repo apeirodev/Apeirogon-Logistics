@@ -4,6 +4,12 @@
   "retrieved_date": "2026-05-16",
   "sources": [
     {
+      "name": "Apeirogon Logistics 0.64.1 pre-release validation phase",
+      "notes": "SETUP file sync verification (all 7 SETUP files and all 5 player uploads in sync). CLAUDE.md versioning rule updated for 1.x semantics (patch=any change, minor=SC patch validation, major=addon/breaking). 1.0.1 release checklist added to CLAUDE.md. PROJECT_STATUS.md updated with pre-release phase declaration, Hull-B/Covalex validation status, and calibration scope.",
+      "source_id": "apeirogon_0_64_1_pre_release_validation_phase",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.63.1 pre-release technical fixes",
       "notes": "pip-audit added to CI (SC-02). VERSION.json calibration_scope and star_citizen_validated_patch fields added. README calibration note added. WARN-01: structural input validation at ingest_mission_batch and OCR_result_normalizer entry points. AI-02: check_injection_risk added to lib/common.py and extended to AI vision path mission string fields. Port Olisar final sweep: all location examples updated to Hur-L2, Olisar alias removed from both OCR normalization rule files.",
       "source_id": "apeirogon_0_63_1_pre_release_technical_fixes",

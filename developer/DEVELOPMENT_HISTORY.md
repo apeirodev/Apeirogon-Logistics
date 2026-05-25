@@ -958,3 +958,35 @@ Historical mentions in DEVELOPMENT_HISTORY.md left unchanged (historical context
 `developer/runtime/OCR_normalization_rules.json`, `player/uploads/OCR_normalization_rules.json`,
 `developer/tests/test_session3.py`, `developer/tests/test_scorer.py`,
 `developer/tests/test_session5_tools.py`, multiple developer docs and example files.
+
+## Version 0.64.1: Pre-Release Validation Phase
+
+**VAL-1 -- SETUP file sync verification**
+
+`sync_setup_scoring.py --check` confirmed all 7 SETUP files in sync with the canonical
+template. `sync_player_uploads.py --check` confirmed all 5 player upload files match
+their canonical developer sources. No sync fixes were required.
+
+**VAL-2 -- CLAUDE.md versioning rule updated for 1.x semantics**
+
+The three versioning bullet points in the `## Versioning Rule (Mandatory)` section
+were replaced to reflect the new 1.x semantics:
+- **Patch**: any change to the project (typo, scoring, docs, bugs)
+- **Minor**: project validated against a new Star Citizen patch release
+- **Major**: significant new game-enabling capability (e.g. in-game addon), or breaking schema/governance changes
+
+**VAL-3 -- 1.0.1 release checklist added to CLAUDE.md**
+
+A `### Planned 1.0.1 Release Checklist` section added after the versioning rule,
+covering: functional validation (in-game Hull-B session, all 7 AI platforms, active
+location examples, rank strategy validation), security and governance (pip-audit,
+ERR-02, ERR-01, AI-02), documentation (SECURITY_CONTROLS.md, README note, WHATS_NEW.md),
+and version files. Deferred items (full WARN-01, SBOM, ASI10, non-Hull-B validation)
+explicitly marked as not required for 1.0.1.
+
+**VAL-4 -- PROJECT_STATUS.md pre-release validation phase declaration**
+
+New section added to PROJECT_STATUS.md: `## Pre-Release Validation Phase (0.64.1)`.
+Declares the platform functionally complete for Hull-B / Covalex, identifies the
+remaining work before 1.0.1 as in-game validation and final documentation review,
+and records calibration status (Hull-B confirmed, all other ships heuristic/unverified).

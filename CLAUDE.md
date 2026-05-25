@@ -23,9 +23,9 @@ All documentation, commit messages, and code comments written in this repository
 This project uses **Semantic Versioning** (SemVer): `Major.Minor.Patch`.
 
 - **Every change to any file** must increment the version before committing.
-- **Patch increment** (`0.0.1`): small or inconsequential changes, such as typo fixes, comment updates, and minor corrections.
-- **Minor increment** (`0.1.x`): significant changes, such as new features, new files, structural changes, and scoring logic updates. Patch resets to `1` (not `0`) on a minor bump.
-- **Major increment**: breaking changes to the scoring system, schema, or public-facing API. Discuss with maintainer before bumping.
+- **Patch increment** (`x.x.1`): any change to the project -- typo fixes, scoring adjustments, rule additions, documentation updates, bug fixes.
+- **Minor increment** (`x.1.x`): the project has been validated against a new Star Citizen patch release (e.g. moving from SC 4.8.0 to SC 4.9.0). Patch resets to `1` (not `0`) on a minor bump.
+- **Major increment** (`1.x.x`): a significant new game-enabling capability has been released (e.g. the in-game addon when CIG releases a plugin framework). Also used for breaking changes to the scoring schema or governance model. Discuss with maintainer before bumping.
 
 Update the version in **all** of these files on every change:
 - `README.md`: footer line (`v0.X.Y`)
@@ -36,6 +36,39 @@ Update the version in **all** of these files on every change:
 - `developer/data/source_registry.json`: add a new source entry for the release
 
 The test `developer/tests/test_version_consistency.py` asserts that all four primary version files agree. A version bump is not complete until that test passes.
+
+### Planned 1.0.1 Release Checklist (current intent, to be validated before release)
+
+The following items are intended to be complete before the 1.0.1 production release.
+This list reflects current intent and will be updated as items are completed.
+
+**Functional validation (SC 4.8.0-alpha):**
+- [ ] Scoring weights validated in-game against Hull-B for at least one full Covalex rep-grinding session
+- [ ] Instruction block confirmed working across all 7 supported AI platforms
+- [ ] All player-facing location examples use active Stanton stations (no Port Olisar)
+- [ ] COVALEX_RANK_STRATEGY.md validated against current in-game rank thresholds
+
+**Security and governance:**
+- [ ] pip-audit clean (SC-02) -- automated in CI as of 0.63.1
+- [ ] No remaining str(e) in JSON output (ERR-02) -- completed 0.62.1
+- [ ] validate_governance_metadata fail-closed (ERR-01) -- completed 0.62.1
+- [ ] Injection check on AI vision path (AI-02) -- completed 0.63.1
+
+**Documentation:**
+- [ ] SECURITY_CONTROLS.md reviewed and gaps accepted or addressed
+- [ ] README calibration scope note accurate for release state
+- [ ] WHATS_NEW.md updated with 1.0.1 entry for players
+
+**Version files:**
+- [ ] VERSION.json `calibration_scope.status_hull_b` confirmed true
+- [ ] VERSION.json `star_citizen_validated_patch` confirmed accurate
+- [ ] All 6 version files agree (test_version_consistency.py passes)
+
+**Not required for 1.0.1 (deferred to later releases):**
+- WARN-01 full schema validation at all tool entry points (partial implementation in 0.63.1)
+- SBOM generation (SC-03)
+- ASI10 universal _audit block on all written output
+- Scoring weight validation for ships other than Hull-B
 
 ---
 

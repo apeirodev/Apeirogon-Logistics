@@ -528,5 +528,14 @@ The following OWASP categories are not applicable to this codebase and should no
 
 ## Rule Source
 
-Rules derived from [TikiTribe/claude-secure-coding-rules](https://github.com/TikiTribe/claude-secure-coding-rules) (MIT).
-Full upstream rule files: `.claude/rules/`
+Core rules derived from [TikiTribe/claude-secure-coding-rules](https://github.com/TikiTribe/claude-secure-coding-rules) (MIT).
+Additional rule files written for this project based on published standards:
+
+| File | Standard | Coverage |
+|------|----------|----------|
+| `.claude/rules/owasp-2025.md` | OWASP Top 10:2025 | Web application security risks |
+| `.claude/rules/agent-security.md` | OWASP LLM07, NIST AI RMF | Agentic tool use, sandboxing, autonomy limits |
+| `.claude/rules/ai-security.md` | NIST AI RMF, MITRE ATLAS | Data integrity, inference security, API key handling |
+| `.claude/rules/owasp-llm.md` | OWASP LLM Top 10 v2.0 (2025) | LLM-specific risks: prompt injection, output handling, misinformation |
+| `.claude/rules/owasp-agentic.md` | OWASP Top 10 for Agentic Apps (2026 draft) | Goal hijacking, memory poisoning, cascading hallucinations, overreliance |
+| `.claude/rules/supply-chain-python.md` | OWASP A03:2025, NIST SSDF PS.3.1, SLSA | Hash-pinned deps, pip-audit CI, SBOM, SHA-pinned Actions |

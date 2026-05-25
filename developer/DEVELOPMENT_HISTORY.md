@@ -789,3 +789,47 @@ Comprehensive codebase audit -- 26 findings corrected.
 - STYLE-05/06: "penalised" and "Maximise" in player docs corrected.
 - STYLE-07: "ise" spellings across 13 developer docs corrected to "ize".
 - STYLE-08/09: "ensure" without "that" in two developer docs corrected.
+
+## Version 0.61.1: Security Rule Files -- OWASP LLM, Agentic, Supply Chain
+
+Three new security rule files added to `.claude/rules/`, covering standards not yet
+formally represented in the TikiTribe-derived rules.
+
+**owasp-llm.md** (OWASP Top 10 for LLM Applications v2.0, 2025):
+- LLM01 Prompt Injection: sanitize and bound all inputs sent to providers
+- LLM02 Sensitive Info Disclosure: never include keys or paths in prompts
+- LLM03 Supply Chain: hash-pin all provider SDKs
+- LLM04 Data Poisoning: verify integrity of scoring data on load
+- LLM05 Improper Output Handling: parse and schema-validate all responses
+- LLM06 Excessive Agency: action allowlist after provider calls
+- LLM07 System Prompt Leakage: detect and redact reflected system prompts
+- LLM08 Vector Weaknesses: not applicable (no embeddings/RAG)
+- LLM09 Misinformation: formal reference for AI-03/AI-04 hallucination guardrails
+- LLM10 Unbounded Consumption: per-session token and call limits
+
+**owasp-agentic.md** (OWASP Top 10 for Agentic Applications, 2026 draft):
+- ASI01 Goal Hijacking: separate instructions from data in all prompts
+- ASI02 Memory Poisoning: validate governance metadata before persisting output
+- ASI03 Cascading Hallucinations: validation gates between chained AI steps
+- ASI04 Resource Overuse: session budget limits
+- ASI05 Tool Misuse: references agent-security.md tool allowlist rules
+- ASI06 Excessive Permissions: least-privilege session scope
+- ASI07 Identity Spoofing: forward-looking multi-agent provenance rule
+- ASI08 Overreliance: mandatory advisory-only framing and UNRESOLVED tagging
+- ASI09 Multi-Agent Escalation: not applicable (single-session architecture)
+- ASI10 Audit Failures: mandatory _audit block on all written output
+
+**supply-chain-python.md** (OWASP A03:2025, NIST SSDF PS.3.1, SLSA):
+- SC-01 Hash-pinned deps: --require-hashes + pip-compile
+- SC-02 pip-audit in CI: CVE check on every build
+- SC-03 SBOM on release: cyclonedx-bom / pip-licenses
+- SC-04 Artefact integrity: references existing INT-01 tools
+- SC-05 SHA-pinned Actions: full commit SHA in all uses: blocks
+- SC-06 Minimal token permissions: explicit permissions: block in all workflows
+- SC-07 Trusted sources only: PyPI only, typosquatting awareness
+- SC-08 Update policy: monthly review + re-pin cadence
+
+**Also fixed in this version**: VERSION.json root "version" field was not updated
+to 0.60.1 by the previous automated run -- corrected as part of this bump.
+**CLAUDE.md Rule Source section** updated with a table mapping all 6 rule files
+to their source standards.

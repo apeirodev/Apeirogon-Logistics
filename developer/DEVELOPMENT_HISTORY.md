@@ -959,6 +959,45 @@ Historical mentions in DEVELOPMENT_HISTORY.md left unchanged (historical context
 `developer/tests/test_session3.py`, `developer/tests/test_scorer.py`,
 `developer/tests/test_session5_tools.py`, multiple developer docs and example files.
 
+## Version 0.64.2: External Data Sources and Addon Integration Notes
+
+**EXT-1 -- EXTERNAL_DATA_SOURCES.md created**
+
+New file `developer/docs/EXTERNAL_DATA_SOURCES.md` documents the Star Citizen
+community data APIs evaluated for future integration. Records:
+- UEX API (uexcorp.space): trade pricing, free API key via uexcorp.space/api/apps,
+  env var `UEX_API_KEY`, trust class `external_api_crowdsourced`, governance metadata
+  template showing how to tag external prices as advisory with player confirmation required
+- StarCitizenWiki API (starcitizen.tools): ship/location reference data, public
+  endpoints available without auth, optional env var `SC_WIKI_API_KEY`, trust class
+  `external_api_community_wiki`
+- SC Trade Tools, RSI Telemetry, spectrum.py: noted as reference only or not applicable
+- Trust hierarchy table: sourced_facts > external_api_community_wiki >
+  external_api_crowdsourced > ocr_extraction > ai_recommendation
+- API key handling rules: environment variables only, never CLI args, never committed
+
+**EXT-2 -- ADDON_INTEGRATION_NOTES.md created**
+
+New file `developer/docs/ADDON_INTEGRATION_NOTES.md` documents the three-phase
+addon roadmap and external tool research:
+- Phase 1 (CIG plugin framework): primary long-term path. No framework exists as of
+  Alpha 4.8.0. Stub code in `addon/` is ready for when CIG releases the spec.
+- Phase 2 (OCR companion tool): intermediate path. ArkanisOverlay (WPF/Blazor, .NET 8)
+  identified as architectural reference -- keyboard shortcut activation, always-on-top
+  overlay, no DLL injection, no game memory reading. Planned stack documented:
+  mss/BitBlt screen capture, tesseract/pytesseract OCR, UEX pricing integration,
+  existing `deterministic_scorer.py` as scoring engine.
+- Phase 3 (transition when CIG releases framework): OCR pipeline retired, official
+  contract API replaces screen capture, scoring engine unchanged.
+- External tools evaluated: ArkanisOverlay (primary reference), SC Trade Tools
+  (route algorithm reference), ContractTracker (unverified lead -- nexusmods.com),
+  Game.log parsing (limited relevance -- no full contract detail in log)
+- Design non-negotiables recorded: no game memory reading, no DLL injection,
+  no automation of player actions, all AI output advisory_only: true, external
+  prices never overwrite sourced facts, hallucination guardrails always apply.
+
+---
+
 ## Version 0.64.1: Pre-Release Validation Phase
 
 **VAL-1 -- SETUP file sync verification**

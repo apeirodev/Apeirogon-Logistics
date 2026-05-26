@@ -4,6 +4,24 @@
   "retrieved_date": "2026-05-16",
   "sources": [
     {
+      "name": "Apeirogon Logistics 0.64.4 source registry backfill",
+      "notes": "source_registry.json entries for 0.64.2 and 0.64.3 were missing. Both backfilled. The versioning rule requires a source_registry.json entry for every release.",
+      "source_id": "apeirogon_0_64_4_source_registry_backfill",
+      "trust_level": "internal_derived"
+    },
+    {
+      "name": "Apeirogon Logistics 0.64.3 CI pip-audit install fix",
+      "notes": "pip-audit was called in validation.yml but was not installed by pip install -r requirements-dev.txt. Added explicit pip install pip-audit step before the audit step. Fixes CI failure on fresh GitHub Actions ubuntu-latest runners.",
+      "source_id": "apeirogon_0_64_3_ci_pip_audit_install_fix",
+      "trust_level": "internal_derived"
+    },
+    {
+      "name": "Apeirogon Logistics 0.64.2 external data sources and addon integration notes",
+      "notes": "New developer/docs/EXTERNAL_DATA_SOURCES.md: UEX API and StarCitizenWiki API evaluated and documented for future integration. Governance metadata templates, trust hierarchy, and environment variable guidance recorded. New developer/docs/ADDON_INTEGRATION_NOTES.md: three-phase addon roadmap (CIG plugin framework, OCR companion tool, transition). ArkanisOverlay identified as architectural reference for Phase 2. Design non-negotiables recorded.",
+      "source_id": "apeirogon_0_64_2_external_data_sources_addon_integration_notes",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.64.1 pre-release validation phase",
       "notes": "SETUP file sync verification (all 7 SETUP files and all 5 player uploads in sync). CLAUDE.md versioning rule updated for 1.x semantics (patch=any change, minor=SC patch validation, major=addon/breaking). 1.0.1 release checklist added to CLAUDE.md. PROJECT_STATUS.md updated with pre-release phase declaration, Hull-B/Covalex validation status, and calibration scope.",
       "source_id": "apeirogon_0_64_1_pre_release_validation_phase",

@@ -959,6 +959,18 @@ Historical mentions in DEVELOPMENT_HISTORY.md left unchanged (historical context
 `developer/tests/test_session3.py`, `developer/tests/test_scorer.py`,
 `developer/tests/test_session5_tools.py`, multiple developer docs and example files.
 
+## Version 0.64.4: Source Registry Backfill
+
+**REG-1 -- source_registry.json missing entries for 0.64.2 and 0.64.3**
+
+developer/data/source_registry.json was not updated when 0.64.2 and 0.64.3 were
+released. The file tracks provenance for every release and must have an entry per
+version per the versioning rule in CLAUDE.md. Both missing entries have been
+backfilled. The source_registry.json also receives an entry for 0.64.4 (this
+release).
+
+---
+
 ## Version 0.64.3: CI pip-audit Install Fix
 
 **CI-1 -- pip-audit not installed on GitHub Actions runner**

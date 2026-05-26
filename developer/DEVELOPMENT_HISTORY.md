@@ -959,6 +959,21 @@ Historical mentions in DEVELOPMENT_HISTORY.md left unchanged (historical context
 `developer/tests/test_session3.py`, `developer/tests/test_scorer.py`,
 `developer/tests/test_session5_tools.py`, multiple developer docs and example files.
 
+## Version 0.64.3: CI pip-audit Install Fix
+
+**CI-1 -- pip-audit not installed on GitHub Actions runner**
+
+The `validation.yml` step `pip-audit --requirement ../requirements-dev.txt` was
+added in 0.63.1 but pip-audit was never added to requirements-dev.txt, so the
+command was not available on a fresh GitHub Actions ubuntu-latest runner. The job
+was failing immediately after the dev dependencies install step.
+
+Fix: added an explicit `pip install pip-audit` step in the workflow between
+the dev dependencies install and the audit step. This ensures pip-audit is
+available before it is invoked regardless of what the runner image pre-installs.
+
+---
+
 ## Version 0.64.2: External Data Sources and Addon Integration Notes
 
 **EXT-1 -- EXTERNAL_DATA_SOURCES.md created**

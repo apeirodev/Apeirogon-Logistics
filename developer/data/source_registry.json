@@ -4,6 +4,12 @@
   "retrieved_date": "2026-05-16",
   "sources": [
     {
+      "name": "Apeirogon Logistics 0.64.5 pip-audit hash-pinned in requirements-dev.txt",
+      "notes": "pip-audit==2.10.0 and all 27 transitive dependencies added to requirements-dev.txt with full SHA-256 hash pins (SC-01, INT-02). Separate ad-hoc pip install pip-audit step removed from validation.yml. Multi-platform hashes included for compiled packages (charset-normalizer, msgpack, tomli): Linux manylinux, macOS arm64/x86_64, Windows amd64/arm64, and pure-Python fallbacks.",
+      "source_id": "apeirogon_0_64_5_pip_audit_hash_pinned",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.64.4 source registry backfill",
       "notes": "source_registry.json entries for 0.64.2 and 0.64.3 were missing. Both backfilled. The versioning rule requires a source_registry.json entry for every release.",
       "source_id": "apeirogon_0_64_4_source_registry_backfill",

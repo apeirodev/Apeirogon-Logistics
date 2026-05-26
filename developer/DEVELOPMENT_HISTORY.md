@@ -959,6 +959,26 @@ Historical mentions in DEVELOPMENT_HISTORY.md left unchanged (historical context
 `developer/tests/test_session3.py`, `developer/tests/test_scorer.py`,
 `developer/tests/test_session5_tools.py`, multiple developer docs and example files.
 
+## Version 0.64.5: pip-audit Hash-Pinned in requirements-dev.txt
+
+**SC-01 -- pip-audit and all transitive dependencies added to requirements-dev.txt**
+
+pip-audit was installed via an ad-hoc `pip install pip-audit` step in validation.yml
+with no version pin and no hash verification, violating SC-01 (hash-pinned deps) and
+INT-02. The separate install step has been removed.
+
+pip-audit==2.10.0 and its full transitive dependency tree (27 packages total) have been
+added to requirements-dev.txt with SHA-256 hash pins. For packages with compiled C
+extensions (charset-normalizer, msgpack, tomli), both the platform-specific wheels for
+Linux CI (manylinux x86_64), macOS (arm64, x86_64), and Windows (amd64, arm64) and the
+pure-Python/source distribution hashes are included so the file installs correctly on
+any supported platform.
+
+The separate `pip install pip-audit` step in validation.yml has been removed. pip-audit
+is now installed as part of the standard `pip install -r requirements-dev.txt` step.
+
+---
+
 ## Version 0.64.4: Source Registry Backfill
 
 **REG-1 -- source_registry.json missing entries for 0.64.2 and 0.64.3**

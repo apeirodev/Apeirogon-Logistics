@@ -65,6 +65,19 @@ When a ship becomes flyable, change `"flyable": true`, update SCU if the pre-rel
 
 ---
 
+### Freight Elevator Container Size Sequence
+
+The scoring instruction block uses the sequence [32, 16, 8, 4, 2, 1 SCU] for container breakdown calculations in rank mode. This was player-reported during Alpha 4.8 testing and has not been independently verified.
+
+When a new patch releases, verify:
+- Whether the available container sizes at Covalex Senior destinations (Tressler, Baijini Point, Seraphim Station, Everus Harbor) still match [32, 16, 8, 4, 2, 1]
+- Whether the maximum container size field in contracts still reflects the sizes the elevator actually presents
+- Whether container size availability differs between station types or between ship types
+
+If the sequence changes, update the CONTAINER BREAKDOWN section of `developer/templates/scoring_instruction_block.md` and note the patch version.
+
+---
+
 ## Medium Risk: Verify After Ships
 
 ### Covalex Reputation Ranks (`developer/analytics/mission_issuer_profiles.json`)

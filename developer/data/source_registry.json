@@ -4,6 +4,12 @@
   "retrieved_date": "2026-05-16",
   "sources": [
     {
+      "name": "Apeirogon Logistics 0.64.6 scoring instruction bug fixes",
+      "notes": "Four issues identified in live Alpha 4.8 Covalex rep grinding session. Container breakdown algorithm added (CONTAINER BREAKDOWN section, rank mode calculation and output format updated). Delivery crediting guardrail added (hard prohibition on stating unverified game mechanics). Same-pickup same-commodity conflict detection added to CARGO PANEL TRACKING and rank mode pre-construction check. KNOWN_ISSUES.md, HALLUCINATION_GUARDRAILS.md, and PATCH_SENSITIVE_DATA.md updated with new unverified mechanics entries. All 7 SETUP files synced.",
+      "source_id": "apeirogon_0_64_6_scoring_instruction_bug_fixes",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.64.5 pip-audit hash-pinned in requirements-dev.txt",
       "notes": "pip-audit==2.10.0 and all 27 transitive dependencies added to requirements-dev.txt with full SHA-256 hash pins (SC-01, INT-02). Separate ad-hoc pip install pip-audit step removed from validation.yml. Multi-platform hashes included for compiled packages (charset-normalizer, msgpack, tomli): Linux manylinux, macOS arm64/x86_64, Windows amd64/arm64, and pure-Python fallbacks.",
       "source_id": "apeirogon_0_64_5_pip_audit_hash_pinned",

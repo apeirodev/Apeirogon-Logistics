@@ -137,6 +137,31 @@ through schema validation and governance metadata checks.
 
 ---
 
+## Unverified Game Mechanics
+
+A hallucination is not limited to invented numbers. AI assistants also invent game mechanics -- stating how the game works when that information is not in the project's knowledge files.
+
+**Primary example: delivery crediting for shared-pool pickups.**
+
+When two contracts share the same pickup location and commodity, the freight elevator presents a single undifferentiated container pool. In live testing, an AI assistant was asked: "Will loading from this shared pool credit both contracts?" The AI responded with a specific, confident explanation of how Star Citizen tracks containers per contract -- an explanation that was not sourced from any project knowledge file or verified game documentation. The AI invented a game mechanic.
+
+The correct response when a player asks how delivery is credited: state that the mechanism is not verified in project knowledge files, and present the three safe options without asserting how the game works. The mandatory guardrail is in the instruction block (RULES section: "Do not state how the game credits delivery.").
+
+**Other mechanics currently unverified in project knowledge files:**
+- Container size sequence at freight elevators: [32, 16, 8, 4, 2, 1 SCU] is player-reported from Alpha 4.8 testing, not independently verified
+- Xi'an grav-lev cargo mechanics at human freight elevators for the Railen
+- Ironclad docking and freight elevator compatibility at Covalex Senior destinations
+
+**What to do when asked about an unverified mechanic:**
+
+> "This mechanic is not verified in project knowledge files. I cannot confirm how the game works here. [Present safe options that do not depend on the unverified mechanism.] Do not proceed based on how I believe the game works -- verify in-game first."
+
+If you see an AI response that explains a game mechanic with confidence and that explanation is not in the scoring instruction block or a project knowledge file, treat it as a hallucination. Re-prompt with:
+
+> "That explanation of how the game works is not in your knowledge files. Mark it as unverified and tell me the safe options instead."
+
+---
+
 ## Hull-B Specific Notes
 
 The Hull-B has very specific capacity constraints that AI assistants frequently

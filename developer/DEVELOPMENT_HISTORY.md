@@ -959,6 +959,53 @@ Historical mentions in DEVELOPMENT_HISTORY.md left unchanged (historical context
 `developer/tests/test_session3.py`, `developer/tests/test_scorer.py`,
 `developer/tests/test_session5_tools.py`, multiple developer docs and example files.
 
+## Version 0.64.6: Scoring Instruction Bug Fixes
+
+**Four issues identified in live Alpha 4.8 Covalex rep grinding session -- validated and fixed**
+
+Issues were submitted after a live session and validated against project knowledge files before implementing fixes.
+
+**Issue 1 -- Container breakdown algorithm added (confirmed real)**
+
+The instruction block calculated minimum qualifying loads as `ceil(min_scu / 16)` -- assuming
+all containers are 16 SCU. In practice the freight elevator presents a mixed-size container
+set determined by the contract's maximum container size. The greedy algorithm
+[32, 16, 8, 4, 2, 1 SCU] was player-reported during Alpha 4.8 testing.
+
+A new CONTAINER BREAKDOWN section defines the algorithm. Rank mode minimum load calculation,
+output format, route table, and DEFERRED list format have all been updated to show actual
+container breakdowns rather than simple N x 16 SCU counts. CONTRACT READING item 7 records
+the maximum container size field from the contract terminal.
+
+**Issue 2 -- Delivery crediting guardrail added (confirmed: AI was fabricating a game mechanic)**
+
+An AI assistant confidently explained how Star Citizen credits containers to contracts in the
+shared-pool elevator scenario. That explanation was not in any project knowledge file and was
+not a verifiable game mechanic. A hard prohibition has been added to the RULES section:
+"Do not state how the game credits delivery." The three safe options (monitor contract manager,
+sequential loading, full-leg loading) are presented without asserting how the game works.
+
+**Issue 3 -- Same-pickup same-commodity conflict detection added (confirmed: missing from instruction block)**
+
+When two contracts share the same pickup location and commodity type, the elevator presents an
+undifferentiated container pool. The instruction block had no detection or handling for this
+case. A SAME-PICKUP SAME-COMMODITY CONFLICT section has been added to CARGO PANEL TRACKING,
+and a corresponding SAME-PICKUP SAME-COMMODITY CHECK has been added as a pre-construction step
+in rank mode. Both check at contract acceptance time and at run plan construction time.
+
+**Issue 4 -- Documentation updated with new known issues and guardrails**
+
+KNOWN_ISSUES.md has a new "Unverified Game Mechanics" section covering the elevator container
+size sequence (player-reported, unverified), the delivery crediting mechanism (unverified),
+and the shared-pool disambiguation limitation. HALLUCINATION_GUARDRAILS.md has a new
+"Unverified Game Mechanics" section covering how AI assistants invent game mechanics and how
+to detect and correct this. PATCH_SENSITIVE_DATA.md has a new entry for the freight elevator
+container size sequence under "Highest Risk: Verify First".
+
+All 7 SETUP files synced via sync_setup_scoring.py.
+
+---
+
 ## Version 0.64.5: pip-audit Hash-Pinned in requirements-dev.txt
 
 **SC-01 -- pip-audit and all transitive dependencies added to requirements-dev.txt**

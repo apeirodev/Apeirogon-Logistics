@@ -49,6 +49,16 @@ These are not bugs; they are things the tool does not model yet, or game behavio
 
 ---
 
+## Unverified Game Mechanics
+
+**Freight elevator container size sequence is player-reported and unverified.** The scoring instruction block uses the sequence [32, 16, 8, 4, 2, 1 SCU] for container breakdown calculations. This sequence was reported by a player during Alpha 4.8 testing. It has not been independently verified across all ship types, all station types, or all patch states. If the actual sequence differs, container breakdown calculations in rank mode will be wrong. The sequence may also vary by contract, by station, or by patch. When the player reports a different sequence at a specific elevator, use what the player observed for that session.
+
+**Delivery crediting mechanism for same-commodity same-pickup contracts is not verified.** When two accepted contracts share the same pickup location and the same commodity type, the freight elevator presents an undifferentiated container pool. Whether Star Citizen credits containers to the source contract, to the commodity type, or to some other tracking mechanism is not documented in project knowledge files and has not been independently verified. The three safe strategies (monitor contract manager per interaction, load one full qualifying leg before the second, or load full-leg SCU for all conflicting contracts) are presented to the player without asserting how the game works.
+
+**Same-pickup same-commodity disambiguation is not executable at the elevator.** In the shared-pool scenario above, minimum-load disambiguation -- loading exactly the container count for one contract before loading for the second -- cannot be confirmed to work correctly. The player may be loading containers from a shared pool that the game does not attribute per-contract. This is an open research question for the project. Players who discover the actual mechanism should report it so that the instruction block can be updated.
+
+---
+
 ## Patch Sensitivity
 
 **All payout and capacity values are patch-dependent.** The scoring tool does not store game values. When CIG changes mission payouts, cargo capacities, or station availability in a patch, you need to update your input data. The tool will score whatever you give it; wrong input produces wrong scores.

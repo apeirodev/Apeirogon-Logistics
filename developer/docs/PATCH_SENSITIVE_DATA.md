@@ -4,7 +4,7 @@ This file documents which data in the repository is most likely to change when a
 
 For scoring weight tuning after a patch (modifier adjustment, issuer calibration, session state updates), see `PATCH_MAINTENANCE_HANDBOOK.md`. This file focuses on specific data values that need re-verification.
 
-**Current patch version: Alpha 4.8.0**
+**Current patch version: Alpha 4.8.3**
 
 When told that a new patch is out, work through the sections below in order. Start with the highest-risk data (ship SCU values), then proceed through scoring and issuer data, and finish with the version update.
 
@@ -135,4 +135,4 @@ The following files contain explicit patch version references and must be update
 - `developer/data/patch_lineage_registry.json` → add new patch entry
 - This file (`PATCH_SENSITIVE_DATA.md`) → "Current patch version" header above
 
-When updating, search the repo for the old patch string: `grep -r "Alpha 4.8.0" .`
+When updating, search the repo for the old patch string: `grep -r "Alpha 4.8.3" .`

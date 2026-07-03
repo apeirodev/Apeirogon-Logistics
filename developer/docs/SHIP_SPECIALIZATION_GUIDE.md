@@ -234,7 +234,7 @@ Xi'an-designed medium-heavy freighter. First alien cargo ship built for the huma
 
 **Best for**: Covalex Member through Experienced. Good for routes with some atmosphere stops.
 
-**Note**: Xi'an grav-lev cargo handling may interact differently with human freight elevators. Verify in Alpha 4.8.0.
+**Note**: Xi'an grav-lev cargo handling may interact differently with human freight elevators. Verify in Alpha 4.8.3.
 
 ---
 

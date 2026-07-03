@@ -959,6 +959,41 @@ Historical mentions in DEVELOPMENT_HISTORY.md left unchanged (historical context
 `developer/tests/test_session3.py`, `developer/tests/test_scorer.py`,
 `developer/tests/test_session5_tools.py`, multiple developer docs and example files.
 
+## Version 0.65.1: Star Citizen 4.8.3 Compatibility
+
+**Validated patch bumped from Alpha 4.8.0 to Alpha 4.8.3 (minor version increment)**
+
+Per the versioning rule, validation against a new Star Citizen patch release is a
+minor increment with the patch level reset to 1, moving the project from 0.64.6
+to 0.65.1.
+
+Updated the declared Star Citizen patch compatibility in all current-state files:
+- `VERSION.json`: `star_citizen_patch_version` (Alpha 4.8.3),
+  `star_citizen_validated_patch` (4.8.3-alpha), and the calibration note
+- `README.md`: validated patch line and addon framework status line
+- `developer/PROJECT_STATUS.md`: targeting line and validated ship line
+- `developer/data/patch_lineage_registry.json`: `current_patch` block
+- `developer/docs/PATCH_SENSITIVE_DATA.md`: current patch header and grep instruction
+- `CLAUDE.md`: 1.0.1 checklist functional validation header
+- `addon/docs/ADDON_ARCHITECTURE.md` and `developer/docs/ADDON_INTEGRATION_NOTES.md`:
+  addon framework status lines
+- `developer/docs/TELEMETRY_COLLECTION_WORKFLOW.md` and
+  `developer/docs/TELEMETRY_SUBMISSION_WORKFLOW.md`: current patch example values
+- `developer/docs/SHIP_SPECIALIZATION_GUIDE.md` and
+  `player/uploads/SHIP_SPECIALIZATION_GUIDE.md`: forward-looking verification notes
+
+Data provenance notes that record when values were sourced (community-sourced SCU
+values "as of Alpha 4.8.0", ships "flyable since Alpha 4.8.0") were left unchanged
+because the underlying data has not been re-verified against 4.8.3.
+
+Historical entries (WHATS_NEW.md, version_history, development history sections)
+that record Alpha 4.8.0 as the patch current at the time of those releases were
+intentionally left unchanged to preserve provenance. Generic "Alpha 4.8" line
+references in ship profiles and the scoring instruction block remain valid for
+4.8.3 and were not modified, ensuring that no player-facing re-paste is required.
+
+---
+
 ## Version 0.64.6: Scoring Instruction Bug Fixes
 
 **Four issues identified in live Alpha 4.8 Covalex rep grinding session -- validated and fixed**

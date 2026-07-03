@@ -7,6 +7,16 @@ Changes that are purely internal (tooling, CI, developer workflow) are not liste
 
 ---
 
+## v0.65.1 -- Star Citizen Alpha 4.8.3 compatibility (no action needed)
+
+**The toolkit is now validated against Star Citizen Alpha 4.8.3.** The declared patch compatibility has been updated from Alpha 4.8.0 to Alpha 4.8.3 across the project.
+
+**No re-paste is required.** The instruction block and upload files did not change. Ship availability rules (Hull-D, Hull-E, Merchantman, and Galaxy are still not flyable) and the container size sequence are unchanged in 4.8.3.
+
+**Calibration scope is unchanged.** Scoring weights remain validated against the Hull-B only. All other ships still use heuristic modifiers that have not been in-game verified.
+
+---
+
 ## v0.59.1 -- Rep grinding ship selection rules (re-paste your instructions)
 
 **You need to re-paste the instruction block into your AI if you set it up before this version.**

@@ -48,7 +48,7 @@ Minimum useful fields:
 
 ```json
 {
-  "patch_version": "Alpha 4.8.0",
+  "patch_version": "Alpha 4.8.3",
   "ship": "hull-b",
   "issuer": "covalex",
   "session_start_epoch": 1700000000,

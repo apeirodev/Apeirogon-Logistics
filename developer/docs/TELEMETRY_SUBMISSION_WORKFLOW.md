@@ -32,7 +32,7 @@ Check the output for:
 
 Common validation issues and fixes:
 - `missing required field: ship`: add `"ship": "hull-b"` (or your actual ship) to the record
-- `patch_version unresolved`: add `"patch_version": "Alpha 4.8.0"` (or current patch)
+- `patch_version unresolved`: add `"patch_version": "Alpha 4.8.3"` (or current patch)
 - `cargo_scu exceeds plausible threshold`: check that you did not accidentally enter a value in the wrong units
 
 ---

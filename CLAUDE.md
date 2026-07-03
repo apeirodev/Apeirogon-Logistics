@@ -42,7 +42,7 @@ The test `developer/tests/test_version_consistency.py` asserts that all four pri
 The following items are intended to be complete before the 1.0.1 production release.
 This list reflects current intent and will be updated as items are completed.
 
-**Functional validation (SC 4.8.0-alpha):**
+**Functional validation (SC 4.8.3-alpha):**
 - [ ] Scoring weights validated in-game against Hull-B for at least one full Covalex rep-grinding session
 - [ ] Instruction block confirmed working across all 7 supported AI platforms
 - [ ] All player-facing location examples use active Stanton stations (no Port Olisar)

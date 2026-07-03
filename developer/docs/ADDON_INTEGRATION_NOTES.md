@@ -20,7 +20,7 @@ as the baseline for the intermediate companion tool (see Phase 2 below).
 ## Phase 1: CIG Plugin Framework (primary long-term path)
 
 **Dependency:** CIG (Cloud Imperium Games) must release an addon or plugin
-framework for Star Citizen. No such framework exists as of Alpha 4.8.0.
+framework for Star Citizen. No such framework exists as of Alpha 4.8.3.
 
 When CIG releases the framework, the addon would:
 - Read contract data directly from the game's official plugin API

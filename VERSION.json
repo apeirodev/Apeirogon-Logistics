@@ -1,6 +1,6 @@
 {
   "calibration_scope": {
-    "calibration_note": "Scoring weights validated against Hull-B only. All other ships use heuristic modifiers that have not been in-game verified against SC 4.8.0-alpha.",
+    "calibration_note": "Scoring weights validated against Hull-B only. All other ships use heuristic modifiers that have not been in-game verified against SC 4.8.3-alpha.",
     "ships_validated": ["hull-b"],
     "status_hull_b": true,
     "status_others": false
@@ -11,10 +11,10 @@
     "hard_ocr_engine_dependency": false,
     "telemetry_calibrated": false
   },
-  "generated_utc": "2026-05-26T00:00:00Z",
-  "previous_version": "0.64.5",
+  "generated_utc": "2026-07-03T00:00:00Z",
+  "previous_version": "0.64.6",
   "project": "Apeirogon Logistics",
-  "release_type": "0.64.6_scoring_instruction_bug_fixes",
+  "release_type": "0.65.1_star_citizen_4_8_3_compatibility",
   "semantic_versioning": "three-level",
   "skipped_versions": [
     {
@@ -22,10 +22,10 @@
       "version": "0.30.4"
     }
   ],
-  "star_citizen_patch_version": "Alpha 4.8.0",
-  "star_citizen_validated_patch": "4.8.0-alpha",
+  "star_citizen_patch_version": "Alpha 4.8.3",
+  "star_citizen_validated_patch": "4.8.3-alpha",
   "status": "stable_pre_release_deterministic_toolkit",
-  "version": "0.64.6",
+  "version": "0.65.1",
   "version_history": [
     {
       "version": "0.30.3",
@@ -246,6 +246,10 @@
     {
       "version": "0.64.6",
       "status": "scoring_instruction_bug_fixes"
+    },
+    {
+      "version": "0.65.1",
+      "status": "star_citizen_4_8_3_compatibility"
     }
   ]
 }

@@ -224,7 +224,7 @@ Xi'an-designed freighter. Good all-rounder with moderate atmosphere benefit and 
 
 **Best for**: Covalex Member through Experienced. Routes with some atmosphere stops.
 
-**Note**: Xi'an grav-lev cargo handling may interact differently with human freight elevators. Verify behavior in Alpha 4.8.0.
+**Note**: Xi'an grav-lev cargo handling may interact differently with human freight elevators. Verify behavior in Alpha 4.8.3.
 
 ---
 

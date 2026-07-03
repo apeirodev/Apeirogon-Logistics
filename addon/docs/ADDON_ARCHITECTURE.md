@@ -2,7 +2,7 @@
 
 Design decisions for the Apeirogon Logistics in-game addon.
 
-**All game API surface areas are speculative.** CIG has not published an addon framework as of Alpha 4.8.0. When they do, the stub files will need their `CIG_API.*` placeholder calls replaced with the actual API.
+**All game API surface areas are speculative.** CIG has not published an addon framework as of Alpha 4.8.3. When they do, the stub files will need their `CIG_API.*` placeholder calls replaced with the actual API.
 
 ---
 

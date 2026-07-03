@@ -48,7 +48,7 @@ It scores each contract from 0 to 100 and recommends Accept, Defer, or Reject. I
 
 23 ships with 90+ SCU capacity, including Hull-B through Hull-E, C2/M2/A2 Hercules, Caterpillar, Ironclad, Railen, Hermes, RAFT, Starlancer MAX, and more. See [`player/uploads/SHIP_SPECIALIZATION_GUIDE.md`](player/uploads/SHIP_SPECIALIZATION_GUIDE.md) for the full list and per-ship advice.
 
-**Validated patch**: Alpha 4.8.0. Scoring weights are validated against the Hull-B. All other ships use heuristic modifiers that have not been in-game verified for this patch.
+**Validated patch**: Alpha 4.8.3. Scoring weights are validated against the Hull-B. All other ships use heuristic modifiers that have not been in-game verified for this patch.
 
 ## Mission issuers supported
 
@@ -68,7 +68,7 @@ See [`LICENSES.md`](LICENSES.md) for full details.
 
 The long-term goal is an **in-game addon** that analyzes contracts in real time as you browse the missions terminal, with no screenshots or copy-paste. You'd see contract scores and recommendations overlaid directly in the game UI.
 
-**This requires CIG (Cloud Imperium Games) to release an addon or plugin framework for Star Citizen.** No such framework exists as of Alpha 4.8.0. The addon code lives in [`addon/`](addon/) and is currently a functionality stub: the scoring logic is complete, but all game API calls are placeholders pending CIG's spec. When CIG releases the framework, Apeirogon Logistics will:
+**This requires CIG (Cloud Imperium Games) to release an addon or plugin framework for Star Citizen.** No such framework exists as of Alpha 4.8.3. The addon code lives in [`addon/`](addon/) and is currently a functionality stub: the scoring logic is complete, but all game API calls are placeholders pending CIG's spec. When CIG releases the framework, Apeirogon Logistics will:
 
 - Let you connect your own API key for OpenAI, Claude, or another provider
 - Show Accept / Defer / Reject indicators on contracts as you scroll the terminal
@@ -87,4 +87,4 @@ The deterministic Python scorer runs without any AI, useful if you want full aud
 
 Contributions welcome. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-**Maintainer:** ApeiroDev · v0.64.6
+**Maintainer:** ApeiroDev · v0.65.1

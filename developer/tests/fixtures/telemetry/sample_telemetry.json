@@ -1,7 +1,11 @@
 {
-  "patch_version": "Alpha 4.8.0",
-  "unresolved_fields": [
-    "distance"
-  ],
+  "patch_version": "Alpha 4.8.3",
+  "ship": "hull-b",
+  "issuer": "covalex",
+  "cargo_scu": 96,
+  "reward_usc": 45000,
+  "outcome": "completed",
+  "user_verified": false,
+  "unresolved_fields": [],
   "confidence_level": "medium"
 }

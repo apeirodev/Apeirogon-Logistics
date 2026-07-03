@@ -4,6 +4,12 @@
   "retrieved_date": "2026-05-16",
   "sources": [
     {
+      "name": "Apeirogon Logistics 0.65.4 player changelog backfill and history cleanup",
+      "notes": "WHATS_NEW.md backfilled: retroactive 0.64.6 entry telling players to re-paste the instruction block (container breakdown, delivery crediting guardrail, same-pickup conflict detection), plus a combined note that 0.60.1 through 0.64.5 were internal releases requiring no player action. DEVELOPMENT_HISTORY.md: duplicate 'Version 0.36.2' header corrected to 0.36.1 and all 63 version sections reordered chronologically with a content-preservation check. patch_lineage_registry.json now records an actual patch_lineage trail (Alpha 4.8.0 superseded, Alpha 4.8.3 current) instead of only overwriting current_patch. Three byte-identical test fixtures differentiated into semantically appropriate telemetry and provider output samples; test checksum manifest regenerated and verified.",
+      "source_id": "apeirogon_0_65_4_player_changelog_backfill_history_cleanup",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.65.3 grammar and style rule compliance sweep",
       "notes": "Repo-wide enforcement of the mandatory grammar and style rules. All em dashes replaced with double hyphens and en dashes with plain hyphens in 32 files (LICENSE excluded: canonical CC BY-NC legal text left byte-identical). All -ise spellings converted to Oxford -ize forms in 38 files, including the code rename normalise to normalize in OCR_result_normalizer.py and its test importers, and the derivation_type value ai_vision_normalisation to ai_vision_normalization. Two 'ensure' without 'that' violations fixed. CLAUDE.md dash rule reworded so it no longer reads 'Never use -- or --'. Test checksum manifest regenerated (29 entries, adding test_security.py and test_version_consistency.py).",
       "source_id": "apeirogon_0_65_3_grammar_style_compliance_sweep",

@@ -20,5 +20,17 @@
     "All telemetry must be tagged to a patch era.",
     "Major hauling, cargo, freight elevator, QT, or UI changes require validation.",
     "Old telemetry should be archived by patch era, not deleted."
+  ],
+  "patch_lineage": [
+    {
+      "star_citizen_patch_version": "Alpha 4.8.0",
+      "patch_validation_status": "superseded",
+      "note": "Patch current from project versions 0.36.2 through 0.64.6."
+    },
+    {
+      "star_citizen_patch_version": "Alpha 4.8.3",
+      "patch_validation_status": "current",
+      "note": "Validated at project version 0.65.1."
+    }
   ]
 }

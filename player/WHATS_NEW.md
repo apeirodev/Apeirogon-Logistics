@@ -17,6 +17,26 @@ Changes that are purely internal (tooling, CI, developer workflow) are not liste
 
 ---
 
+## v0.64.6 -- Scoring instruction bug fixes (re-paste your instructions)
+
+**You need to re-paste the instruction block into your AI if you set it up before this version.** This entry was added retroactively: the release shipped without a player changelog entry.
+
+**Container breakdown is now calculated correctly.** Minimum qualifying loads were previously calculated assuming that every container is 16 SCU. The freight elevator actually presents a mixed-size container set (32, 16, 8, 4, 2, 1 SCU, player-reported). Rank mode minimum load calculation, output format, route tables, and the DEFERRED list now show actual container breakdowns.
+
+**Your AI will no longer explain how delivery crediting works.** An AI assistant was caught confidently inventing the game mechanic for how containers are credited to contracts from a shared elevator pool. A hard prohibition was added; your AI now presents the three safe handling options without asserting how the game works.
+
+**Same-pickup same-commodity conflicts are now detected.** When two contracts share a pickup location and commodity, the elevator presents an undifferentiated container pool. Your AI now checks for this at contract acceptance and at run plan construction.
+
+**What to do:** Re-paste the instruction block from your platform's SETUP file.
+
+---
+
+## v0.60.1 to v0.64.5 -- Internal releases (no action needed)
+
+These releases covered internal tooling, CI, security hardening, and documentation work: codebase audit fixes, security rule files, version consistency testing, dependency pinning, and pre-release validation. Nothing in them changes how you set up or use your AI. No re-paste or re-upload is required.
+
+---
+
 ## v0.59.1 -- Rep grinding ship selection rules (re-paste your instructions)
 
 **You need to re-paste the instruction block into your AI if you set it up before this version.**

@@ -1,7 +1,23 @@
 {
-  "patch_version": "Alpha 4.8.0",
+  "advisory_only": true,
+  "recommendation": "defer",
+  "reasoning": "Route requires two atmospheric landings; reward was user-supplied.",
   "unresolved_fields": [
-    "distance"
+    "fee_usc"
   ],
-  "confidence_level": "medium"
+  "governance_metadata": {
+    "source_class": "ai_output",
+    "provenance_chain": [],
+    "confidence_level": "medium",
+    "verification_status": "not_human_verified",
+    "patch_era": "Alpha 4.8.3",
+    "telemetry_support_level": "none",
+    "operational_assurance_state": "implemented",
+    "unresolved_field_list": [
+      "fee_usc"
+    ],
+    "advisory_only": true,
+    "contributor_trust_tier": "T0",
+    "derivation_type": "ai_generated"
+  }
 }

@@ -14,9 +14,9 @@
     "telemetry_calibrated": false
   },
   "generated_utc": "2026-07-03T00:00:00Z",
-  "previous_version": "0.65.2",
+  "previous_version": "0.65.3",
   "project": "Apeirogon Logistics",
-  "release_type": "0.65.3_grammar_style_rule_compliance_sweep",
+  "release_type": "0.65.4_player_changelog_backfill_history_cleanup",
   "semantic_versioning": "three-level",
   "skipped_versions": [
     {
@@ -27,7 +27,7 @@
   "star_citizen_patch_version": "Alpha 4.8.3",
   "star_citizen_validated_patch": "4.8.3-alpha",
   "status": "stable_pre_release_deterministic_toolkit",
-  "version": "0.65.3",
+  "version": "0.65.4",
   "version_history": [
     {
       "version": "0.30.3",
@@ -260,6 +260,10 @@
     {
       "version": "0.65.3",
       "status": "grammar_style_rule_compliance_sweep"
+    },
+    {
+      "version": "0.65.4",
+      "status": "player_changelog_backfill_history_cleanup"
     }
   ]
 }

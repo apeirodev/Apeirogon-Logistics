@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 import argparse, json
+import logging
 from pathlib import Path
 from lib.common import dump_json
+
+logger = logging.getLogger(__name__)
 
 def refs(obj):
     found = []
@@ -27,7 +30,9 @@ def main():
         try:
             mapping[str(p)] = refs(json.loads(p.read_text(encoding="utf-8")))
         except Exception as e:
-            mapping[str(p)] = [f"INVALID_JSON:{e}"]
+            # ERR-02: detail to the log, only a generic marker to output
+            logger.error("Invalid JSON in schema file %s: %s", p, e, exc_info=True)
+            mapping[str(p)] = ["INVALID_JSON"]
     dump_json({"schema_dependency_map": mapping}, args.output)
 
 if __name__ == "__main__":

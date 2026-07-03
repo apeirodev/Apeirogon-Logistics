@@ -4,6 +4,12 @@
   "retrieved_date": "2026-05-16",
   "sources": [
     {
+      "name": "Apeirogon Logistics 0.65.2 security hardening",
+      "notes": "Fixes from the Fable 5 repository assessment. FILE-01: bundle_telemetry.py and build_reproducible_release.py now validate CLI output paths via safe_write_path; verify_release_integrity.py rejects manifest entries that escape the release root or carry non-string hashes. ERR-01: verify_replay_integrity.py and replay_route_analysis.py now report unverifiable (valid false) when no recorded hash exists instead of failing open. WARN-02: load_json routes all named paths through the 10 MB safe_load_json cap. AI-02: AI vision mission string fields sanitized (control characters stripped, length bounded). AI-04: hallucination check recurses into nested mission objects and flags numeric strings. ERR-02: raw exception text removed from bundle_telemetry, schema_dependency_mapper, and validate_scoring_numbers output. SC-01: pip install --require-hashes enforced in both CI workflows. SECURITY_CONTROLS.md updated to match.",
+      "source_id": "apeirogon_0_65_2_security_hardening",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.65.1 Star Citizen 4.8.3 compatibility",
       "notes": "Validated Star Citizen patch bumped from Alpha 4.8.0 to Alpha 4.8.3. Minor version increment per the versioning rule (patch resets to 1). Updated current-state patch declarations in VERSION.json, README.md, PROJECT_STATUS.md, patch_lineage_registry.json, PATCH_SENSITIVE_DATA.md, the CLAUDE.md 1.0.1 checklist header, addon framework status lines (ADDON_ARCHITECTURE.md, ADDON_INTEGRATION_NOTES.md), telemetry workflow examples, and ship guide verification notes. Historical patch references and data provenance notes preserved unchanged.",
       "source_id": "apeirogon_0_65_1_star_citizen_4_8_3_compatibility",

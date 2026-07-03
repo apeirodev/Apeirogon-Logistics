@@ -33,9 +33,19 @@ def verify(manifest_data, root: Path):
 
     mismatches = []
     missing_from_disk = []
+    invalid_entries = []
 
+    root = root.resolve()
     for rel_path, expected_hash in sorted(recorded.items()):
+        # FILE-01: manifest paths are external input; reject entries that
+        # escape the release root instead of hashing arbitrary files.
         candidate = (root / rel_path).resolve()
+        if not candidate.is_relative_to(root):
+            invalid_entries.append({"path": rel_path, "reason": "path escapes release root"})
+            continue
+        if not isinstance(expected_hash, str):
+            invalid_entries.append({"path": rel_path, "reason": "expected hash is not a string"})
+            continue
         if not candidate.exists():
             missing_from_disk.append(rel_path)
             continue
@@ -61,7 +71,7 @@ def verify(manifest_data, root: Path):
         if rel not in recorded_set:
             untracked.append(rel)
 
-    valid = not mismatches and not missing_from_disk
+    valid = not mismatches and not missing_from_disk and not invalid_entries
     return {
         "valid": valid,
         "file_count": len(recorded),
@@ -69,6 +79,8 @@ def verify(manifest_data, root: Path):
         "mismatch_count": len(mismatches),
         "missing_from_disk": missing_from_disk,
         "missing_count": len(missing_from_disk),
+        "invalid_entries": invalid_entries,
+        "invalid_entry_count": len(invalid_entries),
         "untracked_on_disk": untracked,
         "untracked_count": len(untracked),
     }

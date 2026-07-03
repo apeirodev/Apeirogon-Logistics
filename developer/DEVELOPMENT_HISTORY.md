@@ -959,6 +959,77 @@ Historical mentions in DEVELOPMENT_HISTORY.md left unchanged (historical context
 `developer/tests/test_session3.py`, `developer/tests/test_scorer.py`,
 `developer/tests/test_session5_tools.py`, multiple developer docs and example files.
 
+## Version 0.65.2: Security Hardening from Repository Assessment
+
+**Nine findings from the Fable 5 repository assessment fixed**
+
+**FILE-01 -- output path validation on zip-writing tools**
+
+`bundle_telemetry.py` and `build_reproducible_release.py` wrote their CLI-supplied
+`--output` paths directly, so a traversal path such as `../../anything.zip` escaped
+the allowed write roots. Both tools now validate the output path through
+`safe_write_path()` at the CLI boundary before writing. The release builder allows
+`releases/` in addition to the default roots, matching RELEASE_WORKFLOW.md.
+
+**FILE-01 -- manifest path containment in verify_release_integrity.py**
+
+Checksum manifest entries are external input. An entry such as `../../../etc/passwd`
+was resolved and hashed. Entries that escape the release root, or whose expected
+hash is not a string (previously an uncaught TypeError), are now reported in a new
+`invalid_entries` list and force `valid: false`.
+
+**ERR-01 -- integrity checks fail closed when there is nothing to verify**
+
+`verify_replay_integrity.py` reported `valid: true` when the input had no expected
+hash. It now reports `valid: false` with status `unverifiable_no_expected_hash`.
+It also excludes the hash-carrier fields themselves when hashing an input without
+an explicit payload, which previously guaranteed a spurious mismatch.
+`replay_route_analysis.py` similarly treated a missing recorded hash as a match;
+hash match fields are now three-state (true, false, or null for unverifiable) and
+`valid` requires a verified output hash.
+
+**WARN-02 -- size cap enforced at all tool entry points**
+
+`safe_load_json()` existed but was never called. `load_json()` now routes every
+named file path through it, ensuring that the 10 MB cap applies to every tool
+that reads external JSON. Stdin remains uncapped (documented limitation).
+
+**AI-02 -- AI vision string fields sanitized**
+
+`_normalise_mission()` now strips control characters and bounds field length (512
+characters) on all mission string fields before downstream use. Raw OCR text is
+bounded at 4096 characters. Previously vision fields passed through verbatim.
+
+**AI-04 -- hallucination check recurses into nested structures**
+
+`provider_output_validator.py` only inspected top-level int/float keys, so AI
+numerics nested in `missions[]` or returned as numeric strings ("12,500") were
+never flagged. The check now walks nested objects and lists and recognizes
+numeric strings, reporting flags with their full path (e.g. `missions[0].reward_usc`).
+
+**ERR-02 -- raw exception text removed from tool output**
+
+`bundle_telemetry.py` (skip reasons), `schema_dependency_mapper.py` (INVALID_JSON
+markers), and `validate_scoring_numbers.py` (config lookup errors) placed `str(e)`
+in JSON output. All three now log full detail via `logger.error(..., exc_info=True)`
+and emit generic markers.
+
+**SC-01 -- hash enforcement actually enabled in CI**
+
+requirements-dev.txt was fully hash-pinned, but neither workflow passed
+`--require-hashes` to pip, so enforcement was opportunistic. Both install steps
+now use `pip install --require-hashes -r ../requirements-dev.txt`.
+
+**Cleanup**: unused `DEFAULT_WEIGHTS` import removed from `ingest_mission_batch.py`.
+SECURITY_CONTROLS.md updated: stale SC-02 and AI-02 gap rows removed (both were
+already or are now implemented), WARN-02 and AI-02 implementation rows corrected.
+
+All 214 tests pass. New guards verified by direct smoke tests (traversal paths
+rejected, oversized input rejected, control characters stripped, nested numerics
+flagged, unverifiable inputs reported invalid).
+
+---
+
 ## Version 0.65.1: Star Citizen 4.8.3 Compatibility
 
 **Validated patch bumped from Alpha 4.8.0 to Alpha 4.8.3 (minor version increment)**

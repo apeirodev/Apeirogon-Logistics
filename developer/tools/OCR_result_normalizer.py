@@ -72,8 +72,24 @@ def _resolve_location(text: str) -> str:
     return text
 
 
+# AI-02: provider string fields are sanitized (control characters stripped,
+# length bounded) before any downstream use.
+_MAX_PROVIDER_FIELD_LENGTH = 512
+_MAX_RAW_TEXT_LENGTH = 4096
+_CONTROL_CHARS = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
+
+
+def _sanitize_provider_value(value):
+    if isinstance(value, str):
+        return _CONTROL_CHARS.sub("", value[:_MAX_PROVIDER_FIELD_LENGTH])
+    if isinstance(value, list):
+        return [_sanitize_provider_value(v) for v in value]
+    return value
+
+
 def _normalise_mission(mission: dict) -> dict:
     """Resolve aliases and collect unresolved fields for a single mission dict."""
+    mission = {k: _sanitize_provider_value(v) for k, v in mission.items()}
     issuer_raw = mission.get("issuer", "UNRESOLVED")
     issuer = (
         _resolve_issuer(issuer_raw)
@@ -184,6 +200,8 @@ def _normalise_vision(data: dict) -> dict:
 def normalize_ocr(data: dict) -> dict:
     """Mode 1: normalise raw OCR text via regex extraction."""
     raw = data.get("raw_text") or data.get("text") or ""
+    # AI-02: bound and strip control characters from OCR text before parsing
+    raw = _CONTROL_CHARS.sub("", str(raw)[:_MAX_RAW_TEXT_LENGTH])
     text = normalize_text(raw)
     lower = text.lower()
 

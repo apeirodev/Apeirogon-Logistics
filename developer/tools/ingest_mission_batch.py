@@ -27,7 +27,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from deterministic_scorer import score_route, DEFAULT_WEIGHTS
+from deterministic_scorer import score_route
 from route_chain_analyzer import analyze
 from lib.common import (
     add_common_args, collect_unresolved, dump_json, governance_metadata,

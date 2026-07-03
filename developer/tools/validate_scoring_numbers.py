@@ -14,9 +14,12 @@ Usage:
   python tools/validate_scoring_numbers.py | python -c "import json,sys; d=json.load(sys.stdin); assert d['valid'], d"
 """
 import json
+import logging
 import re
 import sys
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 _REPO = Path(__file__).resolve().parent.parent.parent
 _CONFIG = _REPO / "developer" / "runtime" / "scoring_config.json"
@@ -161,9 +164,11 @@ def validate(config: dict, template: str) -> dict:
         try:
             expected = expected_fn(config)
         except (KeyError, TypeError) as e:
+            # ERR-02: detail to the log, only a generic marker to output
+            logger.error("Config lookup failed for check %s: %s", label, e, exc_info=True)
             mismatches.append({
                 "check": label,
-                "error": f"config lookup failed: {e}",
+                "error": "config lookup failed",
             })
             continue
 

@@ -21,7 +21,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dev dependencies
-        run: pip install -r ../requirements-dev.txt
+        run: pip install --require-hashes -r ../requirements-dev.txt
 
       - name: Deterministic scorer -- basic route
         run: echo '{"same_pickup":1}' | python tools/deterministic_scorer.py

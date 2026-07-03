@@ -36,10 +36,15 @@ _MAX_INPUT_BYTES = 10 * 1024 * 1024  # 10 MB -- WARN-02
 
 
 def load_json(path: str | Path | None = None) -> Any:
+    """Load JSON from a named file path or stdin.
+
+    Named file paths are routed through safe_load_json() so that the WARN-02
+    size cap is enforced on every tool entry point, ensuring that oversized
+    external inputs are rejected before they are parsed.
+    """
     if path is None or str(path) == "-":
         return json.load(sys.stdin)
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    return safe_load_json(path)
 
 
 def safe_load_json(path: str | Path) -> Any:

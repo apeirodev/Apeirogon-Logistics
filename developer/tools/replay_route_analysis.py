@@ -38,10 +38,20 @@ def replay(data):
             "chain_analysis": chain_analysis,
         }
         actual_output_hash = stable_hash(reconstructed)
-        output_hash_match = (
-            recorded_output_hash is None
-            or hmac.compare_digest(actual_output_hash, recorded_output_hash)
-        )
+        if recorded_output_hash is None:
+            # ERR-01: no recorded hash means nothing can be verified; report
+            # unverifiable instead of success, ensuring that the check fails closed.
+            return {
+                "replay_mode": "output_integrity_check",
+                "output_hash_match": None,
+                "actual_output_hash": actual_output_hash,
+                "recorded_output_hash": None,
+                "valid": False,
+                "warnings": [
+                    "No recorded output hash present -- output integrity is unverifiable."
+                ],
+            }
+        output_hash_match = hmac.compare_digest(actual_output_hash, recorded_output_hash)
         return {
             "replay_mode": "output_integrity_check",
             "output_hash_match": output_hash_match,
@@ -49,15 +59,17 @@ def replay(data):
             "recorded_output_hash": recorded_output_hash,
             "valid": output_hash_match,
             "warnings": [] if output_hash_match else [
-                "Output hash mismatch — scoring logic or stored result may have changed."
+                "Output hash mismatch -- scoring logic or stored result may have changed."
             ],
         }
 
-    # Otherwise treat data as a raw route input and re-run analysis
+    # Otherwise treat data as a raw route input and re-run analysis.
+    # ERR-01: a missing recorded hash is reported as None (unverifiable),
+    # never as a successful match, ensuring that the replay fails closed.
     actual_input_hash = stable_hash(data)
     input_hash_match = (
-        recorded_input_hash is None
-        or hmac.compare_digest(actual_input_hash, recorded_input_hash)
+        None if recorded_input_hash is None
+        else hmac.compare_digest(actual_input_hash, recorded_input_hash)
     )
 
     fresh_score = score_route(data)
@@ -68,15 +80,19 @@ def replay(data):
     }
     actual_output_hash = stable_hash(fresh_output)
     output_hash_match = (
-        recorded_output_hash is None
-        or hmac.compare_digest(actual_output_hash, recorded_output_hash)
+        None if recorded_output_hash is None
+        else hmac.compare_digest(actual_output_hash, recorded_output_hash)
     )
 
     warnings = []
-    if not input_hash_match:
-        warnings.append("Input hash mismatch — route data may have been modified since original run.")
-    if not output_hash_match:
-        warnings.append("Output hash mismatch — scoring logic may have changed since original run.")
+    if input_hash_match is None:
+        warnings.append("No recorded input hash -- input integrity is unverifiable.")
+    elif not input_hash_match:
+        warnings.append("Input hash mismatch -- route data may have been modified since original run.")
+    if output_hash_match is None:
+        warnings.append("No recorded output hash -- output integrity is unverifiable.")
+    elif not output_hash_match:
+        warnings.append("Output hash mismatch -- scoring logic may have changed since original run.")
 
     return {
         "replay_mode": "full_replay",
@@ -86,7 +102,7 @@ def replay(data):
         "recorded_input_hash": recorded_input_hash,
         "actual_output_hash": actual_output_hash,
         "recorded_output_hash": recorded_output_hash,
-        "valid": input_hash_match and output_hash_match,
+        "valid": output_hash_match is True and input_hash_match is not False,
         "warnings": warnings,
         "replayed_result": fresh_output,
     }

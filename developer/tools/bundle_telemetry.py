@@ -9,10 +9,16 @@ Usage:
 from __future__ import annotations
 import argparse
 import json
+import logging
+import sys
 import time
 import zipfile
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from lib.common import safe_write_path
+
+logger = logging.getLogger(__name__)
 
 _MAX_FILE_BYTES = 10 * 1024 * 1024  # 10 MB per file
 
@@ -27,7 +33,9 @@ def _safe_load_json(path: Path) -> tuple[dict | None, str | None]:
     try:
         return json.loads(path.read_text(encoding="utf-8")), None
     except Exception as exc:
-        return None, str(exc)
+        # ERR-02: full detail goes to the log, only a generic reason to output
+        logger.error("Could not load telemetry file %s: %s", path, exc, exc_info=True)
+        return None, "unreadable or invalid JSON"
 
 
 def _sanitize_record(record: dict) -> dict:
@@ -108,7 +116,13 @@ def main() -> None:
     args = parser.parse_args()
 
     output_path = args.output or f"exports/telemetry_bundle_{int(time.time())}.zip"
-    result = bundle(args.input_dir, output_path)
+    # FILE-01: the CLI-supplied output path must stay inside the allowed roots
+    try:
+        validated_output = safe_write_path(output_path)
+    except ValueError:
+        print(f"Error: output path outside allowed write roots: {output_path}")
+        sys.exit(1)
+    result = bundle(args.input_dir, str(validated_output))
 
     if "error" in result:
         print(f"Error: {result['error']}")

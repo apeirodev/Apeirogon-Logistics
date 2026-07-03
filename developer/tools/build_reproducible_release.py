@@ -2,8 +2,16 @@
 from __future__ import annotations
 import argparse
 import fnmatch
+import sys
 import zipfile
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from lib.common import _ALLOWED_WRITE_ROOTS, safe_write_path
+
+# Release archives are documented to be written under releases/ (see
+# RELEASE_WORKFLOW.md), so that root is allowed in addition to the defaults.
+_RELEASE_WRITE_ROOTS = _ALLOWED_WRITE_ROOTS + [Path("releases")]
 
 
 _DEFAULT_EXCLUDES = [
@@ -89,7 +97,13 @@ def main() -> None:
                         help="Additional glob patterns to exclude (repeatable)")
     args = parser.parse_args()
 
-    result = build_release(args.root, args.output, args.exclude)
+    # FILE-01: the CLI-supplied output path must stay inside the allowed roots
+    try:
+        validated_output = safe_write_path(args.output, allowed_roots=_RELEASE_WRITE_ROOTS)
+    except ValueError:
+        print(f"Error: output path outside allowed write roots: {args.output}")
+        sys.exit(1)
+    result = build_release(args.root, str(validated_output), args.exclude)
     print(f"Built {args.output}: {result['included_count']} files included, "
           f"{result['excluded_count']} excluded")
 

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "_copy_note": "CANONICAL FILE — player copy is at player/uploads/mission_schema.json. The canonical file for developers is this one.",
+  "_copy_note": "CANONICAL FILE -- player copy is at player/uploads/mission_schema.json. The canonical file for developers is this one.",
   "title": "Star Citizen Hauling Mission",
   "description": "A single hauling mission as accepted by ingest_mission_batch.py and the deterministic scorer. All numeric fields may carry the string 'UNRESOLVED' when the value could not be read from the terminal.",
   "type": "object",

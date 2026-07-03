@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Analyse a route's stop sequence for practical execution characteristics.
+Analyze a route's stop sequence for practical execution characteristics.
 
 Identifies stop types, flags risks (chain collapse, atmospheric burden, dead legs),
-and suggests an optimised ordering.
+and suggests an optimized ordering.
 
 Usage:
   echo '{"stops":["Hur-L2","Covalex Hub Shopp-L4","Hurston","Baijini Point"]}' \
@@ -26,7 +26,7 @@ _ATMOSPHERE_LOCATIONS: set[str] = {
     "ita", "euterpe", "calliope",
 }
 
-# Locations that are orbital (no atmosphere) — L-points, stations, asteroid belts
+# Locations that are orbital (no atmosphere) -- L-points, stations, asteroid belts
 _ORBITAL_KEYWORDS = {
     "point", "station", "hub", "port", "arc-l", "cru-l", "hur-l", "mic-l",
     "mago", "olisar", "seraphim", "baijini", "shopp", "terra", "rest stop",
@@ -51,7 +51,7 @@ def _detect_dead_legs(stops: list[str]) -> list[dict]:
     """Flag consecutive stops that suggest an empty repositioning leg.
 
     A dead leg is where the same location appears non-consecutively, implying
-    a return trip — or where a pickup is not adjacent to the previous delivery.
+    a return trip -- or where a pickup is not adjacent to the previous delivery.
     This is a structural heuristic only.
     """
     dead_legs = []
@@ -66,7 +66,7 @@ def _detect_dead_legs(stops: list[str]) -> list[dict]:
                     "first_visit": seen[key],
                     "revisit_at": i,
                     "gap": gap,
-                    "note": f"'{stop}' revisited after {gap} stops — possible repositioning leg",
+                    "note": f"'{stop}' revisited after {gap} stops -- possible repositioning leg",
                 })
         seen[key] = i
     return dead_legs
@@ -156,7 +156,7 @@ def analyze_traversal(data: dict) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Analyse route stop sequence for traversal risks and ordering"
+        description="Analyze route stop sequence for traversal risks and ordering"
     )
     add_common_args(parser)
     args = parser.parse_args()

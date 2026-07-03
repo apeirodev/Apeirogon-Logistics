@@ -13,7 +13,7 @@ All documentation, commit messages, and code comments written in this repository
 
 - **"that" after "ensure"**: Always write "ensure that", "ensures that", "ensuring that". Never write "ensure X happens" without "that".
 - **Oxford spelling with "ize"**: Use "organize", "recognize", "analyze", "synchronize", "minimize", etc. Do not use "ise" endings where "ize" is standard Canadian/Oxford English.
-- **No em dashes or en dashes**: Never use -- or -- in any file. Use double hyphens (--) for parenthetical breaks and plain hyphens (-) for ranges.
+- **No em dashes or en dashes**: Never use the em dash or en dash characters in any file. Use double hyphens (--) for parenthetical breaks and plain hyphens (-) for ranges.
 - These rules apply to all new text written in any file in this repository.
 
 ---
@@ -110,7 +110,7 @@ def safe_write_path(raw_path: str, allowed_roots: list[Path]) -> Path:
 **Don't**:
 
 ```python
-# VULNERABLE: path traversal — user supplies "../../etc/passwd"
+# VULNERABLE: path traversal -- user supplies "../../etc/passwd"
 with open(args.output, "w") as f:
     f.write(data)
 ```
@@ -265,7 +265,7 @@ def validate_numeric_sourcing(ai_output: dict, user_input: dict) -> tuple[bool, 
         if field not in user_input:
             problems.append(
                 f"field '{field}' has numeric value {ai_output[field]!r} "
-                f"but was not in user-supplied input — possible hallucination"
+                f"but was not in user-supplied input -- possible hallucination"
             )
     return not problems, problems
 ```
@@ -357,7 +357,7 @@ data = json.load(open(release_file))    # no integrity check
 **Do**:
 
 ```
-# requirements.txt — pin exact versions with hashes
+# requirements.txt -- pin exact versions with hashes
 jsonschema==4.23.0 \
     --hash=sha256:<hash>
 ```
@@ -365,7 +365,7 @@ jsonschema==4.23.0 \
 **Don't**:
 
 ```
-jsonschema>=4.0   # unpinned — supply chain risk
+jsonschema>=4.0   # unpinned -- supply chain risk
 ```
 
 **Why**: Unpinned dependencies allow a compromised upstream package to silently substitute a malicious version.
@@ -395,7 +395,7 @@ def validate_with_fallback(data: dict) -> tuple[bool, list[str]]:
 try:
     return validate_governance_metadata(data)
 except Exception:
-    return True, []   # VULNERABLE: fail open — grants trust on error
+    return True, []   # VULNERABLE: fail open -- grants trust on error
 ```
 
 **Why**: Failing open on validation errors silently bypasses governance controls. An unhandled exception must never promote untrusted data.
@@ -536,7 +536,7 @@ if not hmac.compare_digest(computed, expected):
 - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
 
 # Don't:
-- uses: actions/checkout@v4   # mutable tag — supply chain risk
+- uses: actions/checkout@v4   # mutable tag -- supply chain risk
 ```
 
 ### WARN-05: GitHub Actions, Limit GITHUB_TOKEN Permissions
@@ -545,7 +545,7 @@ if not hmac.compare_digest(computed, expected):
 permissions:
   contents: read   # minimum required
 
-# Don't omit permissions: block — defaults to write-all in some configurations
+# Don't omit permissions: block -- defaults to write-all in some configurations
 ```
 
 ---

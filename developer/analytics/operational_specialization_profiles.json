@@ -2,13 +2,13 @@
   "dataset_name": "phase24b_operational_specialization_profiles",
   "generated_at": "2026-05-17T00:23:38Z",
   "profiles": [
-    "orbital_efficiency_specialist",
-    "low_friction_unloading_specialist",
-    "high_throughput_bulk_specialist",
-    "low_risk_route_specialist",
-    "rapid_chain_specialist",
-    "congestion_tolerant_specialist",
-    "atmosphere_tolerant_specialist",
-    "freight_intensive_specialist"
+    "orbital_efficiency_specializt",
+    "low_friction_unloading_specializt",
+    "high_throughput_bulk_specializt",
+    "low_risk_route_specializt",
+    "rapid_chain_specializt",
+    "congestion_tolerant_specializt",
+    "atmosphere_tolerant_specializt",
+    "freight_intensive_specializt"
   ]
 }

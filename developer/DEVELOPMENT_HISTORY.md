@@ -8,7 +8,7 @@ For current capabilities see `README.md`. For the current changelog see `CHANGEL
 
 ## Phase 1
 
-Purpose: portable seed dataset for Hull-B Covalex hauling route optimisation.
+Purpose: portable seed dataset for Hull-B Covalex hauling route optimization.
 
 Introduced canonical Stanton location records, source attribution, aliases, and initial derived operational scores. Intentionally separated sourced facts from derived hauling heuristics.
 
@@ -28,7 +28,7 @@ Note: QT time remains runtime-derived from quantum drive data and is not stored 
 
 ## Phase 3
 
-Introduced derived operational hauling heuristics and classification models for Stanton logistics optimisation.
+Introduced derived operational hauling heuristics and classification models for Stanton logistics optimization.
 
 Key files: `data/hauling_penalties.json`, `schema/hauling_penalty.schema.json`, `docs/DERIVATION_RULES.md`, `docs/KNOWN_ISSUES.md`, `VERSION.json`
 
@@ -52,7 +52,7 @@ Key files: `data/quantum_drive_profiles.json`, `runtime/traversal_calculation_mo
 
 ## Phase 6
 
-Introduced mission ingestion structures, OCR normalisation rules, and screenshot extraction foundations.
+Introduced mission ingestion structures, OCR normalization rules, and screenshot extraction foundations.
 
 Key files: `data/mission_batches.json`, `runtime/screenshot_ingestion_rules.json`, `runtime/OCR_normalization_rules.json`, `runtime/mission_extraction_pipeline.json`
 
@@ -60,7 +60,7 @@ Key files: `data/mission_batches.json`, `runtime/screenshot_ingestion_rules.json
 
 ## Phase 7
 
-Introduced route optimisation, mission scoring, and hauling strategy engines.
+Introduced route optimization, mission scoring, and hauling strategy engines.
 
 Key files: `analytics/route_scoring_models.json`, `analytics/mission_chain_models.json`, `runtime/route_optimization_engine.json`, `analytics/mission_acceptance_rules.json`, `analytics/hauling_strategy_profiles.json`
 
@@ -166,7 +166,7 @@ Introduced operational packaging, validation hardening, export readiness, and pr
 
 ## Phase 20
 
-Introduced live operational integration, screenshot workflow optimisation, continuous operational learning, and practical Hull-B hauling assistance.
+Introduced live operational integration, screenshot workflow optimization, continuous operational learning, and practical Hull-B hauling assistance.
 
 ---
 
@@ -196,9 +196,9 @@ Introduced generalised hauling intelligence, issuer profiles, multi-ship operati
 
 ## Phase 25: Finalization
 
-Platform finalised as a mature Star Citizen hauling intelligence platform.
+Platform finalized as a mature Star Citizen hauling intelligence platform.
 
-Primary entry points at time of finalisation: `operational_handoff_guide.md`, `final_operational_playbook.md`, `final_reusable_prompt_library.md`, `canonical_future_maintenance_prompt.md`, `final_export_manifest.json`
+Primary entry points at time of finalization: `operational_handoff_guide.md`, `final_operational_playbook.md`, `final_reusable_prompt_library.md`, `canonical_future_maintenance_prompt.md`, `final_export_manifest.json`
 
 ---
 
@@ -260,9 +260,9 @@ Added: executable CLI tooling, telemetry ingestion workflows, governance metadat
 
 ---
 
-## Version 0.30.2: Productionisation
+## Version 0.30.2: Productionization
 
-Productionisation and placeholder elimination release.
+Productionization and placeholder elimination release.
 
 ---
 
@@ -302,7 +302,7 @@ Eight live-session fixes (Issues 8-15):
 
 10. Opportunistic same-location contracts: before recommending acceptance, recalculates total run SCU including the opportunistic contract's minimum load. Outputs updated running total first. Blocks recommendation if it would breach capacity.
 
-11. COMBINED STOP detection added to RUN PLAN CONSTRUCTION. After finalising the contract list, scans all delivery destinations and all pickup locations for matches. Matched locations become single COMBINED STOP entries: deliver first, submit, then load. Never split into separate rows.
+11. COMBINED STOP detection added to RUN PLAN CONSTRUCTION. After finalizing the contract list, scans all delivery destinations and all pickup locations for matches. Matched locations become single COMBINED STOP entries: deliver first, submit, then load. Never split into separate rows.
 
 12. DEFERRED LIST section added. Tracks VIABLE contracts not included in the current run. Displayed at the start of every new run planning cycle. Persists until executed or explicitly abandoned by the player.
 
@@ -560,7 +560,7 @@ Updated player/WHATS_NEW.md with v0.50.1 entry explaining all five changes and i
 
 ## Version 0.49.1: Cargo Panel Tracking Rules
 
-Added CARGO PANEL TRACKING section to the scoring instruction block (developer/templates/scoring_instruction_block.md), synced to all 7 SETUP files. The section defines the Hull-B's 8 valid panel quadrant names (left/right x top/bottom x front/back), prohibits invented names with the same force as the no-invented-numbers rule, and requires a 4-state cargo ledger (required by contracts / planned panel state / observed loadout / variance) before every loading step. The response format for cargo tracking sessions is now standardised. Updated the Hull-B cargo panel section in both developer/hull_b_covalex_route_playbook.md and player/uploads/hull_b_covalex_route_playbook.md to replace vague panel terminology with the authoritative 8-quadrant vocabulary and added a cargo ledger explanation.
+Added CARGO PANEL TRACKING section to the scoring instruction block (developer/templates/scoring_instruction_block.md), synced to all 7 SETUP files. The section defines the Hull-B's 8 valid panel quadrant names (left/right x top/bottom x front/back), prohibits invented names with the same force as the no-invented-numbers rule, and requires a 4-state cargo ledger (required by contracts / planned panel state / observed loadout / variance) before every loading step. The response format for cargo tracking sessions is now standardized. Updated the Hull-B cargo panel section in both developer/hull_b_covalex_route_playbook.md and player/uploads/hull_b_covalex_route_playbook.md to replace vague panel terminology with the authoritative 8-quadrant vocabulary and added a cargo ledger explanation.
 
 ---
 
@@ -786,7 +786,7 @@ Comprehensive codebase audit -- 26 findings corrected.
 - STYLE-01: WHATS_NEW.md em dashes in old section headings replaced.
 - STYLE-02: session_start_prompt.md em dashes in code block replaced.
 - STYLE-03/04: scoring_config.json and mission_issuer_profiles.json em dashes replaced.
-- STYLE-05/06: "penalised" and "Maximise" in player docs corrected.
+- STYLE-05/06: "penalized" and "Maximise" in player docs corrected.
 - STYLE-07: "ise" spellings across 13 developer docs corrected to "ize".
 - STYLE-08/09: "ensure" without "that" in two developer docs corrected.
 
@@ -937,7 +937,7 @@ all expected top-level keys are rejected with a `structured_error` response and
 **FIX-5 -- AI-02: Injection check extended to AI vision path**
 
 `check_injection_risk()` function added to `lib/common.py` (LLM01 guardrail pattern).
-`OCR_result_normalizer.py` `_normalise_vision()` now checks all string fields in
+`OCR_result_normalizer.py` `_normalize_vision()` now checks all string fields in
 each mission (`pickup`, `delivery`, `cargo_type`, `notes`, `issuer`) for injection
 patterns. Detection sets `injection_risk_detected: true` in the output and adds a
 warning. The raw OCR path already had a basic check; the vision path now has
@@ -958,6 +958,44 @@ Historical mentions in DEVELOPMENT_HISTORY.md left unchanged (historical context
 `developer/runtime/OCR_normalization_rules.json`, `player/uploads/OCR_normalization_rules.json`,
 `developer/tests/test_session3.py`, `developer/tests/test_scorer.py`,
 `developer/tests/test_session5_tools.py`, multiple developer docs and example files.
+
+## Version 0.65.3: Grammar and Style Rule Compliance Sweep
+
+**Repo-wide enforcement of the mandatory grammar and style rules from CLAUDE.md**
+
+**Em and en dashes removed (32 files).** All em dashes replaced with double
+hyphens and all en dashes with plain hyphens, covering the addon Lua files and
+.toc, addon docs and README, CLAUDE.md itself, the local .claude/rules copies,
+tool comments and output strings, schema and rules JSON files (developer and
+player copies updated together, keeping sync checks green), prompts, and
+RELEASE_WORKFLOW.md. LICENSE was deliberately excluded: it is the canonical
+CC BY-NC 4.0 legal text and is kept byte-identical to the published license.
+
+**Oxford -ize spellings enforced (38 files).** All -ise forms converted
+(normalise, optimisation, penalise, prioritising, sanitisation, finalised,
+categorised, customise, specialisation, standardised, minimises, analysing,
+unrecognised, and others). This includes a code rename: the public dispatch
+function in OCR_result_normalizer.py is now `normalize()` (was `normalise()`),
+with the vision and mission helpers renamed to match, and all test importers
+updated. The `derivation_type` output value is now `ai_vision_normalization`.
+
+**"ensure that" rule fixes.** Two violations corrected, in the 0.64.3 entry of
+this file and in a source_registry.json note.
+
+**CLAUDE.md dash rule reworded.** The rule text previously read "Never use --
+or -- in any file" because the forbidden characters had themselves been replaced
+in an earlier sweep, making the sentence unreadable. It now names the characters:
+"Never use the em dash or en dash characters in any file."
+
+**Test checksum manifest regenerated.** developer/releases/checksum_manifest.json
+was stale (27 entries, predating test_security.py and test_version_consistency.py)
+and several tracked test files changed in this sweep. Regenerated with 29 entries
+and verified round-trip with verify_release_integrity.py.
+
+All 214 tests pass. Both sync tools report all player upload and SETUP files in
+sync. validate_scoring_numbers.py reports all template numbers matching config.
+
+---
 
 ## Version 0.65.2: Security Hardening from Repository Assessment
 
@@ -996,7 +1034,7 @@ that reads external JSON. Stdin remains uncapped (documented limitation).
 
 **AI-02 -- AI vision string fields sanitized**
 
-`_normalise_mission()` now strips control characters and bounds field length (512
+`_normalize_mission()` now strips control characters and bounds field length (512
 characters) on all mission string fields before downstream use. Raw OCR text is
 bounded at 4096 characters. Previously vision fields passed through verbatim.
 
@@ -1154,7 +1192,7 @@ command was not available on a fresh GitHub Actions ubuntu-latest runner. The jo
 was failing immediately after the dev dependencies install step.
 
 Fix: added an explicit `pip install pip-audit` step in the workflow between
-the dev dependencies install and the audit step. This ensures pip-audit is
+the dev dependencies install and the audit step. This ensures that pip-audit is
 available before it is invoked regardless of what the runner image pre-installs.
 
 ---

@@ -49,17 +49,17 @@ def _validate(state: dict) -> tuple[list[str], list[str], list[str]]:
 
     ship = (state.get("ship") or "").lower().strip()
     if ship and ship not in KNOWN_SHIPS:
-        warnings.append(f"unrecognised ship '{ship}' — not in known ship list")
+        warnings.append(f"unrecognized ship '{ship}' -- not in known ship list")
         recommendations.append("Check spelling or add ship to runtime/scoring_config.json ship_modifiers.")
 
     issuer = (state.get("issuer") or "").lower().strip()
     if issuer and issuer not in KNOWN_ISSUERS:
-        warnings.append(f"unrecognised issuer '{issuer}' — not in known issuer list")
+        warnings.append(f"unrecognized issuer '{issuer}' -- not in known issuer list")
         recommendations.append("Check spelling or add issuer to runtime/scoring_config.json issuer_modifiers.")
 
     patch = normalize_patch(state)
     if patch == "UNRESOLVED":
-        warnings.append("patch_version unresolved — score accuracy may be reduced")
+        warnings.append("patch_version unresolved -- score accuracy may be reduced")
         recommendations.append("Add patch_version (e.g. 'Alpha 3.23') for patch-era tracking.")
 
     completed = state.get("completed_missions")

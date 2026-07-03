@@ -14,7 +14,7 @@ Trust tiers control how much weight a contributor's data carries in the scoring 
 | T3 | Community | First-time or occasional contributors | Bug reports, documentation improvements, unverified telemetry |
 | T4 | Unvetted external | Anonymous or unreviewed sources | Flagged for human review before any pipeline use |
 
-The tier is stored in `governance_metadata.contributor_trust_tier` on every pipeline output. It determines how `provider_output_validator` handles numeric field sourcing checks and how submitted data is categorised in the calibration log.
+The tier is stored in `governance_metadata.contributor_trust_tier` on every pipeline output. It determines how `provider_output_validator` handles numeric field sourcing checks and how submitted data is categorized in the calibration log.
 
 ---
 

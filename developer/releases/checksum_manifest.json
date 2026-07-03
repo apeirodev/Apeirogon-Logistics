@@ -1,8 +1,8 @@
 {
-  "file_count": 27,
+  "file_count": 29,
   "files": {
     "OCR/adversarial_ocr_fixture.json": "bba42167275b2360e16a167ecdda22289c57f7a9eab5d0655924f19142687ac5",
-    "conftest.py": "f69b64bf6736ec00988d92c7dcdbe3ec00b94c80576570fbbbe5863d949175ba",
+    "conftest.py": "6f961fbfc2008698ed40e0c5e2cb3f37e54529edddea8448333090b2981e0422",
     "deterministic_routes/README.md": "76a2635b61dbcadcf66aa3025a0809a8ea90cce0e9f9f384ffc972be40625765",
     "fixtures/README.md": "57e15ba914b3effba84f9a228fd62d08ba347d684f8dc68530777062483ee75e",
     "fixtures/invalid/bad_route.json": "d6105c3ca384ebe81c22e183997d796737e5c63d2f008d2f1eec1f1dcc33c6c1",
@@ -23,10 +23,12 @@
     "telemetry/malformed_telemetry_fixture.json": "86c78eccfe5b0fc598808ef53bea23da53efadec18a1d287f4070c9a5d233b9d",
     "test_governance.py": "abc5c87b8e38b1b35e5479b8388031b9e9456083b35c234eabd814883375639b",
     "test_ocr.py": "1edf7169c2807e458fcb265f24f61428bc6a6c1616de3ebfda8eaa0a473258b4",
-    "test_scorer.py": "28628ad1a6662b580624db91847a19c93995bb3178c2d992961a6058a35a99d0",
-    "test_session3.py": "bcae27b8aacad91ba2f7e5e53b49c9305eb56617cfab2aa0f003946cea0edd78",
-    "test_session5_tools.py": "df736163bbbb49eaa5912ad5dddd3affabea7b7c29f379cc35482f929a7e1110",
+    "test_scorer.py": "9ffc1ffa05b7fcfc378543c57634b2509b3bfcafd6e8d410fafe18766948e7cd",
+    "test_security.py": "323ea7c2baa0e6cb6c1b57df71fc1bd5c897b98d23474a57efafd509ba292aaf",
+    "test_session3.py": "344cc867d03e6875aab29d87f5b654313900b015c6d485c30b7905762170bea1",
+    "test_session5_tools.py": "6bbf57b2baf33873576e0cabce2eabadd1a6b6a9301f4170500614439bc70157",
     "test_tools.py": "139f0a6f1d5d78f1191f9516d15d60d393e5f4e3f41e7ad2f66f839f99e253d4",
-    "test_validators.py": "cb306489e3dec998a28aaebcb26b78bb1dabfd3109549f80d71ce68aaf1d42d6"
+    "test_validators.py": "1ca8dd576e8a86ee38ec6866b23bcf8af402415c9b756f6731acbbb23625e7a8",
+    "test_version_consistency.py": "f8f5994a8b8bb515fea281740edb8084cac6e6eff5ff59fd4331286b4db32bb8"
   }
 }

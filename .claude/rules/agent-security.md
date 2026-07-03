@@ -213,7 +213,7 @@ result = eval(agent_generated_expression)  # VULNERABLE
 from enum import IntEnum
 
 class AutonomyLevel(IntEnum):
-    SUGGEST = 1      # Only suggest — human executes
+    SUGGEST = 1      # Only suggest -- human executes
     CONFIRM = 2      # Execute after human confirmation
     BOUNDED = 3      # Execute within strict limits automatically
     SUPERVISED = 4   # Execute with monitoring

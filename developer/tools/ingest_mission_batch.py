@@ -56,7 +56,7 @@ def _mission_to_route(mission: dict, issuer: str, ship: str) -> dict:
         if val not in (None, "UNRESOLVED", ""):
             route[field] = val
 
-    # Preserve unresolved fields so scorer can penalise
+    # Preserve unresolved fields so scorer can penalize
     unresolved = list(mission.get("unresolved_fields", []))
     if unresolved:
         route["unresolved_fields"] = unresolved
@@ -109,7 +109,7 @@ def _build_combined_route(accepted_missions: list[dict], issuer: str, ship: str)
 
 
 def ingest_batch(data: dict) -> dict:
-    # Accept both raw batch and normaliser output (mode: ai_vision)
+    # Accept both raw batch and normalizer output (mode: ai_vision)
     if data.get("mode") == "ai_vision":
         missions = data.get("missions") or []
         issuer = data.get("issuer", "UNRESOLVED")

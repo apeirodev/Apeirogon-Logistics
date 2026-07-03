@@ -12,8 +12,8 @@ Everything in `tools/` runs locally with no network dependency:
 |------|-------------|---------|
 | `deterministic_scorer.py` | Scores a single route | Yes |
 | `ingest_mission_batch.py` | Scores a batch and finds stacking | Yes |
-| `OCR_result_normalizer.py` | Normalises OCR/AI extraction output | Yes |
-| `calculate_traversal.py` | Analyses stop sequence and risks | Yes |
+| `OCR_result_normalizer.py` | Normalizes OCR/AI extraction output | Yes |
+| `calculate_traversal.py` | Analyzes stop sequence and risks | Yes |
 | `weight_sensitivity_analyzer.py` | Shows score sensitivity to weight changes | Yes |
 | `session_state_manager.py` | Validates and tracks session state | Yes |
 | `user_profile_loader.py` | Loads and validates your user profile | Yes |

@@ -2,7 +2,7 @@
   "dataset_name": "phase24b_hauling_archetype_models",
   "generated_at": "2026-05-17T00:23:38Z",
   "archetypes": [
-    "station_loop_specialist",
+    "station_loop_specializt",
     "atmosphere_courier",
     "bulk_hauler",
     "mixed_role_hauler",
@@ -11,6 +11,6 @@
     "chain_optimizer",
     "cargo_opportunist",
     "convoy_logistician",
-    "recovery_specialist"
+    "recovery_specializt"
   ]
 }

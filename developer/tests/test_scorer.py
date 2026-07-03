@@ -78,8 +78,8 @@ class TestScoreRoute:
 
     def test_dead_leg_lowers_score(self):
         base = score_route({})
-        penalised = score_route({"dead_leg": 1})
-        assert penalised["score"] < base["score"]
+        penalized = score_route({"dead_leg": 1})
+        assert penalized["score"] < base["score"]
 
     def test_hull_b_covalex_modifiers_applied(self):
         result = score_route({

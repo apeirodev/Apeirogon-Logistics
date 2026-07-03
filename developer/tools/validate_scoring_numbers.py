@@ -61,7 +61,7 @@ _CHECKS = [
      r"(\d+) to \d+ = Defer",
      lambda c: c["score_bands"]["defer_threshold"], "int"),
 
-    # Good factors — base weights
+    # Good factors -- base weights
     ("same_pickup",
      r"same pickup[^+]+\+(\d+)",
      lambda c: c["default_weights"]["same_pickup"], "int"),
@@ -102,7 +102,7 @@ _CHECKS = [
          * c["issuer_modifiers"]["covalex"]["issuer_alignment"]
      ), "int"),
 
-    # Bad factors — base weights (template shows absolute values)
+    # Bad factors -- base weights (template shows absolute values)
     ("dead_leg_base",
      rf"fly empty[^{_MINUS}\-]+{_M}(\d+)",
      lambda c: abs(c["default_weights"]["dead_leg"]), "int"),

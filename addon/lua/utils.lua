@@ -1,6 +1,6 @@
 -- utils.lua
 -- Shared utilities for Apeirogon Logistics addon.
--- No game API dependencies — this file is fully portable Lua 5.1.
+-- No game API dependencies -- this file is fully portable Lua 5.1.
 
 local Utils = {}
 

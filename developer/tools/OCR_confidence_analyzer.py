@@ -18,7 +18,7 @@ def main():
     try:
         conf = float(raw_conf)
     except (TypeError, ValueError) as exc:
-        logger.warning("OCR confidence value %r is not numeric: %s — treating as 0", raw_conf, exc)
+        logger.warning("OCR confidence value %r is not numeric: %s -- treating as 0", raw_conf, exc)
         conf = 0.0
     result = {
         "ocr_confidence": conf,

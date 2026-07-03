@@ -20,12 +20,12 @@ This means:
 ## Two-Layer Architecture
 
 ```
-Layer 1 — Deterministic (Lua, local, complete)
+Layer 1 -- Deterministic (Lua, local, complete)
   scoring_config.lua   weights, modifiers, thresholds
   scoring_engine.lua   math: base score + factors → verdict
   contract_parser.lua  game data → internal contract format (stub)
 
-Layer 2 — AI Commentary (HTTP, optional, requires API key)
+Layer 2 -- AI Commentary (HTTP, optional, requires API key)
   api_client.lua       sends contract context to provider, returns plain text
   settings.lua         stores and retrieves the API key securely
 ```
@@ -74,9 +74,9 @@ The addon parses game contract data into the same internal format as the Python 
 The overlay attaches to the contracts list. For each contract it shows:
 
 ```
-[ACCEPT 84]  Covalex — Everus Harbor → Baijini Point
-[DEFER  61]  Covalex — Everus Harbor → Shopp-L4 → Riker Memorial
-[REJECT 38]  Red Wind — MIC-L1 → New Babbage
+[ACCEPT 84]  Covalex -- Everus Harbor → Baijini Point
+[DEFER  61]  Covalex -- Everus Harbor → Shopp-L4 → Riker Memorial
+[REJECT 38]  Red Wind -- MIC-L1 → New Babbage
 ```
 
 When a player hovers over a contract line:

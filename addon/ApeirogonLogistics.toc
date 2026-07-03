@@ -1,10 +1,10 @@
-## ApeirogonLogistics — Star Citizen Hauling Advisor
+## ApeirogonLogistics -- Star Citizen Hauling Advisor
 ## Version: 0.1.0-pre
-## Status: pre-implementation — requires CIG addon framework
+## Status: pre-implementation -- requires CIG addon framework
 ## Notes: TOC format is speculative. WoW-style format used as placeholder.
 ##        Update this file when CIG publishes their addon manifest specification.
 
-## Lua file load order matters — config and utilities before engine, engine before UI
+## Lua file load order matters -- config and utilities before engine, engine before UI
 lua/utils.lua
 lua/scoring_config.lua
 lua/scoring_engine.lua

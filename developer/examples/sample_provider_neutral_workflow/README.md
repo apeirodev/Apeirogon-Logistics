@@ -1,6 +1,6 @@
 # sample_provider_neutral_workflow
 
-Demonstrates that the scoring pipeline is provider-neutral: the same JSON input produces the same deterministic output regardless of which AI provider (or none) the user has access to. Input is a manually constructed route with same-pickup stacking; output is identical to any AI-assisted workflow that produces the same normalised JSON.
+Demonstrates that the scoring pipeline is provider-neutral: the same JSON input produces the same deterministic output regardless of which AI provider (or none) the user has access to. Input is a manually constructed route with same-pickup stacking; output is identical to any AI-assisted workflow that produces the same normalized JSON.
 
 **Command:**
 ```bash

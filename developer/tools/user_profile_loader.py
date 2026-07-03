@@ -48,12 +48,12 @@ def _validate(profile: dict) -> tuple[list[str], list[str], list[str]]:
 
     ship = (profile.get("preferred_ship") or "").lower().strip()
     if ship and ship not in KNOWN_SHIPS:
-        warnings.append(f"unrecognised preferred_ship '{ship}' — not in known ship list")
+        warnings.append(f"unrecognized preferred_ship '{ship}' -- not in known ship list")
         recommendations.append("Check spelling or add the ship to runtime/scoring_config.json ship_modifiers.")
 
     issuer = (profile.get("preferred_issuer") or "").lower().strip()
     if issuer and issuer not in KNOWN_ISSUERS:
-        warnings.append(f"unrecognised preferred_issuer '{issuer}' — not in known issuer list")
+        warnings.append(f"unrecognized preferred_issuer '{issuer}' -- not in known issuer list")
         recommendations.append("Check spelling or add the issuer to runtime/scoring_config.json issuer_modifiers.")
 
     reputation = profile.get("reputation")

@@ -1,5 +1,5 @@
 {
-  "_copy_note": "CANONICAL FILE — player copy is at player/uploads/OCR_normalization_rules.json. If you add location or issuer aliases here, update the player copy too.",
+  "_copy_note": "CANONICAL FILE -- player copy is at player/uploads/OCR_normalization_rules.json. If you add location or issuer aliases here, update the player copy too.",
   "dataset_name": "star_citizen_hauling_ocr_normalization_rules",
   "generated_at": "2026-05-18T00:00:00Z",
   "issuer_aliases": {

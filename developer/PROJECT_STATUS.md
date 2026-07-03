@@ -1,6 +1,6 @@
 # Project Status
 
-**Version:** 0.65.2  
+**Version:** 0.65.3  
 **Status:** Stable pre-release, deterministic toolkit  
 
 ## Current State
@@ -13,7 +13,7 @@ Apeirogon Logistics is a minimally viable executable operational platform. All c
 - governance metadata system
 - schema-driven validation (recursive)
 - replay and audit reconstruction
-- OCR text normalisation (provider-abstracted, no hard OCR dependency)
+- OCR text normalization (provider-abstracted, no hard OCR dependency)
 - telemetry ingestion and trust classification
 - provider output validation
 - release integrity tooling

@@ -128,7 +128,7 @@ Multipliers from `scoring_config.json`. > 1.0 amplifies, < 1.0 dampens.
 
 ### Hull-B (512 SCU)
 
-The Covalex orbital chain specialist. External spindle cargo rewards clean route stacking: each extra contract from the same pickup scores higher here than on any other ship. The `cargo_panel_clarity` bonus (×1.15) rewards having a readable, consistent mission set.
+The Covalex orbital chain specializt. External spindle cargo rewards clean route stacking: each extra contract from the same pickup scores higher here than on any other ship. The `cargo_panel_clarity` bonus (×1.15) rewards having a readable, consistent mission set.
 
 **Cargo panel assignment**: The Hull-B has eight external cargo panels (top, bottom, port, starboard, front, back, plus the forward/aft halves of the port and starboard sides). Assign each delivery destination its own panel or panel section before loading. When Panel A is "Baijini Point" and Panel B is "Shopp-L4", unloading is fast and clean. Fragmented routes that mix cargo from multiple destinations per panel lose this advantage entirely. This is why fragmentation hits harder on the Hull-B than any other ship.
 
@@ -170,7 +170,7 @@ Reliable deep-space generalist. Dual-bay design lets you mix cargo types. Long s
 
 ### RAFT (192 SCU)
 
-Station-to-station freight specialist with external pods. Good fit for orbital routes. Slight dead-leg penalty reduction.
+Station-to-station freight specializt with external pods. Good fit for orbital routes. Slight dead-leg penalty reduction.
 
 **Best for**: Covalex Junior through Member. Orbital station runs. Missions that stay in space.
 

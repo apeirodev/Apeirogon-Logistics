@@ -1,7 +1,7 @@
 """Tests for Session 3: OCR vision path, ingest_mission_batch."""
 import copy
 import pytest
-from OCR_result_normalizer import normalise, normalize_ocr, _normalise_vision
+from OCR_result_normalizer import normalize, normalize_ocr, _normalize_vision
 from ingest_mission_batch import ingest_batch, _detect_same_pickup, _build_combined_route
 
 
@@ -56,81 +56,81 @@ def _raw_batch(**overrides):
     return base
 
 
-# ── OCR normalizer — vision mode ───────────────────────────────────────────────
+# ── OCR normalizer -- vision mode ───────────────────────────────────────────────
 
 class TestOCRNormalizerVisionMode:
     def test_dispatch_to_vision_mode(self):
-        result = normalise(_vision_input())
+        result = normalize(_vision_input())
         assert result["mode"] == "ai_vision"
 
     def test_dispatch_to_raw_ocr_mode(self):
-        result = normalise({"raw_text": "Covalex 24 SCU"})
+        result = normalize({"raw_text": "Covalex 24 SCU"})
         assert result["mode"] == "raw_ocr"
 
     def test_mission_count_correct(self):
-        result = normalise(_vision_input())
+        result = normalize(_vision_input())
         assert result["mission_count"] == 2
 
     def test_issuer_resolved_in_vision(self):
-        result = normalise(_vision_input())
+        result = normalize(_vision_input())
         assert result["missions"][0]["issuer"] == "Covalex"
 
     def test_location_alias_resolved(self):
         data = _vision_input()
         data["missions"][0]["pickup"] = "Tressler"  # alias for Port Tressler
-        result = normalise(data)
+        result = normalize(data)
         assert result["missions"][0]["pickup"] == "Port Tressler"
 
     def test_tressler_alias_resolved(self):
         data = _vision_input()
         data["missions"][0]["delivery"] = ["Tressler"]
-        result = normalise(data)
+        result = normalize(data)
         assert result["missions"][0]["delivery"] == ["Port Tressler"]
 
     def test_unresolved_issuer_preserved(self):
         data = _vision_input()
         data["missions"][0]["issuer"] = "UNRESOLVED"
-        result = normalise(data)
+        result = normalize(data)
         assert result["missions"][0]["issuer"] == "UNRESOLVED"
         assert "issuer" in result["missions"][0]["unresolved_fields"]
 
     def test_unresolved_cargo_preserved(self):
         data = _vision_input()
         data["missions"][0]["cargo_scu"] = "UNRESOLVED"
-        result = normalise(data)
+        result = normalize(data)
         assert "cargo_scu" in result["missions"][0]["unresolved_fields"]
 
     def test_governance_metadata_source_class(self):
-        result = normalise(_vision_input())
+        result = normalize(_vision_input())
         assert result["governance_metadata"]["source_class"] == "ai_vision_extraction"
         assert result["governance_metadata"]["advisory_only"] is True
 
     def test_low_confidence_warning(self):
         data = _vision_input(extraction_confidence=0.40)
-        result = normalise(data)
+        result = normalize(data)
         assert any("Low extraction confidence" in w for w in result["warnings"])
 
     def test_empty_missions_warning(self):
         data = _vision_input(missions=[])
-        result = normalise(data)
+        result = normalize(data)
         assert result["mission_count"] == 0
         assert any("No missions" in w for w in result["warnings"])
 
     def test_ship_preserved(self):
-        result = normalise(_vision_input())
+        result = normalize(_vision_input())
         assert result["ship"] == "Hull-B"
 
-    def test_delivery_string_normalised_to_list(self):
+    def test_delivery_string_normalized_to_list(self):
         data = _vision_input()
         data["missions"][0]["delivery"] = "Covalex Hub Shopp-L4"  # string, not list
-        result = normalise(data)
+        result = normalize(data)
         assert isinstance(result["missions"][0]["delivery"], list)
 
     def test_missions_dispatched_when_no_source_class(self):
         # If source_class absent but missions present, should use vision mode
         data = {"missions": [{"issuer": "Covalex", "pickup": "Hur-L2",
                                "delivery": ["Baijini Point"], "cargo_scu": 10, "reward_usc": 5000}]}
-        result = normalise(data)
+        result = normalize(data)
         assert result["mode"] == "ai_vision"
 
 
@@ -203,11 +203,11 @@ class TestIngestMissionBatch:
         port_olisar_scores = [m["score"] for m in result["ranked_missions"] if m["pickup"] == "Hur-L2"]
         assert dead_leg_mission["score"] < min(port_olisar_scores)
 
-    def test_accepts_normaliser_output(self):
+    def test_accepts_normalizer_output(self):
         """ingest_batch should accept the output of OCR_result_normalizer (mode: ai_vision)."""
-        from OCR_result_normalizer import normalise
-        normalised = normalise(_vision_input())
-        result = ingest_batch(normalised)
+        from OCR_result_normalizer import normalize
+        normalized = normalize(_vision_input())
+        result = ingest_batch(normalized)
         assert result["batch_summary"]["mission_count"] == 2
 
     def test_empty_batch(self):

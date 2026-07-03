@@ -14,9 +14,9 @@
     "telemetry_calibrated": false
   },
   "generated_utc": "2026-07-03T00:00:00Z",
-  "previous_version": "0.65.1",
+  "previous_version": "0.65.2",
   "project": "Apeirogon Logistics",
-  "release_type": "0.65.2_security_hardening_file_paths_fail_closed_sanitization",
+  "release_type": "0.65.3_grammar_style_rule_compliance_sweep",
   "semantic_versioning": "three-level",
   "skipped_versions": [
     {
@@ -27,7 +27,7 @@
   "star_citizen_patch_version": "Alpha 4.8.3",
   "star_citizen_validated_patch": "4.8.3-alpha",
   "status": "stable_pre_release_deterministic_toolkit",
-  "version": "0.65.2",
+  "version": "0.65.3",
   "version_history": [
     {
       "version": "0.30.3",
@@ -256,6 +256,10 @@
     {
       "version": "0.65.2",
       "status": "security_hardening_file_paths_fail_closed_sanitization"
+    },
+    {
+      "version": "0.65.3",
+      "status": "grammar_style_rule_compliance_sweep"
     }
   ]
 }

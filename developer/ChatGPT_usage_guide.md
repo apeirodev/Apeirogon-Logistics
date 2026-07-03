@@ -206,5 +206,5 @@ version that still enforces the critical constraints.
 | `prompts/QUICK_SESSION_GUARDRAIL.md` | Condensed version for repeat use |
 | `prompts/AI_VISION_EXTRACTION_PROMPT.md` | Extraction instructions with screenshot |
 | `docs/HALLUCINATION_GUARDRAILS.md` | Full explanation of the hallucination problem |
-| `tools/OCR_result_normalizer.py` | Normalises raw extraction output |
+| `tools/OCR_result_normalizer.py` | Normalizes raw extraction output |
 | `tools/ingest_mission_batch.py` | Scores a batch of missions |

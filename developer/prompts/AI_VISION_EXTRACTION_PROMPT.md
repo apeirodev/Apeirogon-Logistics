@@ -16,7 +16,7 @@ AI will fabricate numbers and the extraction will be useless.
 4. Copy the JSON the AI returns
 5. Save it to a file (e.g. `missions.json`)
 6. Run: `python tools/OCR_result_normalizer.py -i missions.json`
-7. Run: `python tools/ingest_mission_batch.py -i missions_normalised.json`
+7. Run: `python tools/ingest_mission_batch.py -i missions_normalized.json`
 
 For multiple screenshots, run steps 3 to 6 for each, then combine the
 `missions` arrays before running `ingest_mission_batch.py`.
@@ -59,11 +59,11 @@ Return this JSON structure (one entry in "missions" per contract visible):
       "timer_minutes": <number if visible, or "UNRESOLVED">,
       "contract_type": "<contract type if visible, or UNRESOLVED>",
       "unresolved_fields": ["<list any fields you could not read>"],
-      "notes": "<any extraction caveats — do NOT put fabricated data here>"
+      "notes": "<any extraction caveats -- do NOT put fabricated data here>"
     }
   ],
   "unresolved_fields": ["<any batch-level fields you could not read>"],
-  "session_notes": "<overall notes about screenshot quality — no fabricated data>"
+  "session_notes": "<overall notes about screenshot quality -- no fabricated data>"
 }
 ```
 
@@ -97,7 +97,7 @@ supply this. Do not let the AI guess or estimate your ship's capacity.
 
 ## After You Have the JSON
 
-**Check these things before running the normaliser:**
+**Check these things before running the normalizer:**
 
 1. Every `reward_usc` value: does it match what you see on screen?
 2. Every `cargo_scu` value: does it match what you see on screen?
@@ -108,7 +108,7 @@ supply this. Do not let the AI guess or estimate your ship's capacity.
 If anything looks wrong, go back to the AI session and say:
 > "You invented [field]. I did not give you that value. Replace it with UNRESOLVED."
 
-Only run the normaliser once you are confident the extracted values match the screenshot.
+Only run the normalizer once you are confident the extracted values match the screenshot.
 
 ---
 

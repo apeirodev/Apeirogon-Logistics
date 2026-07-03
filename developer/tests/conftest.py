@@ -1,5 +1,5 @@
 """
-Pytest configuration — sets up paths so tests can import tools directly.
+Pytest configuration -- sets up paths so tests can import tools directly.
 The pythonpath = ["tools"] in pyproject.toml handles this for pytest >= 7,
 but this conftest keeps things working for direct invocation too.
 """

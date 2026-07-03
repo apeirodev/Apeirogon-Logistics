@@ -25,7 +25,7 @@ The order in which you make deliveries affects your route efficiency and your sc
 3. Nearest orbital cluster before distant ones.
 4. Atmosphere deliveries last, as a dedicated segment of the run.
 
-This ordering minimises dead legs and keeps your route shape clean for chain scoring. It also protects you from the atmosphere penalty (-12 base) compounding with a dead leg (-15 base) when you have orbitals still to complete.
+This ordering minimizes dead legs and keeps your route shape clean for chain scoring. It also protects you from the atmosphere penalty (-12 base) compounding with a dead leg (-15 base) when you have orbitals still to complete.
 
 If you have a single atmosphere delivery mixed into an otherwise orbital run, evaluate whether to complete it now or defer it to a dedicated atmosphere run. The scoring tool will flag this when it identifies orbital and atmosphere deliveries in the same batch.
 

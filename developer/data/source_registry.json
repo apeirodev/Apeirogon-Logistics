@@ -4,6 +4,12 @@
   "retrieved_date": "2026-05-16",
   "sources": [
     {
+      "name": "Apeirogon Logistics 0.65.3 grammar and style rule compliance sweep",
+      "notes": "Repo-wide enforcement of the mandatory grammar and style rules. All em dashes replaced with double hyphens and en dashes with plain hyphens in 32 files (LICENSE excluded: canonical CC BY-NC legal text left byte-identical). All -ise spellings converted to Oxford -ize forms in 38 files, including the code rename normalise to normalize in OCR_result_normalizer.py and its test importers, and the derivation_type value ai_vision_normalisation to ai_vision_normalization. Two 'ensure' without 'that' violations fixed. CLAUDE.md dash rule reworded so it no longer reads 'Never use -- or --'. Test checksum manifest regenerated (29 entries, adding test_security.py and test_version_consistency.py).",
+      "source_id": "apeirogon_0_65_3_grammar_style_compliance_sweep",
+      "trust_level": "internal_derived"
+    },
+    {
       "name": "Apeirogon Logistics 0.65.2 security hardening",
       "notes": "Fixes from the Fable 5 repository assessment. FILE-01: bundle_telemetry.py and build_reproducible_release.py now validate CLI output paths via safe_write_path; verify_release_integrity.py rejects manifest entries that escape the release root or carry non-string hashes. ERR-01: verify_replay_integrity.py and replay_route_analysis.py now report unverifiable (valid false) when no recorded hash exists instead of failing open. WARN-02: load_json routes all named paths through the 10 MB safe_load_json cap. AI-02: AI vision mission string fields sanitized (control characters stripped, length bounded). AI-04: hallucination check recurses into nested mission objects and flags numeric strings. ERR-02: raw exception text removed from bundle_telemetry, schema_dependency_mapper, and validate_scoring_numbers output. SC-01: pip install --require-hashes enforced in both CI workflows. SECURITY_CONTROLS.md updated to match.",
       "source_id": "apeirogon_0_65_2_security_hardening",
@@ -65,7 +71,7 @@
     },
     {
       "name": "Apeirogon Logistics 0.61.2 version consistency test",
-      "notes": "test_version_consistency.py added: three assertions ensure all version files agree and VERSION.json root field is not forgotten. CLAUDE.md versioning rule updated with explicit field list and test reference.",
+      "notes": "test_version_consistency.py added: three assertions ensure that all version files agree and VERSION.json root field is not forgotten. CLAUDE.md versioning rule updated with explicit field list and test reference.",
       "source_id": "apeirogon_0_61_2_version_consistency_test",
       "trust_level": "internal_derived"
     },

@@ -173,7 +173,7 @@ The score is a starting point, not a final answer. Override it when:
 
 - Server conditions make a normally-good route impractical
 - You know a station has freight elevator issues right now
-- You're prioritising reputation with a specific issuer over efficiency
+- You're prioritizing reputation with a specific issuer over efficiency
 - A high-payout mission has other advantages the score doesn't capture
 
 The score tells you about structural route quality. You bring the live game knowledge.

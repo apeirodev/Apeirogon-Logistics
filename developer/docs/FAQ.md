@@ -80,7 +80,7 @@ that boost `cargo_panel_clarity` (+15%), `fragmentation` (+10%), and
 `freight` (+5%) because its external spindle layout makes managing large
 fragmented cargo loads more complex than internal-cargo ships.
 
-You can customise all ship modifiers in `runtime/scoring_config.json`.
+You can customize all ship modifiers in `runtime/scoring_config.json`.
 
 ---
 

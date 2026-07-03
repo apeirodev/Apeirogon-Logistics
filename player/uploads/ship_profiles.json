@@ -27,7 +27,7 @@
         "operational_suitability": 9,
         "expected_covalex_efficiency": 10,
         "dead_leg_recovery_suitability": 8,
-        "traversal_profile": "orbital_chain_specialist",
+        "traversal_profile": "orbital_chain_specializt",
         "loading_method": "external_panel"
       },
       "unresolved_implementation_details": [

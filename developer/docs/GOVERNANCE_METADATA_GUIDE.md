@@ -6,7 +6,7 @@ Every output from the Apeirogon Logistics pipeline carries a `governance_metadat
 
 ## Why Governance Metadata Exists
 
-The pipeline mixes data from different sources: AI extractions, OCR normalisations, user-typed values, and deterministic scoring. Without provenance tracking, a number in a scored output could be AI-hallucinated, OCR-garbled, user-entered, or algorithmically derived, and there would be no way to tell. Governance metadata makes provenance explicit and machine-readable.
+The pipeline mixes data from different sources: AI extractions, OCR normalizations, user-typed values, and deterministic scoring. Without provenance tracking, a number in a scored output could be AI-hallucinated, OCR-garbled, user-entered, or algorithmically derived, and there would be no way to tell. Governance metadata makes provenance explicit and machine-readable.
 
 ---
 
@@ -23,7 +23,7 @@ What produced this output.
 | `deterministic_output` | Produced by a deterministic tool (scorer, batch, chain analyzer) |
 | `ai_vision_extraction` | Produced by an AI provider's vision OCR |
 | `ai_output` | Generic AI provider output (non-vision) |
-| `OCR_extraction` | Produced by local OCR normalisation |
+| `OCR_extraction` | Produced by local OCR normalization |
 | `telemetry_observational` | Session telemetry from a real run |
 | `user_profile_validation` | User profile loader output |
 | `session_state_validation` | Session state manager output |
@@ -94,7 +94,7 @@ The trust tier of the source or contributor. See `CONTRIBUTOR_TRUST_MODEL.md`. S
 
 ### `derivation_type`
 
-A label for the specific algorithm or pipeline stage that produced this output. Examples: `deterministic_heuristic`, `batch_deterministic_scoring`, `ai_vision_normalisation`, `telemetry_ingestion`, `sensitivity_analysis`.
+A label for the specific algorithm or pipeline stage that produced this output. Examples: `deterministic_heuristic`, `batch_deterministic_scoring`, `ai_vision_normalization`, `telemetry_ingestion`, `sensitivity_analysis`.
 
 ---
 

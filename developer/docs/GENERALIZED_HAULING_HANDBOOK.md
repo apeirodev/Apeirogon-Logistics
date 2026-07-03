@@ -84,7 +84,7 @@ The location alias file (`runtime/OCR_normalization_rules.json`) currently cover
 
 ## Telemetry-Driven Refinement
 
-The scoring heuristics are starting points. For any specialisation (a specific ship, issuer, or system), collect telemetry from your real sessions and compare scorer recommendations against outcomes. Where there are systematic mismatches, adjust the relevant weights.
+The scoring heuristics are starting points. For any specialization (a specific ship, issuer, or system), collect telemetry from your real sessions and compare scorer recommendations against outcomes. Where there are systematic mismatches, adjust the relevant weights.
 
 The generalized workflow depends more on user calibration than the primary Hull-B Covalex workflow, because the default weights were tuned for Hull-B Covalex. The further your use case departs from that baseline, the more value you get from recording outcomes and adjusting weights.
 

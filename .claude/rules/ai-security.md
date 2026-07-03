@@ -31,7 +31,7 @@ def verify_dataset_checksum(filepath: str, expected_sha256: str) -> bool:
 **Don't**:
 
 ```python
-# VULNERABLE: load without integrity check — data poisoning undetected
+# VULNERABLE: load without integrity check -- data poisoning undetected
 data = json.load(open(dataset_path))
 ```
 
@@ -108,14 +108,14 @@ def validate_provider_output(output: dict) -> tuple[bool, list[str]]:
 **Don't**:
 
 ```python
-# VULNERABLE: passing raw user input to provider without sanitisation
+# VULNERABLE: passing raw user input to provider without sanitization
 response = provider.complete(user_supplied_text)
 
 # VULNERABLE: using provider output without validation
 route = ai_response["recommended_route"]   # no advisory check, no schema validation
 ```
 
-**Why**: Prompt injection (OWASP LLM01) can manipulate provider outputs. Unsanitised outputs
+**Why**: Prompt injection (OWASP LLM01) can manipulate provider outputs. Unsanitized outputs
 used in HTML rendering, command execution, or as operational facts are injection vectors.
 
 **Refs**: OWASP LLM01, OWASP LLM02, NIST AI RMF MAP 1.5
@@ -136,7 +136,7 @@ used in HTML rendering, command execution, or as operational facts are injection
 import os
 
 def get_api_key(provider: str) -> str:
-    # Accept from environment variable only — never from CLI args or JSON input
+    # Accept from environment variable only -- never from CLI args or JSON input
     key = os.environ.get(f"{provider.upper()}_API_KEY")
     if not key:
         raise EnvironmentError(f"{provider} API key not set in environment")
@@ -206,7 +206,7 @@ logger.debug("Provider call: %s", full_prompt)
 |------|-------|--------|---------|
 | Validate data integrity | strict | Data poisoning (AML.T0020) | Checksums |
 | Protect scoring artefacts | strict | Model tampering (AML.T0040) | Integrity + read-only |
-| Sanitize provider I/O | strict | Prompt injection (LLM01) | Sanitise + schema validate |
+| Sanitize provider I/O | strict | Prompt injection (LLM01) | Sanitize + schema validate |
 | Isolate API key handling | strict | Credential exposure | Env vars only |
 | Log provider interactions | warning | Undetected misuse | Audit log |
 

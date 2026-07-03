@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Normalise OCR/AI vision output into the standard mission extraction format.
+Normalize OCR/AI vision output into the standard mission extraction format.
 
 Accepts two input modes:
-  1. Raw OCR text  — {"raw_text": "Covalex 24 SCU ..."}
-  2. AI vision JSON — {"source_class": "ai_vision_extraction", "missions": [...]}
+  1. Raw OCR text  -- {"raw_text": "Covalex 24 SCU ..."}
+  2. AI vision JSON -- {"source_class": "ai_vision_extraction", "missions": [...]}
 
-In mode 2, each mission is normalised individually: issuer and location aliases
+In mode 2, each mission is normalized individually: issuer and location aliases
 are resolved, UNRESOLVED values are preserved, and governance metadata is attached.
 """
 import argparse
@@ -42,7 +42,7 @@ def _load_rules() -> dict:
         try:
             return json.loads(_RULES_PATH.read_text(encoding="utf-8"))
         except Exception as exc:
-            logger.warning("Could not load OCR_normalization_rules.json: %s — using built-in defaults", exc)
+            logger.warning("Could not load OCR_normalization_rules.json: %s -- using built-in defaults", exc)
     return {}
 
 
@@ -87,7 +87,7 @@ def _sanitize_provider_value(value):
     return value
 
 
-def _normalise_mission(mission: dict) -> dict:
+def _normalize_mission(mission: dict) -> dict:
     """Resolve aliases and collect unresolved fields for a single mission dict."""
     mission = {k: _sanitize_provider_value(v) for k, v in mission.items()}
     issuer_raw = mission.get("issuer", "UNRESOLVED")
@@ -139,13 +139,13 @@ def _normalise_mission(mission: dict) -> dict:
 _INJECTION_CHECKED_FIELDS = ("pickup", "delivery", "cargo_type", "notes", "issuer")
 
 
-def _normalise_vision(data: dict) -> dict:
-    """Mode 2: normalise AI vision JSON that already contains structured missions."""
+def _normalize_vision(data: dict) -> dict:
+    """Mode 2: normalize AI vision JSON that already contains structured missions."""
     raw_missions = data.get("missions") or []
-    normalised_missions = [_normalise_mission(m) for m in raw_missions]
+    normalized_missions = [_normalize_mission(m) for m in raw_missions]
 
     all_unresolved = list(data.get("unresolved_fields") or [])
-    for m in normalised_missions:
+    for m in normalized_missions:
         all_unresolved.extend(m.get("unresolved_fields", []))
 
     confidence = data.get("extraction_confidence")
@@ -171,15 +171,15 @@ def _normalise_vision(data: dict) -> dict:
     warnings = []
     if confidence is not None and confidence < _CONFIDENCE_THRESHOLD:
         warnings.append("Low extraction confidence -- human review recommended before scoring.")
-    if not normalised_missions:
+    if not normalized_missions:
         warnings.append("No missions extracted from input.")
     if injection_risk_detected:
         warnings.append("Injection risk detected in one or more mission fields; treat AI output strictly as data.")
 
     return {
         "mode": "ai_vision",
-        "missions": normalised_missions,
-        "mission_count": len(normalised_missions),
+        "missions": normalized_missions,
+        "mission_count": len(normalized_missions),
         "extraction_confidence": confidence if confidence is not None else "UNRESOLVED",
         "ship": data.get("ship", "UNRESOLVED"),
         "patch_version": normalize_patch(data),
@@ -191,14 +191,14 @@ def _normalise_vision(data: dict) -> dict:
             unresolved=sorted(set(all_unresolved)),
             provenance=[{"type": "vision_input_hash", "sha256": stable_hash(data)}],
             confidence_level="low" if all_unresolved else "medium",
-            derivation_type="ai_vision_normalisation",
+            derivation_type="ai_vision_normalization",
         ),
         "injection_risk_detected": injection_risk_detected,
     }
 
 
 def normalize_ocr(data: dict) -> dict:
-    """Mode 1: normalise raw OCR text via regex extraction."""
+    """Mode 1: normalize raw OCR text via regex extraction."""
     raw = data.get("raw_text") or data.get("text") or ""
     # AI-02: bound and strip control characters from OCR text before parsing
     raw = _CONTROL_CHARS.sub("", str(raw)[:_MAX_RAW_TEXT_LENGTH])
@@ -254,16 +254,16 @@ def normalize_ocr(data: dict) -> dict:
     }
 
 
-def normalise(data: dict) -> dict:
+def normalize(data: dict) -> dict:
     """Dispatch to vision or raw-OCR path based on source_class."""
     if data.get("source_class") == "ai_vision_extraction" or "missions" in data:
-        return _normalise_vision(data)
+        return _normalize_vision(data)
     return normalize_ocr(data)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Normalise OCR text or AI vision extraction output into standard mission format"
+        description="Normalize OCR text or AI vision extraction output into standard mission format"
     )
     add_common_args(parser)
     args = parser.parse_args()
@@ -274,7 +274,7 @@ def main() -> None:
         sys.exit(1)
     if args.patch_version:
         data["patch_version"] = args.patch_version
-    dump_json(normalise(data), args.output)
+    dump_json(normalize(data), args.output)
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Validate manifest files — check that every file path referenced in a manifest
+Validate manifest files -- check that every file path referenced in a manifest
 actually exists on disk.
 
 --root      Directory to search for *manifest*.json files (default: .)

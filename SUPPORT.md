@@ -43,4 +43,4 @@ If you have session telemetry that might help calibrate the scoring weights, see
 
 ## Response Time
 
-This is a small personal project. Response times are best-effort and not guaranteed. Critical bugs (tool crashes, incorrect output) are prioritised over enhancement requests.
+This is a small personal project. Response times are best-effort and not guaranteed. Critical bugs (tool crashes, incorrect output) are prioritized over enhancement requests.

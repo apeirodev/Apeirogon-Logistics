@@ -9,7 +9,7 @@ local Settings    = require("ApeirogonLogistics.settings")
 local Utils       = require("ApeirogonLogistics.utils")
 local UIOverlay   = {}
 
--- Verdict color codes (placeholder format — update to match CIG color API)
+-- Verdict color codes (placeholder format -- update to match CIG color API)
 local COLORS = {
     ACCEPT  = "|cff00cc66",  -- green
     DEFER   = "|cffffff00",  -- yellow
@@ -78,7 +78,7 @@ function UIOverlay.create_settings_panel()
     --   - Ship dropdown (populated from scoring_config ship keys)
     --   - Location text field
     --   - AI provider dropdown ("None", "Anthropic / Claude", "OpenAI")
-    --   - API key input (masked, password-style — never show in plaintext)
+    --   - API key input (masked, password-style -- never show in plaintext)
     --   - Checkboxes for show_score, show_factors, show_ai_comment, compact_mode
     --   - Save and Reset buttons
 end
@@ -145,7 +145,7 @@ function UIOverlay.update(results)
         if compact then
             row_text = string.format("%s  %s", verdict_str, delivery_str)
         else
-            row_text = string.format("%s  %s — %s → %s",
+            row_text = string.format("%s  %s -- %s → %s",
                 verdict_str, issuer_str, pickup_str, delivery_str)
         end
 

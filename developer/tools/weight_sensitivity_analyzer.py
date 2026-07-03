@@ -72,7 +72,7 @@ def analyze(route: dict) -> dict:
             f"Score {baseline_score} is most affected by '{most_sensitive}'. "
             "A ×2.0 scale shows the upper bound of influence for each factor."
             if most_sensitive else
-            "No active factors found — route may have no factor inputs."
+            "No active factors found -- route may have no factor inputs."
         ),
         "governance_metadata": governance_metadata(
             source_class="deterministic_output",
@@ -86,7 +86,7 @@ def analyze(route: dict) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Analyse how route score changes as individual factor weights scale"
+        description="Analyze how route score changes as individual factor weights scale"
     )
     add_common_args(parser)
     args = parser.parse_args()

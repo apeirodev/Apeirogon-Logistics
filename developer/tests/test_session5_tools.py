@@ -49,16 +49,16 @@ class TestSessionStateManager:
     def test_known_ship_no_warning(self):
         r = validate_session({"session_id": "s1", "ship": "hull-b", "issuer": "covalex"})
         assert r["valid"] is True
-        ship_warns = [w for w in r["warnings"] if "unrecognised ship" in w]
+        ship_warns = [w for w in r["warnings"] if "unrecognized ship" in w]
         assert ship_warns == []
 
     def test_unknown_ship_warning(self):
         r = validate_session({"session_id": "s1", "ship": "star-runner-xl"})
-        assert any("unrecognised ship" in w for w in r["warnings"])
+        assert any("unrecognized ship" in w for w in r["warnings"])
 
     def test_unknown_issuer_warning(self):
         r = validate_session({"session_id": "s1", "issuer": "space-express"})
-        assert any("unrecognised issuer" in w for w in r["warnings"])
+        assert any("unrecognized issuer" in w for w in r["warnings"])
 
     def test_invalid_completed_missions_type(self):
         r = validate_session({"session_id": "s1", "completed_missions": "not-a-list"})
@@ -123,7 +123,7 @@ class TestUserProfileLoader:
 
     def test_known_ship_no_warning(self):
         r = load_profile({"user_profile_id": "p1", "preferred_ship": "hull-b"})
-        assert not any("unrecognised" in w for w in r["warnings"])
+        assert not any("unrecognized" in w for w in r["warnings"])
 
     def test_unknown_ship_warning(self):
         r = load_profile({"user_profile_id": "p1", "preferred_ship": "mega-hauler"})

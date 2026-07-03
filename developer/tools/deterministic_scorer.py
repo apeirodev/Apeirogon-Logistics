@@ -20,7 +20,7 @@ def _load_scoring_config() -> dict:
         try:
             return json.loads(_CONFIG_PATH.read_text(encoding="utf-8"))
         except Exception as exc:
-            logger.warning("Could not load scoring_config.json: %s — using built-in defaults", exc)
+            logger.warning("Could not load scoring_config.json: %s -- using built-in defaults", exc)
     return {}
 
 

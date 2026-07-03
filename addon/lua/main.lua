@@ -151,9 +151,9 @@ local function slash_handler(args)
         end
     elseif cmd == "help" or cmd == "" then
         print("Apeirogon Logistics commands:")
-        print("  /apl ship <name>          — set your current ship")
-        print("  /apl location <name>      — set your current location")
-        print("  /apl settings             — open settings panel")
+        print("  /apl ship <name>          -- set your current ship")
+        print("  /apl location <name>      -- set your current location")
+        print("  /apl settings             -- open settings panel")
     else
         print("Unknown command. Type /apl help for options.")
     end

@@ -134,7 +134,7 @@ All multipliers from `runtime/scoring_config.json`. A multiplier > 1.0 amplifies
 
 ### Hull-B (512 SCU, MISC)
 
-The Covalex orbital chain specialist. External spindle cargo rewards clean route stacking; each extra contract from the same pickup scores higher here than on any other ship. The `cargo_panel_clarity` bonus (×1.15) uniquely rewards having a readable, consistent mission set.
+The Covalex orbital chain specializt. External spindle cargo rewards clean route stacking; each extra contract from the same pickup scores higher here than on any other ship. The `cargo_panel_clarity` bonus (×1.15) uniquely rewards having a readable, consistent mission set.
 
 **Cargo panel assignment**: The Hull-B has eight external cargo panels (top, bottom, port, starboard, front, back, plus the forward/aft halves of the port and starboard sides). Assign each delivery destination its own panel or panel section before loading. When Panel A is "Baijini Point" and Panel B is "Shopp-L4", unloading is fast and clean. Fragmented routes that mix cargo from multiple destinations per panel lose this advantage entirely, which is why the fragmentation penalty hits harder here than on any other ship.
 
@@ -178,7 +178,7 @@ Reliable deep-space generalist. Dual-bay design lets you mix cargo types. The fa
 
 ### RAFT (192 SCU, ARGO)
 
-Station-to-station freight specialist with external pods. The dead-leg dampener (×0.95) provides a small recovery benefit. Good at Covalex Junior through Member.
+Station-to-station freight specializt with external pods. The dead-leg dampener (×0.95) provides a small recovery benefit. Good at Covalex Junior through Member.
 
 **Best for**: Orbital station runs. Routes that stay in space. Mission sets that fit the pod configuration.
 
@@ -280,7 +280,7 @@ Modular: cargo (512 SCU), med-bay, or refinery module plus 64 SCU base hangar. S
 
 ### Banu Merchantman (2880 SCU, Banu): NOT YET FLYABLE
 
-Most anticipated community hauling ship. Internal market bays allow player vendor stalls. The destination_overlap bonus (×1.10) reflects that it is optimised for multi-buyer trade routes. Scoring modifiers are speculative placeholders pending live release.
+Most anticipated community hauling ship. Internal market bays allow player vendor stalls. The destination_overlap bonus (×1.10) reflects that it is optimized for multi-buyer trade routes. Scoring modifiers are speculative placeholders pending live release.
 
 ---
 

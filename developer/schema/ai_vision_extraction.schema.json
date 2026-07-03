@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "AI Vision Mission Extraction",
-  "description": "Schema for structured JSON returned by an AI vision assistant after analysing Star Citizen mission contract screenshots.",
+  "description": "Schema for structured JSON returned by an AI vision assistant after analyzing Star Citizen mission contract screenshots.",
   "type": "object",
   "required": ["advisory_only", "source_class", "missions"],
   "properties": {
@@ -18,7 +18,7 @@
         {"type": "number", "minimum": 0, "maximum": 1},
         {"const": "UNRESOLVED"}
       ],
-      "description": "AI's self-reported confidence in the extraction (0.0–1.0), or UNRESOLVED."
+      "description": "AI's self-reported confidence in the extraction (0.0-1.0), or UNRESOLVED."
     },
     "patch_version": {
       "type": "string",

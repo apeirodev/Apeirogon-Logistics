@@ -10,7 +10,7 @@ The OCR normalizer (`tools/OCR_result_normalizer.py`) takes raw extraction outpu
 
 1. Resolves location aliases (e.g. "Shopp-L4" → "Covalex Hub Shopp-L4")
 2. Resolves issuer aliases (e.g. "cov alex" → "Covalex")
-3. Normalises delivery fields to lists
+3. Normalizes delivery fields to lists
 4. Marks fields that could not be resolved as UNRESOLVED
 5. Adds governance metadata tracking provenance
 
@@ -82,7 +82,7 @@ To fix: add the correct value manually to the normalized JSON before scoring, or
 
 ---
 
-## Verifying the Normaliser Output
+## Verifying the Normalizer Output
 
 Before running the batch scorer, open `missions_norm.json` and check:
 
@@ -112,7 +112,7 @@ If you are getting many low-confidence warnings:
 # Step 1: AI extracts from screenshot (see ChatGPT_usage_guide.md or Claude_usage_guide.md)
 # Save AI output as raw_extraction.json
 
-# Step 2: Normalise
+# Step 2: Normalize
 python tools/OCR_result_normalizer.py -i raw_extraction.json -o missions_norm.json
 
 # Step 3: Score

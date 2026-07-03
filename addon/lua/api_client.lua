@@ -75,9 +75,9 @@ local function build_prompt(contract, score_result)
     return string.format(
         "You are a Star Citizen hauling advisor. "
         .. "Score: %d/100 (%s). "
-        .. "Contract: %s — pickup at %s, deliver to %s. "
+        .. "Contract: %s -- pickup at %s, deliver to %s. "
         .. "In one plain sentence, explain the main reason for this score. "
-        .. "Do not invent any numbers. Do not mention 'fragmentation penalty' or other internal scoring terms — use plain language.",
+        .. "Do not invent any numbers. Do not mention 'fragmentation penalty' or other internal scoring terms -- use plain language.",
         score_result.score,
         score_result.verdict,
         contract.issuer or "unknown issuer",
@@ -93,11 +93,11 @@ local function cache_key(contract)
 end
 
 -- Request AI commentary for a scored contract.
--- This is non-blocking — callback is called asynchronously when the response arrives.
+-- This is non-blocking -- callback is called asynchronously when the response arrives.
 --
 -- contract     : parsed contract table
 -- score_result : result from ScoringEngine.score_contract()
--- callback     : function(commentary_text) — called with a string, or nil on failure
+-- callback     : function(commentary_text) -- called with a string, or nil on failure
 --
 -- STUB: Replace CIG_API.HTTPRequest with actual game HTTP API.
 function ApiClient.request_commentary(contract, score_result, callback)

@@ -162,7 +162,7 @@ pip install --require-hashes -r requirements.txt
 ```
 
 ```python
-# requirements.txt — pin exact versions with hashes
+# requirements.txt -- pin exact versions with hashes
 requests==2.31.0 \
     --hash=sha256:58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f
 ```
@@ -243,7 +243,7 @@ SECRET_KEY = "mysecretkey123"                               # VULNERABLE: hardco
 # SQL
 cursor.execute("SELECT * FROM users WHERE username = %s", (username,))
 
-# Subprocess — explicit args list, no shell=True
+# Subprocess -- explicit args list, no shell=True
 import subprocess
 result = subprocess.run(['ls', '-la', directory], capture_output=True, text=True, check=True)
 ```
@@ -378,7 +378,7 @@ logger.info(f"Login attempt: {username}:{password}")  # VULNERABLE: logs credent
 **Risk Level**: Medium
 **Status**: New category for 2025
 
-### Rule: Handle Errors Securely — Fail Closed
+### Rule: Handle Errors Securely -- Fail Closed
 
 **Level**: `warning`
 
@@ -390,7 +390,7 @@ def check_permission(user, resource):
         return permission_service.check(user, resource)
     except Exception as e:
         logger.error(f"Permission check failed: {e}")
-        return False   # Fail closed — deny access on error
+        return False   # Fail closed -- deny access on error
 ```
 
 **Don't**:

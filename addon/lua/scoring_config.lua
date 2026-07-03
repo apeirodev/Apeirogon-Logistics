@@ -4,7 +4,7 @@
 --
 -- KEEP IN SYNC: when tuning weights in scoring_config.json, update this file too.
 -- The Python scorer and Lua scorer must produce identical results for the same input.
--- No game API dependencies — this file is fully portable Lua 5.1.
+-- No game API dependencies -- this file is fully portable Lua 5.1.
 
 local ScoringConfig = {}
 

@@ -43,7 +43,7 @@ The build tool excludes `.git`, `__pycache__`, `*.pyc`, and other non-distributa
 After verification:
 
 ```bash
-git tag -a 3.24.0 -m "Release 3.24.0 — calibrated for Alpha 3.24"
+git tag -a 3.24.0 -m "Release 3.24.0 -- calibrated for Alpha 3.24"
 git push origin 3.24.0
 ```
 

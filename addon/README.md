@@ -41,19 +41,19 @@ When CIG releases an addon framework and this addon is installed, it will:
 
 ```
 addon/
-  ApeirogonLogistics.toc      — manifest (format TBD — WoW-style placeholder)
+  ApeirogonLogistics.toc      -- manifest (format TBD -- WoW-style placeholder)
   docs/
-    ADDON_ARCHITECTURE.md     — design decisions and data flow
-    LUA_API_NOTES.md          — what we expect CIG's Lua API to provide
+    ADDON_ARCHITECTURE.md     -- design decisions and data flow
+    LUA_API_NOTES.md          -- what we expect CIG's Lua API to provide
   lua/
-    main.lua                  — entry point, event registration
-    scoring_engine.lua        — deterministic scorer (COMPLETE)
-    scoring_config.lua        — scoring weights as Lua tables (COMPLETE)
-    contract_parser.lua       — reads game contract data → internal format (STUB)
-    ui_overlay.lua            — in-game overlay and info panel (STUB)
-    settings.lua              — user settings and API key storage (STUB)
-    api_client.lua            — AI provider HTTP calls (STUB)
-    utils.lua                 — shared helpers (COMPLETE)
+    main.lua                  -- entry point, event registration
+    scoring_engine.lua        -- deterministic scorer (COMPLETE)
+    scoring_config.lua        -- scoring weights as Lua tables (COMPLETE)
+    contract_parser.lua       -- reads game contract data → internal format (STUB)
+    ui_overlay.lua            -- in-game overlay and info panel (STUB)
+    settings.lua              -- user settings and API key storage (STUB)
+    api_client.lua            -- AI provider HTTP calls (STUB)
+    utils.lua                 -- shared helpers (COMPLETE)
 ```
 
 ---

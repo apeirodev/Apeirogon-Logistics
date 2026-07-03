@@ -3,11 +3,11 @@
 -- Lua port of developer/tools/deterministic_scorer.py
 --
 -- Logic is identical to the Python scorer. Weights come from scoring_config.lua.
--- No game API dependencies — this file is fully portable Lua 5.1.
+-- No game API dependencies -- this file is fully portable Lua 5.1.
 --
 -- Usage:
 --   local result = ScoringEngine.score_contract(contract, context)
---   -- result.score   : integer 0–100
+--   -- result.score   : integer 0-100
 --   -- result.verdict : "ACCEPT" | "DEFER" | "REJECT"
 --   -- result.factors : table of factor name → contribution
 
@@ -32,8 +32,8 @@ end
 
 -- Score a single contract.
 --
--- contract : table — fields from the internal contract format (see contract_parser.lua)
--- context  : table — scoring context built from the full batch
+-- contract : table -- fields from the internal contract format (see contract_parser.lua)
+-- context  : table -- scoring context built from the full batch
 --   {
 --     ship              = "hull-b",          -- string, lower-case ship key
 --     issuer            = "covalex",         -- string, lower-case issuer key

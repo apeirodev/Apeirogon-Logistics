@@ -176,7 +176,7 @@ produce high scores (same-pickup stacking, low dead legs, orbital chains) are
 also the patterns that build reputation efficiently; you're completing more
 Covalex missions per hour than scattered routes would allow.
 
-Prioritising reputation over one-off payout is usually correct in the medium term.
+Prioritizing reputation over one-off payout is usually correct in the medium term.
 A route that pays slightly less but completes faster and positions you for the next
 run is better than a high-payout isolated mission that leaves you out of position.
 
